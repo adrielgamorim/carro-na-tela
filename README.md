@@ -1,5 +1,8 @@
 # Carro na tela
 
+[![CI](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/ci.yml/badge.svg)](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/codeql.yml/badge.svg)](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/codeql.yml)
+
 Consulta de valores da tabela FIPE, catálogo de carros com busca por facetas e comparação de
 veículos, com dados abertos do INMETRO, ANP, Senatran e Wikidata somados ao preço.
 
@@ -54,6 +57,9 @@ npm test               # testes (Vitest)
 npm run lint           # ESLint
 npm run build          # typecheck + build de produção em dist/
 ```
+
+A CI (`.github/workflows/ci.yml`) roda lint, testes e build em cada push e pull request; o
+CodeQL analisa o código e os workflows, e o Dependabot abre PRs semanais de atualização.
 
 As chaves ficam só no servidor (`.env`, lido pelo Vite e pelos scripts). Nunca crie uma variável
 `VITE_*` com elas: essas vão para o bundle do navegador.
@@ -229,7 +235,7 @@ Vitest 5 com jsdom e Testing Library, ESLint 10. Os scripts rodam com o TypeScri
 
 As pendências estão em [TODO.md](TODO.md), por área e prioridade. As principais:
 
-- Publicar: repositório git, CI, deploy do site e do Worker, daily fora do Windows.
+- Publicar: deploy do site e do Worker, daily fora do Windows.
 - Dados: completar os preços da varredura (semanas) e pôr o Catálogo como aba inicial.
 - Qualidade: testes de ponta a ponta e CSS separado por componente.
 - Produto: motos e caminhões no catálogo.

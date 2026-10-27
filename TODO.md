@@ -8,8 +8,6 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Criar o repositório remoto (GitHub) e enviar o `main`. Hoje o git é só local.
-- [ ] 🔴 CI (GitHub Actions): lint, `tsc -b`, testes e build em cada push.
 - [ ] 🔴 Publicar o site (Cloudflare Pages, por exemplo) e o Worker do proxy numa rota do domínio,
       gerando o build com `VITE_FIPE_API_URL`.
 - [ ] 🟡 Levar o `npm run daily` para fora do Windows (GitHub Action agendada ou servidor), com o
@@ -58,6 +56,11 @@ disponibilidade dela.
 Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
+
+- [x] Repositório no GitHub (`adrielgamorim/carro-na-tela`, público), com autoria pelo e-mail
+      privado do GitHub (noreply).
+- [x] CI (GitHub Actions): lint, testes e build (com `tsc -b`) em cada push e PR, token só de
+      leitura. Segurança: CodeQL (código e workflows), Dependabot (npm e Actions) e `SECURITY.md`.
 
 - [x] Aviso "Catálogo em construção" e o selo "80 de 108 marcas" mostravam a listagem como
       incompleta, comparando com marcas que a FIPE só tem antes de 2009. Agora dependem só de
