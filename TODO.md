@@ -12,8 +12,9 @@ disponibilidade dela.
       gerando o build com `VITE_FIPE_API_URL`.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
-- [ ] 🟡 Melhorar a cobertura de fotos: 732 de 5.021 versões não casam com o Wikidata (Land Rover
-      137, BMW 102, Iveco 58, Citroën 45) e 62 casam com modelos sem foto.
+- [ ] 🟢 Fotos que faltam por falta do item no Wikidata (não dá para casar): Iveco Daily (58),
+      Fiat Punto (o Wikidata só tem Grande Punto S2000 e Abarth), Citroën Basalt, JAC, Hitech
+      Electric. 466 versões sem modelo e 62 com modelo sem foto.
 - [ ] 🟡 Catálogo como aba inicial quando a cobertura de preços for boa.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
@@ -168,7 +169,9 @@ Histórico resumido, em ordem aproximada.
 - [x] INMETRO PBEV 2010–2026: parser por layout de ano, casamento por ano-modelo (~3.000 versões),
       ajustes manuais, filtros de porte, marchas, consumo, direção e ar.
 - [x] ANP: preço médio por estado, semanal, no custo por km.
-- [x] Wikidata / Commons: foto e descrição da linha (4.289 versões, 562 modelos).
+- [x] Wikidata / Commons: foto e descrição da linha (4.555 versões, 577 modelos). Cobertura de fotos
+      de 4.227 para 4.493 versões: BMW por série ("320iA" → Série 3), abreviações da Land Rover,
+      nomes sem parênteses e código de chassi, e ajustes manuais (C3 Aircross, Classe M, AMG GT).
 - [x] Chassi (VIN): WMI da Wikipedia (1.536 códigos), ano pelo 10º caractere e NHTSA vPIC.
 - [x] Senatran: frota em circulação por linha (4.750 versões em 677 linhas), ordenação "Mais comuns
       na frota", que intercala as linhas (a versão mais nova de cada uma, depois a segunda…)

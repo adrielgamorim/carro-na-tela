@@ -6,6 +6,24 @@
       "modelPrefix": "Cooper",
       "id": "Q11781425",
       "reason": "Mini Hatch (BMW, 2001–). O casamento por nome pegava o 'MINI Mk I' sem foto; o Mini clássico de 1959 tem o mesmo apelido."
+    },
+    {
+      "brand": "Citroën",
+      "modelPrefix": "Aircross",
+      "id": "Q5122860",
+      "reason": "A FIPE escreve só 'AIRCROSS' para o C3 Aircross vendido no Brasil (Citroën C3 Aircross no Wikidata)."
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "modelPrefix": "ML-",
+      "id": "Q849935",
+      "reason": "ML-320, ML-350, ML-63… são a Classe M (Mercedes-Benz Classe M no Wikidata)."
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "modelPrefix": "GT ",
+      "id": "Q18011551",
+      "reason": "Os 'GT' da Mercedes na FIPE são o Mercedes-AMG GT, que no Wikidata tem a marca Mercedes-AMG."
     }
   ]
 }

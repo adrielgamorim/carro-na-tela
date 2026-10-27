@@ -105,3 +105,41 @@ describe("parseSparqlModels", () => {
     ]);
   });
 });
+
+describe("name variants and FIPE aliases", () => {
+  const models = [
+    model("serie3", ["BMW Série 3", "BMW 3 Series"], { brands: ["BMW"], labelCount: 2 }),
+    model("i3", ["BMW i3 (2013)"], { brands: ["BMW"] }),
+    model("defender", ["Land Rover Defender L663"], { brands: ["Land Rover"] }),
+    model("discovery", ["Land Rover Discovery"], { brands: ["Land Rover"] }),
+    model("rangerover", ["Land Rover Range Rover"], { brands: ["Land Rover"] }),
+    model("passat", ["Volkswagen Passat"], { brands: ["Volkswagen"] }),
+    model("passatb1", ["Volkswagen Passat (B1)"], { brands: ["Volkswagen"] }),
+    model("commander", ["Jeep Commander"], { brands: ["Jeep"] }),
+    model("commander21", ["Jeep Commander (2021)", "Jeep Commander"], { brands: ["Jeep"], labelCount: 2 }),
+    model("f25", ["BMW F25", "BMW X3"], { brands: ["BMW"], labelCount: 2 }),
+    model("e83", ["BMW E83", "BMW X3 (E83)", "Bmw x3"], { brands: ["BMW"], labelCount: 2 }),
+  ];
+  const match = createWikidataMatcher(models);
+  const id = (brand: string, name: string) => match({ brand, model: name, years: [2024] })?.id ?? null;
+
+  it("reads BMW engine codes as the series and drops parentheses and chassis codes", () => {
+    expect(id("BMW", "320iA M Sport 2.0 TB Flex Aut.")).toBe("serie3");
+    expect(id("BMW", "i3 Bev Full")).toBe("i3");
+    expect(id("Land Rover", "Defender 110 2.0 Turbo")).toBe("defender");
+  });
+
+  it("expands Land Rover abbreviations", () => {
+    expect(id("Land Rover", "Defe. 110 X-DY.HSE 3.0")).toBe("defender");
+    expect(id("Land Rover", "Discov. HSE 3.0 Diesel")).toBe("discovery");
+    expect(id("Land Rover", "Discovery4 S 3.0")).toBe("discovery");
+    expect(id("Land Rover", "Range.R. Autobiography 5.0")).toBe("rangerover");
+  });
+
+  it("prefers exact names, then labels over aliases", () => {
+    expect(id("VW - VolksWagen", "Passat Highline 2.0 TSI")).toBe("passat");
+    // "Jeep Commander (2021)" is also labeled "Jeep Commander", so it is not demoted.
+    expect(["commander", "commander21"]).toContain(id("Jeep", "COMMANDER LIMITED T270"));
+    expect(id("BMW", "X3 XDRIVE 30e M Sport")).toBe("f25");
+  });
+});

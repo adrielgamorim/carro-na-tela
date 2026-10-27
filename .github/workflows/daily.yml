@@ -26,10 +26,10 @@ jobs:
     steps:
       # The deploy key (scripts/setup-github-daily.sh) is the ruleset's exception
       # that lets this job push the data to main.
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ssh-key: ${{ secrets.DAILY_DEPLOY_KEY }}
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm

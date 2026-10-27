@@ -76,9 +76,32 @@ function namesOfBrand(brand: string): string[][] {
   return (brandNames[brand] ?? [brand]).map(words);
 }
 
-/** Keys a Wikidata name can match: the name without the brand, and whole. */
-function nameKeys(name: string, brandWords: string[][], brandListed: boolean): string[] {
-  const nameWords = words(name);
+// A chassis code ending a name: "Land Rover Defender L663", "Mercedes-Benz W166".
+const chassisCode = /^[A-Z]{1,2}\d{3}$/;
+
+/**
+ * Keys a Wikidata name can match: the name without the brand, and whole; also
+ * without a year in parentheses ("BMW i3 (2013)", "BMW Série 3 (F30)") and
+ * without a final chassis code ("Defender L663"), as FIPE names never have them.
+ */
+function nameKeys(
+  name: string,
+  brandWords: string[][],
+  brandListed: boolean,
+): { key: string; derived: boolean }[] {
+  const keys: { key: string; derived: boolean }[] = [];
+  const plain = words(name.replace(/\s*\([^)]*\)/g, ""));
+  const variants = [words(name), plain];
+  if (plain.length > 1 && chassisCode.test(plain[plain.length - 1])) variants.push(plain.slice(0, -1));
+  variants.forEach((variant, index) => {
+    for (const key of variantKeys(variant, brandWords, brandListed)) {
+      if (!keys.some((item) => item.key === key)) keys.push({ key, derived: index > 0 });
+    }
+  });
+  return keys;
+}
+
+function variantKeys(nameWords: string[], brandWords: string[][], brandListed: boolean): string[] {
   const keys: string[] = [];
   let startsWithBrand = false;
   for (const brand of brandWords) {
@@ -87,7 +110,9 @@ function nameKeys(name: string, brandWords: string[][], brandListed: boolean): s
       startsWithBrand = true;
     }
   }
-  if (startsWithBrand || brandListed) keys.push(compact(nameWords));
+  // A name that is only the brand ("Mercedes-Benz W166" minus its code) matches nothing.
+  const onlyBrand = brandWords.some((brand) => compact(brand) === compact(nameWords));
+  if ((startsWithBrand || brandListed) && !onlyBrand) keys.push(compact(nameWords));
   // "Mercedes-Benz C-Class" is sold as "C-200", "C-180"…
   for (const key of [...keys]) {
     const series = /^(.+?)(CLASS|KLASSE|CLASSE)$/.exec(key);
@@ -100,6 +125,8 @@ interface Candidate {
   model: WikidataModel;
   byLabel: boolean;
   brandListed: boolean;
+  /** Matched only without the parentheses or chassis code of its name. */
+  derived: boolean;
 }
 
 function periodScore(model: WikidataModel, years: number[]): number {
@@ -117,6 +144,8 @@ function rank(candidates: Candidate[], years: number[]): WikidataModel {
   const score = (candidate: Candidate) => [
     candidate.brandListed ? 1 : 0,
     periodScore(candidate.model, years),
+    // "Volkswagen Passat" over "Volkswagen Passat (B1)" unless the years tell.
+    candidate.derived ? 0 : 1,
     candidate.byLabel ? 1 : 0,
     candidate.model.image ? 1 : 0,
     candidate.model.ptwiki ? 1 : 0,
@@ -131,6 +160,38 @@ function rank(candidates: Candidate[], years: number[]): WikidataModel {
 
 // BMW engine suffixes ("320iA", "118d") are not body variants like "HB20S".
 const engineSuffixes = new Set(["I", "IA", "IL", "D", "DA", "E"]);
+
+// FIPE abbreviations of Land Rover lines.
+const landRoverWords: Record<string, string[]> = {
+  DEF: ["DEFENDER"],
+  DEFE: ["DEFENDER"],
+  DISC: ["DISCOVERY"],
+  DISCOV: ["DISCOVERY"],
+};
+
+/**
+ * Other ways to read a FIPE name, tried after the name itself: BMW engine
+ * codes name the series ("320iA" is a "Série 3"), and Land Rover names are
+ * abbreviated ("Defe. 110", "Discov.", "Discovery4", "Range.R.").
+ */
+export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] {
+  const aliases: string[][] = [];
+  if (brand === "BMW") {
+    const series = /^(\d)\d\d[A-Z]*$/.exec(fipeWords[0] ?? "");
+    if (series) aliases.push(["SERIE", series[1], ...fipeWords.slice(1)]);
+  }
+  if (brand === "Land Rover") {
+    const expanded = fipeWords.flatMap((word, index) => {
+      if (word === "R" && fipeWords[index - 1] === "RANGE") return ["ROVER"];
+      const number = /^(DISCOVERY)(\d)$/.exec(word);
+      if (number) return [number[1], number[2]];
+      return landRoverWords[word] ?? [word];
+    });
+    // Word by word: "DISCOVERY4" → "DISCOVERY 4" compacts to the same text.
+    if (expanded.join(" ") !== fipeWords.join(" ")) aliases.push(expanded);
+  }
+  return aliases;
+}
 
 const lower = (text: string) => text.replace(/\s+/g, " ").trim().toLocaleLowerCase("pt-BR");
 
@@ -151,13 +212,24 @@ export function createWikidataMatcher(
       const brandListed = model.brands.some((name) =>
         brandKeys.some((key) => compact(words(name)).startsWith(key)),
       );
-      const seen = new Set<string>();
+      const seen = new Map<string, Candidate>();
       model.names.forEach((name, index) => {
-        for (const key of nameKeys(name, brandWords, brandListed)) {
-          if (!key || seen.has(key)) continue;
-          seen.add(key);
+        for (const { key, derived } of nameKeys(name, brandWords, brandListed)) {
+          if (!key) continue;
+          const earlier = seen.get(key);
+          if (earlier) {
+            // "Jeep Commander (2021)" is also labeled "Jeep Commander": exact after
+            // all, and a label only if that exact name is one ("Bmw x3" is an alias).
+            if (earlier.derived && !derived) {
+              earlier.derived = false;
+              earlier.byLabel = index < model.labelCount;
+            }
+            continue;
+          }
           const list = keys!.get(key) ?? [];
-          list.push({ model, byLabel: index < model.labelCount, brandListed });
+          const candidate = { model, byLabel: index < model.labelCount, brandListed, derived };
+          seen.set(key, candidate);
+          list.push(candidate);
           keys!.set(key, list);
         }
       });
@@ -181,10 +253,13 @@ export function createWikidataMatcher(
     let fipeWords = words(version.model);
     if (fipeWords[0] === "CLASSE" && fipeWords.length > 1) fipeWords = fipeWords.slice(1);
 
-    // Longest model name first: "Onix Plus" over "Onix".
-    for (let count = Math.min(3, fipeWords.length); count >= 1; count -= 1) {
-      const candidates = keys.get(compact(fipeWords.slice(0, count)));
-      if (candidates) return rank(candidates, version.years);
+    // Longest model name first: "Onix Plus" over "Onix"; the name as FIPE
+    // writes it before its aliases.
+    for (const attempt of [fipeWords, ...fipeNameAliases(version.brand, fipeWords)]) {
+      for (let count = Math.min(3, attempt.length); count >= 1; count -= 1) {
+        const candidates = keys.get(compact(attempt.slice(0, count)));
+        if (candidates) return rank(candidates, version.years);
+      }
     }
     // A letter glued to the model: "HB20S", "HB20X" → "HB20".
     const glued = /^(.*\d)([A-Z]{1,2})$/.exec(fipeWords[0] ?? "");

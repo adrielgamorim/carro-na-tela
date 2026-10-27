@@ -85,7 +85,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.289 versões, 562 modelos |
+| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.555 versões, 577 modelos (4.493 com foto) |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -137,7 +137,10 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   e, para os que casam com versões FIPE, o resumo da Wikipedia em português e o autor e a licença da
   foto para `data/wikidata/details.json` (`--cached` reaproveita os modelos já baixados).
 - O casamento é pelo nome ("Chevrolet Onix" → início do nome FIPE "Onix…"), preferindo o nome mais
-  longo, a marca certa e a geração dos anos da versão. A página descreve a linha, não a versão.
+  longo, a marca certa e a geração dos anos da versão. Nomes do Wikidata valem também sem o ano entre
+  parênteses e sem o código de chassi ("BMW i3 (2013)", "Defender L663"), e a FIPE é lida também
+  pelos apelidos de BMW ("320iA" → Série 3) e Land Rover ("Defe.", "Discov."). A página descreve a
+  linha, não a versão.
 
 ### Senatran (frota em circulação)
 
