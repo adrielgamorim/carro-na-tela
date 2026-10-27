@@ -99,7 +99,7 @@ jobs:
 
       - name: Log da execução
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: daily-log
           path: logs/
