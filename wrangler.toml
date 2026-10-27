@@ -1,15 +1,26 @@
-# Cloudflare Worker do proxy FIPE (worker/index.ts). Ver README, seção "Proxy da FIPE".
-name = "carro-na-tela-fipe-proxy"
+# Cloudflare Worker do site: serve o build (dist/) e o proxy da FIPE em
+# /api/fipe (worker/index.ts). Ver README, seção "Publicação".
+name = "carro-na-tela"
 main = "worker/index.ts"
 compatibility_date = "2026-10-01"
 
-[vars]
-# Origens do site que podem chamar o proxy (separadas por vírgula).
-ALLOWED_ORIGINS = "https://seu-dominio.com.br"
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+# Rotas do app (?versao=…, ?view=consulta) caem no index.html.
+not_found_handling = "single-page-application"
+# Só o proxy passa pelo código; o resto sai direto dos arquivos estáticos, sem
+# contar no limite de requisições do Worker.
+run_worker_first = ["/api/*"]
 
-# A chave fica como segredo, fora deste arquivo:
-#   npx wrangler secret put FIPE_TOKEN
+[vars]
+# Site e proxy no mesmo domínio: nenhuma outra origem precisa chamar o proxy.
+# Para liberar outra (separadas por vírgula): ALLOWED_ORIGINS = "https://outro.site"
+ALLOWED_ORIGINS = ""
+
+# As chaves da FIPE ficam como segredos, fora deste arquivo (painel da
+# Cloudflare ou `npx wrangler secret put FIPE_PROXY_TOKEN`). Localmente,
+# `npx wrangler dev` lê o .env.
 #
-# O cache (caches.default) só tem efeito quando o Worker atende numa rota do seu
-# domínio; em *.workers.dev as gravações de cache são ignoradas.
-# routes = [{ pattern = "seu-dominio.com.br/api/fipe/*", zone_name = "seu-dominio.com.br" }]
+# O cache das respostas da FIPE (caches.default) só tem efeito num domínio
+# próprio; em *.workers.dev as gravações de cache são ignoradas.

@@ -26,3 +26,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Cloudflare (npx wrangler)
+.wrangler
+.dev.vars*

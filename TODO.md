@@ -8,8 +8,9 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Publicar o site (Cloudflare Pages, por exemplo) e o Worker do proxy numa rota do domínio,
-      gerando o build com `VITE_FIPE_API_URL`.
+- [ ] 🔴 Criar a conta na Cloudflare e conectar o repositório (passo a passo no README, "Publicar na
+      Cloudflare"). Site e proxy já estão configurados como um Worker só.
+- [ ] 🟢 Domínio próprio, para o cache das respostas da FIPE valer.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
 - [ ] 🟢 Fotos que ainda faltam: ~150 versões, quase todas utilitários e marcas de nicho sem artigo
