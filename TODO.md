@@ -12,10 +12,8 @@ disponibilidade dela.
       gerando o build com `VITE_FIPE_API_URL`.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
-- [ ] 🟢 Fotos que faltam por falta do item no Wikidata (não dá para casar): Iveco Daily (58),
-      Fiat Punto (o Wikidata só tem Grande Punto S2000 e Abarth), Citroën Basalt, JAC, Hitech
-      Electric. 466 versões sem modelo e 62 com modelo sem foto.
-- [ ] 🟡 Catálogo como aba inicial quando a cobertura de preços for boa.
+- [ ] 🟢 Fotos que ainda faltam: 195 versões sem modelo nem reserva (Wake, Baby e outras marcas com
+      nome de palavra comum, RAM 2500/3500, linhas de uma letra) e 62 com modelo sem foto.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fase 4 do plano: potência, torque, dimensões, porta-malas, peso e equipamentos não têm
@@ -32,17 +30,13 @@ disponibilidade dela.
 - [ ] 🟢 Web Worker para expandir e filtrar o índice: medido em out/2026, não compensa ainda
       (expandir 30 ms; filtrar + contar facetas + agrupar 18–60 ms com 17.754 versões-ano).
       Medir de novo quando entrarem motos e caminhões.
-- [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer
-      algo pesado.
+- [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
 
 ### Qualidade de código
 
 - [ ] 🟡 Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
       catálogo na URL, recarregar, busca pelo chassi. `CatalogPage` ainda não tem teste de
       componente.
-- [ ] 🟢 Roteamento feito à mão (`?view=`, `pushState`, parâmetros por aba): suficiente para duas
-      abas. Se vierem páginas novas (detalhe com URL, páginas por marca), adotar um roteador.
-- [ ] 🟢 Ligar `noUncheckedIndexedAccess` no TypeScript (84 erros hoje).
 
 ## Concluído
 
@@ -130,6 +124,15 @@ Histórico resumido, em ordem aproximada.
       só as regras compartilhadas: `App.css` de ~1.800 para 587 linhas, `catalog.css` de ~1.000 para 142.
       Conferido pelo DOM (valor calculado de cada regra movida) nas duas abas, no detalhe, na
       bandeja do comparador e no celular.
+- [x] `noUncheckedIndexedAccess` ligado no app e nos scripts (233 erros corrigidos, não os 84 de
+      antes): grupos do catálogo tipados como não vazios, `at()` com erro claro para índices do
+      formato do catálogo, `currentKey()` no crawler, `?? ""` em campos de CSV e grupos de regex.
+- [x] Catálogo como aba inicial (`/`), com a Consulta em `?view=consulta`. Links antigos continuam
+      valendo: `?view=catalogo` abre o catálogo, e uma consulta sem `view=` abre a Consulta. Feito
+      com 28% dos preços; os demais cards mostram "Consultar preço".
+- [x] Roteamento num lugar só: esquema de URLs e funções puras em `src/services/router.ts`, estado da
+      aba e histórico em `src/hooks/useView.ts`, com testes. As URLs não mudaram. Um roteador de
+      biblioteca só vale quando houver páginas de verdade (uma por marca, por exemplo).
 - [x] Testes de componente do `VinSearch` (envio, erro, resultado, filtros aplicados, limpar).
 
 **Logos de marca**
@@ -176,6 +179,8 @@ Histórico resumido, em ordem aproximada.
 - [x] INMETRO PBEV 2010–2026: parser por layout de ano, casamento por ano-modelo (~3.000 versões),
       ajustes manuais, filtros de porte, marchas, consumo, direção e ar.
 - [x] ANP: preço médio por estado, semanal, no custo por km.
+- [x] Reserva de fotos (Wikipedia pt/en e Commons) para as linhas sem modelo no Wikidata: 71 de 150
+      linhas, versões com foto de 4.493 para 4.764 (Punto, Daily, Basalt, Sealion, F-Type…).
 - [x] Wikidata / Commons: foto e descrição da linha (4.555 versões, 577 modelos). Cobertura de fotos
       de 4.227 para 4.493 versões: BMW por série ("320iA" → Série 3), abreviações da Land Rover,
       nomes sem parênteses e código de chassi, e ajustes manuais (C3 Aircross, Classe M, AMG GT).

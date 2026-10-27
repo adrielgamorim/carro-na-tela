@@ -1,21 +1,19 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import type { MouseEvent } from "react";
 import { ArrowDownUp } from "lucide-react";
 import "./App.css";
 import { ConsultaPage } from "./components/ConsultaPage";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { useFipeCatalog } from "./hooks/useFipeCatalog";
 import { useFipeCodeLookup } from "./hooks/useFipeCodeLookup";
-import { clearCatalogParams } from "./catalog/catalogParams";
+import { useView } from "./hooks/useView";
 import {
   clearConsultaParams,
   readConsultaParams,
   writeConsultaParams,
 } from "./services/consultaUrl";
+import { readView } from "./services/router";
 import { loadSession, saveSession } from "./services/storage";
 import type { FipeVehicle } from "./types/vehicle";
-
-type View = "consulta" | "catalogo";
 
 // The catalog (filters, cards, chassis search, its CSS) is a chunk of its own:
 // the Consulta FIPE, the default view, does not need it.
@@ -24,32 +22,8 @@ const CatalogPage = lazy(() =>
   loadCatalogPage().then((module) => ({ default: module.CatalogPage })),
 );
 
-function readView(): View {
-  return new URLSearchParams(window.location.search).get("view") === "catalogo"
-    ? "catalogo"
-    : "consulta";
-}
-
-/**
- * The URL of a view. Each view keeps only its own parameters in the URL, so
- * a consultation does not linger behind the catalog (and come back on reload)
- * nor catalog filters behind the consultation.
- */
-function viewUrl(nextView: View, anchor?: string): URL {
-  const url = new URL(window.location.href);
-  if (nextView === "catalogo") {
-    url.searchParams.set("view", "catalogo");
-    clearConsultaParams(url.searchParams);
-  } else {
-    url.searchParams.delete("view");
-    clearCatalogParams(url.searchParams);
-  }
-  url.hash = anchor ?? "";
-  return url;
-}
-
 function App() {
-  const [view, setView] = useState<View>(readView);
+  const { view, navigate, viewLink } = useView();
   const [initialSession] = useState(() => loadSession());
   const [consulted, setConsulted] = useState<FipeVehicle[]>(
     initialSession.consulted,
@@ -61,7 +35,7 @@ function App() {
   // Links to the catalog never carry one (older ones might).
   const [sharedConsulta] = useState(() =>
     readConsultaParams(
-      new URLSearchParams(readView() === "catalogo" ? "" : window.location.search),
+      new URLSearchParams(readView(window.location.search) === "catalogo" ? "" : window.location.search),
     ),
   );
   const addConsulted = (vehicle: FipeVehicle) => {
@@ -126,36 +100,6 @@ function App() {
     latestReference,
     view,
   ]);
-
-  useEffect(() => {
-    const handlePopState = () => setView(readView());
-    window.addEventListener("popstate", handlePopState);
-    return () => window.removeEventListener("popstate", handlePopState);
-  }, []);
-
-  function navigate(nextView: View, anchor?: string) {
-    const url = viewUrl(nextView, anchor);
-    if (nextView !== view || anchor) window.history.pushState(null, "", url);
-    setView(nextView);
-    window.setTimeout(() => {
-      if (anchor) document.getElementById(anchor)?.scrollIntoView();
-      else window.scrollTo({ top: 0 });
-    });
-  }
-
-  function viewLink(nextView: View, anchor?: string) {
-    const url = viewUrl(nextView, anchor);
-    return {
-      href: `${url.pathname}${url.search}${url.hash}`,
-      onClick: (event: MouseEvent<HTMLAnchorElement>) => {
-        if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) {
-          return;
-        }
-        event.preventDefault();
-        navigate(nextView, anchor);
-      },
-    };
-  }
 
   function toggleComparison(vehicle: FipeVehicle) {
     setComparison((items) => {

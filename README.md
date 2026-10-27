@@ -18,7 +18,7 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 ## O que já existe
 
-**Catálogo** (`?view=catalogo`)
+**Catálogo** (página inicial)
 
 - Índice estático das versões-ano de carros da FIPE desde 2009: listagem completa (80 marcas; as
   outras 28 da FIPE não têm modelo de 2009 em diante), 5.021 versões e 17.754 versões-ano. Os preços
@@ -31,7 +31,7 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 - Busca pelo chassi (VIN): fabricante, país e ano-modelo decodificados no navegador; modelo e
   motor pela NHTSA vPIC quando ela conhece o veículo. O resultado vira filtros.
 
-**Consulta FIPE**
+**Consulta FIPE** (`?view=consulta`)
 
 - Cascata referência → marca → linha → modelo ↔ ano (o ano pode vir antes do modelo), ou busca
   direta pelo código FIPE (tenta carros, motos e caminhões). O 0 km aparece como "0 km".
@@ -86,7 +86,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.555 versões, 577 modelos (4.493 com foto) |
+| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.764 versões com foto (4.826 com modelo) |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -142,6 +142,11 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   parênteses e sem o código de chassi ("BMW i3 (2013)", "Defender L663"), e a FIPE é lida também
   pelos apelidos de BMW ("320iA" → Série 3) e Land Rover ("Defe.", "Discov."). A página descreve a
   linha, não a versão.
+- **Reserva:** as linhas que não casam com o Wikidata (Fiat Punto, Iveco Daily, Citroën Basalt…)
+  buscam o artigo "Marca Linha" na Wikipedia (pt, depois en) e, por último, um arquivo no Commons;
+  só vale um título com a marca e o nome da linha. Ficam de fora marcas que são palavras comuns
+  (Wake, Baby, Rely…) e linhas de uma letra. O resultado fica em `data/wikidata/fallback.json`
+  ("nada" também, para não buscar de novo); apague uma entrada para buscá-la outra vez.
 
 ### Senatran (frota em circulação)
 

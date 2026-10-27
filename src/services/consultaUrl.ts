@@ -61,6 +61,11 @@ const consultaKeys = [
   "fipeAno",
 ];
 
+/** Whether the URL carries a consultation (a link shared from the Consulta FIPE). */
+export function hasConsultaParams(params: URLSearchParams): boolean {
+  return consultaKeys.some((key) => params.has(key));
+}
+
 /** Removes the consultation, e.g. while the catalog view owns the URL. */
 export function clearConsultaParams(params: URLSearchParams): void {
   for (const key of consultaKeys) params.delete(key);
