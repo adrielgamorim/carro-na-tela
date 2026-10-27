@@ -177,7 +177,7 @@ com uma trava contra execuções simultâneas e log em `logs/daily-<data>.log`.
   chaves dos segredos `FIPE_TOKEN*`, guarda `.cache/` no cache do Actions para a varredura
   continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Se uma fonte falhar,
   as outras são publicadas e a execução fica marcada como falha. Uma vez,
-  `scripts/setup-github-daily.ps1` grava os segredos, publica a semente do cache (release
+  `scripts/setup-github-daily.sh` grava os segredos, publica a semente do cache (release
   `cache-semente`) e cria o ruleset do `main` que deixa a Action publicar.
 - **No Windows:** `npm run schedule:daily` agenda às 03:00; `npm run unschedule:daily` remove. Não
   use os dois ao mesmo tempo: eles dividem a cota das chaves.
