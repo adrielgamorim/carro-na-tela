@@ -11,8 +11,9 @@ on:
     - cron: "0 6 * * *" # 03:00 em Brasília
   workflow_dispatch:
 
+# Pushes go through the deploy key; the token only reads.
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: daily
@@ -23,7 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 330
     steps:
+      # The deploy key (scripts/setup-github-daily.sh) is the ruleset's exception
+      # that lets this job push the data to main.
       - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.DAILY_DEPLOY_KEY }}
       - uses: actions/setup-node@v4
         with:
           node-version: 24

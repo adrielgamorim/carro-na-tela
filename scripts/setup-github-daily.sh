@@ -8,9 +8,13 @@
 #    valores vão direto do arquivo para o gh; nada é exibido).
 # 2. Publica o cache local da FIPE (.cache/fipe, só respostas públicas da API)
 #    na release "cache-semente", de onde a Action parte na primeira execução.
-# 3. Troca a proteção clássica do main por um ruleset com as mesmas regras
+# 3. Cria uma deploy key (chave SSH só deste repositório, com escrita) e guarda
+#    a parte privada no segredo DAILY_DEPLOY_KEY: é com ela que a Action
+#    publica os dados. A chave privada não fica em disco.
+# 4. Troca a proteção clássica do main por um ruleset com as mesmas regras
 #    (exigir o check "check", bloquear force push e exclusão) e duas exceções:
-#    a GitHub Actions, para publicar os dados, e o administrador do repositório.
+#    deploy keys (a da Action) e o administrador do repositório. Em conta
+#    pessoal o GitHub não aceita a própria GitHub Actions como exceção.
 
 set -euo pipefail
 repo="adrielgamorim/carro-na-tela"
@@ -38,18 +42,30 @@ else
 fi
 rm -f "$seed"
 
-# 3. Ruleset do main (15368 = GitHub Actions; 5 = papel de administrador)
+# 3. Deploy key da Action
+if "$gh" repo deploy-key list --repo "$repo" | grep -q "atualizacao-diaria"; then
+  echo "Deploy key atualizacao-diaria já existe."
+else
+  keydir=$(mktemp -d)
+  ssh-keygen -q -t ed25519 -N "" -C "atualizacao-diaria" -f "$keydir/key"
+  "$gh" repo deploy-key add "$keydir/key.pub" --repo "$repo" --title atualizacao-diaria --allow-write
+  "$gh" secret set DAILY_DEPLOY_KEY --repo "$repo" < "$keydir/key"
+  rm -rf "$keydir"
+fi
+
+# 4. Ruleset do main (5 = papel de administrador; 15368 = app da GitHub Actions, dono do check)
 if "$gh" api "repos/$repo/rulesets" --jq '.[].name' | grep -qx main; then
   echo "Ruleset main já existe."
 else
-  "$gh" api -X POST "repos/$repo/rulesets" --input - > /dev/null <<'JSON'
+  # A resposta só aparece se der erro (o detalhe do 422, por exemplo).
+  if ! out=$("$gh" api -X POST "repos/$repo/rulesets" --input - 2>&1 <<'JSON'
 {
   "name": "main",
   "target": "branch",
   "enforcement": "active",
   "conditions": { "ref_name": { "include": ["~DEFAULT_BRANCH"], "exclude": [] } },
   "bypass_actors": [
-    { "actor_id": 15368, "actor_type": "Integration", "bypass_mode": "always" },
+    { "actor_id": null, "actor_type": "DeployKey", "bypass_mode": "always" },
     { "actor_id": 5, "actor_type": "RepositoryRole", "bypass_mode": "always" }
   ],
   "rules": [
@@ -65,10 +81,14 @@ else
   ]
 }
 JSON
+  ); then
+    echo "$out"
+    exit 1
+  fi
   echo "Ruleset main criado."
 fi
 if "$gh" api "repos/$repo/branches/main/protection" > /dev/null 2>&1; then
   "$gh" api -X DELETE "repos/$repo/branches/main/protection"
   echo "Proteção clássica do main removida (o ruleset a substitui)."
 fi
-echo "Pronto: segredos, semente do cache e ruleset do main configurados."
+echo "Pronto: segredos, semente do cache, deploy key e ruleset do main configurados."
