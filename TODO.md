@@ -8,9 +8,7 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Inicializar o repositório git e decidir o que versionar: `data/` (41 MB, incluindo os PDFs
-      do INMETRO) e `public/catalog/` são gerados. Opções: versionar só os `overrides.json` e
-      publicar o índice como artefato, ou usar Git LFS.
+- [ ] 🔴 Criar o repositório remoto (GitHub) e enviar o `main`. Hoje o git é só local.
 - [ ] 🔴 CI (GitHub Actions): lint, `tsc -b`, testes e build em cada push.
 - [ ] 🔴 Publicar o site (Cloudflare Pages, por exemplo) e o Worker do proxy numa rota do domínio,
       gerando o build com `VITE_FIPE_API_URL`.
@@ -57,6 +55,10 @@ disponibilidade dela.
 Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
+
+- [x] Repositório git local (`main`), com tudo versionado menos o que o `.gitignore` exclui (`.env`,
+      `node_modules`, `.cache`, `dist`, `logs`): `data/` (45 MB, PDFs do INMETRO) e
+      `public/catalog/` entram, porque o maior arquivo tem 6,4 MB e o índice publicado precisa deles.
 
 - [x] README e limpeza do template do Vite.
 - [x] `App.tsx` (~1.200 linhas) quebrado em hooks e componentes; `useFipeCatalog` com
