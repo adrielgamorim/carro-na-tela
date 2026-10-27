@@ -69,10 +69,10 @@ export function vinProblem(vin: string): string | null {
 export function vinCheckDigitValid(vin: string): boolean {
   let sum = 0;
   for (let index = 0; index < 17; index++) {
-    const char = vin[index];
+    const char = vin[index] ?? "";
     const value = /\d/.test(char) ? Number(char) : transliteration[char];
     if (value === undefined) return false;
-    sum += value * weights[index];
+    sum += value * (weights[index] ?? 0);
   }
   const expected = sum % 11 === 10 ? "X" : String(sum % 11);
   return vin[8] === expected;
@@ -84,9 +84,9 @@ export function vinCheckDigitValid(vin: string): boolean {
  * elsewhere the most recent year up to next year is taken.
  */
 export function vinModelYear(vin: string, now = new Date()): number | null {
-  const index = yearCodes.indexOf(vin[9]);
+  const index = yearCodes.indexOf(vin[9] ?? "");
   if (index < 0) return null;
-  if (/[1-5]/.test(vin[0])) return 1980 + index + (/\d/.test(vin[6]) ? 0 : 30);
+  if (/^[1-5]/.test(vin)) return 1980 + index + (/\d/.test(vin[6] ?? "") ? 0 : 30);
   const latest = now.getFullYear() + 1;
   let year = 1980 + index;
   while (year + 30 <= latest) year += 30;
@@ -95,8 +95,8 @@ export function vinModelYear(vin: string, now = new Date()): number | null {
 
 function inRange(code: string, from: string, to: string): boolean {
   if (code[0] !== from[0]) return false;
-  const position = rangeOrder.indexOf(code[1]);
-  return position >= rangeOrder.indexOf(from[1]) && position <= rangeOrder.indexOf(to[1]);
+  const position = rangeOrder.indexOf(code[1] ?? "");
+  return position >= rangeOrder.indexOf(from[1] ?? "") && position <= rangeOrder.indexOf(to[1] ?? "");
 }
 
 export function decodeVin(file: WmiFile, vin: string, now = new Date()): VinInfo {

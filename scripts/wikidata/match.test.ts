@@ -3,7 +3,7 @@ import { createWikidataMatcher, parseSparqlModels } from "./match.ts";
 import type { WikidataModel } from "./match.ts";
 
 function model(id: string, names: string[], extra: Partial<WikidataModel> = {}): WikidataModel {
-  return { id, label: names[0], names, labelCount: 1, brands: [], image: `${id}.jpg`, ...extra };
+  return { id, label: names[0] ?? id, names, labelCount: 1, brands: [], image: `${id}.jpg`, ...extra };
 }
 
 describe("createWikidataMatcher", () => {

@@ -76,11 +76,11 @@ describe("matchFleet", () => {
       ["Tiggo 7", 8, 5],
       ["Golf", 7, 6],
     ]);
-    expect(match.lines[1].years).toEqual({ "2020": 100, "2021": 50 });
+    expect(match.lines[1]?.years).toEqual({ "2020": 100, "2021": 50 });
     // Per state: Onix leads in SP, Gol in RJ.
-    expect(match.lines[0].states).toEqual({ RJ: [200, 1], SP: [100, 2] });
-    expect(match.lines[1].states).toEqual({ RJ: [10, 2], SP: [140, 1] });
-    expect(match.lines[2].states).toBeUndefined();
+    expect(match.lines[0]?.states).toEqual({ RJ: [200, 1], SP: [100, 2] });
+    expect(match.lines[1]?.states).toEqual({ RJ: [10, 2], SP: [140, 1] });
+    expect(match.lines[2]?.states).toBeUndefined();
   });
 
   it("gives brands that share a line the same one", () => {

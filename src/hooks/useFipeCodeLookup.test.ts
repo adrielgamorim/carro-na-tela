@@ -56,7 +56,7 @@ describe("useFipeCodeLookup", () => {
   });
 
   it("loads directly when the code has a single year, without refetching", async () => {
-    api.fetchYearsByFipeCode.mockResolvedValue([years[0]]);
+    api.fetchYearsByFipeCode.mockResolvedValue([years[0]!]);
     const onVehicleLoaded = vi.fn();
     const { result } = renderHook(() => useFipeCodeLookup("338", onVehicleLoaded));
 

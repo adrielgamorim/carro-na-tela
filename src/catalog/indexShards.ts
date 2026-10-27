@@ -3,6 +3,7 @@
 // so it loads the slice of that brand (tens of KB) instead of the whole
 // index (megabytes).
 
+import { at } from "./indexFormat.ts";
 import type { CatalogIndexFile, WireVersion } from "./indexFormat.ts";
 import type { VehicleCategory } from "../types/vehicle.ts";
 
@@ -29,11 +30,13 @@ export function brandShardPath(category: VehicleCategory, brand: string): string
 export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIndexFile> {
   const groups = new Map<string, WireVersion[]>();
   for (const version of file.versions) {
-    const path = brandShardPath(file.snapshots[version.s].category, file.brands[version.b].name);
+    const brand = at(file.brands, version.b, "marca");
+    const path = brandShardPath(at(file.snapshots, version.s, "snapshot").category, brand.name);
     const group = groups.get(path) ?? [];
-    if (group.length && group[0].b !== version.b) {
+    const first = group[0];
+    if (first && first.b !== version.b) {
       throw new Error(
-        `Marcas "${file.brands[group[0].b].name}" e "${file.brands[version.b].name}" geram o mesmo arquivo ${path}`,
+        `Marcas "${at(file.brands, first.b, "marca").name}" e "${brand.name}" geram o mesmo arquivo ${path}`,
       );
     }
     group.push(version);
@@ -57,10 +60,10 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
     const shardVersions = versions.map((version) => {
       const copy: WireVersion = { ...version, b: 0 };
       if (version.w !== undefined && file.models) {
-        copy.w = remap(modelIndex, version.w, () => models.push(file.models![version.w!]), () => models.length);
+        copy.w = remap(modelIndex, version.w, () => models.push(at(file.models!, version.w!, "modelo")), () => models.length);
       }
       if (version.p !== undefined && file.fleet) {
-        copy.p = remap(lineIndex, version.p, () => lines.push(file.fleet!.lines[version.p!]), () => lines.length);
+        copy.p = remap(lineIndex, version.p, () => lines.push(at(file.fleet!.lines, version.p!, "linha da frota")), () => lines.length);
       }
       return copy;
     });
@@ -69,7 +72,7 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
       version: 2,
       generatedAt: file.generatedAt,
       snapshots: file.snapshots,
-      brands: [file.brands[versions[0].b]],
+      brands: [at(file.brands, versions[0]!.b, "marca")],
       fuels: file.fuels,
       versions: shardVersions,
       ...(file.models && { models }),

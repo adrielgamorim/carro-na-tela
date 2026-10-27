@@ -69,6 +69,7 @@ export async function enrichVehicle(
   const outcome: EnrichmentOutcome = { data: {}, errors: {} };
   settled.forEach((result, index) => {
     const key = keys[index];
+    if (key === undefined) return;
     if (result.status === "fulfilled") {
       (outcome.data as Record<EnrichmentKey, unknown>)[key] = result.value;
     } else if (!isAbortError(result.reason)) {

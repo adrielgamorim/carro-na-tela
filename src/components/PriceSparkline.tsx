@@ -28,7 +28,9 @@ export function PriceSparkline({ history }: PriceSparklineProps) {
     .map((item) => ({ ...item, value: parseFipePrice(item.price) }))
     .filter((item) => item.value > 0);
 
-  if (points.length < 2) return null;
+  const first = points[0];
+  const last = points.at(-1);
+  if (points.length < 2 || !first || !last) return null;
 
   const values = points.map((point) => point.value);
   const min = Math.min(...values);
@@ -45,8 +47,6 @@ export function PriceSparkline({ history }: PriceSparklineProps) {
     .map((point, index) => `${index === 0 ? "M" : "L"}${x(index).toFixed(1)},${y(point.value).toFixed(1)}`)
     .join(" ");
 
-  const first = points[0];
-  const last = points[points.length - 1];
   const change = ((last.value - first.value) / first.value) * 100;
   const shown = active === null ? null : points[active];
   const marker = active ?? points.length - 1;
@@ -107,7 +107,7 @@ export function PriceSparkline({ history }: PriceSparklineProps) {
           aria-hidden="true"
           style={{
             left: `${(x(marker) / width) * 100}%`,
-            top: `${(y(points[marker].value) / height) * 100}%`,
+            top: `${(y((points[marker] ?? last).value) / height) * 100}%`,
           }}
         />
       </div>

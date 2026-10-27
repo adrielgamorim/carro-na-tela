@@ -183,7 +183,7 @@ describe("buildCatalogIndex", () => {
     const old = vehicle({ id: "21-13:2015-5", modelCode: "13", model: "PULSE OLD 1.0 Aut.", yearCode: "2015-5", modelYear: 2015 });
     const file = buildCatalogIndex([snapshot("338", [pulse, old])], { pbev });
 
-    expect(file.snapshots[0].inmetroMatched).toBe(1);
+    expect(file.snapshots[0]?.inmetroMatched).toBe(1);
     expect(file.versions.find((version) => version.m === "13")?.i).toBeUndefined();
 
     const entry = expandCatalogIndex(file).entries.find((item) => item.modelCode === "12");
@@ -259,7 +259,7 @@ describe("buildCatalogIndex", () => {
     expect(table("2")).toBe(2018);
     // No table covers 2011–2013 here.
     expect(table("3")).toBeUndefined();
-    expect(file.snapshots[0].inmetroMatched).toBe(2);
+    expect(file.snapshots[0]?.inmetroMatched).toBe(2);
   });
 
   it("applies manual overrides: force a row, skip tables or block", () => {
@@ -326,11 +326,11 @@ describe("buildCatalogIndex", () => {
       "Ajuste sem linha no INMETRO 2026: CRETA Nope (para Creta Pulse 1.6 16V Flex Aut.)",
     ]);
 
-    const skipped = buildCatalogIndex([snapshot("338", [vehicles[1]])], {
+    const skipped = buildCatalogIndex([snapshot("338", [vehicles[1]!])], {
       pbev: [row(2026, "Smart", "1.6-16V"), row(2024, "Smart", "1.6-16V")],
       overrides: [{ brand: "Hyundai", modelPrefix: "Creta Smart", skipTables: [2026] }],
     });
-    expect(skipped.versions[0].i?.table).toBe(2024);
+    expect(skipped.versions[0]?.i?.table).toBe(2024);
   });
 
   it("ignores older snapshots of the same category", () => {

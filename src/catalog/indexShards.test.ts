@@ -63,11 +63,11 @@ describe("brand slices", () => {
     // A slice expands to the same entries as the whole index.
     const whole = expandCatalogIndex(file).entries.filter((entry) => entry.brand === "Fiat");
     expect(expandCatalogIndex(fiat).entries).toEqual(whole);
-    expect(whole[0].fleet).toMatchObject({ lineCount: 3, line: { family: "ARGO", rank: 3 } });
+    expect(whole[0]?.fleet).toMatchObject({ lineCount: 3, line: { family: "ARGO", rank: 3 } });
   });
 
   it("refuses two brands that would share a file", () => {
-    const clash = { ...file, brands: [file.brands[0], { code: "99", name: "FIAT" }] };
+    const clash = { ...file, brands: [file.brands[0]!, { code: "99", name: "FIAT" }] };
     expect(() => splitCatalogIndex(clash)).toThrow(/mesmo arquivo/);
   });
 });
@@ -93,7 +93,7 @@ describe("loadCatalogIndexFor", () => {
     expect(findCatalogEntry(index!, vehicle as never)?.wikidata?.label).toBe("Fiat Argo");
     await loadCatalogIndexFor({ category: "cars", brand: "Fiat" });
     expect(fetch).toHaveBeenCalledTimes(1);
-    expect(fetch.mock.calls[0][0]).toMatch(/catalog\/marcas\/cars-fiat\.json$/);
+    expect(fetch.mock.calls[0]?.[0]).toMatch(/catalog\/marcas\/cars-fiat\.json$/);
 
     await expect(loadCatalogIndexFor({ category: "motorcycles", brand: "Honda" })).resolves.toBeNull();
   });

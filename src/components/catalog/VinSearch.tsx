@@ -123,7 +123,7 @@ function VinDetails({
           : vehicle
             ? "Modelo e detalhes pela NHTSA (vPIC), que cobre veículos vendidos nos EUA."
             : "A NHTSA (EUA) não tem o modelo deste chassi, o que é comum em veículos fabricados no Brasil: confira a versão pelos filtros."}
-        {!info.checkDigitValid && info.vin[0] >= "1" && info.vin[0] <= "5" && (
+        {!info.checkDigitValid && /^[1-5]/.test(info.vin) && (
           <> O dígito verificador (9º caractere) não confere: revise o chassi digitado.</>
         )}
       </p>

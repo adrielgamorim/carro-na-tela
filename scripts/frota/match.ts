@@ -121,7 +121,7 @@ export function matchFleet(
       // Short families must end at a word boundary: "UP" is not "UPGRADE".
       let letters = 0;
       for (let index = 0; index < text.length; index++) {
-        if (/[A-Z0-9]/.test(text[index])) letters++;
+        if (/[A-Z0-9]/.test(text[index] ?? "")) letters++;
         if (letters === family.length) return !/[A-Z0-9]/.test(text[index + 1] ?? " ");
       }
       return false;
@@ -165,7 +165,8 @@ export function matchFleet(
       .filter(({ count }) => count > 0)
       .sort((a, b) => b.count - a.count)
       .forEach(({ index, count }, position) => {
-        (lines[index].states ??= {})[state] = [count, position + 1];
+        const line = lines[index];
+        if (line) (line.states ??= {})[state] = [count, position + 1];
       });
   }
   for (const line of lines) {

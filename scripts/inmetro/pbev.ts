@@ -179,7 +179,8 @@ for (const [year, layout] of Object.entries(pbevLayouts)) {
 }
 
 /** Kept for the 2026 tests and callers that only need that year. */
-export const pbevColumns = pbevLayouts[2026].columns as Record<Column, number>;
+// The 2026 layout is defined above.
+export const pbevColumns = pbevLayouts[2026]!.columns as Record<Column, number>;
 
 // A cell belongs to a column only this close to its center; everything else
 // (emissions, ratings…) is ignored.
@@ -280,7 +281,7 @@ export function parseTransmission(text: string): {
   if (!kind) return { transmission: null, gears: null };
   const gears = Number(/(\d+)\s*$/.exec(cleaned)?.[1] ?? Number.NaN);
   return {
-    transmission: transmissionKinds[kind],
+    transmission: transmissionKinds[kind] ?? null,
     // Single-speed (electric) reductions are not "gears" for filtering.
     gears: gears > 1 ? gears : null,
   };
@@ -416,8 +417,11 @@ function fillMergedCategories(rows: ParsedRow[], lines: PdfTextLine[], layout: P
   );
 
   for (const group of groups) {
-    const first = order(group[0].page, group[0].y);
-    const last = order(group.at(-1)!.page, group.at(-1)!.y);
+    const head = group[0];
+    const tail = group.at(-1);
+    if (!head || !tail) continue;
+    const first = order(head.page, head.y);
+    const last = order(tail.page, tail.y);
     const own = group.map((row) => row.cells.get("category")).find(Boolean);
     const label =
       own ?? labels.find((item) => item.key >= first - wrapDistance * 2 && item.key <= last + wrapDistance * 2)?.text;
@@ -431,7 +435,7 @@ function fillMergedCategories(rows: ParsedRow[], lines: PdfTextLine[], layout: P
 export function toPbevRow(
   cells: Map<Column, string>,
   table: number,
-  layout: PbevLayout = pbevLayouts[table] ?? pbevLayouts[2026],
+  layout: PbevLayout = pbevLayouts[table] ?? pbevLayouts[2026]!,
 ): PbevRow | null {
   const brand = cells.get("brand");
   const model = cells.get("model");

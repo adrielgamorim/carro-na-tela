@@ -147,10 +147,12 @@ describe("parsePbevLines", () => {
 });
 
 describe("older table layouts", () => {
-  const layout2013 = pbevLayouts[2013].columns as Record<string, number | number[]>;
-  const at = (column: string, part = 0) => {
+  const layout2013 = pbevLayouts[2013]!.columns as Record<string, number | number[]>;
+  const at = (column: string, part = 0): number => {
     const centers = layout2013[column];
-    return Array.isArray(centers) ? centers[part] : centers;
+    const center = Array.isArray(centers) ? centers[part] : centers;
+    if (center === undefined) throw new Error(`Coluna ${column} fora do layout 2013`);
+    return center;
   };
   const row2013 = (y: number, brand: string, model: string, cityGas: string): PdfTextLine =>
     line(1, y, [
@@ -203,28 +205,28 @@ describe("older table layouts", () => {
   });
 
   it("reads decimal points, guesses propulsion from names and drops implausible values", () => {
-    const columns2024 = pbevLayouts[2024].columns as Record<string, number>;
+    const columns2024 = pbevLayouts[2024]!.columns as Record<string, number>;
     const [ev] = parsePbevLines(
       [
         line(1, 300, [
-          [columns2024.brand, "BYD"],
-          [columns2024.model, "DOLPHIN"],
-          [columns2024.engine, "Elétrico"],
-          [columns2024.propulsion, "Elétrico"],
-          [columns2024.fuel, "E"],
-          [columns2024.electricCity, "58.6"],
-          [columns2024.electricHighway, "999.9"],
+          [columns2024.brand!, "BYD"],
+          [columns2024.model!, "DOLPHIN"],
+          [columns2024.engine!, "Elétrico"],
+          [columns2024.propulsion!, "Elétrico"],
+          [columns2024.fuel!, "E"],
+          [columns2024.electricCity!, "58.6"],
+          [columns2024.electricHighway!, "999.9"],
         ]),
       ],
       2024,
     );
-    expect(ev.consumption).toMatchObject({ electricCity: 58.6, electricHighway: null });
+    expect(ev?.consumption).toMatchObject({ electricCity: 58.6, electricHighway: null });
 
     const [hybrid] = parsePbevLines(
       [{ ...row2013(300, "TOYOTA", "Prius", "18,9"), cells: [...row2013(300, "TOYOTA", "Prius", "18,9").cells, { center: at("version"), text: "Hybrid" }] }],
       2013,
     );
-    expect(hybrid.propulsion).toBe("hibrido");
+    expect(hybrid?.propulsion).toBe("hibrido");
     expect(parseNumber("1.234,5")).toBe(1234.5);
     expect(parseNumber("47.3")).toBe(47.3);
   });

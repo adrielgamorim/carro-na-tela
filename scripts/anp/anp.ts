@@ -42,10 +42,10 @@ export function parseAnpCsv(text: string): AnpSample[] {
     const columns = line.split(";");
     if (columns.length < 16) continue;
     const end = columns.length;
-    const uf = columns[1].trim();
-    const fuel = products[columns[end - 6].trim()];
-    const week = surveyWeek(columns[end - 5].trim());
-    const price = Number(columns[end - 4].trim().replace(",", "."));
+    const uf = (columns[1] ?? "").trim();
+    const fuel = products[(columns[end - 6] ?? "").trim()];
+    const week = surveyWeek((columns[end - 5] ?? "").trim());
+    const price = Number((columns[end - 4] ?? "").trim().replace(",", "."));
     if (!isUf(uf) || !fuel || !week || !(price > 0)) continue;
     samples.push({ uf, fuel, week, price });
   }

@@ -271,7 +271,7 @@ describe("groupCatalog", () => {
       ["mini-0km", "mini-2025"],
       ["song-2026"],
     ]);
-    expect(groupCatalog(entries, "price-desc")[0].key).toBe("cars:238:000-2");
+    expect(groupCatalog(entries, "price-desc")[0]?.key).toBe("cars:238:000-2");
     // Groups sort by their newest entry's price, the one the card shows.
     const cheaperOldYear = [
       version({ id: "a-0km", codeFipe: "a", zeroKm: true, modelYear: null, priceValue: 110 }),
@@ -282,7 +282,7 @@ describe("groupCatalog", () => {
       "cars:238:b",
       "cars:238:a",
     ]);
-    expect(groupCatalog(entries, "newest")[0].key).toBe("cars:238:000-1");
+    expect(groupCatalog(entries, "newest")[0]?.key).toBe("cars:238:000-1");
     expect(groupCatalog(entries, "name").map((group) => group.key)).toEqual([
       "cars:238:000-1",
       "cars:238:000-2",

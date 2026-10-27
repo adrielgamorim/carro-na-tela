@@ -17,7 +17,7 @@ export function parseFipeYearCode(code: string): FipeYearCode | null {
   const match = /^(\d{4,5})-(\d+)$/.exec(code);
   if (!match) return null;
 
-  return { modelYear: Number(match[1]), fuelCode: match[2] };
+  return { modelYear: Number(match[1]), fuelCode: match[2] ?? "" };
 }
 
 export function parseFipePrice(price: string): number {

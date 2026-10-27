@@ -56,7 +56,7 @@ beforeEach(() => {
     { code: "2012-5", name: "2012 Flex" },
   ]);
   api.fetchYears.mockResolvedValue([{ code: "2012-5", name: "2012 Flex" }]);
-  api.fetchModelsByBrandYear.mockResolvedValue([models[1]]);
+  api.fetchModelsByBrandYear.mockResolvedValue([models[1]!]);
   api.fetchVehicleDetail.mockResolvedValue(vehicle);
 });
 

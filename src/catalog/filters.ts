@@ -281,9 +281,13 @@ export function catalogBounds(entries: CatalogEntry[]): CatalogBounds {
 }
 
 /** One FIPE version (brand + model code) with all its model years, newest first. */
+/** Entries never empty: a group exists because it has an entry. */
+export type NonEmpty<T> = [T, ...T[]];
+
 export interface CatalogGroup {
   key: string;
-  entries: CatalogEntry[];
+  /** Newest year first. */
+  entries: NonEmpty<CatalogEntry>;
 }
 
 export function groupCatalog(
@@ -298,9 +302,9 @@ export function groupCatalog(
     else groups.set(key, [entry]);
   }
 
-  const result = [...groups].map(([key, items]) => ({
+  const result = [...groups].map(([key, items]): CatalogGroup => ({
     key,
-    entries: [...items].sort((left, right) => entryYear(right) - entryYear(left)),
+    entries: [...items].sort((left, right) => entryYear(right) - entryYear(left)) as NonEmpty<CatalogEntry>,
   }));
   // Sort by the newest entry, which is the one a card shows first; versions
   // without a crawled price go last either way.

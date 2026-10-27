@@ -155,7 +155,8 @@ export function CompareTable({
   }, [onClose]);
 
   const settings = useCostSettings();
-  const allRows = [rows[0], ...costRows(settings), ...rows.slice(1)];
+  // The price first, then the costs, then the rest.
+  const allRows = [...rows.slice(0, 1), ...costRows(settings), ...rows.slice(1)];
   const columns = comparison.map((vehicle) => ({ vehicle, entry: entryFor(vehicle) }));
   const visibleRows = allRows.filter((row) =>
     columns.some(({ vehicle, entry }) => row.value(vehicle, entry) !== null),

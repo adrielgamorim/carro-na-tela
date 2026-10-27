@@ -34,7 +34,7 @@ const months = [
 export function fleetFileMonth(name: string): { key: string; label: string } | null {
   const match = /marca_e_modelo_ano_([a-zç]+)_(\d{4})\.zip$/i.exec(name);
   if (!match) return null;
-  const month = months.indexOf(match[1].toLowerCase().replace("ç", "c"));
+  const month = months.indexOf((match[1] ?? "").toLowerCase().replace("ç", "c"));
   if (month < 0) return null;
   const label = month === 2 ? "março" : months[month];
   return { key: `${match[2]}-${String(month + 1).padStart(2, "0")}`, label: `${label} de ${match[2]}` };
@@ -53,15 +53,15 @@ export function createFleetCounter() {
   function addLine(line: string) {
     const fields = line.split(";");
     if (fields.length < 5) return;
-    const name = fields[2].trim().replace(/\s+/g, " ");
-    const year = fields[3].trim();
-    const count = Number(fields[4].trim());
+    const name = (fields[2] ?? "").trim().replace(/\s+/g, " ");
+    const year = (fields[3] ?? "").trim();
+    const count = Number((fields[4] ?? "").trim());
     if (!name || !Number.isFinite(count) || count <= 0 || !/^\d{4}$/.test(year)) return;
     lines++;
     let years = models.get(name);
     if (!years) models.set(name, (years = new Map()));
     years.set(year, (years.get(year) ?? 0) + count);
-    const state = stateCodes[fields[0].trim()];
+    const state = stateCodes[(fields[0] ?? "").trim()];
     if (state) {
       let byState = states.get(name);
       if (!byState) states.set(name, (byState = new Map()));

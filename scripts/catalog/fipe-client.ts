@@ -105,6 +105,13 @@ export function createFipeClient(options: FipeClientOptions) {
   let remaining: number | undefined;
   let lastRequestAt = 0;
 
+  /** The key in use (the last one once every key is used up). */
+  function currentKey(): FipeKey {
+    const key = keys[Math.min(keyIndex, keys.length - 1)];
+    if (!key) throw new Error("Nenhuma chave da FIPE configurada");
+    return key;
+  }
+
   function switchKey(reason: string) {
     keyIndex += 1;
     remaining = undefined;
@@ -114,7 +121,7 @@ export function createFipeClient(options: FipeClientOptions) {
         keys.length > 1 ? `${reason}; no keys left` : reason,
       );
     }
-    options.onKeyChange?.(keys[keyIndex], reason);
+    options.onKeyChange?.(currentKey(), reason);
   }
 
   function cacheFile(path: string, reference: string | undefined) {
@@ -162,14 +169,14 @@ export function createFipeClient(options: FipeClientOptions) {
       const keep = () => (keyIndex === keys.length - 1 ? reserve : 0);
       while (remaining !== undefined && remaining <= keep()) {
         switchKey(
-          `${keys[keyIndex].label}: daily limit ${remaining > 0 ? "nearly " : ""}reached (${remaining} left, reserve ${keep()})`,
+          `${currentKey().label}: daily limit ${remaining > 0 ? "nearly " : ""}reached (${remaining} left, reserve ${keep()})`,
         );
       }
 
       await throttle();
       requests += 1;
 
-      const { token } = keys[keyIndex];
+      const { token } = currentKey();
       let response: Response;
       try {
         response = await fetchImpl(url, {
@@ -191,11 +198,11 @@ export function createFipeClient(options: FipeClientOptions) {
       if (remainingHeader !== null) remaining = Number(remainingHeader);
 
       if (response.status === 429) {
-        switchKey(`${keys[keyIndex].label}: FIPE API answered 429`);
+        switchKey(`${currentKey().label}: FIPE API answered 429`);
         continue;
       }
       if ((response.status === 401 || response.status === 403) && token) {
-        switchKey(`${keys[keyIndex].label}: key rejected (${response.status})`);
+        switchKey(`${currentKey().label}: key rejected (${response.status})`);
         continue;
       }
       if (response.status === 404) {
@@ -227,7 +234,7 @@ export function createFipeClient(options: FipeClientOptions) {
       cacheHits,
       cacheMisses,
       remaining,
-      key: keys[Math.min(keyIndex, keys.length - 1)].label,
+      key: currentKey().label,
       keysUsed: Math.min(keyIndex + 1, keys.length),
     }),
   };

@@ -199,7 +199,7 @@ describe("assembleSnapshot", () => {
       id: "21-11:2024-5",
       detail: null,
     });
-    expect(snapshot.vehicles[2].attributes).toMatchObject({
+    expect(snapshot.vehicles[2]?.attributes).toMatchObject({
       aspiration: "turbo",
       transmission: "automatico",
     });

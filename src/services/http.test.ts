@@ -63,7 +63,7 @@ describe("requestJson", () => {
     const request = requestJson("FIPE", "u", { fetch, timeoutMs: 1000 });
     vi.advanceTimersByTime(1000);
     await expect(request).rejects.toMatchObject({ kind: "timeout" });
-    const init = vi.mocked(fetch).mock.calls[0][1];
+    const init = vi.mocked(fetch).mock.calls[0]?.[1];
     expect(init?.signal?.aborted).toBe(true);
   });
 
@@ -142,7 +142,7 @@ describe("createRequestCache", () => {
     controller.abort();
 
     await expect(first).rejects.toMatchObject({ kind: "aborted" });
-    expect(signals[0].aborted).toBe(true);
+    expect(signals[0]?.aborted).toBe(true);
     expect(cache.size()).toBe(0);
     await expect(cache.get("k", load)).resolves.toBe("second");
   });

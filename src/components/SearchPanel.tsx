@@ -30,7 +30,7 @@ function joinLabels(steps: CatalogStep[]): string {
   const labels = steps.map((step) => stepLabels[step]);
   return labels.length > 1
     ? `${labels.slice(0, -1).join(", ")} e ${labels.at(-1)}`
-    : labels[0];
+    : (labels[0] ?? "");
 }
 
 interface SearchPanelProps {

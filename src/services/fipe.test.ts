@@ -83,7 +83,7 @@ describe("FIPE model families", () => {
     ];
 
     expect(getModelFamilies(models)).toEqual(["EcoSport", "Focus"]);
-    expect(getModelFamily(models[1].name)).toBe("EcoSport");
+    expect(getModelFamily(models[1]!.name)).toBe("EcoSport");
   });
 
   it("matches model families without case-sensitive duplicates", () => {

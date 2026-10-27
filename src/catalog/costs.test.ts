@@ -69,11 +69,11 @@ describe("costPerKm", () => {
   it("weighs city and highway like INMETRO's combined figure", () => {
     const cost = costPerKm(spec({}), prices);
     // Gasoline: 1 / (0.55/12.8 + 0.45/14.3) = 13.44 km/l → R$ 6 / 13.44.
-    expect(cost?.options[0].fuel).toBe("gasolina");
-    expect(cost?.options[0].perKm).toBeCloseTo(0.4464, 3);
+    expect(cost?.options[0]?.fuel).toBe("gasolina");
+    expect(cost?.options[0]?.perKm).toBeCloseTo(0.4464, 3);
     // Ethanol: 1 / (0.55/9 + 0.45/10.3) = 9.55 km/l → R$ 4 / 9.55.
     expect(cost?.options[1]).toMatchObject({ fuel: "etanol" });
-    expect(cost?.options[1].perKm).toBeCloseTo(0.4188, 3);
+    expect(cost?.options[1]?.perKm).toBeCloseTo(0.4188, 3);
     expect(cost?.best.fuel).toBe("etanol");
   });
 

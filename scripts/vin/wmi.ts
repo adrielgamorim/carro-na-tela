@@ -43,19 +43,19 @@ export function parseWmiRows(wikitext: string): WmiRow[] {
   for (const line of section(wikitext, "==List of common WMI==", "==See also==").split("\n")) {
     if (!line.startsWith("|") || !line.includes("||")) continue;
     const cells = line.slice(1).split("||");
-    const codes = cells[0].trim().split(/[\s,/]+/).filter((code) => /^[A-Z0-9]{2,3}$/.test(code));
+    const codes = (cells[0] ?? "").trim().split(/[\s,/]+/).filter((code) => /^[A-Z0-9]{2,3}$/.test(code));
     if (!codes.length) continue;
 
     let maker: string;
     if (cells.length >= 3) {
-      const span = /^\s*row\s*span\s*=\s*["“”]?(\d+)["“”]?\s*\|(.*)$/i.exec(cells[1]);
-      country = cleanWikiText(span ? span[2] : cells[1]) || null;
+      const span = /^\s*row\s*span\s*=\s*["“”]?(\d+)["“”]?\s*\|(.*)$/i.exec(cells[1] ?? "");
+      country = cleanWikiText((span ? span[2] : cells[1]) ?? "") || null;
       spanLeft = span ? Number(span[1]) - 1 : 0;
       maker = cells.slice(2).join("||");
     } else {
       if (spanLeft > 0) spanLeft--;
       else country = null;
-      maker = cells[1];
+      maker = cells[1] ?? "";
     }
     rows.push({ codes, country, maker: cleanWikiText(maker) });
   }
@@ -68,6 +68,7 @@ export function parseCountryRanges(wikitext: string): [string, string, string][]
   const ranges: [string, string, string][] = [];
   const pattern = /'''([A-Z0-9]{2})(?:\s*[-–]\s*([A-Z0-9]{2}))?'''\s*([^<\n]+)/g;
   for (const [, from, to, country] of text.matchAll(pattern)) {
+    if (!from || !country) continue;
     const name = cleanWikiText(country);
     if (name) ranges.push([from, to ?? from, name]);
   }

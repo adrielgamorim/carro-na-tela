@@ -100,7 +100,7 @@ export function useFipeCodeLookup(
         request.year && found.years.some((item) => item.code === request.year)
           ? request.year
           : found.years.length === 1
-            ? found.years[0].code
+            ? (found.years[0]?.code ?? "")
             : "";
       if (!year) {
         setState((current) => ({

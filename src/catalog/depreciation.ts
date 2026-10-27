@@ -20,7 +20,8 @@ export function versionDepreciation(
     .sort((a, b) => a.modelYear - b.modelYear);
   if (priced.length < 2) return null;
   const oldest = priced[0];
-  const newest = priced[priced.length - 1];
+  const newest = priced.at(-1);
+  if (!oldest || !newest) return null;
   const years = newest.modelYear - oldest.modelYear;
   if (years < 1) return null;
   const perYear = 1 - (oldest.price / newest.price) ** (1 / years);

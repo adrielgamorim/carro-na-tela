@@ -63,7 +63,7 @@ const dir = "public/brands";
 await rm(dir, { recursive: true, force: true });
 await mkdir(dir, { recursive: true });
 for (const key of brandIconKeys) {
-  const icon = (icons as unknown as Record<string, SimpleIcon>)[exportOf[key]];
+  const icon = (icons as unknown as Record<string, SimpleIcon>)[exportOf[key] ?? ""];
   if (!icon) throw new Error(`Simple Icons não tem ${exportOf[key]} (${key})`);
   await writeFile(
     `${dir}/${key}.svg`,
