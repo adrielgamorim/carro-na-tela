@@ -1,0 +1,107 @@
+# Daily catalog update (npm run daily) on GitHub's runners instead of a local
+# PC: crawl the FIPE with the keys in the repository secrets, refresh the
+# fleet, fuel prices and the index, then commit the data to main.
+#
+# The FIPE answers (.cache/fipe) and the Senatran zip (.cache/frota) are kept
+# in the Actions cache between runs, so the crawl resumes where it stopped.
+name: Atualização diária
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # 03:00 em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+
+      - name: Restaurar o cache da FIPE e da frota
+        id: restore
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache
+          key: daily-${{ github.run_id }}
+          restore-keys: daily-
+
+      # The snapshot is rebuilt from the whole cache: an empty one would restart
+      # the crawl from scratch. The first run (or one after the cache expires,
+      # 7 days unused) starts from the seed attached to the "cache-semente" release.
+      - name: Semente do cache da FIPE
+        if: steps.restore.outputs.cache-matched-key == ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download cache-semente --pattern fipe-cache.tar.gz --dir "$RUNNER_TEMP"
+          mkdir -p .cache
+          tar -xzf "$RUNNER_TEMP/fipe-cache.tar.gz" -C .cache
+
+      - name: Atualização diária
+        id: daily
+        # One source failing (e.g. gov.br refusing the runner) must not keep
+        # the others from being published; the run is marked failed at the end.
+        continue-on-error: true
+        env:
+          FIPE_TOKEN: ${{ secrets.FIPE_TOKEN }}
+          FIPE_TOKEN1: ${{ secrets.FIPE_TOKEN1 }}
+          FIPE_TOKEN2: ${{ secrets.FIPE_TOKEN2 }}
+          FIPE_TOKEN3: ${{ secrets.FIPE_TOKEN3 }}
+          FIPE_TOKEN4: ${{ secrets.FIPE_TOKEN4 }}
+          FIPE_TOKEN5: ${{ secrets.FIPE_TOKEN5 }}
+          FIPE_TOKEN6: ${{ secrets.FIPE_TOKEN6 }}
+          FIPE_TOKEN7: ${{ secrets.FIPE_TOKEN7 }}
+          FIPE_TOKEN8: ${{ secrets.FIPE_TOKEN8 }}
+        run: |
+          # A lock left by a killed run would make this one skip.
+          rm -f .cache/daily.lock
+          node scripts/catalog/daily.ts
+
+      - name: Guardar o cache
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: .cache
+          key: daily-${{ github.run_id }}
+
+      - name: Conferir o build com os dados novos
+        run: npm run build
+
+      - name: Publicar os dados no main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data public/catalog
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git commit -m "Atualização diária $(date -u +%Y-%m-%d)"
+          git push
+
+      - name: Log da execução
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: daily-log
+          path: logs/
+          retention-days: 14
+
+      - name: Falha em alguma fonte
+        if: steps.daily.outcome == 'failure'
+        run: |
+          echo "::error::Alguma etapa do daily falhou; veja o log (artefato daily-log)."
+          exit 1

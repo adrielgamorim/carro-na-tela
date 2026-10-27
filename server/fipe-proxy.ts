@@ -14,6 +14,12 @@ export interface ProxyCache {
 export interface FipeProxyOptions {
   /** Subscription token sent upstream; never exposed to the browser. */
   token?: string;
+  /**
+   * Tokens tried in order (see proxyTokensFromEnv): one that hits its daily
+   * limit (429) or is refused (401/403) gives way to the next, and the
+   * anonymous access comes last. Takes precedence over `token`.
+   */
+  tokens?: string[];
   /** Origins allowed to call the proxy cross-origin; "*" allows any. */
   allowedOrigins?: string[];
   cache?: ProxyCache;
@@ -43,6 +49,25 @@ const allowedRoutes = [
 ].map((route) => new RegExp(`^${route}$`));
 
 const day = 24 * 60 * 60;
+
+/**
+ * The proxy's keys from the environment: FIPE_PROXY_TOKEN, FIPE_TOKEN, then
+ * FIPE_TOKEN<n> from the highest number down. The crawler uses the numbered
+ * keys from the lowest up, so both only meet on a key near the end of its
+ * daily quota.
+ */
+export function proxyTokensFromEnv(env: Record<string, unknown>): string[] {
+  const numbered = Object.keys(env)
+    .filter((name) => /^FIPE_TOKEN\d+$/.test(name))
+    .sort((left, right) => Number(right.slice(10)) - Number(left.slice(10)));
+  const tokens: string[] = [];
+  for (const name of ["FIPE_PROXY_TOKEN", "FIPE_TOKEN", ...numbered]) {
+    const value = env[name];
+    const token = typeof value === "string" ? value.trim() : "";
+    if (token && !tokens.includes(token)) tokens.push(token);
+  }
+  return tokens;
+}
 
 /** Seconds a successful answer may be cached. */
 export function cacheSeconds(path: string, reference: string | null): number {
@@ -75,16 +100,27 @@ function json(status: number, body: unknown, headers: Record<string, string> = {
 
 export function createFipeProxy(options: FipeProxyOptions = {}) {
   const {
-    token,
     allowedOrigins = [],
     cache,
     timeoutMs = 15_000,
     waitUntil,
   } = options;
   const fetchImpl = options.fetch ?? fetch;
+  // undefined = anonymous, always the last resort.
+  const keys: (string | undefined)[] = [
+    ...(options.tokens ?? (options.token ? [options.token] : [])),
+    undefined,
+  ];
+  // Shared by every request: once a key is used up, the next ones skip it.
+  let current = 0;
 
   /** `path` is relative to the proxy mount, e.g. "/cars/brands?reference=338". */
-  return async function handle(request: Request, path: string): Promise<Response> {
+  return async function handle(
+    request: Request,
+    path: string,
+    /** Per-request override of options.waitUntil (one Worker context per request). */
+    call: { waitUntil?: (promise: Promise<unknown>) => void } = {},
+  ): Promise<Response> {
     const cors = corsHeaders(request.headers.get("Origin"), allowedOrigins);
     if (request.method === "OPTIONS") {
       return new Response(null, { status: 204, headers: cors });
@@ -124,14 +160,22 @@ export function createFipeProxy(options: FipeProxyOptions = {}) {
     }
 
     let upstream: Response;
-    try {
-      upstream = await fetchImpl(upstreamUrl, {
-        headers: token ? { "X-Subscription-Token": token } : {},
-        signal: AbortSignal.timeout(timeoutMs),
-      });
-    } catch (error) {
-      const timedOut = error instanceof Error && error.name === "TimeoutError";
-      return json(timedOut ? 504 : 502, { error: "FIPE indisponível" }, cors);
+    for (;;) {
+      const key = current;
+      const token = keys[key];
+      try {
+        upstream = await fetchImpl(upstreamUrl, {
+          headers: token ? { "X-Subscription-Token": token } : {},
+          signal: AbortSignal.timeout(timeoutMs),
+        });
+      } catch (error) {
+        const timedOut = error instanceof Error && error.name === "TimeoutError";
+        return json(timedOut ? 504 : 502, { error: "FIPE indisponível" }, cors);
+      }
+      const keyUsedUp = upstream.status === 429 || upstream.status === 401 || upstream.status === 403;
+      if (!keyUsedUp || key >= keys.length - 1) break;
+      // Another request may have moved on already.
+      if (current === key) current = key + 1;
     }
 
     if (!upstream.ok) {
@@ -154,7 +198,8 @@ export function createFipeProxy(options: FipeProxyOptions = {}) {
         }),
       );
       // The Worker finishes the write after responding; Node servers just wait.
-      if (waitUntil) waitUntil(write);
+      const finish = call.waitUntil ?? waitUntil;
+      if (finish) finish(write);
       else await write;
     }
     return new Response(request.method === "HEAD" ? null : body, {

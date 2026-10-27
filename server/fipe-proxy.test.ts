@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from "vitest";
-import { cacheSeconds, createFipeProxy, createMemoryCache } from "./fipe-proxy.ts";
+import { cacheSeconds, createFipeProxy, createMemoryCache, proxyTokensFromEnv } from "./fipe-proxy.ts";
 
 function upstream(status = 200, body: unknown = [{ code: "21", name: "Fiat" }], headers = {}) {
   return vi.fn(async () => new Response(JSON.stringify(body), { status, headers })) as unknown as typeof fetch;
@@ -133,5 +133,48 @@ describe("createMemoryCache", () => {
     expect(await (await cache.match(key))?.text()).toBe("1");
     now = 10_000;
     expect(await cache.match(key)).toBeUndefined();
+  });
+});
+
+describe("proxy keys", () => {
+  it("orders the proxy key, the main key, then numbered keys from the highest", () => {
+    expect(
+      proxyTokensFromEnv({
+        FIPE_TOKEN1: "one",
+        FIPE_TOKEN10: "ten",
+        FIPE_TOKEN2: " two ",
+        FIPE_TOKEN: "main",
+        FIPE_PROXY_TOKEN: "proxy",
+        FIPE_TOKEN3: "",
+        FIPE_TOKEN4: "ten",
+        OTHER: "x",
+      }),
+    ).toEqual(["proxy", "main", "ten", "two", "one"]);
+  });
+
+  it("moves to the next key on 429 or rejection, ends anonymous, and remembers it", async () => {
+    const sent: (string | null)[] = [];
+    const statuses = [429, 403, 200, 200];
+    const fetch = vi.fn(async (_url: string, init?: RequestInit) => {
+      sent.push(new Headers(init?.headers).get("X-Subscription-Token"));
+      const status = statuses.shift() ?? 200;
+      return new Response(status === 200 ? "[]" : "{}", { status });
+    });
+    const handle = createFipeProxy({ tokens: ["a", "b"], fetch: fetch as typeof globalThis.fetch });
+
+    expect((await handle(new Request("http://x/"), "/references")).status).toBe(200);
+    expect(sent).toEqual(["a", "b", null]);
+    // The used-up keys stay skipped.
+    await handle(new Request("http://x/"), "/cars/brands");
+    expect(sent).toEqual(["a", "b", null, null]);
+  });
+
+  it("passes the anonymous 429 through when every key is used up", async () => {
+    const fetch = vi.fn(async () => new Response("{}", { status: 429, headers: { "Retry-After": "60" } }));
+    const handle = createFipeProxy({ tokens: ["a"], fetch: fetch as typeof globalThis.fetch });
+    const response = await handle(new Request("http://x/"), "/references");
+    expect(response.status).toBe(429);
+    expect(response.headers.get("Retry-After")).toBe("60");
+    expect(fetch).toHaveBeenCalledTimes(2);
   });
 });

@@ -2,17 +2,18 @@ import type { Connect, Plugin } from "vite";
 import { createFipeProxy, createMemoryCache } from "./fipe-proxy.ts";
 
 interface FipeProxyPluginOptions {
-  token?: string;
+  /** Keys in the order they are tried (proxyTokensFromEnv). */
+  tokens?: string[];
   /** Path the app calls; must match VITE_FIPE_API_URL (default "/api/fipe"). */
   mount?: string;
 }
 
 /** Serves the FIPE proxy on the Vite dev and preview servers. */
 export function fipeProxyPlugin({
-  token,
+  tokens,
   mount = "/api/fipe",
 }: FipeProxyPluginOptions = {}): Plugin {
-  const handle = createFipeProxy({ token, cache: createMemoryCache() });
+  const handle = createFipeProxy({ tokens, cache: createMemoryCache() });
 
   // Connect strips the mount path from req.url, leaving "/cars/brands?…".
   const middleware: Connect.NextHandleFunction = async (req, res, next) => {

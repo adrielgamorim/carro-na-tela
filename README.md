@@ -170,8 +170,17 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
 
 ### Atualização automática
 
-`npm run daily` roda varredura, frota, índice e ANP (e Wikidata e WMI quando têm mais de 30 dias), com uma trava contra execuções simultâneas e
-log em `logs/daily-<data>.log`. `npm run schedule:daily` agenda no Windows às 03:00.
+`npm run daily` roda varredura, frota, índice e ANP (e Wikidata e WMI quando têm mais de 30 dias),
+com uma trava contra execuções simultâneas e log em `logs/daily-<data>.log`.
+
+- **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda às 03:00 (Brasília) com as
+  chaves dos segredos `FIPE_TOKEN*`, guarda `.cache/` no cache do Actions para a varredura
+  continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Se uma fonte falhar,
+  as outras são publicadas e a execução fica marcada como falha. Uma vez,
+  `scripts/setup-github-daily.ps1` grava os segredos, publica a semente do cache (release
+  `cache-semente`) e cria o ruleset do `main` que deixa a Action publicar.
+- **No Windows:** `npm run schedule:daily` agenda às 03:00; `npm run unschedule:daily` remove. Não
+  use os dois ao mesmo tempo: eles dividem a cota das chaves.
 
 ## Proxy da FIPE e publicação
 
@@ -180,8 +189,9 @@ as rotas de leitura que o app usa e guarda as respostas em cache. Dados de um m�
 não mudam, então ficam 30 dias no cache; a lista de referências, 6 horas.
 
 - **Dev e `npm run preview`:** o proxy roda dentro do servidor do Vite (`server/vite-plugin.ts`),
-  com cache em memória, usando `FIPE_PROXY_TOKEN` ou, sem ela, `FIPE_TOKEN`. Uma chave só para o
-  proxy evita que o site consuma a cota do crawler.
+  com cache em memória. Ele tenta `FIPE_PROXY_TOKEN`, `FIPE_TOKEN` e as numeradas da maior para a
+  menor (o crawler usa da menor para a maior), passando para a próxima em 429 ou chave recusada e
+  terminando no acesso anônimo. Uma chave só para o proxy evita dividir a cota com o crawler.
 - **Produção:** Cloudflare Worker em `worker/index.ts` (configuração em `wrangler.toml`):
 
   ```bash

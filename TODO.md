@@ -10,14 +10,6 @@ disponibilidade dela.
 
 - [ ] 🔴 Publicar o site (Cloudflare Pages, por exemplo) e o Worker do proxy numa rota do domínio,
       gerando o build com `VITE_FIPE_API_URL`.
-- [ ] 🟡 Levar o `npm run daily` para fora do Windows (GitHub Action agendada ou servidor), com o
-      índice publicado a cada execução. Hoje depende do PC ligado às 03:00.
-- [ ] 🟡 Proxy sem chave: ele usa `FIPE_PROXY_TOKEN` ou `FIPE_TOKEN`, mas o `.env` só tem
-      `FIPE_TOKEN1..6`, então o site consulta a FIPE como anônimo (500/dia). Aceitar as chaves
-      numeradas, com rodízio, ou definir uma chave própria para o proxy.
-
-### Dados
-
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
 - [ ] 🟡 Melhorar a cobertura de fotos: 732 de 5.021 versões não casam com o Wikidata (Land Rover
@@ -56,6 +48,12 @@ disponibilidade dela.
 Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
+
+- [x] Daily no GitHub Actions (`.github/workflows/daily.yml`, 03:00): cache da varredura no Actions,
+      semente na release `cache-semente`, dados commitados no `main`. Configuração única em
+      `scripts/setup-github-daily.ps1` (segredos, semente, ruleset com exceção para a Action).
+- [x] Proxy com rodízio de chaves: `FIPE_PROXY_TOKEN`, `FIPE_TOKEN` e as numeradas da maior para a
+      menor, passando para a próxima em 429/401/403 e terminando no anônimo; no Vite e no Worker.
 
 - [x] Repositório no GitHub (`adrielgamorim/carro-na-tela`, público), com autoria pelo e-mail
       privado do GitHub (noreply).
