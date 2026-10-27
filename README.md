@@ -17,9 +17,9 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 **Catálogo** (`?view=catalogo`)
 
-- Índice estático das versões-ano de carros da FIPE desde 2009, ainda em construção: 80 de 108
-  marcas listadas (5.021 versões, 17.754 versões-ano), preços em 24% delas. Versões sem preço têm
-  "Consultar preço", que busca ao vivo.
+- Índice estático das versões-ano de carros da FIPE desde 2009: listagem completa (80 marcas; as
+  outras 28 da FIPE não têm modelo de 2009 em diante), 5.021 versões e 17.754 versões-ano. Os preços
+  ainda estão em 25% delas; versões sem preço têm "Consultar preço", que busca ao vivo.
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
@@ -77,7 +77,7 @@ npm run unschedule:daily # remove a tarefa agendada
 
 | Fonte | O que traz | Script | Frequência | Cobertura hoje |
 |---|---|---|---|---|
-| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | 80 de 108 marcas listadas; 24% com preço |
+| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
 | Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.289 versões, 562 modelos |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
@@ -230,6 +230,6 @@ Vitest 5 com jsdom e Testing Library, ESLint 10. Os scripts rodam com o TypeScri
 As pendências estão em [TODO.md](TODO.md), por área e prioridade. As principais:
 
 - Publicar: repositório git, CI, deploy do site e do Worker, daily fora do Windows.
-- Dados: completar a listagem e os preços da varredura (semanas) e pôr o Catálogo como aba inicial.
+- Dados: completar os preços da varredura (semanas) e pôr o Catálogo como aba inicial.
 - Qualidade: testes de ponta a ponta e CSS separado por componente.
 - Produto: motos e caminhões no catálogo.

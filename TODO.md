@@ -20,7 +20,10 @@ disponibilidade dela.
 
 ### Dados
 
-- [ ] 🔴 Completar a listagem (80 de 108 marcas) e depois os preços (24% hoje; semanas de varredura).
+- [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
+      marcas da FIPE que faltam não têm modelo de 2009 em diante.
+- [ ] 🟡 Melhorar a cobertura de fotos: 732 de 5.021 versões não casam com o Wikidata (Land Rover
+      137, BMW 102, Iveco 58, Citroën 45) e 62 casam com modelos sem foto.
 - [ ] 🟡 Catálogo como aba inicial quando a cobertura de preços for boa.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
@@ -55,6 +58,10 @@ disponibilidade dela.
 Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
+
+- [x] Aviso "Catálogo em construção" e o selo "80 de 108 marcas" mostravam a listagem como
+      incompleta, comparando com marcas que a FIPE só tem antes de 2009. Agora dependem só de
+      `listingComplete`.
 
 - [x] Repositório git local (`main`), com tudo versionado menos o que o `.gitignore` exclui (`.env`,
       `node_modules`, `.cache`, `dist`, `logs`): `data/` (45 MB, PDFs do INMETRO) e

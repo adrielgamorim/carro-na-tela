@@ -10,11 +10,12 @@ function capitalize(text: string): string {
 export function CatalogHeading({ index }: { index: CatalogIndex }) {
   const entries = index.entries;
   const snapshot = index.snapshots.find((item) => item.category === "cars");
-  const partialListing =
-    snapshot !== undefined &&
-    (!snapshot.listingComplete ||
-      (snapshot.availableBrands !== null &&
-        snapshot.brands.length < snapshot.availableBrands));
+  // FIPE lists brands that stopped selling long before the crawl's first
+  // year (Gurgel, Lada…), so fewer brands than FIPE has is not a gap: only an
+  // unfinished listing is.
+  const partialListing = snapshot !== undefined && !snapshot.listingComplete;
+  // "80 de 108 marcas" is progress while listing; afterwards it only confuses.
+  const brandTotal = partialListing ? (snapshot?.availableBrands ?? null) : null;
   const partialPrices = snapshot !== undefined && snapshot.priced < snapshot.listed;
   const pricedShare = snapshot?.listed
     ? Math.round((100 * snapshot.priced) / snapshot.listed)
@@ -49,9 +50,8 @@ export function CatalogHeading({ index }: { index: CatalogIndex }) {
               </strong>
               <small className="stamp-detail">
                 {snapshot.brands.length}
-                {snapshot.availableBrands !== null &&
-                  ` de ${snapshot.availableBrands}`}{" "}
-                {snapshot.brands.length === 1 && snapshot.availableBrands === null
+                {brandTotal !== null && ` de ${brandTotal}`}{" "}
+                {snapshot.brands.length === 1 && brandTotal === null
                   ? "marca"
                   : "marcas"}{" "}
                 · {entries.length} versões-ano
