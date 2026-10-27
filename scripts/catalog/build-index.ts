@@ -19,6 +19,7 @@ import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
+import type { FallbackFile } from "../wikidata/fallback.ts";
 
 const { values } = parseArgs({
   options: {
@@ -67,6 +68,9 @@ const wikidata = await readFile(join(wikidataDir, "models.json"), "utf8")
     overrides: await readFile(join(wikidataDir, "overrides.json"), "utf8")
       .then((file) => (JSON.parse(file) as { overrides: WikidataOverride[] }).overrides)
       .catch(() => [] as WikidataOverride[]),
+    fallback: await readFile(join(wikidataDir, "fallback.json"), "utf8")
+      .then((file) => JSON.parse(file) as FallbackFile)
+      .catch(() => ({}) as FallbackFile),
   }))
   .catch(() => undefined);
 if (!wikidata) console.log(`Sem modelos do Wikidata em ${wikidataDir}; rode npm run fetch:wikidata.`);

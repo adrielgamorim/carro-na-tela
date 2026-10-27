@@ -92,7 +92,7 @@ function nameKeys(
   const keys: { key: string; derived: boolean }[] = [];
   const plain = words(name.replace(/\s*\([^)]*\)/g, ""));
   const variants = [words(name), plain];
-  if (plain.length > 1 && chassisCode.test(plain[plain.length - 1])) variants.push(plain.slice(0, -1));
+  if (plain.length > 1 && chassisCode.test(plain.at(-1) ?? "")) variants.push(plain.slice(0, -1));
   variants.forEach((variant, index) => {
     for (const key of variantKeys(variant, brandWords, brandListed)) {
       if (!keys.some((item) => item.key === key)) keys.push({ key, derived: index > 0 });
@@ -116,7 +116,7 @@ function variantKeys(nameWords: string[], brandWords: string[][], brandListed: b
   // "Mercedes-Benz C-Class" is sold as "C-200", "C-180"…
   for (const key of [...keys]) {
     const series = /^(.+?)(CLASS|KLASSE|CLASSE)$/.exec(key);
-    if (series) keys.push(series[1]);
+    if (series?.[1]) keys.push(series[1]);
   }
   return keys;
 }
@@ -150,12 +150,16 @@ function rank(candidates: Candidate[], years: number[]): WikidataModel {
     candidate.model.image ? 1 : 0,
     candidate.model.ptwiki ? 1 : 0,
   ];
-  return [...candidates].sort((left, right) => {
+  const [best] = [...candidates].sort((left, right) => {
     const a = score(left);
     const b = score(right);
     const index = a.findIndex((value, position) => value !== b[position]);
-    return index === -1 ? left.model.id.localeCompare(right.model.id) : b[index] - a[index];
-  })[0].model;
+    return index === -1
+      ? left.model.id.localeCompare(right.model.id)
+      : (b[index] ?? 0) - (a[index] ?? 0);
+  });
+  if (!best) throw new Error("rank() sem candidatos");
+  return best.model;
 }
 
 // BMW engine suffixes ("320iA", "118d") are not body variants like "HB20S".
@@ -178,13 +182,13 @@ export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] 
   const aliases: string[][] = [];
   if (brand === "BMW") {
     const series = /^(\d)\d\d[A-Z]*$/.exec(fipeWords[0] ?? "");
-    if (series) aliases.push(["SERIE", series[1], ...fipeWords.slice(1)]);
+    if (series?.[1]) aliases.push(["SERIE", series[1], ...fipeWords.slice(1)]);
   }
   if (brand === "Land Rover") {
     const expanded = fipeWords.flatMap((word, index) => {
       if (word === "R" && fipeWords[index - 1] === "RANGE") return ["ROVER"];
       const number = /^(DISCOVERY)(\d)$/.exec(word);
-      if (number) return [number[1], number[2]];
+      if (number?.[1] && number[2]) return [number[1], number[2]];
       return landRoverWords[word] ?? [word];
     });
     // Word by word: "DISCOVERY4" → "DISCOVERY 4" compacts to the same text.
@@ -194,6 +198,21 @@ export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] 
 }
 
 const lower = (text: string) => text.replace(/\s+/g, " ").trim().toLocaleLowerCase("pt-BR");
+
+/** The manual correction that applies to a FIPE version, if any. */
+export function findWikidataOverride(
+  overrides: WikidataOverride[],
+  version: Pick<FipeVersionForWikidata, "brand" | "model">,
+): WikidataOverride | undefined {
+  const name = lower(version.model);
+  return overrides.find(
+    (item) =>
+      lower(item.brand) === lower(version.brand) &&
+      (item.model
+        ? lower(item.model) === name
+        : item.modelPrefix !== undefined && name.startsWith(lower(item.modelPrefix))),
+  );
+}
 
 export function createWikidataMatcher(
   models: WikidataModel[],
@@ -239,14 +258,7 @@ export function createWikidataMatcher(
   }
 
   return function match(version: FipeVersionForWikidata): WikidataModel | null {
-    const name = lower(version.model);
-    const override = overrides.find(
-      (item) =>
-        lower(item.brand) === lower(version.brand) &&
-        (item.model
-          ? lower(item.model) === name
-          : item.modelPrefix !== undefined && name.startsWith(lower(item.modelPrefix))),
-    );
+    const override = findWikidataOverride(overrides, version);
     if (override) return override.id ? (byId.get(override.id) ?? null) : null;
 
     const keys = keysFor(version.brand);
@@ -264,7 +276,7 @@ export function createWikidataMatcher(
     // A letter glued to the model: "HB20S", "HB20X" → "HB20".
     const glued = /^(.*\d)([A-Z]{1,2})$/.exec(fipeWords[0] ?? "");
     const candidates =
-      glued && !engineSuffixes.has(glued[2]) ? keys.get(glued[1]) : undefined;
+      glued && !engineSuffixes.has(glued[2] ?? "") ? keys.get(glued[1] ?? "") : undefined;
     return candidates ? rank(candidates, version.years) : null;
   };
 }
@@ -282,11 +294,12 @@ export function parseSparqlModels(rows: Record<string, SparqlValue | undefined>[
   for (const row of rows) {
     const id = row.m!.value.split("/").pop()!;
     const labels = [row.pt?.value, row.en?.value].filter((label): label is string => !!label);
-    if (labels.length === 0) continue;
+    const [label] = labels;
+    if (!label) continue;
     const names = [...new Set([...labels, ...list(row.aliases)])];
     const model: WikidataModel = {
       id,
-      label: labels[0],
+      label,
       names,
       labelCount: new Set(labels).size,
       brands: list(row.brands),

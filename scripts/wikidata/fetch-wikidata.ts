@@ -13,7 +13,10 @@ import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
 import type { CrawlSnapshot } from "../catalog/catalog-index.ts";
-import { createWikidataMatcher, parseSparqlModels } from "./match.ts";
+import { getModelFamily } from "../../src/services/fipeParsing.ts";
+import { fallbackKey, findFallback } from "./fallback.ts";
+import type { FallbackFile } from "./fallback.ts";
+import { createWikidataMatcher, findWikidataOverride, parseSparqlModels } from "./match.ts";
 import type { WikidataModel, WikidataOverride } from "./match.ts";
 import type { WikidataDetails } from "./details.ts";
 import { versionYears } from "./details.ts";
@@ -29,6 +32,7 @@ const { values } = parseArgs({
 const headers = { "User-Agent": "carro-na-tela/0.1 (catálogo FIPE local)" };
 const modelsFile = join(values.out, "models.json");
 const detailsFile = join(values.out, "details.json");
+const fallbackFile = join(values.out, "fallback.json");
 
 // Car models (Q3231690) and car model series (Q59773381: Golf, Uno, Hilux…).
 // Listing the ids is cheap; their data comes in batches, since one query for
@@ -104,7 +108,7 @@ async function loadModels(): Promise<WikidataModel[]> {
   console.log("Consultando o Wikidata…");
   const ids = new Set<string>();
   for (const wikidataClass of classes) {
-    for (const row of await sparql(idsQuery(wikidataClass))) ids.add(row.m.value.split("/").pop()!);
+    for (const row of await sparql(idsQuery(wikidataClass))) ids.add(row.m!.value.split("/").pop()!);
   }
   const rows: SparqlRow[] = [];
   const list = [...ids];
@@ -158,11 +162,17 @@ for (const snapshot of selectLatestSnapshots(snapshots)) {
   }
 }
 let matched = 0;
+// Lines with no Wikidata model, for the Wikipedia/Commons fallback. A manual
+// "none" means no picture on purpose, so those are left out.
+const unmatchedLines = new Map<string, { brand: string; family: string }>();
 for (const version of versions.values()) {
   const model = match(version);
   if (model) {
     matched += 1;
     used.set(model.id, model);
+  } else if (!findWikidataOverride(overrides, version)?.none) {
+    const family = getModelFamily(version.model);
+    unmatchedLines.set(fallbackKey(version.brand, family), { brand: version.brand, family });
   }
 }
 console.log(`${matched} de ${versions.size} versões FIPE casadas com ${used.size} modelos`);
@@ -249,3 +259,37 @@ for (const model of missing) {
 
 await writeFile(detailsFile, `${JSON.stringify(details, null, 1)}\n`);
 console.log(`Detalhes em ${detailsFile}: ${Object.keys(details).length} modelos`);
+
+// Fallback: each line is searched once; "nothing fits" (null) is kept too.
+const fallback: FallbackFile = await readFile(fallbackFile, "utf8")
+  .then((text) => JSON.parse(text) as FallbackFile)
+  .catch(() => ({}));
+const toSearch = [...unmatchedLines].filter(([key]) => !(key in fallback));
+console.log(
+  `Reserva (Wikipedia/Commons): ${unmatchedLines.size} linhas sem modelo, ${toSearch.length} para buscar`,
+);
+// Up to six requests per line: spaced out, since Wikimedia answers bursts
+// with a minute-long 429.
+const politeGetJson = async <T,>(url: string): Promise<T> => {
+  await wait(700);
+  return getJson<T>(url);
+};
+const saveFallback = () => writeFile(fallbackFile, `${JSON.stringify(fallback, null, 1)}\n`);
+let searched = 0;
+for (const [key, { brand, family }] of toSearch) {
+  try {
+    fallback[key] = await findFallback(politeGetJson, brand, family);
+  } catch (error) {
+    // Not saved: tried again on the next run.
+    console.warn(`Aviso: reserva de ${brand} ${family}: ${(error as Error).message}`);
+  }
+  searched += 1;
+  // Saved as it goes: an interrupted run keeps what it found.
+  if (searched % 10 === 0) {
+    await saveFallback();
+    console.log(`  ${searched} de ${toSearch.length}`);
+  }
+}
+await saveFallback();
+const found = [...unmatchedLines.keys()].filter((key) => fallback[key]).length;
+console.log(`Reserva em ${fallbackFile}: ${found} de ${unmatchedLines.size} linhas com foto`);

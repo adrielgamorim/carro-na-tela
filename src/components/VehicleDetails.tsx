@@ -7,7 +7,7 @@ import {
   transmissionLabels,
 } from "../catalog/labels";
 import { costPerKm, estimateIpva, formatIpva, formatPerKm } from "../catalog/costs";
-import { wikidataUrl } from "../catalog/wikidata";
+import { isWikidataItem, wikidataUrl } from "../catalog/wikidata";
 import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
@@ -47,7 +47,10 @@ function ModelInfo({ model }: { model: CatalogModelInfo }) {
       <div className="price-history-heading">
         <div>
           <h4>Sobre o modelo · {model.label}</h4>
-          <p>Wikipedia e Wikidata · linha do modelo, não esta versão exata</p>
+          <p>
+            {isWikidataItem(model.id) ? "Wikipedia e Wikidata" : model.wikipedia ? "Wikipedia" : "Wikimedia Commons"}{" "}
+            · linha do modelo, não esta versão exata
+          </p>
         </div>
       </div>
       <div className="model-info-body">
@@ -69,9 +72,11 @@ function ModelInfo({ model }: { model: CatalogModelInfo }) {
                 Wikipedia
               </a>
             )}
-            <a href={wikidataUrl(model.id)} target="_blank" rel="noreferrer">
-              Wikidata
-            </a>
+            {isWikidataItem(model.id) && (
+              <a href={wikidataUrl(model.id)} target="_blank" rel="noreferrer">
+                Wikidata
+              </a>
+            )}
           </p>
         </div>
       </div>

@@ -2,7 +2,7 @@ import type {
   CatalogIndexFile,
   WireVersion,
 } from "../../src/catalog/indexFormat.ts";
-import { derivePropulsion } from "../../src/catalog/indexFormat.ts";
+import { at, derivePropulsion } from "../../src/catalog/indexFormat.ts";
 import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import type { CatalogSnapshotInfo } from "../../src/catalog/types.ts";
 import type { CatalogFleetLine } from "../../src/catalog/fleet.ts";
@@ -12,7 +12,9 @@ import { matchFleet } from "../frota/match.ts";
 import { createInmetroMatcher } from "../inmetro/match.ts";
 import { toCatalogModel, versionYears } from "../wikidata/details.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
-import { createWikidataMatcher } from "../wikidata/match.ts";
+import { fallbackKey } from "../wikidata/fallback.ts";
+import type { FallbackFile } from "../wikidata/fallback.ts";
+import { createWikidataMatcher, findWikidataOverride } from "../wikidata/match.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import { zeroKmYear } from "./crawl.ts";
 import type { CrawledVehicle, FipeCategory } from "./crawl.ts";
@@ -77,6 +79,8 @@ export interface BuildOptions {
     models: WikidataModel[];
     details?: Record<string, WikidataDetails>;
     overrides?: WikidataOverride[];
+    /** Wikipedia/Commons pictures of lines with no Wikidata model (data/wikidata/fallback.json). */
+    fallback?: FallbackFile;
   };
 }
 
@@ -108,6 +112,7 @@ export function buildCatalogIndex(
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
   const brandIndex = new Map<string, number>();
+  const brandName = (version: WireVersion) => at(brands, version.b, "marca").name;
   const fuels: CatalogIndexFile["fuels"] = {};
   const versions = new Map<string, WireVersion>();
   const infos: CatalogSnapshotInfo[] = [];
@@ -126,7 +131,7 @@ export function buildCatalogIndex(
         brandIndex.set(vehicle.brandCode, brands.length);
         brands.push({ code: vehicle.brandCode, name: vehicle.brand });
       }
-      fuels[vehicle.yearCode.split("-")[1]] ??= vehicle.fuel;
+      fuels[vehicle.yearCode.split("-")[1] ?? ""] ??= vehicle.fuel;
 
       const key = `${snapshotIndex}:${vehicle.brandCode}:${vehicle.modelCode}`;
       let version = versions.get(key);
@@ -160,7 +165,7 @@ export function buildCatalogIndex(
         const years = version.y.map(([yearCode]) => yearRank(yearCode));
         const fuel = versionFuel.get(version) ?? "";
         const attributes = version.a ?? {};
-        const override = findOverride(overrides, brands[version.b].name, version.n);
+        const override = findOverride(overrides, brandName(version), version.n);
         if (override?.none) continue;
         if (override?.use) {
           const { use } = override;
@@ -192,7 +197,7 @@ export function buildCatalogIndex(
           );
           if (!covered) continue;
           const spec = match({
-            brand: brands[version.b].name,
+            brand: brandName(version),
             model: version.n,
             fuel,
             attributes,
@@ -224,7 +229,7 @@ export function buildCatalogIndex(
 
   const sorted = [...versions.values()].sort(
     (left, right) =>
-      brands[left.b].name.localeCompare(brands[right.b].name, "pt-BR") ||
+      brandName(left).localeCompare(brandName(right), "pt-BR") ||
       left.n.localeCompare(right.n, "pt-BR") ||
       left.m.localeCompare(right.m),
   );
@@ -239,16 +244,21 @@ export function buildCatalogIndex(
     const modelIndex = new Map<string, number>();
     for (const version of sorted) {
       const model = match({
-        brand: brands[version.b].name,
+        brand: brandName(version),
         model: version.n,
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
       });
-      if (!model) continue;
-      if (!modelIndex.has(model.id)) {
-        modelIndex.set(model.id, models.length);
-        models.push(toCatalogModel(model, wikidata.details?.[model.id]));
+      const info = model
+        ? toCatalogModel(model, wikidata.details?.[model.id])
+        : findWikidataOverride(wikidata.overrides ?? [], { brand: brandName(version), model: version.n })?.none
+          ? undefined
+          : (wikidata.fallback?.[fallbackKey(brandName(version), getModelFamily(version.n))] ?? undefined);
+      if (!info) continue;
+      if (!modelIndex.has(info.id)) {
+        modelIndex.set(info.id, models.length);
+        models.push(info);
       }
-      version.w = modelIndex.get(model.id);
+      version.w = modelIndex.get(info.id);
     }
   }
 
@@ -256,11 +266,11 @@ export function buildCatalogIndex(
   let fleetLines: CatalogFleetLine[] | undefined;
   if (fleet) {
     const lineOfVersion = (version: WireVersion) =>
-      `${brands[version.b].name}\n${getModelFamily(version.n)}`;
+      `${brandName(version)}\n${getModelFamily(version.n)}`;
     const catalogLines = new Map(
       sorted.map((version) => [
         lineOfVersion(version),
-        { brand: brands[version.b].name, family: getModelFamily(version.n) },
+        { brand: brandName(version), family: getModelFamily(version.n) },
       ]),
     );
     const match = matchFleet(fleet.models, [...catalogLines.values()], fleet.states);

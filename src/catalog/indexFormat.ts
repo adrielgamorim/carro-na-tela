@@ -82,12 +82,23 @@ export function formatFipePrice(value: number): string {
   return currency.format(value).replace(/\s/g, " ");
 }
 
+/**
+ * An item of one of the index's lookup tables. The indexes come from the
+ * build, so a missing one means a broken file: better an error than an
+ * entry with no brand.
+ */
+export function at<T>(list: T[], index: number, what: string): T {
+  const item = list[index];
+  if (item === undefined) throw new Error(`Índice do catálogo corrompido: ${what} ${index} não existe`);
+  return item;
+}
+
 export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
   const entries: CatalogEntry[] = [];
 
   for (const version of file.versions) {
-    const snapshot = file.snapshots[version.s];
-    const brand = file.brands[version.b];
+    const snapshot = at(file.snapshots, version.s, "snapshot");
+    const brand = at(file.brands, version.b, "marca");
     const inmetro = version.i ?? null;
     // Some FIPE names omit the engine size ("PULSE AUDACE Turbo 200");
     // INMETRO writes it as "1.0T-12V".
@@ -124,7 +135,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
     for (const [yearCode, priceValue] of version.y) {
       const [year, fuelCode] = yearCode.split("-");
       const zeroKm = year === "32000";
-      const fuel = file.fuels[fuelCode] ?? "";
+      const fuel = file.fuels[fuelCode ?? ""] ?? "";
       entries.push({
         id: `${brand.code}-${version.m}:${yearCode}`,
         category: snapshot.category,
