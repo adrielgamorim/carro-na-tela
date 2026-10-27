@@ -11,6 +11,7 @@ import {
 } from "../../catalog/labels";
 import { costPerKm, estimateIpva, formatIpva, formatPerKm } from "../../catalog/costs";
 import type { CatalogEntry } from "../../catalog/types";
+import { formatSpec, specLabels } from "../../catalog/wikidata";
 import { formatModelYear } from "../../services/fipeParsing";
 import { useCostSettings } from "../../services/costSettings";
 import type { CostSettings } from "../../services/costSettings";
@@ -91,6 +92,14 @@ const rows: Row[] = [
   { label: "Câmbio", value: (_, entry) => (entry ? transmissionLabel(entry) : null) },
   { label: "Configuração", value: (_, entry) => (entry ? bodyLabel(entry) : null) },
   { label: "Porte", value: (_, entry) => (entry?.size ? sizeLabels[entry.size] : null) },
+  // Approximate: the model line's size and mass (Wikidata).
+  ...(["length", "wheelbase", "mass"] as const).map((key): Row => ({
+    label: specLabels.find(([item]) => item === key)?.[1] ?? key,
+    value: (_, entry) => {
+      const range = entry?.wikidata?.specs?.[key];
+      return range ? formatSpec(key, range) : null;
+    },
+  })),
   {
     label: "Portas",
     value: (_, entry) => (entry?.attributes.doors ? String(entry.attributes.doors) : null),

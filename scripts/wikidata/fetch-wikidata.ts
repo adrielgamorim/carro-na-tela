@@ -15,6 +15,7 @@ import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
 import type { CrawlSnapshot } from "../catalog/catalog-index.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import { fallbackKey, findFallback } from "./fallback.ts";
+import { parseSpecRows, specsQuery } from "./specs.ts";
 import type { FallbackFile, FallbackTitle } from "./fallback.ts";
 import { createWikidataMatcher, findWikidataOverride, parseSparqlModels } from "./match.ts";
 import type { WikidataModel, WikidataOverride } from "./match.ts";
@@ -260,6 +261,18 @@ for (const model of missing) {
 
 await writeFile(detailsFile, `${JSON.stringify(details, null, 1)}\n`);
 console.log(`Detalhes em ${detailsFile}: ${Object.keys(details).length} modelos`);
+
+// Size and mass of the matched models: one small query per 200 models, so
+// they are simply fetched again on every run.
+const specsFile = join(values.out, "specs.json");
+const usedIds = [...used.keys()].sort();
+const specRows = [];
+for (let start = 0; start < usedIds.length; start += 200) {
+  specRows.push(...(await sparql(specsQuery(usedIds.slice(start, start + 200)))));
+}
+const specs = parseSpecRows(specRows);
+await writeFile(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
+console.log(`Dimensões e peso em ${specsFile}: ${Object.keys(specs).length} de ${usedIds.length} modelos`);
 
 // Fallback: each line is searched once; "nothing fits" (null) is kept too.
 const fallback: FallbackFile = await readFile(fallbackFile, "utf8")

@@ -7,7 +7,7 @@ import {
   transmissionLabels,
 } from "../catalog/labels";
 import { costPerKm, estimateIpva, formatIpva, formatPerKm } from "../catalog/costs";
-import { isWikidataItem, wikidataUrl } from "../catalog/wikidata";
+import { formatSpec, isWikidataItem, specLabels, wikidataUrl } from "../catalog/wikidata";
 import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
@@ -170,6 +170,12 @@ function specRows(
       inmetro?.airConditioning === true ? "Sim" : inmetro?.airConditioning === false ? "Não" : null,
     ],
   ];
+  // Size and mass of the model line (Wikidata), approximate for this version.
+  const modelSpecs = enrichment?.data.model?.data.specs;
+  for (const [key, label] of specLabels) {
+    const range = modelSpecs?.[key];
+    if (range) rows.push([label, formatSpec(key, range)]);
+  }
   // IPVA rates are for passenger cars; motorcycles and trucks pay other rates.
   if (vehicle.category === "cars" && vehicle.priceValue > 0) {
     rows.push([
@@ -274,6 +280,7 @@ export function VehicleDetails({
                       inmetro.confidence === "exact" ? "versão exata" : "versão aproximada"
                     } · demais dados do nome FIPE`
                   : "Extraída do nome FIPE; sem dados do INMETRO para esta versão"}
+                {model?.specs && " · ≈ dimensões e peso da linha do modelo (Wikidata)"}
               </p>
             </div>
           </div>

@@ -16,8 +16,9 @@ disponibilidade dela.
       (Hitech Electric, Effa, Hafei Towner, Foton, buggies), além de RAM Dakota, JAC iEV/T5 e BMW 220i.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
-- [ ] 🟢 Fase 4 do plano: potência, torque, dimensões, porta-malas, peso e equipamentos não têm
-      fonte gratuita confiável; só por curadoria manual ou comunitária.
+- [ ] 🟢 Fase 4, o que falta: torque, porta-malas e equipamentos não têm fonte grátis com cobertura útil
+      (o Wikidata tem potência em 6 modelos e quase nada de porta-malas). Próximo passo possível: ler
+      as infobox da Wikipedia (pt/en) para subir a cobertura de dimensões, peso e potência.
 - [ ] 🟢 Avaliar APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ### Produto
@@ -179,6 +180,9 @@ Histórico resumido, em ordem aproximada.
 - [x] INMETRO PBEV 2010–2026: parser por layout de ano, casamento por ano-modelo (~3.000 versões),
       ajustes manuais, filtros de porte, marchas, consumo, direção e ar.
 - [x] ANP: preço médio por estado, semanal, no custo por km.
+- [x] Fase 4, parte 1: dimensões (comprimento, largura, altura, entre-eixos) e peso da linha do modelo
+      pelo Wikidata, com "≈" na ficha e no comparador. Comprimento em 36% das versões, peso em 7%;
+      a potência continua vindo do nome FIPE (16%).
 - [x] Modelos do Wikidata sem foto usam a da linha (Hilux SW4, 911 Targa, Fiesta Sedan, Titano…) e
       fontes escolhidas à mão em `data/wikidata/fallback-titles.json` (Zafira, Sprinter, RAM 2500/3500/
       Classic, GWM Poer, Jinbei Topic, Neta X): versões com foto de 4.764 para 4.864.

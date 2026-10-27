@@ -6,6 +6,7 @@ import { at, derivePropulsion } from "../../src/catalog/indexFormat.ts";
 import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import type { CatalogSnapshotInfo } from "../../src/catalog/types.ts";
 import type { CatalogFleetLine } from "../../src/catalog/fleet.ts";
+import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import { matchFleet } from "../frota/match.ts";
@@ -81,6 +82,8 @@ export interface BuildOptions {
     overrides?: WikidataOverride[];
     /** Wikipedia/Commons pictures of lines with no Wikidata model (data/wikidata/fallback.json). */
     fallback?: FallbackFile;
+    /** Size and mass per model (data/wikidata/specs.json). */
+    specs?: Record<string, ModelSpecs>;
   };
 }
 
@@ -249,7 +252,7 @@ export function buildCatalogIndex(
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
       });
       const fallback = wikidata.fallback?.[fallbackKey(brandName(version), getModelFamily(version.n))] ?? undefined;
-      const fromWikidata = model ? toCatalogModel(model, wikidata.details?.[model.id]) : undefined;
+      const fromWikidata = model ? toCatalogModel(model, wikidata.details?.[model.id], wikidata.specs?.[model.id]) : undefined;
       // A Wikidata model without an image keeps its text and borrows the
       // line's fallback picture.
       const info = fromWikidata

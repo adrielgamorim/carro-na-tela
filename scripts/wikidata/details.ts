@@ -1,5 +1,5 @@
 import { zeroKmYear } from "../catalog/crawl.ts";
-import type { CatalogModelInfo } from "../../src/catalog/wikidata.ts";
+import type { CatalogModelInfo, ModelSpecs } from "../../src/catalog/wikidata.ts";
 import type { WikidataModel } from "./match.ts";
 
 /** What fetch-wikidata downloads per model, besides the Wikidata item. */
@@ -27,10 +27,12 @@ const commonsFile = (file: string) =>
 export function toCatalogModel(
   model: WikidataModel,
   details: WikidataDetails = {},
+  specs?: ModelSpecs,
 ): CatalogModelInfo {
   return {
     id: model.id,
     label: model.label,
+    ...(specs && Object.keys(specs).length > 0 && { specs }),
     ...((details.extract ?? model.description) && {
       description: details.extract ?? model.description,
     }),

@@ -20,6 +20,7 @@ import type { WikidataDetails } from "../wikidata/details.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import type { FallbackFile } from "../wikidata/fallback.ts";
+import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 
 const { values } = parseArgs({
   options: {
@@ -71,6 +72,9 @@ const wikidata = await readFile(join(wikidataDir, "models.json"), "utf8")
     fallback: await readFile(join(wikidataDir, "fallback.json"), "utf8")
       .then((file) => JSON.parse(file) as FallbackFile)
       .catch(() => ({}) as FallbackFile),
+    specs: await readFile(join(wikidataDir, "specs.json"), "utf8")
+      .then((file) => JSON.parse(file) as Record<string, ModelSpecs>)
+      .catch(() => ({})),
   }))
   .catch(() => undefined);
 if (!wikidata) console.log(`Sem modelos do Wikidata em ${wikidataDir}; rode npm run fetch:wikidata.`);
