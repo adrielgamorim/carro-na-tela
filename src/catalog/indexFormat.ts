@@ -7,7 +7,7 @@ import { versionDepreciation } from "./depreciation.ts";
 import type { CatalogFleetInfo, CatalogFleetLine } from "./fleet.ts";
 import { fleetOrigin } from "./fleet.ts";
 import { versionLines } from "./sublines.ts";
-import type { CatalogModelInfo } from "./wikidata.ts";
+import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
 import type {
   CatalogEntry,
@@ -35,6 +35,11 @@ export interface WireVersion {
   i?: InmetroSpec;
   /** Index into `models`: the Wikidata model line matched by name. */
   w?: number;
+  /**
+   * Per entry of `y`, an index into `photos` (the generation of that model
+   * year) or -1 for the model line's own photo. Omitted when all are -1.
+   */
+  g?: number[];
   /** Index into `fleet.lines`: the model line's fleet (Senatran). */
   p?: number;
 }
@@ -49,6 +54,8 @@ export interface CatalogIndexFile {
   versions: WireVersion[];
   /** Wikidata model lines referenced by `WireVersion.w`. */
   models?: CatalogModelInfo[];
+  /** Generation photos referenced by `WireVersion.g`. */
+  photos?: CatalogPhoto[];
   /** Fleet in circulation per model line (npm run fetch:frota), ranked. */
   fleet?: {
     reference: string;
@@ -134,7 +141,9 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
     );
     const origin = fleetLine ? fleetOrigin(fleetLine) : null;
 
-    for (const [yearCode, priceValue] of version.y) {
+    const model = version.w === undefined ? null : (file.models?.[version.w] ?? null);
+    for (const [yearIndex, [yearCode, priceValue]] of version.y.entries()) {
+      const photo = file.photos?.[version.g?.[yearIndex] ?? -1];
       const [year, fuelCode] = yearCode.split("-");
       const zeroKm = year === "32000";
       const fuel = file.fuels[fuelCode ?? ""] ?? "";
@@ -166,7 +175,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
           ? (inmetro.consumption.fuelHighway ?? inmetro.consumption.electricHighway)
           : null,
         inmetro,
-        wikidata: version.w === undefined ? null : (file.models?.[version.w] ?? null),
+        wikidata: model && photo ? { ...model, image: photo } : model,
         fleet,
         origin,
         depreciation,

@@ -21,6 +21,7 @@ import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import type { FallbackFile } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
+import type { ModelGeneration } from "../wikidata/generations.ts";
 
 const { values } = parseArgs({
   options: {
@@ -74,6 +75,9 @@ const wikidata = await readFile(join(wikidataDir, "models.json"), "utf8")
       .catch(() => ({}) as FallbackFile),
     specs: await readFile(join(wikidataDir, "specs.json"), "utf8")
       .then((file) => JSON.parse(file) as Record<string, ModelSpecs>)
+      .catch(() => ({})),
+    generations: await readFile(join(wikidataDir, "generations.json"), "utf8")
+      .then((file) => JSON.parse(file) as Record<string, ModelGeneration[]>)
       .catch(() => ({})),
   }))
   .catch(() => undefined);

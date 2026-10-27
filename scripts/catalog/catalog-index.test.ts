@@ -333,6 +333,43 @@ describe("buildCatalogIndex", () => {
     expect(skipped.versions[0]?.i?.table).toBe(2024);
   });
 
+  it("gives each model year the photo of its generation", () => {
+    const pulse = (yearCode: string) =>
+      vehicle({ id: `21-10:${yearCode}`, yearCode, modelYear: Number(yearCode.split("-")[0]) });
+    const generation = (file: string, from: number, to: number | null) => ({
+      file,
+      from,
+      to,
+      thumb: `https://upload.wikimedia.org/${file}`,
+    });
+    const index = buildCatalogIndex([snapshot("338", [pulse("2024-5"), pulse("2021-5"), pulse("2018-5")])], {
+      now: new Date("2026-10-26T12:00:00Z"),
+      wikidata: {
+        models: [
+          { id: "Q1", label: "Fiat Pulse", names: ["Fiat Pulse"], labelCount: 1, brands: ["Fiat"], image: "Pulse.jpg" },
+        ],
+        generations: {
+          Q1: [generation("Pulse.jpg", 2021, null), generation("Pulse 2018.jpg", 2017, 2020)],
+        },
+      },
+    });
+
+    // 2024 and 2021: the line's own photo; 2018: the older generation's.
+    expect(index.versions[0]?.g).toEqual([-1, -1, 0]);
+    expect(index.photos).toEqual([
+      {
+        thumb: "https://upload.wikimedia.org/Pulse 2018.jpg",
+        page: "https://commons.wikimedia.org/wiki/File:Pulse_2018.jpg",
+      },
+    ]);
+    const { entries } = expandCatalogIndex(index);
+    expect(entries.map((entry) => entry.wikidata?.image?.page.split(":").pop())).toEqual([
+      "Pulse.jpg",
+      "Pulse.jpg",
+      "Pulse_2018.jpg",
+    ]);
+  });
+
   it("ignores older snapshots of the same category", () => {
     const index = buildCatalogIndex([
       snapshot("337", [vehicle({ model: "antigo" })]),

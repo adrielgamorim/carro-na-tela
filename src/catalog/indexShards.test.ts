@@ -31,11 +31,15 @@ const file: CatalogIndexFile = {
   versions: [
     { s: 0, b: 0, m: "1", n: "ARGO DRIVE 1.3", y: [["2026-5", 90000]], w: 1, p: 2 },
     { s: 0, b: 1, m: "2", n: "Gol 1.0", y: [["2015-5", null]], p: 0 },
-    { s: 0, b: 0, m: "3", n: "MOBI LIKE 1.0", y: [["2024-5", null]], w: 0, p: 1 },
+    { s: 0, b: 0, m: "3", n: "MOBI LIKE 1.0", y: [["2024-5", null]], w: 0, p: 1, g: [1] },
   ],
   models: [
     { id: "Q1", label: "Fiat Mobi" },
     { id: "Q2", label: "Fiat Argo" },
+  ],
+  photos: [
+    { thumb: "gol.jpg", page: "File:Gol" },
+    { thumb: "mobi-2024.jpg", page: "File:Mobi 2024" },
   ],
   fleet: {
     reference: "setembro de 2026",
@@ -59,6 +63,7 @@ describe("brand slices", () => {
     expect(fiat.brands).toEqual([{ code: "21", name: "Fiat" }]);
     expect(fiat.models).toEqual([{ id: "Q2", label: "Fiat Argo" }, { id: "Q1", label: "Fiat Mobi" }]);
     expect(fiat.fleet).toMatchObject({ lineCount: 3, lines: [line("ARGO", 3), line("MOBI", 2)] });
+    expect(fiat.photos).toEqual([{ thumb: "mobi-2024.jpg", page: "File:Mobi 2024" }]);
 
     // A slice expands to the same entries as the whole index.
     const whole = expandCatalogIndex(file).entries.filter((entry) => entry.brand === "Fiat");

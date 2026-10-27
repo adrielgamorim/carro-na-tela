@@ -30,14 +30,17 @@ export interface CatalogModelInfo {
   description?: string;
   wikipedia?: string;
   specs?: ModelSpecs;
-  image?: {
-    /** About 480 px wide. */
-    thumb: string;
-    /** Commons file page (author and license). */
-    page: string;
-    artist?: string;
-    license?: string;
-  };
+  image?: CatalogPhoto;
+}
+
+/** A Wikimedia Commons photo with its credits. */
+export interface CatalogPhoto {
+  /** About 480 px wide. */
+  thumb: string;
+  /** Commons file page (author and license). */
+  page: string;
+  artist?: string;
+  license?: string;
 }
 
 export const wikidataUrl = (id: string) => `https://www.wikidata.org/wiki/${id}`;

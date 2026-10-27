@@ -29,7 +29,8 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
   Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
-- Cards com o logo da marca, foto da linha do modelo (Wikimedia Commons), frota em circulação e
+- Cards com o logo da marca, foto do modelo (Wikimedia Commons, da geração do ano escolhido quando o
+  artigo da Wikipedia separa gerações), frota em circulação e
   posição no ranking.
 - Busca pelo chassi (VIN): fabricante, país e ano-modelo decodificados no navegador; modelo e
   motor pela NHTSA vPIC quando ela conhece o veículo. O resultado vira filtros.
@@ -92,7 +93,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.864 versões com foto |
+| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.884 versões com foto |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -164,6 +165,15 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   Wikidata sem foto usa a da sua linha, desde que o título dela tenha o nome do modelo ("Toyota
   Hilux" serve para o Hilux SW4; "Volvo XC90" não serve para o EX40). Linhas que a busca erra têm a
   fonte escolhida à mão em `data/wikidata/fallback-titles.json` (artigo ou arquivo, com o motivo).
+- **Foto por geração:** artigos com uma infobox por geração (pt:Volkswagen Gol tem do G1 ao G6, cada
+  uma com foto e anos de produção) dão a cada ano-modelo a foto da sua geração: a de período mais
+  curto que cobre o ano, e um ano depois do fim só quando nenhuma cobre o ano em si (Brasil primeiro
+  quando a produção vem por país). O artigo em português vem antes do inglês; artigos com uma infobox
+  só não entram. Cada artigo é lido inteiro uma vez (`data/wikidata/generation-articles.json`) e os
+  créditos de cada foto também (`generation-photos.json`); o resultado por modelo fica em
+  `generations.json`. No índice, cada ano da versão aponta para a foto (`g`, em `photos`), então o
+  card troca a foto ao trocar o ano. São ~2.960 versões e 10.400 anos-modelo, e 850 fotos diferentes
+  nos cards (eram 647).
 
 ### Senatran (frota em circulação)
 

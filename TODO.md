@@ -11,8 +11,11 @@ disponibilidade dela.
 - [ ] 🟢 Domínio próprio, para o cache das respostas da FIPE valer.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
-- [ ] 🟢 Fotos que ainda faltam: ~150 versões, quase todas utilitários e marcas de nicho sem artigo
-      (Hitech Electric, Effa, Hafei Towner, Foton, buggies), além de RAM Dakota, JAC iEV/T5 e BMW 220i.
+- [ ] 🟢 Fotos que ainda faltam: 137 versões, quase todas utilitários e marcas de nicho sem artigo
+      (Hitech Electric, Effa, Hafei Towner, Foton, Chana, Shineray, buggies), além de RAM Dakota
+      (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV, Volvo EX40 e Jetour S06.
+- [ ] 🟢 Geração pela versão, não só pelo ano: em 2013–2014 a FIPE tem Gol G4 e G6 lado a lado, e o
+      Uno Mille fica com a foto do Novo Uno nos anos em que os dois eram vendidos.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fase 4, o que falta: torque, porta-malas e equipamentos não têm fonte grátis com cobertura útil
@@ -39,6 +42,10 @@ disponibilidade dela.
 
 ## Concluído
 
+- [x] Foto por geração: infobox de cada geração nos artigos da Wikipedia (pt, depois en) dá a cada
+      ano-modelo a foto da sua geração (Gol G5/G6, HB20 1ª/2ª/atual, Sandero I/II/III); 850 fotos
+      diferentes nos cards (eram 647). Fontes à mão para JAC T5/T50/T60/T80, BMW 220i/225i/435iA/M,
+      Volvo XC 40, Ferrari 12Cilindri, MG 550, BYD eT3 e Mahindra SUV (157 → 137 versões sem foto).
 Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**

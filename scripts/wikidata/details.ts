@@ -20,7 +20,8 @@ export function versionYears(yearCodes: string[], now = new Date()): number[] {
   });
 }
 
-const commonsFile = (file: string) =>
+/** Commons page of a file name. */
+export const commonsFile = (file: string) =>
   `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(file.replace(/ /g, "_"))}`;
 
 /** The model as shipped in the catalog index. */

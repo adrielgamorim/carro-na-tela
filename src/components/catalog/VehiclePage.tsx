@@ -78,7 +78,7 @@ export function VehiclePage({
               }}
             />
             <figcaption>
-              Foto ilustrativa da linha do modelo ·{" "}
+              Foto ilustrativa do modelo ·{" "}
               <a href={photo.page} target="_blank" rel="noreferrer">
                 {credit ? `${credit} · ` : ""}Wikimedia Commons
               </a>

@@ -15,6 +15,8 @@ import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
 import type { CrawlSnapshot } from "../catalog/catalog-index.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import { fallbackKey, findFallback } from "./fallback.ts";
+import { parseGenerations } from "./generations.ts";
+import type { Generation, ModelGeneration } from "./generations.ts";
 import { mergeSpecs, parseInfobox } from "./infobox.ts";
 import type { InfoboxSpecs } from "./infobox.ts";
 import { parseSpecRows, specsQuery } from "./specs.ts";
@@ -142,6 +144,65 @@ function shorten(extract: string): string {
 const stripHtml = (html: string) =>
   html.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 
+/**
+ * Thumbnail, author and license of Commons files, 50 per request. Files of a
+ * failed request are in `failed` (tried again next run); missing ones are in
+ * neither.
+ */
+async function commonsCredits(files: string[]) {
+  const credits = new Map<string, WikidataDetails>();
+  const failed = new Set<string>();
+  for (let start = 0; start < files.length; start += 50) {
+    const batch = files.slice(start, start + 50);
+    const params = new URLSearchParams({
+      action: "query",
+      format: "json",
+      formatversion: "2",
+      prop: "imageinfo",
+      iiprop: "url|extmetadata",
+      iiurlwidth: "480",
+      iiextmetadatafilter: "Artist|LicenseShortName",
+      titles: batch.map((file) => `File:${file}`).join("|"),
+    });
+    try {
+      const result = await getJson<{
+        query?: {
+          normalized?: { from: string; to: string }[];
+          pages?: {
+            title: string;
+            imageinfo?: {
+              thumburl?: string;
+              extmetadata?: Record<string, { value: string } | undefined>;
+            }[];
+          }[];
+        };
+      }>(`https://commons.wikimedia.org/w/api.php?${params}`);
+      const byTitle = new Map(
+        (result.query?.pages ?? []).map((page) => [page.title, page.imageinfo?.[0]]),
+      );
+      // "File:a_b.jpg" comes back as "File:A b.jpg".
+      const normalized = new Map((result.query?.normalized ?? []).map(({ from, to }) => [from, to]));
+      for (const file of batch) {
+        const title = `File:${file}`;
+        const info = byTitle.get(normalized.get(title) ?? title);
+        if (!info?.thumburl) continue;
+        const artist = info.extmetadata?.Artist?.value;
+        const license = info.extmetadata?.LicenseShortName?.value;
+        credits.set(file, {
+          thumb: info.thumburl,
+          ...(artist && { artist: stripHtml(artist).slice(0, 120) }),
+          ...(license && { license: stripHtml(license) }),
+        });
+      }
+    } catch (error) {
+      console.warn(`Aviso: créditos das imagens: ${(error as Error).message}`);
+      for (const file of batch) failed.add(file);
+    }
+    await wait(500);
+  }
+  return { credits, failed };
+}
+
 await mkdir(values.out, { recursive: true });
 const models = await loadModels();
 console.log(`${models.length} modelos no Wikidata`);
@@ -190,52 +251,14 @@ console.log(`Buscando resumo e créditos de ${missing.length} modelos`);
 // A model is saved only when every request for it worked, so a failed one is
 // tried again on the next run. Requests go one at a time: Wikimedia answers
 // 429 to bursts.
+const imageCredits = await commonsCredits(missing.flatMap((model) => (model.image ? [model.image] : [])));
 const credits = new Map<string, WikidataDetails>();
 const failed = new Set<string>();
-const withImage = missing.filter((model) => model.image);
-for (let start = 0; start < withImage.length; start += 50) {
-  const batch = withImage.slice(start, start + 50);
-  const params = new URLSearchParams({
-    action: "query",
-    format: "json",
-    formatversion: "2",
-    prop: "imageinfo",
-    iiprop: "url|extmetadata",
-    iiurlwidth: "480",
-    iiextmetadatafilter: "Artist|LicenseShortName",
-    titles: batch.map((model) => `File:${model.image}`).join("|"),
-  });
-  try {
-    const result = await getJson<{
-      query?: {
-        pages?: {
-          title: string;
-          imageinfo?: {
-            thumburl?: string;
-            extmetadata?: Record<string, { value: string } | undefined>;
-          }[];
-        }[];
-      };
-    }>(`https://commons.wikimedia.org/w/api.php?${params}`);
-    const byTitle = new Map(
-      (result.query?.pages ?? []).map((page) => [page.title, page.imageinfo?.[0]]),
-    );
-    for (const model of batch) {
-      const info = byTitle.get(`File:${model.image!.replace(/_/g, " ")}`);
-      if (!info?.thumburl) continue;
-      const artist = info.extmetadata?.Artist?.value;
-      const license = info.extmetadata?.LicenseShortName?.value;
-      credits.set(model.id, {
-        thumb: info.thumburl,
-        ...(artist && { artist: stripHtml(artist).slice(0, 120) }),
-        ...(license && { license: stripHtml(license) }),
-      });
-    }
-  } catch (error) {
-    console.warn(`Aviso: créditos das imagens: ${(error as Error).message}`);
-    for (const model of batch) failed.add(model.id);
-  }
-  await wait(500);
+for (const model of missing) {
+  if (!model.image) continue;
+  const credit = imageCredits.credits.get(model.image);
+  if (credit) credits.set(model.id, credit);
+  if (imageCredits.failed.has(model.image)) failed.add(model.id);
 }
 
 let done = 0;
@@ -385,3 +408,75 @@ for (const [id, articles] of articlesOf) {
 }
 await writeFile(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
 console.log(`Dimensões, peso e potência em ${specsFile}: ${Object.keys(specs).length} modelos`);
+
+// One photo per generation (generations.ts), from the infoboxes of the same
+// articles, read in full this time. Each article is read once
+// (data/wikidata/generation-articles.json; an empty list means one infobox or
+// none) and each file's credits fetched once (generation-photos.json; null
+// means no such file). The result, per model and in the order of its
+// articles (Portuguese first), goes to data/wikidata/generations.json.
+const articleGenerationsFile = join(values.out, "generation-articles.json");
+const articleGenerations: Record<string, Generation[]> = await readFile(articleGenerationsFile, "utf8")
+  .then((text) => JSON.parse(text) as Record<string, Generation[]>)
+  .catch(() => ({}));
+const toParse = [...new Set([...articlesOf.values()].flat())].filter((article) => !(article in articleGenerations));
+console.log(`Gerações na Wikipedia: ${toParse.length} artigos para ler`);
+const saveArticleGenerations = () =>
+  writeFile(articleGenerationsFile, `${JSON.stringify(articleGenerations, null, 1)}\n`);
+let parsed = 0;
+for (const article of toParse) {
+  const [lang, ...rest] = article.split(":");
+  const params = new URLSearchParams({
+    action: "parse",
+    page: rest.join(":"),
+    prop: "wikitext",
+    redirects: "1",
+    format: "json",
+    formatversion: "2",
+  });
+  try {
+    const result = await politeGetJson<{ parse?: { wikitext?: string } }>(
+      `https://${lang}.wikipedia.org/w/api.php?${params}`,
+    );
+    articleGenerations[article] = parseGenerations(result.parse?.wikitext ?? "");
+  } catch (error) {
+    // Not saved: read again on the next run.
+    console.warn(`Aviso: gerações de ${article}: ${(error as Error).message}`);
+  }
+  parsed += 1;
+  if (parsed % 25 === 0) {
+    await saveArticleGenerations();
+    console.log(`  ${parsed} de ${toParse.length}`);
+  }
+}
+await saveArticleGenerations();
+
+const generationPhotosFile = join(values.out, "generation-photos.json");
+const generationPhotos: Record<string, WikidataDetails | null> = await readFile(generationPhotosFile, "utf8")
+  .then((text) => JSON.parse(text) as Record<string, WikidataDetails | null>)
+  .catch(() => ({}));
+const newFiles = [
+  ...new Set(Object.values(articleGenerations).flatMap((generations) => generations.map(({ file }) => file))),
+].filter((file) => !(file in generationPhotos));
+const newCredits = await commonsCredits(newFiles);
+for (const file of newFiles) {
+  if (!newCredits.failed.has(file)) generationPhotos[file] = newCredits.credits.get(file) ?? null;
+}
+await writeFile(generationPhotosFile, `${JSON.stringify(generationPhotos, null, 1)}\n`);
+
+const generations: Record<string, ModelGeneration[]> = {};
+for (const [id, articles] of articlesOf) {
+  const list = articles.flatMap((article) =>
+    (articleGenerations[article] ?? []).flatMap(({ file, from, to }): ModelGeneration[] => {
+      const photo = generationPhotos[file];
+      return photo ? [{ file, from, to, ...photo }] : [];
+    }),
+  );
+  if (list.length) generations[id] = list;
+}
+const generationsFile = join(values.out, "generations.json");
+await writeFile(generationsFile, `${JSON.stringify(generations, null, 1)}\n`);
+console.log(
+  `Fotos por geração em ${generationsFile}: ${Object.keys(generations).length} modelos, ` +
+    `${new Set(Object.values(generations).flat().map(({ file }) => file)).size} fotos`,
+);

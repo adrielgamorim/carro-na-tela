@@ -11,7 +11,9 @@ import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import { matchFleet } from "../frota/match.ts";
 import { createInmetroMatcher } from "../inmetro/match.ts";
-import { toCatalogModel, versionYears } from "../wikidata/details.ts";
+import { commonsFile, toCatalogModel, versionYears } from "../wikidata/details.ts";
+import { generationOf } from "../wikidata/generations.ts";
+import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile } from "../wikidata/fallback.ts";
@@ -84,6 +86,8 @@ export interface BuildOptions {
     fallback?: FallbackFile;
     /** Size and mass per model (data/wikidata/specs.json). */
     specs?: Record<string, ModelSpecs>;
+    /** Photo per generation of a model (data/wikidata/generations.json). */
+    generations?: Record<string, ModelGeneration[]>;
   };
 }
 
@@ -242,7 +246,9 @@ export function buildCatalogIndex(
 
   // Wikidata model lines, stored once and referenced by index.
   const models: CatalogIndexFile["models"] = [];
+  const photos: NonNullable<CatalogIndexFile["photos"]> = [];
   if (wikidata) {
+    const photoIndex = new Map<string, number>();
     const match = createWikidataMatcher(wikidata.models, wikidata.overrides);
     const modelIndex = new Map<string, number>();
     for (const version of sorted) {
@@ -275,6 +281,29 @@ export function buildCatalogIndex(
         models[known] = info;
       }
       version.w = modelIndex.get(info.id);
+
+      // Each model year gets the photo of its generation, when the line's
+      // articles have one per generation and it differs from the line's own.
+      const generations = wikidata.generations?.[info.id];
+      if (!generations) continue;
+      const years = versionYears(version.y.map(([yearCode]) => yearCode), now);
+      const perYear = years.map((year) => {
+        const generation = generationOf(generations, year, now.getFullYear());
+        if (!generation?.thumb) return -1;
+        const page = commonsFile(generation.file);
+        if (page === info.image?.page) return -1;
+        if (!photoIndex.has(page)) {
+          photoIndex.set(page, photos.length);
+          photos.push({
+            thumb: generation.thumb,
+            page,
+            ...(generation.artist && { artist: generation.artist }),
+            ...(generation.license && { license: generation.license }),
+          });
+        }
+        return photoIndex.get(page)!;
+      });
+      if (perYear.some((photo) => photo >= 0)) version.g = perYear;
     }
   }
 
@@ -305,6 +334,7 @@ export function buildCatalogIndex(
     fuels,
     versions: sorted,
     ...(wikidata && { models }),
+    ...(photos.length > 0 && { photos }),
     ...(fleet &&
       fleetLines && {
         fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },

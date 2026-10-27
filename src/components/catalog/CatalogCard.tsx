@@ -125,7 +125,7 @@ export function CatalogCard({
             className="catalog-card-photo"
             src={selected.wikidata.image.thumb}
             alt=""
-            title="Foto ilustrativa da linha do modelo (Wikimedia Commons)"
+            title="Foto ilustrativa do modelo (Wikimedia Commons)"
             loading="lazy"
             decoding="async"
           />

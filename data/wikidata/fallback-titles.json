@@ -54,6 +54,90 @@
       "family": "X",
       "source": "commons:Neta X 002.jpg",
       "reason": "Linha de uma letra, que a busca recusa; o artigo 'Neta X' redireciona para o Neta U."
+    },
+    {
+      "brand": "JAC",
+      "family": "T5",
+      "source": "en:JAC Refine S3",
+      "reason": "Os JAC T vendidos no Brasil são a linha Refine (Ruifeng) chinesa: T40 = S2, T5/T50 = S3, T60 = S4, T80 = S7."
+    },
+    {
+      "brand": "JAC",
+      "family": "T50",
+      "source": "en:JAC Refine S3",
+      "reason": "Os JAC T vendidos no Brasil são a linha Refine (Ruifeng) chinesa: T40 = S2, T5/T50 = S3, T60 = S4, T80 = S7."
+    },
+    {
+      "brand": "JAC",
+      "family": "T60",
+      "source": "en:JAC Refine S4",
+      "reason": "Os JAC T vendidos no Brasil são a linha Refine (Ruifeng) chinesa: T40 = S2, T5/T50 = S3, T60 = S4, T80 = S7."
+    },
+    {
+      "brand": "JAC",
+      "family": "T80",
+      "source": "en:JAC Refine S7",
+      "reason": "Os JAC T vendidos no Brasil são a linha Refine (Ruifeng) chinesa: T40 = S2, T5/T50 = S3, T60 = S4, T80 = S7."
+    },
+    {
+      "brand": "BMW",
+      "family": "220i",
+      "source": "en:BMW 2 Series",
+      "reason": "A FIPE escreve o motor (220i Gran Coupe, 220i Active Tourer) no lugar da Série 2."
+    },
+    {
+      "brand": "BMW",
+      "family": "225i",
+      "source": "en:BMW 2 Series Active Tourer",
+      "reason": "225i Active Tourer é a Série 2 Active Tourer."
+    },
+    {
+      "brand": "BMW",
+      "family": "435iA",
+      "source": "en:BMW 4 Series (F32)",
+      "reason": "435iA M Sport Coupe é a Série 4 de 2013–2020 (F32)."
+    },
+    {
+      "brand": "BMW",
+      "family": "M140i",
+      "source": "en:BMW 1 Series (F20)",
+      "reason": "M140i é a Série 1 de 2011–2019 (F20)."
+    },
+    {
+      "brand": "BMW",
+      "family": "M",
+      "source": "en:BMW 1 Series",
+      "reason": "A linha \"M\" da FIPE junta M 135i (Série 1) e M 235i (Série 2); a Série 1 cobre duas das três versões."
+    },
+    {
+      "brand": "Volvo",
+      "family": "XC",
+      "source": "en:Volvo XC40",
+      "reason": "\"XC 40 Recharge\" (com espaço) é o XC40 elétrico."
+    },
+    {
+      "brand": "Ferrari",
+      "family": "12Cilinrdri",
+      "source": "en:Ferrari 12Cilindri",
+      "reason": "Nome escrito errado na FIPE (12Cilinrdri)."
+    },
+    {
+      "brand": "MG",
+      "family": "550",
+      "source": "en:MG 550",
+      "reason": "MG 550 (Roewe 550)."
+    },
+    {
+      "brand": "BYD",
+      "family": "eT3",
+      "source": "en:BYD T3",
+      "reason": "O eT3 é o furgão elétrico BYD T3."
+    },
+    {
+      "brand": "Mahindra",
+      "family": "SUV",
+      "source": "en:Mahindra Scorpio",
+      "reason": "O \"Mahindra SUV\" vendido no Brasil é o Scorpio."
     }
   ]
 }
