@@ -139,7 +139,15 @@ async function fromWikipedia(
     `https://${lang}.wikipedia.org/w/api.php?${params}`,
   );
   const title = search.query?.search?.find((hit) => titleFits(hit.title, brand, family))?.title;
-  if (!title) return null;
+  return title ? fromArticle(getJson, lang, title) : null;
+}
+
+/** The picture (and, in Portuguese, the summary) of one Wikipedia article. */
+async function fromArticle(
+  getJson: GetJson,
+  lang: "pt" | "en",
+  title: string,
+): Promise<CatalogModelInfo | null> {
   const summary = await getJson<Summary>(
     `https://${lang}.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(title.replace(/ /g, "_"))}`,
   );
@@ -181,12 +189,36 @@ async function fromCommons(getJson: GetJson, brand: string, family: string): Pro
   return { id: `commons:${file}`, label: `${searchBrand(brand)} ${family}`, image };
 }
 
+/**
+ * A source chosen by hand (data/wikidata/fallback-titles.json) for a line the
+ * search gets wrong: "pt:Opel Zafira" (a Wikipedia article) or
+ * "commons:Neta X 002.jpg" (a file).
+ */
+export interface FallbackTitle {
+  brand: string;
+  family: string;
+  source: string;
+  reason?: string;
+}
+
+async function fromSource(getJson: GetJson, source: string, label: string): Promise<CatalogModelInfo | null> {
+  const [kind, ...rest] = source.split(":");
+  const name = rest.join(":");
+  if (kind === "pt" || kind === "en") return fromArticle(getJson, kind, name);
+  if (kind !== "commons") throw new Error(`Fonte inválida em fallback-titles.json: ${source}`);
+  const image = await commonsImage(getJson, name);
+  return image ? { id: `commons:${name}`, label, image } : null;
+}
+
 /** Wikipedia (pt, then en), else Commons; null when nothing fits. */
 export async function findFallback(
   getJson: GetJson,
   brand: string,
   family: string,
+  titles: FallbackTitle[] = [],
 ): Promise<CatalogModelInfo | null> {
+  const chosen = titles.find((item) => item.brand === brand && item.family === family);
+  if (chosen) return fromSource(getJson, chosen.source, `${searchBrand(brand)} ${family}`);
   if (wordBrands.has(words(brand).join(""))) return null;
   // "SERES / SERES": the family is just the brand again.
   if (words(family).join("") === words(brand).join("")) return null;
@@ -194,5 +226,24 @@ export async function findFallback(
     (await fromWikipedia(getJson, "pt", brand, family)) ??
     (await fromWikipedia(getJson, "en", brand, family)) ??
     (commonsWordBrands.has(words(brand).join("")) ? null : await fromCommons(getJson, brand, family))
+  );
+}
+
+/**
+ * Whether a line's fallback picture may stand in for a Wikidata model without
+ * an image: the fallback title must name the model ("Toyota Hilux" for
+ * "Toyota Hilux SW4"). FIPE families can be broad ("Volvo XC" covers the XC40,
+ * XC60 and XC90), so the line alone is not enough.
+ */
+export function fallbackFitsModel(fallbackLabel: string, modelLabel: string, brand: string): boolean {
+  // The brand is in both titles ("Volvo XC90", "Volvo EX40") and tells nothing.
+  const brandWords = new Set([brand, ...(brandNames[brand] ?? [])].flatMap(words));
+  const modelWords = new Set(words(modelLabel));
+  return words(fallbackLabel).some(
+    (word) =>
+      modelWords.has(word) &&
+      !brandWords.has(word) &&
+      !genericWords.has(word) &&
+      (word.length >= 3 || /\d/.test(word)),
   );
 }

@@ -86,7 +86,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.764 versões com foto (4.826 com modelo) |
+| Wikidata / Commons / Wikipedia | Foto e descrição da linha do modelo | `fetch:wikidata` | De vez em quando | 4.864 versões com foto |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -146,7 +146,10 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   buscam o artigo "Marca Linha" na Wikipedia (pt, depois en) e, por último, um arquivo no Commons;
   só vale um título com a marca e o nome da linha. Ficam de fora marcas que são palavras comuns
   (Wake, Baby, Rely…) e linhas de uma letra. O resultado fica em `data/wikidata/fallback.json`
-  ("nada" também, para não buscar de novo); apague uma entrada para buscá-la outra vez.
+  ("nada" também, para não buscar de novo); apague uma entrada para buscá-la outra vez. Um modelo do
+  Wikidata sem foto usa a da sua linha, desde que o título dela tenha o nome do modelo ("Toyota
+  Hilux" serve para o Hilux SW4; "Volvo XC90" não serve para o EX40). Linhas que a busca erra têm a
+  fonte escolhida à mão em `data/wikidata/fallback-titles.json` (artigo ou arquivo, com o motivo).
 
 ### Senatran (frota em circulação)
 

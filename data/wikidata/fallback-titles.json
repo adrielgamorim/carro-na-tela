@@ -1,0 +1,59 @@
+{
+  "_doc": "Fontes escolhidas à mão para a reserva de fotos (fetch:wikidata), para linhas que a busca erra ou não acha. source é 'pt:Título' ou 'en:Título' (artigo da Wikipedia) ou 'commons:Arquivo.jpg'. Sempre explique em reason.",
+  "titles": [
+    {
+      "brand": "GM - Chevrolet",
+      "family": "Zafira",
+      "source": "pt:Opel Zafira",
+      "reason": "A Zafira da Chevrolet é a Opel Zafira; o artigo 'Chevrolet Zafira' redireciona para ela, e a busca exige a marca no título."
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "eSprinter",
+      "source": "en:Mercedes-Benz Sprinter",
+      "reason": "A eSprinter é a Sprinter elétrica; a foto do artigo em português é uma montagem de gerações."
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "family": "Sprin.",
+      "source": "en:Mercedes-Benz Sprinter",
+      "reason": "'Sprin.' é a abreviação da FIPE para Sprinter."
+    },
+    {
+      "brand": "RAM",
+      "family": "2500",
+      "source": "en:Ram pickup",
+      "reason": "A 2500 é da linha Ram pickup (Heavy Duty); no Commons a busca achava um amuleto de carneiro."
+    },
+    {
+      "brand": "RAM",
+      "family": "3500",
+      "source": "en:Ram pickup",
+      "reason": "A 3500 é da linha Ram pickup (Heavy Duty)."
+    },
+    {
+      "brand": "RAM",
+      "family": "CLASSIC",
+      "source": "en:Ram pickup (fourth generation)",
+      "reason": "A Classic vendida no Brasil é a Ram 1500 Classic (quarta geração)."
+    },
+    {
+      "brand": "GWM",
+      "family": "Poer",
+      "source": "en:GWM Cannon",
+      "reason": "A Poer é vendida no exterior como GWM Cannon."
+    },
+    {
+      "brand": "JINBEI",
+      "family": "TOPIC",
+      "source": "en:Jinbei Haise",
+      "reason": "A Topic vendida no Brasil é a Jinbei Haise."
+    },
+    {
+      "brand": "NETA",
+      "family": "X",
+      "source": "commons:Neta X 002.jpg",
+      "reason": "Linha de uma letra, que a busca recusa; o artigo 'Neta X' redireciona para o Neta U."
+    }
+  ]
+}

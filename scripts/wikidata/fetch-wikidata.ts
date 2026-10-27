@@ -15,7 +15,7 @@ import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
 import type { CrawlSnapshot } from "../catalog/catalog-index.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import { fallbackKey, findFallback } from "./fallback.ts";
-import type { FallbackFile } from "./fallback.ts";
+import type { FallbackFile, FallbackTitle } from "./fallback.ts";
 import { createWikidataMatcher, findWikidataOverride, parseSparqlModels } from "./match.ts";
 import type { WikidataModel, WikidataOverride } from "./match.ts";
 import type { WikidataDetails } from "./details.ts";
@@ -162,18 +162,19 @@ for (const snapshot of selectLatestSnapshots(snapshots)) {
   }
 }
 let matched = 0;
-// Lines with no Wikidata model, for the Wikipedia/Commons fallback. A manual
-// "none" means no picture on purpose, so those are left out.
+// Lines with no picture from Wikidata (no model, or a model without an
+// image), for the Wikipedia/Commons fallback. A manual "none" means no
+// picture on purpose, so those are left out.
 const unmatchedLines = new Map<string, { brand: string; family: string }>();
 for (const version of versions.values()) {
   const model = match(version);
   if (model) {
     matched += 1;
     used.set(model.id, model);
-  } else if (!findWikidataOverride(overrides, version)?.none) {
-    const family = getModelFamily(version.model);
-    unmatchedLines.set(fallbackKey(version.brand, family), { brand: version.brand, family });
   }
+  if (model?.image || (!model && findWikidataOverride(overrides, version)?.none)) continue;
+  const family = getModelFamily(version.model);
+  unmatchedLines.set(fallbackKey(version.brand, family), { brand: version.brand, family });
 }
 console.log(`${matched} de ${versions.size} versões FIPE casadas com ${used.size} modelos`);
 
@@ -264,9 +265,19 @@ console.log(`Detalhes em ${detailsFile}: ${Object.keys(details).length} modelos`
 const fallback: FallbackFile = await readFile(fallbackFile, "utf8")
   .then((text) => JSON.parse(text) as FallbackFile)
   .catch(() => ({}));
+const titles = await readFile(join(values.out, "fallback-titles.json"), "utf8")
+  .then((text) => (JSON.parse(text) as { titles: FallbackTitle[] }).titles)
+  .catch(() => [] as FallbackTitle[]);
+// A line chosen by hand is fetched again whenever its cached source differs.
+const sourceId = (source: string) =>
+  source.startsWith("commons:") ? source : `wikipedia:${source}`;
+for (const { brand, family, source } of titles) {
+  const key = fallbackKey(brand, family);
+  if (key in fallback && fallback[key]?.id !== sourceId(source)) delete fallback[key];
+}
 const toSearch = [...unmatchedLines].filter(([key]) => !(key in fallback));
 console.log(
-  `Reserva (Wikipedia/Commons): ${unmatchedLines.size} linhas sem modelo, ${toSearch.length} para buscar`,
+  `Reserva (Wikipedia/Commons): ${unmatchedLines.size} linhas sem foto do Wikidata, ${toSearch.length} para buscar`,
 );
 // Up to six requests per line: spaced out, since Wikimedia answers bursts
 // with a minute-long 429.
@@ -278,7 +289,7 @@ const saveFallback = () => writeFile(fallbackFile, `${JSON.stringify(fallback, n
 let searched = 0;
 for (const [key, { brand, family }] of toSearch) {
   try {
-    fallback[key] = await findFallback(politeGetJson, brand, family);
+    fallback[key] = await findFallback(politeGetJson, brand, family, titles);
   } catch (error) {
     // Not saved: tried again on the next run.
     console.warn(`Aviso: reserva de ${brand} ${family}: ${(error as Error).message}`);

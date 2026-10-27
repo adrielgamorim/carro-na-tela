@@ -12,7 +12,7 @@ import { matchFleet } from "../frota/match.ts";
 import { createInmetroMatcher } from "../inmetro/match.ts";
 import { toCatalogModel, versionYears } from "../wikidata/details.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
-import { fallbackKey } from "../wikidata/fallback.ts";
+import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile } from "../wikidata/fallback.ts";
 import { createWikidataMatcher, findWikidataOverride } from "../wikidata/match.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
@@ -248,15 +248,26 @@ export function buildCatalogIndex(
         model: version.n,
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
       });
-      const info = model
-        ? toCatalogModel(model, wikidata.details?.[model.id])
+      const fallback = wikidata.fallback?.[fallbackKey(brandName(version), getModelFamily(version.n))] ?? undefined;
+      const fromWikidata = model ? toCatalogModel(model, wikidata.details?.[model.id]) : undefined;
+      // A Wikidata model without an image keeps its text and borrows the
+      // line's fallback picture.
+      const info = fromWikidata
+        ? fromWikidata.image || !fallback?.image || !fallbackFitsModel(fallback.label, fromWikidata.label, brandName(version))
+          ? fromWikidata
+          : { ...fromWikidata, image: fallback.image }
         : findWikidataOverride(wikidata.overrides ?? [], { brand: brandName(version), model: version.n })?.none
           ? undefined
-          : (wikidata.fallback?.[fallbackKey(brandName(version), getModelFamily(version.n))] ?? undefined);
+          : fallback;
       if (!info) continue;
-      if (!modelIndex.has(info.id)) {
+      const known = modelIndex.get(info.id);
+      if (known === undefined) {
         modelIndex.set(info.id, models.length);
         models.push(info);
+      } else if (!models[known]?.image && info.image) {
+        // The model was stored by a version with no fitting picture; a later
+        // one has it, so the order of the versions does not decide.
+        models[known] = info;
       }
       version.w = modelIndex.get(info.id);
     }

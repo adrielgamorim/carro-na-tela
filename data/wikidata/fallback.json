@@ -136,7 +136,6 @@
   }
  },
  "GAC\nGS9": null,
- "GWM\nPoer": null,
  "GWM\nOra": {
   "id": "commons:GWM Ora 03 GT DSC 0753.jpg",
   "label": "GWM Ora",
@@ -307,9 +306,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "Mercedes-Benz\nSprin.": null,
- "Mercedes-Benz\neSprinter": null,
- "NETA\nX": null,
  "Omoda\nE5": {
   "id": "commons:Omoda E5 IMG 8107.jpg",
   "label": "Omoda E5",
@@ -435,7 +431,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "RAM\nCLASSIC": null,
  "SERES\nSERES": null,
  "BMW\n430i": {
   "id": "commons:BMW 430i Brooklyn Grey in Arizona.jpg",
@@ -670,7 +665,6 @@
    "license": "CC BY-SA 2.0"
   }
  },
- "JINBEI\nTOPIC": null,
  "Mahindra\nSUV": null,
  "RELY\nPICK-UP": null,
  "SHINERAY\nSY1020": null,
@@ -768,7 +762,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "GM - Chevrolet\nZafira": null,
  "MG\n550": null,
  "CHANA\nFamily": null,
  "CHANA\nUtility": null,
@@ -782,8 +775,6 @@
    "license": "CC BY-SA 2.0"
   }
  },
- "RAM\n2500": null,
- "RAM\n3500": null,
  "RAM\nDAKOTA": null,
  "Renault\nOROCH": {
   "id": "wikipedia:pt:Renault Oroch",
@@ -838,6 +829,271 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Audi_SQ8_e-tron_IMG_1780.jpg/500px-Audi_SQ8_e-tron_IMG_1780.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "page": "https://commons.wikimedia.org/wiki/File:Audi_SQ8_e-tron_IMG_1780.jpg",
    "artist": "Alexander-93",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "BYD\nSong": {
+  "id": "wikipedia:pt:BYD Song Plus",
+  "label": "BYD Song Plus",
+  "description": "BYD Song Plus é um SUV crossover compacto fabricado pela BYD Auto desde 2020. Ele faz parte da linha BYD Song da BYD, nomeada em homenagem à dinastia Song.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/BYD_Song_Plus",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/2023_BYD_Song_Plus_DM-i_%28front%29.jpg/500px-2023_BYD_Song_Plus_DM-i_%28front%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2023_BYD_Song_Plus_DM-i_(front).jpg",
+   "artist": "User3204",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Fiat\nTitano": {
+  "id": "wikipedia:pt:Fiat Titano",
+  "label": "Fiat Titano",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Fiat_Titano",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/2026_Fiat_Titano_Ranch_in_Argentina.jpg/500px-2026_Fiat_Titano_Ranch_in_Argentina.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2026_Fiat_Titano_Ranch_in_Argentina.jpg",
+   "artist": "Elcondelvp",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Ford\nE-TRANSIT": {
+  "id": "wikipedia:pt:Ford Transit",
+  "label": "Ford Transit",
+  "description": "O Ford Transit é uma linha de vans, miniônibus e pickups produzidas pela Ford Motor Company na Europa.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Ford_Transit",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2016_Ford_Transit_350_2.2.jpg/500px-2016_Ford_Transit_350_2.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2016_Ford_Transit_350_2.2.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "GWM\nPoer": {
+  "id": "wikipedia:en:GWM Cannon",
+  "label": "GWM Cannon",
+  "wikipedia": "https://en.wikipedia.org/wiki/GWM_Cannon",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Great_Wall_Pao_IMG001.jpg/500px-Great_Wall_Pao_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Wall_Pao_IMG001.jpg",
+   "artist": "Anonymousfox36",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Kia Motors\nTasman": {
+  "id": "wikipedia:en:Kia Tasman",
+  "label": "Kia Tasman",
+  "wikipedia": "https://en.wikipedia.org/wiki/Kia_Tasman",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/2025_Kia_Tasman_front.jpg/500px-2025_Kia_Tasman_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2025_Kia_Tasman_front.jpg",
+   "artist": "LuvsMG481",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\nSprin.": {
+  "id": "wikipedia:en:Mercedes-Benz Sprinter",
+  "label": "Mercedes-Benz Sprinter",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mercedes-Benz_Sprinter",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg/500px-2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\neSprinter": {
+  "id": "wikipedia:en:Mercedes-Benz Sprinter",
+  "label": "Mercedes-Benz Sprinter",
+  "wikipedia": "https://en.wikipedia.org/wiki/Mercedes-Benz_Sprinter",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg/500px-2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2019_Mercedes-Benz_Sprinter_314_CDi_2.1.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "NETA\nX": {
+  "id": "commons:Neta X 002.jpg",
+  "label": "NETA X",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Neta_X_002.jpg/500px-Neta_X_002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Neta_X_002.jpg",
+   "artist": "JustAnotherCarDesigner",
+   "license": "CC0"
+  }
+ },
+ "Porsche\n911": {
+  "id": "wikipedia:pt:Porsche 911",
+  "label": "Porsche 911",
+  "description": "Porsche 911 é um automóvel esportivo produzido pela fabricante alemã Porsche AG, de Stuttgart, desde 1964. O modelo foi apresentado originalmente em 1963, no Salão do Automóvel de Frankfurt, com o nome de 901, sendo posteriormente renomeado para 911 por questões de direitos de nomenclatura.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Porsche_911",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/2013_Porsche_911_Carrera_4S_%28991%29_%289626546987%29.jpg/500px-2013_Porsche_911_Carrera_4S_%28991%29_%289626546987%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2013_Porsche_911_Carrera_4S_(991)_(9626546987).jpg",
+   "artist": "David Villarreal Fernández",
+   "license": "CC BY-SA 2.0"
+  }
+ },
+ "RAM\n2500": {
+  "id": "wikipedia:en:Ram pickup",
+  "label": "Ram pickup",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ram_pickup",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg/500px-2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg",
+   "artist": "MercurySable99",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "RAM\n3500": {
+  "id": "wikipedia:en:Ram pickup",
+  "label": "Ram pickup",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ram_pickup",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg/500px-2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg",
+   "artist": "MercurySable99",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Toyota\nHilux": {
+  "id": "wikipedia:pt:Toyota Hilux",
+  "label": "Toyota Hilux",
+  "description": "A Toyota Hilux é uma picape média oferecida desde 1968 pela Toyota Motor Corporation. O nome Hilux foi adotado como um substituto do Stout em 1969, e permanece em uso em todo o mundo. Na América do Norte, o nome Hilux foi reformado em 1976, em favor do Caminhão, Camioneta, até que foi rebatizado como Tacoma, em 1995.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Toyota_Hilux",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Toyota_Hilux_2.4_E_4x2_2020.jpg/500px-Toyota_Hilux_2.4_E_4x2_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Hilux_2.4_E_4x2_2020.jpg",
+   "artist": "Ethan Llamas",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Volvo\nEX40": null,
+ "BMW\nX6": {
+  "id": "wikipedia:en:BMW X6",
+  "label": "BMW X6",
+  "wikipedia": "https://en.wikipedia.org/wiki/BMW_X6",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/BMW_G06_IMG_3142.jpg/500px-BMW_G06_IMG_3142.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:BMW_G06_IMG_3142.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "LAMBORGHINI\nHURACAN": {
+  "id": "wikipedia:pt:Lamborghini Huracán",
+  "label": "Lamborghini Huracán",
+  "description": "O Lamborghini Huracán é um automóvel desportivo construído pela empresa italiana Lamborghini desde 2014, sendo o sucessor do Lamborghini Gallardo, uns dos carros mais bem sucedidos da história da companhia. Como é tradição na marca Lamborghini, o nome Huracán surgiu do touro de lide indultado na praça Real Maestranza de Sevilla.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Lamborghini_Hurac%C3%A1n",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Lamborghini_Huracan_Evo_Genf_2019_1Y7A5452.jpg/500px-Lamborghini_Huracan_Evo_Genf_2019_1Y7A5452.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Lamborghini_Huracan_Evo_Genf_2019_1Y7A5452.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Volvo\nXC": {
+  "id": "wikipedia:pt:Volvo XC90",
+  "label": "Volvo XC90",
+  "description": "O XC90 é um sofisticado utilitário esportivo de alto-luxo da Volvo sueca, equipado com uma grande variedade de itens de segurança e conforto, como freios do tipo ABS (antitravamento), controle de tração inteligente, sistema WHIPS, vários air-bags espalhados pelo habitáculo do veículo, ar-condicionado e aquecedor, etc.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Volvo_XC90",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/2025_Volvo_XC90_II_DSC_7423.jpg/500px-2025_Volvo_XC90_II_DSC_7423.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2025_Volvo_XC90_II_DSC_7423.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "RAM\nCLASSIC": {
+  "id": "wikipedia:en:Ram pickup (fourth generation)",
+  "label": "Ram pickup (fourth generation)",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ram_pickup_(fourth_generation)",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/2024_Ram_1500_Classic_Tradesman_%28cropped%29.jpg/500px-2024_Ram_1500_Classic_Tradesman_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2024_Ram_1500_Classic_Tradesman_(cropped).jpg",
+   "artist": "Quintin Soloviev",
+   "license": "CC BY 4.0"
+  }
+ },
+ "BMW\nX5": {
+  "id": "wikipedia:en:BMW X5",
+  "label": "BMW X5",
+  "wikipedia": "https://en.wikipedia.org/wiki/BMW_X5",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_BMW_X5_M50d_Automatic_3.0.jpg/500px-2019_BMW_X5_M50d_Automatic_3.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2019_BMW_X5_M50d_Automatic_3.0.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Fiat\nPalio": {
+  "id": "wikipedia:pt:Fiat Palio",
+  "label": "Fiat Palio",
+  "description": "Fiat Palio é um automóvel compacto que foi produzido pela Fiat entre 1996 e 2018, tendo sido projetado para mercados emergentes como América Latina, África do Sul, Leste Europeu e Ásia. O nome Palio vem do festival medieval do Pálio, realizado anualmente na cidade italiana de Siena.A.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Fiat_Palio",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Fiat_Palio_5door.JPG/500px-Fiat_Palio_5door.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Fiat_Palio_5door.JPG",
+   "artist": "Corvettec6r",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "TAC\nStark": null,
+ "Ford\nFiesta": {
+  "id": "wikipedia:pt:Ford Fiesta",
+  "label": "Ford Fiesta",
+  "description": "O Fiesta é um hatchback produzido pela Ford de 1976 a 2023. Atualmente, se encontra em sua sétima geração. O Fiesta é um projeto global, tendo sido fabricado e comercializado em vários lugares do mundo. Foi comercializado na Europa, América, Ásia, Oceania e África.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Ford_Fiesta",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Ford_Fiesta_ST-Line_%28VII%2C_Facelift%29_%E2%80%93_f_30012023.jpg/500px-Ford_Fiesta_ST-Line_%28VII%2C_Facelift%29_%E2%80%93_f_30012023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Ford_Fiesta_ST-Line_(VII%2C_Facelift)_%E2%80%93_f_30012023.jpg",
+   "artist": "© M 93",
+   "license": "CC BY-SA 3.0 de"
+  }
+ },
+ "Porsche\nCayman": {
+  "id": "wikipedia:pt:Porsche Cayman",
+  "label": "Porsche Cayman",
+  "description": "O Porsche Cayman é um carro desportivo de dois lugares com motor central fabricado e comercializado pela fabricante alemã de automóveis Porsche ao longo de três gerações. É um carro muito semelhante ao Porsche Boxster, sendo o Cayman a versão de capota rigida.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Porsche_Cayman",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/2018_Porsche_718_Cayman_S_S-A_2.5_Front.jpg/500px-2018_Porsche_718_Cayman_S_S-A_2.5_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2018_Porsche_718_Cayman_S_S-A_2.5_Front.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "JINBEI\nTOPIC": {
+  "id": "wikipedia:en:Jinbei Haise",
+  "label": "Jinbei Haise",
+  "wikipedia": "https://en.wikipedia.org/wiki/Jinbei_Haise",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jinbei_Haise_MK6_001.jpg/500px-Jinbei_Haise_MK6_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Jinbei_Haise_MK6_001.jpg",
+   "artist": "Jengtingchen",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "GM - Chevrolet\nZafira": {
+  "id": "wikipedia:pt:Opel Zafira",
+  "label": "Opel Zafira",
+  "description": "O Opel Zafira é um veículo monovolume de porte médio de projeto Opel, produzido a partir do ano de 2000. Utiliza nas versões iniciais, a mesma plataforma do Opel Astra, fazendo concorrência com os modelos Citroën Xsara Picasso e Renault Scénic, ambas encerradas em 2010. Sua fabricação no Brasil começou em 2001 e terminou em 2012.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Opel_Zafira",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Opel_Zafira_Life_%28Facelift%29_DSC_6022.jpg/500px-Opel_Zafira_Life_%28Facelift%29_DSC_6022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Opel_Zafira_Life_(Facelift)_DSC_6022.jpg",
+   "artist": "Alexander-93",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Jeep\nGrand Cherokee": {
+  "id": "wikipedia:pt:Jeep Grand Cherokee",
+  "label": "Jeep Grand Cherokee",
+  "description": "O Grand Cherokee é um SUV médio-grande produzido pela Jeep, lançado em 1993. Sucedeu ao Grand Wagoneer. O carro possui versão a gasolina e diesel.0 V6 diesel de 241 cv. O veículo possui tração 4x4 em tempo integral Quadra-Trac II.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Jeep_Grand_Cherokee",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Jeep_Grand_Cherokee_L_Overland_Automesse_Ludwigsburg_2022_1X7A5918.jpg/500px-Jeep_Grand_Cherokee_L_Overland_Automesse_Ludwigsburg_2022_1X7A5918.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Jeep_Grand_Cherokee_L_Overland_Automesse_Ludwigsburg_2022_1X7A5918.jpg",
+   "artist": "Alexander Migl",
    "license": "CC BY-SA 4.0"
   }
  }

@@ -122,3 +122,29 @@ describe("RAM on Commons", () => {
     expect((await findFallback(fakeApis({ en: ["Ram 1500"] }).getJson, "RAM", "1500"))?.id).toBe("wikipedia:en:Ram 1500");
   });
 });
+
+describe("hand-picked sources", () => {
+  it("fetches the chosen article or file instead of searching", async () => {
+    const titles = [
+      { brand: "GM - Chevrolet", family: "Zafira", source: "pt:Opel Zafira" },
+      { brand: "NETA", family: "X", source: "commons:Neta X 002.jpg" },
+    ];
+    const article = await findFallback(fakeApis({}).getJson, "GM - Chevrolet", "Zafira", titles);
+    expect(article).toMatchObject({ id: "wikipedia:pt:Opel Zafira", label: "Opel Zafira" });
+    const { getJson, urls } = fakeApis({});
+    const file = await findFallback(getJson, "NETA", "X", titles);
+    expect(file).toMatchObject({ id: "commons:Neta X 002.jpg", label: "NETA X" });
+    expect(urls.some((url) => url.includes("list=search"))).toBe(false);
+  });
+});
+
+describe("fallbackFitsModel", () => {
+  it("lends the line's picture only to a model it names", async () => {
+    const { fallbackFitsModel } = await import("./fallback.ts");
+    expect(fallbackFitsModel("Toyota Hilux", "Toyota Hilux SW4", "Toyota")).toBe(true);
+    expect(fallbackFitsModel("Porsche 911", "Porsche 911 Targa", "Porsche")).toBe(true);
+    expect(fallbackFitsModel("BYD Song Plus", "BYD Song Pro", "BYD")).toBe(true);
+    expect(fallbackFitsModel("Volvo XC90", "Volvo EX40", "Volvo")).toBe(false);
+    expect(fallbackFitsModel("Opel Zafira", "Chevrolet Zafira", "GM - Chevrolet")).toBe(true);
+  });
+});

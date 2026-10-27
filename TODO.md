@@ -12,8 +12,8 @@ disponibilidade dela.
       gerando o build com `VITE_FIPE_API_URL`.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
-- [ ] 🟢 Fotos que ainda faltam: 195 versões sem modelo nem reserva (Wake, Baby e outras marcas com
-      nome de palavra comum, RAM 2500/3500, linhas de uma letra) e 62 com modelo sem foto.
+- [ ] 🟢 Fotos que ainda faltam: ~150 versões, quase todas utilitários e marcas de nicho sem artigo
+      (Hitech Electric, Effa, Hafei Towner, Foton, buggies), além de RAM Dakota, JAC iEV/T5 e BMW 220i.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fase 4 do plano: potência, torque, dimensões, porta-malas, peso e equipamentos não têm
@@ -179,6 +179,9 @@ Histórico resumido, em ordem aproximada.
 - [x] INMETRO PBEV 2010–2026: parser por layout de ano, casamento por ano-modelo (~3.000 versões),
       ajustes manuais, filtros de porte, marchas, consumo, direção e ar.
 - [x] ANP: preço médio por estado, semanal, no custo por km.
+- [x] Modelos do Wikidata sem foto usam a da linha (Hilux SW4, 911 Targa, Fiesta Sedan, Titano…) e
+      fontes escolhidas à mão em `data/wikidata/fallback-titles.json` (Zafira, Sprinter, RAM 2500/3500/
+      Classic, GWM Poer, Jinbei Topic, Neta X): versões com foto de 4.764 para 4.864.
 - [x] Reserva de fotos (Wikipedia pt/en e Commons) para as linhas sem modelo no Wikidata: 71 de 150
       linhas, versões com foto de 4.493 para 4.764 (Punto, Daily, Basalt, Sealion, F-Type…).
 - [x] Wikidata / Commons: foto e descrição da linha (4.555 versões, 577 modelos). Cobertura de fotos
