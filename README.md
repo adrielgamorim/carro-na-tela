@@ -26,7 +26,8 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
-- Cards com foto da linha do modelo (Wikimedia Commons), frota em circulação e posição no ranking.
+- Cards com o logo da marca, foto da linha do modelo (Wikimedia Commons), frota em circulação e
+  posição no ranking.
 - Busca pelo chassi (VIN): fabricante, país e ano-modelo decodificados no navegador; modelo e
   motor pela NHTSA vPIC quando ela conhece o veículo. O resultado vira filtros.
 

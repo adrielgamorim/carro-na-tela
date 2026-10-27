@@ -3,7 +3,7 @@ import { categoryLabel } from "../constants/categories";
 import type { VehicleEnrichmentState } from "../hooks/useVehicleEnrichment";
 import { formatModelYear } from "../services/fipeParsing";
 import type { FipeVehicle } from "../types/vehicle";
-import { CategoryIcon } from "./CategoryIcon";
+import { BrandIcon } from "./BrandIcon";
 import { VehicleDetails } from "./VehicleDetails";
 import "./VehicleCard.css";
 
@@ -35,7 +35,7 @@ export function VehicleCard({
     <article className="vehicle-card">
       <div className="vehicle-row">
         <div className="vehicle-category-mark" aria-hidden="true">
-          <CategoryIcon category={vehicle.category} size={20} />
+          <BrandIcon brand={vehicle.brand} category={vehicle.category} size={20} />
         </div>
         <div className="vehicle-identity">
           <div className="vehicle-title-line">

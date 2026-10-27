@@ -6,7 +6,7 @@ import { fleetOfYear, formatFleetCount } from "../../catalog/fleet";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
 import type { CatalogEntry } from "../../catalog/types";
 import type { FipeVehicle } from "../../types/vehicle";
-import { CategoryIcon } from "../CategoryIcon";
+import { BrandIcon } from "../BrandIcon";
 import "./CatalogCard.css";
 
 export type LivePrice =
@@ -122,7 +122,7 @@ export function CatalogCard({
       )}
       <div className="catalog-card-top">
         <span className="catalog-card-icon" aria-hidden="true">
-          <CategoryIcon category={selected.category} size={18} />
+          <BrandIcon brand={selected.brand} category={selected.category} size={18} />
         </span>
         <div className="catalog-card-title">
           <span>

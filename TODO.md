@@ -132,6 +132,13 @@ Histórico resumido, em ordem aproximada.
       bandeja do comparador e no celular.
 - [x] Testes de componente do `VinSearch` (envio, erro, resultado, filtros aplicados, limpar).
 
+**Logos de marca**
+
+- [x] Logo da marca no lugar do ícone de carro nos cards do catálogo e da consulta: 44 marcas do
+      Simple Icons (CC0) em `public/brands/` (`npm run build:brand-icons`), carregados como máscara
+      CSS só quando aparecem e pintados na cor do tema. Mercedes-Benz, BYD, Land Rover, Jaguar e
+      outras pediram ao Simple Icons a remoção dos logos e ficam com o ícone de carro.
+
 **Robustez**
 
 - [x] Error boundary por aba (`src/components/ErrorBoundary.tsx`): um erro de renderização mostra

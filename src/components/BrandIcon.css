@@ -1,0 +1,12 @@
+/* Styles of BrandIcon.tsx: the logo file is the mask, the text color paints it. */
+.brand-icon {
+  display: inline-block;
+  flex: none;
+  background-color: currentColor;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+}

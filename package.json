@@ -18,7 +18,8 @@
     "fetch:wikidata": "node scripts/wikidata/fetch-wikidata.ts",
     "fetch:anp": "node scripts/anp/fetch-anp.ts",
     "fetch:wmi": "node scripts/vin/fetch-wmi.ts",
-    "fetch:frota": "node scripts/frota/fetch-frota.ts"
+    "fetch:frota": "node scripts/frota/fetch-frota.ts",
+    "build:brand-icons": "node scripts/brands/build-brand-icons.ts"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",
@@ -41,6 +42,7 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
     "vite": "^8.3.0",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.3",
+    "simple-icons": "^16.36.0"
   }
 }
