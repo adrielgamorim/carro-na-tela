@@ -2894,14 +2894,6 @@
   ]
  },
  "Q16325434": {
-  "width": [
-   1.845,
-   1.865
-  ],
-  "wheelbase": [
-   2.66,
-   2.69
-  ],
   "height": [
    1.645,
    1.66
@@ -2909,6 +2901,14 @@
   "length": [
    4.63,
    4.66
+  ],
+  "width": [
+   1.845,
+   1.865
+  ],
+  "wheelbase": [
+   2.66,
+   2.69
   ]
  },
  "Q16687488": {
@@ -8997,24 +8997,6 @@
    1733
   ]
  },
- "wikipedia:en:BYD M3": {
-  "wheelbase": [
-   2.725,
-   2.725
-  ],
-  "length": [
-   4.46,
-   4.46
-  ],
-  "width": [
-   1.72,
-   1.72
-  ],
-  "height": [
-   1.875,
-   1.875
-  ]
- },
  "wikipedia:en:JAC Refine S3": {
   "wheelbase": [
    2.56,
@@ -9123,6 +9105,82 @@
   "mass": [
    1430,
    1850
+  ]
+ },
+ "wikipedia:en:Foton Toano": {
+  "wheelbase": [
+   2.933,
+   3.75
+  ],
+  "length": [
+   5.015,
+   5.99
+  ],
+  "width": [
+   2,
+   2
+  ],
+  "height": [
+   2.415,
+   2.43
+  ]
+ },
+ "wikipedia:en:DFSK C-Series": {
+  "wheelbase": [
+   3.05,
+   3.05
+  ],
+  "length": [
+   4.5,
+   4.965
+  ],
+  "width": [
+   1.655,
+   1.755
+  ],
+  "height": [
+   1.91,
+   1.96
+  ],
+  "power": [
+   82,
+   82
+  ]
+ },
+ "wikipedia:en:BYD M3": {
+  "wheelbase": [
+   2.725,
+   2.725
+  ],
+  "length": [
+   4.46,
+   4.46
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   1.875,
+   1.875
+  ]
+ },
+ "wikipedia:en:Karry Youyi": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.61,
+   4.61
+  ],
+  "width": [
+   1.693,
+   1.693
+  ],
+  "height": [
+   1.855,
+   1.855
   ]
  },
  "wikipedia:en:Roewe 550": {

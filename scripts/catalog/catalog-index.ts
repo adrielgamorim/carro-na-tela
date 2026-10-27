@@ -84,6 +84,8 @@ export interface BuildOptions {
     overrides?: WikidataOverride[];
     /** Wikipedia/Commons pictures of lines with no Wikidata model (data/wikidata/fallback.json). */
     fallback?: FallbackFile;
+    /** Lines whose fallback was chosen by hand (fallback-titles.json): it fits whatever the model. */
+    chosenFallbacks?: string[];
     /** Size and mass per model (data/wikidata/specs.json). */
     specs?: Record<string, ModelSpecs>;
     /** Photo per generation of a model (data/wikidata/generations.json). */
@@ -251,18 +253,22 @@ export function buildCatalogIndex(
     const photoIndex = new Map<string, number>();
     const match = createWikidataMatcher(wikidata.models, wikidata.overrides);
     const modelIndex = new Map<string, number>();
+    const chosenFallbacks = new Set(wikidata.chosenFallbacks);
     for (const version of sorted) {
       const model = match({
         brand: brandName(version),
         model: version.n,
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
       });
-      const fallback = wikidata.fallback?.[fallbackKey(brandName(version), getModelFamily(version.n))] ?? undefined;
+      const lineKey = fallbackKey(brandName(version), getModelFamily(version.n));
+      const fallback = wikidata.fallback?.[lineKey] ?? undefined;
       const fromWikidata = model ? toCatalogModel(model, wikidata.details?.[model.id], wikidata.specs?.[model.id]) : undefined;
       // A Wikidata model without an image keeps its text and borrows the
       // line's fallback picture.
       const info = fromWikidata
-        ? fromWikidata.image || !fallback?.image || !fallbackFitsModel(fallback.label, fromWikidata.label, brandName(version))
+        ? fromWikidata.image ||
+          !fallback?.image ||
+          (!chosenFallbacks.has(lineKey) && !fallbackFitsModel(fallback.label, fromWikidata.label, brandName(version)))
           ? fromWikidata
           : { ...fromWikidata, image: fallback.image }
         : findWikidataOverride(wikidata.overrides ?? [], { brand: brandName(version), model: version.n })?.none
@@ -287,8 +293,10 @@ export function buildCatalogIndex(
       const generations = wikidata.generations?.[info.id];
       if (!generations) continue;
       const years = versionYears(version.y.map(([yearCode]) => yearCode), now);
+      // The name after the line ("Mille Celeb. 1.0") can tell overlapping generations apart.
+      const versionWords = version.n.trim().slice(getModelFamily(version.n).length);
       const perYear = years.map((year) => {
-        const generation = generationOf(generations, year, now.getFullYear());
+        const generation = generationOf(generations, year, now.getFullYear(), versionWords);
         if (!generation?.thumb) return -1;
         const page = commonsFile(generation.file);
         if (page === info.image?.page) return -1;

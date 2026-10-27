@@ -19,7 +19,8 @@ import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
-import type { FallbackFile } from "../wikidata/fallback.ts";
+import { fallbackKey } from "../wikidata/fallback.ts";
+import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 
@@ -73,6 +74,9 @@ const wikidata = await readFile(join(wikidataDir, "models.json"), "utf8")
     fallback: await readFile(join(wikidataDir, "fallback.json"), "utf8")
       .then((file) => JSON.parse(file) as FallbackFile)
       .catch(() => ({}) as FallbackFile),
+    chosenFallbacks: await readFile(join(wikidataDir, "fallback-titles.json"), "utf8")
+      .then((file) => (JSON.parse(file) as { titles: FallbackTitle[] }).titles.map(({ brand, family }) => fallbackKey(brand, family)))
+      .catch(() => [] as string[]),
     specs: await readFile(join(wikidataDir, "specs.json"), "utf8")
       .then((file) => JSON.parse(file) as Record<string, ModelSpecs>)
       .catch(() => ({})),

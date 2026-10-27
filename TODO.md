@@ -8,19 +8,16 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🟢 Domínio próprio, para o cache das respostas da FIPE valer.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
-- [ ] 🟢 Fotos que ainda faltam: 137 versões, quase todas utilitários e marcas de nicho sem artigo
-      (Hitech Electric, Effa, Hafei Towner, Foton, Chana, Shineray, buggies), além de RAM Dakota
-      (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV, Volvo EX40 e Jetour S06.
-- [ ] 🟢 Geração pela versão, não só pelo ano: em 2013–2014 a FIPE tem Gol G4 e G6 lado a lado, e o
-      Uno Mille fica com a foto do Novo Uno nos anos em que os dois eram vendidos.
+- [ ] 🟢 Fotos que ainda faltam: 104 versões, quase todas utilitários e marcas de nicho sem artigo
+      com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
+      de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
+      (a reserva é por linha, e a FIPE chama as duas só de "SERES").
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fase 4, o que falta: torque, porta-malas e equipamentos não têm fonte grátis com cobertura útil
       (nem o Wikidata nem as infobox da Wikipedia trazem isso de forma regular).
-- [ ] 🟢 Avaliar APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ### Produto
 
@@ -34,14 +31,22 @@ disponibilidade dela.
       Medir de novo quando entrarem motos e caminhões.
 - [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
 
-### Qualidade de código
+## Futuro
 
-- [ ] 🟡 Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
-      catálogo na URL, recarregar, busca pelo chassi. `CatalogPage` ainda não tem teste de
-      componente.
+- Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
+  funciona em domínio próprio).
+- Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
+  catálogo na URL, recarregar, busca pelo chassi. `CatalogPage` ainda não tem teste de componente.
+- APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído
 
+- [x] Geração pela versão: quando as gerações se sobrepõem, a primeira palavra depois da linha
+      escolhe a geração que também se chama assim ("Uno Mille" → 1ª geração, "Fiat Mille"; Clio
+      Campus → Clio II; Sandero Stepway → Sandero II), e "(novo)" fica com a mais nova ("Gol (novo)"
+      2013–2014 → G6). Fontes à mão para Volvo EX40, DFSK EC35, Hitech E-Work, Hafei Towner, Chana,
+      Rely Van/Pick-up, Foton eView/eToano e JAC V260, que agora valem mesmo quando o Wikidata tem um
+      modelo sem foto (137 → 104 versões sem foto).
 - [x] Foto por geração: infobox de cada geração nos artigos da Wikipedia (pt, depois en) dá a cada
       ano-modelo a foto da sua geração (Gol G5/G6, HB20 1ª/2ª/atual, Sandero I/II/III); 850 fotos
       diferentes nos cards (eram 647). Fontes à mão para JAC T5/T50/T60/T80, BMW 220i/225i/435iA/M,

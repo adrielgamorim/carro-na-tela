@@ -138,6 +138,78 @@
       "family": "SUV",
       "source": "en:Mahindra Scorpio",
       "reason": "O \"Mahindra SUV\" vendido no Brasil é o Scorpio."
+    },
+    {
+      "brand": "Volvo",
+      "family": "EX40",
+      "source": "en:Volvo XC40",
+      "reason": "O EX40 é o XC40 elétrico (antes XC40 Recharge), renomeado em 2024; 'Volvo EX40' redireciona para o XC40."
+    },
+    {
+      "brand": "DFSK",
+      "family": "EC35",
+      "source": "en:DFSK C-Series",
+      "reason": "O EC35 é o furgão C35 elétrico; 'DFSK EC35' redireciona para a linha C (foto de um C37 a combustão, como ilustração)."
+    },
+    {
+      "brand": "HITECH ELECTRIC",
+      "family": "E-Work",
+      "source": "en:DFSK C-Series",
+      "reason": "Os E-Work EC31/EC35 da Hitech são os furgões elétricos EC31/EC35 da DFSK com outra marca."
+    },
+    {
+      "brand": "HAFEI",
+      "family": "Towner",
+      "source": "en:Hafei Zhongyi",
+      "reason": "O Towner é o microutilitário Hafei Zhongyi (furgão, picape e passageiro)."
+    },
+    {
+      "brand": "CHANA",
+      "family": "Cargo",
+      "source": "en:Chana Star",
+      "reason": "Os Chana vendidos no Brasil (Cargo, Family, Utility) são a linha de microutilitários Chana Star."
+    },
+    {
+      "brand": "CHANA",
+      "family": "Family",
+      "source": "en:Chana Star",
+      "reason": "Os Chana vendidos no Brasil (Cargo, Family, Utility) são a linha de microutilitários Chana Star."
+    },
+    {
+      "brand": "CHANA",
+      "family": "Utility",
+      "source": "en:Chana Star",
+      "reason": "Os Chana vendidos no Brasil (Cargo, Family, Utility) são a linha de microutilitários Chana Star."
+    },
+    {
+      "brand": "RELY",
+      "family": "VAN",
+      "source": "en:Karry Youyi",
+      "reason": "A Rely Van Q22 é o Karry Q22 (Youyi) da Chery; 'Chery Karry' redireciona para ele."
+    },
+    {
+      "brand": "RELY",
+      "family": "PICK-UP",
+      "source": "en:Karry Youyi",
+      "reason": "A Rely Pick-up Q22 é a versão picape do Karry Q22 (Youyi) da Chery."
+    },
+    {
+      "brand": "FOTON",
+      "family": "eView",
+      "source": "en:Foton View",
+      "reason": "As eView Connect e Grand são as vans Foton View elétricas."
+    },
+    {
+      "brand": "FOTON",
+      "family": "eToano",
+      "source": "en:Foton Toano",
+      "reason": "A eToano Pro é a van Foton Toano elétrica."
+    },
+    {
+      "brand": "JAC",
+      "family": "V260",
+      "source": "en:JAC Sunray",
+      "reason": "A V260 é a van JAC Sunray (Xingrui)."
     }
   ]
 }

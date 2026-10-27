@@ -419,7 +419,10 @@ const articleGenerationsFile = join(values.out, "generation-articles.json");
 const articleGenerations: Record<string, Generation[]> = await readFile(articleGenerationsFile, "utf8")
   .then((text) => JSON.parse(text) as Record<string, Generation[]>)
   .catch(() => ({}));
-const toParse = [...new Set([...articlesOf.values()].flat())].filter((article) => !(article in articleGenerations));
+// Lists saved before names were kept are read again.
+const toParse = [...new Set([...articlesOf.values()].flat())].filter(
+  (article) => !(article in articleGenerations) || articleGenerations[article]?.some(({ names }) => names === undefined),
+);
 console.log(`Gerações na Wikipedia: ${toParse.length} artigos para ler`);
 const saveArticleGenerations = () =>
   writeFile(articleGenerationsFile, `${JSON.stringify(articleGenerations, null, 1)}\n`);
@@ -467,9 +470,9 @@ await writeFile(generationPhotosFile, `${JSON.stringify(generationPhotos, null, 
 const generations: Record<string, ModelGeneration[]> = {};
 for (const [id, articles] of articlesOf) {
   const list = articles.flatMap((article) =>
-    (articleGenerations[article] ?? []).flatMap(({ file, from, to }): ModelGeneration[] => {
+    (articleGenerations[article] ?? []).flatMap(({ file, from, to, names }): ModelGeneration[] => {
       const photo = generationPhotos[file];
-      return photo ? [{ file, from, to, ...photo }] : [];
+      return photo ? [{ file, from, to, ...(names && { names }), ...photo }] : [];
     }),
   );
   if (list.length) generations[id] = list;

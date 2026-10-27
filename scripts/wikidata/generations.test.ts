@@ -75,4 +75,34 @@ describe("generations", () => {
     const stillMade = [...generations, { file: "VW Gol 2009 front.jpg", from: 2008, to: null }];
     expect(generationOf(stillMade, 2009, 2026)?.file).toContain("Trend 2011");
   });
+
+  it("keeps the names of each generation", () => {
+    const names = parseGenerations(
+      `${ptGol}\n{{Infobox automobile\n| name = First generation (Type 146)\n| aka = Fiat Mille (Brazil)<br />Innocenti Mille<ref>x</ref>\n| image = Uno.jpg\n| production = 1983–2013\n}}`,
+    ).map((generation) => generation.names);
+    expect(names.at(-2)).toBe("novo gol gol g6");
+    expect(names.at(-1)).toBe("first generation type 146 fiat mille brazil innocenti mille");
+  });
+
+  it("tells overlapping generations apart by the version's name", () => {
+    const uno = [
+      { file: "Uno 2011.jpg", from: 1983, to: 2021, names: "fiat uno fiat mille innocenti mille clip" },
+      { file: "Uno 2007.jpg", from: 1983, to: 2014, names: "first generation type 146 fiat mille brazil" },
+      { file: "Uno 2011.jpg", from: 2010, to: 2021, names: "second generation type 327" },
+    ];
+    expect(generationOf(uno, 2012, 2026, "Mille WAY ECONOMY 1.0 F.Flex 2p")?.file).toBe("Uno 2007.jpg");
+    expect(generationOf(uno, 2012, 2026, "WAY 1.0 EVO Fire Flex 8V 2p")?.from).toBe(2010);
+    // Only the first word counts, and not a body style every generation had.
+    expect(generationOf(uno, 2012, 2026, "WAY Mille 1.0")?.from).toBe(2010);
+    const onix = [
+      { file: "Onix 2012.jpg", from: 2012, to: 2019, names: "first generation chevrolet prisma sedan" },
+      { file: "Onix 2020.jpg", from: 2019, to: null, names: "second generation" },
+    ];
+    expect(generationOf(onix, 2021, 2026, "SEDAN Plus LT 1.0 12V")?.file).toBe("Onix 2020.jpg");
+    // "(novo)" is the newest generation of that year.
+    const generations = parseGenerations(ptGol);
+    expect(generationOf(generations, 2013, 2026, "(novo) 1.0 Mi Total Flex 8V 2p")?.file).toContain("Power 2013");
+    expect(generationOf(generations, 2010, 2026, "(novo) 1.0 Mi Total Flex 8V 4p")?.file).toContain("Trend 2011");
+    expect(generationOf(generations, 2013, 2026, "City (Trend) 1.0 Mi")?.file).toContain("IV Gen");
+  });
 });

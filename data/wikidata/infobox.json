@@ -9859,5 +9859,67 @@
    91,
    91
   ]
- }
+ },
+ "en:Foton Toano": {
+  "wheelbase": [
+   2.933,
+   3.75
+  ],
+  "length": [
+   5.015,
+   5.99
+  ],
+  "width": [
+   2,
+   2
+  ],
+  "height": [
+   2.415,
+   2.43
+  ]
+ },
+ "en:Foton View": {},
+ "en:DFSK C-Series": {
+  "wheelbase": [
+   3.05,
+   3.05
+  ],
+  "length": [
+   4.5,
+   4.965
+  ],
+  "width": [
+   1.655,
+   1.755
+  ],
+  "height": [
+   1.91,
+   1.96
+  ],
+  "power": [
+   82,
+   82
+  ]
+ },
+ "en:JAC Sunray": {},
+ "en:Karry Youyi": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.61,
+   4.61
+  ],
+  "width": [
+   1.693,
+   1.693
+  ],
+  "height": [
+   1.855,
+   1.855
+  ]
+ },
+ "en:Hafei Zhongyi": {},
+ "en:Chana Star": {}
 }

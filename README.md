@@ -93,7 +93,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.884 versões com foto |
+| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.917 versões com foto |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -164,11 +164,15 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   ("nada" também, para não buscar de novo); apague uma entrada para buscá-la outra vez. Um modelo do
   Wikidata sem foto usa a da sua linha, desde que o título dela tenha o nome do modelo ("Toyota
   Hilux" serve para o Hilux SW4; "Volvo XC90" não serve para o EX40). Linhas que a busca erra têm a
-  fonte escolhida à mão em `data/wikidata/fallback-titles.json` (artigo ou arquivo, com o motivo).
+  fonte escolhida à mão em `data/wikidata/fallback-titles.json` (artigo ou arquivo, com o motivo),
+  que vale também quando o Wikidata tem um modelo sem foto com outro nome (EX40 → Volvo XC40).
 - **Foto por geração:** artigos com uma infobox por geração (pt:Volkswagen Gol tem do G1 ao G6, cada
   uma com foto e anos de produção) dão a cada ano-modelo a foto da sua geração: a de período mais
   curto que cobre o ano, e um ano depois do fim só quando nenhuma cobre o ano em si (Brasil primeiro
-  quando a produção vem por país). O artigo em português vem antes do inglês; artigos com uma infobox
+  quando a produção vem por país). Quando as gerações se sobrepõem, o nome da versão desempata antes:
+  vale a geração cujo nome ou "outros nomes" tem uma palavra dele ("Uno Mille" é a 1ª geração, também
+  chamada "Fiat Mille"), e "(novo)" fica com a geração mais nova daquele ano ("Gol (novo)" 2013 é o
+  G6, não o G4). O artigo em português vem antes do inglês; artigos com uma infobox
   só não entram. Cada artigo é lido inteiro uma vez (`data/wikidata/generation-articles.json`) e os
   créditos de cada foto também (`generation-photos.json`); o resultado por modelo fica em
   `generations.json`. No índice, cada ano da versão aponta para a foto (`g`, em `photos`), então o

@@ -95,8 +95,6 @@
  "EFFA\nV22": null,
  "EFFA\nV25": null,
  "FEVER\nNEXTEM": null,
- "FOTON\neToano": null,
- "FOTON\neView": null,
  "FOTON\neWonder": null,
  "Fibravan\nBuggy": null,
  "Ford\nF-150": {
@@ -154,7 +152,6 @@
   }
  },
  "HITECH ELECTRIC\nDelivery": null,
- "HITECH ELECTRIC\nE-Work": null,
  "HITECH ELECTRIC\ne.co": null,
  "HITECH ELECTRIC\ne.coCargo": null,
  "HITECH ELECTRIC\ne.coTruck": null,
@@ -393,7 +390,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "DFSK\nEC35": null,
  "Ferrari\n812": {
   "id": "wikipedia:en:Ferrari 812 Superfast",
   "label": "Ferrari 812 Superfast",
@@ -469,7 +465,6 @@
   }
  },
  "FOTON\nMINITRUCK": null,
- "JAC\nV260": null,
  "BRM\nBuggy": null,
  "Fiat\nGrand Siena": {
   "id": "wikipedia:pt:Fiat Siena",
@@ -654,7 +649,6 @@
    "license": "CC BY-SA 2.0"
   }
  },
- "RELY\nPICK-UP": null,
  "SHINERAY\nSY1020": null,
  "SHINERAY\nSY6370": null,
  "SHINERAY\nSY6390": {
@@ -704,9 +698,6 @@
   }
  },
  "RELY\nLINK": null,
- "RELY\nVAN": null,
- "HAFEI\nTowner": null,
- "CHANA\nCargo": null,
  "CHANGAN\nMINI": {
   "id": "commons:Changan Benben Mini 001.jpg",
   "label": "CHANGAN MINI",
@@ -750,8 +741,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "CHANA\nFamily": null,
- "CHANA\nUtility": null,
  "Hyundai\nH1": {
   "id": "commons:Hyundai H1 van.jpg",
   "label": "Hyundai H1",
@@ -954,7 +943,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "Volvo\nEX40": null,
  "BMW\nX6": {
   "id": "wikipedia:en:BMW X6",
   "label": "BMW X6",
@@ -1116,17 +1104,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "BYD\neT3": {
-  "id": "wikipedia:en:BYD M3",
-  "label": "BYD M3",
-  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
-  "image": {
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
-   "artist": "Navigator84",
-   "license": "CC BY-SA 3.0"
-  }
- },
  "JAC\nT50": {
   "id": "wikipedia:en:JAC Refine S3",
   "label": "JAC Refine S3",
@@ -1215,6 +1192,127 @@
    "license": "CC BY-SA 2.0"
   }
  },
+ "FOTON\neToano": {
+  "id": "wikipedia:en:Foton Toano",
+  "label": "Foton Toano",
+  "wikipedia": "https://en.wikipedia.org/wiki/Foton_Toano",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Foton_Toano_SWB_2_China_2016-04-09.jpg/500px-Foton_Toano_SWB_2_China_2016-04-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Foton_Toano_SWB_2_China_2016-04-09.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "FOTON\neView": {
+  "id": "wikipedia:en:Foton View",
+  "label": "Foton View",
+  "wikipedia": "https://en.wikipedia.org/wiki/Foton_View",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Foton_View_G7_IMG001.jpg/500px-Foton_View_G7_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Foton_View_G7_IMG001.jpg",
+   "artist": "Zotyefan",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "HITECH ELECTRIC\nE-Work": {
+  "id": "wikipedia:en:DFSK C-Series",
+  "label": "DFSK C-Series",
+  "wikipedia": "https://en.wikipedia.org/wiki/DFSK_C-Series",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/2018_Dongfeng-Xiaokang_%28Sokon%29_C37%2C_front_8.8.18.jpg/500px-2018_Dongfeng-Xiaokang_%28Sokon%29_C37%2C_front_8.8.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2018_Dongfeng-Xiaokang_(Sokon)_C37%2C_front_8.8.18.jpg",
+   "artist": "Kevauto",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Volvo\nEX40": {
+  "id": "wikipedia:en:Volvo XC40",
+  "label": "Volvo XC40",
+  "wikipedia": "https://en.wikipedia.org/wiki/Volvo_XC40",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/2019_Volvo_XC40_T5_Momentum_in_Bright_Silver_Metallic%2C_front_left%2C_2025-09-22.jpg/500px-2019_Volvo_XC40_T5_Momentum_in_Bright_Silver_Metallic%2C_front_left%2C_2025-09-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2019_Volvo_XC40_T5_Momentum_in_Bright_Silver_Metallic%2C_front_left%2C_2025-09-22.jpg",
+   "artist": "Elise240SX",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "BYD\neT3": {
+  "id": "wikipedia:en:BYD M3",
+  "label": "BYD M3",
+  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "DFSK\nEC35": {
+  "id": "wikipedia:en:DFSK C-Series",
+  "label": "DFSK C-Series",
+  "wikipedia": "https://en.wikipedia.org/wiki/DFSK_C-Series",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/2018_Dongfeng-Xiaokang_%28Sokon%29_C37%2C_front_8.8.18.jpg/500px-2018_Dongfeng-Xiaokang_%28Sokon%29_C37%2C_front_8.8.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2018_Dongfeng-Xiaokang_(Sokon)_C37%2C_front_8.8.18.jpg",
+   "artist": "Kevauto",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "JAC\nV260": {
+  "id": "wikipedia:en:JAC Sunray",
+  "label": "JAC Sunray",
+  "wikipedia": "https://en.wikipedia.org/wiki/JAC_Sunray",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/JAC_Sunray_SWB_China_2015-04-20.jpg/500px-JAC_Sunray_SWB_China_2015-04-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:JAC_Sunray_SWB_China_2015-04-20.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "RELY\nPICK-UP": {
+  "id": "wikipedia:en:Karry Youyi",
+  "label": "Karry Youyi",
+  "wikipedia": "https://en.wikipedia.org/wiki/Karry_Youyi",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Karry_Youyi_China_2012-04-09.jpg/500px-Karry_Youyi_China_2012-04-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Karry_Youyi_China_2012-04-09.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "RELY\nVAN": {
+  "id": "wikipedia:en:Karry Youyi",
+  "label": "Karry Youyi",
+  "wikipedia": "https://en.wikipedia.org/wiki/Karry_Youyi",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Karry_Youyi_China_2012-04-09.jpg/500px-Karry_Youyi_China_2012-04-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Karry_Youyi_China_2012-04-09.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "HAFEI\nTowner": {
+  "id": "wikipedia:en:Hafei Zhongyi",
+  "label": "Hafei Zhongyi",
+  "wikipedia": "https://en.wikipedia.org/wiki/Hafei_Zhongyi",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/2005_Hafei_Songhuajiang-Zhongyi_HFJ6371B%2C_front_8.4.18.jpg/500px-2005_Hafei_Songhuajiang-Zhongyi_HFJ6371B%2C_front_8.4.18.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2005_Hafei_Songhuajiang-Zhongyi_HFJ6371B%2C_front_8.4.18.jpg",
+   "artist": "Kevauto",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "CHANA\nCargo": {
+  "id": "wikipedia:en:Chana Star",
+  "label": "Chana Star",
+  "wikipedia": "https://en.wikipedia.org/wiki/Chana_Star",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kaicene_Xingka_facelift_IMG001.jpg/500px-Kaicene_Xingka_facelift_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Kaicene_Xingka_facelift_IMG001.jpg",
+   "artist": "Anonymousfox36",
+   "license": "CC BY-SA 4.0"
+  }
+ },
  "MG\n550": {
   "id": "wikipedia:en:Roewe 550",
   "label": "Roewe 550",
@@ -1223,6 +1321,28 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
    "artist": "Navigator84",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "CHANA\nFamily": {
+  "id": "wikipedia:en:Chana Star",
+  "label": "Chana Star",
+  "wikipedia": "https://en.wikipedia.org/wiki/Chana_Star",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kaicene_Xingka_facelift_IMG001.jpg/500px-Kaicene_Xingka_facelift_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Kaicene_Xingka_facelift_IMG001.jpg",
+   "artist": "Anonymousfox36",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "CHANA\nUtility": {
+  "id": "wikipedia:en:Chana Star",
+  "label": "Chana Star",
+  "wikipedia": "https://en.wikipedia.org/wiki/Chana_Star",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kaicene_Xingka_facelift_IMG001.jpg/500px-Kaicene_Xingka_facelift_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Kaicene_Xingka_facelift_IMG001.jpg",
+   "artist": "Anonymousfox36",
    "license": "CC BY-SA 4.0"
   }
  }
