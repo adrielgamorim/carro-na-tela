@@ -1,4 +1,5 @@
-import { lazy, Suspense, useCallback, useDeferredValue, useEffect, useMemo, useState } from "react";
+import { lazy, Suspense, useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
+import type { MouseEvent, ReactNode } from "react";
 import {
   ArrowDownUp,
   Search,
@@ -27,11 +28,12 @@ import { useVehicleEnrichment } from "../../hooks/useVehicleEnrichment";
 import { useVinSearch } from "../../hooks/useVinSearch";
 import type { FipeVehicle } from "../../types/vehicle";
 import { CatalogCard } from "./CatalogCard";
+import type { PageLink } from "./CatalogCard";
 import { CatalogHeading } from "./CatalogHeading";
 import { CatalogFilterPanel } from "./CatalogFilterPanel";
 import { CompareTray } from "./CompareTray";
-import { VehicleDetailsDialog } from "./VehicleDetailsDialog";
 import { VinSearch } from "./VinSearch";
+import { VehiclePage } from "./VehiclePage";
 import "./catalog.css";
 import "./CatalogPage.css";
 
@@ -42,7 +44,22 @@ const CompareTable = lazy(() =>
   import("./CompareTable").then((module) => ({ default: module.CompareTable })),
 );
 
+// A version's page is /?versao=<entry id>; the list keeps its filters in memory
+// behind it, so the browser's back button returns to the same spot.
 const detailsParam = "versao";
+const readOpenId = () => new URLSearchParams(window.location.search).get(detailsParam);
+
+/** Plain left click → handled here; ctrl/shift/middle click → the browser (new tab). */
+function linkTo(href: string, open: () => void): PageLink {
+  return {
+    href,
+    onClick: (event: MouseEvent<HTMLAnchorElement>) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+      event.preventDefault();
+      open();
+    },
+  };
+}
 
 const sortLabels: Record<CatalogSort, string> = {
   "price-asc": "Menor preço",
@@ -71,23 +88,9 @@ function CatalogBrowser({
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [page, setPage] = useState({ key: "", count: pageSize });
   const [compareOpen, setCompareOpen] = useState(false);
-  // A shared link with ?versao= opens that version (when it has a crawled price).
-  const [detailsVehicle, setDetailsVehicle] = useState<FipeVehicle | null>(() => {
-    const entryId = new URLSearchParams(window.location.search).get(detailsParam);
-    const entry = entryId ? index.entries.find((item) => item.id === entryId) : undefined;
-    return entry ? catalogEntryToVehicle(entry) : null;
-  });
-  // The open version is in the URL (?versao=<entry id>), so a link opens it.
-  const setDetailsParam = (entryId: string | null) => {
-    const url = new URL(window.location.href);
-    if (entryId) url.searchParams.set(detailsParam, entryId);
-    else url.searchParams.delete(detailsParam);
-    window.history.replaceState(window.history.state, "", url);
-  };
-  const closeDetails = useCallback(() => {
-    setDetailsVehicle(null);
-    setDetailsParam(null);
-  }, []);
+  const [openId, setOpenId] = useState<string | null>(readOpenId);
+  // Where the list was scrolled when a version's page opened.
+  const listScroll = useRef(0);
   const { enrichmentByVehicle, loadEnrichment, retryEnrichment } = useVehicleEnrichment();
   const closeCompare = useCallback(() => setCompareOpen(false), []);
   const deferredFilters = useDeferredValue(filters);
@@ -106,17 +109,22 @@ function CatalogBrowser({
   });
 
   useEffect(() => {
+    // A version's page has a URL of its own; the filters come back with the list.
+    if (openId) return;
     const url = new URL(window.location.href);
     writeCatalogParams(filters, url.searchParams);
     window.history.replaceState(window.history.state, "", url);
-  }, [filters]);
+  }, [filters, openId]);
 
+  // Back and forward move between the list and versions' pages.
   useEffect(() => {
-    if (detailsVehicle) loadEnrichment(detailsVehicle);
-    // A link to a version that is gone (or has no price yet) opens nothing.
-    else setDetailsParam(null);
-    // Only for the version the page opened with.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const handlePopState = () => {
+      const id = readOpenId();
+      setOpenId(id);
+      window.setTimeout(() => window.scrollTo({ top: id ? 0 : listScroll.current }));
+    };
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   const bounds = useMemo(() => catalogBounds(entries), [entries]);
@@ -168,147 +176,225 @@ function CatalogBrowser({
     );
   }
 
+  const openEntry = openId ? entries.find((entry) => entry.id === openId) : undefined;
+  const openVehicle = openEntry ? vehicleFor(openEntry) : null;
+  const openVehicleId = openVehicle?.id;
+  useEffect(() => {
+    if (openVehicle) loadEnrichment(openVehicle);
+    // Once per vehicle; loadEnrichment itself skips a loaded one.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [openVehicleId]);
+
+  const pageUrl = (entry: CatalogEntry) =>
+    `${window.location.pathname}?${detailsParam}=${encodeURIComponent(entry.id)}`;
+
+  // From the list: a new history entry, so "back" returns to it. Between years
+  // of the same version the entry is replaced, so "back" still goes to the list.
+  function openPage(entry: CatalogEntry, replace = false) {
+    if (!openId) listScroll.current = window.scrollY;
+    if (replace) window.history.replaceState(window.history.state, "", pageUrl(entry));
+    else window.history.pushState({ fromCatalog: true }, "", pageUrl(entry));
+    setOpenId(entry.id);
+    // After the render that swaps the list for the page.
+    window.setTimeout(() => window.scrollTo({ top: 0 }));
+  }
+
+  function closePage() {
+    // Opened from the list: go back to it, filters and scroll included.
+    if ((window.history.state as { fromCatalog?: boolean } | null)?.fromCatalog) {
+      window.history.back();
+      return;
+    }
+    // Opened from a shared link: there is no list behind it yet.
+    window.history.pushState(null, "", window.location.pathname);
+    setOpenId(null);
+    // After the list renders.
+    window.setTimeout(() => window.scrollTo({ top: 0 }));
+  }
+
   function isCompared(entry: CatalogEntry) {
     const vehicle = vehicleFor(entry);
     return vehicle !== null && comparisonIds.has(vehicle.id);
   }
 
+  let versionPage: ReactNode = null;
+  if (openId) {
+    const years = openEntry
+      ? (groupCatalog(
+          entries.filter(
+            (entry) =>
+              entry.category === openEntry.category &&
+              entry.brandCode === openEntry.brandCode &&
+              entry.modelCode === openEntry.modelCode,
+          ),
+          "newest",
+        )[0]?.entries ?? [openEntry])
+      : [];
+    const backLink = linkTo(window.location.pathname, closePage);
+    versionPage = openEntry ? (
+      <VehiclePage
+        entry={openEntry}
+        years={years}
+        vehicle={openVehicle}
+        live={livePrices[openEntry.id]}
+        enrichment={openVehicle ? enrichmentByVehicle[openVehicle.id] : undefined}
+        compared={isCompared(openEntry)}
+        comparisonFull={comparison.length >= 4}
+        backLink={backLink}
+        yearLink={(entry) => linkTo(pageUrl(entry), () => openPage(entry, true))}
+        onFetchPrice={() => fetchPrice(openEntry)}
+        onToggleCompare={() => {
+          if (openVehicle) onToggleCompare(openVehicle);
+        }}
+        onRetryEnrichment={() => {
+          if (openVehicle) retryEnrichment(openVehicle);
+        }}
+      />
+    ) : (
+      <div className="empty-results">
+        <strong>Versão não encontrada</strong>
+        <p>Ela pode ter saído da tabela FIPE. Procure o modelo no catálogo.</p>
+        <a className="link-button" {...backLink}>
+          Ir para o catálogo
+        </a>
+      </div>
+    );
+  }
+
   return (
     <>
-      <CatalogHeading index={index} />
+      {versionPage}
+      {/* Kept mounted behind a version's page: filters, picked years and "mostrar mais" survive. */}
+      <div hidden={openId !== null}>
+        <CatalogHeading index={index} />
 
-      <div className="catalog-layout">
-        <CatalogFilterPanel
-          id="catalog-filters"
-          filters={filters}
-          facets={facets}
-          bounds={bounds}
-          activeCount={activeCount}
-          resultCount={groups.length}
-          open={filtersOpen}
-          onChange={update}
-          onReset={() => setFilters({ ...emptyCatalogFilters, sort: filters.sort })}
-          onClose={() => setFiltersOpen(false)}
-        />
-
-        <section className="catalog-results" aria-labelledby="catalog-results-title">
-          <VinSearch
-            state={vinSearch.state}
-            applied={vinApplied}
-            onSubmit={(text) => void vinSearch.submit(text)}
-            onClear={() => {
-              vinSearch.clear();
-              setVinApplied(null);
-            }}
+        <div className="catalog-layout">
+          <CatalogFilterPanel
+            id="catalog-filters"
+            filters={filters}
+            facets={facets}
+            bounds={bounds}
+            activeCount={activeCount}
+            resultCount={groups.length}
+            open={filtersOpen}
+            onChange={update}
+            onReset={() => setFilters({ ...emptyCatalogFilters, sort: filters.sort })}
+            onClose={() => setFiltersOpen(false)}
           />
-          <div className="catalog-results-heading">
-            <button
-              type="button"
-              className="catalog-filters-toggle"
-              aria-expanded={filtersOpen}
-              aria-controls="catalog-filters"
-              onClick={() => setFiltersOpen(true)}
-            >
-              <SlidersHorizontal size={16} /> Filtros
-              {activeCount > 0 && <span>{activeCount}</span>}
-            </button>
-            <h2 id="catalog-results-title" aria-live="polite">
-              <strong>{groups.length}</strong>{" "}
-              {groups.length === 1 ? "versão" : "versões"}
-              <span>
-                {" "}
-                · {matches.length} {matches.length === 1 ? "ano-modelo" : "anos-modelo"}
-              </span>
-            </h2>
-            <label className="sort-control">
-              <span className="sr-only">Ordenar catálogo</span>
-              <ArrowDownUp size={15} aria-hidden="true" />
-              <select
-                value={filters.sort}
-                onChange={(event) =>
-                  update({ sort: event.target.value as CatalogSort })
-                }
-              >
-                {(Object.keys(sortLabels) as CatalogSort[]).map((sort) => (
-                  <option key={sort} value={sort}>
-                    {sortLabels[sort]}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
 
-          {chips.length > 0 && (
-            <div className="active-chips" aria-label="Filtros ativos">
-              {chips.map((chip) => (
-                <button
-                  key={chip.key}
-                  type="button"
-                  className="active-chip"
-                  onClick={() => update(chip.remove)}
-                  aria-label={`Remover filtro ${chip.label}`}
-                >
-                  {chip.label} <X size={12} aria-hidden="true" />
-                </button>
-              ))}
+          <section className="catalog-results" aria-labelledby="catalog-results-title">
+            <VinSearch
+              state={vinSearch.state}
+              applied={vinApplied}
+              onSubmit={(text) => void vinSearch.submit(text)}
+              onClear={() => {
+                vinSearch.clear();
+                setVinApplied(null);
+              }}
+            />
+            <div className="catalog-results-heading">
               <button
                 type="button"
-                className="link-button"
-                onClick={() => setFilters({ ...emptyCatalogFilters, sort: filters.sort })}
+                className="catalog-filters-toggle"
+                aria-expanded={filtersOpen}
+                aria-controls="catalog-filters"
+                onClick={() => setFiltersOpen(true)}
               >
-                Limpar tudo
+                <SlidersHorizontal size={16} /> Filtros
+                {activeCount > 0 && <span>{activeCount}</span>}
               </button>
+              <h2 id="catalog-results-title" aria-live="polite">
+                <strong>{groups.length}</strong>{" "}
+                {groups.length === 1 ? "versão" : "versões"}
+                <span>
+                  {" "}
+                  · {matches.length} {matches.length === 1 ? "ano-modelo" : "anos-modelo"}
+                </span>
+              </h2>
+              <label className="sort-control">
+                <span className="sr-only">Ordenar catálogo</span>
+                <ArrowDownUp size={15} aria-hidden="true" />
+                <select
+                  value={filters.sort}
+                  onChange={(event) =>
+                    update({ sort: event.target.value as CatalogSort })
+                  }
+                >
+                  {(Object.keys(sortLabels) as CatalogSort[]).map((sort) => (
+                    <option key={sort} value={sort}>
+                      {sortLabels[sort]}
+                    </option>
+                  ))}
+                </select>
+              </label>
             </div>
-          )}
 
-          {groups.length === 0 ? (
-            <div className="empty-results">
-              <div className="empty-icon">
-                <Search size={22} />
+            {chips.length > 0 && (
+              <div className="active-chips" aria-label="Filtros ativos">
+                {chips.map((chip) => (
+                  <button
+                    key={chip.key}
+                    type="button"
+                    className="active-chip"
+                    onClick={() => update(chip.remove)}
+                    aria-label={`Remover filtro ${chip.label}`}
+                  >
+                    {chip.label} <X size={12} aria-hidden="true" />
+                  </button>
+                ))}
+                <button
+                  type="button"
+                  className="link-button"
+                  onClick={() => setFilters({ ...emptyCatalogFilters, sort: filters.sort })}
+                >
+                  Limpar tudo
+                </button>
               </div>
-              <strong>Nenhuma versão com esses filtros</strong>
-              <p>Remova algum filtro ativo para ampliar a busca.</p>
-            </div>
-          ) : (
-            <div className="catalog-grid">
-              {visibleGroups.map((group) => (
-                <CatalogCard
-                  key={group.key}
-                  group={group}
-                  livePrice={(entry) => livePrices[entry.id]}
-                  isCompared={isCompared}
-                  canCompare={(entry) => vehicleFor(entry) !== null}
-                  comparisonFull={comparison.length >= 4}
-                  onFetchPrice={fetchPrice}
-                  onToggleCompare={(entry) => {
-                    const vehicle = vehicleFor(entry);
-                    if (vehicle) onToggleCompare(vehicle);
-                  }}
-                  onShowDetails={(entry) => {
-                    const vehicle = vehicleFor(entry);
-                    if (!vehicle) return;
-                    loadEnrichment(vehicle);
-                    setDetailsVehicle(vehicle);
-                    setDetailsParam(entry.id);
-                  }}
-                />
-              ))}
-            </div>
-          )}
+            )}
 
-          {groups.length > visibleCount && (
-            <button
-              type="button"
-              className="catalog-more"
-              onClick={() =>
-                setPage({ key: filtersKey, count: visibleCount + pageSize })
-              }
-            >
-              Mostrar mais {Math.min(pageSize, groups.length - visibleCount)} de{" "}
-              {groups.length - visibleCount} restantes
-            </button>
-          )}
-        </section>
+            {groups.length === 0 ? (
+              <div className="empty-results">
+                <div className="empty-icon">
+                  <Search size={22} />
+                </div>
+                <strong>Nenhuma versão com esses filtros</strong>
+                <p>Remova algum filtro ativo para ampliar a busca.</p>
+              </div>
+            ) : (
+              <div className="catalog-grid">
+                {visibleGroups.map((group) => (
+                  <CatalogCard
+                    key={group.key}
+                    group={group}
+                    livePrice={(entry) => livePrices[entry.id]}
+                    isCompared={isCompared}
+                    canCompare={(entry) => vehicleFor(entry) !== null}
+                    comparisonFull={comparison.length >= 4}
+                    onFetchPrice={fetchPrice}
+                    onToggleCompare={(entry) => {
+                      const vehicle = vehicleFor(entry);
+                      if (vehicle) onToggleCompare(vehicle);
+                    }}
+                    pageLink={(entry) => linkTo(pageUrl(entry), () => openPage(entry))}
+                  />
+                ))}
+              </div>
+            )}
+
+            {groups.length > visibleCount && (
+              <button
+                type="button"
+                className="catalog-more"
+                onClick={() =>
+                  setPage({ key: filtersKey, count: visibleCount + pageSize })
+                }
+              >
+                Mostrar mais {Math.min(pageSize, groups.length - visibleCount)} de{" "}
+                {groups.length - visibleCount} restantes
+              </button>
+            )}
+          </section>
+        </div>
       </div>
 
       <CompareTray
@@ -316,14 +402,6 @@ function CatalogBrowser({
         onRemove={onToggleCompare}
         onOpen={() => setCompareOpen(true)}
       />
-      {detailsVehicle && (
-        <VehicleDetailsDialog
-          vehicle={detailsVehicle}
-          enrichment={enrichmentByVehicle[detailsVehicle.id]}
-          onRetry={() => retryEnrichment(detailsVehicle)}
-          onClose={closeDetails}
-        />
-      )}
       {compareOpen && (
         <Suspense fallback={null}>
           <CompareTable

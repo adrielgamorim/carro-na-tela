@@ -16,6 +16,7 @@ describe("router", () => {
     const consulta = "http://x/?marcaId=22&familia=EcoSport&q=onix&marca=Fiat#comparacao";
     expect(viewUrl(consulta, "catalogo").search).toBe("?q=onix&marca=Fiat");
     expect(viewUrl(consulta, "catalogo").hash).toBe("");
+    expect(viewUrl("http://x/?versao=21-1%3A2026-5", "catalogo").search).toBe("");
     const catalogo = "http://x/?view=catalogo&marca=Fiat&versao=21-1%3A2026-5&marcaId=22";
     expect(viewUrl(catalogo, "consulta", "comparacao").href).toBe("http://x/?view=consulta&marcaId=22#comparacao");
   });

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import type { MouseEvent } from "react";
 import { Check, Plus, RefreshCw, Users } from "lucide-react";
 import type { CatalogGroup } from "../../catalog/filters";
 import { entryTags, yearLabel } from "../../catalog/labels";
@@ -22,12 +23,18 @@ interface CatalogCardProps {
   comparisonFull: boolean;
   onFetchPrice: (entry: CatalogEntry) => void;
   onToggleCompare: (entry: CatalogEntry) => void;
-  onShowDetails: (entry: CatalogEntry) => void;
+  /** Link to the version's page: plain click opens it here, ctrl/middle click in a new tab. */
+  pageLink: (entry: CatalogEntry) => PageLink;
+}
+
+export interface PageLink {
+  href: string;
+  onClick: (event: MouseEvent<HTMLAnchorElement>) => void;
 }
 
 const maxYearPills = 6;
 
-function PriceBlock({
+export function PriceBlock({
   entry,
   live,
   onFetchPrice,
@@ -89,7 +96,7 @@ export function CatalogCard({
   comparisonFull,
   onFetchPrice,
   onToggleCompare,
-  onShowDetails,
+  pageLink,
 }: CatalogCardProps) {
   const [selectedId, setSelectedId] = useState(group.entries[0].id);
   const [showAllYears, setShowAllYears] = useState(false);
@@ -107,18 +114,22 @@ export function CatalogCard({
     : comparisonFull && !compared
       ? "A comparação aceita até 4 veículos"
       : undefined;
+  const link = pageLink(selected);
 
   return (
     <article className="catalog-card">
       {selected.wikidata?.image && (
-        <img
-          className="catalog-card-photo"
-          src={selected.wikidata.image.thumb}
-          alt={`${selected.wikidata.label} (foto ilustrativa do modelo)`}
-          title="Foto ilustrativa da linha do modelo (Wikimedia Commons)"
-          loading="lazy"
-          decoding="async"
-        />
+        // The name below is the accessible link; the photo is a bigger target for the mouse.
+        <a className="catalog-card-photo-link" {...link} tabIndex={-1} aria-hidden="true">
+          <img
+            className="catalog-card-photo"
+            src={selected.wikidata.image.thumb}
+            alt=""
+            title="Foto ilustrativa da linha do modelo (Wikimedia Commons)"
+            loading="lazy"
+            decoding="async"
+          />
+        </a>
       )}
       <div className="catalog-card-top">
         <span className="catalog-card-icon" aria-hidden="true">
@@ -128,7 +139,11 @@ export function CatalogCard({
           <span>
             {selected.brand} · {selected.family}
           </span>
-          <h3>{selected.model}</h3>
+          <h3>
+            <a className="catalog-card-link" {...link}>
+              {selected.model}
+            </a>
+          </h3>
           {selected.fleet && <FleetLine entry={selected} fleet={selected.fleet} />}
         </div>
       </div>
@@ -177,15 +192,14 @@ export function CatalogCard({
           {selected.codeFipe ? `FIPE ${selected.codeFipe} · ` : ""}
           {selected.referenceMonth}
         </small>
-        <button
-          type="button"
+        <a
           className="catalog-details"
-          disabled={!comparable}
-          title={comparable ? "Ficha, custos e histórico de preços" : "Consulte o preço para ver os detalhes"}
-          onClick={() => onShowDetails(selected)}
+          {...link}
+          title="Página da versão: ficha, custos e histórico de preços"
+          aria-label={`Detalhes de ${selected.model} ${yearLabel(selected)}`}
         >
           Detalhes
-        </button>
+        </a>
         <button
           type="button"
           className={`catalog-compare${compared ? " catalog-compare-active" : ""}`}
@@ -202,7 +216,7 @@ export function CatalogCard({
   );
 }
 
-function FleetLine({ entry, fleet }: { entry: CatalogEntry; fleet: CatalogFleetInfo }) {
+export function FleetLine({ entry, fleet }: { entry: CatalogEntry; fleet: CatalogFleetInfo }) {
   const ofYear = fleetOfYear(fleet, entry.modelYear);
   const title =
     `Veículos da linha ${fleet.line.family} em circulação no Brasil (Senatran, ${fleet.reference}), ` +

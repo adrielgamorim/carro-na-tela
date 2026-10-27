@@ -42,7 +42,10 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 - Ficha técnica (nome FIPE + INMETRO), histórico de preços com sparkline, IPVA estimado por
   estado, custo por km, depreciação média da versão, "Sobre o modelo" (Wikipedia/Wikidata) e frota
-  em circulação (Senatran). No catálogo, o detalhe aberto vai para a URL (`?versao=`).
+  em circulação (Senatran).
+- No catálogo, a foto, o nome ou "Detalhes" abrem a página da versão (`?versao=<id>`), com foto
+  grande, todos os anos-modelo, preço, ficha, custos e histórico. O link pode ser compartilhado, e
+  o botão Voltar do navegador retorna à lista com os mesmos filtros e a mesma posição.
 - Comparador lado a lado de até 4 veículos, com premissas editáveis: estado (IPVA e preço do
   combustível pela ANP) e preços próprios.
 - Cada dado traz a fonte e a confiança: "exata" quando é desta versão, "aproximada" quando foi

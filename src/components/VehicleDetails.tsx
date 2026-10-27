@@ -28,6 +28,8 @@ interface VehicleDetailsProps {
   categoryLabel: string;
   enrichment: VehicleEnrichmentState | undefined;
   onRetryEnrichment: () => void;
+  /** False where the page already shows the model's photo (the catalog's version page). */
+  showModelPhoto?: boolean;
 }
 
 const providerLabels: Record<EnrichmentKey, string> = {
@@ -40,7 +42,7 @@ const providerLabels: Record<EnrichmentKey, string> = {
 };
 
 /** Picture and summary of the model line (Wikidata / Wikipedia / Commons). */
-function ModelInfo({ model }: { model: CatalogModelInfo }) {
+function ModelInfo({ model, showPhoto }: { model: CatalogModelInfo; showPhoto: boolean }) {
   const credit = [model.image?.artist, model.image?.license].filter(Boolean).join(", ");
   return (
     <section className="price-history model-info" aria-label={`Sobre o modelo ${model.label}`}>
@@ -54,7 +56,7 @@ function ModelInfo({ model }: { model: CatalogModelInfo }) {
         </div>
       </div>
       <div className="model-info-body">
-        {model.image && (
+        {showPhoto && model.image && (
           <figure>
             <img src={model.image.thumb} alt={`${model.label} (foto ilustrativa)`} loading="lazy" />
             <figcaption>
@@ -204,6 +206,7 @@ export function VehicleDetails({
   categoryLabel,
   enrichment,
   onRetryEnrichment,
+  showModelPhoto = true,
 }: VehicleDetailsProps) {
   const loading = enrichment?.status === "loading";
   const history = enrichment?.data.history?.data ?? [];
@@ -275,7 +278,7 @@ export function VehicleDetails({
         </div>
       )}
 
-      {model && <ModelInfo model={model} />}
+      {model && <ModelInfo model={model} showPhoto={showModelPhoto} />}
 
       {sheet.length > 0 && (
         <section className="price-history" aria-label={`Ficha técnica de ${vehicle.model}`}>

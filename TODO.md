@@ -101,6 +101,8 @@ Histórico resumido, em ordem aproximada.
       ("Em SP: 243.500 veículos · 25º mais comum").
 - [x] Detalhe do catálogo com URL própria (`?versao=<id>`): o link abre a versão direto; fechar
       limpa o parâmetro.
+- [x] Página da versão no lugar do diálogo: foto, nome e "Detalhes" do card abrem a página (ctrl+clique
+      em nova aba), com troca de ano-modelo e retorno à lista na mesma posição.
 
 **Desempenho (continuação)**
 

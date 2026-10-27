@@ -20,7 +20,11 @@ export function useView() {
 
   function navigate(nextView: View, anchor?: string) {
     const url = viewUrl(window.location.href, nextView, anchor);
-    if (nextView !== view || anchor) window.history.pushState(null, "", url);
+    if (url.href !== window.location.href) {
+      window.history.pushState(null, "", url);
+      // Views that keep state in the URL (the catalog's open version) follow it.
+      window.dispatchEvent(new PopStateEvent("popstate"));
+    }
     setView(nextView);
     window.setTimeout(() => {
       if (anchor) document.getElementById(anchor)?.scrollIntoView();

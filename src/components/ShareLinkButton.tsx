@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Check, Link2 } from "lucide-react";
 import "./ShareLinkButton.css";
 
-/** Copies the current URL, which carries the consultation (services/consultaUrl.ts). */
-export function ShareLinkButton() {
+/** Copies the current URL, which carries the consultation (services/consultaUrl.ts) or the open version. */
+export function ShareLinkButton({ label = "Copiar link da consulta" }: { label?: string }) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export function ShareLinkButton() {
         ? "Link copiado"
         : state === "failed"
           ? "Copie o endereço da página"
-          : "Copiar link da consulta"}
+          : label}
     </button>
   );
 }

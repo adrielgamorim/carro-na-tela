@@ -3,7 +3,8 @@ import { clearConsultaParams, hasConsultaParams } from "./consultaUrl";
 
 // The app's URL scheme, in one place. There are two views on the same page:
 //
-//   /?marca=Fiat&ano=2020-2020&versao=<entry id>                              Catálogo (home)
+//   /?marca=Fiat&ano=2020-2020                                                Catálogo (home)
+//   /?versao=<entry id>                                                       Página de uma versão do catálogo
 //   /?view=consulta&marcaId=21&familia=ARGO&modeloId=11&anoId=2026-5#comparacao Consulta FIPE
 //
 // Links from before the catalog became the home still work: "?view=catalogo"
@@ -29,6 +30,8 @@ export function viewUrl(href: string, view: View, anchor?: string): URL {
   const url = new URL(href);
   if (view === "catalogo") {
     url.searchParams.delete("view");
+    // The catalog link leaves a version's page for the list.
+    url.searchParams.delete("versao");
     clearConsultaParams(url.searchParams);
   } else {
     url.searchParams.set("view", "consulta");
