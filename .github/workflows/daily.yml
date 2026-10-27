@@ -8,7 +8,7 @@ name: Atualização diária
 
 on:
   schedule:
-    - cron: "0 6 * * *" # 03:00 em Brasília
+    - cron: "0 4 * * *" # 01:00 em Brasília (o GitHub pode atrasar alguns minutos)
   workflow_dispatch:
 
 # Pushes go through the deploy key; the token only reads.

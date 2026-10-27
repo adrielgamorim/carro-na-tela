@@ -1,14 +1,14 @@
 # Schedules the daily catalog update (npm run daily) in the Windows Task
 # Scheduler for the current user. Run again to change the time.
 #
-#   powershell -ExecutionPolicy Bypass -File scripts/schedule-daily.ps1 [-At 03:00]
+#   powershell -ExecutionPolicy Bypass -File scripts/schedule-daily.ps1 [-At 01:00]
 #   npm run unschedule:daily   (or: ... schedule-daily.ps1 -Remove)
 #
 # If the computer is off at that time, the task runs as soon as it is on again.
 # Output: logs/daily-<date>.log.
 
 param(
-  [string]$At = "03:00",
+  [string]$At = "01:00",
   [switch]$Remove
 )
 

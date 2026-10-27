@@ -76,7 +76,7 @@ npm run fetch:anp        # preço médio dos combustíveis por estado → public
 npm run fetch:wmi        # códigos de fabricante do chassi → public/catalog/wmi.json
 npm run build:catalog    # data/* → public/catalog/index.json
 npm run daily            # crawl:fipe + fetch:frota (+ wikidata/wmi mensais) + build:catalog + fetch:anp
-npm run schedule:daily   # agenda o daily no Agendador de Tarefas do Windows (03:00)
+npm run schedule:daily   # agenda o daily no Agendador de Tarefas do Windows (01:00)
 npm run unschedule:daily # remove a tarefa agendada
 ```
 
@@ -182,13 +182,13 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
 `npm run daily` roda varredura, frota, índice e ANP (e Wikidata e WMI quando têm mais de 30 dias),
 com uma trava contra execuções simultâneas e log em `logs/daily-<data>.log`.
 
-- **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda às 03:00 (Brasília) com as
+- **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda à 01:00 (Brasília) com as
   chaves dos segredos `FIPE_TOKEN*`, guarda `.cache/` no cache do Actions para a varredura
   continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Se uma fonte falhar,
   as outras são publicadas e a execução fica marcada como falha. Uma vez,
   `scripts/setup-github-daily.sh` grava os segredos, publica a semente do cache (release
   `cache-semente`), cria a deploy key com que a Action publica e o ruleset do `main` que a aceita.
-- **No Windows:** `npm run schedule:daily` agenda às 03:00; `npm run unschedule:daily` remove. Não
+- **No Windows:** `npm run schedule:daily` agenda à 01:00; `npm run unschedule:daily` remove. Não
   use os dois ao mesmo tempo: eles dividem a cota das chaves.
 
 ## Proxy da FIPE e publicação

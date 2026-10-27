@@ -44,7 +44,7 @@ Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
 
-- [x] Daily no GitHub Actions (`.github/workflows/daily.yml`, 03:00): cache da varredura no Actions,
+- [x] Daily no GitHub Actions (`.github/workflows/daily.yml`, 01:00): cache da varredura no Actions,
       semente na release `cache-semente`, dados commitados no `main`. Configuração única em
       `scripts/setup-github-daily.sh` (segredos, semente, deploy key da Action e ruleset que a aceita).
 - [x] Proxy com rodízio de chaves: `FIPE_PROXY_TOKEN`, `FIPE_TOKEN` e as numeradas da maior para a
