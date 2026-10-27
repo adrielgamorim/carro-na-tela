@@ -1,0 +1,9711 @@
+{
+ "en:Audi Q5 Sportback": {},
+ "en:GWM Tank 300": {},
+ "pt:Neta_Aya": {
+  "mass": [
+   1180,
+   1180
+  ],
+  "length": [
+   4.07,
+   4.07
+  ],
+  "wheelbase": [
+   2.42,
+   2.42
+  ],
+  "width": [
+   1.69,
+   1.69
+  ],
+  "height": [
+   1.54,
+   1.54
+  ],
+  "power": [
+   95,
+   95
+  ]
+ },
+ "en:Neta Aya": {
+  "wheelbase": [
+   2.42,
+   2.42
+  ],
+  "length": [
+   4.07,
+   4.07
+  ],
+  "width": [
+   1.69,
+   1.69
+  ],
+  "height": [
+   1.54,
+   1.54
+  ]
+ },
+ "en:McLaren Artura": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.539,
+   4.539
+  ],
+  "width": [
+   1.913,
+   1.913
+  ],
+  "height": [
+   1.193,
+   1.193
+  ],
+  "mass": [
+   1498,
+   1560
+  ]
+ },
+ "pt:Volkswagen_Amarok": {
+  "wheelbase": [
+   3.095,
+   3.095
+  ],
+  "length": [
+   5.254,
+   5.254
+  ],
+  "width": [
+   1.954,
+   1.954
+  ],
+  "height": [
+   1.834,
+   1.834
+  ],
+  "mass": [
+   2065,
+   2065
+  ],
+  "power": [
+   186,
+   186
+  ]
+ },
+ "en:Volkswagen Amarok": {},
+ "pt:Novo_Citroën_C4": {},
+ "pt:Mitsubishi_Outlander": {
+  "wheelbase": [
+   2.706,
+   2.706
+  ],
+  "length": [
+   4.645,
+   4.645
+  ],
+  "width": [
+   1.862,
+   1.862
+  ],
+  "height": [
+   1.745,
+   1.745
+  ],
+  "mass": [
+   1782,
+   1782
+  ],
+  "power": [
+   116,
+   252
+  ]
+ },
+ "en:Mitsubishi Outlander": {},
+ "pt:Lexus_LS": {},
+ "en:Lexus LS": {},
+ "pt:BYD_D1": {
+  "power": [
+   136,
+   136
+  ]
+ },
+ "en:BYD D1": {},
+ "pt:Chrysler_PT_Cruiser": {
+  "wheelbase": [
+   2.61,
+   2.61
+  ],
+  "length": [
+   4.29,
+   4.29
+  ],
+  "width": [
+   1.7,
+   1.7
+  ],
+  "height": [
+   1.6,
+   1.6
+  ],
+  "mass": [
+   1417,
+   1417
+  ],
+  "power": [
+   143,
+   180
+  ]
+ },
+ "en:Chrysler PT Cruiser": {
+  "mass": [
+   1417,
+   1417
+  ]
+ },
+ "en:Aion Y": {
+  "height": [
+   1.645,
+   1.673
+  ],
+  "width": [
+   1.87,
+   1.87
+  ],
+  "length": [
+   4.41,
+   4.615
+  ],
+  "wheelbase": [
+   2.75,
+   2.775
+  ]
+ },
+ "pt:Renault_Fluence": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.62,
+   4.62
+  ],
+  "width": [
+   1.81,
+   1.81
+  ],
+  "height": [
+   1.47,
+   1.47
+  ]
+ },
+ "en:Renault Fluence": {
+  "wheelbase": [
+   2.702,
+   2.702
+  ],
+  "length": [
+   4.618,
+   4.618
+  ],
+  "width": [
+   1.809,
+   1.809
+  ],
+  "height": [
+   1.478,
+   1.478
+  ],
+  "mass": [
+   1225,
+   1277
+  ]
+ },
+ "pt:Nissan_Frontier": {
+  "wheelbase": [
+   3.2,
+   3.2
+  ],
+  "length": [
+   5.23,
+   5.23
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.78,
+   1.78
+  ],
+  "mass": [
+   1985,
+   2005
+  ],
+  "power": [
+   190,
+   190
+  ]
+ },
+ "en:Nissan Frontier (North America)": {},
+ "en:Chevrolet Bolt EUV": {},
+ "en:BYD Song Pro": {},
+ "en:Volvo C40": {
+  "wheelbase": [
+   2.702,
+   2.702
+  ],
+  "length": [
+   4.425,
+   4.431
+  ],
+  "width": [
+   1.863,
+   1.863
+  ],
+  "height": [
+   1.582,
+   1.652
+  ],
+  "mass": [
+   1497,
+   1733
+  ]
+ },
+ "en:Toyota bZ4X": {
+  "wheelbase": [
+   2.85,
+   2.85
+  ],
+  "length": [
+   4.69,
+   4.69
+  ],
+  "width": [
+   1.86,
+   1.86
+  ],
+  "height": [
+   1.65,
+   1.65
+  ],
+  "mass": [
+   1910,
+   2030
+  ]
+ },
+ "en:Zeekr 001": {
+  "wheelbase": [
+   3,
+   3
+  ],
+  "length": [
+   4.97,
+   4.97
+  ],
+  "width": [
+   1.99,
+   1.99
+  ],
+  "height": [
+   1.56,
+   1.56
+  ]
+ },
+ "pt:Citroën_DS4": {},
+ "pt:Audi_Q6_e-tron": {
+  "length": [
+   4.771,
+   4.771
+  ],
+  "wheelbase": [
+   2.899,
+   2.899
+  ],
+  "width": [
+   1.939,
+   1.939
+  ],
+  "height": [
+   1.648,
+   1.648
+  ]
+ },
+ "en:Audi Q6 e-tron": {},
+ "pt:Chery_Cielo": {},
+ "en:Chery A3": {
+  "wheelbase": [
+   2.55,
+   2.55
+  ],
+  "length": [
+   4.282,
+   4.352
+  ],
+  "width": [
+   1.792,
+   1.794
+  ],
+  "height": [
+   1.464,
+   1.467
+  ],
+  "mass": [
+   1355,
+   1395
+  ]
+ },
+ "pt:Chery_Celer": {
+  "length": [
+   4.139,
+   4.333
+  ],
+  "wheelbase": [
+   2.527,
+   2.527
+  ],
+  "width": [
+   1.686,
+   1.686
+  ],
+  "height": [
+   1.492,
+   1.492
+  ],
+  "mass": [
+   1200,
+   1275
+  ]
+ },
+ "en:Chery Fulwin 2": {
+  "wheelbase": [
+   2.527,
+   2.527
+  ],
+  "length": [
+   4.139,
+   4.333
+  ],
+  "width": [
+   1.686,
+   1.686
+  ],
+  "height": [
+   1.492,
+   1.492
+  ],
+  "mass": [
+   1200,
+   1275
+  ]
+ },
+ "pt:Chevrolet_Agile": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4,
+   4
+  ],
+  "width": [
+   1.68,
+   1.68
+  ],
+  "height": [
+   1.47,
+   1.47
+  ],
+  "mass": [
+   1032,
+   1032
+  ]
+ },
+ "en:Chevrolet Agile": {
+  "length": [
+   4,
+   4
+  ],
+  "width": [
+   1.68,
+   1.68
+  ],
+  "height": [
+   1.47,
+   1.47
+  ],
+  "mass": [
+   1032,
+   1032
+  ],
+  "wheelbase": [
+   2.54,
+   2.54
+  ]
+ },
+ "pt:Chevrolet_Blazer": {},
+ "en:Chevrolet S-10 Blazer": {},
+ "pt:Fiat_Pulse": {
+  "wheelbase": [
+   2.53,
+   2.53
+  ],
+  "length": [
+   4.1,
+   4.1
+  ],
+  "width": [
+   1.78,
+   1.78
+  ],
+  "height": [
+   1.58,
+   1.58
+  ],
+  "power": [
+   107,
+   130
+  ]
+ },
+ "en:Fiat Pulse": {
+  "length": [
+   4.099,
+   4.099
+  ],
+  "width": [
+   1.774,
+   1.774
+  ],
+  "height": [
+   1.579,
+   1.579
+  ],
+  "wheelbase": [
+   2.532,
+   2.532
+  ],
+  "mass": [
+   1187,
+   1237
+  ]
+ },
+ "pt:Chevrolet_Classic": {
+  "wheelbase": [
+   2.44,
+   2.44
+  ],
+  "length": [
+   4.056,
+   4.056
+  ],
+  "width": [
+   1.608,
+   1.608
+  ],
+  "height": [
+   1.42,
+   1.42
+  ],
+  "mass": [
+   920,
+   920
+  ],
+  "power": [
+   70,
+   92
+  ]
+ },
+ "en:Chevrolet Classic": {},
+ "pt:Chevrolet_Corsa": {
+  "wheelbase": [
+   2.49,
+   2.49
+  ],
+  "length": [
+   3.833,
+   4.181
+  ],
+  "width": [
+   1.646,
+   1.646
+  ],
+  "height": [
+   1.43,
+   1.432
+  ],
+  "mass": [
+   1020,
+   1150
+  ],
+  "power": [
+   50,
+   109
+  ]
+ },
+ "en:Chevrolet Corsa": {},
+ "pt:Chevrolet_Equinox": {},
+ "en:Chevrolet Equinox": {},
+ "pt:Chevrolet_Omega": {},
+ "en:Chevrolet Omega": {},
+ "pt:Chevrolet_S10": {
+  "wheelbase": [
+   3.096,
+   3.096
+  ],
+  "length": [
+   5.361,
+   5.408
+  ],
+  "width": [
+   1.874,
+   1.874
+  ],
+  "height": [
+   1.831,
+   1.831
+  ],
+  "mass": [
+   2028,
+   2106
+  ],
+  "power": [
+   207,
+   207
+  ]
+ },
+ "en:Chevrolet S-10": {},
+ "pt:Chevrolet_TrailBlazer": {
+  "power": [
+   273,
+   394
+  ],
+  "length": [
+   4.872,
+   5.278
+  ],
+  "wheelbase": [
+   2.87,
+   3.277
+  ],
+  "width": [
+   1.897,
+   1.897
+  ],
+  "height": [
+   1.842,
+   1.958
+  ]
+ },
+ "en:Chevrolet TrailBlazer (SUV)": {},
+ "en:Ferrari 296": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.565,
+   4.565
+  ],
+  "width": [
+   1.958,
+   1.958
+  ],
+  "height": [
+   1.187,
+   1.187
+  ]
+ },
+ "pt:BYD_Dolphin": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.07,
+   4.15
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.57,
+   1.57
+  ],
+  "mass": [
+   1285,
+   1815
+  ]
+ },
+ "en:BYD Dolphin": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.07,
+   4.29
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.57,
+   1.57
+  ],
+  "mass": [
+   1285,
+   1658
+  ]
+ },
+ "pt:Volvo_V50": {},
+ "en:Volvo V50": {
+  "length": [
+   4.514,
+   4.522
+  ],
+  "width": [
+   1.77,
+   2.022
+  ],
+  "height": [
+   1.452,
+   1.46
+  ],
+  "mass": [
+   1445,
+   1590
+  ],
+  "wheelbase": [
+   2.64,
+   2.64
+  ]
+ },
+ "pt:Jeep_Commander_(2021)": {
+  "length": [
+   4.769,
+   4.769
+  ],
+  "wheelbase": [
+   2.794,
+   2.794
+  ],
+  "width": [
+   1.859,
+   1.859
+  ],
+  "height": [
+   1.682,
+   1.682
+  ],
+  "mass": [
+   1658,
+   1908
+  ]
+ },
+ "en:Jeep Commander (2022)": {
+  "wheelbase": [
+   2.794,
+   2.794
+  ],
+  "length": [
+   4.769,
+   4.769
+  ],
+  "width": [
+   1.859,
+   1.859
+  ],
+  "height": [
+   1.682,
+   1.682
+  ]
+ },
+ "pt:Ferrari_Purosangue": {
+  "power": [
+   725,
+   725
+  ],
+  "length": [
+   4.973,
+   4.973
+  ],
+  "wheelbase": [
+   3.018,
+   3.018
+  ],
+  "width": [
+   2.028,
+   2.028
+  ],
+  "height": [
+   1.589,
+   1.589
+  ],
+  "mass": [
+   2033,
+   2033
+  ]
+ },
+ "en:Ferrari Purosangue": {
+  "wheelbase": [
+   3.018,
+   3.018
+  ],
+  "length": [
+   4.973,
+   4.973
+  ],
+  "width": [
+   2.028,
+   2.028
+  ],
+  "height": [
+   1.589,
+   1.589
+  ],
+  "mass": [
+   2170,
+   2170
+  ]
+ },
+ "en:Maserati GranCabrio": {},
+ "pt:BYD_Yuan_Plus": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.455,
+   4.455
+  ],
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.615,
+   1.615
+  ],
+  "power": [
+   204,
+   204
+  ]
+ },
+ "en:BYD Atto 3": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.455,
+   4.455
+  ],
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.615,
+   1.615
+  ]
+ },
+ "pt:Citroën_DS5": {
+  "mass": [
+   1480,
+   1480
+  ],
+  "power": [
+   165,
+   165
+  ]
+ },
+ "en:DS 5": {
+  "wheelbase": [
+   2.727,
+   2.727
+  ],
+  "length": [
+   4.53,
+   4.53
+  ],
+  "width": [
+   1.871,
+   2.128
+  ],
+  "height": [
+   1.504,
+   1.513
+  ],
+  "mass": [
+   1500,
+   1500
+  ]
+ },
+ "pt:Citroën_Jumper": {
+  "length": [
+   5.998,
+   5.998
+  ],
+  "width": [
+   2.055,
+   2.055
+  ],
+  "height": [
+   2.524,
+   2.524
+  ],
+  "mass": [
+   3000,
+   4500
+  ]
+ },
+ "en:Citroën Jumper": {},
+ "pt:Citroën_Xsara_Picasso": {
+  "wheelbase": [
+   2.76,
+   2.76
+  ],
+  "length": [
+   4.276,
+   4.276
+  ],
+  "width": [
+   2,
+   2
+  ],
+  "height": [
+   1.66,
+   1.66
+  ],
+  "mass": [
+   1326,
+   1326
+  ],
+  "power": [
+   90,
+   136
+  ]
+ },
+ "en:Citroën Xsara Picasso": {
+  "wheelbase": [
+   2.76,
+   2.76
+  ],
+  "length": [
+   4.28,
+   4.28
+  ],
+  "width": [
+   1.75,
+   1.75
+  ],
+  "height": [
+   1.64,
+   1.64
+  ],
+  "mass": [
+   1300,
+   1300
+  ]
+ },
+ "pt:Honda_ZR-V": {
+  "length": [
+   4.567,
+   4.567
+  ],
+  "wheelbase": [
+   2.654,
+   2.654
+  ],
+  "width": [
+   1.839,
+   1.839
+  ],
+  "height": [
+   1.61,
+   1.621
+  ],
+  "mass": [
+   1433,
+   1512
+  ]
+ },
+ "en:Honda ZR-V": {
+  "mass": [
+   1433,
+   1512
+  ]
+ },
+ "en:Avatr 11": {
+  "wheelbase": [
+   2.975,
+   2.975
+  ],
+  "length": [
+   4.88,
+   4.88
+  ],
+  "width": [
+   1.97,
+   1.97
+  ],
+  "height": [
+   1.601,
+   1.601
+  ],
+  "mass": [
+   2365,
+   2365
+  ]
+ },
+ "en:Kia EV9": {
+  "wheelbase": [
+   3.1,
+   3.1
+  ],
+  "width": [
+   1.98,
+   1.98
+  ],
+  "mass": [
+   2405,
+   2664
+  ]
+ },
+ "en:Lexus RZ": {
+  "wheelbase": [
+   2.85,
+   2.85
+  ],
+  "length": [
+   4.805,
+   4.805
+  ],
+  "width": [
+   1.895,
+   1.895
+  ],
+  "height": [
+   1.635,
+   1.635
+  ],
+  "power": [
+   109,
+   204
+  ]
+ },
+ "en:Chevrolet Equinox EV": {},
+ "pt:BYD_King": {
+  "power": [
+   68,
+   197
+  ],
+  "length": [
+   4.78,
+   4.78
+  ],
+  "wheelbase": [
+   2.718,
+   2.718
+  ],
+  "width": [
+   1.837,
+   1.837
+  ],
+  "height": [
+   1.495,
+   1.495
+  ]
+ },
+ "en:BYD Destroyer 05": {
+  "wheelbase": [
+   2.718,
+   2.718
+  ],
+  "length": [
+   4.78,
+   4.78
+  ],
+  "width": [
+   1.837,
+   1.837
+  ],
+  "height": [
+   1.495,
+   1.495
+  ]
+ },
+ "en:Toyota GR Corolla": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.41,
+   4.41
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.45,
+   1.455
+  ],
+  "mass": [
+   1440,
+   1493
+  ]
+ },
+ "pt:Volvo_S60": {},
+ "en:Volvo S60": {},
+ "pt:Fiat_Stilo": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.18,
+   4.18
+  ],
+  "width": [
+   1.78,
+   1.78
+  ],
+  "height": [
+   1.48,
+   1.48
+  ],
+  "mass": [
+   1090,
+   1430
+  ]
+ },
+ "en:Fiat Stilo": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.182,
+   4.516
+  ],
+  "width": [
+   1.756,
+   1.784
+  ],
+  "height": [
+   1.475,
+   1.57
+  ],
+  "mass": [
+   1090,
+   1320
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_GLS": {},
+ "en:Mercedes-Benz GLS": {},
+ "pt:Jeep_Grand_Cherokee": {
+  "wheelbase": [
+   2.816,
+   2.816
+  ],
+  "length": [
+   4.821,
+   4.821
+  ]
+ },
+ "en:Jeep Grand Cherokee": {},
+ "pt:Suzuki_Vitara": {},
+ "en:Suzuki Vitara": {},
+ "pt:Rolls-Royce_Phantom_VII": {
+  "length": [
+   5.83,
+   5.83
+  ],
+  "width": [
+   1.99,
+   1.99
+  ],
+  "height": [
+   1.63,
+   1.63
+  ],
+  "mass": [
+   2485,
+   2485
+  ],
+  "power": [
+   453,
+   453
+  ]
+ },
+ "en:Rolls-Royce Phantom VII": {
+  "wheelbase": [
+   3.57,
+   3.82
+  ],
+  "length": [
+   5.834,
+   6.092
+  ],
+  "width": [
+   1.99,
+   1.99
+  ],
+  "height": [
+   1.632,
+   1.64
+  ],
+  "mass": [
+   2550,
+   2670
+  ]
+ },
+ "pt:Peugeot_3008": {
+  "wheelbase": [
+   2.613,
+   2.613
+  ],
+  "length": [
+   4.365,
+   4.365
+  ],
+  "width": [
+   1.873,
+   1.873
+  ],
+  "height": [
+   1.639,
+   1.639
+  ]
+ },
+ "en:Peugeot 3008": {},
+ "pt:Chevrolet_Blazer_EV": {
+  "length": [
+   4.882,
+   4.882
+  ],
+  "wheelbase": [
+   3.094,
+   3.094
+  ],
+  "width": [
+   1.981,
+   1.981
+  ],
+  "height": [
+   1.651,
+   1.651
+  ],
+  "mass": [
+   2421,
+   2421
+  ]
+ },
+ "en:Chevrolet Blazer EV": {
+  "mass": [
+   2342,
+   2342
+  ]
+ },
+ "pt:Fiat_Novo_Bravo": {},
+ "en:Fiat Bravo (2007)": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.336,
+   4.336
+  ],
+  "width": [
+   1.792,
+   1.792
+  ],
+  "height": [
+   1.498,
+   1.498
+  ],
+  "mass": [
+   1205,
+   1360
+  ]
+ },
+ "pt:Maserati_Quattroporte": {},
+ "en:Maserati Quattroporte": {},
+ "pt:Mercedes-Benz_Classe_GLA": {
+  "wheelbase": [
+   2.79,
+   2.79
+  ],
+  "length": [
+   4.42,
+   4.42
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "mass": [
+   1345,
+   1345
+  ],
+  "power": [
+   156,
+   360
+  ]
+ },
+ "en:Mercedes-Benz GLA": {},
+ "pt:Land_Rover_Range_Rover": {
+  "mass": [
+   2500,
+   3200
+  ]
+ },
+ "en:Range Rover": {},
+ "pt:Fiat_Fastback": {
+  "power": [
+   125,
+   185
+  ],
+  "length": [
+   4.427,
+   4.427
+  ],
+  "wheelbase": [
+   2.532,
+   2.532
+  ],
+  "height": [
+   1.545,
+   1.545
+  ],
+  "mass": [
+   1253,
+   1304
+  ]
+ },
+ "en:Fiat Fastback": {
+  "wheelbase": [
+   2.532,
+   2.532
+  ],
+  "length": [
+   4.427,
+   4.427
+  ],
+  "width": [
+   1.774,
+   1.774
+  ],
+  "height": [
+   1.545,
+   1.545
+  ],
+  "mass": [
+   1253,
+   1304
+  ]
+ },
+ "pt:Volvo_V70": {},
+ "en:Volvo V70": {},
+ "pt:Honda_Fit": {
+  "wheelbase": [
+   2.45,
+   2.45
+  ],
+  "mass": [
+   980,
+   1100
+  ],
+  "length": [
+   3.83,
+   4
+  ],
+  "height": [
+   1.525,
+   1.55
+  ],
+  "width": [
+   1.675,
+   1.675
+  ]
+ },
+ "en:Honda Fit": {},
+ "pt:Nissan_X-Trail": {},
+ "en:Nissan X-Trail": {},
+ "pt:Jeep_Avenger": {
+  "power": [
+   100,
+   156
+  ],
+  "length": [
+   4.084,
+   4.084
+  ],
+  "wheelbase": [
+   2.56,
+   2.56
+  ],
+  "width": [
+   1.776,
+   1.776
+  ],
+  "height": [
+   1.528,
+   1.528
+  ],
+  "mass": [
+   1182,
+   1536
+  ]
+ },
+ "en:Jeep Avenger": {
+  "wheelbase": [
+   2.56,
+   2.56
+  ],
+  "length": [
+   4.084,
+   4.084
+  ],
+  "width": [
+   1.776,
+   1.776
+  ],
+  "height": [
+   1.528,
+   1.528
+  ],
+  "mass": [
+   1182,
+   1536
+  ]
+ },
+ "pt:Ford_Mustang_(sétima_geração)": {},
+ "en:Ford Mustang (seventh generation)": {
+  "length": [
+   4.81,
+   4.82
+  ],
+  "width": [
+   1.915,
+   1.92
+  ],
+  "height": [
+   1.4,
+   1.4
+  ]
+ },
+ "pt:Land_Rover_Discovery": {
+  "height": [
+   1.998,
+   1.998
+  ],
+  "mass": [
+   1920,
+   1920
+  ],
+  "power": [
+   160,
+   300
+  ]
+ },
+ "en:Land Rover Discovery": {},
+ "pt:SsangYong_Rexton": {
+  "mass": [
+   2099,
+   2099
+  ]
+ },
+ "en:SsangYong Rexton": {},
+ "pt:Citroën_C4_Picasso": {},
+ "en:Citroën C4 Picasso": {},
+ "pt:Fiat_Ducato": {
+  "length": [
+   5.998,
+   5.998
+  ],
+  "width": [
+   2.055,
+   2.055
+  ],
+  "height": [
+   2.524,
+   2.524
+  ],
+  "mass": [
+   3000,
+   4500
+  ]
+ },
+ "en:Fiat Ducato": {},
+ "en:Renault Sandero RS": {},
+ "pt:Jaguar_XJ": {},
+ "en:Jaguar XJ": {},
+ "pt:BYD_Seal": {
+  "wheelbase": [
+   2.92,
+   2.92
+  ],
+  "length": [
+   4.8,
+   4.8
+  ],
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.46,
+   1.46
+  ],
+  "mass": [
+   1885,
+   1885
+  ]
+ },
+ "en:BYD Seal": {},
+ "en:Volvo EX90": {
+  "length": [
+   5.037,
+   5.037
+  ],
+  "width": [
+   2.039,
+   2.039
+  ],
+  "height": [
+   1.747,
+   1.747
+  ],
+  "mass": [
+   2818,
+   2818
+  ]
+ },
+ "pt:SsangYong_Kyron": {
+  "length": [
+   4.66,
+   4.66
+  ],
+  "mass": [
+   2071,
+   2071
+  ]
+ },
+ "en:SsangYong Kyron": {
+  "wheelbase": [
+   2.74,
+   2.74
+  ],
+  "length": [
+   4.66,
+   4.66
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.755,
+   1.755
+  ]
+ },
+ "en:Denza D9": {
+  "wheelbase": [
+   3.11,
+   3.11
+  ],
+  "length": [
+   5.25,
+   5.25
+  ],
+  "width": [
+   1.96,
+   1.96
+  ],
+  "height": [
+   1.92,
+   1.92
+  ],
+  "mass": [
+   2325,
+   2325
+  ]
+ },
+ "pt:Honda_City": {},
+ "en:Honda City": {},
+ "pt:Peugeot_208": {
+  "power": [
+   68,
+   120
+  ],
+  "length": [
+   3.962,
+   3.962
+  ],
+  "wheelbase": [
+   2.538,
+   2.538
+  ],
+  "height": [
+   1.463,
+   1.463
+  ]
+ },
+ "en:Peugeot 208": {},
+ "pt:Land_Rover_Range_Rover_Sport": {
+  "power": [
+   510,
+   510
+  ]
+ },
+ "en:Range Rover Sport": {},
+ "pt:Peugeot_5008": {
+  "wheelbase": [
+   2.735,
+   2.735
+  ],
+  "length": [
+   4.53,
+   4.53
+  ],
+  "width": [
+   1.835,
+   1.835
+  ],
+  "height": [
+   1.64,
+   1.64
+  ],
+  "power": [
+   110,
+   120
+  ]
+ },
+ "en:Peugeot 5008": {},
+ "en:SsangYong Actyon": {
+  "wheelbase": [
+   2.74,
+   3.06
+  ],
+  "length": [
+   4.455,
+   4.965
+  ],
+  "width": [
+   1.88,
+   1.9
+  ],
+  "height": [
+   1.735,
+   1.755
+  ]
+ },
+ "en:Volvo EX30": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.233,
+   4.233
+  ],
+  "width": [
+   1.836,
+   1.85
+  ],
+  "height": [
+   1.55,
+   1.573
+  ],
+  "mass": [
+   1830,
+   1943
+  ]
+ },
+ "en:Zeekr X": {},
+ "en:Kia EV5": {
+  "wheelbase": [
+   2.75,
+   2.75
+  ],
+  "length": [
+   4.61,
+   4.61
+  ],
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.68,
+   1.68
+  ]
+ },
+ "en:Lamborghini Revuelto": {
+  "wheelbase": [
+   2.779,
+   2.779
+  ],
+  "length": [
+   4.947,
+   4.947
+  ],
+  "width": [
+   2.033,
+   2.266
+  ],
+  "height": [
+   1.16,
+   1.16
+  ],
+  "mass": [
+   1772,
+   1880
+  ]
+ },
+ "pt:BYD_Seagull": {
+  "wheelbase": [
+   2.5,
+   2.5
+  ],
+  "length": [
+   3.78,
+   3.78
+  ],
+  "width": [
+   1.715,
+   1.715
+  ],
+  "height": [
+   1.54,
+   1.54
+  ],
+  "power": [
+   75,
+   102
+  ]
+ },
+ "en:BYD Seagull": {},
+ "en:Mini Hatch": {},
+ "en:Aston Martin DB12": {
+  "wheelbase": [
+   2.805,
+   2.805
+  ],
+  "length": [
+   4.725,
+   4.725
+  ],
+  "height": [
+   1.295,
+   1.295
+  ],
+  "width": [
+   1.98,
+   1.98
+  ],
+  "mass": [
+   1685,
+   1796
+  ]
+ },
+ "pt:Audi_Q7": {},
+ "en:Audi Q7": {},
+ "en:Jaecoo 7": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "width": [
+   1.865,
+   1.865
+  ],
+  "height": [
+   1.67,
+   1.67
+  ]
+ },
+ "pt:Renault_Kardian": {
+  "length": [
+   4.119,
+   4.119
+  ],
+  "wheelbase": [
+   2.604,
+   2.604
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.54,
+   1.54
+  ]
+ },
+ "en:Renault Kardian": {
+  "wheelbase": [
+   2.604,
+   2.604
+  ],
+  "length": [
+   4.119,
+   4.119
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.54,
+   1.54
+  ]
+ },
+ "pt:Ram_Rampage": {
+  "power": [
+   170,
+   272
+  ],
+  "length": [
+   5.02,
+   5.02
+  ],
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.71,
+   1.88
+  ],
+  "mass": [
+   1917,
+   1917
+  ]
+ },
+ "en:Ram Rampage": {
+  "wheelbase": [
+   2.994,
+   2.994
+  ],
+  "length": [
+   5.028,
+   5.028
+  ],
+  "width": [
+   1.886,
+   1.886
+  ],
+  "height": [
+   1.78,
+   1.78
+  ]
+ },
+ "pt:SsangYong_Korando": {},
+ "en:SsangYong Korando": {},
+ "pt:BMW_X7": {},
+ "en:BMW X7": {
+  "wheelbase": [
+   3.105,
+   3.105
+  ],
+  "width": [
+   2,
+   2
+  ],
+  "mass": [
+   2320,
+   2460
+  ]
+ },
+ "en:Haval H6": {},
+ "pt:JAC_J3": {
+  "power": [
+   108,
+   127
+  ],
+  "length": [
+   3.965,
+   3.965
+  ],
+  "wheelbase": [
+   2.4,
+   2.4
+  ],
+  "width": [
+   1.65,
+   1.65
+  ],
+  "height": [
+   1.465,
+   1.465
+  ],
+  "mass": [
+   1060,
+   1060
+  ]
+ },
+ "en:JAC Heyue Tongyue": {
+  "wheelbase": [
+   2.41,
+   2.41
+  ],
+  "length": [
+   4.155,
+   4.155
+  ],
+  "width": [
+   1.65,
+   1.65
+  ],
+  "height": [
+   1.425,
+   1.465
+  ]
+ },
+ "en:Ferrari F8 Spider": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.611,
+   4.611
+  ],
+  "width": [
+   1.979,
+   1.979
+  ],
+  "height": [
+   1.206,
+   1.206
+  ],
+  "mass": [
+   1435,
+   1435
+  ]
+ },
+ "pt:Ram_Pickup": {
+  "length": [
+   4.78,
+   4.78
+  ],
+  "width": [
+   2.02,
+   2.02
+  ],
+  "height": [
+   2.11,
+   2.11
+  ]
+ },
+ "en:Ram pickup": {},
+ "pt:Maserati_GranTurismo": {},
+ "en:Maserati GranTurismo": {},
+ "en:Hyptec HT": {
+  "wheelbase": [
+   2.935,
+   2.935
+  ],
+  "length": [
+   4.935,
+   4.935
+  ],
+  "width": [
+   1.92,
+   1.92
+  ],
+  "height": [
+   1.7,
+   1.7
+  ]
+ },
+ "en:Leapmotor C10": {},
+ "en:Denza B5": {
+  "wheelbase": [
+   2.8,
+   2.8
+  ],
+  "length": [
+   4.888,
+   4.921
+  ],
+  "width": [
+   1.97,
+   1.97
+  ],
+  "height": [
+   1.92,
+   1.93
+  ],
+  "mass": [
+   2897,
+   2897
+  ]
+ },
+ "pt:Fiat_Titano": {
+  "power": [
+   150,
+   200
+  ],
+  "wheelbase": [
+   3.18,
+   3.18
+  ],
+  "length": [
+   5.33,
+   5.33
+  ],
+  "width": [
+   1.963,
+   1.963
+  ],
+  "height": [
+   1.864,
+   1.864
+  ],
+  "mass": [
+   1945,
+   2090
+  ]
+ },
+ "en:Fiat Titano": {
+  "wheelbase": [
+   3.18,
+   3.18
+  ],
+  "length": [
+   5.33,
+   5.39
+  ],
+  "width": [
+   1.92,
+   1.92
+  ],
+  "height": [
+   1.819,
+   1.819
+  ]
+ },
+ "pt:BYD_Yuan_Up": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.31,
+   4.31
+  ],
+  "width": [
+   1.83,
+   1.83
+  ],
+  "height": [
+   1.675,
+   1.675
+  ],
+  "mass": [
+   1430,
+   1430
+  ]
+ },
+ "en:BYD Atto 2": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.31,
+   4.31
+  ],
+  "width": [
+   1.83,
+   1.83
+  ],
+  "height": [
+   1.675,
+   1.675
+  ]
+ },
+ "en:Volvo ES90": {
+  "wheelbase": [
+   3.1,
+   3.1
+  ],
+  "length": [
+   5,
+   5
+  ],
+  "width": [
+   1.942,
+   1.942
+  ],
+  "height": [
+   1.55,
+   1.55
+  ],
+  "mass": [
+   2500,
+   2600
+  ]
+ },
+ "en:MG6 (automobile)": {},
+ "en:Mini Aceman": {},
+ "en:Denza Z9": {
+  "wheelbase": [
+   3.125,
+   3.125
+  ],
+  "length": [
+   5.235,
+   5.235
+  ],
+  "width": [
+   1.99,
+   1.99
+  ]
+ },
+ "en:Omoda C7": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.66,
+   4.66
+  ],
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.67,
+   1.67
+  ]
+ },
+ "en:Kia Tasman": {
+  "wheelbase": [
+   3.27,
+   3.27
+  ],
+  "length": [
+   5.41,
+   5.41
+  ],
+  "width": [
+   1.93,
+   1.93
+  ]
+ },
+ "pt:BYD_Shark": {},
+ "en:BYD Shark 6": {
+  "wheelbase": [
+   3.26,
+   3.26
+  ],
+  "length": [
+   5.413,
+   5.457
+  ],
+  "width": [
+   1.971,
+   1.971
+  ],
+  "height": [
+   1.925,
+   1.925
+  ]
+ },
+ "en:Lamborghini Temerario": {
+  "wheelbase": [
+   2.658,
+   2.658
+  ],
+  "length": [
+   4.706,
+   4.706
+  ],
+  "width": [
+   1.996,
+   1.996
+  ],
+  "height": [
+   1.201,
+   1.201
+  ],
+  "mass": [
+   1690,
+   1690
+  ]
+ },
+ "en:Geely EX5": {
+  "wheelbase": [
+   2.75,
+   2.75
+  ],
+  "length": [
+   4.615,
+   4.615
+  ],
+  "width": [
+   1.901,
+   1.901
+  ],
+  "height": [
+   1.67,
+   1.67
+  ]
+ },
+ "pt:Nissan_Murano": {},
+ "en:Nissan Murano": {},
+ "pt:Ford_Maverick": {},
+ "en:Ford Maverick (1970–1977)": {
+  "mass": [
+   1320,
+   1366
+  ]
+ },
+ "en:Zeekr 7X": {
+  "wheelbase": [
+   2.925,
+   2.925
+  ],
+  "length": [
+   4.825,
+   4.825
+  ],
+  "width": [
+   1.93,
+   1.93
+  ]
+ },
+ "en:Mitsubishi Outlander Sport": {},
+ "en:Geely EX2": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.135,
+   4.135
+  ],
+  "width": [
+   1.805,
+   1.805
+  ],
+  "height": [
+   1.57,
+   1.57
+  ]
+ },
+ "en:MG S5": {
+  "wheelbase": [
+   2.73,
+   2.73
+  ],
+  "length": [
+   4.476,
+   4.476
+  ],
+  "width": [
+   1.849,
+   1.849
+  ],
+  "height": [
+   1.621,
+   1.621
+  ],
+  "mass": [
+   1685,
+   1740
+  ]
+ },
+ "en:Suzuki e Vitara": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.275,
+   4.285
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.635,
+   1.635
+  ],
+  "mass": [
+   1702,
+   1899
+  ]
+ },
+ "pt:Volkswagen_Tera": {
+  "length": [
+   4.147,
+   4.151
+  ],
+  "width": [
+   1.777,
+   1.777
+  ],
+  "height": [
+   1.478,
+   1.478
+  ],
+  "mass": [
+   1078,
+   1169
+  ],
+  "power": [
+   77,
+   116
+  ],
+  "wheelbase": [
+   2.566,
+   2.566
+  ]
+ },
+ "en:Volkswagen Tera": {
+  "wheelbase": [
+   2.566,
+   2.566
+  ],
+  "length": [
+   4.1,
+   4.1
+  ],
+  "width": [
+   1.783,
+   1.783
+  ],
+  "height": [
+   1.575,
+   1.575
+  ],
+  "mass": [
+   1154,
+   1154
+  ]
+ },
+ "en:Leapmotor B10": {
+  "wheelbase": [
+   2.735,
+   2.735
+  ],
+  "length": [
+   4.515,
+   4.515
+  ],
+  "width": [
+   1.885,
+   1.885
+  ],
+  "height": [
+   1.655,
+   1.655
+  ]
+ },
+ "pt:Subaru_Forester": {},
+ "en:Subaru Forester": {},
+ "pt:Volvo_C70": {},
+ "en:Volvo C70": {},
+ "pt:Peugeot_408": {
+  "wheelbase": [
+   2.71,
+   2.73
+  ],
+  "length": [
+   4.68,
+   4.75
+  ],
+  "width": [
+   1.815,
+   1.815
+  ],
+  "height": [
+   1.525,
+   1.525
+  ]
+ },
+ "en:Peugeot 408 (saloon)": {},
+ "en:Volkswagen Passat Variant": {},
+ "pt:Renault_Boreal": {
+  "power": [
+   138,
+   163
+  ],
+  "length": [
+   4.55,
+   4.55
+  ],
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "width": [
+   1.84,
+   1.84
+  ],
+  "height": [
+   1.65,
+   1.65
+  ]
+ },
+ "en:Renault Boreal": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.55,
+   4.55
+  ],
+  "width": [
+   1.84,
+   1.84
+  ],
+  "height": [
+   1.65,
+   1.65
+  ]
+ },
+ "pt:Maserati_Ghibli": {},
+ "en:Maserati Ghibli I": {},
+ "pt:Jeep_Wrangler": {
+  "wheelbase": [
+   2.42,
+   2.42
+  ],
+  "length": [
+   4.15,
+   4.15
+  ],
+  "width": [
+   2.01,
+   2.01
+  ],
+  "height": [
+   1.81,
+   1.81
+  ],
+  "mass": [
+   1717,
+   1717
+  ],
+  "power": [
+   199,
+   199
+  ]
+ },
+ "en:Jeep Wrangler": {},
+ "pt:Peugeot_RCZ": {
+  "power": [
+   165,
+   165
+  ]
+ },
+ "en:Peugeot RCZ": {
+  "wheelbase": [
+   2.612,
+   2.612
+  ],
+  "length": [
+   4.29,
+   4.29
+  ],
+  "width": [
+   1.845,
+   1.845
+  ],
+  "height": [
+   1.359,
+   1.359
+  ],
+  "mass": [
+   1394,
+   1474
+  ]
+ },
+ "en:BMW iX3 (NA5)": {
+  "wheelbase": [
+   2.897,
+   3.005
+  ],
+  "length": [
+   4.782,
+   4.885
+  ],
+  "width": [
+   1.895,
+   1.895
+  ],
+  "height": [
+   1.635,
+   1.635
+  ],
+  "mass": [
+   2285,
+   2285
+  ]
+ },
+ "en:Ferrari 849 Testarossa": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.718,
+   4.718
+  ],
+  "width": [
+   2.304,
+   2.304
+  ],
+  "height": [
+   1.225,
+   1.225
+  ]
+ },
+ "en:Ferrari Amalfi": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.656,
+   4.656
+  ],
+  "width": [
+   1.974,
+   1.974
+  ],
+  "height": [
+   1.301,
+   1.301
+  ],
+  "mass": [
+   1570,
+   1570
+  ]
+ },
+ "pt:Nissan_Kait": {
+  "power": [
+   113,
+   113
+  ],
+  "length": [
+   4.3,
+   4.3
+  ],
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.59,
+   1.59
+  ],
+  "mass": [
+   1139,
+   1139
+  ]
+ },
+ "en:Nissan Kait": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.304,
+   4.304
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.611,
+   1.611
+  ]
+ },
+ "en:Subaru Impreza XV": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.43,
+   4.43
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.52,
+   1.52
+  ],
+  "mass": [
+   1370,
+   1510
+  ],
+  "power": [
+   152,
+   152
+  ]
+ },
+ "pt:Suzuki_Jimny": {},
+ "en:Suzuki Jimny": {},
+ "pt:Fiat_Siena": {
+  "length": [
+   4.1,
+   4.1
+  ],
+  "width": [
+   1.626,
+   1.626
+  ],
+  "height": [
+   1.445,
+   1.445
+  ]
+ },
+ "en:Fiat Siena": {},
+ "pt:Volkswagen_Bora": {
+  "wheelbase": [
+   2.51,
+   2.51
+  ],
+  "length": [
+   4.38,
+   4.38
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.43,
+   1.43
+  ],
+  "mass": [
+   1240,
+   1240
+  ]
+ },
+ "en:Volkswagen Bora": {
+  "wheelbase": [
+   2.51,
+   2.52
+  ],
+  "length": [
+   4.38,
+   4.41
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.44,
+   1.49
+  ]
+ },
+ "pt:Nissan_Pathfinder": {
+  "wheelbase": [
+   2.85,
+   2.85
+  ],
+  "length": [
+   4.74,
+   4.74
+  ],
+  "width": [
+   1.865,
+   1.865
+  ],
+  "height": [
+   1.865,
+   1.865
+  ],
+  "mass": [
+   2250,
+   2250
+  ],
+  "power": [
+   174,
+   266
+  ]
+ },
+ "en:Nissan Pathfinder": {},
+ "pt:Renault_Master": {},
+ "en:Renault Master": {},
+ "pt:Subaru_Tribeca": {},
+ "en:Subaru Tribeca": {
+  "mass": [
+   1925,
+   1925
+  ]
+ },
+ "pt:Honda_HR-V": {
+  "mass": [
+   1309,
+   1309
+  ]
+ },
+ "en:Honda HR-V": {},
+ "pt:Ford_Territory": {
+  "length": [
+   4.856,
+   4.856
+  ],
+  "width": [
+   1.898,
+   1.898
+  ],
+  "height": [
+   1.714,
+   1.714
+  ],
+  "mass": [
+   2015,
+   2015
+  ]
+ },
+ "en:Ford Territory": {},
+ "pt:Chevrolet_Spark": {
+  "power": [
+   65,
+   101
+  ]
+ },
+ "en:Chevrolet Spark": {},
+ "pt:Kia_Sportage": {},
+ "en:Kia Sportage": {},
+ "pt:BMW_M4": {},
+ "en:BMW M4": {},
+ "pt:Lexus_CT": {
+  "power": [
+   136,
+   136
+  ],
+  "length": [
+   4.32,
+   4.32
+  ],
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "width": [
+   1.765,
+   1.765
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "en:Lexus CT": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.35,
+   4.35
+  ],
+  "width": [
+   1.765,
+   1.765
+  ],
+  "height": [
+   1.455,
+   1.455
+  ],
+  "mass": [
+   1420,
+   1420
+  ],
+  "power": [
+   82,
+   82
+  ]
+ },
+ "pt:Rolls-Royce_Ghost": {},
+ "en:Rolls-Royce Ghost": {},
+ "pt:Volvo_V60": {},
+ "en:Volvo V60": {},
+ "pt:Renault_Zoe": {
+  "wheelbase": [
+   2.605,
+   2.605
+  ],
+  "length": [
+   4.1,
+   4.1
+  ],
+  "width": [
+   1.84,
+   1.84
+  ],
+  "height": [
+   1.452,
+   1.452
+  ],
+  "power": [
+   95,
+   95
+  ]
+ },
+ "en:Renault Zoe": {},
+ "pt:Lamborghini_Gallardo": {
+  "power": [
+   507,
+   608
+  ],
+  "mass": [
+   1247,
+   1247
+  ]
+ },
+ "en:Lamborghini Gallardo": {
+  "wheelbase": [
+   2.56,
+   2.56
+  ],
+  "length": [
+   4.3,
+   4.386
+  ],
+  "width": [
+   1.9,
+   1.9
+  ],
+  "height": [
+   1.165,
+   1.184
+  ],
+  "mass": [
+   1501,
+   1733
+  ]
+ },
+ "pt:Volkswagen_Typ_1": {
+  "wheelbase": [
+   2.4,
+   2.4
+  ],
+  "length": [
+   4.026,
+   4.026
+  ],
+  "width": [
+   1.54,
+   1.54
+  ],
+  "height": [
+   1.43,
+   1.485
+  ],
+  "mass": [
+   800,
+   800
+  ]
+ },
+ "en:Volkswagen Beetle": {
+  "wheelbase": [
+   2.4,
+   2.42
+  ],
+  "length": [
+   4.079,
+   4.14
+  ],
+  "width": [
+   1.539,
+   1.585
+  ],
+  "height": [
+   1.5,
+   1.5
+  ],
+  "mass": [
+   730,
+   930
+  ]
+ },
+ "pt:Subaru_Outback": {},
+ "en:Subaru Outback": {},
+ "pt:Lamborghini_Huracán": {
+  "power": [
+   588,
+   649
+  ],
+  "mass": [
+   1389,
+   1628
+  ]
+ },
+ "en:Lamborghini Huracán": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.459,
+   4.459
+  ],
+  "width": [
+   1.924,
+   1.924
+  ],
+  "mass": [
+   1553,
+   1553
+  ]
+ },
+ "pt:Porsche_718": {},
+ "en:Porsche 718": {},
+ "en:Mitsubishi Lancer Evolution X": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.495,
+   4.495
+  ],
+  "width": [
+   1.81,
+   1.81
+  ],
+  "height": [
+   1.48,
+   1.48
+  ],
+  "mass": [
+   1420,
+   1650
+  ]
+ },
+ "pt:Volvo_V40": {
+  "mass": [
+   1357,
+   1498
+  ]
+ },
+ "en:Volvo V40 (2012–2019)": {
+  "wheelbase": [
+   2.647,
+   2.647
+  ],
+  "length": [
+   4.369,
+   4.369
+  ],
+  "width": [
+   1.802,
+   1.802
+  ]
+ },
+ "pt:Jeep_Renegade": {
+  "wheelbase": [
+   2.57,
+   2.57
+  ],
+  "length": [
+   4.23,
+   4.23
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.69,
+   1.69
+  ]
+ },
+ "en:Jeep Renegade": {
+  "mass": [
+   3078,
+   3549
+  ],
+  "power": [
+   61,
+   61
+  ]
+ },
+ "pt:Jaguar_XE": {
+  "length": [
+   4.672,
+   4.672
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.416,
+   1.416
+  ],
+  "mass": [
+   1474,
+   1474
+  ]
+ },
+ "en:Jaguar XE": {
+  "wheelbase": [
+   2.835,
+   2.935
+  ],
+  "length": [
+   4.672,
+   4.788
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.416,
+   1.429
+  ],
+  "mass": [
+   1474,
+   1665
+  ]
+ },
+ "pt:BMW_X2": {},
+ "en:BMW X2": {},
+ "pt:JAC_J5": {},
+ "en:JAC Heyue": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.59,
+   4.59
+  ],
+  "width": [
+   1.765,
+   1.765
+  ],
+  "height": [
+   1.425,
+   1.465
+  ]
+ },
+ "pt:JAC_J2": {
+  "power": [
+   68,
+   113
+  ],
+  "length": [
+   3.535,
+   3.535
+  ],
+  "wheelbase": [
+   2.39,
+   2.39
+  ],
+  "width": [
+   1.64,
+   1.64
+  ],
+  "height": [
+   1.475,
+   1.475
+  ],
+  "mass": [
+   915,
+   915
+  ]
+ },
+ "en:JAC Yueyue": {
+  "wheelbase": [
+   2.39,
+   2.39
+  ],
+  "length": [
+   3.535,
+   3.775
+  ],
+  "width": [
+   1.64,
+   1.745
+  ],
+  "height": [
+   1.475,
+   1.475
+  ],
+  "mass": [
+   890,
+   890
+  ]
+ },
+ "pt:Audi_A3": {
+  "power": [
+   102,
+   228
+  ]
+ },
+ "en:Audi A3": {},
+ "pt:Citroën_C3_Picasso": {},
+ "en:Citroën C3 Picasso": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4.078,
+   4.078
+  ],
+  "width": [
+   1.73,
+   1.766
+  ],
+  "mass": [
+   1176,
+   1408
+  ],
+  "height": [
+   1.624,
+   1.669
+  ]
+ },
+ "en:Lexus NX": {},
+ "pt:Suzuki_Grand_Vitara": {},
+ "en:Audi Q8": {
+  "wheelbase": [
+   2.995,
+   2.995
+  ],
+  "length": [
+   4.986,
+   5.012
+  ],
+  "width": [
+   1.995,
+   1.995
+  ],
+  "height": [
+   1.705,
+   1.705
+  ],
+  "mass": [
+   2145,
+   2145
+  ],
+  "power": [
+   136,
+   136
+  ]
+ },
+ "pt:Mitsubishi_ASX": {},
+ "en:Mitsubishi ASX": {},
+ "pt:Jeep_Compass": {
+  "wheelbase": [
+   2.636,
+   2.636
+  ],
+  "length": [
+   4.404,
+   4.404
+  ],
+  "width": [
+   1.819,
+   1.819
+  ],
+  "height": [
+   1.625,
+   1.64
+  ],
+  "mass": [
+   1589,
+   1720
+  ],
+  "power": [
+   176,
+   272
+  ]
+ },
+ "en:Jeep Compass": {},
+ "pt:Jeep_Gladiator": {
+  "width": [
+   1.875,
+   1.875
+  ],
+  "height": [
+   1.857,
+   1.933
+  ],
+  "wheelbase": [
+   3.487,
+   3.487
+  ],
+  "mass": [
+   2109,
+   2301
+  ],
+  "power": [
+   285,
+   285
+  ]
+ },
+ "pt:Toyota_Etios": {
+  "wheelbase": [
+   2.55,
+   2.55
+  ],
+  "length": [
+   4.265,
+   4.265
+  ],
+  "width": [
+   1.695,
+   1.695
+  ],
+  "height": [
+   1.51,
+   1.51
+  ]
+ },
+ "en:Toyota Etios": {
+  "wheelbase": [
+   2.46,
+   2.55
+  ],
+  "length": [
+   3.775,
+   4.37
+  ],
+  "width": [
+   1.695,
+   1.695
+  ],
+  "height": [
+   1.51,
+   1.51
+  ]
+ },
+ "pt:Porsche_911_GT2": {},
+ "en:Porsche 911 GT2": {},
+ "en:Porsche 911 GT3": {},
+ "pt:Hyundai_Veloster": {
+  "wheelbase": [
+   2.649,
+   2.649
+  ],
+  "length": [
+   4.219,
+   4.219
+  ],
+  "width": [
+   1.791,
+   1.791
+  ],
+  "height": [
+   1.4,
+   1.4
+  ],
+  "mass": [
+   1170,
+   1170
+  ],
+  "power": [
+   130,
+   204
+  ]
+ },
+ "en:Hyundai Veloster": {},
+ "en:Mercedes-AMG GT": {},
+ "pt:Hyundai_ix35": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.41,
+   4.41
+  ],
+  "width": [
+   1.82,
+   1.82
+  ],
+  "height": [
+   1.655,
+   1.655
+  ],
+  "mass": [
+   1576,
+   1576
+  ],
+  "power": [
+   168,
+   168
+  ]
+ },
+ "en:Hyundai ix35 (China)": {},
+ "pt:Land_Rover_Discovery_Sport": {},
+ "en:Land Rover Discovery Sport": {
+  "wheelbase": [
+   2.741,
+   2.741
+  ],
+  "length": [
+   4.59,
+   4.597
+  ],
+  "width": [
+   1.895,
+   1.905
+  ],
+  "height": [
+   1.724,
+   1.727
+  ],
+  "mass": [
+   1744,
+   1839
+  ]
+ },
+ "pt:Audi_A7": {},
+ "en:Audi A7": {},
+ "en:Aston Martin DBS": {
+  "mass": [
+   1588,
+   1727
+  ],
+  "wheelbase": [
+   2.61,
+   2.61
+  ],
+  "length": [
+   4.58,
+   4.58
+  ],
+  "width": [
+   1.83,
+   1.83
+  ],
+  "height": [
+   1.33,
+   1.33
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_GLB": {
+  "wheelbase": [
+   2.829,
+   2.829
+  ],
+  "length": [
+   4.634,
+   4.634
+  ],
+  "width": [
+   1.834,
+   1.834
+  ],
+  "height": [
+   1.658,
+   1.658
+  ],
+  "mass": [
+   1300,
+   1445
+  ]
+ },
+ "en:Mercedes-Benz GLB": {},
+ "en:Foton Tunland": {
+  "wheelbase": [
+   3.105,
+   3.105
+  ],
+  "length": [
+   5.31,
+   5.31
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.86,
+   1.86
+  ],
+  "mass": [
+   1790,
+   1950
+  ]
+ },
+ "pt:SsangYong_Tivoli": {
+  "length": [
+   4.195,
+   4.44
+  ],
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "width": [
+   1.795,
+   1.81
+  ],
+  "height": [
+   1.59,
+   1.613
+  ],
+  "mass": [
+   1300,
+   1535
+  ]
+ },
+ "en:KGM Tivoli": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.195,
+   4.44
+  ],
+  "width": [
+   1.795,
+   1.81
+  ],
+  "height": [
+   1.59,
+   1.613
+  ],
+  "mass": [
+   1300,
+   1535
+  ]
+ },
+ "pt:Hyundai_Creta": {
+  "power": [
+   120,
+   167
+  ],
+  "length": [
+   4.3,
+   4.3
+  ],
+  "wheelbase": [
+   2.61,
+   2.61
+  ],
+  "width": [
+   1.79,
+   1.79
+  ],
+  "height": [
+   1.635,
+   1.635
+  ],
+  "mass": [
+   1200,
+   1300
+  ]
+ },
+ "en:Hyundai Creta": {},
+ "pt:Ferrari_488_GTB": {
+  "power": [
+   669,
+   669
+  ],
+  "length": [
+   4.568,
+   4.568
+  ],
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "width": [
+   1.952,
+   1.952
+  ],
+  "height": [
+   1.213,
+   1.213
+  ],
+  "mass": [
+   1475,
+   1475
+  ]
+ },
+ "en:Ferrari 488": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.568,
+   4.568
+  ],
+  "width": [
+   1.952,
+   1.952
+  ],
+  "height": [
+   1.213,
+   1.213
+  ],
+  "mass": [
+   1470,
+   1548
+  ]
+ },
+ "pt:Jaguar_F-Pace": {
+  "length": [
+   4.731,
+   4.731
+  ],
+  "width": [
+   1.936,
+   1.936
+  ],
+  "height": [
+   1.667,
+   1.667
+  ],
+  "mass": [
+   1775,
+   1775
+  ]
+ },
+ "en:Jaguar F-Pace": {
+  "wheelbase": [
+   2.874,
+   2.874
+  ],
+  "length": [
+   4.747,
+   4.747
+  ],
+  "width": [
+   2.071,
+   2.071
+  ],
+  "height": [
+   1.664,
+   1.664
+  ],
+  "power": [
+   144,
+   144
+  ]
+ },
+ "en:Ford Fiesta (first generation)": {
+  "wheelbase": [
+   2.286,
+   2.286
+  ],
+  "length": [
+   3.565,
+   3.565
+  ],
+  "width": [
+   1.567,
+   1.567
+  ],
+  "height": [
+   1.36,
+   1.36
+  ]
+ },
+ "pt:Chevrolet_Bolt": {
+  "length": [
+   4.17,
+   4.17
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.6,
+   1.6
+  ],
+  "mass": [
+   1624,
+   1624
+  ],
+  "power": [
+   203,
+   204
+  ]
+ },
+ "en:Chevrolet Bolt": {},
+ "en:McLaren 570S": {
+  "mass": [
+   1247,
+   1498
+  ]
+ },
+ "pt:Nissan_Livina": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.18,
+   4.18
+  ],
+  "width": [
+   1.69,
+   1.69
+  ],
+  "height": [
+   1.57,
+   1.57
+  ],
+  "mass": [
+   1159,
+   1193
+  ]
+ },
+ "en:Nissan Livina": {},
+ "pt:Renault_Kwid": {
+  "power": [
+   68,
+   71
+  ],
+  "length": [
+   3.731,
+   3.731
+  ],
+  "wheelbase": [
+   2.423,
+   2.5
+  ],
+  "width": [
+   1.579,
+   1.579
+  ],
+  "height": [
+   1.481,
+   1.49
+  ],
+  "mass": [
+   825,
+   825
+  ]
+ },
+ "en:Renault Kwid": {
+  "wheelbase": [
+   2.422,
+   2.422
+  ],
+  "width": [
+   1.579,
+   1.579
+  ],
+  "height": [
+   1.478,
+   1.478
+  ],
+  "mass": [
+   775,
+   775
+  ]
+ },
+ "pt:Audi_e-tron": {
+  "length": [
+   4.901,
+   4.901
+  ],
+  "wheelbase": [
+   2.928,
+   2.928
+  ],
+  "width": [
+   1.935,
+   1.935
+  ],
+  "height": [
+   1.616,
+   1.616
+  ],
+  "mass": [
+   2405,
+   2560
+  ]
+ },
+ "en:Audi e-tron": {},
+ "pt:Chevrolet_Meriva": {
+  "wheelbase": [
+   2.63,
+   2.63
+  ],
+  "length": [
+   4.042,
+   4.042
+  ],
+  "width": [
+   1.694,
+   1.694
+  ],
+  "height": [
+   1.573,
+   1.573
+  ],
+  "mass": [
+   1225,
+   1225
+  ],
+  "power": [
+   102,
+   122
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_R": {
+  "length": [
+   5.156,
+   5.156
+  ],
+  "wheelbase": [
+   3.215,
+   3.215
+  ],
+  "width": [
+   1.958,
+   1.958
+  ],
+  "height": [
+   1.674,
+   1.674
+  ],
+  "mass": [
+   2375,
+   2375
+  ]
+ },
+ "en:Mercedes-Benz R-Class": {
+  "wheelbase": [
+   2.98,
+   3.215
+  ],
+  "length": [
+   4.922,
+   5.156
+  ],
+  "width": [
+   1.922,
+   1.958
+  ],
+  "height": [
+   1.661,
+   1.674
+  ],
+  "mass": [
+   2130,
+   2375
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_GLC": {
+  "power": [
+   211,
+   211
+  ],
+  "wheelbase": [
+   2.873,
+   2.873
+  ],
+  "length": [
+   4.656,
+   4.656
+  ],
+  "width": [
+   1.89,
+   1.89
+  ],
+  "height": [
+   1.644,
+   1.644
+  ],
+  "mass": [
+   1735,
+   1735
+  ]
+ },
+ "en:Mercedes-Benz GLC": {},
+ "pt:Audi_A8": {
+  "wheelbase": [
+   3.122,
+   3.122
+  ],
+  "length": [
+   5.267,
+   5.267
+  ],
+  "width": [
+   1.949,
+   1.949
+  ],
+  "height": [
+   1.471,
+   1.471
+  ],
+  "mass": [
+   1835,
+   1835
+  ],
+  "power": [
+   378,
+   500
+  ]
+ },
+ "en:Audi A8": {},
+ "pt:Peugeot_206": {
+  "wheelbase": [
+   2.442,
+   2.442
+  ],
+  "length": [
+   3.835,
+   4.028
+  ],
+  "width": [
+   1.652,
+   1.664
+  ],
+  "height": [
+   1.432,
+   1.48
+  ],
+  "mass": [
+   1025,
+   1145
+  ]
+ },
+ "en:Peugeot 206": {
+  "wheelbase": [
+   2.442,
+   2.442
+  ],
+  "length": [
+   3.835,
+   4.235
+  ],
+  "width": [
+   1.652,
+   1.673
+  ],
+  "height": [
+   1.373,
+   1.46
+  ],
+  "mass": [
+   950,
+   1145
+  ]
+ },
+ "pt:Peugeot_2008": {
+  "length": [
+   4.15,
+   4.15
+  ],
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.58,
+   1.58
+  ],
+  "mass": [
+   1231,
+   1231
+  ],
+  "power": [
+   115,
+   173
+  ]
+ },
+ "en:Peugeot 2008": {},
+ "pt:Peugeot_Boxer": {
+  "length": [
+   5.998,
+   5.998
+  ],
+  "width": [
+   2.055,
+   2.055
+  ],
+  "height": [
+   2.524,
+   2.524
+  ],
+  "mass": [
+   3000,
+   4500
+  ]
+ },
+ "en:Peugeot Boxer": {},
+ "pt:Rolls-Royce_Dawn": {
+  "length": [
+   5.296,
+   5.296
+  ],
+  "wheelbase": [
+   3.112,
+   3.112
+  ],
+  "width": [
+   1.947,
+   1.947
+  ],
+  "height": [
+   1.502,
+   1.502
+  ],
+  "mass": [
+   2560,
+   2560
+  ]
+ },
+ "en:Rolls-Royce Dawn": {
+  "wheelbase": [
+   3.112,
+   3.112
+  ],
+  "length": [
+   5.296,
+   5.296
+  ],
+  "width": [
+   1.947,
+   1.947
+  ],
+  "height": [
+   1.502,
+   1.502
+  ],
+  "mass": [
+   2560,
+   2560
+  ]
+ },
+ "pt:Volkswagen_Touareg": {
+  "length": [
+   4.754,
+   4.754
+  ],
+  "width": [
+   1.928,
+   1.928
+  ],
+  "height": [
+   1.726,
+   1.726
+  ],
+  "mass": [
+   2075,
+   2075
+  ]
+ },
+ "en:Volkswagen Touareg": {},
+ "pt:Ford_Focus": {},
+ "en:Ford Focus": {},
+ "pt:Lifan_620": {
+  "wheelbase": [
+   2.605,
+   2.605
+  ],
+  "length": [
+   4.55,
+   4.55
+  ],
+  "width": [
+   1.705,
+   1.705
+  ],
+  "height": [
+   1.495,
+   1.495
+  ],
+  "mass": [
+   1150,
+   1150
+  ],
+  "power": [
+   106,
+   106
+  ]
+ },
+ "en:Lifan 620": {
+  "wheelbase": [
+   2.605,
+   2.605
+  ],
+  "length": [
+   4.55,
+   4.55
+  ],
+  "width": [
+   1.705,
+   1.705
+  ],
+  "height": [
+   1.495,
+   1.495
+  ]
+ },
+ "pt:Volvo_S90": {},
+ "en:Volvo S90": {
+  "length": [
+   4.963,
+   5.083
+  ],
+  "width": [
+   1.89,
+   2.019
+  ],
+  "height": [
+   1.443,
+   1.45
+  ],
+  "mass": [
+   1800,
+   2150
+  ],
+  "power": [
+   46,
+   87
+  ]
+ },
+ "pt:Chrysler_Town_&_Country": {},
+ "en:Chrysler Town & Country (minivan)": {},
+ "en:Subaru Crosstrek": {},
+ "pt:Audi_RS3": {},
+ "pt:BYD_Tang": {},
+ "en:BYD Tang": {},
+ "pt:Toyota_Prius": {},
+ "en:Toyota Prius": {},
+ "pt:Peugeot_307": {
+  "wheelbase": [
+   2.612,
+   2.612
+  ],
+  "length": [
+   4.48,
+   4.48
+  ],
+  "width": [
+   1.762,
+   1.762
+  ],
+  "height": [
+   1.528,
+   1.528
+  ],
+  "mass": [
+   1363,
+   1411
+  ],
+  "power": [
+   143,
+   151
+  ]
+ },
+ "en:Peugeot 307": {
+  "wheelbase": [
+   2.608,
+   2.71
+  ],
+  "length": [
+   4.21,
+   4.47
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.42,
+   1.51
+  ]
+ },
+ "pt:Honda_Civic": {
+  "wheelbase": [
+   2.735,
+   2.735
+  ],
+  "length": [
+   4.679,
+   4.679
+  ],
+  "width": [
+   1.802,
+   1.802
+  ],
+  "height": [
+   1.432,
+   1.432
+  ],
+  "mass": [
+   1449,
+   1449
+  ],
+  "power": [
+   143,
+   203
+  ]
+ },
+ "en:Honda Civic": {},
+ "pt:Volkswagen_Passat": {},
+ "en:Volkswagen Passat": {},
+ "pt:Volkswagen_Saveiro": {
+  "length": [
+   4.493,
+   4.493
+  ],
+  "width": [
+   1.708,
+   1.708
+  ],
+  "height": [
+   1.497,
+   1.497
+  ],
+  "mass": [
+   1020,
+   1020
+  ],
+  "power": [
+   101,
+   120
+  ]
+ },
+ "en:Volkswagen Saveiro": {},
+ "pt:Porsche_911": {},
+ "en:Porsche 911": {},
+ "pt:Chery_Face": {
+  "wheelbase": [
+   2.39,
+   2.39
+  ],
+  "length": [
+   3.7,
+   3.7
+  ],
+  "width": [
+   1.58,
+   1.58
+  ],
+  "height": [
+   1.52,
+   1.52
+  ]
+ },
+ "en:Chery A1": {
+  "wheelbase": [
+   2.39,
+   2.39
+  ],
+  "length": [
+   3.7,
+   3.7
+  ],
+  "width": [
+   1.58,
+   1.58
+  ],
+  "height": [
+   1.527,
+   1.527
+  ],
+  "mass": [
+   1040,
+   1040
+  ]
+ },
+ "pt:Renault_Mégane": {
+  "power": [
+   90,
+   160
+  ]
+ },
+ "en:Renault Mégane": {},
+ "pt:Peugeot_207": {
+  "mass": [
+   1250,
+   1250
+  ]
+ },
+ "en:Peugeot 207": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4.037,
+   4.164
+  ],
+  "width": [
+   1.748,
+   1.748
+  ],
+  "height": [
+   1.472,
+   1.472
+  ],
+  "mass": [
+   1243,
+   1283
+  ]
+ },
+ "en:Hyundai Ioniq": {
+  "length": [
+   4.47,
+   4.47
+  ],
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "height": [
+   1.45,
+   1.45
+  ],
+  "width": [
+   1.82,
+   1.82
+  ]
+ },
+ "pt:Ferrari_GTC4Lusso": {},
+ "en:Ferrari GTC4Lusso": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   4.922,
+   4.922
+  ],
+  "width": [
+   1.98,
+   1.98
+  ],
+  "height": [
+   1.383,
+   1.383
+  ],
+  "mass": [
+   1740,
+   1790
+  ]
+ },
+ "en:Kia Niro": {},
+ "en:Subaru Impreza WRX STI": {},
+ "pt:Fiat_Toro": {
+  "power": [
+   135,
+   186
+  ],
+  "length": [
+   4.915,
+   4.915
+  ],
+  "wheelbase": [
+   2.9,
+   2.9
+  ],
+  "width": [
+   1.84,
+   1.84
+  ],
+  "height": [
+   1.73,
+   1.73
+  ],
+  "mass": [
+   1836,
+   1836
+  ]
+ },
+ "en:Fiat Toro": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   4.915,
+   4.915
+  ],
+  "width": [
+   1.844,
+   1.844
+  ],
+  "height": [
+   1.746,
+   1.746
+  ]
+ },
+ "en:BMW i5": {
+  "wheelbase": [
+   2.995,
+   3.105
+  ],
+  "length": [
+   5.06,
+   5.175
+  ],
+  "width": [
+   1.9,
+   1.9
+  ],
+  "height": [
+   1.515,
+   1.515
+  ]
+ },
+ "pt:Fiat_Strada": {},
+ "en:Fiat Strada": {},
+ "en:Audi R8 (Type 42)": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.431,
+   4.435
+  ],
+  "width": [
+   1.904,
+   1.93
+  ],
+  "height": [
+   1.244,
+   1.252
+  ],
+  "mass": [
+   1560,
+   1725
+  ]
+ },
+ "pt:Fiat_Mobi": {
+  "length": [
+   3.566,
+   3.566
+  ],
+  "wheelbase": [
+   2.305,
+   2.305
+  ],
+  "width": [
+   1.633,
+   1.633
+  ]
+ },
+ "en:Fiat Mobi": {
+  "wheelbase": [
+   2.305,
+   2.305
+  ],
+  "length": [
+   3.566,
+   3.566
+  ],
+  "height": [
+   1.49,
+   1.49
+  ],
+  "width": [
+   1.633,
+   1.633
+  ],
+  "mass": [
+   907,
+   907
+  ]
+ },
+ "pt:Ferrari_F430": {
+  "power": [
+   490,
+   490
+  ],
+  "length": [
+   4.512,
+   4.512
+  ],
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "width": [
+   1.923,
+   1.923
+  ],
+  "height": [
+   1.214,
+   1.214
+  ],
+  "mass": [
+   1350,
+   1350
+  ]
+ },
+ "en:Ferrari F430": {
+  "mass": [
+   1429,
+   1569
+  ]
+ },
+ "en:Mercedes-Benz GLE": {},
+ "en:Lamborghini Gallardo Spyder": {
+  "wheelbase": [
+   2.56,
+   2.56
+  ],
+  "length": [
+   4.3,
+   4.386
+  ],
+  "width": [
+   1.9,
+   1.9
+  ],
+  "height": [
+   1.165,
+   1.184
+  ],
+  "mass": [
+   1501,
+   1733
+  ]
+ },
+ "pt:Toyota_Corolla": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.63,
+   4.63
+  ],
+  "width": [
+   1.78,
+   1.78
+  ],
+  "height": [
+   1.455,
+   1.455
+  ],
+  "mass": [
+   1410,
+   1450
+  ],
+  "power": [
+   98,
+   169
+  ]
+ },
+ "en:Toyota Corolla": {},
+ "pt:Citroën_C4_Cactus": {
+  "wheelbase": [
+   2.63,
+   2.63
+  ],
+  "length": [
+   4.15,
+   4.15
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   1.6,
+   1.6
+  ],
+  "power": [
+   110,
+   130
+  ]
+ },
+ "en:Citroën C4 Cactus": {
+  "wheelbase": [
+   2.595,
+   2.595
+  ],
+  "length": [
+   4.157,
+   4.157
+  ],
+  "width": [
+   1.729,
+   1.729
+  ],
+  "mass": [
+   965,
+   1070
+  ],
+  "height": [
+   1.481,
+   1.563
+  ]
+ },
+ "en:Mercedes-Benz CLS63 AMG": {},
+ "pt:Volkswagen_Golf": {
+  "wheelbase": [
+   2.58,
+   2.58
+  ],
+  "height": [
+   1.452,
+   1.452
+  ],
+  "mass": [
+   999,
+   999
+  ]
+ },
+ "en:Volkswagen Golf": {},
+ "pt:Volkswagen_Polo": {},
+ "en:Volkswagen Polo": {},
+ "pt:Porsche_Cayman": {},
+ "en:Porsche Cayman": {},
+ "pt:Volkswagen_SpaceFox": {
+  "wheelbase": [
+   2.465,
+   2.465
+  ],
+  "length": [
+   4.178,
+   4.178
+  ],
+  "width": [
+   1.66,
+   1.66
+  ],
+  "height": [
+   1.547,
+   1.547
+  ],
+  "mass": [
+   1155,
+   1155
+  ],
+  "power": [
+   101,
+   104
+  ]
+ },
+ "en:Volkswagen Suran": {
+  "wheelbase": [
+   2.465,
+   2.465
+  ],
+  "length": [
+   3.805,
+   3.823
+  ],
+  "width": [
+   1.64,
+   1.64
+  ],
+  "height": [
+   1.545,
+   1.545
+  ]
+ },
+ "en:Audi SQ5": {},
+ "en:Lifan 530": {
+  "wheelbase": [
+   2.55,
+   2.55
+  ],
+  "length": [
+   4.3,
+   4.3
+  ],
+  "width": [
+   1.69,
+   1.69
+  ],
+  "height": [
+   1.49,
+   1.49
+  ]
+ },
+ "pt:JAC_J6": {
+  "length": [
+   4.55,
+   4.55
+  ],
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "width": [
+   1.775,
+   1.775
+  ],
+  "height": [
+   1.66,
+   1.66
+  ]
+ },
+ "en:JAC Refine M2": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.55,
+   4.55
+  ],
+  "width": [
+   1.775,
+   1.775
+  ],
+  "height": [
+   1.6,
+   1.6
+  ]
+ },
+ "pt:Honda_CR-V": {},
+ "en:Honda CR-V": {},
+ "pt:Mercedes-Benz_Classe_CLA": {},
+ "en:Mercedes-Benz CLA": {},
+ "en:Toyota Land Cruiser Prado": {},
+ "pt:Nissan_Kicks": {
+  "power": [
+   120,
+   125
+  ],
+  "length": [
+   4.365,
+   4.365
+  ],
+  "wheelbase": [
+   2.655,
+   2.655
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.62,
+   1.62
+  ],
+  "mass": [
+   1322,
+   1366
+  ]
+ },
+ "en:Nissan Kicks": {},
+ "pt:Subaru_WRX": {
+  "power": [
+   276,
+   305
+  ],
+  "mass": [
+   1540,
+   1540
+  ]
+ },
+ "en:Subaru Impreza WRX": {},
+ "pt:Nissan_Versa": {},
+ "en:Nissan Versa": {},
+ "pt:Nissan_350Z": {},
+ "en:Nissan 350Z": {
+  "wheelbase": [
+   2.649,
+   2.649
+  ],
+  "length": [
+   4.303,
+   4.314
+  ],
+  "width": [
+   1.816,
+   1.816
+  ],
+  "height": [
+   1.318,
+   1.334
+  ],
+  "mass": [
+   1414,
+   1634
+  ]
+ },
+ "pt:Renault_Symbol": {
+  "wheelbase": [
+   2.473,
+   2.473
+  ],
+  "length": [
+   4.261,
+   4.261
+  ],
+  "width": [
+   1.672,
+   1.672
+  ],
+  "height": [
+   1.439,
+   1.439
+  ],
+  "mass": [
+   990,
+   1045
+  ]
+ },
+ "en:Renault Symbol": {},
+ "pt:Mitsubishi_Lancer": {},
+ "en:Mitsubishi Lancer": {},
+ "en:Mahindra Scorpio": {},
+ "pt:Porsche_Macan": {},
+ "en:Porsche Macan": {},
+ "pt:Volkswagen_Gol": {
+  "power": [
+   47,
+   153
+  ]
+ },
+ "en:Volkswagen Gol": {},
+ "pt:Ferrari_458": {
+  "wheelbase": [
+   2.94,
+   2.94
+  ],
+  "length": [
+   4.57,
+   4.57
+  ],
+  "width": [
+   1.93,
+   1.93
+  ],
+  "height": [
+   1.23,
+   1.23
+  ],
+  "mass": [
+   1375,
+   1375
+  ],
+  "power": [
+   570,
+   570
+  ]
+ },
+ "en:Ferrari 458": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.527,
+   4.527
+  ],
+  "width": [
+   1.937,
+   1.937
+  ],
+  "height": [
+   1.213,
+   1.213
+  ],
+  "mass": [
+   1565,
+   1565
+  ]
+ },
+ "pt:Jaguar_I-Pace": {},
+ "en:Jaguar I-Pace": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   4.682,
+   4.682
+  ],
+  "width": [
+   1.895,
+   2.139
+  ],
+  "height": [
+   1.565,
+   1.565
+  ],
+  "mass": [
+   2133,
+   2133
+  ],
+  "power": [
+   200,
+   400
+  ]
+ },
+ "pt:Volvo_XC40": {
+  "power": [
+   150,
+   265
+  ]
+ },
+ "en:Volvo XC40": {
+  "wheelbase": [
+   2.702,
+   2.702
+  ],
+  "length": [
+   4.425,
+   4.431
+  ],
+  "width": [
+   1.863,
+   1.863
+  ],
+  "height": [
+   1.582,
+   1.652
+  ],
+  "mass": [
+   1497,
+   1733
+  ]
+ },
+ "pt:Kia_Stinger": {
+  "length": [
+   4.83,
+   4.83
+  ],
+  "wheelbase": [
+   2.905,
+   2.905
+  ],
+  "width": [
+   1.87,
+   1.87
+  ],
+  "height": [
+   1.4,
+   1.4
+  ],
+  "mass": [
+   1638,
+   1913
+  ]
+ },
+ "en:Kia Stinger": {
+  "wheelbase": [
+   2.905,
+   2.905
+  ],
+  "length": [
+   4.83,
+   4.83
+  ],
+  "width": [
+   1.87,
+   1.87
+  ],
+  "height": [
+   1.4,
+   1.4
+  ],
+  "mass": [
+   1638,
+   1913
+  ]
+ },
+ "en:Changan CS75": {},
+ "pt:Honda_WR-V": {
+  "power": [
+   116,
+   116
+  ],
+  "length": [
+   4.32,
+   4.32
+  ],
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "width": [
+   1.79,
+   1.79
+  ],
+  "height": [
+   1.65,
+   1.65
+  ],
+  "mass": [
+   1278,
+   1278
+  ]
+ },
+ "en:Honda WR-V": {},
+ "pt:Chevrolet_Malibu": {},
+ "en:Chevrolet Malibu": {},
+ "en:Ferrari 812 Superfast": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.657,
+   4.657
+  ],
+  "width": [
+   1.971,
+   1.971
+  ],
+  "height": [
+   1.276,
+   1.276
+  ],
+  "mass": [
+   1525,
+   1744
+  ]
+ },
+ "en:Range Rover Velar": {
+  "wheelbase": [
+   2.874,
+   2.874
+  ],
+  "length": [
+   4.803,
+   4.803
+  ],
+  "width": [
+   2.032,
+   2.032
+  ],
+  "height": [
+   1.665,
+   1.665
+  ],
+  "mass": [
+   1804,
+   1959
+  ],
+  "power": [
+   144,
+   144
+  ]
+ },
+ "en:McLaren 720S": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.544,
+   4.544
+  ],
+  "width": [
+   2.161,
+   2.161
+  ],
+  "height": [
+   1.196,
+   1.196
+  ],
+  "mass": [
+   1419,
+   1468
+  ]
+ },
+ "pt:Mitsubishi_Eclipse_Cross": {},
+ "en:Mitsubishi Eclipse Cross": {},
+ "pt:Chevrolet_Astra": {
+  "wheelbase": [
+   2.614,
+   2.614
+  ],
+  "length": [
+   4.199,
+   4.342
+  ],
+  "width": [
+   1.709,
+   1.709
+  ],
+  "height": [
+   1.425,
+   1.431
+  ],
+  "mass": [
+   1150,
+   1190
+  ]
+ },
+ "pt:Chevrolet_Onix_Plus": {
+  "wheelbase": [
+   2.528,
+   2.528
+  ],
+  "length": [
+   4.275,
+   4.275
+  ],
+  "width": [
+   1.964,
+   1.964
+  ],
+  "height": [
+   1.484,
+   1.484
+  ],
+  "mass": [
+   1031,
+   1031
+  ],
+  "power": [
+   80,
+   106
+  ]
+ },
+ "en:Chevrolet Prisma": {},
+ "pt:Chevrolet_Celta": {
+  "wheelbase": [
+   2.443,
+   2.443
+  ],
+  "length": [
+   3.788,
+   3.788
+  ],
+  "width": [
+   1.771,
+   1.771
+  ],
+  "height": [
+   1.429,
+   1.429
+  ],
+  "mass": [
+   834,
+   890
+  ],
+  "power": [
+   60,
+   85
+  ]
+ },
+ "en:Chevrolet Celta": {
+  "wheelbase": [
+   2.445,
+   2.445
+  ],
+  "length": [
+   3.75,
+   4.125
+  ],
+  "width": [
+   1.61,
+   1.61
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "pt:Chevrolet_Vectra": {
+  "wheelbase": [
+   2.703,
+   2.703
+  ]
+ },
+ "en:Chevrolet Vectra": {},
+ "pt:Chevrolet_Tracker": {
+  "wheelbase": [
+   2.2,
+   2.2
+  ],
+  "length": [
+   4.215,
+   4.215
+  ],
+  "width": [
+   1.99,
+   1.99
+  ],
+  "height": [
+   1.74,
+   1.74
+  ],
+  "mass": [
+   1060,
+   1060
+  ],
+  "power": [
+   132,
+   153
+  ]
+ },
+ "en:Chevrolet Tracker (Americas)": {
+  "wheelbase": [
+   2.48,
+   2.48
+  ],
+  "length": [
+   4.135,
+   4.135
+  ],
+  "width": [
+   1.71,
+   1.71
+  ],
+  "height": [
+   1.685,
+   1.685
+  ]
+ },
+ "pt:Chevrolet_Spin": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.36,
+   4.36
+  ],
+  "width": [
+   1.735,
+   1.735
+  ],
+  "height": [
+   1.664,
+   1.664
+  ],
+  "mass": [
+   1202,
+   1255
+  ]
+ },
+ "en:Chevrolet Spin": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.36,
+   4.36
+  ],
+  "width": [
+   1.735,
+   1.735
+  ],
+  "height": [
+   1.664,
+   1.664
+  ]
+ },
+ "pt:Fiat_Argo": {
+  "wheelbase": [
+   2.521,
+   2.521
+  ],
+  "length": [
+   4,
+   4
+  ],
+  "width": [
+   1.75,
+   1.75
+  ],
+  "height": [
+   1.5,
+   1.5
+  ],
+  "mass": [
+   1243,
+   1243
+  ],
+  "power": [
+   72,
+   139
+  ]
+ },
+ "en:Fiat Argo": {
+  "length": [
+   4,
+   4
+  ],
+  "width": [
+   1.75,
+   1.75
+  ],
+  "height": [
+   1.505,
+   1.505
+  ],
+  "wheelbase": [
+   2.521,
+   2.521
+  ],
+  "mass": [
+   1105,
+   1279
+  ]
+ },
+ "pt:Hyundai_Kona": {
+  "power": [
+   120,
+   177
+  ],
+  "length": [
+   4.165,
+   4.165
+  ],
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.55,
+   1.565
+  ],
+  "mass": [
+   1233,
+   1401
+  ]
+ },
+ "en:Hyundai Kona": {},
+ "pt:Ford_Courier": {
+  "power": [
+   60,
+   107
+  ],
+  "length": [
+   4.457,
+   4.457
+  ],
+  "wheelbase": [
+   2.83,
+   2.83
+  ],
+  "width": [
+   1.685,
+   1.685
+  ],
+  "height": [
+   1.477,
+   1.477
+  ],
+  "mass": [
+   1040,
+   1040
+  ]
+ },
+ "en:Ford Courier": {},
+ "pt:Lamborghini_Urus": {
+  "length": [
+   5.113,
+   5.113
+  ],
+  "width": [
+   2.017,
+   2.017
+  ],
+  "height": [
+   1.638,
+   1.638
+  ],
+  "mass": [
+   2200,
+   2200
+  ]
+ },
+ "en:Lamborghini Urus": {
+  "wheelbase": [
+   3.002,
+   3.002
+  ],
+  "length": [
+   5.113,
+   5.113
+  ],
+  "width": [
+   2.017,
+   2.017
+  ],
+  "height": [
+   1.638,
+   1.638
+  ],
+  "mass": [
+   2200,
+   2200
+  ]
+ },
+ "pt:Ford_Fiesta": {},
+ "en:Ford Fiesta": {},
+ "en:Suzuki S-Cross": {},
+ "pt:Renault_Clio": {},
+ "en:Renault Clio": {},
+ "pt:Rolls-Royce_Cullinan": {
+  "length": [
+   5.341,
+   5.341
+  ],
+  "width": [
+   2.164,
+   2.164
+  ],
+  "height": [
+   1.835,
+   1.835
+  ],
+  "mass": [
+   2660,
+   2660
+  ]
+ },
+ "en:Rolls-Royce Cullinan": {
+  "wheelbase": [
+   3.295,
+   3.295
+  ],
+  "length": [
+   5.341,
+   5.341
+  ],
+  "width": [
+   2,
+   2.164
+  ],
+  "height": [
+   1.835,
+   1.835
+  ],
+  "mass": [
+   2660,
+   2660
+  ]
+ },
+ "pt:Mitsubishi_Pajero_Pinin": {},
+ "en:Mitsubishi Pajero iO": {
+  "wheelbase": [
+   2.28,
+   2.45
+  ],
+  "length": [
+   3.675,
+   3.975
+  ],
+  "width": [
+   1.68,
+   1.68
+  ],
+  "height": [
+   1.7,
+   1.75
+  ],
+  "mass": [
+   1250,
+   1400
+  ]
+ },
+ "pt:Kia_Stonic": {
+  "power": [
+   84,
+   118
+  ],
+  "length": [
+   4.14,
+   4.14
+  ],
+  "wheelbase": [
+   2.58,
+   2.58
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.52,
+   1.52
+  ]
+ },
+ "en:Kia Stonic": {
+  "wheelbase": [
+   2.57,
+   2.58
+  ],
+  "width": [
+   1.735,
+   1.76
+  ],
+  "height": [
+   1.52,
+   1.533
+  ],
+  "mass": [
+   1060,
+   1104
+  ]
+ },
+ "pt:Lamborghini_Aventador": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.797,
+   4.797
+  ],
+  "width": [
+   2.03,
+   2.03
+  ],
+  "height": [
+   1.136,
+   1.136
+  ],
+  "mass": [
+   1525,
+   1525
+  ],
+  "power": [
+   770,
+   770
+  ]
+ },
+ "en:Lamborghini Aventador": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.78,
+   4.78
+  ],
+  "width": [
+   2.03,
+   2.265
+  ],
+  "height": [
+   1.136,
+   1.136
+  ],
+  "mass": [
+   1525,
+   1853
+  ]
+ },
+ "pt:BMW_M2": {
+  "power": [
+   370,
+   460
+  ]
+ },
+ "en:BMW M2": {},
+ "pt:Arrizo_5": {
+  "power": [
+   150,
+   150
+  ],
+  "length": [
+   4.532,
+   4.532
+  ],
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "mass": [
+   1356,
+   1356
+  ]
+ },
+ "en:Chery Arrizo 5": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.572,
+   4.572
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.482,
+   1.496
+  ],
+  "power": [
+   163,
+   163
+  ]
+ },
+ "pt:Audi_S3": {
+  "power": [
+   102,
+   228
+  ]
+ },
+ "en:Audi S3": {},
+ "pt:Mercedes-Benz_Classe_E": {
+  "wheelbase": [
+   2.961,
+   2.961
+  ],
+  "length": [
+   4.949,
+   4.949
+  ],
+  "width": [
+   2.065,
+   2.065
+  ],
+  "height": [
+   1.469,
+   1.469
+  ],
+  "mass": [
+   1855,
+   1855
+  ]
+ },
+ "en:Mercedes-Benz E-Class": {},
+ "pt:Chery_S-18": {},
+ "en:Riich M1": {
+  "wheelbase": [
+   2.33,
+   2.33
+  ],
+  "length": [
+   3.62,
+   3.905
+  ],
+  "width": [
+   1.63,
+   1.63
+  ],
+  "height": [
+   1.53,
+   1.53
+  ]
+ },
+ "en:Jaguar E-Pace": {
+  "wheelbase": [
+   2.681,
+   2.681
+  ],
+  "length": [
+   4.395,
+   4.395
+  ],
+  "width": [
+   1.984,
+   1.984
+  ],
+  "height": [
+   1.648,
+   1.648
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_C": {},
+ "en:Mercedes-Benz C-Class": {},
+ "pt:Chevrolet_Camaro": {},
+ "en:Chevrolet Camaro": {},
+ "pt:Porsche_Cayenne": {},
+ "en:Porsche Cayenne": {},
+ "pt:Ford_EcoSport": {
+  "wheelbase": [
+   2.49,
+   2.49
+  ],
+  "length": [
+   4.228,
+   4.228
+  ],
+  "width": [
+   1.734,
+   1.734
+  ],
+  "height": [
+   1.679,
+   1.679
+  ],
+  "power": [
+   137,
+   175
+  ]
+ },
+ "en:Ford EcoSport": {},
+ "en:Mercedes-Benz Vito": {},
+ "en:Audi S and RS models": {},
+ "pt:Chevrolet_Onix": {
+  "power": [
+   82,
+   116
+  ],
+  "length": [
+   4.163,
+   4.163
+  ],
+  "wheelbase": [
+   2.551,
+   2.551
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.473,
+   1.473
+  ]
+ },
+ "en:Chevrolet Onix": {},
+ "pt:Hyundai_HB20": {
+  "power": [
+   75,
+   120
+  ],
+  "length": [
+   4.015,
+   4.015
+  ],
+  "wheelbase": [
+   2.53,
+   2.53
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   1.47,
+   1.47
+  ],
+  "mass": [
+   993,
+   1110
+  ]
+ },
+ "en:Hyundai HB20": {},
+ "pt:Mitsubishi_Pajero": {
+  "wheelbase": [
+   2.8,
+   2.8
+  ],
+  "length": [
+   4.785,
+   4.785
+  ],
+  "width": [
+   1.815,
+   1.815
+  ],
+  "height": [
+   1.805,
+   1.805
+  ],
+  "mass": [
+   2110,
+   2110
+  ],
+  "power": [
+   190,
+   190
+  ]
+ },
+ "en:Mitsubishi Pajero": {},
+ "en:Ferrari Portofino": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.586,
+   4.586
+  ],
+  "width": [
+   1.938,
+   1.938
+  ],
+  "height": [
+   1.318,
+   1.318
+  ],
+  "mass": [
+   1664,
+   1664
+  ]
+ },
+ "pt:Jaguar_XF": {},
+ "en:Jaguar XF": {},
+ "pt:Mercedes-Benz_Classe_SLC": {},
+ "en:Mercedes-Benz SLC-Class": {},
+ "pt:Lifan_320": {
+  "wheelbase": [
+   2.34,
+   2.34
+  ],
+  "length": [
+   3.745,
+   3.745
+  ],
+  "width": [
+   1.62,
+   1.62
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "en:Lifan 320": {
+  "wheelbase": [
+   2.34,
+   2.34
+  ],
+  "length": [
+   3.745,
+   3.745
+  ],
+  "width": [
+   1.62,
+   1.62
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "pt:Chrysler_300": {
+  "wheelbase": [
+   3.048,
+   3.048
+  ],
+  "length": [
+   5.015,
+   5.015
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.475,
+   1.475
+  ],
+  "mass": [
+   1860,
+   1860
+  ]
+ },
+ "en:Chrysler 300": {},
+ "pt:Volkswagen_T-Cross": {
+  "wheelbase": [
+   2.651,
+   2.651
+  ],
+  "length": [
+   4.218,
+   4.218
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.571,
+   1.575
+  ],
+  "mass": [
+   1259,
+   1305
+  ]
+ },
+ "en:Volkswagen T-Cross": {
+  "wheelbase": [
+   2.551,
+   2.65
+  ],
+  "length": [
+   4.108,
+   4.355
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.605,
+   1.605
+  ]
+ },
+ "pt:Geely_EC7": {
+  "length": [
+   4.397,
+   4.635
+  ],
+  "width": [
+   1.789,
+   1.789
+  ],
+  "height": [
+   1.47,
+   1.47
+  ],
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "mass": [
+   1258,
+   1310
+  ]
+ },
+ "pt:Subaru_Impreza": {},
+ "en:Subaru Impreza": {},
+ "pt:Kia_Soul": {
+  "mass": [
+   1267,
+   1267
+  ],
+  "power": [
+   122,
+   128
+  ]
+ },
+ "en:Kia Soul": {},
+ "pt:Chery_Tiggo_5x": {
+  "length": [
+   4.338,
+   4.338
+  ],
+  "wheelbase": [
+   2.63,
+   2.63
+  ],
+  "width": [
+   1.83,
+   1.83
+  ],
+  "height": [
+   1.645,
+   1.645
+  ],
+  "mass": [
+   1376,
+   1376
+  ],
+  "power": [
+   128,
+   128
+  ]
+ },
+ "en:Chery Tiggo 5x": {
+  "wheelbase": [
+   2.63,
+   2.63
+  ],
+  "length": [
+   4.338,
+   4.338
+  ],
+  "width": [
+   1.83,
+   1.83
+  ],
+  "height": [
+   1.645,
+   1.645
+  ],
+  "mass": [
+   1376,
+   1376
+  ],
+  "power": [
+   129,
+   129
+  ]
+ },
+ "pt:Volkswagen_Virtus": {
+  "wheelbase": [
+   2.651,
+   2.651
+  ],
+  "length": [
+   4.482,
+   4.482
+  ],
+  "width": [
+   1.751,
+   1.751
+  ],
+  "height": [
+   1.472,
+   1.472
+  ],
+  "mass": [
+   1134,
+   1134
+  ]
+ },
+ "en:Volkswagen Virtus": {
+  "wheelbase": [
+   2.651,
+   2.651
+  ],
+  "width": [
+   1.751,
+   1.751
+  ]
+ },
+ "en:Haval H9": {},
+ "pt:Chery_Tiggo_7": {},
+ "en:Chery Tiggo 7": {},
+ "pt:BYD_Song": {},
+ "en:BYD Song": {},
+ "pt:Mercedes-Benz_Classe_S": {},
+ "en:Mercedes-Benz S-Class": {},
+ "pt:Honda_Accord": {},
+ "en:Honda Accord": {},
+ "pt:Porsche_Boxster": {
+  "power": [
+   245,
+   295
+  ]
+ },
+ "en:Porsche Boxster": {},
+ "pt:Peugeot_407": {
+  "wheelbase": [
+   2.725,
+   2.725
+  ],
+  "length": [
+   4.676,
+   4.815
+  ],
+  "width": [
+   1.811,
+   1.868
+  ],
+  "height": [
+   1.4,
+   1.471
+  ],
+  "mass": [
+   1475,
+   1852
+  ]
+ },
+ "en:Peugeot 407": {
+  "wheelbase": [
+   2.725,
+   2.725
+  ],
+  "length": [
+   4.676,
+   4.815
+  ],
+  "width": [
+   1.811,
+   1.868
+  ]
+ },
+ "pt:BMW_Série_3": {},
+ "en:BMW 3 Series": {},
+ "pt:Fiat_500": {
+  "wheelbase": [
+   1.84,
+   1.94
+  ],
+  "length": [
+   2.97,
+   3.185
+  ],
+  "width": [
+   1.32,
+   1.32
+  ],
+  "height": [
+   1.32,
+   1.32
+  ],
+  "mass": [
+   499,
+   499
+  ]
+ },
+ "en:Fiat 500": {
+  "wheelbase": [
+   1.84,
+   1.94
+  ],
+  "length": [
+   2.97,
+   3.185
+  ],
+  "width": [
+   1.32,
+   1.32
+  ],
+  "height": [
+   1.32,
+   1.32
+  ],
+  "mass": [
+   499,
+   499
+  ]
+ },
+ "en:Ferrari 488 Spider": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.568,
+   4.568
+  ],
+  "width": [
+   1.952,
+   1.952
+  ],
+  "height": [
+   1.213,
+   1.213
+  ],
+  "mass": [
+   1470,
+   1548
+  ]
+ },
+ "pt:Jaguar_X-Type": {
+  "length": [
+   4.67,
+   4.716
+  ],
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "width": [
+   2,
+   2
+  ],
+  "height": [
+   1.39,
+   1.48
+  ]
+ },
+ "en:Jaguar X-Type": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.672,
+   4.716
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "pt:Fiat_Cronos": {
+  "wheelbase": [
+   2.521,
+   2.521
+  ],
+  "width": [
+   1.726,
+   1.726
+  ],
+  "height": [
+   1.515,
+   1.524
+  ],
+  "length": [
+   4.372,
+   4.372
+  ],
+  "mass": [
+   1130,
+   1190
+  ],
+  "power": [
+   71,
+   107
+  ]
+ },
+ "en:Fiat Cronos": {
+  "wheelbase": [
+   2.521,
+   2.521
+  ],
+  "length": [
+   4.364,
+   4.364
+  ],
+  "width": [
+   1.724,
+   1.724
+  ],
+  "height": [
+   1.516,
+   1.516
+  ]
+ },
+ "pt:Fiat_Weekend": {},
+ "en:Fiat Weekend": {},
+ "pt:Hyundai_Tucson": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ]
+ },
+ "en:Hyundai Tucson": {},
+ "pt:Hyundai_Sonata": {
+  "wheelbase": [
+   2.794,
+   2.794
+  ],
+  "length": [
+   4.821,
+   4.821
+  ],
+  "width": [
+   1.834,
+   1.834
+  ],
+  "height": [
+   1.471,
+   1.471
+  ],
+  "mass": [
+   1508,
+   1508
+  ],
+  "power": [
+   182,
+   182
+  ]
+ },
+ "en:Hyundai Sonata": {},
+ "pt:Hyundai_Veracruz": {
+  "wheelbase": [
+   2.8,
+   2.8
+  ],
+  "length": [
+   4.84,
+   4.84
+  ],
+  "width": [
+   1.93,
+   1.93
+  ],
+  "height": [
+   1.75,
+   1.75
+  ],
+  "mass": [
+   1965,
+   1965
+  ]
+ },
+ "en:Hyundai Veracruz": {
+  "wheelbase": [
+   2.805,
+   2.805
+  ],
+  "length": [
+   4.84,
+   4.84
+  ],
+  "width": [
+   1.945,
+   1.97
+  ],
+  "height": [
+   1.75,
+   1.81
+  ],
+  "mass": [
+   1970,
+   2115
+  ]
+ },
+ "pt:Hyundai_Elantra": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.54,
+   4.54
+  ]
+ },
+ "en:Hyundai Elantra": {},
+ "pt:Chevrolet_Captiva": {
+  "mass": [
+   1800,
+   1800
+  ]
+ },
+ "en:Chevrolet Captiva": {},
+ "pt:Hyundai_i30": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.245,
+   4.245
+  ],
+  "width": [
+   1.765,
+   1.765
+  ],
+  "height": [
+   1.48,
+   1.48
+  ],
+  "mass": [
+   1288,
+   1288
+  ],
+  "power": [
+   90,
+   140
+  ]
+ },
+ "en:Hyundai i30": {},
+ "pt:Hyundai_Genesis": {
+  "wheelbase": [
+   2.936,
+   2.936
+  ],
+  "length": [
+   4.986,
+   4.986
+  ],
+  "width": [
+   1.89,
+   1.89
+  ],
+  "height": [
+   1.48,
+   1.48
+  ],
+  "mass": [
+   1837,
+   1837
+  ]
+ },
+ "en:Hyundai Genesis": {},
+ "pt:Hyundai_Equus": {
+  "wheelbase": [
+   3.045,
+   3.045
+  ],
+  "mass": [
+   2005,
+   2005
+  ],
+  "power": [
+   366,
+   366
+  ]
+ },
+ "en:Hyundai Equus": {},
+ "pt:Kia_Magentis": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.735,
+   4.735
+  ],
+  "width": [
+   1.805,
+   1.805
+  ],
+  "height": [
+   1.48,
+   1.48
+  ]
+ },
+ "en:Kia Magentis": {},
+ "pt:Kia_Cadenza": {
+  "length": [
+   4.965,
+   4.965
+  ],
+  "wheelbase": [
+   2.845,
+   2.845
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.475,
+   1.475
+  ],
+  "mass": [
+   1575,
+   1575
+  ],
+  "power": [
+   290,
+   290
+  ]
+ },
+ "en:Kia Cadenza": {},
+ "pt:BMW_X4": {},
+ "en:BMW X4": {},
+ "pt:Hyundai_Azera": {},
+ "en:Hyundai Grandeur": {},
+ "pt:Kia_Borrego": {
+  "wheelbase": [
+   2.89,
+   2.89
+  ],
+  "length": [
+   4.88,
+   4.88
+  ],
+  "width": [
+   1.91,
+   1.91
+  ],
+  "height": [
+   1.81,
+   1.81
+  ],
+  "mass": [
+   2375,
+   2375
+  ]
+ },
+ "en:Kia Mohave": {
+  "wheelbase": [
+   2.895,
+   2.895
+  ],
+  "length": [
+   4.88,
+   4.935
+  ],
+  "width": [
+   1.915,
+   1.92
+  ],
+  "height": [
+   1.765,
+   1.81
+  ],
+  "mass": [
+   1965,
+   2305
+  ]
+ },
+ "pt:Kia_Bongo": {},
+ "en:Kia Bongo": {},
+ "pt:Kia_Carnival": {},
+ "en:Kia Carnival": {},
+ "pt:Kia_Carens": {},
+ "en:Kia Carens": {},
+ "pt:Hyundai_HR": {},
+ "en:Hyundai Porter": {},
+ "pt:Kia_Cerato": {
+  "length": [
+   4.64,
+   4.64
+  ],
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.46,
+   1.46
+  ],
+  "mass": [
+   1680,
+   1730
+  ]
+ },
+ "en:Kia Cerato": {},
+ "pt:Kia_Sorento": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.57,
+   4.57
+  ],
+  "width": [
+   1.86,
+   1.86
+  ],
+  "height": [
+   1.73,
+   1.73
+  ],
+  "mass": [
+   1909,
+   1909
+  ]
+ },
+ "en:Kia Sorento": {},
+ "pt:Hyundai_Santa_Fe": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.69,
+   4.69
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.68,
+   1.68
+  ],
+  "mass": [
+   2510,
+   2510
+  ],
+  "power": [
+   180,
+   285
+  ]
+ },
+ "en:Hyundai Santa Fe": {},
+ "pt:Kia_Rio": {},
+ "en:Kia Rio": {},
+ "pt:Mercedes-Benz_Classe_A": {},
+ "en:Mercedes-Benz A-Class": {},
+ "pt:Mercedes-Benz_Classe_B": {},
+ "en:Mercedes-Benz B-Class": {},
+ "pt:Chevrolet_Cruze": {
+  "power": [
+   140,
+   153
+  ],
+  "length": [
+   4.448,
+   4.665
+  ],
+  "wheelbase": [
+   2.685,
+   2.7
+  ],
+  "width": [
+   1.79,
+   1.807
+  ],
+  "height": [
+   1.475,
+   1.484
+  ],
+  "mass": [
+   1310,
+   1424
+  ]
+ },
+ "en:Chevrolet Cruze": {},
+ "pt:Hyundai_i20": {},
+ "en:Hyundai i20": {},
+ "pt:Kia_Opirus": {},
+ "en:Kia Opirus": {
+  "wheelbase": [
+   2.8,
+   2.8
+  ],
+  "length": [
+   4.98,
+   5
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.485,
+   1.485
+  ],
+  "mass": [
+   1665,
+   1864
+  ]
+ },
+ "pt:Kia_Morning": {
+  "length": [
+   3.495,
+   3.495
+  ]
+ },
+ "en:Kia Picanto": {},
+ "pt:Kia_Quoris": {
+  "length": [
+   5.09,
+   5.09
+  ],
+  "width": [
+   1.9,
+   1.9
+  ],
+  "height": [
+   1.49,
+   1.49
+  ],
+  "mass": [
+   1910,
+   1910
+  ]
+ },
+ "en:Kia K9": {},
+ "pt:Chevrolet_Aveo": {},
+ "en:Chevrolet Aveo": {},
+ "pt:Peugeot_308": {
+  "wheelbase": [
+   2.61,
+   2.61
+  ],
+  "length": [
+   4.276,
+   4.276
+  ],
+  "width": [
+   1.815,
+   1.815
+  ],
+  "height": [
+   1.498,
+   1.498
+  ],
+  "power": [
+   90,
+   151
+  ]
+ },
+ "en:Peugeot 308": {},
+ "pt:Kia_Optima": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.735,
+   4.735
+  ],
+  "width": [
+   1.805,
+   1.805
+  ],
+  "height": [
+   1.48,
+   1.48
+  ]
+ },
+ "en:Kia Optima": {},
+ "pt:Nissan_GT-R": {
+  "power": [
+   480,
+   480
+  ],
+  "length": [
+   4.656,
+   4.656
+  ],
+  "wheelbase": [
+   2.78,
+   2.78
+  ],
+  "width": [
+   1.895,
+   1.895
+  ],
+  "height": [
+   1.369,
+   1.369
+  ],
+  "mass": [
+   1740,
+   1740
+  ]
+ },
+ "en:Nissan GT-R": {
+  "wheelbase": [
+   2.78,
+   2.78
+  ],
+  "mass": [
+   1680,
+   1785
+  ]
+ },
+ "pt:Toyota_Camry": {
+  "power": [
+   284,
+   284
+  ]
+ },
+ "en:Toyota Camry": {},
+ "pt:Volkswagen_Eos": {
+  "wheelbase": [
+   2.578,
+   2.578
+  ],
+  "length": [
+   4.407,
+   4.422
+  ],
+  "width": [
+   1.791,
+   1.791
+  ],
+  "height": [
+   1.443,
+   1.443
+  ]
+ },
+ "en:Volkswagen Eos": {
+  "wheelbase": [
+   2.578,
+   2.578
+  ],
+  "length": [
+   4.407,
+   4.407
+  ],
+  "width": [
+   1.791,
+   1.791
+  ],
+  "height": [
+   1.443,
+   1.443
+  ]
+ },
+ "pt:Porsche_Panamera": {},
+ "en:Porsche Panamera": {},
+ "pt:BMW_Série_5": {},
+ "en:BMW 5 Series": {},
+ "pt:BMW_Série_7": {},
+ "en:BMW 7 Series": {},
+ "en:Lexus UX": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.495,
+   4.495
+  ],
+  "width": [
+   1.84,
+   1.84
+  ],
+  "mass": [
+   1470,
+   1900
+  ],
+  "power": [
+   109,
+   204
+  ]
+ },
+ "pt:Rolls-Royce_Wraith": {
+  "length": [
+   5.15,
+   5.15
+  ],
+  "wheelbase": [
+   3.45,
+   3.45
+  ],
+  "width": [
+   1.87,
+   1.87
+  ]
+ },
+ "en:Rolls-Royce Wraith (1938)": {
+  "length": [
+   5.15,
+   5.15
+  ],
+  "width": [
+   1.87,
+   1.87
+  ]
+ },
+ "pt:BMW_i4": {},
+ "en:BMW i4": {
+  "wheelbase": [
+   2.856,
+   2.856
+  ],
+  "length": [
+   4.785,
+   4.785
+  ],
+  "width": [
+   1.852,
+   1.852
+  ],
+  "height": [
+   1.448,
+   1.448
+  ],
+  "mass": [
+   2125,
+   2290
+  ]
+ },
+ "en:Citroën C3 Aircross": {},
+ "pt:Chery_Tiggo_2": {
+  "length": [
+   4.2,
+   4.2
+  ],
+  "wheelbase": [
+   2.555,
+   2.555
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.57,
+   1.57
+  ]
+ },
+ "en:Chery Tiggo 3x": {
+  "wheelbase": [
+   2.555,
+   2.555
+  ],
+  "length": [
+   4.2,
+   4.2
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.57,
+   1.57
+  ],
+  "power": [
+   123,
+   123
+  ]
+ },
+ "pt:Fiat_Palio": {
+  "power": [
+   55,
+   132
+  ]
+ },
+ "en:Fiat Palio": {},
+ "pt:Nissan_Tiida": {
+  "length": [
+   4.29,
+   4.29
+  ]
+ },
+ "en:Nissan Tiida": {},
+ "pt:Renault_Scénic": {
+  "power": [
+   110,
+   115
+  ]
+ },
+ "en:Renault Scénic": {},
+ "pt:Audi_TT": {},
+ "en:Audi TT": {},
+ "pt:Volvo_S80": {},
+ "en:Volvo S80": {},
+ "en:Ford Mustang Mach 1": {},
+ "en:Lifan X80": {
+  "wheelbase": [
+   2.79,
+   2.79
+  ],
+  "length": [
+   4.82,
+   4.82
+  ],
+  "width": [
+   1.93,
+   1.93
+  ],
+  "height": [
+   1.76,
+   1.76
+  ]
+ },
+ "en:Changan CS55": {},
+ "pt:GAC_GS3": {
+  "power": [
+   170,
+   170
+  ],
+  "length": [
+   4.41,
+   4.41
+  ],
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "width": [
+   1.85,
+   1.85
+  ],
+  "height": [
+   1.6,
+   1.6
+  ],
+  "mass": [
+   1430,
+   1430
+  ]
+ },
+ "en:Trumpchi GS3": {},
+ "en:Porsche 718 Boxster and Cayman (982)": {
+  "wheelbase": [
+   2.475,
+   2.475
+  ],
+  "length": [
+   4.379,
+   4.379
+  ],
+  "width": [
+   1.801,
+   1.801
+  ],
+  "height": [
+   1.281,
+   1.295
+  ],
+  "mass": [
+   1335,
+   1454
+  ]
+ },
+ "pt:Jaguar_XJS": {},
+ "en:Jaguar XJS": {},
+ "pt:Hyundai_Palisade": {
+  "wheelbase": [
+   2.9,
+   2.9
+  ],
+  "length": [
+   4.996,
+   4.996
+  ],
+  "width": [
+   1.976,
+   1.976
+  ],
+  "height": [
+   1.75,
+   1.75
+  ],
+  "mass": [
+   2044,
+   2044
+  ],
+  "power": [
+   295,
+   295
+  ]
+ },
+ "en:Hyundai Palisade": {},
+ "pt:Chevrolet_Corvette": {},
+ "en:Chevrolet Corvette": {},
+ "pt:Porsche_Taycan": {
+  "wheelbase": [
+   2.901,
+   2.901
+  ],
+  "length": [
+   4.963,
+   4.963
+  ],
+  "width": [
+   1.966,
+   1.966
+  ],
+  "height": [
+   1.379,
+   1.379
+  ],
+  "mass": [
+   2359,
+   2359
+  ]
+ },
+ "en:Porsche Taycan": {
+  "length": [
+   4.963,
+   4.963
+  ],
+  "wheelbase": [
+   2.9,
+   2.9
+  ],
+  "width": [
+   1.966,
+   1.966
+  ],
+  "height": [
+   1.378,
+   1.381
+  ],
+  "mass": [
+   2140,
+   2305
+  ]
+ },
+ "en:Mercedes-Benz EQC": {},
+ "en:BMW M8": {
+  "wheelbase": [
+   2.822,
+   3.023
+  ],
+  "length": [
+   4.867,
+   5.098
+  ],
+  "width": [
+   1.907,
+   1.943
+  ],
+  "height": [
+   1.341,
+   1.399
+  ],
+  "mass": [
+   1885,
+   2032
+  ]
+ },
+ "en:Mercedes-Benz EQA": {},
+ "en:Fiat Doblò Cargo": {},
+ "pt:Volkswagen_Taos": {
+  "length": [
+   4.417,
+   4.465
+  ],
+  "wheelbase": [
+   2.638,
+   2.69
+  ],
+  "width": [
+   1.841,
+   1.841
+  ],
+  "height": [
+   1.602,
+   1.635
+  ]
+ },
+ "en:Volkswagen Taos": {
+  "wheelbase": [
+   2.638,
+   2.68
+  ],
+  "length": [
+   4.417,
+   4.453
+  ],
+  "width": [
+   1.841,
+   1.841
+  ]
+ },
+ "pt:Audi_Q8_e-tron": {
+  "length": [
+   4.901,
+   4.901
+  ],
+  "wheelbase": [
+   2.928,
+   2.928
+  ],
+  "width": [
+   1.935,
+   1.935
+  ],
+  "height": [
+   1.616,
+   1.616
+  ],
+  "mass": [
+   2405,
+   2560
+  ]
+ },
+ "en:Audi Q8 e-tron": {},
+ "pt:Audi_RS4": {},
+ "en:Audi RS 4": {},
+ "pt:Chery_Tiggo_8": {
+  "length": [
+   4.7,
+   4.745
+  ],
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "width": [
+   1.86,
+   1.86
+  ],
+  "height": [
+   1.746,
+   1.746
+  ]
+ },
+ "en:Chery Tiggo 8": {},
+ "pt:Chery_Arrizo_5_Plus": {
+  "length": [
+   4.68,
+   4.68
+  ],
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.49,
+   1.49
+  ]
+ },
+ "en:Chery Arrizo 5 Plus": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.68,
+   4.71
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.49,
+   1.49
+  ],
+  "mass": [
+   1280,
+   1365
+  ]
+ },
+ "pt:Chery_iCar": {
+  "length": [
+   3.2,
+   3.2
+  ],
+  "wheelbase": [
+   2.15,
+   2.15
+  ],
+  "width": [
+   1.67,
+   1.67
+  ],
+  "height": [
+   1.55,
+   1.55
+  ]
+ },
+ "en:Chery eQ1": {
+  "wheelbase": [
+   2.15,
+   2.15
+  ],
+  "length": [
+   3.2,
+   3.2
+  ],
+  "width": [
+   1.67,
+   1.67
+  ],
+  "height": [
+   1.55,
+   1.55
+  ],
+  "power": [
+   41,
+   76
+  ]
+ },
+ "pt:Lexus_ES": {
+  "length": [
+   4.8,
+   4.8
+  ]
+ },
+ "en:Lexus ES": {},
+ "pt:Mitsubishi_L200": {
+  "wheelbase": [
+   3,
+   3
+  ],
+  "length": [
+   5.115,
+   5.115
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.78,
+   1.78
+  ],
+  "mass": [
+   2950,
+   2950
+  ],
+  "power": [
+   190,
+   190
+  ]
+ },
+ "en:Mitsubishi Triton": {},
+ "en:Fiat 500e": {
+  "wheelbase": [
+   2.322,
+   2.322
+  ],
+  "length": [
+   3.632,
+   3.632
+  ],
+  "width": [
+   1.683,
+   1.683
+  ],
+  "height": [
+   1.527,
+   1.527
+  ],
+  "mass": [
+   1255,
+   1405
+  ]
+ },
+ "pt:Chery_QQ": {
+  "power": [
+   74,
+   75
+  ]
+ },
+ "en:Chery QQ3": {},
+ "pt:Mercedes-Benz_Classe_CLK": {
+  "wheelbase": [
+   2.69,
+   2.69
+  ],
+  "length": [
+   4.567,
+   4.567
+  ],
+  "width": [
+   1.722,
+   1.722
+  ],
+  "height": [
+   1.366,
+   1.38
+  ],
+  "mass": [
+   1375,
+   1755
+  ],
+  "power": [
+   146,
+   481
+  ]
+ },
+ "en:Mercedes-Benz CLK-Class": {},
+ "pt:Subaru_Legacy": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.665,
+   4.665
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.425,
+   1.425
+  ],
+  "mass": [
+   1495,
+   1495
+  ],
+  "power": [
+   250,
+   250
+  ]
+ },
+ "en:Subaru Legacy": {},
+ "pt:Audi_e-tron_GT": {
+  "length": [
+   4.99,
+   4.99
+  ],
+  "wheelbase": [
+   2.9,
+   2.9
+  ],
+  "width": [
+   1.96,
+   1.96
+  ],
+  "height": [
+   1.41,
+   1.41
+  ],
+  "mass": [
+   2200,
+   2405
+  ]
+ },
+ "en:Audi e-tron GT": {
+  "length": [
+   4.99,
+   4.99
+  ],
+  "wheelbase": [
+   2.9,
+   2.9
+  ],
+  "width": [
+   1.96,
+   1.96
+  ],
+  "height": [
+   1.41,
+   1.41
+  ],
+  "mass": [
+   2200,
+   2200
+  ]
+ },
+ "pt:Aston_Martin_DBX": {
+  "length": [
+   5.039,
+   5.039
+  ],
+  "width": [
+   1.998,
+   1.998
+  ],
+  "height": [
+   1.68,
+   1.68
+  ],
+  "mass": [
+   2245,
+   2245
+  ]
+ },
+ "en:Aston Martin DBX": {
+  "wheelbase": [
+   3.06,
+   3.06
+  ],
+  "length": [
+   5.039,
+   5.039
+  ],
+  "width": [
+   1.998,
+   1.998
+  ],
+  "height": [
+   1.68,
+   1.68
+  ],
+  "mass": [
+   2245,
+   2245
+  ]
+ },
+ "en:Ferrari F8 Tributo": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.611,
+   4.611
+  ],
+  "width": [
+   1.979,
+   1.979
+  ],
+  "height": [
+   1.206,
+   1.206
+  ],
+  "mass": [
+   1435,
+   1435
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_CLC": {
+  "power": [
+   184,
+   184
+  ],
+  "length": [
+   4.452,
+   4.452
+  ],
+  "wheelbase": [
+   2.715,
+   2.715
+  ],
+  "width": [
+   1.728,
+   1.728
+  ],
+  "height": [
+   1.405,
+   1.405
+  ],
+  "mass": [
+   1480,
+   1480
+  ]
+ },
+ "pt:Volkswagen_New_Beetle": {
+  "wheelbase": [
+   2.15,
+   2.15
+  ],
+  "length": [
+   4.12,
+   4.12
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   1.5,
+   1.5
+  ]
+ },
+ "en:Volkswagen New Beetle": {
+  "wheelbase": [
+   2.515,
+   2.515
+  ],
+  "length": [
+   4.129,
+   4.129
+  ],
+  "width": [
+   1.721,
+   1.721
+  ],
+  "height": [
+   1.498,
+   1.498
+  ]
+ },
+ "en:Peugeot e-208": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4.055,
+   4.055
+  ],
+  "width": [
+   1.745,
+   1.745
+  ],
+  "height": [
+   1.43,
+   1.43
+  ]
+ },
+ "pt:Nissan_Altima": {
+  "wheelbase": [
+   2.776,
+   2.776
+  ],
+  "length": [
+   4.859,
+   4.859
+  ],
+  "mass": [
+   1443,
+   1530
+  ],
+  "power": [
+   182,
+   270
+  ]
+ },
+ "en:Nissan Altima": {},
+ "en:McLaren GT": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.683,
+   4.683
+  ],
+  "width": [
+   2.095,
+   2.095
+  ],
+  "height": [
+   1.213,
+   1.213
+  ],
+  "mass": [
+   1530,
+   1530
+  ]
+ },
+ "pt:Ferrari_SF90_Stradale": {},
+ "en:Ferrari SF90 Stradale": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.71,
+   4.71
+  ],
+  "width": [
+   1.972,
+   1.972
+  ],
+  "height": [
+   1.186,
+   1.186
+  ],
+  "mass": [
+   1570,
+   1670
+  ]
+ },
+ "en:JAC Refine S4": {
+  "wheelbase": [
+   2.62,
+   2.62
+  ],
+  "length": [
+   4.41,
+   4.41
+  ],
+  "width": [
+   1.8,
+   1.8
+  ],
+  "height": [
+   1.66,
+   1.66
+  ],
+  "mass": [
+   1670,
+   1710
+  ]
+ },
+ "en:Lifan Foison": {
+  "wheelbase": [
+   2.525,
+   2.525
+  ],
+  "length": [
+   4.015,
+   4.015
+  ],
+  "width": [
+   1.6,
+   1.6
+  ],
+  "height": [
+   1.9,
+   1.9
+  ]
+ },
+ "pt:Lifan_X60": {
+  "power": [
+   128,
+   128
+  ]
+ },
+ "en:Lifan X60": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.325,
+   4.325
+  ],
+  "width": [
+   1.79,
+   1.79
+  ],
+  "height": [
+   1.69,
+   1.69
+  ],
+  "mass": [
+   1330,
+   1330
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_G": {},
+ "en:Mercedes-Benz G-Class": {},
+ "pt:Lexus_RX": {},
+ "en:Lexus RX": {},
+ "pt:Mercedes-Benz_Classe_GLK": {},
+ "en:Mercedes-Benz GLK-Class": {
+  "mass": [
+   4079,
+   4079
+  ]
+ },
+ "pt:Dacia_Logan": {
+  "wheelbase": [
+   2.635,
+   2.635
+  ],
+  "length": [
+   4.349,
+   4.349
+  ],
+  "width": [
+   1.733,
+   1.733
+  ],
+  "height": [
+   1.529,
+   1.529
+  ],
+  "mass": [
+   1062,
+   1062
+  ],
+  "power": [
+   80,
+   118
+  ]
+ },
+ "en:Dacia Logan": {},
+ "en:Land Rover Defender (L663)": {
+  "wheelbase": [
+   2.587,
+   3.022
+  ],
+  "width": [
+   2.008,
+   2.008
+  ],
+  "height": [
+   1.967,
+   1.974
+  ],
+  "mass": [
+   2228,
+   2697
+  ],
+  "power": [
+   116,
+   116
+  ]
+ },
+ "pt:Fiat_Idea": {
+  "wheelbase": [
+   2.511,
+   2.511
+  ],
+  "length": [
+   3.93,
+   3.93
+  ],
+  "width": [
+   1.698,
+   1.698
+  ],
+  "height": [
+   1.691,
+   1.691
+  ],
+  "mass": [
+   1230,
+   1230
+  ]
+ },
+ "en:Fiat Idea": {
+  "wheelbase": [
+   2.51,
+   2.51
+  ],
+  "length": [
+   3.93,
+   3.93
+  ],
+  "width": [
+   1.7,
+   1.7
+  ],
+  "height": [
+   1.66,
+   1.66
+  ],
+  "mass": [
+   1275,
+   1275
+  ]
+ },
+ "en:Toyota Yaris": {},
+ "pt:Volkswagen_Jetta": {
+  "wheelbase": [
+   2.4,
+   2.4
+  ],
+  "length": [
+   4.27,
+   4.27
+  ],
+  "width": [
+   1.6,
+   1.6
+  ],
+  "height": [
+   1.3,
+   1.3
+  ],
+  "mass": [
+   1375,
+   1375
+  ]
+ },
+ "en:Volkswagen Jetta": {},
+ "pt:Volkswagen_Kombi": {
+  "wheelbase": [
+   2.4,
+   2.4
+  ],
+  "length": [
+   4.505,
+   4.505
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   2.05,
+   2.05
+  ],
+  "mass": [
+   1297,
+   1297
+  ]
+ },
+ "en:Volkswagen Transporter": {},
+ "pt:Nissan_Sentra": {
+  "wheelbase": [
+   2.707,
+   2.707
+  ],
+  "length": [
+   4.646,
+   4.646
+  ],
+  "width": [
+   1.76,
+   1.76
+  ],
+  "height": [
+   1.456,
+   1.456
+  ],
+  "mass": [
+   1410,
+   1410
+  ],
+  "power": [
+   151,
+   151
+  ]
+ },
+ "en:Nissan Sentra": {},
+ "pt:Citroën_C3": {},
+ "en:Citroën C3": {},
+ "pt:Citroën_Jumpy": {
+  "length": [
+   4.805,
+   5.135
+  ],
+  "width": [
+   2.194,
+   2.194
+  ],
+  "height": [
+   1.895,
+   2.276
+  ]
+ },
+ "en:Citroën Jumpy": {},
+ "pt:Audi_RS6": {
+  "height": [
+   1.425,
+   1.425
+  ],
+  "power": [
+   450,
+   580
+  ]
+ },
+ "en:Audi RS 6": {},
+ "pt:Nissan_Micra": {},
+ "en:Nissan Micra": {},
+ "pt:Fiat_Uno": {
+  "wheelbase": [
+   2.376,
+   2.376
+  ],
+  "length": [
+   3.77,
+   3.77
+  ],
+  "width": [
+   1.656,
+   1.656
+  ],
+  "height": [
+   1.548,
+   1.548
+  ],
+  "mass": [
+   800,
+   900
+  ],
+  "power": [
+   58,
+   75
+  ]
+ },
+ "en:Fiat Uno": {},
+ "pt:Ferrari_California": {
+  "power": [
+   460,
+   460
+  ]
+ },
+ "en:Ferrari California": {},
+ "pt:BMW_X1": {},
+ "en:BMW X1": {},
+ "en:Honda Civic Type R": {},
+ "pt:Citroën_DS3": {},
+ "en:DS 3": {},
+ "pt:Volkswagen_Up!": {
+  "length": [
+   3.605,
+   3.645
+  ],
+  "wheelbase": [
+   2.421,
+   2.421
+  ],
+  "width": [
+   1.645,
+   1.645
+  ],
+  "height": [
+   1.5,
+   1.506
+  ],
+  "mass": [
+   910,
+   960
+  ]
+ },
+ "en:Volkswagen Up": {
+  "wheelbase": [
+   2.42,
+   2.42
+  ],
+  "width": [
+   1.641,
+   1.641
+  ]
+ },
+ "en:Ferrari Roma": {
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "length": [
+   4.656,
+   4.656
+  ],
+  "width": [
+   1.974,
+   1.974
+  ],
+  "height": [
+   1.301,
+   1.301
+  ],
+  "mass": [
+   1570,
+   1570
+  ]
+ },
+ "pt:Aston_Martin_DB9": {
+  "wheelbase": [
+   4.696,
+   4.712
+  ],
+  "length": [
+   2.741,
+   2.746
+  ],
+  "width": [
+   1.875,
+   1.88
+  ],
+  "height": [
+   1.27,
+   1.318
+  ],
+  "power": [
+   450,
+   450
+  ]
+ },
+ "en:Aston Martin DB9": {
+  "wheelbase": [
+   2.74,
+   2.745
+  ],
+  "length": [
+   4.697,
+   4.72
+  ],
+  "width": [
+   2.017,
+   2.061
+  ],
+  "height": [
+   1.27,
+   1.282
+  ],
+  "mass": [
+   1710,
+   1785
+  ]
+ },
+ "pt:Aston_Martin_Rapide": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   5.019,
+   5.019
+  ],
+  "width": [
+   1.928,
+   1.928
+  ],
+  "height": [
+   1.359,
+   1.359
+  ],
+  "mass": [
+   1950,
+   1950
+  ],
+  "power": [
+   529,
+   529
+  ]
+ },
+ "en:Aston Martin Rapide": {
+  "mass": [
+   1950,
+   1990
+  ]
+ },
+ "pt:Aston_Martin_Vanquish": {
+  "wheelbase": [
+   2.69,
+   2.69
+  ],
+  "length": [
+   4.665,
+   4.665
+  ],
+  "width": [
+   1.923,
+   1.923
+  ],
+  "height": [
+   1.318,
+   1.318
+  ],
+  "mass": [
+   1875,
+   1875
+  ]
+ },
+ "en:Aston Martin Vanquish": {},
+ "pt:Aston_Martin_Vantage_(2005)": {
+  "wheelbase": [
+   2.601,
+   2.604
+  ],
+  "length": [
+   4.382,
+   4.384
+  ],
+  "width": [
+   1.864,
+   1.867
+  ],
+  "height": [
+   1.25,
+   1.27
+  ],
+  "mass": [
+   1610,
+   1640
+  ]
+ },
+ "en:Aston Martin Vantage (2005)": {
+  "mass": [
+   1610,
+   1680
+  ]
+ },
+ "pt:Aston_Martin_Virage": {
+  "length": [
+   4.735,
+   4.735
+  ],
+  "width": [
+   1.855,
+   1.855
+  ],
+  "mass": [
+   1790,
+   1790
+  ]
+ },
+ "en:Aston Martin Virage": {},
+ "pt:Suzuki_Swift": {},
+ "en:Suzuki Swift": {},
+ "pt:Suzuki_SX4": {
+  "wheelbase": [
+   2.5,
+   2.5
+  ],
+  "length": [
+   4.135,
+   4.135
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.585,
+   1.585
+  ],
+  "mass": [
+   1265,
+   1265
+  ]
+ },
+ "en:Suzuki SX4": {},
+ "pt:Ford_Mustang_Mach-E": {
+  "wheelbase": [
+   2.984,
+   2.984
+  ],
+  "length": [
+   4.739,
+   4.739
+  ],
+  "width": [
+   1.881,
+   1.881
+  ],
+  "height": [
+   1.621,
+   1.621
+  ],
+  "mass": [
+   1993,
+   2218
+  ]
+ },
+ "en:Ford Mustang Mach-E": {
+  "wheelbase": [
+   2.984,
+   2.984
+  ],
+  "length": [
+   4.739,
+   4.739
+  ],
+  "width": [
+   1.881,
+   1.881
+  ],
+  "height": [
+   1.621,
+   1.621
+  ]
+ },
+ "pt:Volvo_S40": {},
+ "en:Volvo S40": {},
+ "pt:Citroën_Berlingo": {
+  "wheelbase": [
+   2.728,
+   2.728
+  ],
+  "length": [
+   4.38,
+   4.38
+  ],
+  "width": [
+   1.81,
+   1.81
+  ],
+  "height": [
+   1.801,
+   1.801
+  ]
+ },
+ "en:Citroën Berlingo": {},
+ "pt:Audi_A6": {},
+ "en:Audi A6": {},
+ "pt:Audi_A4": {
+  "wheelbase": [
+   2.615,
+   2.615
+  ],
+  "length": [
+   4.488,
+   4.52
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.415,
+   1.44
+  ]
+ },
+ "en:Audi A4": {},
+ "pt:Audi_A1": {
+  "mass": [
+   1100,
+   1100
+  ],
+  "power": [
+   122,
+   122
+  ]
+ },
+ "en:Audi A1": {},
+ "pt:Audi_A5": {
+  "power": [
+   170,
+   354
+  ]
+ },
+ "en:Audi A5": {},
+ "pt:Audi_Q3": {
+  "wheelbase": [
+   2.603,
+   2.603
+  ],
+  "length": [
+   4.388,
+   4.388
+  ],
+  "height": [
+   1.831,
+   1.831
+  ],
+  "mass": [
+   1540,
+   1540
+  ],
+  "power": [
+   150,
+   220
+  ]
+ },
+ "en:Audi Q3": {},
+ "pt:Audi_Q5": {},
+ "en:Audi Q5": {},
+ "pt:Audi_R8": {
+  "wheelbase": [
+   2.65,
+   2.65
+  ],
+  "length": [
+   4.43,
+   4.43
+  ],
+  "width": [
+   1.9,
+   1.9
+  ],
+  "height": [
+   1.25,
+   1.25
+  ]
+ },
+ "en:Audi R8": {},
+ "en:Audi S5": {
+  "wheelbase": [
+   2.751,
+   2.811
+  ],
+  "length": [
+   4.64,
+   4.718
+  ],
+  "width": [
+   1.854,
+   1.854
+  ],
+  "height": [
+   1.369,
+   1.382
+  ],
+  "mass": [
+   1750,
+   1955
+  ]
+ },
+ "pt:Audi_S4": {
+  "wheelbase": [
+   2.615,
+   2.615
+  ],
+  "length": [
+   4.488,
+   4.52
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.415,
+   1.44
+  ]
+ },
+ "en:Audi S4": {},
+ "pt:Audi_S6": {},
+ "en:Audi S6": {},
+ "en:Audi S8": {},
+ "pt:TAC_Stark": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4.083,
+   4.083
+  ],
+  "width": [
+   1.91,
+   1.91
+  ],
+  "height": [
+   1.83,
+   1.83
+  ],
+  "mass": [
+   1650,
+   2010
+  ]
+ },
+ "en:TAC Stark": {
+  "wheelbase": [
+   2.54,
+   2.54
+  ],
+  "length": [
+   4.083,
+   4.083
+  ],
+  "width": [
+   1.91,
+   1.91
+  ],
+  "mass": [
+   1650,
+   2010
+  ]
+ },
+ "pt:Volkswagen_Tiguan": {},
+ "en:Volkswagen Tiguan": {},
+ "pt:Troller_T4": {
+  "length": [
+   3.945,
+   3.945
+  ],
+  "width": [
+   1.872,
+   1.872
+  ],
+  "height": [
+   1.953,
+   1.953
+  ]
+ },
+ "en:Troller T4": {},
+ "pt:BMW_Série_1": {},
+ "en:BMW 1 Series": {},
+ "pt:BMW_Série_6": {},
+ "en:BMW 6 Series": {},
+ "pt:BMW_X5_(E53)": {},
+ "en:BMW X5 (E53)": {},
+ "pt:BMW_M1": {},
+ "en:BMW M1": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.361,
+   4.361
+  ],
+  "width": [
+   1.824,
+   1.824
+  ],
+  "height": [
+   1.14,
+   1.14
+  ],
+  "mass": [
+   1300,
+   1300
+  ]
+ },
+ "pt:BMW_M5": {},
+ "en:BMW M5": {},
+ "pt:BMW_M6": {},
+ "en:BMW M6": {},
+ "pt:BMW_X3": {},
+ "en:BMW X3": {},
+ "pt:BMW_X6": {},
+ "en:BMW X6": {},
+ "pt:BMW_Z4": {},
+ "en:BMW Z4": {},
+ "pt:BMW_i3": {
+  "power": [
+   34,
+   170
+  ],
+  "length": [
+   3.999,
+   3.999
+  ],
+  "wheelbase": [
+   2.57,
+   2.57
+  ],
+  "width": [
+   1.775,
+   1.775
+  ],
+  "height": [
+   1.578,
+   1.578
+  ]
+ },
+ "en:BMW i3 (hatchback)": {},
+ "pt:BMW_i8": {},
+ "en:BMW i8": {},
+ "pt:Maserati_Levante": {
+  "length": [
+   5.003,
+   5.003
+  ],
+  "width": [
+   1.968,
+   1.968
+  ],
+  "height": [
+   1.416,
+   1.416
+  ],
+  "mass": [
+   1474,
+   1474
+  ]
+ },
+ "en:Maserati Levante": {
+  "wheelbase": [
+   3.004,
+   3.004
+  ],
+  "length": [
+   5.003,
+   5.003
+  ],
+  "width": [
+   1.968,
+   1.968
+  ],
+  "height": [
+   1.679,
+   1.679
+  ],
+  "mass": [
+   2109,
+   2205
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_CLS": {
+  "power": [
+   224,
+   550
+  ]
+ },
+ "en:Mercedes-Benz CLS": {},
+ "pt:Toyota_RAV4": {},
+ "en:Toyota RAV4": {},
+ "pt:Citroën_C5": {
+  "length": [
+   4.7,
+   4.8
+  ]
+ },
+ "en:Citroën C5": {},
+ "pt:Jeep_Cherokee_(XJ)": {
+  "wheelbase": [
+   2.576,
+   2.576
+  ],
+  "length": [
+   4.288,
+   4.288
+  ]
+ },
+ "en:Jeep Cherokee (XJ)": {
+  "mass": [
+   1375,
+   1662
+  ]
+ },
+ "en:Peugeot Expert": {},
+ "pt:Honda_Prelude": {},
+ "en:Honda Prelude": {},
+ "pt:Smart_Fortwo": {
+  "length": [
+   2.7,
+   2.7
+  ],
+  "width": [
+   1.6,
+   1.6
+  ],
+  "height": [
+   1.55,
+   1.55
+  ],
+  "mass": [
+   750,
+   750
+  ],
+  "power": [
+   45,
+   84
+  ]
+ },
+ "en:Smart Fortwo": {},
+ "pt:Volvo_C30": {
+  "mass": [
+   1331,
+   1347
+  ],
+  "power": [
+   100,
+   227
+  ]
+ },
+ "en:Volvo C30": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.252,
+   4.266
+  ],
+  "width": [
+   1.782,
+   1.782
+  ],
+  "height": [
+   1.447,
+   1.447
+  ],
+  "mass": [
+   1331,
+   1347
+  ]
+ },
+ "pt:Lexus_IS": {},
+ "en:Lexus IS": {},
+ "pt:Ford_Ka": {},
+ "en:Ford Ka": {},
+ "pt:Toyota_Hilux": {
+  "length": [
+   5.325,
+   5.325
+  ],
+  "width": [
+   1.855,
+   1.855
+  ],
+  "height": [
+   1.815,
+   1.815
+  ],
+  "mass": [
+   2090,
+   2090
+  ],
+  "power": [
+   204,
+   204
+  ],
+  "wheelbase": [
+   3.085,
+   3.085
+  ]
+ },
+ "en:Toyota Hilux": {},
+ "pt:Mercedes-Benz_Classe_GLE": {},
+ "en:Mercedes-Benz M-Class": {},
+ "pt:Mercedes-Benz_Classe_SLK": {},
+ "en:Mercedes-Benz SLK-Class": {},
+ "en:Citroën C-Triomphe": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.77,
+   4.77
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.51,
+   1.51
+  ]
+ },
+ "en:Maserati MC20": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.669,
+   4.669
+  ],
+  "width": [
+   1.965,
+   1.965
+  ],
+  "height": [
+   1.224,
+   1.224
+  ]
+ },
+ "pt:Mitsubishi_Eclipse": {},
+ "en:Mitsubishi Eclipse": {},
+ "pt:Chevrolet_Suburban": {},
+ "en:Chevrolet Suburban": {},
+ "pt:Ford_Transit": {},
+ "en:Ford Transit": {},
+ "pt:Fiat_Linea": {
+  "wheelbase": [
+   2.601,
+   2.601
+  ],
+  "length": [
+   4.56,
+   4.56
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.5,
+   1.5
+  ]
+ },
+ "en:Fiat Linea": {
+  "wheelbase": [
+   2.603,
+   2.603
+  ],
+  "length": [
+   4.56,
+   4.56
+  ],
+  "width": [
+   1.73,
+   1.73
+  ],
+  "height": [
+   1.494,
+   1.494
+  ],
+  "mass": [
+   1185,
+   1260
+  ]
+ },
+ "en:BMW iX": {
+  "wheelbase": [
+   3,
+   3
+  ],
+  "height": [
+   1.695,
+   1.695
+  ],
+  "mass": [
+   2440,
+   2659
+  ]
+ },
+ "en:Mercedes-Benz EQB": {},
+ "pt:Renault_Koleos": {},
+ "en:Renault Koleos": {},
+ "pt:Chevrolet_Silverado": {
+  "wheelbase": [
+   2.985,
+   3.74
+  ],
+  "length": [
+   4.941,
+   5.91
+  ],
+  "width": [
+   2.06,
+   2.25
+  ],
+  "height": [
+   1.88,
+   1.945
+  ],
+  "mass": [
+   2305,
+   2505
+  ]
+ },
+ "en:Chevrolet Silverado": {},
+ "pt:Chevrolet_Cobalt": {},
+ "en:Chevrolet Cobalt": {},
+ "pt:Peugeot_508": {
+  "wheelbase": [
+   2.795,
+   2.848
+  ],
+  "length": [
+   4.75,
+   4.87
+  ],
+  "width": [
+   1.855,
+   1.859
+  ],
+  "height": [
+   1.403,
+   1.455
+  ],
+  "power": [
+   200,
+   200
+  ]
+ },
+ "en:Peugeot 508": {},
+ "pt:Peugeot_Partner": {
+  "length": [
+   4.137,
+   4.137
+  ],
+  "width": [
+   1.724,
+   1.724
+  ],
+  "height": [
+   1.858,
+   1.858
+  ]
+ },
+ "en:Peugeot Partner": {},
+ "pt:Renault_Captur": {},
+ "en:Renault Captur": {},
+ "pt:Ford_Bronco_Sport": {
+  "power": [
+   184,
+   249
+  ],
+  "length": [
+   4.387,
+   4.387
+  ],
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "width": [
+   1.887,
+   1.887
+  ],
+  "height": [
+   1.786,
+   1.814
+  ],
+  "mass": [
+   1573,
+   1681
+  ]
+ },
+ "en:Ford Bronco Sport": {},
+ "pt:Volkswagen_Voyage": {},
+ "en:Volkswagen Voyage": {},
+ "pt:Mercedes-Benz_Classe_CL": {},
+ "en:Mercedes-Benz CL-Class": {},
+ "pt:Nissan_Leaf": {
+  "length": [
+   4.445,
+   4.445
+  ],
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "width": [
+   1.77,
+   1.77
+  ],
+  "height": [
+   1.549,
+   1.549
+  ]
+ },
+ "en:Nissan Leaf": {},
+ "pt:Mitsubishi_Pajero_Sport": {},
+ "en:Mitsubishi Pajero Sport": {},
+ "pt:Fiat_Fiorino": {
+  "wheelbase": [
+   2.513,
+   2.717
+  ],
+  "length": [
+   3.835,
+   4.384
+  ],
+  "width": [
+   1.564,
+   1.809
+  ],
+  "height": [
+   1.721,
+   1.92
+  ],
+  "mass": [
+   870,
+   1165
+  ]
+ },
+ "en:Fiat Fiorino": {},
+ "pt:Ford_Ranger": {
+  "wheelbase": [
+   3.22,
+   3.22
+  ],
+  "length": [
+   5.354,
+   5.354
+  ],
+  "width": [
+   1.86,
+   1.86
+  ],
+  "height": [
+   1.848,
+   1.848
+  ],
+  "mass": [
+   1480,
+   2000
+  ],
+  "power": [
+   150,
+   200
+  ]
+ },
+ "en:Ford Ranger (Americas)": {},
+ "pt:Toyota_Yaris_Cross": {
+  "power": [
+   122,
+   122
+  ]
+ },
+ "en:Toyota Yaris Cross": {},
+ "pt:Volkswagen_Fox": {},
+ "en:Volkswagen Fox": {
+  "wheelbase": [
+   2.465,
+   2.465
+  ],
+  "length": [
+   3.805,
+   3.823
+  ],
+  "width": [
+   1.64,
+   1.64
+  ],
+  "height": [
+   1.545,
+   1.545
+  ]
+ },
+ "pt:Renault_Kangoo": {
+  "wheelbase": [
+   2.6,
+   2.6
+  ],
+  "length": [
+   4.01,
+   4.01
+  ],
+  "width": [
+   1.672,
+   1.672
+  ],
+  "height": [
+   1.86,
+   1.86
+  ]
+ },
+ "en:Renault Kangoo": {},
+ "en:Changan UNI-T": {
+  "wheelbase": [
+   2.71,
+   2.71
+  ],
+  "length": [
+   4.515,
+   4.515
+  ],
+  "width": [
+   1.87,
+   1.87
+  ],
+  "height": [
+   1.565,
+   1.565
+  ],
+  "mass": [
+   1465,
+   1465
+  ]
+ },
+ "pt:Ford_Fusion": {},
+ "en:Ford Fusion (Americas)": {},
+ "pt:Renault_Sandero": {},
+ "en:Dacia Sandero": {},
+ "pt:Mercedes-Benz_Sprinter": {},
+ "en:Mercedes-Benz Sprinter": {},
+ "pt:Volvo_XC90": {
+  "mass": [
+   2300,
+   2800
+  ]
+ },
+ "en:Volvo XC90": {},
+ "pt:Fiat_Doblò": {
+  "length": [
+   4.25,
+   4.25
+  ],
+  "width": [
+   1.72,
+   1.72
+  ],
+  "height": [
+   1.858,
+   1.858
+  ]
+ },
+ "en:Fiat Doblò": {},
+ "pt:Ferrari_FF": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   4.907,
+   4.907
+  ],
+  "width": [
+   1.953,
+   1.953
+  ],
+  "height": [
+   1.379,
+   1.379
+  ],
+  "mass": [
+   1880,
+   1880
+  ],
+  "power": [
+   660,
+   660
+  ]
+ },
+ "en:Ferrari FF": {
+  "wheelbase": [
+   2.99,
+   2.99
+  ],
+  "length": [
+   4.907,
+   4.907
+  ],
+  "width": [
+   1.953,
+   1.953
+  ],
+  "height": [
+   1.379,
+   1.379
+  ],
+  "mass": [
+   1880,
+   1880
+  ]
+ },
+ "pt:Dacia_Duster": {
+  "wheelbase": [
+   2.804,
+   2.804
+  ],
+  "length": [
+   4.315,
+   4.315
+  ],
+  "width": [
+   1.822,
+   1.822
+  ],
+  "height": [
+   1.63,
+   1.69
+  ],
+  "power": [
+   115,
+   115
+  ]
+ },
+ "en:Dacia Duster": {},
+ "pt:Fiat_Scudo": {},
+ "en:Fiat Scudo": {},
+ "pt:Ferrari_612_Scaglietti": {
+  "mass": [
+   1840,
+   1840
+  ],
+  "power": [
+   540,
+   540
+  ]
+ },
+ "en:Ferrari 612 Scaglietti": {
+  "length": [
+   4.902,
+   4.902
+  ],
+  "width": [
+   1.957,
+   1.957
+  ],
+  "height": [
+   1.344,
+   1.344
+  ],
+  "wheelbase": [
+   2.95,
+   2.95
+  ],
+  "mass": [
+   1850,
+   1865
+  ]
+ },
+ "pt:Volvo_XC60": {},
+ "en:Volvo XC60": {},
+ "pt:Volkswagen_Nivus": {
+  "power": [
+   116,
+   128
+  ],
+  "length": [
+   4.266,
+   4.266
+  ],
+  "width": [
+   1.757,
+   1.757
+  ],
+  "wheelbase": [
+   2.566,
+   2.566
+  ],
+  "height": [
+   1.493,
+   1.493
+  ],
+  "mass": [
+   1199,
+   1199
+  ]
+ },
+ "en:Volkswagen Taigo": {
+  "wheelbase": [
+   2.566,
+   2.566
+  ],
+  "height": [
+   1.493,
+   1.493
+  ]
+ },
+ "pt:Ford_Edge": {
+  "wheelbase": [
+   2.824,
+   2.824
+  ],
+  "length": [
+   4.717,
+   4.717
+  ],
+  "width": [
+   1.93,
+   1.93
+  ],
+  "height": [
+   1.746,
+   1.746
+  ],
+  "mass": [
+   2026,
+   2026
+  ]
+ },
+ "en:Ford Edge": {},
+ "en:Toyota GR Yaris": {
+  "wheelbase": [
+   2.56,
+   2.56
+  ],
+  "length": [
+   3.995,
+   4.03
+  ],
+  "width": [
+   1.805,
+   1.815
+  ],
+  "height": [
+   1.455,
+   1.475
+  ],
+  "mass": [
+   1110,
+   1280
+  ]
+ },
+ "en:Aion V": {},
+ "pt:Jaguar_XK": {},
+ "en:Jaguar XK": {},
+ "pt:Toyota_Corolla_Cross": {
+  "length": [
+   4.46,
+   4.49
+  ],
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.62,
+   1.62
+  ],
+  "mass": [
+   1325,
+   1385
+  ]
+ },
+ "en:Toyota Corolla Cross": {
+  "wheelbase": [
+   2.64,
+   2.64
+  ],
+  "length": [
+   4.46,
+   4.49
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.62,
+   1.62
+  ],
+  "mass": [
+   1325,
+   1385
+  ]
+ },
+ "en:Mercedes-Benz EQE": {},
+ "en:Mercedes-Benz EQS": {},
+ "pt:Dodge_Durango": {},
+ "en:Dodge Durango": {},
+ "pt:Chevrolet_Vectra_GT": {
+  "wheelbase": [
+   2.703,
+   2.703
+  ]
+ },
+ "pt:Mercedes-Benz_Classe_SL": {
+  "wheelbase": [
+   2.585,
+   2.585
+  ],
+  "length": [
+   4.612,
+   4.612
+  ],
+  "power": [
+   302,
+   621
+  ]
+ },
+ "en:Mercedes-Benz SL-Class": {},
+ "pt:Ferrari_F12_Berlinetta": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.618,
+   4.618
+  ],
+  "width": [
+   1.942,
+   1.942
+  ],
+  "height": [
+   1.273,
+   1.273
+  ],
+  "mass": [
+   1525,
+   1630
+  ]
+ },
+ "en:Ferrari F12": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.618,
+   4.656
+  ],
+  "width": [
+   1.942,
+   1.961
+  ],
+  "height": [
+   1.273,
+   1.273
+  ],
+  "mass": [
+   1520,
+   1630
+  ]
+ },
+ "pt:Chevrolet_Montana": {},
+ "en:Chevrolet Montana": {},
+ "en:Volkswagen Polo (CK)": {
+  "wheelbase": [
+   2.602,
+   2.602
+  ],
+  "length": [
+   4.304,
+   4.512
+  ],
+  "width": [
+   1.706,
+   1.706
+  ],
+  "height": [
+   1.459,
+   1.469
+  ],
+  "mass": [
+   1100,
+   1292
+  ]
+ },
+ "pt:Toyota_HiAce": {},
+ "en:Toyota HiAce": {},
+ "pt:Effa_M100": {
+  "wheelbase": [
+   2.33,
+   2.33
+  ],
+  "length": [
+   3.56,
+   3.56
+  ],
+  "width": [
+   1.6,
+   1.6
+  ],
+  "height": [
+   1.67,
+   1.67
+  ],
+  "mass": [
+   930,
+   930
+  ],
+  "power": [
+   46,
+   91
+  ]
+ },
+ "en:Changhe Ideal": {
+  "length": [
+   3.56,
+   3.56
+  ],
+  "width": [
+   1.6,
+   1.6
+  ],
+  "height": [
+   1.67,
+   1.67
+  ],
+  "wheelbase": [
+   2.335,
+   2.335
+  ]
+ },
+ "pt:BYD_Han": {},
+ "en:BYD Han": {},
+ "en:Hyundai Ioniq 5": {
+  "wheelbase": [
+   3,
+   3
+  ],
+  "length": [
+   4.635,
+   4.715
+  ],
+  "width": [
+   1.89,
+   1.94
+  ],
+  "height": [
+   1.585,
+   1.605
+  ],
+  "mass": [
+   1800,
+   2160
+  ]
+ },
+ "pt:Agrale Marruá": {},
+ "pt:BYD Sealion 7": {},
+ "pt:Citroën Basalt": {
+  "power": [
+   71,
+   130
+  ],
+  "length": [
+   4.3,
+   4.343
+  ],
+  "wheelbase": [
+   2.645,
+   2.67
+  ],
+  "width": [
+   2.019,
+   2.019
+  ],
+  "height": [
+   1.585,
+   1.585
+  ]
+ },
+ "pt:Ford F-150 Lightning": {
+  "wheelbase": [
+   3.07,
+   3.07
+  ],
+  "length": [
+   5.98,
+   5.98
+  ],
+  "width": [
+   2.03,
+   2.03
+  ],
+  "height": [
+   2,
+   2
+  ],
+  "mass": [
+   2990,
+   2990
+  ]
+ },
+ "pt:Iveco Daily": {},
+ "en:Jetour T1": {
+  "wheelbase": [
+   2.81,
+   2.81
+  ],
+  "length": [
+   4.706,
+   4.706
+  ],
+  "width": [
+   1.967,
+   1.967
+  ],
+  "height": [
+   1.845,
+   1.845
+  ],
+  "mass": [
+   2000,
+   2000
+  ]
+ },
+ "en:Jetour T2": {
+  "wheelbase": [
+   2.8,
+   2.8
+  ],
+  "length": [
+   4.827,
+   5.034
+  ]
+ },
+ "en:MG Cyberster": {
+  "wheelbase": [
+   2.69,
+   2.69
+  ],
+  "length": [
+   4.535,
+   4.535
+  ],
+  "width": [
+   1.913,
+   1.913
+  ],
+  "height": [
+   1.329,
+   1.329
+  ],
+  "mass": [
+   1850,
+   1984
+  ]
+ },
+ "en:Ram 1500 (DT)": {},
+ "pt:Jaguar F-Type SVR": {
+  "power": [
+   550,
+   550
+  ]
+ },
+ "pt:Citroën Jumpy": {
+  "length": [
+   4.805,
+   5.135
+  ],
+  "width": [
+   2.194,
+   2.194
+  ],
+  "height": [
+   1.895,
+   2.276
+  ]
+ },
+ "pt:Fiat Scudo": {},
+ "pt:Fiat Siena": {
+  "length": [
+   4.1,
+   4.1
+  ],
+  "width": [
+   1.626,
+   1.626
+  ],
+  "height": [
+   1.445,
+   1.445
+  ]
+ },
+ "pt:Kia Carnival": {},
+ "pt:Chery Arrizo 5 Plus": {
+  "length": [
+   4.68,
+   4.68
+  ],
+  "wheelbase": [
+   2.67,
+   2.67
+  ],
+  "width": [
+   1.825,
+   1.825
+  ],
+  "height": [
+   1.49,
+   1.49
+  ]
+ },
+ "pt:Citroën C4": {},
+ "pt:Dodge Journey": {
+  "wheelbase": [
+   2.891,
+   2.891
+  ],
+  "length": [
+   4.887,
+   4.887
+  ],
+  "width": [
+   1.834,
+   1.834
+  ],
+  "height": [
+   1.692,
+   1.692
+  ],
+  "power": [
+   185,
+   280
+  ]
+ },
+ "en:JAC Shuailing T8": {
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.83,
+   1.83
+  ]
+ },
+ "pt:Ferrari F12 Berlinetta": {
+  "wheelbase": [
+   2.72,
+   2.72
+  ],
+  "length": [
+   4.618,
+   4.618
+  ],
+  "width": [
+   1.942,
+   1.942
+  ],
+  "height": [
+   1.273,
+   1.273
+  ],
+  "mass": [
+   1525,
+   1630
+  ]
+ },
+ "pt:Fiat Punto": {
+  "length": [
+   4.065,
+   4.065
+  ],
+  "wheelbase": [
+   2.51,
+   2.51
+  ],
+  "width": [
+   1.687,
+   1.687
+  ],
+  "height": [
+   1.499,
+   1.499
+  ]
+ },
+ "pt:Hyundai Santa Fe": {
+  "wheelbase": [
+   2.7,
+   2.7
+  ],
+  "length": [
+   4.69,
+   4.69
+  ],
+  "width": [
+   1.88,
+   1.88
+  ],
+  "height": [
+   1.68,
+   1.68
+  ],
+  "mass": [
+   2510,
+   2510
+  ],
+  "power": [
+   180,
+   285
+  ]
+ },
+ "pt:JAC T6": {},
+ "pt:Geely GC2": {
+  "power": [
+   68,
+   68
+  ]
+ },
+ "en:Mercedes-Benz SLS AMG": {
+  "wheelbase": [
+   2.68,
+   2.68
+  ],
+  "length": [
+   4.638,
+   4.638
+  ],
+  "width": [
+   1.939,
+   1.939
+  ],
+  "height": [
+   1.252,
+   1.262
+  ],
+  "mass": [
+   1549,
+   1659
+  ]
+ },
+ "pt:Peugeot Hoggar": {
+  "power": [
+   82,
+   113
+  ],
+  "length": [
+   4.526,
+   4.547
+  ],
+  "wheelbase": [
+   2.745,
+   2.745
+  ],
+  "width": [
+   1.668,
+   1.668
+  ],
+  "height": [
+   1.524,
+   1.524
+  ],
+  "mass": [
+   1135,
+   1250
+  ]
+ },
+ "pt:Ford F-250": {
+  "wheelbase": [
+   3.071,
+   3.968
+  ],
+  "length": [
+   5.315,
+   6.243
+  ],
+  "width": [
+   2.02,
+   2.031
+  ],
+  "height": [
+   1.934,
+   1.95
+  ],
+  "mass": [
+   2480,
+   2850
+  ],
+  "power": [
+   147,
+   208
+  ]
+ },
+ "pt:Renault Oroch": {
+  "power": [
+   110,
+   148
+  ],
+  "length": [
+   4.693,
+   4.693
+  ],
+  "wheelbase": [
+   2.829,
+   2.829
+  ],
+  "width": [
+   1.821,
+   1.821
+  ],
+  "height": [
+   1.695,
+   1.695
+  ],
+  "mass": [
+   1292,
+   1346
+  ]
+ },
+ "pt:Volkswagen Delivery": {},
+ "pt:BYD Song Plus": {},
+ "pt:Fiat Titano": {
+  "power": [
+   150,
+   200
+  ],
+  "wheelbase": [
+   3.18,
+   3.18
+  ],
+  "length": [
+   5.33,
+   5.33
+  ],
+  "width": [
+   1.963,
+   1.963
+  ],
+  "height": [
+   1.864,
+   1.864
+  ],
+  "mass": [
+   1945,
+   2090
+  ]
+ },
+ "pt:Ford Transit": {},
+ "en:GWM Cannon": {
+  "height": [
+   1.884,
+   1.886
+  ],
+  "width": [
+   1.883,
+   1.934
+  ],
+  "length": [
+   5.362,
+   5.602
+  ],
+  "wheelbase": [
+   3.23,
+   3.41
+  ]
+ },
+ "pt:Porsche 911": {},
+ "pt:Toyota Hilux": {
+  "length": [
+   5.325,
+   5.325
+  ],
+  "width": [
+   1.855,
+   1.855
+  ],
+  "height": [
+   1.815,
+   1.815
+  ],
+  "mass": [
+   2090,
+   2090
+  ],
+  "power": [
+   204,
+   204
+  ],
+  "wheelbase": [
+   3.085,
+   3.085
+  ]
+ },
+ "pt:Lamborghini Huracán": {
+  "power": [
+   588,
+   649
+  ],
+  "mass": [
+   1389,
+   1628
+  ]
+ },
+ "pt:Volvo XC90": {
+  "mass": [
+   2300,
+   2800
+  ]
+ },
+ "en:Ram pickup (fourth generation)": {},
+ "en:BMW X5": {},
+ "pt:Fiat Palio": {
+  "power": [
+   55,
+   132
+  ]
+ },
+ "pt:Ford Fiesta": {},
+ "pt:Porsche Cayman": {},
+ "en:Jinbei Haise": {},
+ "pt:Opel Zafira": {},
+ "pt:Jeep Grand Cherokee": {
+  "wheelbase": [
+   2.816,
+   2.816
+  ],
+  "length": [
+   4.821,
+   4.821
+  ]
+ }
+}

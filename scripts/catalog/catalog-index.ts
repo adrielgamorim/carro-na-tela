@@ -261,7 +261,9 @@ export function buildCatalogIndex(
           : { ...fromWikidata, image: fallback.image }
         : findWikidataOverride(wikidata.overrides ?? [], { brand: brandName(version), model: version.n })?.none
           ? undefined
-          : fallback;
+          : fallback && wikidata.specs?.[fallback.id]
+            ? { ...fallback, specs: wikidata.specs[fallback.id] }
+            : fallback;
       if (!info) continue;
       const known = modelIndex.get(info.id);
       if (known === undefined) {

@@ -15,6 +15,8 @@ import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
 import type { CrawlSnapshot } from "../catalog/catalog-index.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import { fallbackKey, findFallback } from "./fallback.ts";
+import { mergeSpecs, parseInfobox } from "./infobox.ts";
+import type { InfoboxSpecs } from "./infobox.ts";
 import { parseSpecRows, specsQuery } from "./specs.ts";
 import type { FallbackFile, FallbackTitle } from "./fallback.ts";
 import { createWikidataMatcher, findWikidataOverride, parseSparqlModels } from "./match.ts";
@@ -270,9 +272,19 @@ const specRows = [];
 for (let start = 0; start < usedIds.length; start += 200) {
   specRows.push(...(await sparql(specsQuery(usedIds.slice(start, start + 200)))));
 }
-const specs = parseSpecRows(specRows);
-await writeFile(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
-console.log(`Dimensões e peso em ${specsFile}: ${Object.keys(specs).length} de ${usedIds.length} modelos`);
+const wikidataSpecs = parseSpecRows(specRows);
+// English article titles, for the infoboxes (the Portuguese ones are in models.json).
+const enTitles = new Map<string, string>();
+for (let start = 0; start < usedIds.length; start += 200) {
+  const rows = await sparql(`SELECT ?m ?title WHERE {
+  VALUES ?m { ${usedIds.slice(start, start + 200).map((id) => `wd:${id}`).join(" ")} }
+  ?article schema:about ?m ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .
+}`);
+  for (const row of rows) {
+    const id = row.m?.value.split("/").pop();
+    if (id && row.title) enTitles.set(id, row.title.value);
+  }
+}
 
 // Fallback: each line is searched once; "nothing fits" (null) is kept too.
 const fallback: FallbackFile = await readFile(fallbackFile, "utf8")
@@ -317,3 +329,59 @@ for (const [key, { brand, family }] of toSearch) {
 await saveFallback();
 const found = [...unmatchedLines.keys()].filter((key) => fallback[key]).length;
 console.log(`Reserva em ${fallbackFile}: ${found} de ${unmatchedLines.size} linhas com foto`);
+
+// Size, mass and power: Wikidata first, then the infobox of the Portuguese and
+// the English article. Each article is read once (data/wikidata/infobox.json;
+// an empty entry means nothing usable); delete an entry to read it again.
+const infoboxFile = join(values.out, "infobox.json");
+const infoboxes: Record<string, InfoboxSpecs> = await readFile(infoboxFile, "utf8")
+  .then((text) => JSON.parse(text) as Record<string, InfoboxSpecs>)
+  .catch(() => ({}));
+const articlesOf = new Map<string, string[]>();
+for (const id of usedIds) {
+  const model = used.get(id);
+  const articles = [model?.ptwiki && `pt:${model.ptwiki}`, enTitles.has(id) && `en:${enTitles.get(id)}`];
+  articlesOf.set(id, articles.filter((article): article is string => typeof article === "string"));
+}
+// Fallback pictures that came from a Wikipedia article: "wikipedia:pt:Fiat Punto".
+for (const info of Object.values(fallback)) {
+  if (info?.id.startsWith("wikipedia:")) articlesOf.set(info.id, [info.id.slice("wikipedia:".length)]);
+}
+const toRead = [...new Set([...articlesOf.values()].flat())].filter((article) => !(article in infoboxes));
+console.log(`Infobox da Wikipedia: ${toRead.length} artigos para ler`);
+let read = 0;
+for (const article of toRead) {
+  const [lang, ...rest] = article.split(":");
+  const params = new URLSearchParams({
+    action: "parse",
+    page: rest.join(":"),
+    prop: "wikitext",
+    section: "0",
+    redirects: "1",
+    format: "json",
+    formatversion: "2",
+  });
+  try {
+    const result = await politeGetJson<{ parse?: { wikitext?: string } }>(
+      `https://${lang}.wikipedia.org/w/api.php?${params}`,
+    );
+    infoboxes[article] = parseInfobox(result.parse?.wikitext ?? "");
+  } catch (error) {
+    // Not saved: read again on the next run.
+    console.warn(`Aviso: infobox de ${article}: ${(error as Error).message}`);
+  }
+  read += 1;
+  if (read % 25 === 0) {
+    await writeFile(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
+    console.log(`  ${read} de ${toRead.length}`);
+  }
+}
+await writeFile(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
+
+const specs: Record<string, InfoboxSpecs> = {};
+for (const [id, articles] of articlesOf) {
+  const merged = mergeSpecs(wikidataSpecs[id], ...articles.map((article) => infoboxes[article]));
+  if (Object.keys(merged).length) specs[id] = merged;
+}
+await writeFile(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
+console.log(`Dimensões, peso e potência em ${specsFile}: ${Object.keys(specs).length} modelos`);

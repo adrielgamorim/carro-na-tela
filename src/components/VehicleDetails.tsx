@@ -148,7 +148,15 @@ function specRows(
 
   const rows: [string, string | null][] = [
     ["Motor", engine || inmetro?.engine || null],
-    ["Potência", specs?.powerCv ? `${specs.powerCv} cv` : null],
+    // Exact from the FIPE name; else the model line's range (≈).
+    [
+      "Potência",
+      specs?.powerCv
+        ? `${specs.powerCv} cv`
+        : enrichment?.data.model?.data.specs?.power
+          ? formatSpec("power", enrichment.data.model.data.specs.power)
+          : null,
+    ],
     ["Propulsão", inmetro ? propulsionLabels[inmetro.propulsion] : null],
     [
       "Câmbio",
@@ -280,7 +288,7 @@ export function VehicleDetails({
                       inmetro.confidence === "exact" ? "versão exata" : "versão aproximada"
                     } · demais dados do nome FIPE`
                   : "Extraída do nome FIPE; sem dados do INMETRO para esta versão"}
-                {model?.specs && " · ≈ dimensões e peso da linha do modelo (Wikidata)"}
+                {model?.specs && " · ≈ medidas, peso e potência da linha do modelo (Wikidata e Wikipedia)"}
               </p>
             </div>
           </div>

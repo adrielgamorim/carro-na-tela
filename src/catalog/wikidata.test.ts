@@ -6,5 +6,6 @@ describe("formatSpec", () => {
     expect(formatSpec("length", [3.998, 3.998])).toBe("≈ 4,00 m");
     expect(formatSpec("length", [3.95, 4.1])).toBe("≈ 3,95–4,10 m");
     expect(formatSpec("mass", [1150, 1150])).toBe("≈ 1.150 kg");
+    expect(formatSpec("power", [72, 139])).toBe("≈ 72–139 cv");
   });
 });

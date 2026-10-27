@@ -1,13 +1,17 @@
 /** [smallest, largest] value across the model's variants; equal when only one. */
 export type SpecRange = [number, number];
 
-/** Size (meters) and mass (kg) of the model line, from Wikidata: approximate per version. */
+/**
+ * Size (meters), mass (kg) and power (cv) of the model line, from Wikidata
+ * and Wikipedia infoboxes: approximate for a given version.
+ */
 export interface ModelSpecs {
   length?: SpecRange;
   width?: SpecRange;
   height?: SpecRange;
   wheelbase?: SpecRange;
   mass?: SpecRange;
+  power?: SpecRange;
 }
 
 /**
@@ -44,10 +48,11 @@ export const isWikidataItem = (id: string) => /^Q\d+$/.test(id);
 const meters = new Intl.NumberFormat("pt-BR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 const kilograms = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 0 });
 
-/** "≈ 4,00 m", "≈ 3,95–4,10 m", "≈ 1.150 kg": approximate, from the model line. */
+/** "≈ 4,00 m", "≈ 3,95–4,10 m", "≈ 1.150 kg", "≈ 72–139 cv": approximate, from the model line. */
 export function formatSpec(key: keyof ModelSpecs, [low, high]: SpecRange): string {
-  const format = (value: number) => (key === "mass" ? kilograms.format(value) : meters.format(value));
-  const unit = key === "mass" ? "kg" : "m";
+  const whole = key === "mass" || key === "power";
+  const format = (value: number) => (whole ? kilograms.format(value) : meters.format(value));
+  const unit = key === "mass" ? "kg" : key === "power" ? "cv" : "m";
   return `≈ ${low === high ? format(low) : `${format(low)}–${format(high)}`} ${unit}`;
 }
 

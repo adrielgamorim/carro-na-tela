@@ -86,7 +86,7 @@ npm run unschedule:daily # remove a tarefa agendada
 |---|---|---|---|---|
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
-| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões e peso da linha do modelo | `fetch:wikidata` | De vez em quando | 4.864 versões com foto |
+| Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.864 versões com foto |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
@@ -142,10 +142,14 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   parênteses e sem o código de chassi ("BMW i3 (2013)", "Defender L663"), e a FIPE é lida também
   pelos apelidos de BMW ("320iA" → Série 3) e Land Rover ("Defe.", "Discov."). A página descreve a
   linha, não a versão.
-- **Dimensões e peso:** comprimento, largura, altura, entre-eixos e massa dos modelos casados
-  (quantidades normalizadas do Wikidata, em `data/wikidata/specs.json`), com valores implausíveis
-  descartados e faixa quando há mais de um. São da linha do modelo, então aparecem com "≈" na ficha
-  e no comparador. Cobrem ~36% das versões (comprimento) e ~7% (peso).
+- **Dimensões, peso e potência:** comprimento, largura, altura, entre-eixos e massa dos modelos
+  casados (quantidades normalizadas do Wikidata), completados campo a campo pela infobox dos artigos
+  da Wikipedia em português e depois em inglês ("Info/Automóvel", "Infobox automobile": modelos
+  `{{converter}}`/`{{cvt}}`, texto solto e a potência da lista de motores). Valores implausíveis são
+  descartados e há faixa quando há mais de um. Cada artigo é lido uma vez (`data/wikidata/infobox.json`);
+  o resultado fica em `data/wikidata/specs.json`. São da linha do modelo, então aparecem com "≈" na
+  ficha e no comparador; a potência exata do nome FIPE tem prioridade. Cobrem ~59% das versões
+  (comprimento), ~43% (peso) e ~47% (potência, somando o nome FIPE).
 - **Reserva:** as linhas que não casam com o Wikidata (Fiat Punto, Iveco Daily, Citroën Basalt…)
   buscam o artigo "Marca Linha" na Wikipedia (pt, depois en) e, por último, um arquivo no Commons;
   só vale um título com a marca e o nome da linha. Ficam de fora marcas que são palavras comuns

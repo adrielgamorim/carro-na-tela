@@ -85,7 +85,12 @@ const rows: Row[] = [
   { label: "Motor", value: (_, entry) => (entry ? engineLabel(entry) : null) },
   {
     label: "Potência",
-    value: (_, entry) => (entry?.attributes.powerCv ? `${entry.attributes.powerCv} cv` : null),
+    value: (_, entry) =>
+      entry?.attributes.powerCv
+        ? `${entry.attributes.powerCv} cv`
+        : entry?.wikidata?.specs?.power
+          ? formatSpec("power", entry.wikidata.specs.power)
+          : null,
     score: (_, entry) => entry?.attributes.powerCv ?? null,
     best: "max",
   },
