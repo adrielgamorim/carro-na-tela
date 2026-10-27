@@ -50,6 +50,7 @@ export function activeChips(filters: CatalogFilters): ActiveChip[] {
   }
   list("brands", (value) => value);
   list("families", (value) => value);
+  list("sublines", (value) => value);
   list("propulsions", (value) => propulsionLabels[value as keyof typeof propulsionLabels]);
   list("fuels", (value) => value);
   list("transmissions", (value) => transmissionLabels[value as keyof typeof transmissionLabels]);

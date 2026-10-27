@@ -25,6 +25,9 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   ainda estão em 25% delas; versões sem preço têm "Consultar preço", que busca ao vivo.
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
+- A linha é escrita igual em todas as versões da marca ("UNO" e "Uno" viram uma linha só) e, com uma
+  linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
+  Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
 - Cards com o logo da marca, foto da linha do modelo (Wikimedia Commons), frota em circulação e
   posição no ranking.
@@ -224,24 +227,6 @@ não mudam, então ficam 30 dias no cache; a lista de referências, 6 horas.
 - Para testar o build como na Cloudflare, sem conta: `npm run build && npx wrangler dev` (lê as
   chaves do `.env`).
 
-### Publicar na Cloudflare (grátis)
-
-O plano gratuito cobre o site (arquivos estáticos sem limite de banda) e o proxy (100 mil
-requisições por dia). A publicação é automática a cada push na `main`, inclusive os do daily, então
-o catálogo publicado se atualiza sozinho.
-
-1. Crie a conta em [dash.cloudflare.com](https://dash.cloudflare.com/sign-up).
-2. **Workers & Pages → Create → Import a repository**, autorize o GitHub e escolha
-   `adrielgamorim/carro-na-tela`.
-3. Configuração do build (o nome vem do `wrangler.toml`): build command `npm run build`, deploy
-   command `npx wrangler deploy`. O Node 24 vem do `.node-version`.
-4. Depois do primeiro deploy, em **Settings → Variables and Secrets**, adicione como **Secret** uma
-   ou mais chaves da FIPE, com os mesmos nomes do `.env`. O proxy usa `FIPE_PROXY_TOKEN`,
-   `FIPE_TOKEN` e as numeradas da maior para a menor, e o crawler da menor para a maior: dê ao site
-   as de número mais alto (`FIPE_TOKEN6`, `FIPE_TOKEN5`) ou uma chave só dele em `FIPE_PROXY_TOKEN`.
-   Sem chave, o proxy usa o acesso anônimo da FIPE, com limite diário baixo.
-5. O site fica em `https://carro-na-tela.<sua-conta>.workers.dev`. Para um domínio próprio (e o
-   cache da FIPE): **Settings → Domains & Routes → Add → Custom domain**.
 - A lógica fica em `server/fipe-proxy.ts` (rotas, cache, CORS, erros), a mesma nos dois ambientes.
 
 ## Arquitetura

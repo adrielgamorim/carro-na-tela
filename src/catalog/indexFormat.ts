@@ -2,11 +2,11 @@
 // One row per FIPE version (brand + model code) with its years nested, and
 // brand/fuel names in lookup tables, keeps the full catalog to a few MB.
 
-import { getModelFamily } from "../services/fipeParsing.ts";
 import type { InmetroSpec } from "./inmetro.ts";
 import { versionDepreciation } from "./depreciation.ts";
 import type { CatalogFleetInfo, CatalogFleetLine } from "./fleet.ts";
 import { fleetOrigin } from "./fleet.ts";
+import { versionLines } from "./sublines.ts";
 import type { CatalogModelInfo } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
 import type {
@@ -96,7 +96,9 @@ export function at<T>(list: T[], index: number, what: string): T {
 export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
   const entries: CatalogEntry[] = [];
 
-  for (const version of file.versions) {
+  // Line spelled once per brand ("UNO" / "Uno") and sub-line ("Uno Way").
+  const lines = versionLines(file.versions.map((version) => [at(file.brands, version.b, "marca").name, version.n]));
+  for (const [versionIndex, version] of file.versions.entries()) {
     const snapshot = at(file.snapshots, version.s, "snapshot");
     const brand = at(file.brands, version.b, "marca");
     const inmetro = version.i ?? null;
@@ -107,7 +109,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
       version.a?.engineLiters === undefined && pbevLiters
         ? { ...version.a, engineLiters: Number(`${pbevLiters[1]}.${pbevLiters[2]}`) }
         : (version.a ?? {});
-    const family = getModelFamily(version.n);
+    const { family, subline } = lines[versionIndex] ?? { family: version.n, subline: null };
     const fleetLine = version.p === undefined ? undefined : file.fleet?.lines[version.p];
     const fleet: CatalogFleetInfo | null =
       fleetLine && file.fleet
@@ -142,6 +144,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
         brand: brand.name,
         brandCode: brand.code,
         family,
+        ...(subline && { subline }),
         model: version.n,
         modelCode: version.m,
         codeFipe: version.f ?? null,

@@ -8,8 +8,6 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Criar a conta na Cloudflare e conectar o repositório (passo a passo no README, "Publicar na
-      Cloudflare"). Site e proxy já estão configurados como um Worker só.
 - [ ] 🟢 Domínio próprio, para o cache das respostas da FIPE valer.
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.

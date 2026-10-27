@@ -82,9 +82,15 @@ function CatalogBrowser({
   onToggleCompare,
   onOpenComparison,
 }: CatalogPageProps & { index: CatalogIndex }) {
-  const [filters, setFilters] = useState<CatalogFilters>(() =>
-    readCatalogParams(new URLSearchParams(window.location.search)),
-  );
+  const [filters, setFilters] = useState<CatalogFilters>(() => {
+    const read = readCatalogParams(new URLSearchParams(window.location.search));
+    // Links from before lines were spelled once per brand ("linha=UNO" → "Uno").
+    const spelling = new Map(index.entries.map((entry) => [entry.family.toLocaleLowerCase("pt-BR"), entry.family]));
+    return {
+      ...read,
+      families: read.families.map((family) => spelling.get(family.toLocaleLowerCase("pt-BR")) ?? family),
+    };
+  });
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [page, setPage] = useState({ key: "", count: pageSize });
   const [compareOpen, setCompareOpen] = useState(false);

@@ -140,10 +140,28 @@ export function CatalogFilterPanel({
             <span className="facet-label">Linha / modelo</span>
             <CheckList
               {...listFacet("families", asIs)}
+              // Unchecking a line drops its sub-lines too.
+              onToggle={(value) => {
+                const families = toggleValue(filters.families, value);
+                onChange({
+                  families,
+                  sublines: filters.sublines.filter((subline) =>
+                    families.some((family) => subline.startsWith(`${family} `)),
+                  ),
+                });
+              }}
               hideEmpty
               searchLabel="Buscar linha"
             />
           </div>
+          {filters.families.length > 0 && (
+            <div className="facet-field">
+              <span className="facet-label" title="A palavra depois do nome do modelo na FIPE (Uno Way, Uno Mille)">
+                Versão da linha
+              </span>
+              <CheckList {...listFacet("sublines", asIs)} hideEmpty searchLabel="Buscar versão da linha" />
+            </div>
+          )}
           <div className="facet-field">
             <span className="facet-label" title="Pela parcela da frota da linha registrada como importada (Senatran)">
               Procedência

@@ -18,7 +18,10 @@ export interface CatalogEntry {
   category: VehicleCategory;
   brand: string;
   brandCode: string;
+  /** Model line, one spelling per brand ("Uno"). */
   family: string;
+  /** Line and the word after it ("Uno Way"), when the name has one. */
+  subline?: string;
   model: string;
   modelCode: string;
   /** Known once the price was crawled. */

@@ -16,6 +16,7 @@ export interface CatalogFilters {
   query: string;
   brands: string[];
   families: string[];
+  sublines: string[];
   propulsions: Propulsion[];
   fuels: string[];
   transmissions: Transmission[];
@@ -45,6 +46,7 @@ export const emptyCatalogFilters: CatalogFilters = {
   query: "",
   brands: [],
   families: [],
+  sublines: [],
   propulsions: [],
   fuels: [],
   transmissions: [],
@@ -71,6 +73,7 @@ export const emptyCatalogFilters: CatalogFilters = {
 export type ListFacet =
   | "brands"
   | "families"
+  | "sublines"
   | "propulsions"
   | "fuels"
   | "transmissions"
@@ -89,6 +92,7 @@ export type ToggleFacet =
 const listFacetValue: Record<ListFacet, (entry: CatalogEntry) => string | undefined> = {
   brands: (entry) => entry.brand,
   families: (entry) => entry.family,
+  sublines: (entry) => entry.subline,
   propulsions: (entry) => entry.propulsion,
   fuels: (entry) => entry.fuel,
   transmissions: (entry) => entry.transmission ?? undefined,

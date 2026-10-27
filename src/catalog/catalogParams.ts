@@ -6,6 +6,7 @@ import type { ListFacet, ToggleFacet } from "./filters";
 export const listParams: Record<ListFacet, string> = {
   brands: "marca",
   families: "linha",
+  sublines: "sublinha",
   propulsions: "propulsao",
   fuels: "combustivel",
   transmissions: "cambio",
