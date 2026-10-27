@@ -1,0 +1,118 @@
+/* Styles of VinSearch.tsx. Tokens (colors) come from src/index.css. */
+
+.vin-search {
+  margin-bottom: 14px;
+  padding: 12px 14px;
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.vin-search form {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.vin-search-field {
+  display: grid;
+  flex: 1;
+  gap: 6px;
+  min-width: 0;
+}
+
+.vin-search-field input {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.vin-search-field input::placeholder {
+  text-transform: none;
+}
+
+.vin-search-clear {
+  display: grid;
+  padding: 2px;
+  place-items: center;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.vin-search-submit {
+  display: grid;
+  min-width: 98px;
+  height: 37px;
+  padding: 0 14px;
+  place-items: center;
+  color: #fff;
+  background: var(--forest);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.vin-search-submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.vin-search-submit .spinner {
+  border-color: rgba(255, 255, 255, 0.4);
+  border-top-color: var(--line);
+}
+
+.vin-search-error {
+  margin: 8px 0 0;
+  color: var(--danger);
+  font-size: 12px;
+}
+
+.vin-details {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.vin-details dl {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+}
+
+.vin-details dt {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.vin-details dd {
+  margin: 3px 0 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.vin-details dd small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.vin-details-note,
+.vin-details-applied {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.vin-details-applied {
+  margin-top: 4px;
+  color: var(--forest);
+  font-weight: 600;
+}

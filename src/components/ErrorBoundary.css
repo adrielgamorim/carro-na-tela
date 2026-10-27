@@ -1,0 +1,31 @@
+/* Styles of ErrorBoundary.tsx. Tokens (colors) come from src/index.css. */
+
+.page-error {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  margin: 40px 0;
+  padding: 18px 20px;
+  color: var(--ink);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--coral);
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.page-error p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.page-error button {
+  padding: 7px 14px;
+  color: #fff;
+  background: var(--forest);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 650;
+}

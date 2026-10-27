@@ -1,0 +1,105 @@
+/* Styles of CompareTray.tsx. Tokens (colors) come from src/index.css. */
+
+.compare-tray {
+  position: fixed;
+  right: 0;
+  bottom: 16px;
+  left: 0;
+  z-index: 20;
+  display: flex;
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 10px 14px;
+  color: #fff;
+  background: var(--ink-fixed);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(25, 43, 34, 0.28);
+  animation: enter 220ms ease-out both;
+}
+
+.compare-tray ul {
+  display: flex;
+  min-width: 0;
+  flex: 1;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  list-style: none;
+}
+
+.compare-tray li {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 4px;
+  max-width: 220px;
+  padding: 4px 4px 4px 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  font-size: 11px;
+}
+
+.compare-tray li > span {
+  display: grid;
+  min-width: 0;
+}
+
+.compare-tray li > span,
+.compare-tray li small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.compare-tray li small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 10px;
+}
+
+.compare-tray li button {
+  display: grid;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.compare-tray li button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.compare-tray-open {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 7px;
+  height: 38px;
+  padding: 0 14px;
+  color: var(--on-accent);
+  background: var(--acid);
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  .compare-tray {
+      bottom: 10px;
+      width: calc(100% - 20px);
+      padding-left: 10px;
+    }
+  .compare-tray-open {
+      padding: 0 11px;
+    }
+}

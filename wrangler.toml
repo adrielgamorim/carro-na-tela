@@ -1,0 +1,15 @@
+# Cloudflare Worker do proxy FIPE (worker/index.ts). Ver README, seção "Proxy da FIPE".
+name = "carro-na-tela-fipe-proxy"
+main = "worker/index.ts"
+compatibility_date = "2026-10-01"
+
+[vars]
+# Origens do site que podem chamar o proxy (separadas por vírgula).
+ALLOWED_ORIGINS = "https://seu-dominio.com.br"
+
+# A chave fica como segredo, fora deste arquivo:
+#   npx wrangler secret put FIPE_TOKEN
+#
+# O cache (caches.default) só tem efeito quando o Worker atende numa rota do seu
+# domínio; em *.workers.dev as gravações de cache são ignoradas.
+# routes = [{ pattern = "seu-dominio.com.br/api/fipe/*", zone_name = "seu-dominio.com.br" }]

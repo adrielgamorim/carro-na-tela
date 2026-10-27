@@ -1,0 +1,11 @@
+{
+  "_doc": "Ajustes manuais do casamento FIPE ↔ Wikidata, aplicados por npm run fetch:wikidata e npm run build:catalog. Cada item seleciona versões FIPE por marca (nome FIPE) e nome exato (model) ou prefixo (modelPrefix), sem diferenciar maiúsculas, e então usa o item id do Wikidata ou none = sem imagem e descrição. Sempre explique em reason.",
+  "overrides": [
+    {
+      "brand": "MINI",
+      "modelPrefix": "Cooper",
+      "id": "Q11781425",
+      "reason": "Mini Hatch (BMW, 2001–). O casamento por nome pegava o 'MINI Mk I' sem foto; o Mini clássico de 1959 tem o mesmo apelido."
+    }
+  ]
+}

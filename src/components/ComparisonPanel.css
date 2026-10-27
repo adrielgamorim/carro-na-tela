@@ -1,0 +1,257 @@
+/* Styles of ComparisonPanel.tsx. Tokens (colors) come from src/index.css. */
+
+.comparison-panel {
+  position: sticky;
+  top: 18px;
+}
+
+.comparison-heading {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 18px 18px 16px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.comparison-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--on-accent);
+  background: var(--acid);
+  border-radius: 6px;
+}
+
+.comparison-heading .eyebrow {
+  margin: 0 0 4px;
+  font-size: 8px;
+}
+
+.comparison-heading h2 {
+  font-size: 14px;
+}
+
+.comparison-heading h2 span {
+  margin-left: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.comparison-empty {
+  display: grid;
+  min-height: 208px;
+  align-content: center;
+  justify-items: center;
+  padding: 20px 26px;
+  text-align: center;
+}
+
+.empty-glyph {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 12px;
+  place-items: center;
+  color: var(--muted);
+  background: var(--surface-alt);
+  border: 1px dashed var(--line);
+  border-radius: 50%;
+}
+
+.comparison-items {
+  padding: 2px 16px 14px;
+}
+
+.comparison-item {
+  display: grid;
+  grid-template-columns: 23px minmax(0, 1fr) 29px;
+  gap: 8px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.comparison-index {
+  padding-top: 2px;
+  color: var(--muted-soft);
+  font: 600 12px var(--display);
+}
+
+.comparison-item-copy {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.comparison-item-copy strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 650;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.comparison-item-copy span,
+.comparison-item-copy small {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.comparison-item-copy b {
+  margin-top: 3px;
+  color: var(--forest);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.comparison-item-copy small {
+  font-size: 8px;
+}
+
+.remove-vehicle {
+  width: 27px;
+  height: 27px;
+  color: var(--muted);
+  border-color: transparent;
+}
+
+.price-difference {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 13px;
+  padding: 12px 11px;
+  background: var(--surface-alt);
+  border-radius: 5px;
+}
+
+.price-difference > div {
+  display: grid;
+  gap: 5px;
+}
+
+.price-difference > div + div {
+  padding-left: 10px;
+  border-left: 1px solid var(--line);
+}
+
+.price-difference span {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.price-difference strong {
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 650;
+}
+
+.open-compare-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  width: 100%;
+  height: 36px;
+  margin-top: 12px;
+  color: var(--on-accent);
+  background: var(--acid);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.open-compare-table:hover {
+  filter: brightness(0.96);
+}
+
+.clear-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  height: 33px;
+  margin-top: 9px;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.clear-comparison:hover {
+  color: var(--coral);
+}
+
+.comparison-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 0 16px;
+  padding: 12px 10px;
+  background: var(--surface-alt);
+  border-radius: 5px;
+}
+
+.note-accent {
+  width: 3px;
+  min-height: 28px;
+  flex: 0 0 auto;
+  background: var(--coral);
+  border-radius: 2px;
+}
+
+.comparison-note p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.comparison-bottomline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding: 11px 16px;
+  color: var(--muted);
+  border-top: 1px solid var(--line-soft);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+@media (max-width: 820px) {
+  .comparison-panel {
+      position: static;
+    }
+  .comparison-empty {
+      min-height: 165px;
+    }
+  .comparison-items {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 18px;
+    }
+  .price-difference,
+    .open-compare-table,
+    .clear-comparison {
+      grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 560px) {
+  .comparison-items {
+      grid-template-columns: 1fr;
+    }
+}

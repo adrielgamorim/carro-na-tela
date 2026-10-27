@@ -1,0 +1,39 @@
+/* Styles of CatalogHeading.tsx. Tokens (colors) come from src/index.css. */
+
+.reference-stamp .stamp-month {
+  text-transform: none;
+}
+
+.stamp-detail {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.catalog-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 18px;
+  padding: 11px 14px;
+  color: var(--warn-ink);
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.catalog-notice svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  color: var(--warn);
+}
+
+.catalog-notice div {
+  display: grid;
+  gap: 4px;
+}
+
+.catalog-notice p {
+  margin: 0;
+  line-height: 1.5;
+}

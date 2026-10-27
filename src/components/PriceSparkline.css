@@ -1,0 +1,90 @@
+/* Styles of PriceSparkline.tsx. Tokens (colors) come from src/index.css. */
+
+.sparkline-tile {
+  display: grid;
+  grid-template-columns: minmax(150px, auto) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line-soft);
+  border-radius: 6px;
+}
+
+.sparkline-figures {
+  display: grid;
+  gap: 3px;
+}
+
+.sparkline-label {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.sparkline-figures strong {
+  color: var(--ink);
+  font: 600 22px/1 var(--display);
+}
+
+.sparkline-change {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.sparkline-plot {
+  position: relative;
+  height: 64px;
+}
+
+.sparkline-plot svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  cursor: crosshair;
+  border-radius: 4px;
+}
+
+.sparkline-plot svg:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+.sparkline-line {
+  fill: none;
+  stroke: var(--forest);
+  stroke-width: 2px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.sparkline-crosshair {
+  stroke: var(--muted-soft);
+  stroke-width: 1px;
+  stroke-dasharray: 3 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.sparkline-marker {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: var(--forest);
+  border: 2px solid var(--line);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--forest);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 560px) {
+  .sparkline-tile {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+}

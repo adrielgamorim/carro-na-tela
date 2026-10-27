@@ -1,0 +1,142 @@
+/* Filters */
+
+.catalog-filters {
+  position: sticky;
+  top: 18px;
+  display: flex;
+  max-height: calc(100vh - 36px);
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.catalog-filters-heading h2 span,
+.catalog-filters-toggle span {
+  display: grid;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  place-items: center;
+  color: var(--on-accent);
+  background: var(--acid);
+  border-radius: 99px;
+  font-size: 11px;
+}
+
+.catalog-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 37px;
+  padding: 0 10px;
+  color: var(--muted);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+
+.catalog-search:focus-within {
+  border-color: var(--forest);
+  box-shadow: 0 0 0 3px rgba(49, 92, 71, 0.12);
+}
+
+.catalog-search input {
+  width: 100%;
+  min-width: 0;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+}
+
+.facet-label {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.facet-check,
+.facet-toggle {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  color: var(--ink);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.facet-check input,
+.facet-toggle input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  accent-color: var(--forest);
+}
+
+.facet-check span,
+.facet-toggle span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.facet-check small,
+.facet-toggle small,
+.facet-chip small {
+  color: var(--muted);
+  font-size: 10px;
+  font-variant-numeric: tabular-nums;
+}
+
+.facet-disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.facet-empty,
+.facet-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* Results */
+
+/* Card */
+
+.details-dialog-body .vehicle-details {
+  padding: 16px 20px 20px;
+  animation: none;
+}
+
+/* Compare tray */
+
+@media (max-width: 820px) {
+  .catalog-filters {
+      position: fixed;
+      inset: 0;
+      z-index: 30;
+      display: none;
+      max-height: none;
+      border: 0;
+      border-radius: 0;
+    }
+  .catalog-filters-close {
+      display: grid;
+      width: 34px;
+      height: 34px;
+      place-items: center;
+      color: var(--ink);
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+    }
+}

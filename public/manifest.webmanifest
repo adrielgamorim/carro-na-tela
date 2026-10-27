@@ -1,0 +1,12 @@
+{
+  "name": "Carro na tela",
+  "short_name": "Carro na tela",
+  "description": "Consulte valores FIPE, filtre o catálogo e compare veículos.",
+  "lang": "pt-BR",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#f1f4f1",
+  "theme_color": "#f1f4f1",
+  "icons": [{ "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}

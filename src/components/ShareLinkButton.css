@@ -1,0 +1,19 @@
+/* Styles of ShareLinkButton.tsx. Tokens (colors) come from src/index.css. */
+
+.share-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 0;
+  color: var(--forest);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.share-link:hover {
+  color: var(--coral);
+}

@@ -1,0 +1,240 @@
+/* Styles of ResultsPanel.tsx. Tokens (colors) come from src/index.css. */
+
+.results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 71px;
+  padding: 13px 20px;
+}
+
+.results-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.step-number-muted {
+  color: var(--forest);
+  background: var(--surface-alt);
+}
+
+.results-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.clear-consulted {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+}
+
+.clear-consulted:hover {
+  color: var(--coral);
+}
+
+.result-total {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.result-total span {
+  margin-right: 4px;
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background: var(--surface-alt);
+  border-top: 1px solid var(--line-soft);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.result-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+  height: 35px;
+  padding: 0 10px;
+  color: var(--muted);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  flex: 1 1 auto;
+}
+
+.result-search input,
+.price-input-wrap input {
+  width: 100%;
+  min-width: 0;
+  color: var(--ink);
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  font-size: 11px;
+}
+
+.result-search input::placeholder,
+.price-input-wrap input::placeholder {
+  color: var(--muted-soft);
+}
+
+.price-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+}
+
+.price-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 91px;
+  height: 35px;
+  padding: 0 7px;
+  color: var(--muted);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  font-size: 9px;
+}
+
+.price-input-wrap input::-webkit-inner-spin-button,
+.price-input-wrap input::-webkit-outer-spin-button {
+  margin: 0;
+  appearance: none;
+}
+
+.range-separator {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.advanced-filter-bar {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+  padding: 10px 20px;
+  background: var(--paper-white);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.advanced-filter-bar label {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.advanced-filter-bar label > span {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.advanced-filter-bar select {
+  width: 100%;
+  height: 31px;
+  padding: 0 24px 0 8px;
+  overflow: hidden;
+  color: var(--muted);
+  appearance: none;
+  background: var(--surface-alt)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23748179' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E")
+    no-repeat right 7px center;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.vehicle-list {
+  min-height: 176px;
+}
+
+.results-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 38px;
+  padding: 0 20px;
+  color: var(--muted);
+  background: var(--surface-alt);
+  border-top: 1px solid var(--line-soft);
+  font-size: 9px;
+}
+
+.results-footer > span:first-child {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.footer-dot {
+  width: 5px;
+  height: 5px;
+  box-shadow: none;
+}
+
+@media (max-width: 1100px) {
+  .filter-bar {
+      flex-wrap: wrap;
+    }
+  .result-search {
+      flex-basis: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+  .result-total {
+      font-size: 8px;
+    }
+  .filter-bar {
+      gap: 8px;
+      padding: 10px 12px;
+    }
+  .advanced-filter-bar {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      padding: 9px 12px;
+    }
+  .price-filter-group {
+      gap: 5px;
+    }
+  .price-input-wrap {
+      width: 78px;
+      padding: 0 5px;
+    }
+  .price-input-wrap input {
+      font-size: 10px;
+    }
+  .results-footer {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+      padding: 8px 13px;
+    }
+}

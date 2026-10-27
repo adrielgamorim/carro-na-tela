@@ -1,0 +1,262 @@
+/* Styles of CatalogCard.tsx. Tokens (colors) come from src/index.css. */
+
+.catalog-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  animation: row-enter 180ms ease-out both;
+}
+
+.catalog-card:hover {
+  border-color: var(--line);
+  box-shadow: 0 4px 14px rgba(25, 43, 34, 0.06);
+}
+
+.catalog-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.catalog-card-icon {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: var(--forest);
+  background: var(--mist);
+  border-radius: 7px;
+}
+
+.catalog-card-title {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.catalog-card-title span {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.catalog-card-title h3 {
+  margin: 0;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.catalog-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.year-pill {
+  min-width: 44px;
+  height: 26px;
+  padding: 0 8px;
+  color: var(--muted);
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.year-pill:hover {
+  border-color: var(--forest);
+}
+
+.year-pill-active {
+  color: #fff;
+  background: var(--forest);
+  border-color: var(--forest);
+}
+
+.year-pill-more {
+  min-width: 0;
+  color: var(--forest);
+  background: transparent;
+  border-style: dashed;
+}
+
+.catalog-card-price {
+  display: grid;
+  gap: 3px;
+}
+
+.catalog-card-price span {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+
+.catalog-card-price strong {
+  color: var(--ink);
+  font: 600 26px/1 var(--display);
+}
+
+.catalog-card-price-missing p {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.catalog-fetch-price {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  margin-top: 4px;
+  padding: 0 12px;
+  color: var(--on-accent);
+  background: var(--acid);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.catalog-fetch-price:hover {
+  filter: brightness(0.96);
+}
+
+.catalog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-tags li {
+  padding: 3px 8px;
+  color: var(--muted);
+  background: var(--mist);
+  border-radius: 4px;
+  font-size: 11px;
+}
+
+.catalog-tags li:first-child {
+  color: var(--ink);
+  background: var(--good-bg);
+}
+
+.catalog-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 11px;
+  border-top: 1px solid var(--line-soft);
+}
+
+.catalog-card-footer small {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.catalog-card-footer small {
+  flex: 1;
+}
+
+.catalog-details {
+  flex: 0 0 auto;
+  height: 32px;
+  padding: 0 10px;
+  color: var(--forest);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.catalog-details:hover:not(:disabled) {
+  background: var(--mist);
+}
+
+.catalog-details:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.catalog-compare {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 5px;
+  height: 32px;
+  padding: 0 11px;
+  color: var(--ink);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.catalog-compare:hover:not(:disabled) {
+  border-color: var(--forest);
+}
+
+.catalog-compare:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.catalog-compare-active {
+  background: var(--acid);
+  border-color: var(--acid);
+}
+
+.catalog-card-photo {
+  display: block;
+  width: calc(100% + 32px);
+  max-width: none;
+  aspect-ratio: 16 / 9;
+  margin: -16px -16px 0;
+  object-fit: cover;
+  background: var(--mist);
+  border-radius: 8px 8px 0 0;
+}
+
+.catalog-card-fleet {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+}

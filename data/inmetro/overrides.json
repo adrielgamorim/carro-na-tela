@@ -1,0 +1,11 @@
+{
+  "_doc": "Ajustes manuais do casamento FIPE ↔ INMETRO, aplicados pelo npm run build:catalog. Cada item seleciona versões FIPE por marca (nome FIPE) e nome exato (model) ou prefixo (modelPrefix), e então: use = força uma linha do PBEV {table, model, version, engine?}; skipTables = pula tabelas (tenta as anteriores); none = sem dados do INMETRO. Sempre explique em reason.",
+  "overrides": [
+    {
+      "brand": "Hyundai",
+      "modelPrefix": "Creta Action 1.6",
+      "use": { "table": 2024, "model": "CRETA", "version": "Action", "engine": "1.6-16V" },
+      "reason": "Aspirado. A tabela 2026 só tem o Creta 1.6 turbo (Ultimate); o Action 1.6 está em 2023–2024."
+    }
+  ]
+}
