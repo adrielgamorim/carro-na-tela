@@ -2,12 +2,14 @@
 //
 //   npm run build:catalog -- [--data=data/fipe] [--pbev=data/inmetro]
 //                            [--wikidata=data/wikidata] [--frota=data/frota]
+//                            [--imprensa=data/imprensa]
 //                            [--out=public/catalog]
 //
 // INMETRO tables (data/inmetro/pbev-<year>.json, from npm run parse:pbev) are
 // optional: without them the index has FIPE data only. So are the Wikidata
 // models (data/wikidata, from npm run fetch:wikidata) and the Senatran fleet
-// (data/frota, from npm run fetch:frota).
+// (data/frota, from npm run fetch:frota), and so are the press release
+// figures reviewed in data/imprensa/stellantis.json.
 
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -19,6 +21,7 @@ import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
+import type { PressFactsFile } from "../imprensa/facts.ts";
 import { fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
@@ -31,6 +34,7 @@ const { values } = parseArgs({
     pbev: { type: "string", default: "data/inmetro" },
     wikidata: { type: "string", default: "data/wikidata" },
     frota: { type: "string", default: "data/frota" },
+    imprensa: { type: "string", default: "data/imprensa" },
   },
 });
 
@@ -90,12 +94,16 @@ const fleet = await readFile(join(values.frota, "frota.json"), "utf8")
   .then((text) => JSON.parse(text) as FleetFile)
   .catch(() => undefined);
 if (!fleet) console.log(`Sem frota da Senatran em ${values.frota}; rode npm run fetch:frota.`);
+const press = await readFile(join(values.imprensa, "stellantis.json"), "utf8")
+  .then((text) => (JSON.parse(text) as PressFactsFile).facts)
+  .catch(() => undefined);
 const index = buildCatalogIndex(snapshots, {
   pbev,
   overrides,
   onWarning: (message) => console.warn(`Aviso: ${message}`),
   wikidata,
   fleet,
+  press,
 });
 const json = JSON.stringify(index);
 
@@ -137,6 +145,13 @@ if (index.fleet) {
   const matched = index.versions.filter((version) => version.p !== undefined).length;
   console.log(
     `Frota Senatran (${index.fleet.reference}): ${matched} versões em ${index.fleet.lines.length} linhas de modelo`,
+  );
+}
+if (index.press) {
+  const years = index.versions.flatMap((version) => version.r ?? []);
+  console.log(
+    `Releases: ${index.press.length} dados em ${index.versions.filter((version) => version.r).length} versões ` +
+      `(${years.filter(([trunk]) => trunk >= 0).length} anos com porta-malas, ${years.filter(([, torque]) => torque >= 0).length} com torque)`,
   );
 }
 console.log(

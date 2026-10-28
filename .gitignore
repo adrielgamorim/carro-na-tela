@@ -30,3 +30,7 @@ dist-ssr
 # Cloudflare (npx wrangler)
 .wrangler
 .dev.vars*
+
+# Press release cache (npm run crawl:imprensa)
+data/imprensa/stellantis-releases.jsonl
+data/imprensa/stellantis-candidates.json

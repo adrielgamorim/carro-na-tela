@@ -9,6 +9,7 @@ import { fleetOrigin } from "./fleet.ts";
 import { versionLines } from "./sublines.ts";
 import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
+import type { PressSource, PressSpecs } from "./press.ts";
 import type {
   CatalogEntry,
   CatalogIndex,
@@ -42,6 +43,19 @@ export interface WireVersion {
   g?: number[];
   /** Index into `fleet.lines`: the model line's fleet (Senatran). */
   p?: number;
+  /**
+   * Per entry of `y`, indexes into `press` of its trunk and torque figures
+   * (-1 for none). Omitted when no year has any.
+   */
+  r?: [number, number][];
+}
+
+/** A trunk or torque figure from a press release, referenced by `WireVersion.r`. */
+export interface WirePressFigure {
+  kind: "trunk" | "torque";
+  /** Liters (trunk) or kgfm (torque). */
+  value: number;
+  source: PressSource;
 }
 
 export interface CatalogIndexFile {
@@ -56,6 +70,8 @@ export interface CatalogIndexFile {
   models?: CatalogModelInfo[];
   /** Generation photos referenced by `WireVersion.g`. */
   photos?: CatalogPhoto[];
+  /** Press release figures referenced by `WireVersion.r` (data/imprensa). */
+  press?: WirePressFigure[];
   /** Fleet in circulation per model line (npm run fetch:frota), ranked. */
   fleet?: {
     reference: string;
@@ -144,6 +160,14 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
     const model = version.w === undefined ? null : (file.models?.[version.w] ?? null);
     for (const [yearIndex, [yearCode, priceValue]] of version.y.entries()) {
       const photo = file.photos?.[version.g?.[yearIndex] ?? -1];
+      const [trunk, torque] = (version.r?.[yearIndex] ?? [-1, -1]).map((figure) => file.press?.[figure]);
+      const press: PressSpecs | null =
+        trunk || torque
+          ? {
+              ...(trunk && { trunk: { value: trunk.value, source: trunk.source } }),
+              ...(torque && { torque: { value: torque.value, source: torque.source } }),
+            }
+          : null;
       const [year, fuelCode] = yearCode.split("-");
       const zeroKm = year === "32000";
       const fuel = file.fuels[fuelCode ?? ""] ?? "";
@@ -177,6 +201,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
         inmetro,
         wikidata: model && photo ? { ...model, image: photo } : model,
         fleet,
+        press,
         origin,
         depreciation,
         price: priceValue === null ? null : formatFipePrice(priceValue),

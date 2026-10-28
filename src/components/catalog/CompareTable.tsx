@@ -10,6 +10,7 @@ import {
   transmissionLabel,
 } from "../../catalog/labels";
 import { costPerKm, estimateIpva, formatIpva, formatPerKm } from "../../catalog/costs";
+import { formatTorque, formatTrunk } from "../../catalog/press";
 import type { CatalogEntry } from "../../catalog/types";
 import { formatSpec, specLabels } from "../../catalog/wikidata";
 import { formatModelYear } from "../../services/fipeParsing";
@@ -97,6 +98,19 @@ const rows: Row[] = [
   { label: "Câmbio", value: (_, entry) => (entry ? transmissionLabel(entry) : null) },
   { label: "Configuração", value: (_, entry) => (entry ? bodyLabel(entry) : null) },
   { label: "Porte", value: (_, entry) => (entry?.size ? sizeLabels[entry.size] : null) },
+  // From the carmaker's press releases (Stellantis brands only).
+  {
+    label: "Porta-malas",
+    value: (_, entry) => (entry?.press?.trunk ? formatTrunk(entry.press.trunk.value) : null),
+    score: (_, entry) => entry?.press?.trunk?.value ?? null,
+    best: "max",
+  },
+  {
+    label: "Torque",
+    value: (_, entry) => (entry?.press?.torque ? formatTorque(entry.press.torque.value) : null),
+    score: (_, entry) => entry?.press?.torque?.value ?? null,
+    best: "max",
+  },
   // Approximate: the model line's size and mass (Wikidata).
   ...(["length", "wheelbase", "mass"] as const).map((key): Row => ({
     label: specLabels.find(([item]) => item === key)?.[1] ?? key,
@@ -265,8 +279,9 @@ export function CompareTable({
         </div>
         <p className="compare-note">
           Destaque = melhor valor da linha. Consumo, custo por km, porte, direção e ar
-          vêm da tabela INMETRO; IPVA e custo por km são estimativas pelas premissas
-          acima; “—” indica dado indisponível para a versão.
+          vêm da tabela INMETRO; porta-malas e torque, dos releases da Stellantis (só
+          Fiat, Jeep, Citroën, Peugeot, RAM e Leapmotor); IPVA e custo por km são
+          estimativas pelas premissas acima; “—” indica dado indisponível para a versão.
         </p>
       </div>
     </div>

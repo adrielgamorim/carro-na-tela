@@ -4,6 +4,7 @@ import type { BodyHint, ModelNameAttributes, Transmission } from "./modelName.ts
 import type { Depreciation } from "./depreciation.ts";
 import type { CatalogFleetInfo, Origin } from "./fleet.ts";
 import type { CatalogModelInfo } from "./wikidata.ts";
+import type { PressSpecs } from "./press.ts";
 
 export type Propulsion =
   | "combustao"
@@ -54,6 +55,8 @@ export interface CatalogEntry {
   wikidata: CatalogModelInfo | null;
   /** Vehicles of the model line in circulation (Senatran, fuzzy match). */
   fleet: CatalogFleetInfo | null;
+  /** Trunk and torque from the carmaker's press releases (Stellantis brands only). */
+  press: PressSpecs | null;
   /** National or imported, by the line's Renavam registrations (null without fleet data). */
   origin: Origin | null;
   /** Average yearly loss of the version, from its priced model years. */

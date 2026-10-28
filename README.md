@@ -47,7 +47,8 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 - Ficha técnica (nome FIPE + INMETRO), histórico de preços com sparkline, IPVA estimado por
   estado, custo por km, depreciação média da versão, "Sobre o modelo" (Wikipedia/Wikidata) e frota
-  em circulação (Senatran).
+  em circulação (Senatran). Nas marcas da Stellantis, porta-malas e torque dos releases de imprensa,
+  com link para o release (também no comparador).
 - No catálogo, a foto, o nome ou "Detalhes" abrem a página da versão (`?versao=<id>`), com foto
   grande, todos os anos-modelo, preço, ficha, custos e histórico. O link pode ser compartilhado, e
   o botão Voltar do navegador retorna à lista com os mesmos filtros e a mesma posição.
@@ -82,6 +83,8 @@ npm run fetch:wikidata   # modelos, resumos e créditos das fotos → data/wikid
 npm run fetch:frota      # frota Senatran por marca/modelo e ano (mensal) → data/frota/frota.json
 npm run fetch:anp        # preço médio dos combustíveis por estado → public/catalog/fuel-prices.json
 npm run fetch:wmi        # códigos de fabricante do chassi → public/catalog/wmi.json
+npm run crawl:imprensa   # releases da Stellantis Brasil → data/imprensa/stellantis-releases.jsonl
+npm run extract:imprensa # porta-malas e torque a revisar → data/imprensa/stellantis-candidates.json
 npm run build:catalog    # data/* → public/catalog/index.json
 npm run daily            # crawl:fipe + fetch:frota (+ wikidata/wmi mensais) + build:catalog + fetch:anp
 npm run schedule:daily   # agenda o daily no Agendador de Tarefas do Windows (01:00)
@@ -97,6 +100,7 @@ npm run unschedule:daily # remove a tarefa agendada
 | Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.917 versões com foto |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
+| Releases da Stellantis Brasil | Porta-malas e torque (revisados à mão) | `crawl:imprensa`, `extract:imprensa` | De vez em quando | 358 versões (Fiat, Jeep, Citroën, Peugeot, RAM, Leapmotor) |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
 | NHTSA vPIC | Modelo e motor pelo chassi (ao vivo) | — | — | Bom para importados, raro para nacionais |
 
@@ -192,6 +196,23 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   vendas. Cada linha guarda também o total e a posição por estado; os detalhes mostram os do estado
   escolhido nas premissas.
 
+### Releases de imprensa (porta-malas e torque)
+
+- `npm run crawl:imprensa` lê o sitemap da sala de imprensa da Stellantis Brasil
+  (media.stellantis.com/br-pt) e os releases das marcas de carro que parecem falar de um modelo
+  (~2.900), um a cada 1,5 s, com user-agent identificado; o robots.txt permite essas páginas. As
+  fichas técnicas em PDF ficam atrás de proteção contra robôs e não são baixadas. Guarda o texto
+  em `data/imprensa/stellantis-releases.jsonl` (fora do git) e retoma de onde parou.
+- `npm run extract:imprensa` acha nas frases o porta-malas (com os bancos em pé) e o torque com o
+  motor de que falam (cilindrada, turbo, diesel, válvulas) e lista os candidatos ainda não revisados.
+  A prosa varia muito (volume com bancos rebatidos, bolsa de caçamba, dois motores na mesma frase),
+  então cada valor é revisado à mão em `data/imprensa/stellantis.json`: os certos vão para `facts`
+  (com `words`/`notWords` quando valem só para algumas versões), os errados para `rejected`.
+  Hoje são 86 aceitos e 33 rejeitados.
+- O `build:catalog` dá a cada ano-modelo o valor mais recente da linha a partir do ano do release
+  (por até 8 anos ou até o próximo valor), e o torque só às versões daquele motor. Só as marcas da
+  Stellantis têm sala de imprensa aberta assim; GM e VW não liberam.
+
 ### ANP (combustíveis)
 
 - `npm run fetch:anp` baixa o levantamento das últimas 4 semanas (um preço por posto) e grava a
@@ -277,7 +298,7 @@ Vitest 5 com jsdom e Testing Library, ESLint 10. Os scripts rodam com o TypeScri
 | `src/services/` | Cliente HTTP (timeout, `AbortSignal`, `HttpError`, cache), API FIPE, providers, enriquecimento, vPIC, URL da consulta, `localStorage` |
 | `server/`, `worker/` | Proxy da FIPE (handler comum, plugin do Vite, Cloudflare Worker) |
 | `scripts/catalog/` | Crawler (cliente com cache em disco e rodízio de chaves, percurso, CLI), índice, daily |
-| `scripts/inmetro/`, `wikidata/`, `frota/`, `anp/`, `vin/` | Download, leitura e casamento de cada fonte |
+| `scripts/inmetro/`, `wikidata/`, `frota/`, `anp/`, `vin/`, `imprensa/` | Download, leitura e casamento de cada fonte |
 | `data/` | Snapshots e dados de entrada do índice (gerados pelos scripts, mais os `overrides.json`) |
 | `docs/PLANO-CATALOGO.md` | Plano original do catálogo e das fontes |
 

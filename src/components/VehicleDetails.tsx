@@ -12,6 +12,8 @@ import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
 import type { CatalogModelInfo } from "../catalog/wikidata";
+import { formatTorque, formatTrunk, releaseMonth } from "../catalog/press";
+import type { PressSpecs } from "../catalog/press";
 import type { VehicleEnrichmentState } from "../hooks/useVehicleEnrichment";
 import { useCostSettings } from "../services/costSettings";
 import { formatModelYear } from "../services/fipeParsing";
@@ -39,7 +41,29 @@ const providerLabels: Record<EnrichmentKey, string> = {
   model: "a descrição do modelo",
   fleet: "a frota da Senatran",
   depreciation: "a depreciação",
+  press: "os dados dos releases",
 };
+
+/** Links to the press releases the trunk and torque came from. */
+function PressSources({ press }: { press: PressSpecs }) {
+  const sources = [press.trunk?.source, press.torque?.source].filter(
+    (source, index, all): source is NonNullable<typeof source> =>
+      source !== undefined && all.findIndex((other) => other?.url === source.url) === index,
+  );
+  return (
+    <>
+      {" · porta-malas e torque da linha, em "}
+      {sources.map((source, index) => (
+        <span key={source.url}>
+          {index > 0 && " e "}
+          <a href={source.url} target="_blank" rel="noreferrer" title={source.title}>
+            release da Stellantis ({releaseMonth(source.date)})
+          </a>
+        </span>
+      ))}
+    </>
+  );
+}
 
 /** Picture and summary of the model line (Wikidata / Wikipedia / Commons). */
 function ModelInfo({ model, showPhoto }: { model: CatalogModelInfo; showPhoto: boolean }) {
@@ -145,6 +169,7 @@ function specRows(
     .join(" ");
   const transmission = inmetro?.transmission ?? specs?.transmission;
   const body = specs?.bodyHint ?? inmetro?.body;
+  const press = enrichment?.data.press?.data;
   const km = (value: number | null | undefined) =>
     value === null || value === undefined ? null : formatKmL(value);
 
@@ -159,6 +184,7 @@ function specRows(
           ? formatSpec("power", enrichment.data.model.data.specs.power)
           : null,
     ],
+    ["Torque", press?.torque ? formatTorque(press.torque.value) : null],
     ["Propulsão", inmetro ? propulsionLabels[inmetro.propulsion] : null],
     [
       "Câmbio",
@@ -169,6 +195,7 @@ function specRows(
     ["Configuração", body ? bodyLabels[body] : null],
     ["Porte", inmetro?.size ? sizeLabels[inmetro.size] : null],
     ["Portas", specs?.doors ? String(specs.doors) : null],
+    ["Porta-malas", press?.trunk ? formatTrunk(press.trunk.value) : null],
     ["Consumo na cidade", km(consumption?.fuelCity ?? consumption?.electricCity)],
     ["Consumo na estrada", km(consumption?.fuelHighway ?? consumption?.electricHighway)],
     ["Etanol na cidade", km(consumption?.ethanolCity)],
@@ -292,6 +319,7 @@ export function VehicleDetails({
                     } · demais dados do nome FIPE`
                   : "Extraída do nome FIPE; sem dados do INMETRO para esta versão"}
                 {model?.specs && " · ≈ medidas, peso e potência da linha do modelo (Wikidata e Wikipedia)"}
+                {enrichment?.data.press && <PressSources press={enrichment.data.press.data} />}
               </p>
             </div>
           </div>

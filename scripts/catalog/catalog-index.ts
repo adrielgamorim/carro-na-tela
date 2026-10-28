@@ -13,6 +13,8 @@ import { matchFleet } from "../frota/match.ts";
 import { createInmetroMatcher } from "../inmetro/match.ts";
 import { commonsFile, toCatalogModel, versionYears } from "../wikidata/details.ts";
 import { generationOf } from "../wikidata/generations.ts";
+import { pressSpecsOf } from "../imprensa/facts.ts";
+import type { PressFact } from "../imprensa/facts.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
@@ -91,6 +93,8 @@ export interface BuildOptions {
     /** Photo per generation of a model (data/wikidata/generations.json). */
     generations?: Record<string, ModelGeneration[]>;
   };
+  /** Reviewed press release figures (data/imprensa/stellantis.json). */
+  press?: PressFact[];
 }
 
 const sameText = (left: string, right: string) =>
@@ -117,6 +121,7 @@ export function buildCatalogIndex(
     onWarning = () => {},
     wikidata,
     fleet,
+    press,
   }: BuildOptions = {},
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
@@ -334,6 +339,40 @@ export function buildCatalogIndex(
     }
   }
 
+  // Trunk and torque from press releases, per model year: the figure of the
+  // year's generation, and torque only for the engine it was given for.
+  const pressFigures: NonNullable<CatalogIndexFile["press"]> = [];
+  if (press?.length) {
+    const figureIndex = new Map<PressFact, number>();
+    const indexOf = (fact: PressFact | undefined) => {
+      if (!fact) return -1;
+      if (!figureIndex.has(fact)) {
+        figureIndex.set(fact, pressFigures.length);
+        pressFigures.push({ kind: fact.kind, value: fact.value, source: fact.source });
+      }
+      return figureIndex.get(fact)!;
+    };
+    for (const version of sorted) {
+      const fuel = versionFuel.get(version) ?? "";
+      // Some FIPE names omit the engine size ("PULSE AUDACE Turbo 200"); INMETRO has it.
+      const pbevLiters = /(\d)[.,](\d)/.exec(version.i?.engine ?? "");
+      const target = {
+        brand: brandName(version),
+        family: getModelFamily(version.n),
+        name: version.n,
+        engineLiters: version.a?.engineLiters ?? (pbevLiters ? Number(`${pbevLiters[1]}.${pbevLiters[2]}`) : undefined),
+        valves: version.a?.valves,
+        turbo: version.a?.aspiration === "turbo",
+        diesel: /diesel/i.test(fuel),
+      };
+      const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
+        const { trunk, torque } = pressSpecsOf(press, { ...target, modelYear });
+        return [indexOf(trunk), indexOf(torque)] as [number, number];
+      });
+      if (perYear.some(([trunk, torque]) => trunk >= 0 || torque >= 0)) version.r = perYear;
+    }
+  }
+
   return {
     version: 2,
     generatedAt: now.toISOString(),
@@ -343,6 +382,7 @@ export function buildCatalogIndex(
     versions: sorted,
     ...(wikidata && { models }),
     ...(photos.length > 0 && { photos }),
+    ...(pressFigures.length > 0 && { press: pressFigures }),
     ...(fleet &&
       fleetLines && {
         fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },

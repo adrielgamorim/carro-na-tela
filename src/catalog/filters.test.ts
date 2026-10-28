@@ -27,6 +27,7 @@ function entry(overrides: Partial<CatalogEntry>): CatalogEntry {
     inmetro: null,
     wikidata: null,
     fleet: null,
+    press: null,
     origin: null,
     depreciation: null,
     id: "x",

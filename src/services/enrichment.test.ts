@@ -34,6 +34,7 @@ function providers(overrides: Partial<EnrichmentProviders> = {}): EnrichmentProv
     model: { id: "model", lookup: vi.fn(async () => null) },
     fleet: { id: "fleet", lookup: vi.fn(async () => null) },
     depreciation: { id: "depreciation", lookup: vi.fn(async () => null) },
+    press: { id: "press", lookup: vi.fn(async () => null) },
     ...overrides,
   };
 }

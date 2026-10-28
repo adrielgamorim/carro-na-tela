@@ -4,6 +4,7 @@ import { brandShardPath } from "../../catalog/indexShards";
 import type { Depreciation } from "../../catalog/depreciation";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
 import type { InmetroSpec } from "../../catalog/inmetro";
+import type { PressSpecs } from "../../catalog/press";
 import type { CatalogEntry, CatalogIndex } from "../../catalog/types";
 import type { CatalogModelInfo } from "../../catalog/wikidata";
 import { HttpError, requestJson } from "../http";
@@ -182,3 +183,22 @@ export function createDepreciationProvider(
 }
 
 export const depreciationProvider = createDepreciationProvider();
+
+/**
+ * Trunk and torque from the carmaker's press releases, for the version's
+ * model year: given for the line (and engine), so a close match.
+ */
+export function createPressProvider(
+  loadIndex: (vehicle: VehicleRef) => Promise<CatalogIndex | null> = loadCatalogIndexFor,
+): Provider<PressSpecs> {
+  return {
+    id: "press",
+    async lookup(vehicle) {
+      const index = await loadIndex(vehicle);
+      const press = index ? findCatalogEntry(index, vehicle)?.press : null;
+      return press ? { source: "imprensa", confidence: "fuzzy", data: press } : null;
+    },
+  };
+}
+
+export const pressProvider = createPressProvider();

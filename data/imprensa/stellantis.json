@@ -1,0 +1,1588 @@
+{
+  "_doc": "Porta-malas (litros) e torque (kgfm) tirados dos releases da sala de imprensa da Stellantis Brasil (media.stellantis.com/br-pt), revisados à mão. npm run extract:imprensa lista os candidatos ainda não revisados; os certos entram em facts (corrigindo família, words, valor ou motor) e os errados em rejected. Um valor vale para a linha a partir de from até o próximo valor do mesmo tipo (ou to, ou 8 anos); o torque só para as versões com aquele motor.",
+  "facts": [
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil|trunk|493",
+      "brand": "Citroën",
+      "family": "AIRCROSS",
+      "kind": "trunk",
+      "value": 493,
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil",
+        "title": "Novo SUV Citroën Aircross é o modelo para até sete pessoas mais acessível do Brasil",
+        "date": "2024-02-21"
+      },
+      "quote": "O Novo Aircross possui um porta-malas capaz de comportar até 493 litros de bagagens — o maior entre seus rivais diretos no segmento —, e clientes que precisarem de ainda mais espaço podem optar pelas barras transversais de teto oferecidas pela Mopar para a fixação de um baú ou suporte de bicicletas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-chega-ao-brasil-a-partir-de-r-89-990-unindo-espaco-interno-e-estilo-coupe-no-suv-mais-acessivel-do-mercado|trunk|490",
+      "brand": "Citroën",
+      "family": "BASALT",
+      "kind": "trunk",
+      "value": 490,
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-chega-ao-brasil-a-partir-de-r-89-990-unindo-espaco-interno-e-estilo-coupe-no-suv-mais-acessivel-do-mercado",
+        "title": "Citroën Basalt chega ao Brasil a partir de R$ 89.990 unindo espaço interno e estilo Coupe no SUV mais acessível do mercado",
+        "date": "2024-10-03"
+      },
+      "quote": "Amplo porta-malas comporta até 490 litros de volume"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-apresenta-em-avant-premiere-seu-novo-furgao-berlingo-na-fipan-2018|torque|16.1",
+      "brand": "Citroën",
+      "family": "Berlingo",
+      "kind": "torque",
+      "value": 16.1,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-apresenta-em-avant-premiere-seu-novo-furgao-berlingo-na-fipan-2018",
+        "title": "CITROËN APRESENTA EM AVANT-PREMIÈRE SEU NOVO FURGÃO BERLINGO NA FIPAN 2018",
+        "date": "2018-07-26"
+      },
+      "quote": "O Novo Citroën Berlingo também oferece a maior potência de sua categoria, graças ao motor 1.6 16V Flex, que entrega 122 cv a 5.800 e um torque máximo de 16,1 kgfm a 4.000 rpm - sempre associado a uma caixa de câmbio manual de cinco marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/c3-puretech-customizado-no-mercado-mundo-mix|torque|13",
+      "brand": "Citroën",
+      "family": "C3",
+      "kind": "torque",
+      "value": 13,
+      "engine": {
+        "liters": 1.2,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/c3-puretech-customizado-no-mercado-mundo-mix",
+        "title": "C3 PureTech customizado no Mercado Mundo Mix",
+        "date": "2016-06-24"
+      },
+      "quote": "O Citroën C3 entra na era do downsizing e passa a combinar seus atributos de compacto Premium com o novo motor flex PureTech, com 1,2 litro e três cilindros, que proporciona redução de consumo de combustível de até 32% em trânsito urbano, permitindo ao modelo até 16,6 km/l na estrada e a classificaç"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-c3-urban-trail-explore-uma-nova-atitude|torque|16.1",
+      "brand": "Citroën",
+      "family": "C3",
+      "kind": "torque",
+      "value": 16.1,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/novo-c3-urban-trail-explore-uma-nova-atitude",
+        "title": "NOVO C3 URBAN TRAIL: EXPLORE UMA NOVA ATITUDE",
+        "date": "2018-06-12"
+      },
+      "quote": "Visando o conforto, principalmente nos centros urbanos, o C3 URBAN TRAIL vem equipado com motorização 1.6 Vti 120 Flex Start, que gera 118 cv a 5.750 rpm e um torque máximo de 158 Nm a 4.750 rpm (números com etanol), sempre associado a caixa de câmbio automática sequencial de 6 marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-reforca-crescimento-nas-vendas-em-outubro-e-avanca-para-o-ultimo-bimestre-do-ano-com-ainda-mais-acessibilidade|torque|20.4",
+      "brand": "Citroën",
+      "family": "C3",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-reforca-crescimento-nas-vendas-em-outubro-e-avanca-para-o-ultimo-bimestre-do-ano-com-ainda-mais-acessibilidade",
+        "title": "Novo Citroën C3 reforça crescimento nas vendas em outubro e avança para o último bimestre do ano com ainda mais acessibilidade",
+        "date": "2023-11-08"
+      },
+      "quote": "O Novo SUV Citroën C3 Aircross está chegando e com o exclusivo motor Turbo 200 de até 130 cv e 200 Nm de torque, unido ao câmbio automático CVT de sete marchas com gerenciamento inteligente e opção de trocas sequenciais."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-mostra-toda-atitude-suv-em-terceiro-episodio-de-webserie-exclusiva|trunk|315",
+      "brand": "Citroën",
+      "family": "C3",
+      "kind": "trunk",
+      "value": 315,
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-mostra-toda-atitude-suv-em-terceiro-episodio-de-webserie-exclusiva",
+        "title": "Novo Citroën C3 mostra toda atitude SUV em terceiro episódio de websérie exclusiva",
+        "date": "2022-07-12"
+      },
+      "quote": "O novo Citroën C3 vai chegar ao mercado com o maior porta-malas entre os principais competidores do segmento, com 315 litros de volume."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-inicia-pre-venda-do-c4-picasso-no-brasil|torque|24.5",
+      "brand": "Citroën",
+      "family": "C4",
+      "words": [
+        "PICASSO"
+      ],
+      "kind": "torque",
+      "value": 24.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2015,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-inicia-pre-venda-do-c4-picasso-no-brasil",
+        "title": "Citroën inicia pré-venda do C4 Picasso no Brasil",
+        "date": "2015-09-24"
+      },
+      "quote": "O motor turbo THP 165 com injeção direta de gasolina permite torque máximo de 240 Nm, valor já disponível a 1.400 rpm e constante até 4.000 rpm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-realiza-special-week-com-condicoes-especiais-para-o-suv-c4-cactus|torque|16.1",
+      "brand": "Citroën",
+      "family": "C4",
+      "words": [
+        "CACTUS"
+      ],
+      "kind": "torque",
+      "value": 16.1,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-realiza-special-week-com-condicoes-especiais-para-o-suv-c4-cactus",
+        "title": "Citroën realiza Special Week com condições especiais para o SUV C4 CACTUS",
+        "date": "2021-06-18"
+      },
+      "quote": "E vem equipada com o motor 1.6, de 118 cv, com torque de 16,1 kgfm, com câmbio automático sequencial de 6 marchas, e dois modos diferenciados de direção para tornar os trajetos ainda mais confortáveis e seguros à frente do Citroën."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c4-lounge-2017-a-evolucao-da-especie|trunk|450",
+      "brand": "Citroën",
+      "family": "C4",
+      "words": [
+        "LOUNGE"
+      ],
+      "kind": "trunk",
+      "value": 450,
+      "from": 2014,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c4-lounge-2017-a-evolucao-da-especie",
+        "title": "Citroën C4 Lounge 2017: a evolução da espécie!",
+        "date": "2016-08-23"
+      },
+      "quote": "Os vários porta-objetos facilitam a vida a bordo, bem como o amplo porta-malas com capacidade para 450 litros."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-lanca-versao-minibus-do-jumper|torque|34.7",
+      "brand": "Citroën",
+      "family": "Jumper",
+      "kind": "torque",
+      "value": 34.7,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2019,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-lanca-versao-minibus-do-jumper",
+        "title": "CITROËN LANÇA VERSÃO MINIBUS DO JUMPER",
+        "date": "2019-09-24"
+      },
+      "quote": "Com seu motor 2.0 Turbo Diesel BlueHDi, que traz 130 cv de potência e 340 NM / 34,7 kgfm de torque, o modelo apresenta também a tecnologia AdBlue&reg; (Uréia) e tem etiqueta B no Inmetro, sendo um dos mais econômicos e eficientes da categoria."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-jumper-furgao-tem-preco-reduzido-em-mais-de-r-30-mil|torque|34.7",
+      "brand": "Citroën",
+      "family": "Jumper",
+      "kind": "torque",
+      "value": 34.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-jumper-furgao-tem-preco-reduzido-em-mais-de-r-30-mil",
+        "title": "Citroën Jumper Furgão tem preço reduzido em mais de R$ 30 mil",
+        "date": "2023-06-15"
+      },
+      "quote": "O Citroën Jumper Furgão 23/23 é equipado com um moderno motor 2.2 turbodiesel de 140 cv e vastos 340 Nm de torque, cujo pico se inicia a baixos 2.000 rpm, tornando sua condução ainda mais agradável e segura, seja em ambientes urbanos ou rodoviários."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-realiza-a-avant-premiere-do-jumpy-minibus-na-feira-do-empreendedor-2018-sebrae-sp|torque|30",
+      "brand": "Citroën",
+      "family": "Jumpy",
+      "kind": "torque",
+      "value": 30,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-realiza-a-avant-premiere-do-jumpy-minibus-na-feira-do-empreendedor-2018-sebrae-sp",
+        "title": "CITROËN REALIZA A AVANT-PREMIÈRE DO JUMPY MINIBUS NA FEIRA DO EMPREENDEDOR 2018 SEBRAE-SP",
+        "date": "2018-04-06"
+      },
+      "quote": "O modelo também oferece desempenho superior graças a seu motor 1.6 Turbo Diesel BlueHDi de última geração, que entrega potência de 115 cv a 3.500 rpm e torque de 30 kgfm a partir de 1.750 rpm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-jumpy-ganha-novo-motor-fica-mais-potente-e-economico-em-2025|torque|37.7",
+      "brand": "Citroën",
+      "family": "Jumpy",
+      "kind": "torque",
+      "value": 37.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-jumpy-ganha-novo-motor-fica-mais-potente-e-economico-em-2025",
+        "title": "Citroën Jumpy ganha novo motor, fica mais potente e econômico em 2025",
+        "date": "2025-01-15"
+      },
+      "quote": "Motor 2.2 Turbodiesel estreia na gama com potência de 150 cv e 37,7 kgfm de torque"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos|torque|10.9",
+      "brand": "Fiat",
+      "family": "ARGO",
+      "kind": "torque",
+      "value": 10.9,
+      "engine": {
+        "liters": 1,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2017,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos",
+        "title": "Fiat Argo: um hatch premium em todos os sentidos",
+        "date": "2017-05-30"
+      },
+      "quote": "A versão de entrada, campeã de economia na categoria, vem equipada com o motor Firefly 1.0 de três cilindros (77 cv de potência e 10,9 kgfm de torque), com transmissão manual de cinco marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos|torque|14.2",
+      "brand": "Fiat",
+      "family": "ARGO",
+      "kind": "torque",
+      "value": 14.2,
+      "engine": {
+        "liters": 1.3,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2017,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos",
+        "title": "Fiat Argo: um hatch premium em todos os sentidos",
+        "date": "2017-05-30"
+      },
+      "quote": "Traz o motor Firefly 1.3 com potência de 109 cv e torque de 14,2 kgfm, melhor do segmento, acoplado a transmissão manual de cinco marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos|torque|19.3",
+      "brand": "Fiat",
+      "family": "ARGO",
+      "kind": "torque",
+      "value": 19.3,
+      "engine": {
+        "liters": 1.8,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2017,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos",
+        "title": "Fiat Argo: um hatch premium em todos os sentidos",
+        "date": "2017-05-30"
+      },
+      "quote": "Esta versão conta com motor E.torQ 1.8 16V Evo VIS, que atinge potência de 139 cv e 19,3 kgfm de torque (maiores valores para a categoria), acoplado à transmissão manual de cinco marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos|trunk|300",
+      "brand": "Fiat",
+      "family": "ARGO",
+      "kind": "trunk",
+      "value": 300,
+      "from": 2017,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-um-hatch-premium-em-todos-os-sentidos",
+        "title": "Fiat Argo: um hatch premium em todos os sentidos",
+        "date": "2017-05-30"
+      },
+      "quote": "O porta-malas de 300 litros tem formato retangular, quase sem interferência das caixas de roda."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-bravo-1290546000-1290553200|trunk|400",
+      "brand": "Fiat",
+      "family": "Bravo",
+      "kind": "trunk",
+      "value": 400,
+      "from": 2010,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-bravo-1290546000-1290553200",
+        "title": "Fiat Bravo",
+        "date": "2010-11-24"
+      },
+      "quote": "Assento e encosto são rebatíveis em 40/60, permitindo várias combinações para ampliar o espaço para carga até 1.175 litros (sem rebatimento, o porta-malas é de 400 litros, um excelente espaço para o segmento)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-marca-novo-tempo-para-os-sedas-no-mercado-brasileiro|torque|14.2",
+      "brand": "Fiat",
+      "family": "CRONOS",
+      "kind": "torque",
+      "value": 14.2,
+      "engine": {
+        "liters": 1.3,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-marca-novo-tempo-para-os-sedas-no-mercado-brasileiro",
+        "title": "Fiat Cronos marca novo tempo para os sedãs no mercado brasileiro",
+        "date": "2018-02-21"
+      },
+      "quote": "Opção de entrada, é impulsionada pelo motor Firefly quatro cilindros 1.3 de 109 cv de potência e 14,2 kgfm de torque (ambos com 100% etanol)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-marca-novo-tempo-para-os-sedas-no-mercado-brasileiro|torque|19.3",
+      "brand": "Fiat",
+      "family": "CRONOS",
+      "kind": "torque",
+      "value": 19.3,
+      "engine": {
+        "liters": 1.8,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-marca-novo-tempo-para-os-sedas-no-mercado-brasileiro",
+        "title": "Fiat Cronos marca novo tempo para os sedãs no mercado brasileiro",
+        "date": "2018-02-21"
+      },
+      "quote": "Com câmbio é manual de cinco marchas, a versão é equipada com motor 1.8 E.torQ Evo VIS de 139 cv de potência e 19,3 kgfm de torque (ambos com 100% de etanol)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-comeca-a-ser-vendido-no-brasil|trunk|525",
+      "brand": "Fiat",
+      "family": "CRONOS",
+      "kind": "trunk",
+      "value": 525,
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-cronos-comeca-a-ser-vendido-no-brasil",
+        "title": "Fiat Cronos começa a ser vendido no Brasil",
+        "date": "2018-03-16"
+      },
+      "quote": "Com design de proporções perfeitas que resgata a tradição italiana, o novo sedã oferece ótimo espaço interno, um dos maiores porta-malas da categoria, com 525 litros e conteúdo tecnológico que inclui sensor de pressão dos pneus de série em todas as versões e sistema multimídia Uconnect Touch de 7 po"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-doblo-personalidade-espaco-versatilidade-e-seguranca-para-todos-os-usos|trunk|750",
+      "brand": "Fiat",
+      "family": "Doblo",
+      "kind": "trunk",
+      "value": 750,
+      "from": 2001,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-doblo-personalidade-espaco-versatilidade-e-seguranca-para-todos-os-usos",
+        "title": "Fiat Doblò: personalidade, espaço, versatilidade e segurança para todos os usos",
+        "date": "2001-11-11"
+      },
+      "quote": "O vasto porta-malas do Fiat Doblò acomoda 750 litros – e isso até a altura dos vidros."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-ducato-ganha-nova-versao-em-sua-linha-2025|torque|34.7",
+      "brand": "Fiat",
+      "family": "Ducato",
+      "kind": "torque",
+      "value": 34.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-ducato-ganha-nova-versao-em-sua-linha-2025",
+        "title": "Fiat Ducato ganha nova versão em sua linha 2025",
+        "date": "2024-08-20"
+      },
+      "quote": "O modelo 2025 segue sendo equipado com o Motor 2.2 BlueHDI, com 140 CV e 340 Nm de torque, e câmbio de 6 marchas, o modelo ainda é traz o Fiat Connect////Me | Gestão de Frotas, plataforma de serviços conectados da marca, em todas as suas versões."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-ducato-estreia-mais-eficiente-economico-e-versatil-na-linha-2026|torque|35.7",
+      "brand": "Fiat",
+      "family": "Ducato",
+      "kind": "torque",
+      "value": 35.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-ducato-estreia-mais-eficiente-economico-e-versatil-na-linha-2026",
+        "title": "Fiat Ducato estreia mais eficiente, econômico e versátil na linha 2026",
+        "date": "2025-05-22"
+      },
+      "quote": "- Motor 2.2 Turbodiesel entrega 140 cv e 350 Nm de torque, tornando o Ducato 8% mais econômico que o modelo anterior"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe|torque|20.4",
+      "brand": "Fiat",
+      "family": "Fastback",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe",
+        "title": "Fiat apresenta Fastback com a melhor combinação de design, performance, segurança e tecnologia em um SUV coupé",
+        "date": "2022-09-14"
+      },
+      "quote": "Com duas opções de motorização, ele é equipado nas versões Audace e Impetus com o Turbo 200 Flex com potência de 130 cv com etanol (125 cv com gasolina) e torque de 200 Nm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe|torque|27.5",
+      "brand": "Fiat",
+      "family": "Fastback",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe",
+        "title": "Fiat apresenta Fastback com a melhor combinação de design, performance, segurança e tecnologia em um SUV coupé",
+        "date": "2022-09-14"
+      },
+      "quote": "Já para aqueles que procuram um desempenho ainda mais arrojado, a Fiat traz o motor Turbo 270 Flex com a potência de 185 cv com etanol (180 cv com gasolina) e 270 Nm de torque na versão Limited Edition Powered by Abarth, maiores potência e torque entre os concorrentes."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe|trunk|600",
+      "brand": "Fiat",
+      "family": "Fastback",
+      "kind": "trunk",
+      "value": 600,
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-fastback-com-a-melhor-combinacao-de-design-performance-seguranca-e-tecnologia-em-um-suv-coupe",
+        "title": "Fiat apresenta Fastback com a melhor combinação de design, performance, segurança e tecnologia em um SUV coupé",
+        "date": "2022-09-14"
+      },
+      "quote": "- SUV possui o maior porta-malas da categoria com impressionante 600 litros"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-fiorino-vence-premio-top-of-mind-do-transporte-2023|torque|12.2",
+      "brand": "Fiat",
+      "family": "Fiorino",
+      "kind": "torque",
+      "value": 12.2,
+      "engine": {
+        "liters": 1.4,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-fiorino-vence-premio-top-of-mind-do-transporte-2023",
+        "title": "Fiat Fiorino vence Prêmio Top of Mind do Transporte 2023",
+        "date": "2023-04-28"
+      },
+      "quote": "Ainda mais moderno, o modelo também ficou mais econômico com o motor 1.4 EVO Flex, que 86 cv de potência e torque de 120 Nm com etanol."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-fiorino-conquista-pela-30a-vez-o-premio-lotus-campeao-de-vendas|torque|13.7",
+      "brand": "Fiat",
+      "family": "Fiorino",
+      "kind": "torque",
+      "value": 13.7,
+      "engine": {
+        "liters": 1.3,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-fiorino-conquista-pela-30a-vez-o-premio-lotus-campeao-de-vendas",
+        "title": "Fiat Fiorino conquista pela 30ª vez o Prêmio Lótus Campeão de Vendas",
+        "date": "2025-02-14"
+      },
+      "quote": "Na linha 2025, o Fiorino ficou ainda mais competitivo ao ganhar novo motor 1.3 flex, que entrega até 107 cv de potência e 134 Nm de torque quando abastecido com etanol, ganhando 31 cv e 11,67% de torque adicional."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-e-o-carro-do-ano-2022|torque|20.4",
+      "brand": "Fiat",
+      "family": "PULSE",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-e-o-carro-do-ano-2022",
+        "title": "Fiat Pulse é o Carro do Ano 2022",
+        "date": "2021-12-02"
+      },
+      "quote": "A primeira delas refere-se à oferta do inédito motor Turbo 200 Flex de até 130 cavalos, o mais moderno, potente e de maior torque do segmento: 130 cv e 200 Nm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/abarth/press/pulse-abarth-estreia-em-interlagos-como-carro-madrinha-da-formula-4|torque|27.5",
+      "brand": "Fiat",
+      "family": "PULSE",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/abarth/press/pulse-abarth-estreia-em-interlagos-como-carro-madrinha-da-formula-4",
+        "title": "Pulse Abarth estreia em Interlagos como carro madrinha da Fórmula 4",
+        "date": "2022-07-29"
+      },
+      "quote": "Equipado com o motor T270, estado da arte dos propulsores turbo, tem potência de 185 cv e torque de 270 Nm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-o-pulse-suv-mais-esperado-do-brasil-e-nova-referencia-do-segmento|trunk|370",
+      "brand": "Fiat",
+      "family": "PULSE",
+      "kind": "trunk",
+      "value": 370,
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-o-pulse-suv-mais-esperado-do-brasil-e-nova-referencia-do-segmento",
+        "title": "Fiat apresenta o Pulse, SUV mais esperado do Brasil e nova referência do segmento",
+        "date": "2021-10-19"
+      },
+      "quote": "O porta-malas dispõe de 370 litros de capacidade, que podem ser ampliados ainda mais graças ao rebatimento do banco traseiro."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-siena-aumenta-a-gama-com-nova-versao-e-serie-especial|torque|16.8",
+      "brand": "Fiat",
+      "family": "Siena",
+      "kind": "torque",
+      "value": 16.8,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2010,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-siena-aumenta-a-gama-com-nova-versao-e-serie-especial",
+        "title": "Fiat Siena aumenta a gama com nova versão e série especial",
+        "date": "2010-09-23"
+      },
+      "quote": "O Siena Sporting tem sob seu capô o novo motor E.TorQ 1.6 16V Flex de 115 cv (gasolina) e 117 cv (etanol) a 5.500 rpm, com torque máximo de 16,2 kgfm a 4.500 rpm (gasolina) e 16,8 kgfm a 4.500 rpm (etanol)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-siena|trunk|500",
+      "brand": "Fiat",
+      "family": "Siena",
+      "kind": "trunk",
+      "value": 500,
+      "from": 1997,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-siena",
+        "title": "Fiat Siena",
+        "date": "1997-08-26"
+      },
+      "quote": "Com a tradição de sempre oferecer ao mercado automóveis com os melhores espaços internos, o porta-malas do Fiat Siena tem capacidade para 500 litros, o maior entre todos os modelos do segmento C e de alguns automóveis do segmento D (médio-grandes)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/chega-ao-mercado-o-fiat-stilo-blackmotion|torque|18.5",
+      "brand": "Fiat",
+      "family": "Stilo",
+      "kind": "torque",
+      "value": 18.5,
+      "engine": {
+        "liters": 1.8,
+        "turbo": false,
+        "diesel": false,
+        "valves": 8
+      },
+      "from": 2009,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/chega-ao-mercado-o-fiat-stilo-blackmotion",
+        "title": "Chega ao mercado o Fiat Stilo Blackmotion",
+        "date": "2009-03-01"
+      },
+      "quote": "Com todos esses equipamentos de série mais a motorização 1.8 litro, 8 válvulas, que oferece 112 cv de potência (a gasolina) e 114 cv (a álcool) a 5.500 rpm, além de um excelente torque de 17,8 Kgfm (gasolina) e 18,5 Kgfm (álcool) a 2.800 rpm, o Fiat Stilo Blackmotion chega ao mercado por apenas R$ 6"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-strada-ganha-serie-especial-sporting|torque|18.9",
+      "brand": "Fiat",
+      "family": "Strada",
+      "kind": "torque",
+      "value": 18.9,
+      "engine": {
+        "liters": 1.8,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2010,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-strada-ganha-serie-especial-sporting",
+        "title": "Fiat Strada ganha série especial Sporting",
+        "date": "2010-12-23"
+      },
+      "quote": "A picape Strada Sporting chega equipada com o motor E.TorQ 1.8 16V de 130 cv (gasolina) e 132 cv (etanol) e torque de 18,4 kgfm (gasolina) e 18,9 kgfm (etanol), ambos a 4.500 rpm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-strada-2014-novo-design-terceira-porta-e-mais-volume-para-carga|torque|12.5",
+      "brand": "Fiat",
+      "family": "Strada",
+      "kind": "torque",
+      "value": 12.5,
+      "engine": {
+        "liters": 1.4,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2014,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-strada-2014-novo-design-terceira-porta-e-mais-volume-para-carga",
+        "title": "Fiat Strada 2014: novo design, terceira porta e mais volume para carga",
+        "date": "2013-10-14"
+      },
+      "quote": "A Working vem equipada com o robusto e econômico motor Fire 1.4 Flex, com potência de 85 cv (gasolina) e 86 cv (etanol) e torque de 12,4 kgfm (gasolina) e 12,5 kgfm (etanol)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-lanca-nova-strada-e-reinventa-mais-uma-vez-o-segmento-de-picapes-no-brasil|torque|14.2",
+      "brand": "Fiat",
+      "family": "Strada",
+      "kind": "torque",
+      "value": 14.2,
+      "engine": {
+        "liters": 1.3,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2020,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-lanca-nova-strada-e-reinventa-mais-uma-vez-o-segmento-de-picapes-no-brasil",
+        "title": "Fiat lança Nova Strada e reinventa, mais uma vez, o segmento de picapes no Brasil",
+        "date": "2020-06-26"
+      },
+      "quote": "A partir da versão Freedom, a Nova Strada dispõe de direção com assistência elétrica, sensor de pressão dos pneus, volante multifuncional, retrovisores elétricos, quadro 3,5” de TFT, capota marítima e, entre outros itens, rodas de liga leve, impulsionadas pelo moderno motor 1.3 Firefly de quatro cil"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/performance-da-strada-com-novo-motor-surpreende-ate-estatua-em-nova-campanha-da-fiat|torque|20.4",
+      "brand": "Fiat",
+      "family": "Strada",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/performance-da-strada-com-novo-motor-surpreende-ate-estatua-em-nova-campanha-da-fiat",
+        "title": "Performance da Strada com novo motor surpreende até estátua em nova campanha da Fiat",
+        "date": "2023-09-08"
+      },
+      "quote": "Disponível nas versões Ultra e Ranch, o Turbo 200 Flex traz a potência de 130 cv com etanol (125 cv com gasolina) e torque de 200 Nm, que permite que o modelo vá de 0 a 100km/h em apenas 9,5 segundos, sendo o mais rápido entre os concorrentes."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/produzida-na-argentina-nova-fiat-titano-2026-redefine-padroes-ao-unir-sua-conhecida-robustez-com-mais-tecnologia-e-performance|torque|45.9",
+      "brand": "Fiat",
+      "family": "Titano",
+      "kind": "torque",
+      "value": 45.9,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/produzida-na-argentina-nova-fiat-titano-2026-redefine-padroes-ao-unir-sua-conhecida-robustez-com-mais-tecnologia-e-performance",
+        "title": "Produzida na Argentina, Nova Fiat Titano 2026 redefine padrões ao unir sua conhecida robustez, com mais tecnologia e performance",
+        "date": "2025-05-28"
+      },
+      "quote": "Novo motor Multijet 2.2 deixa a picape mais potente e econômica, com 200 cv de potência e 450 Nm de torque"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-ganha-o-moderno-motor-tigershark-2-4-flex|torque|24.9",
+      "brand": "Fiat",
+      "family": "Toro",
+      "kind": "torque",
+      "value": 24.9,
+      "engine": {
+        "liters": 2.4,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-ganha-o-moderno-motor-tigershark-2-4-flex",
+        "title": "Fiat Toro ganha o moderno motor TigerShark 2.4 Flex",
+        "date": "2016-11-03"
+      },
+      "quote": "Mesmo com todo esse resultado, ainda no seu ano de lançamento, a Fiat lança o Toro Freedom 2.4 Flex AT9, equipada com o revolucionário motor global da Fiat Chrysler Automobiles (FCA), o 2.4 Tigershark Multiair Flex 16V, de última geração, que rende 186 cv de potência e elevados 24,9 kgfm de torque."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-estreia-motor-turbo-flex-mais-potente-e-moderno-do-brasil|torque|27.5",
+      "brand": "Fiat",
+      "family": "Toro",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-estreia-motor-turbo-flex-mais-potente-e-moderno-do-brasil",
+        "title": "Nova Fiat Toro estreia motor turbo flex mais potente e moderno do Brasil ",
+        "date": "2021-04-22"
+      },
+      "quote": "O inédito propulsor Turbo 270 gera 185 cv de potência máxima a 5.750 rpm e torque máximo de 270 Nm a incríveis 1.750 rpm abastecido com etanol."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-2022-esta-mais-economica|torque|35.7",
+      "brand": "Fiat",
+      "family": "Toro",
+      "kind": "torque",
+      "value": 35.7,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-2022-esta-mais-economica",
+        "title": "Nova Fiat Toro 2022 está mais econômica",
+        "date": "2022-02-11"
+      },
+      "quote": "Seu motor 2.0 turbodiesel com 170 cv de potência e 350 Nm de torque foi atualizado para atender a nova legislação de emissões do Proconve-L7 e recebeu sistema de injeção de ureia para controle de emissões."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-alcanca-marca-de-400-mil-unidades-comercializadas-no-brasil-como-lider-de-seu-segmento|torque|36.4",
+      "brand": "Fiat",
+      "family": "Toro",
+      "kind": "torque",
+      "value": 36.4,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": true,
+        "valves": 16
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-alcanca-marca-de-400-mil-unidades-comercializadas-no-brasil-como-lider-de-seu-segmento",
+        "title": "Fiat Toro alcança marca de 400 mil unidades comercializadas no Brasil como líder de seu segmento",
+        "date": "2023-04-13"
+      },
+      "quote": "Para atender a todos os gostos e necessidades de transporte, trabalho ou lazer dos consumidores, também oferece versões a diesel, que trazem o propulsor 2.0 16V turbo diesel com 357 Nm de torque (MultiJet II), combinado ao sofisticado e eficiente câmbio automático de última geração de 9 marchas e tr"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-ganha-nova-motorizacao-turbodiesel|torque|45.9",
+      "brand": "Fiat",
+      "family": "Toro",
+      "kind": "torque",
+      "value": 45.9,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-ganha-nova-motorizacao-turbodiesel",
+        "title": "Fiat Toro ganha nova motorização Turbodiesel",
+        "date": "2025-02-03"
+      },
+      "quote": "Com o novo motor Multijet 2.2 Turbodiesel, a Fiat Toro passa a ter 200 cv de potência e 450 Nm de torque, um ganho de 18% na potência e 29% no torque."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil|trunk|364",
+      "brand": "Jeep",
+      "family": "Avenger",
+      "kind": "trunk",
+      "value": 364,
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil",
+        "title": "Chegou o Novo Jeep Avenger! Inovador, tecnológico e sofisticado, modelo representa a essência da marca para conquistar novos territórios no Brasil",
+        "date": "2026-08-13"
+      },
+      "quote": "O porta-malas oferece volume de até 364 litros, com abertura traseira de 1 metro de largura e soleira a 730 mm de altura, facilitando o acesso."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2026-chega-com-muito-design-alto-nivel-de-tecnologia-capacidade-off-road-e-performance|torque|27.5",
+      "brand": "Jeep",
+      "family": "Commander",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2022,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2026-chega-com-muito-design-alto-nivel-de-tecnologia-capacidade-off-road-e-performance",
+        "title": "Novo Jeep® Commander 2026 chega com muito design, alto nível de tecnologia, capacidade off-road e performance",
+        "date": "2025-08-18"
+      },
+      "quote": "Já o consagrado motor T270 turboflex oferece 176 CV de potência e 270 Nm de torque associado a um câmbio automático de 6 velocidades e tração 4x2 e o Jeep Traction Control+, sistema de controle de tração que atua em situações em que o veículo se encontra com uma das rodas em baixa aderência com o so"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2025-chega-com-novo-motor-hurricane-2-0-turbo-de-272-cv-tecnologias-de-conducao-semiautonoma-de-nivel-2-em-todas-as-versoes-e-garantia-de-5-anos|torque|40.8",
+      "brand": "Jeep",
+      "family": "Commander",
+      "kind": "torque",
+      "value": 40.8,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2025-chega-com-novo-motor-hurricane-2-0-turbo-de-272-cv-tecnologias-de-conducao-semiautonoma-de-nivel-2-em-todas-as-versoes-e-garantia-de-5-anos",
+        "title": "Novo Jeep® Commander 2025 chega com novo motor Hurricane 2.0 turbo de 272 cv, tecnologias de condução semiautônoma de nível 2 em todas as versões e garantia de 5 anos!",
+        "date": "2024-04-18"
+      },
+      "quote": "Novo motor Hurricane 2.0T (272 CV de potência e 400 Nm de torque)"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-commander-chega-com-motorizacao-2-2-turbodiesel-na-linha-25|torque|45.9",
+      "brand": "Jeep",
+      "family": "Commander",
+      "kind": "torque",
+      "value": 45.9,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-commander-chega-com-motorizacao-2-2-turbodiesel-na-linha-25",
+        "title": "Jeep Commander chega com motorização 2.2 Turbodiesel na linha 25",
+        "date": "2025-02-13"
+      },
+      "quote": "Já com o novo motor 2.2 Turbodiesel, a potência chega a 200 cv, 450 Nm de torque e o 0 a 100 km/h é de 9,7 segundos, melhora de 2 segundos graças à uma excelente relação de peso-potência que traz ainda mais equilíbrio ao modelo."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-apresenta-commander-o-mais-sofisticado-modelo-da-marca-ja-fabricado-no-brasil|trunk|661",
+      "brand": "Jeep",
+      "family": "Commander",
+      "kind": "trunk",
+      "value": 661,
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-apresenta-commander-o-mais-sofisticado-modelo-da-marca-ja-fabricado-no-brasil",
+        "title": "Jeep® apresenta Commander, o mais sofisticado modelo da marca já fabricado no Brasil",
+        "date": "2021-08-26"
+      },
+      "quote": "São três fileiras de assentos, sete lugares e um dos maiores porta-malas da categoria com 1.760 litros com todos os bancos rebaixados, 661 litros na configuração com cinco ocupantes e 233 litros com os sete assentos levantados, o maior volume com sete ocupantes no segmento."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-um-novo-norte-para-o-segmento-de-suvs|torque|20.5",
+      "brand": "Jeep",
+      "family": "COMPASS",
+      "kind": "torque",
+      "value": 20.5,
+      "engine": {
+        "liters": 2,
+        "turbo": false,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-um-novo-norte-para-o-segmento-de-suvs",
+        "title": "Jeep® Compass: um novo norte para o segmento de SUVs",
+        "date": "2016-09-26"
+      },
+      "quote": "As versões animadas pelo propulsor 2.0 Tigershark flexível terão à disposição até 166 cv de potência e 20,5 kgfm de torque."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-abre-pre-venda-de-outras-versoes-t270-turbo-flex-do-novo-compass|torque|27.5",
+      "brand": "Jeep",
+      "family": "COMPASS",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-abre-pre-venda-de-outras-versoes-t270-turbo-flex-do-novo-compass",
+        "title": "Jeep® abre pré-venda de outras versões T270 Turbo Flex do Novo Compass",
+        "date": "2021-04-12"
+      },
+      "quote": "Com o sucesso da pré-venda da Série Especial de 80 Anos do Novo Compass, que teve seu lote de 1.000 unidades esgotado em apenas 48h, a Jeep® decidiu liberar a possibilidade de compra antes do lançamento também das outras três versões AT6 com o moderno motor T270 turbo Flex com 185 cv e 270 Nm de tor"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-chega-a-600-mil-unidades-produzidas-no-brasil-confirmando-todo-o-seu-protagonismo|torque|40.8",
+      "brand": "Jeep",
+      "family": "COMPASS",
+      "kind": "torque",
+      "value": 40.8,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-chega-a-600-mil-unidades-produzidas-no-brasil-confirmando-todo-o-seu-protagonismo",
+        "title": "Jeep® Compass chega a 600 mil unidades produzidas no Brasil, confirmando todo o seu protagonismo",
+        "date": "2025-11-11"
+      },
+      "quote": "A versão topo de gama, Compass Blackhawk, é equipada com o motor Hurricane 2.0, que entrega 272 cv de potência e 400 Nm de torque, faz de 0 a 100 km/h em apenas 6,3 segundos e reforça a essência da marca Jeep com sua capacidade off-road e tração 4x4, garantindo excelente desempenho em qualquer tipo "
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-renegade-2016-apresenta-a-reinvencao-do-segmento-dos-suvs-compactos-em-10-passos|torque|35.7",
+      "brand": "Jeep",
+      "family": "Renegade",
+      "kind": "torque",
+      "value": 35.7,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-renegade-2016-apresenta-a-reinvencao-do-segmento-dos-suvs-compactos-em-10-passos",
+        "title": "Jeep® Renegade 2016 apresenta: A reinvenção do segmento dos SUVs compactos em 10 passos",
+        "date": "2015-03-23"
+      },
+      "quote": "Única transmissão combinada ao poderoso motor turbodiesel 2.0 MultiJet II, ela proporciona muitos benefícios, como acelerações fortes, entrega progressiva do alto torque de 35,7 kgfm em qualquer situação e funcionamento suave mesmo em velocidades altas – a 120 km/h o ponteiro do conta-giros marca so"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-apresenta-primeiro-teaser-do-novo-renegade|torque|27.5",
+      "brand": "Jeep",
+      "family": "Renegade",
+      "kind": "torque",
+      "value": 27.5,
+      "engine": {
+        "liters": 1.3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2021,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-apresenta-primeiro-teaser-do-novo-renegade",
+        "title": "Jeep® apresenta primeiro teaser do Novo Renegade",
+        "date": "2021-12-17"
+      },
+      "quote": "Ele será equipado com o motor T270, o melhor turbo flex fabricado no Brasil - com potência de 185 cv (etanol) / 180 cv (gasolina) e 270 Nm de torque - em todas as suas versões 4x2 e 4x4."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/no-dia-4x4-jeep-celebra-tres-anos-de-renegade-e-mais-de-200-mil-veiculos-no-brasil|trunk|320",
+      "brand": "Jeep",
+      "family": "Renegade",
+      "kind": "trunk",
+      "value": 320,
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/no-dia-4x4-jeep-celebra-tres-anos-de-renegade-e-mais-de-200-mil-veiculos-no-brasil",
+        "title": "No Dia 4x4, Jeep® celebra três anos de Renegade e mais de 200 mil veículos no Brasil",
+        "date": "2018-04-04"
+      },
+      "quote": "As versões do modelo com motor Flex tiveram o significativo aumento de 47 litros na capacidade do porta-malas, passando de 273 para 320 litros.",
+      "notWords": [
+        "DIESEL"
+      ]
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-inicia-vendas-do-wrangler-rubicon-no-brasil|torque|40.7",
+      "brand": "Jeep",
+      "family": "Wrangler",
+      "kind": "torque",
+      "value": 40.7,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2020,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-inicia-vendas-do-wrangler-rubicon-no-brasil",
+        "title": "Jeep® inicia vendas do Wrangler Rubicon no Brasil",
+        "date": "2020-04-28"
+      },
+      "quote": "A versão Jeep Wrangler Rubicon Unlimited conta ainda com motor 2.0 DOHC turbo totalmente novo e moderno que conta com 272 cv e 40,7 kgfm de torque."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-b10-comeca-a-ser-entregue-aos-clientes-com-amplo-pacote-de-recursos-para-ampliar-gama-da-marca|trunk|405",
+      "brand": "Leapmotor",
+      "family": "B10",
+      "kind": "trunk",
+      "value": 405,
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-b10-comeca-a-ser-entregue-aos-clientes-com-amplo-pacote-de-recursos-para-ampliar-gama-da-marca",
+        "title": "Leapmotor B10 começa a ser entregue aos clientes com amplo pacote de recursos para ampliar gama da marca",
+        "date": "2026-04-09"
+      },
+      "quote": "O porta-malas tem 405 litros de capacidade, que podem ser expandidos para mais de 1.600 litros com os bancos traseiros rebatidos."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-c10-chega-ao-brasil-como-unico-suv-com-versao-ultra-hibrida-com-tecnologia-reev|trunk|465",
+      "brand": "Leapmotor",
+      "family": "C10",
+      "kind": "trunk",
+      "value": 465,
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-c10-chega-ao-brasil-como-unico-suv-com-versao-ultra-hibrida-com-tecnologia-reev",
+        "title": "Leapmotor C10 chega ao Brasil como único SUV com versão Ultra-Híbrida com tecnologia REEV",
+        "date": "2025-11-04"
+      },
+      "quote": "O amplo espaço continua no porta-malas de até 465 litros (435 l na versão Ultra-Híbrida) e tampa traseira elétrica inteligente: por meio de um comando na própria tampa ou diretamente no sistema multimídia, é possível programar o limite de abertura, recurso essencial para a abertura do porta-malas em",
+      "notWords": [
+        "HIBRIDO"
+      ]
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-c10-chega-ao-brasil-como-unico-suv-com-versao-ultra-hibrida-com-tecnologia-reev|trunk|435",
+      "brand": "Leapmotor",
+      "family": "C10",
+      "kind": "trunk",
+      "value": 435,
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/leapmotor/press/leapmotor-c10-chega-ao-brasil-como-unico-suv-com-versao-ultra-hibrida-com-tecnologia-reev",
+        "title": "Leapmotor C10 chega ao Brasil como único SUV com versão Ultra-Híbrida com tecnologia REEV",
+        "date": "2025-11-04"
+      },
+      "quote": "O amplo espaço continua no porta-malas de até 465 litros (435 l na versão Ultra-Híbrida) e tampa traseira elétrica inteligente: por meio de um comando na própria tampa ou diretamente no sistema multimídia, é possível programar o limite de abertura, recurso essencial para a abertura do porta-malas em",
+      "words": [
+        "HIBRIDO"
+      ]
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/com-pacote-superior-e-folego-de-maratonista-peugeot-2008-ganha-premio-compra-certa-da-car-and-driver|torque|24.5",
+      "brand": "Peugeot",
+      "family": "2008",
+      "kind": "torque",
+      "value": 24.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/com-pacote-superior-e-folego-de-maratonista-peugeot-2008-ganha-premio-compra-certa-da-car-and-driver",
+        "title": "Com pacote superior e fôlego de maratonista, PEUGEOT 2008 ganha prêmio Compra Certa da Car and Driver",
+        "date": "2016-07-03"
+      },
+      "quote": "O prêmio prova a superioridade do 2008 perto de seus concorrentes, a começar pelo bom preço que inclui itens de série imbatíveis e equipamentos de alto nível, como o consagrado motor THP capaz de produzir 173 cv e torque de 24,5 kgf.m de forma quase instantânea."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-2008-design-magnetico-com-atitude-sofisticacao-e-tecnologia|torque|20.4",
+      "brand": "Peugeot",
+      "family": "2008",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-2008-design-magnetico-com-atitude-sofisticacao-e-tecnologia",
+        "title": "NOVO PEUGEOT 2008: DESIGN MAGNÉTICO COM ATITUDE, SOFISTICAÇÃO E TECNOLOGIA!",
+        "date": "2024-08-07"
+      },
+      "quote": "Todas as versões do Novo PEUGEOT 2008 são equipadas com o moderno e tecnológico Motor Turbo 200, que gera 130 cv de potência máxima a 5.750 rpm abastecido com etanol (125 cv com gasolina), e torque máximo de 20,4 kgfm a 1.750 rpm tanto com etanol quanto com gasolina."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-2008-design-magnetico-com-atitude-sofisticacao-e-tecnologia|trunk|419",
+      "brand": "Peugeot",
+      "family": "2008",
+      "kind": "trunk",
+      "value": 419,
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-2008-design-magnetico-com-atitude-sofisticacao-e-tecnologia",
+        "title": "NOVO PEUGEOT 2008: DESIGN MAGNÉTICO COM ATITUDE, SOFISTICAÇÃO E TECNOLOGIA!",
+        "date": "2024-08-07"
+      },
+      "quote": "O porta-malas dispõe de 419 litros de volume para acomodar bagagens, além de porta-objetos nas laterais que permitem melhor organização dos objetos (no caso do E-2008, o espaço é ampliado para 434 litros)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-e-emocao-garantida-com-o-exclusivo-i-cockpit-versao-esportiva-inedita-e-o-motor-de-tres-cilindros-mais-economico-do-brasil|torque|24.5",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "torque",
+      "value": 24.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-e-emocao-garantida-com-o-exclusivo-i-cockpit-versao-esportiva-inedita-e-o-motor-de-tres-cilindros-mais-economico-do-brasil",
+        "title": "PEUGEOT 208 é emoção garantida com o exclusivo i-cockpit, versão esportiva inédita e o motor de três cilindros mais econômico do Brasil",
+        "date": "2016-11-08"
+      },
+      "quote": "Para a versão topo de gama, a PEUGEOT reservou a nova geração do motor turbo THP 1.6l Flex, que produz potência de 173 cavalos a 6.000 rpm (no etanol) e 166 cavalos quando abastecido com gasolina, reproduzindo o mesmo torque na mesma faixa de giro (24,5 kgf.m a 1400 rpm)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/a-peugeot-lanca-o-208-inconcert-sonoridade-maxima|torque|16.1",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "torque",
+      "value": 16.1,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2018,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/a-peugeot-lanca-o-208-inconcert-sonoridade-maxima",
+        "title": "A PEUGEOT LANÇA O 208 INCONCERT: SONORIDADE MÁXIMA!",
+        "date": "2018-07-04"
+      },
+      "quote": "O 208 INCONCERT é equipado com motorização 1.6 16V FlexStart, que gera 118 cv a 5.750 rpm e torque máximo de 16,1 Kgfm a 4.750 rpm (números com etanol), sempre associado ao câmbio automático sequencial de 6 velocidades com quatro diferentes modos de condução: Drive, Eco, Sport e Sequencial."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-208-bem-vindo-ao-futuro|torque|15.5",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "torque",
+      "value": 15.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2020,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-208-bem-vindo-ao-futuro",
+        "title": "Novo PEUGEOT 208: bem-vindo ao futuro!",
+        "date": "2020-09-07"
+      },
+      "quote": "Todas as versões são equipadas com o motor 1.6 16V Flex, que desenvolve 118 cv de potência e 151,8 Nm de torque, sempre associado a uma transmissão automática sequencial de 6 marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo|torque|20.4",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "torque",
+      "value": 20.4,
+      "engine": {
+        "liters": 1,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+        "title": "PEUGEOT 208 GANHA POTÊNCIA E DESEMPENHO COM AS NOVAS VERSÕES TURBO",
+        "date": "2023-09-14"
+      },
+      "quote": "O badge com a inscrição TURBO 200 é mais um indicativo de esportividade: há 200 Nm de torque disponíveis a 1.750 rpm – o pico de força surge em rotação mais baixa do que o registrado nos concorrentes."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/do-1-0-ao-100-eletrico-peugeot-208-tem-a-linha-mais-completa-de-motores-entre-os-hatches|torque|15.7",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "torque",
+      "value": 15.7,
+      "engine": {
+        "liters": 1.6,
+        "turbo": false,
+        "diesel": false,
+        "valves": 16
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/do-1-0-ao-100-eletrico-peugeot-208-tem-a-linha-mais-completa-de-motores-entre-os-hatches",
+        "title": "DO 1.0 AO 100% ELÉTRICO, PEUGEOT 208 TEM A LINHA MAIS COMPLETA DE MOTORES ENTRE OS HATCHES",
+        "date": "2023-12-19"
+      },
+      "quote": "O primeiro motor disponível na linha atual do PEUGEOT 208 foi o 1.6 16v flex, reconhecido por ser confiável, silencioso e econômico sem esquecer a potência: são 120 cv e 153,6 Nm de torque."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-208-bem-vindo-ao-futuro|trunk|220",
+      "brand": "Peugeot",
+      "family": "208",
+      "kind": "trunk",
+      "value": 265,
+      "from": 2020,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-208-bem-vindo-ao-futuro",
+        "title": "Novo PEUGEOT 208: bem-vindo ao futuro!",
+        "date": "2020-09-07"
+      },
+      "quote": "O espaço e o volume do porta-malas são idênticos aos da versão a combustão (265 litros), levando em conta que as baterias, com volume de 220 l, encontram-se debaixo do piso do veículo."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-inception-concept-simulador-hypersquare-e-peugeot-3008-gt-marcam-presenca-pela-primeira-vez-no-brasil-e-estao-expostos-no-estande-da-marca-no-salao-do-automovel-de-sao-paulo|torque|30.6",
+      "brand": "Peugeot",
+      "family": "3008",
+      "kind": "torque",
+      "value": 30.6,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-inception-concept-simulador-hypersquare-e-peugeot-3008-gt-marcam-presenca-pela-primeira-vez-no-brasil-e-estao-expostos-no-estande-da-marca-no-salao-do-automovel-de-sao-paulo",
+        "title": "Peugeot Inception Concept, simulador Hypersquare e Peugeot 3008 GT marcam presença pela primeira vez no Brasil e estão expostos no estande da marca no Salão do Automóvel de São Paulo",
+        "date": "2025-11-20"
+      },
+      "quote": "O conjunto mecânico do Peugeot 3008 GT é formado por motor 1.6 a gasolina, que entrega 180 cv a 5.550 rpm e 300 Nm de torque a 2.000 rpm, associado à transmissão automática de seis marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-3008-um-suv-legitimo-a-frente-de-seu-tempo|trunk|520",
+      "brand": "Peugeot",
+      "family": "3008",
+      "kind": "trunk",
+      "value": 520,
+      "from": 2017,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-3008-um-suv-legitimo-a-frente-de-seu-tempo",
+        "title": "Novo PEUGEOT 3008: um SUV legítimo, à frente de seu tempo",
+        "date": "2016-11-08"
+      },
+      "quote": "Seguindo a mesma tendência, o volume do porta-malas também aumentou bastante: com 520 litros VDA 210 sob a tampa, ele ganhou cerca de 90 litros em relação à geração precedente (432 l VDA)."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-inception-concept-simulador-hypersquare-e-peugeot-3008-gt-marcam-presenca-pela-primeira-vez-no-brasil-e-estao-expostos-no-estande-da-marca-no-salao-do-automovel-de-sao-paulo|trunk|588",
+      "brand": "Peugeot",
+      "family": "3008",
+      "kind": "trunk",
+      "value": 588,
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-inception-concept-simulador-hypersquare-e-peugeot-3008-gt-marcam-presenca-pela-primeira-vez-no-brasil-e-estao-expostos-no-estande-da-marca-no-salao-do-automovel-de-sao-paulo",
+        "title": "Peugeot Inception Concept, simulador Hypersquare e Peugeot 3008 GT marcam presença pela primeira vez no Brasil e estão expostos no estande da marca no Salão do Automóvel de São Paulo",
+        "date": "2025-11-20"
+      },
+      "quote": "Na traseira, o spoiler flutuante e o conjunto óptico equilibram elegância e dinamismo, conferindo personalidade marcante ao SUV, que ainda oferece porta-malas com 588 litros de capacidade."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/press-kit-salao-do-automovel-2016-308|torque|24.5",
+      "brand": "Peugeot",
+      "family": "308",
+      "kind": "torque",
+      "value": 24.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/press-kit-salao-do-automovel-2016-308",
+        "title": "Press Kit - Salão do Automóvel 2016 - 308",
+        "date": "2016-11-07"
+      },
+      "quote": "MOTOR THP FLEX: O apimentado Motor Turbo THP Flex oferece alto nível de performance com 173cv de potência e torque máximo de 24,5 kgf.m (DIN) com incríveis 1.750 rpm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-308-incorpora-a-essencia-da-marca|trunk|430",
+      "brand": "Peugeot",
+      "family": "308",
+      "kind": "trunk",
+      "value": 430,
+      "from": 2015,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/novo-peugeot-308-incorpora-a-essencia-da-marca",
+        "title": "Novo PEUGEOT 308 incorpora a essência da marca",
+        "date": "2015-10-27"
+      },
+      "quote": "As formas retilíneas e os espaços de arrumação do porta-malas facilitam a utilização prática do vasto volume oferecido pelo 308: são 430 litros, acessados pela abertura da tampa a distância (por meio do telecomando das chaves), botão elétrico local ou comando específico no painel de instrumentos."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/press-kit-salao-do-automovel-2016-408|torque|24.5",
+      "brand": "Peugeot",
+      "family": "408",
+      "kind": "torque",
+      "value": 24.5,
+      "engine": {
+        "liters": 1.6,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2016,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/press-kit-salao-do-automovel-2016-408",
+        "title": "Press Kit - Salão do Automóvel 2016 - 408",
+        "date": "2016-11-07"
+      },
+      "quote": "O apimentado Motor Turbo THP Flex oferece alto nível de performance com 173cv de potência e torque máximo de 24,5 kgf.m (DIN) com incríveis 1.750 rpm."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-completa-a-renovacao-da-linha-com-o-lancamento-do-novo-408|trunk|526",
+      "brand": "Peugeot",
+      "family": "408",
+      "kind": "trunk",
+      "value": 526,
+      "from": 2015,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-completa-a-renovacao-da-linha-com-o-lancamento-do-novo-408",
+        "title": "PEUGEOT completa a renovação da linha com o lançamento do Novo 408",
+        "date": "2015-11-17"
+      },
+      "quote": "As formas retilíneas e os espaços de arrumação do porta-malas facilitam a utilização prática do vasto volume oferecido pelo novo 408: são 526 litros, acessados pela abertura da tampa a distância (por meio do telecomando das chaves), botão elétrico local ou comando específico no painel de instrumento"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-todos-os-detalhes-do-novo-utilitario-boxer-minibus-e-a-conectividade-do-mypeugeot-pro|torque|34.7",
+      "brand": "Peugeot",
+      "family": "Boxer",
+      "kind": "torque",
+      "value": 34.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-todos-os-detalhes-do-novo-utilitario-boxer-minibus-e-a-conectividade-do-mypeugeot-pro",
+        "title": "PEUGEOT apresenta todos os detalhes do novo utilitário Boxer Minibus e a conectividade do MyPeugeot PRO",
+        "date": "2024-08-28"
+      },
+      "quote": "Com um motor 2.2 Turbo Diesel BlueHDi, de 140 cv e 34,7 kgfm de torque"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-novo-boxer-2026-mais-eficiente-economico-seguro-e-versatil-para-negocios-do-brasil|torque|35.7",
+      "brand": "Peugeot",
+      "family": "Boxer",
+      "kind": "torque",
+      "value": 35.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-novo-boxer-2026-mais-eficiente-economico-seguro-e-versatil-para-negocios-do-brasil",
+        "title": "PEUGEOT APRESENTA NOVO BOXER 2026: MAIS EFICIENTE, ECONÔMICO, SEGURO E  VERSATIL PARA NEGÓCIOS DO BRASIL",
+        "date": "2025-07-31"
+      },
+      "quote": "O Peugeot Boxer estreia com motor com novo motor 2.2 Turbo Diesel que entrega 140 cv e 350 Nm de torque, combinado ao câmbio manual de 6 marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-expert-apoia-rotina-criativa-do-estudio-orth-e-reforca-sua-versatilidade-para-empreendedores|torque|37.7",
+      "brand": "Peugeot",
+      "family": "Expert",
+      "kind": "torque",
+      "value": 37.7,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-expert-apoia-rotina-criativa-do-estudio-orth-e-reforca-sua-versatilidade-para-empreendedores",
+        "title": "Peugeot Expert apoia rotina criativa do Estúdio Orth e reforça sua versatilidade para  empreendedores",
+        "date": "2026-03-18"
+      },
+      "quote": "O modelo conta com um motor potente 2.2 Turbodiesel de 150 cv e 370 Nm de torque, que combina desempenho e eficiência e autonomia que pode chegar a 13,7 km/l na estrada."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-1500-big-horn-abre-nova-porta-ao-universo-das-picapes-grandes-premium-com-426-cv-e-0-a-100-km-h-em-5-3-segundos|torque|64.8",
+      "brand": "RAM",
+      "family": "1500",
+      "kind": "torque",
+      "value": 64.8,
+      "engine": {
+        "liters": 3,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2026,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-1500-big-horn-abre-nova-porta-ao-universo-das-picapes-grandes-premium-com-426-cv-e-0-a-100-km-h-em-5-3-segundos",
+        "title": "Nova Ram 1500 Big Horn abre nova porta ao universo das picapes grandes premium com 426 cv e 0 a 100 km/h em 5,3 segundos",
+        "date": "2026-08-04"
+      },
+      "quote": "A 1500 Big Horn é equipada com o premiado e reconhecido motor Hurricane 6 3.0 Biturbo de 426 cv e 635 Nm de torque (64,8 Kgfm), com câmbio automático de oito marchas e tração 4x4 com quatro modos de funcionamento: 4x2, 4x4 Auto, 4x4 High e 4x4 Low (reduzida), que podem ser selecionados por meio de u"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/ram-apresenta-versao-laramie-night-edition-da-2500|torque|148.7",
+      "brand": "RAM",
+      "family": "2500",
+      "kind": "torque",
+      "value": 148.7,
+      "engine": {
+        "liters": 6.7,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/ram-apresenta-versao-laramie-night-edition-da-2500",
+        "title": "Ram apresenta versão Laramie Night Edition da 2500",
+        "date": "2026-10-20"
+      },
+      "quote": "- Picape segue equipada com o motor Cummins&reg; 6.7 Turbodiesel High-Output de 436 cv de potência e 1.458 Nm (148,7 kgfm) de torque"
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-e-revelada-no-festival-interlagos-para-seguir-como-o-modelo-mais-potente-e-capaz-de-seu-segmento|torque|148.7",
+      "brand": "RAM",
+      "family": "3500",
+      "kind": "torque",
+      "value": 148.7,
+      "engine": {
+        "liters": 6.7,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-e-revelada-no-festival-interlagos-para-seguir-como-o-modelo-mais-potente-e-capaz-de-seu-segmento",
+        "title": "Nova Ram 3500 é revelada no Festival Interlagos para seguir como o modelo mais potente e capaz de seu segmento",
+        "date": "2025-06-11"
+      },
+      "quote": "A picape adota o novo motor Cummins&reg; 6.7 Turbodiesel High-Output de 6 cilindros em linha com 436 cv e excepcionais 1.458 Nm (148,7 kgfm) de torque, acoplados ao novo câmbio automático de oito marchas TorqueFlite HD, e sistema de tração 4x2, 4X4 e reduzida."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-dakota-e-revelada-oficialmente-na-argentina|torque|45.9",
+      "brand": "RAM",
+      "family": "DAKOTA",
+      "kind": "torque",
+      "value": 45.9,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2025,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-dakota-e-revelada-oficialmente-na-argentina",
+        "title": "Nova Ram Dakota é revelada oficialmente na Argentina",
+        "date": "2025-10-13"
+      },
+      "quote": "- Modelo é equipado com o motor 2.2 Turbodiesel de 200 cv de potência e 450 Nm (45,9 kgfm) de torque e câmbio automático de oito marchas."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-2025-fica-ainda-mais-inigualavel-com-novo-motor-2-2-turbodiesel-de-200-cv-e-inedita-versao-big-horn|torque|40.8",
+      "brand": "RAM",
+      "family": "RAMPAGE",
+      "kind": "torque",
+      "value": 40.8,
+      "engine": {
+        "liters": 2,
+        "turbo": true,
+        "diesel": false
+      },
+      "from": 2023,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/rampage-2025-fica-ainda-mais-inigualavel-com-novo-motor-2-2-turbodiesel-de-200-cv-e-inedita-versao-big-horn",
+        "title": "Rampage 2025 fica ainda mais inigualável com novo motor 2.2 Turbodiesel de 200 cv e inédita versão Big Horn",
+        "date": "2024-11-05"
+      },
+      "quote": "O premiado motor 2.0 Hurricane 4 Turbo Gasolina de 272 cv de potência e 400 Nm de torque segue disponível nas versões Rebel, Laramie e R/T, e faz da Rampage a picape mais potente e veloz produzida na América do Sul."
+    },
+    {
+      "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-rampage-big-horn-2-2-turbodiesel-de-200-cv-chega-por-r-237-990-como-a-nova-porta-de-entrada-ao-universo-ram|torque|45.9",
+      "brand": "RAM",
+      "family": "RAMPAGE",
+      "kind": "torque",
+      "value": 45.9,
+      "engine": {
+        "liters": 2.2,
+        "turbo": true,
+        "diesel": true
+      },
+      "from": 2024,
+      "source": {
+        "url": "https://www.media.stellantis.com/br-pt/ram/press/nova-rampage-big-horn-2-2-turbodiesel-de-200-cv-chega-por-r-237-990-como-a-nova-porta-de-entrada-ao-universo-ram",
+        "title": "Rampage Big Horn 2.2 Turbodiesel de 200 cv chega por R$ 237.990 como a nova porta de entrada ao universo Ram",
+        "date": "2024-12-13"
+      },
+      "quote": "Novidade é equipada com o recém-apresentado motor 2.2 Turbodiesel de 200 cv de potência e 450 Nm de torque com câmbio automático de nove marchas e tração 4x4 automática;"
+    }
+  ],
+  "rejected": [
+    "https://www.media.stellantis.com/br-pt/abarth/press/novo-fastback-abarth-suv-coupe-ganhou-uma-dose-extra-de-esportividade|torque|27.5",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-feel-e-o-suv-mais-acessivel-e-economico-do-seu-segmento|trunk|490",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990|trunk|367",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-xtr-e-eleito-o-compacto-1-0-mais-economico-do-ranking-folha-maua-2026|trunk|315",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-cresce-acima-da-industria-em-maio-impulsionada-pelo-citroen-c3|trunk|490",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-jumper-cargo-entrega-versatilidade-e-eficiencia-com-versoes-que-podem-ser-dirigidas-com-cnh-de-automovel|torque|34.7",
+    "https://www.media.stellantis.com/br-pt/citroen/press/citroen-lanca-versao-minibus-do-jumper|trunk|1000",
+    "https://www.media.stellantis.com/br-pt/citroen/press/nova-versao-topo-de-gama-citroen-basalt-dark-edition-une-visual-urbano-acabamento-escurecido-e-toques-em-andre-red|trunk|490",
+    "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-live-pack-1-6-estreia-na-gama-como-o-carro-automatico-mais-acessivel-do-brasil|trunk|315",
+    "https://www.media.stellantis.com/br-pt/citroen/press/novos-citroen-c4-x-e-e-c4-x-eletrico-unem-elegancia-requinte-e-atitude-suv|trunk|510",
+    "https://www.media.stellantis.com/br-pt/citroen/press/o-c5-x-e-a-mais-avancada-expressao-da-filosofia-citroen-audacia-e-inovacao-para-uma-experiencia-de-viagem-mais-serena-2|trunk|545",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-amplia-linha-strada-com-a-trekking-1-4|trunk|300",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-scudo-seu-novo-furgao-com-otimos-custos-operacionais-e-maxima-produtividade-que-traz-modernidade-robustez-conforto-e-versao-100-eletrica|trunk|850",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-trekking-chega-para-completar-a-familia-com-espirito-aventureiro|torque|14.2",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-celebra-250-mil-unidades-produzidas-e-200-mil-unidades-vendidas-do-pulse-no-brasil|torque|27.5",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-lanca-argo-trekking-com-motor-1-8-e-cambio-automatico|torque|19",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-leva-picape-strada-lider-em-vendas-para-a-fenasucro-2015|trunk|520",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-siena-el-2016-chega-as-concessionarias-com-novidades|trunk|500",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-2024-chega-com-design-mais-robusto|torque|36.4",
+    "https://www.media.stellantis.com/br-pt/fiat/press/fiat-toro-acessorios-e-servicos|trunk|520",
+    "https://www.media.stellantis.com/br-pt/fiat/press/palio-weekend-eletrico-energia-100-limpa|torque|5.1",
+    "https://www.media.stellantis.com/br-pt/jeep/press/jeep-renegade-2016-combina-carroceria-com-elementos-de-estilo-lendarios-da-marca-e-cabine-refinada|trunk|525",
+    "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2025-chega-com-novo-motor-hurricane-2-0-turbo-de-272-cv-tecnologias-de-conducao-semiautonoma-de-nivel-2-em-todas-as-versoes-e-garantia-de-5-anos|torque|38.7",
+    "https://www.media.stellantis.com/br-pt/jeep/press/novo-jeep-commander-2025-chega-com-novo-motor-hurricane-2-0-turbo-de-272-cv-tecnologias-de-conducao-semiautonoma-de-nivel-2-em-todas-as-versoes-e-garantia-de-5-anos|trunk|233",
+    "https://www.media.stellantis.com/br-pt/peugeot/press/do-peugeot-203-familiar-ao-novo-peugeot-308-sw-70-anos-de-station-wagons-peugeot|trunk|608",
+    "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-em-detalhes-toda-a-tecnologia-e-imponencia-do-novo-e-5008-que-sera-lancado-no-segundo-semestre-na-europa|trunk|748",
+    "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-apresenta-todos-os-detalhes-do-novo-utilitario-boxer-minibus-e-a-conectividade-do-mypeugeot-pro|trunk|1000",
+    "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-laramie-night-edition-e-destaque-no-48o-campeonato-nacional-da-abqm|torque|148.7",
+    "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-dakota-laramie-e-revelada-e-chega-ao-brasil-em-2026|torque|45.9",
+    "https://www.media.stellantis.com/br-pt/ram/press/ram-1500-rev-2025-e-revelada-no-salao-de-nova-york-com-alcance-previsto-de-inigualaveis-800-km|trunk|425",
+    "https://www.media.stellantis.com/br-pt/ram/press/ram-exibe-nova-dakota-na-expodireto-2026|torque|148.7",
+    "https://www.media.stellantis.com/br-pt/ram/press/rampage-2025-fica-ainda-mais-inigualavel-com-novo-motor-2-2-turbodiesel-de-200-cv-e-inedita-versao-big-horn|torque|45.9",
+    "https://www.media.stellantis.com/br-pt/ram/press/rampage-mostra-forca-e-se-destaca-nos-emplacamentos-de-janeiro|torque|148.7"
+  ]
+}
