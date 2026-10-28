@@ -17,7 +17,10 @@ export interface CatalogEntry {
   /** `${brandCode}-${modelCode}:${yearCode}` */
   id: string;
   category: VehicleCategory;
+  /** The maker, one name per maker (catalog/brands.ts): "Chery". */
   brand: string;
+  /** FIPE's name for the brand ("Caoa Chery/Chery"), for lookups against FIPE. */
+  fipeBrand: string;
   brandCode: string;
   /** Model line, one spelling per brand ("Uno"). */
   family: string;

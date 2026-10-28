@@ -1,4 +1,5 @@
 import { emptyCatalogFilters, filterCatalog } from "./filters";
+import { catalogBrand } from "./brands";
 import type { CatalogFilters } from "./filters";
 import type { CatalogEntry } from "./types";
 
@@ -31,7 +32,7 @@ export function vinCatalogFilters(
   sort: CatalogFilters["sort"],
 ): VinFilterResult {
   const available = new Set(entries.map((entry) => entry.brand));
-  const brands = input.brands.filter((brand) => available.has(brand));
+  const brands = [...new Set(input.brands.map(catalogBrand))].filter((brand) => available.has(brand));
   if (!brands.length) return { filters: null, brands, year: null, model: null };
 
   let filters: CatalogFilters = { ...emptyCatalogFilters, sort, brands };

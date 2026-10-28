@@ -49,6 +49,7 @@ function entry(overrides: Partial<CatalogEntry>): CatalogEntry {
     referenceMonth: "outubro de 2026",
     attributes: {},
     ...overrides,
+    fipeBrand: overrides.fipeBrand ?? overrides.brand ?? "BYD",
   };
 }
 

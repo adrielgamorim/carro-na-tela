@@ -89,7 +89,7 @@ export function findCatalogEntry(
   if (!entries) {
     entries = new Map();
     for (const entry of index.entries) {
-      entries.set(lookupKey(entry.brand, entry.model, entry.yearCode), entry);
+      entries.set(lookupKey(entry.fipeBrand, entry.model, entry.yearCode), entry);
     }
     entryMaps.set(index, entries);
   }
@@ -130,7 +130,7 @@ export function createModelInfoProvider(
         findCatalogEntry(index, vehicle) ??
         index.entries.find(
           (item) =>
-            lookupKey(item.brand, item.model, "") === lookupKey(vehicle.brand, vehicle.model, ""),
+            lookupKey(item.fipeBrand, item.model, "") === lookupKey(vehicle.brand, vehicle.model, ""),
         );
       return entry?.wikidata
         ? { source: "wikidata", confidence: "fuzzy", data: entry.wikidata }
@@ -157,7 +157,7 @@ export function createFleetProvider(
         findCatalogEntry(index, vehicle) ??
         index.entries.find(
           (item) =>
-            lookupKey(item.brand, item.model, "") === lookupKey(vehicle.brand, vehicle.model, ""),
+            lookupKey(item.fipeBrand, item.model, "") === lookupKey(vehicle.brand, vehicle.model, ""),
         );
       return entry?.fleet
         ? { source: "senatran", confidence: "fuzzy", data: entry.fleet }

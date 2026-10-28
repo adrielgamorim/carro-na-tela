@@ -139,7 +139,8 @@ export function catalogEntryToVehicle(entry: CatalogEntry): FipeVehicle | null {
     id: `${entry.category}:${entry.referenceCode}:${entry.codeFipe}:${entry.yearCode}`,
     category: entry.category,
     yearCode: entry.yearCode,
-    brand: entry.brand,
+    // FIPE's own name: the vehicle is looked up and stored like a consulted one.
+    brand: entry.fipeBrand,
     model: entry.model,
     codeFipe: entry.codeFipe,
     fuel: entry.fuel,

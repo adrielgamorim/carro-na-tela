@@ -25,6 +25,9 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   ainda estão em 25% delas; versões sem preço têm "Consultar preço", que busca ao vivo.
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
+- Marcas que a FIPE lista com mais de um nome viram uma só (`src/catalog/brands.ts`): "Caoa Chery" e
+  "Caoa Chery/Chery" são Chery; "Caoa Changan", "CHANGAN" e "CHANA" são Changan. O nome da FIPE
+  continua em cada versão para a Consulta e os links antigos.
 - A linha é escrita igual em todas as versões da marca ("UNO" e "Uno" viram uma linha só) e, com uma
   linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
   Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").

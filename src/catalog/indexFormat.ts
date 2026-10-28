@@ -7,6 +7,7 @@ import { versionDepreciation } from "./depreciation.ts";
 import type { CatalogFleetInfo, CatalogFleetLine } from "./fleet.ts";
 import { fleetOrigin } from "./fleet.ts";
 import { versionLines } from "./sublines.ts";
+import { catalogBrand } from "./brands.ts";
 import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
 import type { PressSource, PressSpecs } from "./press.ts";
@@ -120,7 +121,9 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
   const entries: CatalogEntry[] = [];
 
   // Line spelled once per brand ("UNO" / "Uno") and sub-line ("Uno Way").
-  const lines = versionLines(file.versions.map((version) => [at(file.brands, version.b, "marca").name, version.n]));
+  const lines = versionLines(
+    file.versions.map((version) => [catalogBrand(at(file.brands, version.b, "marca").name), version.n]),
+  );
   for (const [versionIndex, version] of file.versions.entries()) {
     const snapshot = at(file.snapshots, version.s, "snapshot");
     const brand = at(file.brands, version.b, "marca");
@@ -174,7 +177,8 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
       entries.push({
         id: `${brand.code}-${version.m}:${yearCode}`,
         category: snapshot.category,
-        brand: brand.name,
+        brand: catalogBrand(brand.name),
+        fipeBrand: brand.name,
         brandCode: brand.code,
         family,
         ...(subline && { subline }),

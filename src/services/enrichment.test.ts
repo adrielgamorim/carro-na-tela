@@ -98,10 +98,18 @@ describe("catalog providers", () => {
     entries: [
       {
         brand: "Fiat",
+        fipeBrand: "Fiat",
         model: "ARGO DRIVE 1.3 8V  Flex Aut.",
         yearCode: "2026-5",
         inmetro: spec,
         wikidata: { id: "Q30013813", label: "Fiat Argo" },
+      },
+      {
+        brand: "Chery",
+        fipeBrand: "Caoa Chery/Chery",
+        model: "Tiggo 2 1.5 16V Flex Aut.",
+        yearCode: "2022-5",
+        inmetro: spec,
       },
     ],
   } as unknown as CatalogIndex;
@@ -109,6 +117,9 @@ describe("catalog providers", () => {
   it("finds the catalog entry by brand, model name and year", () => {
     expect(findCatalogEntry(index, vehicle)?.inmetro).toBe(spec);
     expect(findCatalogEntry(index, { ...vehicle, yearCode: "2025-5" })).toBeUndefined();
+    // The catalog shows one maker's FIPE brands as one; the Consulta still says FIPE's name.
+    const tiggo = { ...vehicle, brand: "Caoa Chery/Chery", model: "Tiggo 2 1.5 16V Flex Aut.", yearCode: "2022-5" };
+    expect(findCatalogEntry(index, tiggo)?.brand).toBe("Chery");
   });
 
   it("returns INMETRO data with the match confidence", async () => {

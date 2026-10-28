@@ -25,6 +25,7 @@ import type { VinFilterResult } from "../../catalog/vinFilters";
 import { useCatalogIndex } from "../../hooks/useCatalogIndex";
 import { useLivePrices } from "../../hooks/useLivePrices";
 import { useFavorites } from "../../services/favorites";
+import { catalogBrand } from "../../catalog/brands";
 import { FavoritesList } from "./FavoritesList";
 import { useVehicleEnrichment } from "../../hooks/useVehicleEnrichment";
 import { useVinSearch } from "../../hooks/useVinSearch";
@@ -96,6 +97,8 @@ function CatalogBrowser({
     const spelling = new Map(index.entries.map((entry) => [entry.family.toLocaleLowerCase("pt-BR"), entry.family]));
     return {
       ...read,
+      // Links from before one maker's FIPE brands were joined ("Caoa Chery/Chery" → "Chery").
+      brands: [...new Set(read.brands.map(catalogBrand))],
       families: read.families.map((family) => spelling.get(family.toLocaleLowerCase("pt-BR")) ?? family),
     };
   });
