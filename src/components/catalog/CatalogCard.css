@@ -121,6 +121,14 @@
   font: 600 26px/1 var(--display);
 }
 
+.catalog-card-ipva {
+  width: fit-content;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 12px;
+  cursor: help;
+}
+
 .catalog-card-price-missing p {
   display: flex;
   align-items: center;

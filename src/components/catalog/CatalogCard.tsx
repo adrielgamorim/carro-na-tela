@@ -2,10 +2,12 @@ import { useState } from "react";
 import type { MouseEvent } from "react";
 import { Check, Plus, RefreshCw, Users } from "lucide-react";
 import type { CatalogGroup } from "../../catalog/filters";
+import { estimateIpva, formatIpva, ipvaNote } from "../../catalog/costs";
 import { entryTags, yearLabel } from "../../catalog/labels";
 import { fleetOfYear, formatFleetCount } from "../../catalog/fleet";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
 import type { CatalogEntry } from "../../catalog/types";
+import { useCostSettings } from "../../services/costSettings";
 import type { FipeVehicle } from "../../types/vehicle";
 import { BrandIcon } from "../BrandIcon";
 import "./CatalogCard.css";
@@ -34,6 +36,17 @@ export interface PageLink {
 
 const maxYearPills = 6;
 
+/** Yearly IPVA estimate under the price, in the state chosen in the cost settings. */
+function IpvaLine({ priceValue }: { priceValue: number | null }) {
+  const { uf } = useCostSettings();
+  if (!priceValue) return null;
+  return (
+    <small className="catalog-card-ipva" title={ipvaNote}>
+      IPVA ≈ {formatIpva(estimateIpva(priceValue, uf))} ({uf})
+    </small>
+  );
+}
+
 export function PriceBlock({
   entry,
   live,
@@ -50,6 +63,7 @@ export function PriceBlock({
       <div className="catalog-card-price">
         <span>{label}</span>
         <strong>{entry.price}</strong>
+        <IpvaLine priceValue={entry.priceValue} />
       </div>
     );
   }
@@ -60,6 +74,7 @@ export function PriceBlock({
           {label} · CONSULTADO AGORA
         </span>
         <strong>{live.vehicle.price}</strong>
+        <IpvaLine priceValue={live.vehicle.priceValue} />
       </div>
     );
   }

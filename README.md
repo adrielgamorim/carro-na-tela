@@ -32,7 +32,7 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 - Cards com o logo colorido da marca (59 marcas, de `npm run fetch:brand-logos`; as demais ficam
   com o ícone monocromático do Simple Icons ou o do tipo de veículo), foto do modelo (Wikimedia
   Commons, da geração do ano escolhido quando o artigo da Wikipedia separa gerações), frota em
-  circulação e posição no ranking.
+  circulação, posição no ranking e IPVA estimado logo abaixo do valor FIPE (no estado das premissas).
 - Busca pelo chassi (VIN): fabricante, país e ano-modelo decodificados no navegador; modelo e
   motor pela NHTSA vPIC quando ela conhece o veículo. O resultado vira filtros.
 
