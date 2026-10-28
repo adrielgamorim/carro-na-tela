@@ -45,6 +45,8 @@ disponibilidade dela.
 
 ## Concluído
 
+- [x] Galeria de fotos na página da versão: até 8 fotos por geração do Wikimedia Commons, com ângulo
+      (frente, traseira, lateral, interior), crédito e vista ampliada. 8.243 fotos de 539 modelos.
 - [x] Favoritos no navegador: estrela no card e na página da versão, aba Favoritos com a variação da
       FIPE desde que o carro foi marcado e "Comparar favoritos" (até 4).
 - [x] Geração pela versão: quando as gerações se sobrepõem, a primeira palavra depois da linha

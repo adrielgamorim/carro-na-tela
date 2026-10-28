@@ -69,6 +69,10 @@ export function angleOf(file: string, categories: string[] = []): Angle {
   return "outra";
 }
 
+// Month names (English, Portuguese, Spanish, German, French) that start a photo's date.
+const months =
+  "jan|feb|fev|ene|mar|apr|abr|avr|may|mai|mei|jun|jul|aug|ago|aou|sep|set|okt|oct|out|nov|dec|dez|dic";
+
 /**
  * The model year a photo is of, from its name ("2022 Fiat Pulse…", "…Drive
  * 2023.jpg") or a category ("2019 Chevrolet Onix"). Numbers that are part of
@@ -76,7 +80,13 @@ export function angleOf(file: string, categories: string[] = []): Angle {
  */
 export function photoYear(file: string, categories: string[], modelLabel: string): number | undefined {
   const ownNumbers = new Set(modelLabel.match(/\d{4}/g) ?? []);
-  const yearIn = (text: string) => {
+  const yearIn = (name: string) => {
+    // The date the photo was taken is not the car's year: "03-21-2012", "2024-04-29",
+    // "7 June 2026", "(December 2024)", "Oct 2021".
+    const text = name
+      .replace(/\b\d{1,2}[-./]\d{1,2}[-./](?:19|20)\d\d\b/g, " ")
+      .replace(/\b(?:19|20)\d\d[-./]\d{1,2}[-./]\d{1,2}\b/g, " ")
+      .replace(new RegExp(`\\b(?:\\d{1,2}\\.?\\s+)?(?:de\\s+)?(?:${months})\\w*\\.?\\s+(?:de\\s+)?(?:19|20)\\d\\d\\b`, "gi"), " ");
     for (const match of text.matchAll(/(?<![\d.,x×])(19[5-9]\d|20[0-3]\d)(?![\d.,x×]|\s*(?:cc|km|mm|kg))/gi)) {
       if (!ownNumbers.has(match[1]!)) return Number(match[1]);
     }
@@ -107,6 +117,51 @@ const wanted: [Angle, number][] = [
   ["outra", 2],
 ];
 
+const bodyOrView =
+  /^(sedans?|saloons?|hatchbacks?|vans?|wagons?|estates?|station wagons?|coupes?|coupés?|convertibles?|cabriolets?|pickups?|pick-ups?|interiors?|rear views?|front views?|side views?)$/;
+
+/**
+ * How soon a subcategory is worth walking into, lowest first: a generation
+ * of the line ("Toyota Corolla (E210)"), then a variant of the same car (a
+ * body style, a view, a region or a powertrain: "… (E210) sedan", "… (E210,
+ * Japan)", "Toyota Corolla Hybrid (E210)"), then anything else.
+ */
+export function subcategoryRank(parent: string, subcategory: string): number {
+  const rest = lower(subcategory).replace(lower(parent), "").trim();
+  if (rest !== lower(subcategory)) {
+    if (/^\(.*\)$/.test(rest) || /^(mk|gen|generation|series|phase)\s*\w+$/.test(rest) || /^\d{4}/.test(rest)) return 0;
+    if (bodyOrView.test(rest.replace(/^\(.*?\)\s*/, ""))) return 1;
+  }
+  // Every word of the parent is in it: the same car, told apart by something else.
+  const words = (text: string) => lower(text).split(/[^a-z0-9]+/).filter(Boolean);
+  const own = new Set(words(subcategory));
+  return words(parent).every((word) => own.has(word)) ? 1 : 2;
+}
+
+/**
+ * Newer generations have bigger numbers ("(E210)" after "(E20)", "Mk8" after
+ * "Mk7", "(2019)"): the biggest number in the subcategory's own words, to walk
+ * the newest first.
+ */
+export function recencyHint(parent: string, subcategory: string): number {
+  // "(tenth generation)" counts as 10.
+  const rest = lower(subcategory)
+    .replace(lower(parent), "")
+    .replace(/\b(first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth)\b/g, (word) =>
+      String(ordinals.indexOf(word) + 1),
+    );
+  return Math.max(0, ...(rest.match(/\d+/g) ?? []).map(Number));
+}
+const ordinals = ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth"];
+
+/** Whether a file is named after the model ("2022 Fiat Pulse…"), not just a place ("Belo Horizonte 482.jpg"). */
+export function namesTheModel(file: string, label: string): boolean {
+  const name = ` ${lower(file).replace(/[^a-z0-9]+/g, " ")} `;
+  // The label's words after the first (usually the brand): "Pulse", "Corolla", "DB9".
+  const words = lower(label).replace(/[^a-z0-9]+/g, " ").trim().split(" ").slice(1).filter((word) => word.length >= 2);
+  return words.length === 0 || words.some((word) => name.includes(` ${word} `) || name.includes(` ${word}`));
+}
+
 /**
  * Photos of one shoot share a name but for a number ("DB9 001 (2261257153)",
  * "DB12 Auto Zuerich 2023 1X7A1462"); a crop shares the original's name.
@@ -130,7 +185,18 @@ export function seriesOf(file: string): string {
  */
 export function pickGallery(
   files: CommonsFile[],
-  { label, generations = [], now = new Date() }: { label: string; generations?: ModelGeneration[]; now?: Date },
+  {
+    label,
+    generations = [],
+    firstYear,
+    now = new Date(),
+  }: {
+    label: string;
+    generations?: ModelGeneration[];
+    /** The line's oldest model year in the catalog: older photos are of no use. */
+    firstYear?: number;
+    now?: Date;
+  },
 ): GalleryPhoto[] {
   const thisYear = now.getFullYear();
   const spans = generations
@@ -141,10 +207,11 @@ export function pickGallery(
   const usable: { file: CommonsFile; year?: number }[] = [];
   for (const file of files) {
     if (seen.has(file.file) || isNotTheCarFile(file.file) || file.categories.some(isNotTheCar)) continue;
+    if (!namesTheModel(file.file, label)) continue;
     if (file.width < 800 || file.height < 500) continue;
     seen.add(file.file);
     const year = photoYear(file.file, file.categories, label);
-    if (year !== undefined && year > thisYear + 1) continue;
+    if (year !== undefined && (year > thisYear + 1 || (firstYear !== undefined && year < firstYear - 1))) continue;
     usable.push({ file, ...(year !== undefined && { year }) });
   }
   const anyYear = usable.some((photo) => photo.year !== undefined);

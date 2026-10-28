@@ -18,8 +18,8 @@ interface Slide {
 const largePhoto = (thumb: string) => largerThumb(thumb, 960);
 
 /**
- * The model's photos for the entry's model year: the main one, then the
- * gallery's (front, rear, side, interior), with thumbnails and an enlarged
+ * The model's photos for the entry's model year: the gallery's (front, rear,
+ * side, interior), then the line's main one, with thumbnails and an enlarged
  * view. All are of the model line, not of this exact version.
  */
 export function ModelGallery({ entry }: { entry: CatalogEntry }) {
@@ -30,10 +30,10 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
   const dialog = useRef<HTMLDialogElement>(null);
 
   const main = model?.image;
-  const slides: Slide[] = [
-    ...(main ? [{ ...main, thumb: largePhoto(main.thumb) }] : []),
-    ...photosOfYear(gallery, entry.modelYear).filter((photo) => photo.page !== main?.page),
-  ];
+  // The gallery is split by generation, so it leads; the line's main photo
+  // (which may show another generation) comes last.
+  const ofYear = photosOfYear(gallery, entry.modelYear).filter((photo) => photo.page !== main?.page);
+  const slides: Slide[] = [...ofYear, ...(main ? [{ ...main, thumb: largePhoto(main.thumb) }] : [])];
   const index = Math.min(current, Math.max(0, slides.length - 1));
   const slide = slides[index];
   const label = model?.label ?? entry.family;

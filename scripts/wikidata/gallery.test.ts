@@ -1,5 +1,15 @@
 import { describe, expect, it } from "vitest";
-import { angleOf, isNotTheCar, isNotTheCarFile, photoYear, pickGallery, seriesOf } from "./gallery.ts";
+import {
+  angleOf,
+  isNotTheCar,
+  isNotTheCarFile,
+  namesTheModel,
+  photoYear,
+  pickGallery,
+  recencyHint,
+  seriesOf,
+  subcategoryRank,
+} from "./gallery.ts";
 import type { CommonsFile } from "./gallery.ts";
 
 const file = (name: string, fields: Partial<CommonsFile> = {}): CommonsFile => ({
@@ -38,6 +48,37 @@ describe("gallery", () => {
     expect(photoYear("Peugeot 2008 Allure 2021.jpg", [], "Peugeot 2008")).toBe(2021);
     expect(photoYear("Peugeot 2008 GT.jpg", [], "Peugeot 2008")).toBeUndefined();
     expect(photoYear("Onix.jpg", ["2019 Chevrolet Onix"], "Chevrolet Onix")).toBe(2019);
+    // The date the photo was taken is not the car's year.
+    expect(photoYear("1st Honda Civic -- 03-21-2012.JPG", [], "Honda Civic")).toBeUndefined();
+    expect(photoYear("Honda Civic (K20 SVG) - 7 June 2026.jpg", [], "Honda Civic")).toBeUndefined();
+    expect(photoYear("Belo Horizonte (December 2024) 482.jpg", [], "Hyundai HB20")).toBeUndefined();
+    expect(photoYear("2015 Volkswagen Gol Trend - 2024-04-29.jpg", [], "Volkswagen Gol")).toBe(2015);
+  });
+
+  it("walks into the generations before variants and other categories", () => {
+    expect(subcategoryRank("Toyota Corolla", "Toyota Corolla (E210)")).toBe(0);
+    expect(subcategoryRank("Toyota Corolla (E210)", "Toyota Corolla (E210) sedan")).toBe(1);
+    expect(subcategoryRank("Chevrolet Onix (GEM)", "Chevrolet Onix (GEM) hatchback")).toBe(1);
+    expect(subcategoryRank("Toyota Corolla (E210)", "Toyota Corolla (E210, Japan)")).toBe(1);
+    expect(subcategoryRank("Toyota Corolla (E210)", "Toyota Corolla Hybrid (E210)")).toBe(1);
+    expect(subcategoryRank("Toyota Corolla", "Toyota Corolla Verso")).toBe(1);
+    expect(subcategoryRank("Fiat Pulse", "Abarth Pulse")).toBe(2);
+    // Newest first: E210 before E20, Mk8 before Mk7.
+    expect(recencyHint("Toyota Corolla", "Toyota Corolla (E210)")).toBeGreaterThan(recencyHint("Toyota Corolla", "Toyota Corolla (E20)"));
+    expect(recencyHint("Volkswagen Golf", "Volkswagen Golf Mk8")).toBe(8);
+    expect(recencyHint("Honda Civic", "Honda Civic (tenth generation)")).toBe(10);
+  });
+
+  it("leaves out photos older than the line's first year in the catalog", () => {
+    const files = [file("1976 Toyota Corolla front.jpg"), file("2021 Toyota Corolla front.jpg")];
+    const gallery = pickGallery(files, { label: "Toyota Corolla", firstYear: 2009, now });
+    expect(gallery.map((photo) => photo.file)).toEqual(["2021 Toyota Corolla front.jpg"]);
+  });
+
+  it("keeps photos named after the model, not street scenes", () => {
+    expect(namesTheModel("2023 Hyundai HB20S 1.0.jpg", "Hyundai HB20")).toBe(true);
+    expect(namesTheModel("VW Gol Sedán Trendline 2009.jpg", "Volkswagen Gol")).toBe(true);
+    expect(namesTheModel("Belo Horizonte (December 2024) 482.jpg", "Hyundai HB20")).toBe(false);
   });
 
   it("knows the photos of one shoot and a crop", () => {

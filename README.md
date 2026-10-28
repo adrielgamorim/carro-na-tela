@@ -52,9 +52,12 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   estado, custo por km, depreciação média da versão, "Sobre o modelo" (Wikipedia/Wikidata) e frota
   em circulação (Senatran). Nas marcas da Stellantis, porta-malas e torque dos releases de imprensa,
   com link para o release (também no comparador).
-- No catálogo, a foto, o nome ou "Detalhes" abrem a página da versão (`?versao=<id>`), com foto
-  grande, todos os anos-modelo, preço, ficha, custos e histórico. O link pode ser compartilhado, e
+- No catálogo, a foto, o nome ou "Detalhes" abrem a página da versão (`?versao=<id>`), com
+  galeria, todos os anos-modelo, preço, ficha, custos e histórico. O link pode ser compartilhado, e
   o botão Voltar do navegador retorna à lista com os mesmos filtros e a mesma posição.
+- Galeria da página da versão: até 8 fotos da geração do ano escolhido (Wikimedia Commons), com
+  frente, traseira, lateral e interior marcados nas miniaturas, crédito de cada foto e vista
+  ampliada. São 8.243 fotos de 539 modelos.
 - Comparador lado a lado de até 4 veículos, com premissas editáveis: estado (IPVA e preço do
   combustível pela ANP) e preços próprios.
 - Favoritos: a estrela no card ou na página da versão guarda o ano-modelo e o preço FIPE daquele
@@ -86,6 +89,7 @@ As chaves ficam só no servidor (`.env`, lido pelo Vite e pelos scripts). Nunca 
 npm run crawl:fipe       # varredura da FIPE: listagem, depois preços → data/fipe/
 npm run parse:pbev       # PDFs do INMETRO → data/inmetro/pbev-<ano>.json
 npm run fetch:wikidata   # modelos, resumos e créditos das fotos → data/wikidata/
+npm run fetch:galeria    # galeria de fotos por modelo (Commons) → data/wikidata/gallery.json
 npm run fetch:frota      # frota Senatran por marca/modelo e ano (mensal) → data/frota/frota.json
 npm run fetch:anp        # preço médio dos combustíveis por estado → public/catalog/fuel-prices.json
 npm run fetch:wmi        # códigos de fabricante do chassi → public/catalog/wmi.json
@@ -104,6 +108,7 @@ npm run unschedule:daily # remove a tarefa agendada
 | FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
 | Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.917 versões com foto |
+| Wikimedia Commons (categorias) | Galeria por geração: frente, traseira, lateral, interior | `fetch:galeria` | De vez em quando | 8.243 fotos de 539 modelos |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
 | Releases da Stellantis Brasil | Porta-malas e torque (revisados à mão) | `crawl:imprensa`, `extract:imprensa` | De vez em quando | 358 versões (Fiat, Jeep, Citroën, Peugeot, RAM, Leapmotor) |
@@ -149,6 +154,25 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   confiança é "exata" quando a versão também bate.
 - Ajustes em `data/inmetro/overrides.json`: forçar uma linha (`use`), pular tabelas (`skipTables`)
   ou remover o casamento (`none`). O build avisa quando um `use` não acha a linha.
+
+### Galeria de fotos (Wikimedia Commons)
+
+- `npm run fetch:galeria` parte da categoria de cada modelo no Commons (propriedade P373 do
+  Wikidata) e desce até 3 níveis, até 14 categorias por modelo: primeiro a geração mais nova e as
+  carrocerias, mercados e interiores dela, depois a geração seguinte; outros modelos da família
+  ("Corolla Verso") só se sobrar espaço. Quando uma geração nova rende menos de 10 fotos (árvores
+  fundas, como a do Corolla), uma busca `deepcat:` traz as fotos dela de uma vez.
+- Ficam de fora corrida, táxi, polícia, acidentes, miniaturas, desenhos, detalhes (emblema, roda,
+  motor), carros de preparadoras e fotos cujo nome não cita o modelo (cenas de rua). O ano vem do
+  nome do arquivo (não a data em que a foto foi tirada) e põe a foto na geração certa; fotos
+  anteriores ao primeiro ano do modelo no catálogo saem. Por geração, até 8 fotos, uma de cada
+  ângulo primeiro, preferindo as maiores, horizontais e do Brasil.
+- Com bot password no `.env` (`WIKIMEDIA_BOT_USER`, `WIKIMEDIA_BOT_PASSWORD`; Special:BotPasswords,
+  só leitura) o script faz login e vai a ~100 pedidos por minuto; sem conta, a ~10. Cada resposta
+  fica em `.cache/galeria` e uma rodada interrompida continua de onde parou; falhas passageiras
+  do Wikimedia (503, banco de dados, busca ocupada) esperam e tentam de novo.
+- O `build:catalog` escreve um arquivo por modelo em `public/catalog/galeria/<id>.json` (4,6 MB no
+  total), que a página da versão carrega só quando abre.
 
 ### Wikidata (fotos e descrições)
 

@@ -18,15 +18,18 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import type { CatalogIndexFile } from "../../src/catalog/indexFormat.ts";
 import type { ModelGeneration } from "./generations.ts";
-import { isNotTheCar, pickGallery } from "./gallery.ts";
+import { isNotTheCar, pickGallery, recencyHint, subcategoryRank } from "./gallery.ts";
 import type { CommonsFile, GalleryPhoto } from "./gallery.ts";
 
 const cacheDir = ".cache/galeria";
 const out = "data/wikidata/gallery.json";
 const commons = "commons.wikimedia.org";
 const headers = { "User-Agent": "carro-na-tela/1.0 (https://github.com/adrielgamorim/carro-na-tela)" };
-const maxDepth = 2;
-const maxCategoriesPerModel = 8;
+// Some lines nest photos deep: generation → body style → market (Toyota Corolla).
+const maxDepth = 3;
+const maxCategoriesPerModel = 14;
+// Searches of a whole generation's tree per model, when the walk found little there.
+const deepSearches = 3;
 
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -98,9 +101,26 @@ async function api<T>(host: string, params: Record<string, string>): Promise<T> 
       keepCookies(response);
       const text = await response.text();
       const error = (JSON.parse(text) as { error?: { code: string } }).error;
-      if (error) throw new Error(`${host}: ${error.code}`);
-      await writeFile(cacheFile, text);
-      return JSON.parse(text) as T;
+      if (!error) {
+        await writeFile(cacheFile, text);
+        return JSON.parse(text) as T;
+      }
+      // The session expired: log in again and repeat the request.
+      if (error.code === "assertuserfailed" && botUser && botPassword && attempt < 8) {
+        console.log("  sessão expirou: entrando de novo");
+        cookies.clear();
+        await login(botUser, botPassword);
+        continue;
+      }
+      // A database or server hiccup on Wikimedia's side ("internal_api_error_DBConnectionError",
+      // "maxlag", "readonly", a busy search): wait and try again, like a 503.
+      if (/^(internal_api_error|maxlag|readonly|ratelimited)|too-busy/.test(error.code) && attempt < 8) {
+        const wait = 15 * (attempt + 1);
+        console.log(`  ${error.code}: esperando ${wait} s`);
+        await sleep(wait * 1000);
+        continue;
+      }
+      throw new Error(`${host}: ${error.code}`);
     }
     if ((response.status === 429 || response.status === 503) && attempt < 8) {
       const wait = Number(response.headers.get("retry-after") ?? 30);
@@ -143,6 +163,24 @@ interface Member {
   categories?: { title: string }[];
 }
 
+/** The photo files of an API page list, with their size and visible categories. */
+function photoFiles(pages: Member[]): CommonsFile[] {
+  const files: CommonsFile[] = [];
+  for (const member of pages) {
+    const info = member.imageinfo?.[0];
+    if (member.ns === 6 && info?.thumburl && /\.(jpe?g|png|webp)$/i.test(member.title)) {
+      files.push({
+        file: member.title.replace(/^File:/, ""),
+        thumb: info.thumburl,
+        width: info.width,
+        height: info.height,
+        categories: (member.categories ?? []).map((item) => item.title.replace(/^Category:/, "")),
+      });
+    }
+  }
+  return files;
+}
+
 /** Files and subcategories of a category (up to 200 files). */
 async function members(category: string) {
   const files: CommonsFile[] = [];
@@ -162,23 +200,36 @@ async function members(category: string) {
       cllimit: "max",
       ...next,
     });
-    for (const member of result.query?.pages ?? []) {
+    const pages = result.query?.pages ?? [];
+    for (const member of pages) {
       if (member.ns === 14) subcategories.push(member.title.replace(/^Category:/, ""));
-      const info = member.imageinfo?.[0];
-      if (member.ns === 6 && info?.thumburl && /\.(jpe?g|png|webp)$/i.test(member.title)) {
-        files.push({
-          file: member.title.replace(/^File:/, ""),
-          thumb: info.thumburl,
-          width: info.width,
-          height: info.height,
-          categories: (member.categories ?? []).map((item) => item.title.replace(/^Category:/, "")),
-        });
-      }
     }
+    files.push(...photoFiles(pages));
     if (!result.continue) break;
     next = result.continue;
   }
   return { files, subcategories };
+}
+
+/**
+ * Photos anywhere under a category, however deep (Commons search "deepcat:"),
+ * in one request: for generations whose photos sit below body styles and
+ * markets (Toyota Corolla (E210) → sedan → Corolla Altis (E210)).
+ */
+async function deepPhotos(category: string): Promise<CommonsFile[]> {
+  const result = await api<{ query?: { pages: Member[] } }>(commons, {
+    action: "query",
+    generator: "search",
+    gsrsearch: `deepcat:"${category}" filetype:bitmap`,
+    gsrnamespace: "6",
+    gsrlimit: "50",
+    prop: "imageinfo|categories",
+    iiprop: "url|size",
+    iiurlwidth: "960",
+    clshow: "!hidden",
+    cllimit: "max",
+  });
+  return photoFiles(result.query?.pages ?? []).map((file) => ({ ...file, subcategory: category }));
 }
 
 /** Author and license of the chosen files, 50 per request. */
@@ -210,26 +261,89 @@ async function credits(files: string[]) {
   return found;
 }
 
+// The oldest model year of each model's versions in the catalog (0 km counts as this year).
+const firstYearOf = new Map<string, number>();
+for (const version of index.versions) {
+  const model = version.w === undefined ? undefined : index.models?.[version.w];
+  if (!model) continue;
+  const years = version.y.map(([yearCode]) => Number(yearCode.split("-")[0])).filter((year) => year < 3000);
+  if (!years.length) continue;
+  firstYearOf.set(model.id, Math.min(firstYearOf.get(model.id) ?? Infinity, ...years));
+}
+
 const gallery: Record<string, GalleryPhoto[]> = {};
 let done = 0;
 for (const model of models) {
   const root = categoryOf.get(model.id);
   if (!root) continue;
-  // Breadth first: the generations first, then their body styles.
+  // The newest generation and its body styles and interiors first, then the
+  // next generation; the line's sibling models ("Corolla Verso", "Corolla
+  // Axio") only with room to spare. Each subcategory goes with the generation
+  // (depth 1) it hangs from.
+  type Step = {
+    category: string;
+    depth: number;
+    rank: number;
+    recency: number;
+    branch: [number, number];
+    /** The generation (depth 1) it hangs from. */
+    top?: string;
+  };
   const files: CommonsFile[] = [];
-  const queue: { category: string; depth: number }[] = [{ category: root, depth: 0 }];
+  const queue: Step[] = [{ category: root, depth: 0, rank: 0, recency: 0, branch: [0, Infinity] }];
   const visited = new Set<string>();
+  const generationsFound: { category: string; recency: number }[] = [];
+  const filesUnder = new Map<string, number>();
   while (queue.length && visited.size < maxCategoriesPerModel) {
-    const { category, depth } = queue.shift()!;
-    if (visited.has(category)) continue;
-    visited.add(category);
-    const found = await members(category);
-    files.push(...found.files.map((file) => (depth ? { ...file, subcategory: category } : file)));
-    if (depth < maxDepth) {
-      for (const sub of found.subcategories) if (!isNotTheCar(sub)) queue.push({ category: sub, depth: depth + 1 });
+    queue.sort(
+      (a, b) =>
+        a.branch[0] - b.branch[0] ||
+        b.branch[1] - a.branch[1] ||
+        a.depth - b.depth ||
+        a.rank - b.rank ||
+        b.recency - a.recency,
+    );
+    const step = queue.shift()!;
+    if (visited.has(step.category)) continue;
+    visited.add(step.category);
+    const found = await members(step.category);
+    files.push(...found.files.map((file) => (step.depth ? { ...file, subcategory: step.category } : file)));
+    if (step.top) filesUnder.set(step.top, (filesUnder.get(step.top) ?? 0) + found.files.length);
+    if (step.depth < maxDepth) {
+      for (const sub of found.subcategories) {
+        if (isNotTheCar(sub)) continue;
+        const rank = subcategoryRank(step.category, sub);
+        const recency = recencyHint(step.category, sub);
+        if (step.depth === 0 && rank === 0) generationsFound.push({ category: sub, recency });
+        queue.push({
+          category: sub,
+          depth: step.depth + 1,
+          rank,
+          recency,
+          branch: step.depth === 0 ? [rank, recency] : step.branch,
+          top: step.depth === 0 ? sub : step.top,
+        });
+      }
     }
   }
-  const photos = pickGallery(files, { label: model.label, generations: generations[model.id] });
+  // The newest generations the walk found few photos in: search their whole tree.
+  const sparse = generationsFound
+    .sort((a, b) => b.recency - a.recency)
+    .slice(0, deepSearches)
+    .filter(({ category }) => (filesUnder.get(category) ?? 0) < 10);
+  for (const { category } of sparse) {
+    // A complement: when the search stays busy, the walk's photos are enough.
+    const found = await deepPhotos(category).catch((error: unknown) => {
+      console.log(`  busca em ${category} falhou: ${error instanceof Error ? error.message : String(error)}`);
+      return [];
+    });
+    files.push(...found);
+  }
+  const photos = pickGallery(files, {
+    label: model.label,
+    generations: generations[model.id],
+    firstYear: firstYearOf.get(model.id),
+  });
   if (photos.length) gallery[model.id] = photos;
   if (++done % 25 === 0) console.log(`${done}/${categoryOf.size} modelos (${Object.keys(gallery).length} com galeria)`);
 }
