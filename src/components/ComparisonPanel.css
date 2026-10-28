@@ -26,17 +26,17 @@
 
 .comparison-heading .eyebrow {
   margin: 0 0 4px;
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .comparison-heading h2 {
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .comparison-heading h2 span {
   margin-left: 4px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -76,7 +76,7 @@
 .comparison-index {
   padding-top: 2px;
   color: var(--muted-soft);
-  font: 600 12px var(--display);
+  font: 600 13px var(--display);
 }
 
 .comparison-item-copy {
@@ -88,7 +88,7 @@
 .comparison-item-copy strong {
   overflow: hidden;
   color: var(--ink);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 650;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -97,18 +97,18 @@
 .comparison-item-copy span,
 .comparison-item-copy small {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .comparison-item-copy b {
   margin-top: 3px;
   color: var(--forest);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
 .comparison-item-copy small {
-  font-size: 8px;
+  font-size: 10px;
 }
 
 .remove-vehicle {
@@ -140,14 +140,14 @@
 
 .price-difference span {
   color: var(--muted);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
 
 .price-difference strong {
   color: var(--ink);
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 650;
 }
 
@@ -165,7 +165,7 @@
   border-radius: 6px;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -186,7 +186,7 @@
   border: 0;
   cursor: pointer;
   font: inherit;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 600;
 }
 
@@ -215,7 +215,7 @@
 .comparison-note p {
   margin: 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.6;
 }
 
@@ -226,7 +226,7 @@
   padding: 11px 16px;
   color: var(--muted);
   border-top: 1px solid var(--line-soft);
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.7px;
 }

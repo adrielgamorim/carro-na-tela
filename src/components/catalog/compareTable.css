@@ -47,7 +47,7 @@
 .compare-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 12px;
+  font-size: 13px;
 }
 .compare-table th,
 .compare-table td {
@@ -66,7 +66,7 @@
 .compare-table thead th span {
   display: block;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -74,7 +74,7 @@
   display: block;
   margin: 2px 0 4px;
   color: var(--ink);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.3;
 }
 .compare-table thead th:first-child,
@@ -106,7 +106,7 @@
   margin: 0;
   padding: 12px 20px;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 .compare-note {
   border-top: 1px solid var(--line-soft);

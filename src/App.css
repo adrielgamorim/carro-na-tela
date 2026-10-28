@@ -54,7 +54,7 @@
   gap: 8px;
   color: var(--muted);
   border-bottom: 2px solid transparent;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
 }
@@ -74,7 +74,7 @@
   color: var(--ink);
   background: var(--mist);
   border-radius: 99px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /* The star shows on phones too, where the label is hidden. */
@@ -92,7 +92,7 @@
   align-items: center;
   gap: 10px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -132,7 +132,7 @@
 .eyebrow {
   margin: 0 0 11px;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 1.3px;
 }
@@ -170,7 +170,7 @@ p {
 .heading-copy {
   margin: 10px 0 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .reference-stamp {
@@ -202,14 +202,14 @@ p {
 
 .stamp-label {
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.9px;
 }
 
 .reference-stamp strong {
   color: var(--ink);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -237,7 +237,7 @@ p {
   color: #fff;
   background: var(--forest);
   border-radius: 6px;
-  font: 600 14px var(--display);
+  font: 600 15px var(--display);
 }
 
 .section-heading h2,
@@ -245,7 +245,7 @@ p {
 .comparison-heading h2 {
   margin: 0;
   color: var(--ink);
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 650;
 }
 
@@ -253,7 +253,7 @@ p {
 .results-heading p {
   margin: 4px 0 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .field-group {
@@ -264,7 +264,7 @@ p {
 
 .field-label {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 650;
 }
 
@@ -285,7 +285,7 @@ p {
   border: 1px solid var(--line);
   border-radius: 5px;
   font: inherit;
-  font-size: 11px;
+  font-size: 12px;
   text-overflow: ellipsis;
   cursor: pointer;
 }
@@ -332,7 +332,7 @@ p {
   color: var(--muted);
   background: transparent;
   border: 0;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .expand-action,
@@ -396,7 +396,7 @@ p {
 .empty-results strong,
 .comparison-empty strong {
   color: var(--ink);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 650;
 }
 
@@ -405,7 +405,7 @@ p {
   max-width: 260px;
   margin: 5px 0 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.6;
 }
 
@@ -415,11 +415,11 @@ p {
   gap: 14px;
   padding: 20px 3px 0;
   color: var(--muted);
-  font-size: 9px;
+  font-size: 11px;
 }
 
 .page-footer > span:first-child {
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.8px;
 }
@@ -481,6 +481,13 @@ a:focus-visible {
     }
 }
 
+/* The reference month is also in the pages' headings; the links need the room. */
+@media (max-width: 1000px) {
+  .topbar-reference {
+      display: none;
+    }
+}
+
 @media (max-width: 820px) {
   .topbar {
       gap: 25px;
@@ -505,7 +512,7 @@ a:focus-visible {
       gap: 13px;
     }
   .nav-link {
-      font-size: 11px;
+      font-size: 12px;
     }
   .topbar-reference,
     .nav-label-extra {
@@ -526,7 +533,7 @@ a:focus-visible {
       font-size: 36px;
     }
   .heading-copy {
-      font-size: 12px;
+      font-size: 13px;
     }
   .reference-stamp {
       width: 100%;
@@ -541,7 +548,7 @@ a:focus-visible {
     }
   .select-wrap select {
       padding-left: 8px;
-      font-size: 10px;
+      font-size: 12px;
     }
   .sort-control {
       height: 33px;
@@ -577,7 +584,7 @@ a:focus-visible {
   gap: 10px;
   margin: 48px 0;
   color: var(--muted);
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .link-button {
@@ -587,7 +594,7 @@ a:focus-visible {
   border: 0;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: underline;
   text-underline-offset: 2px;

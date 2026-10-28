@@ -53,7 +53,7 @@
   border-radius: 5px;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 650;
 }
 
@@ -70,12 +70,12 @@
 .vin-search-error {
   margin: 8px 0 0;
   color: var(--danger);
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .vin-details {
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .vin-details dl {
@@ -87,7 +87,7 @@
 
 .vin-details dt {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;

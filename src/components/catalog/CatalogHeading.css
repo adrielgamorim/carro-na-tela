@@ -6,7 +6,7 @@
 
 .stamp-detail {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .catalog-notice {
@@ -19,7 +19,7 @@
   background: var(--warn-bg);
   border: 1px solid var(--warn-line);
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .catalog-notice svg {

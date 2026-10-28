@@ -16,7 +16,7 @@
   padding: 0 10px 0 6px;
   color: var(--forest);
   border-radius: 6px;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 650;
   text-decoration: none;
 }
@@ -68,7 +68,7 @@
 
 .vehicle-page-reference {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .vehicle-page .vehicle-details {
@@ -81,11 +81,11 @@
 }
 
 .vehicle-page .vehicle-detail-grid dt {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .vehicle-page .vehicle-detail-grid dd {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .vehicle-page-empty {
@@ -95,7 +95,7 @@
   background: var(--surface-alt);
   border: 1px dashed var(--line);
   border-radius: 8px;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 @media (max-width: 760px) {

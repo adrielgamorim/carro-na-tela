@@ -22,7 +22,7 @@
   color: var(--on-accent);
   background: var(--acid);
   border-radius: 99px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .catalog-search {
@@ -49,12 +49,12 @@
   background: transparent;
   border: 0;
   outline: 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .facet-label {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -69,7 +69,7 @@
   min-height: 30px;
   color: var(--ink);
   cursor: pointer;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .facet-check input,
@@ -91,7 +91,7 @@
 .facet-toggle small,
 .facet-chip small {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-variant-numeric: tabular-nums;
 }
 
@@ -104,7 +104,7 @@
 .facet-note {
   margin: 0;
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
   line-height: 1.45;
 }
 

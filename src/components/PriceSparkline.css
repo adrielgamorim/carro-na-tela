@@ -19,7 +19,7 @@
 
 .sparkline-label {
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 650;
   text-transform: uppercase;
   letter-spacing: 0.4px;
@@ -32,7 +32,7 @@
 
 .sparkline-change {
   color: var(--muted);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .sparkline-plot {

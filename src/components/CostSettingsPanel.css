@@ -2,7 +2,7 @@
 
 .cost-settings {
   margin-top: 8px;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .cost-settings summary {
@@ -28,7 +28,7 @@
   gap: 4px;
   min-width: 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 650;
 }
 
@@ -52,14 +52,14 @@
   border: 1px solid var(--line);
   border-radius: 5px;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .cost-reset {
   grid-column: 1 / -1;
   justify-self: start;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .cost-field-edited {
@@ -70,7 +70,7 @@
   grid-column: 1 / -1;
   margin: 0;
   color: var(--muted);
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.45;
 }
 

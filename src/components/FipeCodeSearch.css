@@ -43,7 +43,7 @@
   border: 0;
   outline: 0;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.3px;
 }
@@ -76,7 +76,7 @@
   border-radius: 5px;
   cursor: pointer;
   font: inherit;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 650;
 }
 
@@ -95,7 +95,7 @@
   min-height: 14px;
   margin: -4px 0 0;
   color: var(--forest);
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .fipe-code-error {
