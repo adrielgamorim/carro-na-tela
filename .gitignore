@@ -34,3 +34,7 @@ dist-ssr
 # Press release cache (npm run crawl:imprensa)
 data/imprensa/stellantis-releases.jsonl
 data/imprensa/stellantis-candidates.json
+
+# Fichas técnicas baixadas à mão e a lista gerada (npm run fichas:lista)
+data/fichas/pdf/
+data/fichas/lista.html

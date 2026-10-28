@@ -53,6 +53,8 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
     const photoIndex = new Map<number, number>();
     const press: NonNullable<CatalogIndexFile["press"]> = [];
     const pressIndex = new Map<number, number>();
+    const sheets: NonNullable<CatalogIndexFile["sheets"]> = [];
+    const sheetIndex = new Map<number, number>();
     const remap = (index: Map<number, number>, from: number, add: () => void, size: () => number) => {
       if (!index.has(from)) {
         index.set(from, size());
@@ -83,6 +85,13 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
             ) as [number, number],
         );
       }
+      if (version.t && file.sheets) {
+        copy.t = version.t.map((sheet) =>
+          sheet < 0
+            ? sheet
+            : remap(sheetIndex, sheet, () => sheets.push(at(file.sheets!, sheet, "ficha")), () => sheets.length),
+        );
+      }
       if (version.p !== undefined && file.fleet) {
         copy.p = remap(lineIndex, version.p, () => lines.push(at(file.fleet!.lines, version.p!, "linha da frota")), () => lines.length);
       }
@@ -99,6 +108,7 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
       ...(file.models && { models }),
       ...(file.photos && { photos }),
       ...(file.press && press.length > 0 && { press }),
+      ...(file.sheets && sheets.length > 0 && { sheets }),
       ...(file.fleet && {
         fleet: {
           reference: file.fleet.reference,

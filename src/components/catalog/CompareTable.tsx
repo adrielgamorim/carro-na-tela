@@ -70,6 +70,11 @@ function costRows({ uf, prices }: CostSettings): Row[] {
   ];
 }
 
+const trunkOf = (entry: CatalogEntry | undefined) =>
+  entry?.press?.sheet?.specs.trunkLiters ?? entry?.press?.trunk?.value;
+const torqueOf = (entry: CatalogEntry | undefined) =>
+  entry?.press?.sheet?.specs.torqueKgfm ?? entry?.press?.torque?.value;
+
 const rows: Row[] = [
   {
     label: "Preço FIPE",
@@ -98,17 +103,23 @@ const rows: Row[] = [
   { label: "Câmbio", value: (_, entry) => (entry ? transmissionLabel(entry) : null) },
   { label: "Configuração", value: (_, entry) => (entry ? bodyLabel(entry) : null) },
   { label: "Porte", value: (_, entry) => (entry?.size ? sizeLabels[entry.size] : null) },
-  // From the carmaker's press releases (Stellantis brands only).
+  // From the carmaker's spec sheet of the version, else its press releases (Stellantis brands only).
   {
     label: "Porta-malas",
-    value: (_, entry) => (entry?.press?.trunk ? formatTrunk(entry.press.trunk.value) : null),
-    score: (_, entry) => entry?.press?.trunk?.value ?? null,
+    value: (_, entry) => {
+      const liters = trunkOf(entry);
+      return liters ? formatTrunk(liters) : null;
+    },
+    score: (_, entry) => trunkOf(entry) ?? null,
     best: "max",
   },
   {
     label: "Torque",
-    value: (_, entry) => (entry?.press?.torque ? formatTorque(entry.press.torque.value) : null),
-    score: (_, entry) => entry?.press?.torque?.value ?? null,
+    value: (_, entry) => {
+      const kgfm = torqueOf(entry);
+      return kgfm ? formatTorque(kgfm) : null;
+    },
+    score: (_, entry) => torqueOf(entry) ?? null,
     best: "max",
   },
   // Approximate: the model line's size and mass (Wikidata).

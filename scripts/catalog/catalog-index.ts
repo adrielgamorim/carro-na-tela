@@ -15,6 +15,8 @@ import { commonsFile, toCatalogModel, versionYears } from "../wikidata/details.t
 import { generationOf } from "../wikidata/generations.ts";
 import { pressSpecsOf } from "../imprensa/facts.ts";
 import type { PressFact } from "../imprensa/facts.ts";
+import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
+import type { ReadSheet } from "../fichas/sheets.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
@@ -95,11 +97,19 @@ export interface BuildOptions {
   };
   /** Reviewed press release figures (data/imprensa/stellantis.json). */
   press?: PressFact[];
+  /** Spec sheets read from the carmaker's PDFs (data/fichas/fichas.json). */
+  sheets?: ReadSheet[];
 }
 
 const sameText = (left: string, right: string) =>
   left.replace(/\s+/g, " ").trim().toLocaleLowerCase("pt-BR") ===
   right.replace(/\s+/g, " ").trim().toLocaleLowerCase("pt-BR");
+
+/** Engine size of a version: from its FIPE name, else from INMETRO ("PULSE AUDACE Turbo 200" → "1.0T-12V"). */
+function engineLitersOf(version: WireVersion): number | undefined {
+  const pbev = /(\d)[.,](\d)/.exec(version.i?.engine ?? "");
+  return version.a?.engineLiters ?? (pbev ? Number(`${pbev[1]}.${pbev[2]}`) : undefined);
+}
 
 function findOverride(overrides: InmetroOverride[], brand: string, model: string) {
   return overrides.find(
@@ -122,6 +132,7 @@ export function buildCatalogIndex(
     wikidata,
     fleet,
     press,
+    sheets,
   }: BuildOptions = {},
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
@@ -354,13 +365,11 @@ export function buildCatalogIndex(
     };
     for (const version of sorted) {
       const fuel = versionFuel.get(version) ?? "";
-      // Some FIPE names omit the engine size ("PULSE AUDACE Turbo 200"); INMETRO has it.
-      const pbevLiters = /(\d)[.,](\d)/.exec(version.i?.engine ?? "");
       const target = {
         brand: brandName(version),
         family: getModelFamily(version.n),
         name: version.n,
-        engineLiters: version.a?.engineLiters ?? (pbevLiters ? Number(`${pbevLiters[1]}.${pbevLiters[2]}`) : undefined),
+        engineLiters: engineLitersOf(version),
         valves: version.a?.valves,
         turbo: version.a?.aspiration === "turbo",
         diesel: /diesel/i.test(fuel),
@@ -370,6 +379,39 @@ export function buildCatalogIndex(
         return [indexOf(trunk), indexOf(torque)] as [number, number];
       });
       if (perYear.some(([trunk, torque]) => trunk >= 0 || torque >= 0)) version.r = perYear;
+    }
+  }
+
+  // Spec sheets: the one of each version-year, by trim, engine, transmission and year.
+  const sheetList: NonNullable<CatalogIndexFile["sheets"]> = [];
+  if (sheets?.length) {
+    const sheetIndex = new Map<ReadSheet, number>();
+    // Each line's trim words, to read them in the sheets' titles.
+    const lineNames = new Map<string, string[]>();
+    for (const version of sorted) {
+      const line = `${brandName(version)}|${getModelFamily(version.n)}`;
+      lineNames.set(line, [...(lineNames.get(line) ?? []), version.n]);
+    }
+    const lineTrims = new Map([...lineNames].map(([line, names]) => [line, trimsOf(names, line.split("|")[1] ?? "")]));
+    for (const version of sorted) {
+      const lineKey = `${brandName(version)}|${getModelFamily(version.n)}`;
+      const target = {
+        brand: brandName(version),
+        family: getModelFamily(version.n),
+        name: version.n,
+        engineLiters: engineLitersOf(version),
+        turbo: version.a?.aspiration === "turbo",
+      };
+      const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
+        const sheet = sheetOfVersion(sheets, { ...target, modelYear }, lineTrims.get(lineKey) ?? new Set());
+        if (!sheet) return -1;
+        if (!sheetIndex.has(sheet)) {
+          sheetIndex.set(sheet, sheetList.length);
+          sheetList.push({ title: sheet.title, page: sheet.page, specs: sheet.specs });
+        }
+        return sheetIndex.get(sheet)!;
+      });
+      if (perYear.some((sheet) => sheet >= 0)) version.t = perYear;
     }
   }
 
@@ -383,6 +425,7 @@ export function buildCatalogIndex(
     ...(wikidata && { models }),
     ...(photos.length > 0 && { photos }),
     ...(pressFigures.length > 0 && { press: pressFigures }),
+    ...(sheetList.length > 0 && { sheets: sheetList }),
     ...(fleet &&
       fleetLines && {
         fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },

@@ -32,6 +32,10 @@ disponibilidade dela.
       Medir de novo quando entrarem motos e caminhões.
 - [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
 
+- [ ] 🟢 Fichas técnicas: baixar as da lista (`data/fichas/lista.html`) e melhorar o casamento das
+      que ainda não acham versão: anos em faixa ("Rampage 2023 a 2025"), abreviações da FIPE
+      ("ATTRAC.", "Dark Ed."), vans e minibus com nomes que a FIPE não usa.
+
 ## Futuro
 
 - Conta para sincronizar os favoritos entre aparelhos: login pelo Cloudflare Access (código por
@@ -45,6 +49,8 @@ disponibilidade dela.
 
 ## Concluído
 
+- [x] Fichas técnicas da Stellantis: lista dos 460 links, checklist para baixar à mão, leitor dos
+      PDFs e casamento com as versões FIPE; números exatos na ficha e no comparador.
 - [x] Galeria de fotos na página da versão: até 8 fotos por geração do Wikimedia Commons, com ângulo
       (frente, traseira, lateral, interior), crédito e vista ampliada. 8.243 fotos de 539 modelos.
 - [x] Favoritos no navegador: estrela no card e na página da versão, aba Favoritos com a variação da

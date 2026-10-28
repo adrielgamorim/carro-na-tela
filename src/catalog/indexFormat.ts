@@ -10,7 +10,7 @@ import { versionLines } from "./sublines.ts";
 import { catalogBrand } from "./brands.ts";
 import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
-import type { PressSource, PressSpecs } from "./press.ts";
+import type { PressSheet, PressSource, PressSpecs } from "./press.ts";
 import type {
   CatalogEntry,
   CatalogIndex,
@@ -49,6 +49,8 @@ export interface WireVersion {
    * (-1 for none). Omitted when no year has any.
    */
   r?: [number, number][];
+  /** Per entry of `y`, an index into `sheets` (-1 for none). Omitted when no year has one. */
+  t?: number[];
 }
 
 /** A trunk or torque figure from a press release, referenced by `WireVersion.r`. */
@@ -73,6 +75,8 @@ export interface CatalogIndexFile {
   photos?: CatalogPhoto[];
   /** Press release figures referenced by `WireVersion.r` (data/imprensa). */
   press?: WirePressFigure[];
+  /** Spec sheets referenced by `WireVersion.t` (data/fichas). */
+  sheets?: PressSheet[];
   /** Fleet in circulation per model line (npm run fetch:frota), ranked. */
   fleet?: {
     reference: string;
@@ -164,11 +168,13 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
     for (const [yearIndex, [yearCode, priceValue]] of version.y.entries()) {
       const photo = file.photos?.[version.g?.[yearIndex] ?? -1];
       const [trunk, torque] = (version.r?.[yearIndex] ?? [-1, -1]).map((figure) => file.press?.[figure]);
+      const sheet = file.sheets?.[version.t?.[yearIndex] ?? -1];
       const press: PressSpecs | null =
-        trunk || torque
+        trunk || torque || sheet
           ? {
               ...(trunk && { trunk: { value: trunk.value, source: trunk.source } }),
               ...(torque && { torque: { value: torque.value, source: torque.source } }),
+              ...(sheet && { sheet }),
             }
           : null;
       const [year, fuelCode] = yearCode.split("-");

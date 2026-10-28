@@ -23,7 +23,10 @@
     "build:brand-icons": "node scripts/brands/build-brand-icons.ts",
     "fetch:brand-logos": "node scripts/brands/fetch-brand-logos.ts",
     "crawl:imprensa": "node scripts/imprensa/crawl-stellantis.ts",
-    "extract:imprensa": "node scripts/imprensa/extract-stellantis.ts"
+    "extract:imprensa": "node scripts/imprensa/extract-stellantis.ts",
+    "fichas:links": "node scripts/fichas/fetch-links.ts",
+    "fichas:lista": "node scripts/fichas/build-list.ts",
+    "fichas:ler": "node scripts/fichas/read-sheets.ts"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",

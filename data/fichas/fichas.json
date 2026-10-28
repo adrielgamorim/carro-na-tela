@@ -1,0 +1,53 @@
+{
+ "_doc": "Números das fichas técnicas da Stellantis (npm run fichas:ler), lidos dos PDFs em data/fichas/pdf.",
+ "sheets": [
+  {
+   "id": 379,
+   "brand": "fiat",
+   "pageTitle": "Fiat Pulse MY26",
+   "title": "Ficha Técnica Pulse Turbo 200 Flex Automático",
+   "modelYear": 2026,
+   "page": "https://www.media.stellantis.com/br-pt/fiat/fiat-pulse-my26",
+   "url": "https://www.media.stellantis.com/br-pt/download-model-document/379",
+   "file": "fichatecnicapulseturbo200flexautomatico-6888d41eeb488.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 20.4,
+    "weightKg": 1234,
+    "lengthMm": 4095,
+    "widthMm": 1776,
+    "heightMm": 1553,
+    "wheelbaseMm": 2532,
+    "groundClearanceMm": 200.2,
+    "trunkLiters": 370,
+    "tankLiters": 45,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 9.4
+   }
+  },
+  {
+   "id": 233,
+   "brand": "fiat",
+   "pageTitle": "Fiat Pulse MY 2023",
+   "title": "Ficha técnica_Pulse Audace Turbo 200 Flex Automático - MY23",
+   "modelYear": 2023,
+   "page": "https://www.media.stellantis.com/br-pt/fiat/fiat-pulse-my-2023",
+   "url": "https://www.media.stellantis.com/br-pt/download-model-document/233",
+   "file": "fichatecnica_pulseaudaceturbo200flexautomaticomy23-6438084e4ee4c.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 20.4,
+    "weightKg": 1234,
+    "lengthMm": 4099,
+    "widthMm": 1774,
+    "heightMm": 1579,
+    "wheelbaseMm": 2532,
+    "groundClearanceMm": 224,
+    "trunkLiters": 370,
+    "tankLiters": 47,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 9.4
+   }
+  }
+ ]
+}

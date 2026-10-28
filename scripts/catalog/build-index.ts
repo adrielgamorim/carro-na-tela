@@ -2,14 +2,15 @@
 //
 //   npm run build:catalog -- [--data=data/fipe] [--pbev=data/inmetro]
 //                            [--wikidata=data/wikidata] [--frota=data/frota]
-//                            [--imprensa=data/imprensa]
+//                            [--imprensa=data/imprensa] [--fichas=data/fichas]
 //                            [--out=public/catalog]
 //
 // INMETRO tables (data/inmetro/pbev-<year>.json, from npm run parse:pbev) are
 // optional: without them the index has FIPE data only. So are the Wikidata
 // models (data/wikidata, from npm run fetch:wikidata) and the Senatran fleet
 // (data/frota, from npm run fetch:frota), and so are the press release
-// figures reviewed in data/imprensa/stellantis.json.
+// figures reviewed in data/imprensa/stellantis.json and the spec sheets read
+// in data/fichas/fichas.json (npm run fichas:ler).
 
 import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
@@ -22,6 +23,7 @@ import type { WikidataDetails } from "../wikidata/details.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import type { PressFactsFile } from "../imprensa/facts.ts";
+import type { ReadSheetsFile } from "../fichas/sheets.ts";
 import { fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
@@ -39,6 +41,7 @@ const { values } = parseArgs({
     wikidata: { type: "string", default: "data/wikidata" },
     frota: { type: "string", default: "data/frota" },
     imprensa: { type: "string", default: "data/imprensa" },
+    fichas: { type: "string", default: "data/fichas" },
   },
 });
 
@@ -101,6 +104,9 @@ if (!fleet) console.log(`Sem frota da Senatran em ${values.frota}; rode npm run 
 const press = await readFile(join(values.imprensa, "stellantis.json"), "utf8")
   .then((text) => (JSON.parse(text) as PressFactsFile).facts)
   .catch(() => undefined);
+const sheets = await readFile(join(values.fichas, "fichas.json"), "utf8")
+  .then((text) => (JSON.parse(text) as ReadSheetsFile).sheets)
+  .catch(() => undefined);
 const index = buildCatalogIndex(snapshots, {
   pbev,
   overrides,
@@ -108,6 +114,7 @@ const index = buildCatalogIndex(snapshots, {
   wikidata,
   fleet,
   press,
+  sheets,
 });
 
 // Photo galleries (npm run fetch:galeria): one file per model, loaded by the
@@ -175,6 +182,10 @@ if (index.fleet) {
 if (galleryPhotos) {
   const models = (index.models ?? []).filter((model) => model.gallery).length;
   console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}`);
+}
+if (index.sheets) {
+  const years = index.versions.flatMap((version) => version.t ?? []).filter((sheet) => sheet >= 0).length;
+  console.log(`Fichas técnicas: ${index.sheets.length} casadas com ${years} anos-modelo de ${index.versions.filter((version) => version.t).length} versões`);
 }
 if (index.press) {
   const years = index.versions.flatMap((version) => version.r ?? []);

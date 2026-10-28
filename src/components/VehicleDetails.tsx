@@ -12,7 +12,7 @@ import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
 import type { CatalogModelInfo } from "../catalog/wikidata";
-import { formatTorque, formatTrunk, releaseMonth } from "../catalog/press";
+import { formatSheetValue, formatTorque, formatTrunk, releaseMonth } from "../catalog/press";
 import type { PressSpecs } from "../catalog/press";
 import type { VehicleEnrichmentState } from "../hooks/useVehicleEnrichment";
 import { useCostSettings } from "../services/costSettings";
@@ -46,6 +46,18 @@ const providerLabels: Record<EnrichmentKey, string> = {
 
 /** Links to the press releases the trunk and torque came from. */
 function PressSources({ press }: { press: PressSpecs }) {
+  // The version's own spec sheet wins over the line's release figures.
+  if (press.sheet) {
+    return (
+      <>
+        {" · "}
+        <a href={press.sheet.page} target="_blank" rel="noreferrer" title={press.sheet.title}>
+          ficha técnica da Stellantis
+        </a>
+        {" desta versão e ano"}
+      </>
+    );
+  }
   const sources = [press.trunk?.source, press.torque?.source].filter(
     (source, index, all): source is NonNullable<typeof source> =>
       source !== undefined && all.findIndex((other) => other?.url === source.url) === index,
@@ -170,21 +182,30 @@ function specRows(
   const transmission = inmetro?.transmission ?? specs?.transmission;
   const body = specs?.bodyHint ?? inmetro?.body;
   const press = enrichment?.data.press?.data;
+  // The carmaker's spec sheet of this version and year: exact, so it wins.
+  const sheet = press?.sheet?.specs;
+  const exact = (value: number | undefined, unit: Parameters<typeof formatSheetValue>[1]) =>
+    value === undefined ? null : formatSheetValue(value, unit);
   const km = (value: number | null | undefined) =>
     value === null || value === undefined ? null : formatKmL(value);
 
   const rows: [string, string | null][] = [
     ["Motor", engine || inmetro?.engine || null],
-    // Exact from the FIPE name; else the model line's range (≈).
+    // Exact from the FIPE name or the spec sheet; else the model line's range (≈).
     [
       "Potência",
       specs?.powerCv
         ? `${specs.powerCv} cv`
-        : enrichment?.data.model?.data.specs?.power
+        : sheet?.powerCv
+          ? exact(sheet.powerCv, "cv")
+          : enrichment?.data.model?.data.specs?.power
           ? formatSpec("power", enrichment.data.model.data.specs.power)
           : null,
     ],
-    ["Torque", press?.torque ? formatTorque(press.torque.value) : null],
+    [
+      "Torque",
+      sheet?.torqueKgfm ? formatTorque(sheet.torqueKgfm) : press?.torque ? formatTorque(press.torque.value) : null,
+    ],
     ["Propulsão", inmetro ? propulsionLabels[inmetro.propulsion] : null],
     [
       "Câmbio",
@@ -195,7 +216,11 @@ function specRows(
     ["Configuração", body ? bodyLabels[body] : null],
     ["Porte", inmetro?.size ? sizeLabels[inmetro.size] : null],
     ["Portas", specs?.doors ? String(specs.doors) : null],
-    ["Porta-malas", press?.trunk ? formatTrunk(press.trunk.value) : null],
+    [
+      "Porta-malas",
+      sheet?.trunkLiters ? formatTrunk(sheet.trunkLiters) : press?.trunk ? formatTrunk(press.trunk.value) : null,
+    ],
+    ["Tanque", exact(sheet?.tankLiters, "litros")],
     ["Consumo na cidade", km(consumption?.fuelCity ?? consumption?.electricCity)],
     ["Consumo na estrada", km(consumption?.fuelHighway ?? consumption?.electricHighway)],
     ["Etanol na cidade", km(consumption?.ethanolCity)],
@@ -207,12 +232,26 @@ function specRows(
       inmetro?.airConditioning === true ? "Sim" : inmetro?.airConditioning === false ? "Não" : null,
     ],
   ];
-  // Size and mass of the model line (Wikidata), approximate for this version.
+  // Size and mass: exact from the spec sheet, else the model line's (Wikidata), approximate.
   const modelSpecs = enrichment?.data.model?.data.specs;
+  const fromSheet = {
+    length: exact(sheet?.lengthMm, "mm"),
+    width: exact(sheet?.widthMm, "mm"),
+    height: exact(sheet?.heightMm, "mm"),
+    wheelbase: exact(sheet?.wheelbaseMm, "mm"),
+    mass: exact(sheet?.weightKg, "kg"),
+  } as const;
   for (const [key, label] of specLabels) {
     const range = modelSpecs?.[key];
-    if (range) rows.push([label, formatSpec(key, range)]);
+    const own = key in fromSheet ? fromSheet[key as keyof typeof fromSheet] : null;
+    if (own) rows.push([label, own]);
+    else if (range) rows.push([label, formatSpec(key, range)]);
   }
+  rows.push(
+    ["Vão livre do solo", exact(sheet?.groundClearanceMm, "mm")],
+    ["Velocidade máxima", exact(sheet?.topSpeedKmh, "km/h")],
+    ["0 a 100 km/h", exact(sheet?.zeroTo100s, "s")],
+  );
   // IPVA rates are for passenger cars; motorcycles and trucks pay other rates.
   if (vehicle.category === "cars" && vehicle.priceValue > 0) {
     rows.push([
@@ -318,7 +357,9 @@ export function VehicleDetails({
                       inmetro.confidence === "exact" ? "versão exata" : "versão aproximada"
                     } · demais dados do nome FIPE`
                   : "Extraída do nome FIPE; sem dados do INMETRO para esta versão"}
-                {model?.specs && " · ≈ medidas, peso e potência da linha do modelo (Wikidata e Wikipedia)"}
+                {model?.specs &&
+                  !enrichment?.data.press?.data.sheet &&
+                  " · ≈ medidas, peso e potência da linha do modelo (Wikidata e Wikipedia)"}
                 {enrichment?.data.press && <PressSources press={enrichment.data.press.data} />}
               </p>
             </div>

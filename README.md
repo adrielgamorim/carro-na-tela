@@ -95,6 +95,9 @@ npm run fetch:anp        # preço médio dos combustíveis por estado → public
 npm run fetch:wmi        # códigos de fabricante do chassi → public/catalog/wmi.json
 npm run crawl:imprensa   # releases da Stellantis Brasil → data/imprensa/stellantis-releases.jsonl
 npm run extract:imprensa # porta-malas e torque a revisar → data/imprensa/stellantis-candidates.json
+npm run fichas:links     # links das fichas técnicas da Stellantis → data/fichas/links.json
+npm run fichas:lista     # lista para baixar as fichas à mão → data/fichas/lista.html
+npm run fichas:ler       # lê os PDFs baixados (--de=<pasta> move de Downloads) → data/fichas/fichas.json
 npm run build:catalog    # data/* → public/catalog/index.json
 npm run daily            # crawl:fipe + fetch:frota (+ wikidata/wmi mensais) + build:catalog + fetch:anp
 npm run schedule:daily   # agenda o daily no Agendador de Tarefas do Windows (01:00)
@@ -111,6 +114,7 @@ npm run unschedule:daily # remove a tarefa agendada
 | Wikimedia Commons (categorias) | Galeria por geração: frente, traseira, lateral, interior | `fetch:galeria` | De vez em quando | 8.243 fotos de 539 modelos |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
+| Fichas técnicas da Stellantis (PDF baixado à mão) | Potência, torque, peso, medidas, porta-malas, tanque, vão livre, velocidade, 0–100 da versão e ano | `fichas:links`, `fichas:ler` | A cada lote baixado | 460 fichas listadas; 260 anos-modelo cobertos se todas forem baixadas |
 | Releases da Stellantis Brasil | Porta-malas e torque (revisados à mão) | `crawl:imprensa`, `extract:imprensa` | De vez em quando | 358 versões (Fiat, Jeep, Citroën, Peugeot, RAM, Leapmotor) |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
 | NHTSA vPIC | Modelo e motor pelo chassi (ao vivo) | — | — | Bom para importados, raro para nacionais |
@@ -243,6 +247,20 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   (por até 8 anos ou até o próximo valor), e o torque só às versões daquele motor. Só as marcas da
   Stellantis têm sala de imprensa aberta assim; GM e VW não liberam.
 
+### Fichas técnicas da Stellantis
+
+- `npm run fichas:links` lê o menu de modelos de cada marca na sala de imprensa e as páginas de
+  modelo e ano ("Fiat Pulse MY 2022"), que o robots.txt permite, uma a cada 1,5 s, e grava em
+  `data/fichas/links.json` o link de cada ficha (460 hoje).
+- Os PDFs ficam atrás da proteção contra robôs do site, então são baixados à mão: `npm run
+  fichas:lista` gera `data/fichas/lista.html`, por marca e ano, com ✓ nas já lidas. Depois de baixar,
+  `npm run fichas:ler -- --de="%USERPROFILE%Downloads"` move as fichas para `data/fichas/pdf` (fora do
+  git) e lê os campos "Campo: valor" de cada uma em `data/fichas/fichas.json`. O nome do arquivo diz
+  de qual link ele veio; sem o ano no nome, vale o ano-modelo mais próximo da data de envio.
+- O `build:catalog` dá a ficha a cada versão-ano de mesma linha (pela página), ano, acabamentos
+  (os da linha na FIPE que o título cita, mesmo colados: "fichatecnicapulsedrive13flex…"), motor e
+  câmbio. Na ficha técnica, os números exatos dela substituem as medidas aproximadas da linha.
+
 ### ANP (combustíveis)
 
 - `npm run fetch:anp` baixa o levantamento das últimas 4 semanas (um preço por posto) e grava a
@@ -328,7 +346,7 @@ Vitest 5 com jsdom e Testing Library, ESLint 10. Os scripts rodam com o TypeScri
 | `src/services/` | Cliente HTTP (timeout, `AbortSignal`, `HttpError`, cache), API FIPE, providers, enriquecimento, vPIC, URL da consulta, `localStorage` |
 | `server/`, `worker/` | Proxy da FIPE (handler comum, plugin do Vite, Cloudflare Worker) |
 | `scripts/catalog/` | Crawler (cliente com cache em disco e rodízio de chaves, percurso, CLI), índice, daily |
-| `scripts/inmetro/`, `wikidata/`, `frota/`, `anp/`, `vin/`, `imprensa/` | Download, leitura e casamento de cada fonte |
+| `scripts/inmetro/`, `wikidata/`, `frota/`, `anp/`, `vin/`, `imprensa/`, `fichas/` | Download, leitura e casamento de cada fonte |
 | `data/` | Snapshots e dados de entrada do índice (gerados pelos scripts, mais os `overrides.json`) |
 | `docs/PLANO-CATALOGO.md` | Plano original do catálogo e das fontes |
 
