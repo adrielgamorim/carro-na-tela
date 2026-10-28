@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { sheetFields, sheetLine, sheetOfVersion, sheetSpecs, sheetYear, trimsOf } from "./sheets.ts";
+import { sheetFields, sheetHeading, sheetLine, sheetOfVersion, sheetSpecs, sheetYear, trimsOf } from "./sheets.ts";
 
 // Lines of the real "Fiat Pulse Turbo 200 Flex Automático" sheet, as the PDF reader gives them.
 const pulse = [
@@ -46,6 +46,45 @@ describe("spec sheets", () => {
       tankLiters: 45,
       topSpeedKmh: 189,
       zeroTo100s: 9.4,
+    });
+  });
+
+  it("reads sheets laid out as tables, labels anywhere in the line", () => {
+    // Lines of the real "Argo 1.0 Flex MT" sheet.
+    const argo = [
+      "ARGO 1.0 Flex MT",
+      "performance GASOLINA (E22)",
+      "Potência máxima ABNT 72,0 cv 53,0 kW @ 6000 rpm",
+      "Torque máximo ABNT 10,4 kgfm 102,0 Nm @ 3250 rpm",
+      "ETANOL",
+      "Potência máxima ABNT 77,0 cv 57,0 kW @ 6250 rpm",
+      "Torque máximo ABNT 10,9 kgfm 107,0 Nm @ 3250 rpm",
+      "Coluna de direção articulada com juntas universais com regulagem de altura",
+      "Comprimento (L103) 3998,0 mm",
+      "Largura da carroceria (W103) 1724,0 mm",
+      "Largura entre retrovisores (W104+ W105) 1962,0 mm",
+      "Altura veículo vazio (H100) 1503,0 mm",
+      "Distância entre eixos (L101) 2521,0 mm",
+      "Altura mínima do solo veículo vazio 154,7 mm",
+      "RESERVATÓRIOS Tanque de combustível (reserva) 48,0 L (5,5 a 7,5 L)",
+      "velocidade máxima por marcha 1ª marcha 35,3 km/h 35,3 km/h",
+      "aceleração a partir do repouso 0 a 100 Km/h 14,4 s 13,4 s",
+    ];
+    expect(sheetSpecs(argo)).toEqual({
+      powerCv: 77,
+      torqueKgfm: 10.9,
+      lengthMm: 3998,
+      widthMm: 1724,
+      heightMm: 1503,
+      wheelbaseMm: 2521,
+      groundClearanceMm: 154.7,
+      tankLiters: 48,
+      zeroTo100s: 13.4,
+    });
+    // Citroën writes just "Potência" and "Torque".
+    expect(sheetSpecs(["Potência : 125 cv (gasolina) / 130 cv (etanol)", "Torque : 20,4 kgfm / 200 Nm"])).toEqual({
+      powerCv: 130,
+      torqueKgfm: 20.4,
     });
   });
 
@@ -104,5 +143,35 @@ describe("matching sheets to FIPE versions", () => {
     expect(sheetYear({ modelYear: null, title: "Ficha Técnica Titano Endurance MY26" })).toBe(2026);
     expect(sheetLine("Jeep® Compass MY 2022")).toBe("compass");
     expect(sheetLine("Nova Strada MY 2022")).toBe("strada");
+  });
+});
+
+describe("telling close versions apart", () => {
+  const c3 = ["C3 Feel 1.0 Flex 6V 5p Mec.", "C3 Feel Plus 1.0 6V 5p Mec.", "C3 Live 1.0 Flex 6V 5p Mec."];
+  const strada = ["Strada Endurance 1.4 Flex 8V CS Plus", "Strada Endurance 1.4 Flex 8V CD", "Strada Freedom 1.3 Flex 8V CD"];
+
+  it("keeps a Plus trim apart from the plain one", () => {
+    const sheets = [{ id: 1, brand: "citroen", title: "Citroën C3 1.0 Fe el Plus MT – 2026/2026", pageTitle: "Citroën C3 MY 2026", modelYear: 2026 }];
+    const trims = trimsOf(c3, "C3");
+    const of = (name: string) =>
+      sheetOfVersion(sheets, { brand: "Citroën", family: "C3", name, modelYear: 2026, engineLiters: 1, turbo: false }, trims)?.id;
+    expect(of("C3 Feel Plus 1.0 6V 5p Mec.")).toBe(1);
+    expect(of("C3 Feel 1.0 Flex 6V 5p Mec.")).toBeUndefined();
+  });
+
+  it("matches a pickup's cab", () => {
+    const sheets = [{ id: 1, brand: "fiat", title: "FIAT STRADA ENDURANCE 1.4 CABINE DUPLA", pageTitle: "Strada MY 2021", modelYear: 2021 }];
+    const trims = trimsOf(strada, "Strada");
+    const of = (name: string) =>
+      sheetOfVersion(sheets, { brand: "Fiat", family: "Strada", name, modelYear: 2021, engineLiters: 1.4, turbo: false }, trims)?.id;
+    expect(of("Strada Endurance 1.4 Flex 8V CD")).toBe(1);
+    expect(of("Strada Endurance 1.4 Flex 8V CS Plus")).toBeUndefined();
+  });
+
+  it("cleans a sheet's heading", () => {
+    expect(sheetHeading(["FIAT CRONOS 1. 0", "Ficha técnica", "Motor"])).toBe("FIAT CRONOS 1.0");
+    expect(
+      sheetHeading(["FIAT CRONOS DRIVE 1.8 AT6 As informações contidas nesse documento estão sujeitas a atualização"]),
+    ).toBe("FIAT CRONOS DRIVE 1.8 AT6");
   });
 });

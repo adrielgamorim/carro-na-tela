@@ -114,7 +114,7 @@ npm run unschedule:daily # remove a tarefa agendada
 | Wikimedia Commons (categorias) | Galeria por geração: frente, traseira, lateral, interior | `fetch:galeria` | De vez em quando | 8.243 fotos de 539 modelos |
 | Senatran (Renavam) | Frota em circulação por linha | `fetch:frota` | Mensal | 4.750 versões, 677 linhas |
 | ANP | Preço médio dos combustíveis por estado | `fetch:anp` | Semanal | 27 estados |
-| Fichas técnicas da Stellantis (PDF baixado à mão) | Potência, torque, peso, medidas, porta-malas, tanque, vão livre, velocidade, 0–100 da versão e ano | `fichas:links`, `fichas:ler` | A cada lote baixado | 460 fichas listadas; 260 anos-modelo cobertos se todas forem baixadas |
+| Fichas técnicas da Stellantis (PDF baixado à mão) | Potência, torque, peso, medidas, porta-malas, tanque, vão livre, velocidade, 0–100 da versão e ano | `fichas:links`, `fichas:ler` | A cada lote baixado | 458 fichas lidas: 263 anos-modelo de 120 versões |
 | Releases da Stellantis Brasil | Porta-malas e torque (revisados à mão) | `crawl:imprensa`, `extract:imprensa` | De vez em quando | 358 versões (Fiat, Jeep, Citroën, Peugeot, RAM, Leapmotor) |
 | Wikipedia (lista de WMI) | Fabricante e país do chassi | `fetch:wmi` | Raramente | 1.536 códigos |
 | NHTSA vPIC | Modelo e motor pelo chassi (ao vivo) | — | — | Bom para importados, raro para nacionais |
@@ -253,13 +253,16 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   modelo e ano ("Fiat Pulse MY 2022"), que o robots.txt permite, uma a cada 1,5 s, e grava em
   `data/fichas/links.json` o link de cada ficha (460 hoje).
 - Os PDFs ficam atrás da proteção contra robôs do site, então são baixados à mão: `npm run
-  fichas:lista` gera `data/fichas/lista.html`, por marca e ano, com ✓ nas já lidas. Depois de baixar,
-  `npm run fichas:ler -- --de="%USERPROFILE%Downloads"` move as fichas para `data/fichas/pdf` (fora do
-  git) e lê os campos "Campo: valor" de cada uma em `data/fichas/fichas.json`. O nome do arquivo diz
-  de qual link ele veio; sem o ano no nome, vale o ano-modelo mais próximo da data de envio.
+  fichas:lista` gera `data/fichas/lista.html`, por marca e ano, numerada e com ✓ nas já lidas. Um
+  arquivo baixado com o número da lista na frente ("053-…pdf") diz de qual link veio; sem número,
+  vale o nome do arquivo. `npm run fichas:ler` (com `-- --de="%USERPROFILE%\Downloads"` move de
+  Downloads) lê os PDFs de `data/fichas/pdf` (fora do git) em `data/fichas/fichas.json`: o título vem
+  do cabeçalho do próprio PDF (o link às vezes é de outra ficha da página), e os campos tanto de
+  "Campo: valor" quanto de tabelas, só com valores possíveis para um carro.
 - O `build:catalog` dá a ficha a cada versão-ano de mesma linha (pela página), ano, acabamentos
-  (os da linha na FIPE que o título cita, mesmo colados: "fichatecnicapulsedrive13flex…"), motor e
-  câmbio. Na ficha técnica, os números exatos dela substituem as medidas aproximadas da linha.
+  (os da linha na FIPE que o título cita, mesmo colados: "fichatecnicapulsedrive13flex…"), motor,
+  câmbio e cabine (CD/CS/CE). Na ficha técnica, os números exatos dela substituem as medidas
+  aproximadas da linha.
 
 ### ANP (combustíveis)
 

@@ -48,12 +48,56 @@ export interface ReadSheetsFile {
 const slug = (text: string) => plain(text).replace(/[^a-z0-9]+/g, "");
 
 /**
+ * The links in the checklist's order (data/fichas/lista.html): by brand as
+ * listed, newest model year first, then as each page lists them. Its position
+ * numbers the checklist and the files downloaded from it.
+ */
+export function checklistOrder(links: SheetLink[]): SheetLink[] {
+  const byBrand = new Map<string, Map<string, SheetLink[]>>();
+  for (const link of links) {
+    if (!byBrand.has(link.brand)) byBrand.set(link.brand, new Map());
+    const pages = byBrand.get(link.brand)!;
+    pages.set(link.pageTitle, [...(pages.get(link.pageTitle) ?? []), link]);
+  }
+  return [...byBrand.values()].flatMap((pages) =>
+    [...pages.values()]
+      .sort((a, b) => (b[0]?.modelYear ?? 0) - (a[0]?.modelYear ?? 0) || a[0]!.pageTitle.localeCompare(b[0]!.pageTitle))
+      .flat(),
+  );
+}
+
+/**
+ * What a sheet says it is, from the lines above its first section
+ * ("FIAT CRONOS DRIVE 1.3 MT – Ficha técnica", "FIAT MOBI DRIVE" + "1.0 FLEX"):
+ * the press room's link titles are sometimes of another sheet of the page.
+ */
+export function sheetHeading(lines: string[]): string | undefined {
+  const top: string[] = [];
+  for (const line of lines.slice(0, 4)) {
+    if (/^motor\b|:/i.test(line.trim())) break;
+    top.push(line);
+  }
+  const heading = top
+    .join(" ")
+    // Pieces of split words too: "Ficha T écnica".
+    .replace(/ficha\s*t\s*[eé]\s*cnica|engenharia do produto.*$|atualizado em.*$|as informa[cç][oõ]es contidas.*$|automóveis ltda/gi, " ")
+    .replace(/(\d)\s*([.,])\s*(\d)/g, "$1$2$3")
+    .replace(/^\s*[–—-]\s*|[–—-]\s*$/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+  return heading.length >= 4 ? heading : undefined;
+}
+
+/**
  * The link a downloaded PDF came from, by its file name: the press room names
  * it after the sheet's title, sometimes with the model year ("…automaticomy23-
  * 6438084e4ee4c.pdf"), and ends it with PHP's uniqid, the upload time in hex.
  * Without a year in the name, the model year nearest after the upload wins.
  */
 export function linkOfFile(file: string, links: SheetLink[]): SheetLink | undefined {
+  // Downloaded from the checklist in order: "053-…" is its 53rd link.
+  const position = file.match(/^(\d{1,4})-/)?.[1];
+  if (position) return checklistOrder(links)[Number(position) - 1];
   const name = slug(file.replace(/\.pdf$/i, ""));
   const year = name.match(/my(\d{2})(?:[0-9a-f]{13})?$/)?.[1];
   const uploaded = file.match(/-([0-9a-f]{8})[0-9a-f]{5}\.pdf$/i)?.[1];
@@ -86,7 +130,16 @@ const words = (text: string) =>
     .filter(Boolean);
 // Words of a FIPE name that say nothing about the trim.
 const notATrim =
-  /^(\d.*|flex|gasolina|diesel|eletrico|hibrido|turbo|turbodiesel|automatico|automatica|aut|manual|mec|cvt|at\d*|mt\d*|tb|4x2|4x4|cabine|dupla|simples|cd|cs|ce|de|e|com|v\d+|mpi|mhev|hybrid|plus|my\d*)$/;
+  /^(\d.*|flex|gasolina|diesel|eletrico|hibrido|turbo|turbodiesel|automatico|automatica|aut|manual|mec|cvt|at\d*|mt\d*|tb|4x2|4x4|cabine|dupla|simples|estendida|cd|cs|ce|de|e|com|v\d+|mpi|mhev|hybrid|my\d*)$/;
+
+/** The cab of a pickup: "cd" (double), "cs" (single), "ce" (extended), or none. */
+function cabOf(text: string): string | undefined {
+  const words = ` ${plain(text).replace(/[^a-z0-9]+/g, " ")} `;
+  if (/ cabine dupla | cd /.test(words)) return "cd";
+  if (/ cabine simples | cs /.test(words)) return "cs";
+  if (/ cabine estendida | ce /.test(words)) return "ce";
+  return undefined;
+}
 const brandWords = /^(fiat|jeep|ram|peugeot|citroen|abarth|leapmotor|chrysler|dodge|novo|nova|new|my|\d{2,4})$/;
 
 /**
@@ -106,9 +159,11 @@ export function titleSlug(title: string): string {
 /** The model year a sheet is for: its page's, else its title's ("MY26", "2026_2027" → 2027). */
 export function sheetYear(sheet: Pick<ReadSheet, "modelYear" | "title">): number | null {
   if (sheet.modelYear) return sheet.modelYear;
-  const span = sheet.title.match(/\b(20\d\d)[_/-](20\d\d)\b/);
+  // PDFs split words into pieces: "202 6 /2026", "MY2 6".
+  const title = sheet.title.replace(/(\d)\s+(?=\d)/g, "$1").replace(/\s*([_/-])\s*/g, "$1");
+  const span = title.match(/\b(20\d\d)[_/-](20\d\d)\b/);
   if (span) return Number(span[2]);
-  const my = plain(sheet.title).match(/my\s*(\d{4}|\d{2})(?!\d)/)?.[1];
+  const my = plain(title).match(/my\s*(\d{4}|\d{2})(?!\d)/)?.[1];
   return my ? (my.length === 2 ? 2000 + Number(my) : Number(my)) : null;
 }
 
@@ -151,10 +206,12 @@ export function sheetOfVersion<T extends Pick<ReadSheet, "brand" | "title" | "mo
     if (!fipeBrands[sheet.brand]?.includes(target.brand)) continue;
     if (sheetYear(sheet) !== target.modelYear || sheetLine(sheet.pageTitle) !== family) continue;
     // The line's trims the title names, longest first so "sdesign" is not read as "design" too.
+    // Two-letter trims ("Live Go", "GT") only as whole words, not inside glued text ("veRSões").
     let left = titleSlug(sheet.title).replace(family, " ");
+    const titleWords = ` ${words(sheet.title).join(" ")} `;
     const named = new Set<string>();
     for (const trim of [...lineTrims].sort((a, b) => b.length - a.length)) {
-      if (left.includes(trim)) {
+      if (trim.length === 2 ? titleWords.includes(` ${trim} `) : left.includes(trim)) {
         named.add(trim);
         left = left.replace(trim, " ");
       }
@@ -162,11 +219,17 @@ export function sheetOfVersion<T extends Pick<ReadSheet, "brand" | "title" | "mo
     if (named.size !== versionTrims.size || [...named].some((trim) => !versionTrims.has(trim))) continue;
     const readable = plain(sheet.title);
     const title = titleSlug(sheet.title);
-    const turbo = /turbo|t200|t270|t180|tdi|td\d/.test(title) || /\btb\b/.test(readable);
-    if (turbo !== target.turbo && (turbo || /\d[.,]\d/.test(readable))) continue;
+    // Diesel engines are all turbocharged, as FIPE writes them ("TB Diesel").
+    const turbo = /turbo|t200|t270|t180|tdi|td\d|diesel|multijet/.test(title) || /\btb\b/.test(readable);
+    // A sheet that names a turbo is not of an aspirated version; one that does not may still be
+    // ("Fastback Abarth Flex 1.3 AT6" is the 1.3 turbo).
+    if (turbo && !target.turbo) continue;
     const liters = readable.match(/(\d)[.,](\d)/);
     const sheetLiters = liters ? Number(liters[1] + "." + liters[2]) : undefined;
     if (sheetLiters !== undefined && target.engineLiters !== undefined && Math.abs(sheetLiters - target.engineLiters) > 0.05) continue;
+    const sheetCab = cabOf(sheet.title);
+    const versionCab = cabOf(target.name);
+    if (sheetCab && versionCab && sheetCab !== versionCab) continue;
     const sheetAutomatic = automaticIn(title) || automaticIn(readable);
     const sheetManual = manualIn(title) || manualIn(readable);
     if ((sheetAutomatic && !versionAutomatic) || (sheetManual && versionAutomatic)) continue;
@@ -180,21 +243,29 @@ export function sheetOfVersion<T extends Pick<ReadSheet, "brand" | "title" | "mo
 export function trimsOf(names: string[], family: string): Set<string> {
   const familyWords = new Set(words(family));
   return new Set(
-    names.flatMap((name) => words(name).filter((word) => !familyWords.has(word) && !notATrim.test(word) && word.length >= 3)),
+    names.flatMap((name) => words(name).filter((word) => !familyWords.has(word) && !notATrim.test(word) && word.length >= 2)),
   );
 }
 
 
 const plain = (text: string) => text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
-/** "4.095" → 4095, "20,4" → 20.4. */
+/** "4.095" → 4095, "3998,0" → 3998, "20,4" → 20.4. */
 const number = (text: string) => Number(text.replace(/\.(?=\d{3}\b)/g, "").replace(",", "."));
 const numbersBefore = (text: string, unit: string) =>
-  [...text.matchAll(new RegExp(`(\\d{1,3}(?:\\.\\d{3})*(?:,\\d+)?)\\s*${unit}`, "gi"))].map((match) => number(match[1]!));
+  [...text.matchAll(new RegExp(`(?<![\\d.,])(\\d+(?:\\.\\d{3})*(?:,\\d+)?)\\s*${unit}`, "gi"))].map((match) =>
+    number(match[1]!),
+  );
+
+// Labels of the figures the app uses, for sheets laid out as tables
+// ("Potência máxima | ABNT | 77,0 cv", "RESERVATÓRIOS | Tanque de combustível | 48,0 L").
+const tableLabels =
+  /(potencia maxima|torque maximo|em ordem de marcha|comprimento|largura|altura minima do solo|altura|distancia entre eixos|entre-eixos|vao livre|porta-malas|compartim\w*\.? de bagagem|tanque de combustivel|velocidade maxima|0 a 100)/;
 
 /**
- * A sheet's "Campo: valor" fields, from its text lines in reading order. A
- * line without a colon continues the field above it ("…/ 200" + "Nm / 20,4
- * kgfm (etanol) a 1.700 rpm"); words split around a hyphen are joined back
+ * A sheet's fields, from its text lines in reading order: "Campo: valor"
+ * lines, and in tables a line with a known label anywhere in it. A line
+ * without either continues the field above it ("…/ 200" + "Nm / 20,4 kgfm
+ * (etanol) a 1.700 rpm"); words split around a hyphen are joined back
  * ("porta - malas").
  */
 export function sheetFields(lines: string[]): { label: string; value: string }[] {
@@ -202,8 +273,11 @@ export function sheetFields(lines: string[]): { label: string; value: string }[]
   for (const raw of lines) {
     const line = raw.replace(/(\p{L})\s+-\s+(\p{L})/gu, "$1-$2").replace(/\s+/g, " ").trim();
     const colon = line.indexOf(":");
+    const table = plain(line).match(tableLabels);
     if (colon > 0 && colon < 70) {
       fields.push({ label: plain(line.slice(0, colon)).trim(), value: line.slice(colon + 1).trim() });
+    } else if (table) {
+      fields.push({ label: table[1]!, value: plain(line).slice(table.index! + table[1]!.length).trim() });
     } else if (fields.length) {
       fields.at(-1)!.value += ` ${line}`;
     }
@@ -211,36 +285,69 @@ export function sheetFields(lines: string[]): { label: string; value: string }[]
   return fields;
 }
 
+// What a car's figures can be, to tell them from a table's other numbers.
+const ranges: Record<keyof SheetSpecs, [number, number]> = {
+  powerCv: [40, 900],
+  torqueKgfm: [5, 160],
+  weightKg: [600, 4500],
+  lengthMm: [2500, 7500],
+  widthMm: [1400, 2600],
+  heightMm: [1100, 3200],
+  wheelbaseMm: [1800, 4600],
+  groundClearanceMm: [90, 400],
+  trunkLiters: [100, 2000],
+  tankLiters: [25, 200],
+  topSpeedKmh: [90, 350],
+  zeroTo100s: [2.5, 30],
+};
+
 /** The figures the app uses, read from a sheet's fields. */
 export function sheetSpecs(lines: string[]): SheetSpecs {
   const fields = sheetFields(lines);
-  const find = (pattern: RegExp) => fields.find((field) => pattern.test(field.label))?.value;
+  // Every field with that label: a word may show up elsewhere ("regulagem de altura"),
+  // and tables give gasoline and ethanol on lines of their own.
+  const all = (pattern: RegExp) => fields.filter((field) => pattern.test(field.label)).map((field) => field.value);
   const specs: SheetSpecs = {};
   const set = (key: keyof SheetSpecs, value: number | undefined) => {
     if (value !== undefined && Number.isFinite(value) && value > 0) specs[key] = value;
   };
-  const first = (text: string | undefined, unit: string) => (text ? numbersBefore(text, unit)[0] : undefined);
-  const highest = (text: string | undefined, unit: string) =>
-    text && numbersBefore(text, unit).length ? Math.max(...numbersBefore(text, unit)) : undefined;
+  // Only figures a car can have: a table's label may sit next to another number.
+  const plausible = (key: keyof SheetSpecs) => (value: number) => value >= ranges[key][0] && value <= ranges[key][1];
+  const first = (key: keyof SheetSpecs, pattern: RegExp, unit: string) =>
+    all(pattern)
+      .flatMap((value) => numbersBefore(value, unit))
+      .find(plausible(key));
+  const highest = (key: keyof SheetSpecs, pattern: RegExp, unit: string) => {
+    const found = all(pattern)
+      .flatMap((value) => numbersBefore(value, unit))
+      .filter(plausible(key));
+    return found.length ? Math.max(...found) : undefined;
+  };
 
-  set("powerCv", highest(find(/^potencia maxima/), "cv"));
-  const torque = find(/^torque maximo/);
-  set("torqueKgfm", highest(torque, "kgf\\.?\\s?m") ?? (torque && numbersBefore(torque, "Nm").length
-    ? Math.round((Math.max(...numbersBefore(torque, "Nm")) / 9.80665) * 10) / 10
-    : undefined));
-  set("weightKg", first(find(/ordem de marcha|^peso/), "kg"));
-  set("lengthMm", first(find(/^comprimento/), "mm"));
-  set("widthMm", first(find(/^largura/), "mm"));
-  set("heightMm", first(find(/^altura do veiculo|^altura$/), "mm"));
-  set("wheelbaseMm", first(find(/entre-?\s?eixos/), "mm"));
-  set("groundClearanceMm", first(find(/altura minima do solo|vao livre/), "mm"));
-  set("trunkLiters", first(find(/porta-?\s?malas/), "(?:litros|l\\b)"));
-  set("tankLiters", first(find(/^tanque/), "(?:litros|l\\b)"));
-  set("topSpeedKmh", highest(find(/^velocidade maxima/), "km\\/h"));
-  const sprint = fields.find((field) => /^0 a 100/.test(field.label))?.value;
-  if (sprint) {
-    const seconds = numbersBefore(sprint, "s\\b");
-    if (seconds.length) set("zeroTo100s", Math.min(...seconds));
-  }
+  set("powerCv", highest("powerCv", /^potencia( maxima|$)/, "cv"));
+  const torque = /^torque( maximo|$)/;
+  const newtonMeters = all(torque)
+    .flatMap((value) => numbersBefore(value, "Nm"))
+    .map((value) => Math.round((value / 9.80665) * 10) / 10)
+    .filter(plausible("torqueKgfm"));
+  set("torqueKgfm", highest("torqueKgfm", torque, "kgf\\.?\\s?m") ?? (newtonMeters.length ? Math.max(...newtonMeters) : undefined));
+  set("weightKg", first("weightKg", /ordem de marcha|^peso/, "kg"));
+  set("lengthMm", first("lengthMm", /^comprimento/, "mm"));
+  set("widthMm", first("widthMm", /^largura(?! (na|entre))/, "mm"));
+  set("heightMm", first("heightMm", /^altura( do veiculo|$)/, "mm"));
+  set("wheelbaseMm", first("wheelbaseMm", /entre-?\s?eixos/, "mm"));
+  set("groundClearanceMm", first("groundClearanceMm", /altura minima do solo|vao livre/, "mm"));
+  set("trunkLiters", first("trunkLiters", /porta-?\s?malas|de bagagem/, "(?:litros|l\\b)"));
+  set("tankLiters", first("tankLiters", /^tanque/, "(?:litros|l\\b)"));
+  // Not the top speed in each gear.
+  const speeds = all(/^velocidade maxima/)
+    .filter((value) => !/marcha/.test(plain(value)))
+    .flatMap((value) => numbersBefore(value, "km\\/h"))
+    .filter(plausible("topSpeedKmh"));
+  if (speeds.length) set("topSpeedKmh", Math.max(...speeds));
+  const seconds = all(/^0 a 100/)
+    .flatMap((value) => numbersBefore(value, "s\\b"))
+    .filter(plausible("zeroTo100s"));
+  if (seconds.length) set("zeroTo100s", Math.min(...seconds));
   return specs;
 }

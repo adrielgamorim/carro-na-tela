@@ -11,7 +11,7 @@ import { copyFile, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promi
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { readPdfLines } from "../inmetro/pdf-lines.ts";
-import { linkOfFile, sheetSpecs } from "./sheets.ts";
+import { linkOfFile, sheetHeading, sheetSpecs } from "./sheets.ts";
 import type { ReadSheet, ReadSheetsFile, SheetLinksFile } from "./sheets.ts";
 
 const { values } = parseArgs({ options: { de: { type: "string" } } });
@@ -37,6 +37,8 @@ for (const file of (await readdir(pdfDir)).filter((name) => name.toLowerCase().e
     unknown.push(file);
     continue;
   }
+  // The same sheet downloaded twice.
+  if (sheets.some((sheet) => sheet.id === link.id)) continue;
   const lines = (await readPdfLines(join(pdfDir, file)))
     .sort((a, b) => a.page - b.page || b.y - a.y)
     .map((line) => [...line.cells].sort((a, b) => a.center - b.center).map((cell) => cell.text).join(" "));
@@ -44,7 +46,8 @@ for (const file of (await readdir(pdfDir)).filter((name) => name.toLowerCase().e
     id: link.id,
     brand: link.brand,
     pageTitle: link.pageTitle,
-    title: link.title,
+    // The sheet's own heading says what it is; the link's title may be of a sibling.
+    title: sheetHeading(lines) ?? link.title,
     modelYear: link.modelYear,
     page: link.page,
     url: link.url,

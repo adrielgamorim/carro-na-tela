@@ -6,7 +6,7 @@
 //   npm run fichas:lista
 
 import { readdir, readFile, writeFile } from "node:fs/promises";
-import { linkOfFile } from "./sheets.ts";
+import { checklistOrder, linkOfFile } from "./sheets.ts";
 import type { SheetLink, SheetLinksFile } from "./sheets.ts";
 
 const { links, generatedAt } = JSON.parse(await readFile("data/fichas/links.json", "utf8")) as SheetLinksFile;
@@ -16,26 +16,29 @@ const have = new Set(files.flatMap((file) => linkOfFile(file, links)?.id ?? []))
 const escape = (text: string) =>
   text.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
+// The site answers with an error for these (checked by hand).
+const unavailable = new Set([322]);
+const ordered = checklistOrder(links);
+const position = new Map(ordered.map((link, index) => [link, index + 1]));
 const byBrand = new Map<string, Map<string, SheetLink[]>>();
-for (const link of links) {
+for (const link of ordered) {
   if (!byBrand.has(link.brand)) byBrand.set(link.brand, new Map());
   const pages = byBrand.get(link.brand)!;
   pages.set(link.pageTitle, [...(pages.get(link.pageTitle) ?? []), link]);
 }
 
+const item = (link: SheetLink) => {
+  const number = String(position.get(link)).padStart(3, "0");
+  const label = `${number}. ${escape(link.title || `Documento ${link.id}`)}`;
+  if (unavailable.has(link.id)) return `<li class="gone">${label} (indisponível no site)</li>`;
+  return `<li class="${have.has(link.id) ? "have" : ""}"><a href="${escape(link.url)}" target="_blank" rel="noreferrer">${label}</a></li>`;
+};
 const sections = [...byBrand]
   .map(([brand, pages]) => {
     const items = [...pages]
-      .sort(([, a], [, b]) => (b[0]?.modelYear ?? 0) - (a[0]?.modelYear ?? 0) || a[0]!.pageTitle.localeCompare(b[0]!.pageTitle))
       .map(([title, list]) => {
         const done = list.filter((link) => have.has(link.id)).length;
-        const rows = list
-          .map(
-            (link) =>
-              `<li class="${have.has(link.id) ? "have" : ""}"><a href="${escape(link.url)}" target="_blank" rel="noreferrer">${escape(link.title || `Documento ${link.id}`)}</a></li>`,
-          )
-          .join("");
-        return `<details${done < list.length ? " open" : ""}><summary>${escape(title)} <span>${done}/${list.length}</span></summary><ul>${rows}</ul></details>`;
+        return `<details${done < list.length ? " open" : ""}><summary>${escape(title)} <span>${done}/${list.length}</span></summary><ul>${list.map(item).join("")}</ul></details>`;
       })
       .join("");
     const total = [...pages.values()].flat();
@@ -69,13 +72,14 @@ const html = `<!doctype html>
   a:visited { color: var(--visited); }
   li.have { list-style: "✓  "; color: var(--good); }
   li.have a { color: var(--good); }
+  li.gone { color: var(--muted); text-decoration: line-through; }
 </style>
 </head>
 <body>
 <main>
 <h1>Fichas técnicas Stellantis</h1>
 <p>${links.length} fichas, ${have.size} já lidas (✓). Links listados em ${escape(generatedAt.slice(0, 10))} (npm run fichas:links). Links clicados ficam roxos.</p>
-<p>Clique para baixar cada ficha. Depois, para mover as baixadas e ler os números:
+<p>Os números são a ordem da lista: baixe com eles na frente do nome ("053-…pdf") para o leitor saber de qual link veio cada arquivo. Clique para baixar cada ficha. Depois, para mover as baixadas e ler os números:
 <code>npm run fichas:ler -- --de="%USERPROFILE%\\Downloads"</code> e <code>npm run fichas:lista</code> para atualizar esta página.</p>
 ${sections}
 </main>
