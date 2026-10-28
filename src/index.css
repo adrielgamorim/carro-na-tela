@@ -1,5 +1,6 @@
-/* Theme tokens: every color in the CSS comes from here. Dark values follow
-   the system setting (prefers-color-scheme). */
+/* Theme tokens: every color in the CSS comes from here, as light-dark(light,
+   dark). The color-scheme picks the side: the system's, or the one chosen in the
+   top bar (data-theme on <html>, set before the first paint by index.html). */
 :root {
   font-family: "IBM Plex Sans", sans-serif;
   color-scheme: light dark;
@@ -10,57 +11,40 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
-  --page: #f1f4f1;
-  --ink: #24332b;
-  --ink-soft: #526057;
+  --page: light-dark(#f1f4f1, #111714);
+  --ink: light-dark(#24332b, #e2eae5);
+  --ink-soft: light-dark(#526057, #c0ccc5);
   /* Dark in both themes, for dark bars and text on the acid accent. */
   --ink-fixed: #24332b;
   --on-accent: #24332b;
-  --forest: #315c47;
+  --forest: light-dark(#315c47, #4a9a70);
   --acid: #c8ee72;
   --coral: #dc6b52;
-  --muted: #5d6962;
-  --muted-soft: #7d8781;
-  --paper-white: #fff;
-  --surface-alt: #f6f8f6;
-  --mist: #eef2ef;
-  --line: #dfe6e1;
-  --line-soft: #edf1ee;
-  --danger: #9b3d2d;
-  --danger-bg: #fff0ec;
-  --danger-line: #f3d4cb;
-  --warn: #b58a1c;
-  --warn-ink: #5b4b23;
-  --warn-bg: #fbf6e6;
-  --warn-line: #efe2b8;
-  --good: #49a47a;
-  --good-bg: #eef9d8;
+  --muted: light-dark(#5d6962, #aab7af);
+  --muted-soft: light-dark(#7d8781, #8d9a92);
+  --paper-white: light-dark(#fff, #19211d);
+  --surface-alt: light-dark(#f6f8f6, #1e2722);
+  --mist: light-dark(#eef2ef, #1c2520);
+  --line: light-dark(#dfe6e1, #2f3b35);
+  --line-soft: light-dark(#edf1ee, #252f2a);
+  --danger: light-dark(#9b3d2d, #f19a86);
+  --danger-bg: light-dark(#fff0ec, #3a221c);
+  --danger-line: light-dark(#f3d4cb, #5a3128);
+  --warn: light-dark(#b58a1c, #e0b54a);
+  --warn-ink: light-dark(#5b4b23, #f0dca8);
+  --warn-bg: light-dark(#fbf6e6, #332b17);
+  --warn-line: light-dark(#efe2b8, #4d4022);
+  --good: light-dark(#49a47a, #6cc79a);
+  --good-bg: light-dark(#eef9d8, #26331a);
   --display: "Barlow Condensed", "Arial Narrow", sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --page: #111714;
-    --ink: #e2eae5;
-    --ink-soft: #c0ccc5;
-    --forest: #4a9a70;
-    --muted: #aab7af;
-    --muted-soft: #8d9a92;
-    --paper-white: #19211d;
-    --surface-alt: #1e2722;
-    --mist: #1c2520;
-    --line: #2f3b35;
-    --line-soft: #252f2a;
-    --danger: #f19a86;
-    --danger-bg: #3a221c;
-    --danger-line: #5a3128;
-    --warn: #e0b54a;
-    --warn-ink: #f0dca8;
-    --warn-bg: #332b17;
-    --warn-line: #4d4022;
-    --good: #6cc79a;
-    --good-bg: #26331a;
-  }
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
 }
 
 * {

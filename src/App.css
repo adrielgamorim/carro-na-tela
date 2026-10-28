@@ -64,8 +64,7 @@
   border-color: var(--coral);
 }
 
-.nav-link-comparison span,
-.nav-link-favorites .nav-count {
+.nav-link .nav-count {
   display: grid;
   min-width: 20px;
   height: 20px;
@@ -77,8 +76,9 @@
   font-size: 12px;
 }
 
-/* The star shows on phones too, where the label is hidden. */
-.nav-link-favorites {
+/* The icons show on phones too, where the labels are hidden. */
+.nav-link-favorites,
+.nav-link-comparison {
   gap: 6px;
 }
 

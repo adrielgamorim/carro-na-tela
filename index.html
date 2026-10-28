@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f1f4f1" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#111714" media="(prefers-color-scheme: dark)" />
+    <script>
+      // The theme chosen in the top bar (src/components/ThemeToggle.tsx), before
+      // the first paint: without it the page would flash in the system's theme.
+      try {
+        const theme = localStorage.getItem("carro-na-tela:tema");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {
+        // Blocked storage: follow the system.
+      }
+    </script>
     <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta

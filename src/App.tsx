@@ -1,8 +1,9 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import { ArrowDownUp, Star } from "lucide-react";
+import { ArrowDownUp, GitCompareArrows, Star } from "lucide-react";
 import "./App.css";
 import { ConsultaPage } from "./components/ConsultaPage";
 import { ErrorBoundary } from "./components/ErrorBoundary";
+import { ThemeToggle } from "./components/ThemeToggle";
 import { useFipeCatalog } from "./hooks/useFipeCatalog";
 import { useFipeCodeLookup } from "./hooks/useFipeCodeLookup";
 import { useView } from "./hooks/useView";
@@ -173,13 +174,16 @@ function App() {
             className="nav-link nav-link-comparison"
             {...viewLink("consulta", "comparacao")}
           >
-            Comparador <span>{comparison.length}</span>
+            <GitCompareArrows size={14} aria-hidden="true" />
+            <span className="nav-label-extra">Comparador </span>
+            <span className="nav-count">{comparison.length}</span>
           </a>
         </nav>
         <div className="topbar-reference">
           <span className="live-dot" /> Base FIPE{" "}
           <span className="topbar-divider" /> {referenceMonth ?? "Atualizando"}
         </div>
+        <ThemeToggle />
       </header>
 
       <main id="inicio" className="workspace">
