@@ -28,6 +28,15 @@
   border-radius: 6px;
 }
 
+/* A color logo sits on white, its own background, and widens the tile when it is a wordmark. */
+.vehicle-category-mark:has(.brand-logo) {
+  width: auto;
+  min-width: 36px;
+  padding: 0 5px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
 .vehicle-identity {
   min-width: 0;
 }

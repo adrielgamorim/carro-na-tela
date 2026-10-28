@@ -10,3 +10,12 @@
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: contain;
 }
+
+/* A color logo keeps its own proportions inside the tile. */
+.brand-logo {
+  display: block;
+  flex: none;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}

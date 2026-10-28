@@ -29,9 +29,10 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
   Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
-- Cards com o logo da marca, foto do modelo (Wikimedia Commons, da geração do ano escolhido quando o
-  artigo da Wikipedia separa gerações), frota em circulação e
-  posição no ranking.
+- Cards com o logo colorido da marca (59 marcas, de `npm run fetch:brand-logos`; as demais ficam
+  com o ícone monocromático do Simple Icons ou o do tipo de veículo), foto do modelo (Wikimedia
+  Commons, da geração do ano escolhido quando o artigo da Wikipedia separa gerações), frota em
+  circulação e posição no ranking.
 - Busca pelo chassi (VIN): fabricante, país e ano-modelo decodificados no navegador; modelo e
   motor pela NHTSA vPIC quando ela conhece o veículo. O resultado vira filtros.
 

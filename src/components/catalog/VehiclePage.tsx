@@ -89,7 +89,7 @@ export function VehiclePage({
         <div className="vehicle-page-summary">
           <div className="catalog-card-top">
             <span className="catalog-card-icon" aria-hidden="true">
-              <BrandIcon brand={entry.brand} category={entry.category} size={20} />
+              <BrandIcon brand={entry.brand} category={entry.category} size={30} />
             </span>
             <div className="catalog-card-title">
               <span>

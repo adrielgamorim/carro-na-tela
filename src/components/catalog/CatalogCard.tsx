@@ -133,7 +133,7 @@ export function CatalogCard({
       )}
       <div className="catalog-card-top">
         <span className="catalog-card-icon" aria-hidden="true">
-          <BrandIcon brand={selected.brand} category={selected.category} size={18} />
+          <BrandIcon brand={selected.brand} category={selected.category} size={30} />
         </span>
         <div className="catalog-card-title">
           <span>

@@ -34,6 +34,16 @@
   border-radius: 7px;
 }
 
+/* A color logo sits on white, its own background, and widens the tile when it is a wordmark. */
+.catalog-card-icon:has(.brand-logo) {
+  width: auto;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 7px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
 .catalog-card-title {
   display: grid;
   min-width: 0;

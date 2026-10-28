@@ -35,7 +35,7 @@ export function VehicleCard({
     <article className="vehicle-card">
       <div className="vehicle-row">
         <div className="vehicle-category-mark" aria-hidden="true">
-          <BrandIcon brand={vehicle.brand} category={vehicle.category} size={20} />
+          <BrandIcon brand={vehicle.brand} category={vehicle.category} size={24} />
         </div>
         <div className="vehicle-identity">
           <div className="vehicle-title-line">

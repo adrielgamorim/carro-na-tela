@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { brandIconKeys } from "./brandIconKeys";
-import { brandIconUrl } from "./brandIcons";
+import { brandLogoKeys } from "./brandLogoKeys";
+import { brandIconUrl, brandLogoUrl } from "./brandIcons";
 
 describe("brandIconUrl", () => {
   it("maps FIPE brand names to their logo, accents and prefixes included", () => {
@@ -19,5 +20,20 @@ describe("brandIconUrl", () => {
   it("has a file for every key (npm run build:brand-icons)", () => {
     const files = Object.keys(import.meta.glob("/public/brands/*.svg"));
     expect(brandIconKeys.filter((key) => !files.includes(`/public/brands/${key}.svg`))).toEqual([]);
+  });
+});
+
+describe("brandLogoUrl", () => {
+  it("maps FIPE brand names to their color logo, partners' names included", () => {
+    expect(brandLogoUrl("Mercedes-Benz")).toBe("/brands/logos/mercedesbenz.png");
+    expect(brandLogoUrl("GM - Chevrolet")).toBe("/brands/logos/chevrolet.png");
+    expect(brandLogoUrl("Caoa Chery/Chery")).toBe("/brands/logos/chery.png");
+    expect(brandLogoUrl("CHANA")).toBe("/brands/logos/changan.png");
+    expect(brandLogoUrl("Fibravan")).toBeNull();
+  });
+
+  it("has a file for every key (npm run fetch:brand-logos)", () => {
+    const files = Object.keys(import.meta.glob("/public/brands/logos/*.png"));
+    expect(brandLogoKeys.filter((key) => !files.includes(`/public/brands/logos/${key}.png`))).toEqual([]);
   });
 });

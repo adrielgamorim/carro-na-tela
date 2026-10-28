@@ -19,7 +19,8 @@
     "fetch:anp": "node scripts/anp/fetch-anp.ts",
     "fetch:wmi": "node scripts/vin/fetch-wmi.ts",
     "fetch:frota": "node scripts/frota/fetch-frota.ts",
-    "build:brand-icons": "node scripts/brands/build-brand-icons.ts"
+    "build:brand-icons": "node scripts/brands/build-brand-icons.ts",
+    "fetch:brand-logos": "node scripts/brands/fetch-brand-logos.ts"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",
