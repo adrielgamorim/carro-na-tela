@@ -16,6 +16,7 @@
     "unschedule:daily": "powershell -ExecutionPolicy Bypass -File scripts/schedule-daily.ps1 -Remove",
     "parse:pbev": "node scripts/inmetro/parse-pbev.ts",
     "fetch:wikidata": "node scripts/wikidata/fetch-wikidata.ts",
+    "fetch:galeria": "node --env-file-if-exists=.env scripts/wikidata/fetch-gallery.ts",
     "fetch:anp": "node scripts/anp/fetch-anp.ts",
     "fetch:wmi": "node scripts/vin/fetch-wmi.ts",
     "fetch:frota": "node scripts/frota/fetch-frota.ts",

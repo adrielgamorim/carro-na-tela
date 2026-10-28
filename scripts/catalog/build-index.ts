@@ -26,6 +26,10 @@ import { fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
+import type { GalleryPhoto as GalleryPhotoData } from "../wikidata/gallery.ts";
+import { commonsFile } from "../wikidata/details.ts";
+import { galleryPath } from "../../src/catalog/gallery.ts";
+import type { GalleryFile } from "../../src/catalog/gallery.ts";
 
 const { values } = parseArgs({
   options: {
@@ -105,6 +109,27 @@ const index = buildCatalogIndex(snapshots, {
   fleet,
   press,
 });
+
+// Photo galleries (npm run fetch:galeria): one file per model, loaded by the
+// version page; the index only says how many photos a model has.
+const gallery = await readFile(join(wikidataDir, "gallery.json"), "utf8")
+  .then((text) => JSON.parse(text) as Record<string, GalleryPhotoData[]>)
+  .catch(() => ({}) as Record<string, GalleryPhotoData[]>);
+const galleryDir = join(values.out, "galeria");
+await rm(galleryDir, { recursive: true, force: true });
+await mkdir(galleryDir, { recursive: true });
+let galleryPhotos = 0;
+for (const model of index.models ?? []) {
+  const photos = gallery[model.id];
+  if (!photos?.length) continue;
+  const file: GalleryFile = {
+    photos: photos.map(({ file, ...photo }) => ({ ...photo, page: commonsFile(file) })),
+  };
+  await writeFile(join(values.out, galleryPath(model.id)), JSON.stringify(file));
+  model.gallery = photos.length;
+  galleryPhotos += photos.length;
+}
+
 const json = JSON.stringify(index);
 
 await mkdir(values.out, { recursive: true });
@@ -146,6 +171,10 @@ if (index.fleet) {
   console.log(
     `Frota Senatran (${index.fleet.reference}): ${matched} versões em ${index.fleet.lines.length} linhas de modelo`,
   );
+}
+if (galleryPhotos) {
+  const models = (index.models ?? []).filter((model) => model.gallery).length;
+  console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}`);
 }
 if (index.press) {
   const years = index.versions.flatMap((version) => version.r ?? []);

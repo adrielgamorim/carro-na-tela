@@ -9,6 +9,7 @@ import { BrandIcon } from "../BrandIcon";
 import { ShareLinkButton } from "../ShareLinkButton";
 import { VehicleDetails } from "../VehicleDetails";
 import { FleetLine, PriceBlock } from "./CatalogCard";
+import { ModelGallery } from "./ModelGallery";
 import type { LivePrice, PageLink } from "./CatalogCard";
 import "./CatalogCard.css";
 import "./VehiclePage.css";
@@ -30,9 +31,6 @@ interface VehiclePageProps {
   onRetryEnrichment: () => void;
 }
 
-/** Commons serves standard thumbnail widths; the catalog keeps the 500 px one. */
-const largePhoto = (thumb: string) => thumb.replace("/500px-", "/960px-");
-
 /** Everything the app knows about one catalog version, on a page of its own (?versao=<id>). */
 export function VehiclePage({
   entry,
@@ -48,9 +46,6 @@ export function VehiclePage({
   onToggleCompare,
   onRetryEnrichment,
 }: VehiclePageProps) {
-  const photo = entry.wikidata?.image;
-  const credit = [photo?.artist, photo?.license].filter(Boolean).join(", ");
-
   useEffect(() => {
     const previous = document.title;
     document.title = `${entry.model} ${yearLabel(entry)} | Carro na tela`;
@@ -66,25 +61,8 @@ export function VehiclePage({
       </a>
 
       <header className="vehicle-page-hero">
-        {photo && (
-          <figure className="vehicle-page-photo">
-            <img
-              src={largePhoto(photo.thumb)}
-              alt={`${entry.wikidata?.label ?? entry.family} (foto ilustrativa do modelo)`}
-              decoding="async"
-              // Small originals have no 960 px thumbnail.
-              onError={(event) => {
-                if (event.currentTarget.src !== photo.thumb) event.currentTarget.src = photo.thumb;
-              }}
-            />
-            <figcaption>
-              Foto ilustrativa do modelo ·{" "}
-              <a href={photo.page} target="_blank" rel="noreferrer">
-                {credit ? `${credit} · ` : ""}Wikimedia Commons
-              </a>
-            </figcaption>
-          </figure>
-        )}
+        {/* A new year can be another generation: start from its first photo. */}
+        <ModelGallery key={entry.id} entry={entry} />
 
         <div className="vehicle-page-summary">
           <div className="catalog-card-top">
@@ -155,7 +133,7 @@ export function VehiclePage({
           categoryLabel={categoryLabel(vehicle.category) ?? "Veículo"}
           enrichment={enrichment}
           onRetryEnrichment={onRetryEnrichment}
-          showModelPhoto={!photo}
+          showModelPhoto={!entry.wikidata?.image}
         />
       ) : (
         <p className="vehicle-page-empty">

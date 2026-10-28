@@ -31,6 +31,8 @@ export interface CatalogModelInfo {
   wikipedia?: string;
   specs?: ModelSpecs;
   image?: CatalogPhoto;
+  /** Photos in the model's gallery file (src/catalog/gallery.ts), when it has one. */
+  gallery?: number;
 }
 
 /** A Wikimedia Commons photo with its credits. */

@@ -34,7 +34,8 @@ const { values } = parseArgs({
   },
 });
 
-const headers = { "User-Agent": "carro-na-tela/0.1 (catálogo FIPE local)" };
+// Wikimedia limits clients whose User-Agent has no contact (a URL or email) to 10 requests a minute.
+const headers = { "User-Agent": "carro-na-tela/1.0 (https://github.com/adrielgamorim/carro-na-tela)" };
 const modelsFile = join(values.out, "models.json");
 const detailsFile = join(values.out, "details.json");
 const fallbackFile = join(values.out, "fallback.json");

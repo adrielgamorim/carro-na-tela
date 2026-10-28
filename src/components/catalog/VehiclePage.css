@@ -36,30 +36,6 @@
   border-radius: 8px;
 }
 
-.vehicle-page-photo {
-  margin: 0;
-}
-
-.vehicle-page-photo img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-  background: var(--mist);
-  border-radius: 6px;
-}
-
-.vehicle-page-photo figcaption {
-  margin-top: 6px;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.35;
-}
-
-.vehicle-page-photo figcaption a {
-  color: var(--muted);
-}
-
 .vehicle-page-summary {
   display: grid;
   gap: 14px;
