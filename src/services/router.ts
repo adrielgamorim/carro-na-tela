@@ -1,10 +1,11 @@
 import { clearCatalogParams } from "../catalog/catalogParams";
 import { clearConsultaParams, hasConsultaParams } from "./consultaUrl";
 
-// The app's URL scheme, in one place. There are two views on the same page:
+// The app's URL scheme, in one place. There are three views on the same page:
 //
 //   /?marca=Fiat&ano=2020-2020                                                Catálogo (home)
 //   /?versao=<entry id>                                                       Página de uma versão do catálogo
+//   /?view=favoritos                                                          Favoritos (versões marcadas)
 //   /?view=consulta&marcaId=21&familia=ARGO&modeloId=11&anoId=2026-5#comparacao Consulta FIPE
 //
 // Links from before the catalog became the home still work: "?view=catalogo"
@@ -15,13 +16,13 @@ import { clearConsultaParams, hasConsultaParams } from "./consultaUrl";
 // The hash scrolls to a section of the view. Two views do not need a router
 // library; one is worth adopting when real pages appear (one per brand, say).
 
-export type View = "consulta" | "catalogo";
+export type View = "consulta" | "catalogo" | "favoritos";
 
 /** The view a query string opens: the catalog unless it is a consultation. */
 export function readView(search: string): View {
   const params = new URLSearchParams(search);
   const view = params.get("view");
-  if (view === "consulta" || view === "catalogo") return view;
+  if (view === "consulta" || view === "catalogo" || view === "favoritos") return view;
   return hasConsultaParams(params) ? "consulta" : "catalogo";
 }
 
@@ -33,6 +34,11 @@ export function viewUrl(href: string, view: View, anchor?: string): URL {
     // The catalog link leaves a version's page for the list.
     url.searchParams.delete("versao");
     clearConsultaParams(url.searchParams);
+  } else if (view === "favoritos") {
+    url.searchParams.set("view", "favoritos");
+    url.searchParams.delete("versao");
+    clearConsultaParams(url.searchParams);
+    clearCatalogParams(url.searchParams);
   } else {
     url.searchParams.set("view", "consulta");
     clearCatalogParams(url.searchParams);

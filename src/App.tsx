@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import { ArrowDownUp } from "lucide-react";
+import { ArrowDownUp, Star } from "lucide-react";
 import "./App.css";
 import { ConsultaPage } from "./components/ConsultaPage";
 import { ErrorBoundary } from "./components/ErrorBoundary";
@@ -12,6 +12,7 @@ import {
   writeConsultaParams,
 } from "./services/consultaUrl";
 import { readView } from "./services/router";
+import { useFavorites } from "./services/favorites";
 import { loadSession, saveSession } from "./services/storage";
 import type { FipeVehicle } from "./types/vehicle";
 
@@ -24,6 +25,7 @@ const CatalogPage = lazy(() =>
 
 function App() {
   const { view, navigate, viewLink } = useView();
+  const favorites = useFavorites();
   const [initialSession] = useState(() => loadSession());
   const [consulted, setConsulted] = useState<FipeVehicle[]>(
     initialSession.consulted,
@@ -65,7 +67,7 @@ function App() {
 
   useEffect(() => {
     const url = new URL(window.location.href);
-    if (view === "catalogo") {
+    if (view !== "consulta") {
       clearConsultaParams(url.searchParams);
       window.history.replaceState(window.history.state, "", url);
       return;
@@ -157,6 +159,17 @@ function App() {
             Consulta<span className="nav-label-extra"> FIPE</span>
           </a>
           <a
+            className={`nav-link nav-link-favorites${view === "favoritos" ? " nav-link-active" : ""}`}
+            aria-current={view === "favoritos" ? "page" : undefined}
+            {...viewLink("favoritos")}
+            onPointerEnter={() => void loadCatalogPage()}
+            onFocus={() => void loadCatalogPage()}
+          >
+            <Star size={14} aria-hidden="true" />
+            <span className="nav-label-extra">Favoritos </span>
+            <span className="nav-count">{favorites.length}</span>
+          </a>
+          <a
             className="nav-link nav-link-comparison"
             {...viewLink("consulta", "comparacao")}
           >
@@ -170,7 +183,9 @@ function App() {
       </header>
 
       <main id="inicio" className="workspace">
-        {view === "catalogo" ? (
+        {view !== "consulta" ? (
+          // The favorites are the catalog's cards: one page, so a version opened
+          // from either keeps the list behind it.
           <ErrorBoundary key="catalogo" label="o catálogo">
             <Suspense
               fallback={
@@ -180,9 +195,11 @@ function App() {
               }
             >
               <CatalogPage
+                mode={view}
                 comparison={comparison}
                 onToggleCompare={toggleCatalogComparison}
                 onOpenComparison={() => navigate("consulta", "comparacao")}
+                onOpenCatalog={() => navigate("catalogo")}
               />
             </Suspense>
           </ErrorBoundary>

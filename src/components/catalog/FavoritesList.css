@@ -1,0 +1,92 @@
+/* Styles of FavoritesList.tsx. Tokens (colors) come from src/index.css. */
+
+.favorites {
+  display: grid;
+  gap: 18px;
+}
+
+.favorites-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.favorites-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font: 600 26px/1.1 var(--display);
+}
+
+.favorites-heading h2 svg {
+  color: #e0a526;
+}
+
+.favorites-heading h2 span {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.favorites-heading p {
+  max-width: 560px;
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.favorites-compare {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 14px;
+  color: var(--ink);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.favorites-compare:hover {
+  border-color: var(--muted);
+}
+
+.favorites-missing {
+  padding: 14px 16px;
+  background: var(--paper-white);
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.favorites-missing p {
+  margin: 4px 0 8px;
+  color: var(--muted);
+}
+
+.favorites-missing ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.favorites-missing li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.favorites-missing button {
+  display: grid;
+  padding: 4px;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}

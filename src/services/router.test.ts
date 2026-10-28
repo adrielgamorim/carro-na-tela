@@ -10,6 +10,7 @@ describe("router", () => {
     // A consultation shared before the catalog became the home.
     expect(readView("?marcaId=21&familia=ARGO")).toBe("consulta");
     expect(readView("?fipe=001580-1")).toBe("consulta");
+    expect(readView("?view=favoritos")).toBe("favoritos");
   });
 
   it("keeps only the target view's parameters, and the anchor", () => {
@@ -19,5 +20,6 @@ describe("router", () => {
     expect(viewUrl("http://x/?versao=21-1%3A2026-5", "catalogo").search).toBe("");
     const catalogo = "http://x/?view=catalogo&marca=Fiat&versao=21-1%3A2026-5&marcaId=22";
     expect(viewUrl(catalogo, "consulta", "comparacao").href).toBe("http://x/?view=consulta&marcaId=22#comparacao");
+    expect(viewUrl(catalogo, "favoritos").search).toBe("?view=favoritos");
   });
 });

@@ -1,0 +1,59 @@
+/* Styles of Favorite.tsx. Tokens (colors) come from src/index.css. */
+
+.favorite-button {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  place-items: center;
+  margin-left: auto;
+  padding: 0;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.favorite-button:hover {
+  color: var(--ink);
+  border-color: var(--muted);
+}
+
+.favorite-button-active,
+.favorite-button-active:hover {
+  color: #e0a526;
+  border-color: #e0a526;
+}
+
+.favorite-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  margin: 2px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.favorite-note > svg {
+  color: #e0a526;
+}
+
+/* The change gets a line of its own. */
+.favorite-change {
+  display: inline-flex;
+  flex-basis: 100%;
+  align-items: center;
+  gap: 3px;
+  padding-left: 16px;
+  font-weight: 600;
+}
+
+.favorite-up {
+  color: var(--forest);
+}
+
+.favorite-down {
+  color: var(--danger);
+}

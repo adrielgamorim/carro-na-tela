@@ -24,6 +24,8 @@ import { vinCatalogFilters } from "../../catalog/vinFilters";
 import type { VinFilterResult } from "../../catalog/vinFilters";
 import { useCatalogIndex } from "../../hooks/useCatalogIndex";
 import { useLivePrices } from "../../hooks/useLivePrices";
+import { useFavorites } from "../../services/favorites";
+import { FavoritesList } from "./FavoritesList";
 import { useVehicleEnrichment } from "../../hooks/useVehicleEnrichment";
 import { useVinSearch } from "../../hooks/useVinSearch";
 import type { FipeVehicle } from "../../types/vehicle";
@@ -71,17 +73,23 @@ const sortLabels: Record<CatalogSort, string> = {
 };
 
 interface CatalogPageProps {
+  /** The whole catalog, or only the versions marked as favorite. */
+  mode: "catalogo" | "favoritos";
   comparison: FipeVehicle[];
   onToggleCompare: (vehicle: FipeVehicle) => void;
   onOpenComparison: () => void;
+  onOpenCatalog: () => void;
 }
 
 function CatalogBrowser({
   index,
+  mode,
   comparison,
   onToggleCompare,
   onOpenComparison,
+  onOpenCatalog,
 }: CatalogPageProps & { index: CatalogIndex }) {
+  const favorites = useFavorites();
   const [filters, setFilters] = useState<CatalogFilters>(() => {
     const read = readCatalogParams(new URLSearchParams(window.location.search));
     // Links from before lines were spelled once per brand ("linha=UNO" → "Uno").
@@ -116,11 +124,11 @@ function CatalogBrowser({
 
   useEffect(() => {
     // A version's page has a URL of its own; the filters come back with the list.
-    if (openId) return;
+    if (openId || mode === "favoritos") return;
     const url = new URL(window.location.href);
     writeCatalogParams(filters, url.searchParams);
     window.history.replaceState(window.history.state, "", url);
-  }, [filters, openId]);
+  }, [filters, openId, mode]);
 
   // Back and forward move between the list and versions' pages.
   useEffect(() => {
@@ -270,8 +278,38 @@ function CatalogBrowser({
   return (
     <>
       {versionPage}
-      {/* Kept mounted behind a version's page: filters, picked years and "mostrar mais" survive. */}
-      <div hidden={openId !== null}>
+      {mode === "favoritos" && (
+        <div hidden={openId !== null}>
+          <FavoritesList
+            favorites={favorites}
+            entries={entries}
+            livePrice={(entry) => livePrices[entry.id]}
+            isCompared={isCompared}
+            canCompare={(entry) => vehicleFor(entry) !== null}
+            comparisonFull={comparison.length >= 4}
+            onFetchPrice={fetchPrice}
+            onToggleCompare={(entry) => {
+              const vehicle = vehicleFor(entry);
+              if (vehicle) onToggleCompare(vehicle);
+            }}
+            onCompareAll={(chosen) => {
+              const room = 4 - comparison.length;
+              chosen
+                .filter((entry) => !isCompared(entry))
+                .slice(0, Math.max(0, room))
+                .forEach((entry) => {
+                  const vehicle = vehicleFor(entry);
+                  if (vehicle) onToggleCompare(vehicle);
+                });
+              setCompareOpen(true);
+            }}
+            onOpenCatalog={onOpenCatalog}
+            pageLink={(entry) => linkTo(pageUrl(entry), () => openPage(entry))}
+          />
+        </div>
+      )}
+      {/* Kept mounted behind a version's page (and the favorites): filters, picked years and "mostrar mais" survive. */}
+      <div hidden={openId !== null || mode === "favoritos"}>
         <CatalogHeading index={index} />
 
         <div className="catalog-layout">

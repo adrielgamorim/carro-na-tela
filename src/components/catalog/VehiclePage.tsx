@@ -10,6 +10,7 @@ import { ShareLinkButton } from "../ShareLinkButton";
 import { VehicleDetails } from "../VehicleDetails";
 import { FleetLine, PriceBlock } from "./CatalogCard";
 import { ModelGallery } from "./ModelGallery";
+import { FavoriteButton, FavoriteNote } from "./Favorite";
 import type { LivePrice, PageLink } from "./CatalogCard";
 import "./CatalogCard.css";
 import "./VehiclePage.css";
@@ -76,6 +77,7 @@ export function VehiclePage({
               <h1 id="vehicle-page-title">{entry.model}</h1>
               {entry.fleet && <FleetLine entry={entry} fleet={entry.fleet} />}
             </div>
+            <FavoriteButton entry={entry} price={vehicle?.priceValue ?? entry.priceValue} />
           </div>
 
           <nav className="catalog-years" aria-label={`Anos-modelo de ${entry.model}`}>
@@ -92,6 +94,7 @@ export function VehiclePage({
           </nav>
 
           <PriceBlock entry={entry} live={live} onFetchPrice={onFetchPrice} />
+          <FavoriteNote entry={entry} price={vehicle?.priceValue ?? entry.priceValue} />
 
           <ul className="catalog-tags" aria-label="Características">
             {entryTags(entry).map((tag) => (

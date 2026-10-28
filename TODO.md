@@ -10,12 +10,12 @@ disponibilidade dela.
 
 - [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
       marcas da FIPE que faltam não têm modelo de 2009 em diante.
+- [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
+      (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fotos que ainda faltam: 104 versões, quase todas utilitários e marcas de nicho sem artigo
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
       (a reserva é por linha, e a FIPE chama as duas só de "SERES").
-- [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
-      (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fase 4, o que falta: porta-malas e torque fora da Stellantis, e equipamentos por versão. Os
       releases só listam itens nos de "versões e preços" (70 versões), e GM, VW e as demais não têm
       sala de imprensa aberta. Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
@@ -34,6 +34,9 @@ disponibilidade dela.
 
 ## Futuro
 
+- Conta para sincronizar os favoritos entre aparelhos: login pelo Cloudflare Access (código por
+  e-mail, grátis até 50 usuários) e os favoritos numa tabela do D1, por rotas `/api/favoritos` no
+  Worker; os do navegador sobem no primeiro login. Depois, aviso quando um favorito mudar X% na FIPE.
 - Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
   funciona em domínio próprio).
 - Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
@@ -42,6 +45,8 @@ disponibilidade dela.
 
 ## Concluído
 
+- [x] Favoritos no navegador: estrela no card e na página da versão, aba Favoritos com a variação da
+      FIPE desde que o carro foi marcado e "Comparar favoritos" (até 4).
 - [x] Geração pela versão: quando as gerações se sobrepõem, a primeira palavra depois da linha
       escolhe a geração que também se chama assim ("Uno Mille" → 1ª geração, "Fiat Mille"; Clio
       Campus → Clio II; Sandero Stepway → Sandero II), e "(novo)" fica com a mais nova ("Gol (novo)"

@@ -54,6 +54,9 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
   o botão Voltar do navegador retorna à lista com os mesmos filtros e a mesma posição.
 - Comparador lado a lado de até 4 veículos, com premissas editáveis: estado (IPVA e preço do
   combustível pela ANP) e preços próprios.
+- Favoritos: a estrela no card ou na página da versão guarda o ano-modelo e o preço FIPE daquele
+  momento; a aba Favoritos (`?view=favoritos`) mostra os cards marcados com a variação desde então
+  e compara até 4 de uma vez. Ficam no navegador (`localStorage`), sem conta.
 - Cada dado traz a fonte e a confiança: "exata" quando é desta versão, "aproximada" quando foi
   casado pelo nome e pode descrever uma versão vizinha.
 

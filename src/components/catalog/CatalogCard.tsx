@@ -10,6 +10,7 @@ import type { CatalogEntry } from "../../catalog/types";
 import { useCostSettings } from "../../services/costSettings";
 import type { FipeVehicle } from "../../types/vehicle";
 import { BrandIcon } from "../BrandIcon";
+import { FavoriteButton, FavoriteNote } from "./Favorite";
 import "./CatalogCard.css";
 
 export type LivePrice =
@@ -27,6 +28,8 @@ interface CatalogCardProps {
   onToggleCompare: (entry: CatalogEntry) => void;
   /** Link to the version's page: plain click opens it here, ctrl/middle click in a new tab. */
   pageLink: (entry: CatalogEntry) => PageLink;
+  /** Year selected at first (the favorited one); else the newest. */
+  initialEntryId?: string;
 }
 
 export interface PageLink {
@@ -112,8 +115,9 @@ export function CatalogCard({
   onFetchPrice,
   onToggleCompare,
   pageLink,
+  initialEntryId,
 }: CatalogCardProps) {
-  const [selectedId, setSelectedId] = useState(group.entries[0].id);
+  const [selectedId, setSelectedId] = useState(initialEntryId ?? group.entries[0].id);
   const [showAllYears, setShowAllYears] = useState(false);
   // The selected year may disappear when filters change; fall back to newest.
   const selected =
@@ -130,6 +134,8 @@ export function CatalogCard({
       ? "A comparação aceita até 4 veículos"
       : undefined;
   const link = pageLink(selected);
+  const live = livePrice(selected);
+  const price = selected.priceValue ?? (live?.status === "ready" ? live.vehicle.priceValue : null);
 
   return (
     <article className="catalog-card">
@@ -161,6 +167,7 @@ export function CatalogCard({
           </h3>
           {selected.fleet && <FleetLine entry={selected} fleet={selected.fleet} />}
         </div>
+        <FavoriteButton entry={selected} price={price} />
       </div>
 
       <div
@@ -192,9 +199,10 @@ export function CatalogCard({
 
       <PriceBlock
         entry={selected}
-        live={livePrice(selected)}
+        live={live}
         onFetchPrice={() => onFetchPrice(selected)}
       />
+      <FavoriteNote entry={selected} price={price} />
 
       <ul className="catalog-tags" aria-label="Características">
         {entryTags(selected).map((tag) => (
