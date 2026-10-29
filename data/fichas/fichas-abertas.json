@@ -904,22 +904,19 @@
   {
    "brand": "toyota",
    "line": "Camry",
-   "title": "Camry 2018 XLE (3.5L V6 24V, automática de 8 velocidades)",
-   "trims": [
-    "xle"
-   ],
+   "title": "Camry 2018",
+   "trims": [],
    "years": [
     2018,
     2019
    ],
    "engineLiters": 3.5,
-   "valves": 24,
    "turbo": false,
    "electric": false,
    "transmission": "automatico",
    "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_ficha_tecnica.pdf",
-   "file": "Camry_2018_ficha_tecnica.pdf",
+   "url": "https://web.archive.org/web/20240808042900/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_ficha_tecnica.pdf",
+   "file": "2020-11-camry-2018-ficha-tecnica.pdf",
    "specs": {
     "powerCv": 310,
     "torqueKgfm": 37,
@@ -934,28 +931,2069 @@
   },
   {
    "brand": "toyota",
-   "line": "Hilux SW4",
-   "title": "SW4 2024 · GR-Sport (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "line": "Camry",
+   "title": "Camry 2023 · CAMRY MY'23 - Especificações Técnicas",
    "trims": [
-    "grs",
+    "my",
+    "especificacoes",
+    "tecnicas"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220518230157/https://www.toyotacomunica.com.br/wp-content/uploads/2022/05/Ficha-tecnica-Toyota-Camry-2023.pdf",
+   "file": "2022-05-ficha-tecnica-toyota-camry-2023.pdf",
+   "specs": {
+    "lengthMm": 4885,
+    "heightMm": 1455,
+    "wheelbaseMm": 2825,
+    "trunkLiters": 500,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Camry",
+   "title": "Camry 2023 · XLE HYBRID",
+   "trims": [
+    "xle"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220518230157/https://www.toyotacomunica.com.br/wp-content/uploads/2022/05/Ficha-tecnica-Toyota-Camry-2023.pdf",
+   "file": "2022-05-ficha-tecnica-toyota-camry-2023.pdf",
+   "specs": {
+    "lengthMm": 4885,
+    "heightMm": 1455,
+    "wheelbaseMm": 2825,
+    "trunkLiters": 500,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2020 · Altis",
+   "trims": [
+    "altis"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127080411/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Novo-Corolla-2020_Ficha_Tecnica.pdf",
+   "file": "2020-07-novo-corolla-2020-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1440,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 43
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2020 · Altis",
+   "trims": [
+    "altis"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127080411/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Novo-Corolla-2020_Ficha_Tecnica.pdf",
+   "file": "2020-07-novo-corolla-2020-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1405,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2020 · GLi",
+   "trims": [
+    "gli"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127080411/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Novo-Corolla-2020_Ficha_Tecnica.pdf",
+   "file": "2020-07-novo-corolla-2020-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1375,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2020 · XEi",
+   "trims": [
+    "xei"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127080411/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Novo-Corolla-2020_Ficha_Tecnica.pdf",
+   "file": "2020-07-novo-corolla-2020-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1405,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · Altis Hybrid",
+   "trims": [
+    "altis"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1440,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 43
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · Altis Hybrid Premium",
+   "trims": [
+    "altis",
+    "premium"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1445,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 43
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · Altis Premium",
+   "trims": [
+    "altis",
+    "premium"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1405,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · GLi",
+   "trims": [
+    "gli"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1375,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · GR-S",
+   "trims": [
     "gr",
-    "sport"
+    "s",
+    "grs"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1405,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2022 · XEi",
+   "trims": [
+    "xei"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211023150340/https://www.toyotacomunica.com.br/wp-content/uploads/2020/07/Corolla-MY22-GR-S_ficha_tecnica.pdf",
+   "file": "2020-07-corolla-my22-gr-s-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1405,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · Altis Hybrid",
+   "trims": [
+    "altis"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1445,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 43
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · Altis Hybrid Premium",
+   "trims": [
+    "altis",
+    "premium"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1450,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 43
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · Altis Premium",
+   "trims": [
+    "altis",
+    "premium"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 21.3,
+    "weightKg": 1415,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · GLi",
+   "trims": [
+    "gli"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 21.3,
+    "weightKg": 1380,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · GR-S",
+   "trims": [
+    "gr",
+    "s",
+    "grs"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 21.3,
+    "weightKg": 1410,
+    "lengthMm": 4635,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla",
+   "title": "Corolla 2024 · XEi",
+   "trims": [
+    "xei"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250120195651/https://www.toyotacomunica.com.br/wp-content/uploads/2023/09/Corolla-2024_Ficha-Tecnica.pdf",
+   "file": "2023-09-corolla-2024-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 21.3,
+    "weightKg": 1410,
+    "lengthMm": 4630,
+    "heightMm": 1455,
+    "wheelbaseMm": 2700,
+    "groundClearanceMm": 148,
+    "trunkLiters": 470,
+    "tankLiters": 50
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2021 · XR",
+   "trims": [
+    "xr"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210517200329/https://www.toyotacomunica.com.br/wp-content/uploads/2021/03/Corolla_Cross_Ficha_Tecnica.pdf",
+   "file": "2021-03-corolla-cross-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2021 · XRE",
+   "trims": [
+    "xre"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210517200329/https://www.toyotacomunica.com.br/wp-content/uploads/2021/03/Corolla_Cross_Ficha_Tecnica.pdf",
+   "file": "2021-03-corolla-cross-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2021 · XRV Hybrid",
+   "trims": [
+    "xrv"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210517200329/https://www.toyotacomunica.com.br/wp-content/uploads/2021/03/Corolla_Cross_Ficha_Tecnica.pdf",
+   "file": "2021-03-corolla-cross-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1400,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2021 · XRX Hybrid",
+   "trims": [
+    "xrx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210517200329/https://www.toyotacomunica.com.br/wp-content/uploads/2021/03/Corolla_Cross_Ficha_Tecnica.pdf",
+   "file": "2021-03-corolla-cross-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1450,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2023 · GR-Sport",
+   "trims": [
+    "gr",
+    "sport",
+    "grs"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220324223824/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_Corolla-Cross-2023_e_GR-Sport_final.pdf",
+   "file": "2022-03-ficha-tecnica-corolla-cross-2023-e-gr-sport-final.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1420,
+    "lengthMm": 4455,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2023 · XR",
+   "trims": [
+    "xr"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220324223824/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_Corolla-Cross-2023_e_GR-Sport_final.pdf",
+   "file": "2022-03-ficha-tecnica-corolla-cross-2023-e-gr-sport-final.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2023 · XRE",
+   "trims": [
+    "xre"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220324223824/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_Corolla-Cross-2023_e_GR-Sport_final.pdf",
+   "file": "2022-03-ficha-tecnica-corolla-cross-2023-e-gr-sport-final.pdf",
+   "specs": {
+    "powerCv": 177,
+    "torqueKgfm": 21.4,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2023 · XRV Hybrid",
+   "trims": [
+    "xrv"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220324223824/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_Corolla-Cross-2023_e_GR-Sport_final.pdf",
+   "file": "2022-03-ficha-tecnica-corolla-cross-2023-e-gr-sport-final.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1440,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2023 · XRX Hybrid",
+   "trims": [
+    "xrx"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220324223824/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_Corolla-Cross-2023_e_GR-Sport_final.pdf",
+   "file": "2022-03-ficha-tecnica-corolla-cross-2023-e-gr-sport-final.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1440,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · GR-S",
+   "trims": [
+    "gr",
+    "s",
+    "grs"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 20.8,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · XR",
+   "trims": [
+    "xr"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 20.8,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · XRE",
+   "trims": [
+    "xre"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 20.8,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · XRV Hybrid",
+   "trims": [
+    "xrv"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · XRX",
+   "trims": [
+    "xrx"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 175,
+    "torqueKgfm": 20.8,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 47
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Corolla Cross",
+   "title": "Corolla Cross 2025 · XRX Hybrid",
+   "trims": [
+    "xrx"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20260312194326/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Corolla-Cross-2025_Ficha-Tecnica.pdf",
+   "file": "2024-04-corolla-cross-2025-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 16.6,
+    "weightKg": 1420,
+    "lengthMm": 4460,
+    "widthMm": 1825,
+    "heightMm": 1620,
+    "wheelbaseMm": 2640,
+    "groundClearanceMm": 161,
+    "trunkLiters": 440,
+    "tankLiters": 36
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · Cabine Simples",
+   "trims": [
+    "cs"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1995,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · Chassi",
+   "trims": [
+    "chassi"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1810,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SR 4X2 A/T",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.7,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 24.9,
+    "weightKg": 1860,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SR A/T",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SRV 4X2 A/T",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.7,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 24.9,
+    "weightKg": 1880,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SRV 4X4 A/T",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.7,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 24.9,
+    "weightKg": 1990,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SRV A/T",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · SRX A/T",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2021 · STD Power Pack",
+   "trims": [],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210115180040/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Hilux-2021-Ficha-Tecnica.pdf",
+   "file": "2020-11-hilux-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · Cabine Simples",
+   "trims": [
+    "cs"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1995,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · Chassi",
+   "trims": [
+    "chassi"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1810,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · GR-S",
+   "trims": [
+    "gr",
+    "s",
+    "grs"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 224,
+    "torqueKgfm": 55,
+    "weightKg": 2135,
+    "lengthMm": 5330,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · SR A/T",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · SRV A/T",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · SRX A/T",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2022 · STD Power Pack",
+   "trims": [],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220706050557/https://www.toyotacomunica.com.br/wp-content/uploads/2022/03/Ficha-Tecnica_HILUX-MY22_e_GRS_final.pdf",
+   "file": "2022-03-ficha-tecnica-hilux-my22-e-grs-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · Cabine Simples",
+   "trims": [
+    "cs"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1990,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · Chassi",
+   "trims": [
+    "chassi"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1810,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · Conquest",
+   "trims": [
+    "conquest"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2128,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · GR-SPORT",
+   "trims": [
+    "gr",
+    "sport",
+    "grs"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 224,
+    "torqueKgfm": 55,
+    "weightKg": 2136,
+    "lengthMm": 5320,
+    "widthMm": 2020,
+    "heightMm": 1830,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 323,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · SR",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2080,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · SRV",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · SRX",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · SRX Limited",
+   "trims": [
+    "srx",
+    "limited"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2130,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2023 · STD Power Pack",
+   "trims": [],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240808055526/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/Nova-Hilux-GR-SPORT_Ficha-Tecnica_final.pdf",
+   "file": "2020-10-nova-hilux-gr-sport-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · Cabine Simples MT",
+   "trims": [
+    "cs"
    ],
    "years": [
     2024,
     2025
    ],
    "engineLiters": 2.8,
-   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1990,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · Chassi MT",
+   "trims": [
+    "chassi"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cs",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 1810,
+    "lengthMm": 5325,
+    "widthMm": 1800,
+    "heightMm": 1795,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 269,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · GR-Sport AT",
+   "trims": [
+    "gr",
+    "sport",
+    "grs"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
    "turbo": true,
    "electric": false,
    "transmission": "automatico",
+   "cab": "cd",
    "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
-   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
    "specs": {
     "powerCv": 224,
     "torqueKgfm": 55,
+    "weightKg": 2136,
+    "lengthMm": 5320,
+    "widthMm": 2020,
+    "heightMm": 1830,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 323,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · SR AT",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2080,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · SRV AT",
+   "trims": [
+    "srv"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2085,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · SRX AT",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · SRX Plus AT",
+   "trims": [
+    "srx",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2140,
+    "lengthMm": 5325,
+    "widthMm": 2020,
+    "heightMm": 1830,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 323,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · STD Power Pack AT",
+   "trims": [],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2065,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux",
+   "title": "Hilux 2024 · STD Power Pack MT",
+   "trims": [],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cd",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250805232223/https://www.toyotacomunica.com.br/wp-content/uploads/2024/08/Ficha-Tecnica-Hilux-2024-2.pdf",
+   "file": "2024-08-ficha-tecnica-hilux-2024-2.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 42.8,
+    "weightKg": 2090,
+    "lengthMm": 5325,
+    "widthMm": 1855,
+    "heightMm": 1815,
+    "wheelbaseMm": 3085,
+    "groundClearanceMm": 286,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2021 · SR A/T - 5 assentos",
+   "trims": [
+    "sr"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.7,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220223181237/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/SW4-2021_Ficha-tecnica.pdf",
+   "file": "2020-11-sw4-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 24.9,
+    "weightKg": 1885,
     "lengthMm": 4795,
     "widthMm": 1855,
     "heightMm": 1835,
@@ -967,9 +3005,219 @@
   {
    "brand": "toyota",
    "line": "Hilux SW4",
-   "title": "SW4 2024 · SRX / Diamond (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "title": "Hilux SW4 2021 · SRV A/T - 7 assentos",
    "trims": [
-    "srx",
+    "srv"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.7,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220223181237/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/SW4-2021_Ficha-tecnica.pdf",
+   "file": "2020-11-sw4-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 24.9,
+    "weightKg": 1910,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2021 · SRX A/T - 5 assentos",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220223181237/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/SW4-2021_Ficha-tecnica.pdf",
+   "file": "2020-11-sw4-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2175,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2021 · SRX A/T - 7 assentos",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220223181237/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/SW4-2021_Ficha-tecnica.pdf",
+   "file": "2020-11-sw4-2021-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2175,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2022 · DIAMOND A/T - 7 assentos",
+   "trims": [
+    "diamond"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211210002322/https://www.toyotacomunica.com.br/wp-content/uploads/2021/12/Ficha-Tecnica_SW4-MY22-GR-S.pdf",
+   "file": "2021-12-ficha-tecnica-sw4-my22-gr-s.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2180,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2022 · GRS A/T - 7 assentos",
+   "trims": [
+    "grs",
+    "grs"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211210002322/https://www.toyotacomunica.com.br/wp-content/uploads/2021/12/Ficha-Tecnica_SW4-MY22-GR-S.pdf",
+   "file": "2021-12-ficha-tecnica-sw4-my22-gr-s.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2022 · SRX A/T - 5 assentos",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211210002322/https://www.toyotacomunica.com.br/wp-content/uploads/2021/12/Ficha-Tecnica_SW4-MY22-GR-S.pdf",
+   "file": "2021-12-ficha-tecnica-sw4-my22-gr-s.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2022 · SRX A/T - 7 assentos",
+   "trims": [
+    "srx"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20211210002322/https://www.toyotacomunica.com.br/wp-content/uploads/2021/12/Ficha-Tecnica_SW4-MY22-GR-S.pdf",
+   "file": "2021-12-ficha-tecnica-sw4-my22-gr-s.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2024 · Diamond - 7 lugares",
+   "trims": [
     "diamond"
    ],
    "years": [
@@ -977,22 +3225,560 @@
     2025
    ],
    "engineLiters": 2.8,
-   "valves": 16,
    "turbo": true,
    "electric": false,
    "transmission": "automatico",
    "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
-   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "url": "https://web.archive.org/web/20240517191103/https://www.toyotacomunica.com.br/wp-content/uploads/2023/11/Ficha-Tecnica-SW4-Platinum-2024-Novembro-2023-1.pdf",
+   "file": "2023-11-ficha-tecnica-sw4-platinum-2024-novembro-2023-1.pdf",
    "specs": {
     "powerCv": 204,
     "torqueKgfm": 50.9,
+    "weightKg": 2180,
     "lengthMm": 4795,
     "widthMm": 1855,
     "heightMm": 1835,
     "wheelbaseMm": 2745,
     "groundClearanceMm": 279,
     "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2024 · GR-Sport - 7 lugares",
+   "trims": [
+    "gr",
+    "sport",
+    "grs"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240517191103/https://www.toyotacomunica.com.br/wp-content/uploads/2023/11/Ficha-Tecnica-SW4-Platinum-2024-Novembro-2023-1.pdf",
+   "file": "2023-11-ficha-tecnica-sw4-platinum-2024-novembro-2023-1.pdf",
+   "specs": {
+    "powerCv": 224,
+    "torqueKgfm": 55,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2024 · SRX Platinum - 5 lugares",
+   "trims": [
+    "srx",
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240517191103/https://www.toyotacomunica.com.br/wp-content/uploads/2023/11/Ficha-Tecnica-SW4-Platinum-2024-Novembro-2023-1.pdf",
+   "file": "2023-11-ficha-tecnica-sw4-platinum-2024-novembro-2023-1.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "Hilux SW4 2024 · SRX Platinum - 7 lugares",
+   "trims": [
+    "srx",
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20240517191103/https://www.toyotacomunica.com.br/wp-content/uploads/2023/11/Ficha-Tecnica-SW4-Platinum-2024-Novembro-2023-1.pdf",
+   "file": "2023-11-ficha-tecnica-sw4-platinum-2024-novembro-2023-1.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "weightKg": 2185,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "RAV4",
+   "title": "RAV4 2020 · TOYOTA RAV4 HYBRID",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20221221032823/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/toyota_rav4_hybrid_ficha_tecnica_final.pdf",
+   "file": "2020-10-toyota-rav4-hybrid-ficha-tecnica-final.pdf",
+   "specs": {
+    "powerCv": 222,
+    "torqueKgfm": 22.5,
+    "lengthMm": 4600,
+    "widthMm": 1855,
+    "heightMm": 1685,
+    "wheelbaseMm": 2690,
+    "groundClearanceMm": 180,
+    "trunkLiters": 580,
+    "tankLiters": 55
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "RAV4",
+   "title": "RAV4 2022 · RAV4 2022 - Ficha Técnica",
+   "trims": [
+    "ficha",
+    "tecnica"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220816154017/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/RAV4-2022_Ficha-Tecnica-.pdf",
+   "file": "2020-10-rav4-2022-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 222,
+    "torqueKgfm": 22.5,
+    "lengthMm": 4600,
+    "widthMm": 1855,
+    "heightMm": 1685,
+    "wheelbaseMm": 2690,
+    "groundClearanceMm": 180,
+    "trunkLiters": 580,
+    "tankLiters": 55
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "RAV4",
+   "title": "RAV4 2022 · SX CONNECTED HYBRID",
+   "trims": [
+    "sx",
+    "connected"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220816154017/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/RAV4-2022_Ficha-Tecnica-.pdf",
+   "file": "2020-10-rav4-2022-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 222,
+    "torqueKgfm": 22.5,
+    "lengthMm": 4600,
+    "widthMm": 1855,
+    "heightMm": 1685,
+    "wheelbaseMm": 2690,
+    "groundClearanceMm": 180,
+    "trunkLiters": 580,
+    "tankLiters": 55
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "RAV4",
+   "title": "RAV4 2024 · RAV4 PHEV 2024 - Especificações Técnicas",
+   "trims": [
+    "phev",
+    "especificacoes",
+    "tecnicas"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "onlyNamed": true,
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250505025836/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Ficha-Tecnica-e-lista-de-equipamentos_RAV4-PHEV.xlsx-Ficha-Tecnica.pdf",
+   "file": "2024-04-ficha-tecnica-e-lista-de-equipamentos-rav4-phev-xlsx-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 185,
+    "torqueKgfm": 12.3,
+    "lengthMm": 4600,
+    "widthMm": 1855,
+    "heightMm": 1690,
+    "wheelbaseMm": 2690,
+    "groundClearanceMm": 175,
+    "trunkLiters": 490,
+    "tankLiters": 55
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "RAV4",
+   "title": "RAV4 2024 · RAV4 XSE PHEV",
+   "trims": [
+    "xse",
+    "phev"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "onlyNamed": true,
+   "engineLiters": 2.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "hybrid": true,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20250505025836/https://www.toyotacomunica.com.br/wp-content/uploads/2024/04/Ficha-Tecnica-e-lista-de-equipamentos_RAV4-PHEV.xlsx-Ficha-Tecnica.pdf",
+   "file": "2024-04-ficha-tecnica-e-lista-de-equipamentos-rav4-phev-xlsx-ficha-tecnica.pdf",
+   "specs": {
+    "powerCv": 185,
+    "torqueKgfm": 12.3,
+    "lengthMm": 4600,
+    "widthMm": 1855,
+    "heightMm": 1690,
+    "wheelbaseMm": 2690,
+    "groundClearanceMm": 175,
+    "trunkLiters": 490,
+    "tankLiters": 55
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 12.9,
+    "weightKg": 1125,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1135,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1141,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1150,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1130,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · CVT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1150,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · MT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 101,
+    "torqueKgfm": 12.9,
+    "weightKg": 1110,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2020 · MT",
+   "trims": [],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20210127055804/https://www.toyotacomunica.com.br/wp-content/uploads/2020/10/yaris_2020_ficha_ta%C2%A9cnica_12_novembro_2019.pdf",
+   "file": "2020-10-yaris-2020-ficha-ta-cnica-12-novembro-2019.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1110,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2023 · Yaris hatchback 2023",
+   "trims": [],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121204512/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-hatch-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-hatch-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1125,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris Sedan",
+   "title": "Yaris Sedan 2023 · Yaris sedã 2023",
+   "trims": [],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121205340/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-seda-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-seda-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1130,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
    }
   },
   {

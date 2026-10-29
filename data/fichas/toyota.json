@@ -1,96 +1,24 @@
 {
- "_doc": "Fichas técnicas e equipamentos da Toyota, transcritos à mão dos PDFs da sala de imprensa (toyotacomunica.com.br/downloads, que bloqueia download automático; os PDFs ficam em data/fichas/toyota, fora do git). Só os números que a ficha dá sem ambiguidade: a do SW4 2024 tem três pesos para quatro versões, então fica sem peso. A Toyota não dá velocidade máxima nem 0 a 100.",
- "sheets": [
-  {
-   "brand": "toyota",
-   "line": "Camry",
-   "title": "Camry 2018 XLE (3.5L V6 24V, automática de 8 velocidades)",
-   "trims": ["xle"],
-   "years": [2018, 2019],
-   "engineLiters": 3.5,
-   "valves": 24,
-   "turbo": false,
-   "electric": false,
-   "transmission": "automatico",
-   "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_ficha_tecnica.pdf",
-   "file": "Camry_2018_ficha_tecnica.pdf",
-   "specs": {
-    "powerCv": 310,
-    "torqueKgfm": 37,
-    "lengthMm": 4885,
-    "widthMm": 1840,
-    "heightMm": 1455,
-    "wheelbaseMm": 2825,
-    "groundClearanceMm": 150,
-    "trunkLiters": 593,
-    "tankLiters": 60
-   }
-  },
-  {
-   "brand": "toyota",
-   "line": "Hilux SW4",
-   "title": "SW4 2024 · SRX / Diamond (2.8L 16V turbo diesel, automática de 6 velocidades)",
-   "trims": ["srx", "diamond"],
-   "years": [2024, 2025],
-   "engineLiters": 2.8,
-   "valves": 16,
-   "turbo": true,
-   "electric": false,
-   "transmission": "automatico",
-   "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
-   "file": "Ficha-Tecnica-SW4-2024.pdf",
-   "specs": {
-    "powerCv": 204,
-    "torqueKgfm": 50.9,
-    "lengthMm": 4795,
-    "widthMm": 1855,
-    "heightMm": 1835,
-    "wheelbaseMm": 2745,
-    "groundClearanceMm": 279,
-    "tankLiters": 80
-   }
-  },
-  {
-   "brand": "toyota",
-   "line": "Hilux SW4",
-   "title": "SW4 2024 · GR-Sport (2.8L 16V turbo diesel, automática de 6 velocidades)",
-   "trims": ["grs", "gr", "sport"],
-   "years": [2024, 2025],
-   "engineLiters": 2.8,
-   "valves": 16,
-   "turbo": true,
-   "electric": false,
-   "transmission": "automatico",
-   "page": "https://www.toyotacomunica.com.br/downloads/",
-   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
-   "file": "Ficha-Tecnica-SW4-2024.pdf",
-   "specs": {
-    "powerCv": 224,
-    "torqueKgfm": 55,
-    "lengthMm": 4795,
-    "widthMm": 1855,
-    "heightMm": 1835,
-    "wheelbaseMm": 2745,
-    "groundClearanceMm": 279,
-    "tankLiters": 80
-   }
-  }
- ],
+ "_doc": "Lista de equipamentos do Camry 2018, transcrita à mão do PDF da Toyota (toyotacomunica.com.br, cópia no Wayback Machine): é a única cujos itens não têm marcas que o leitor (scripts/fichas/toyota.ts) entenda. As outras fichas e listas da Toyota vêm de npm run fichas:wayback e fichas:abertas.",
+ "sheets": [],
  "equipment": [
   {
    "brand": "toyota",
    "line": "Camry",
    "title": "Camry 2018 XLE",
-   "trims": ["xle"],
-   "years": [2018, 2019],
+   "trims": [
+    "xle"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
    "engineLiters": 3.5,
    "valves": 24,
    "turbo": false,
    "electric": false,
    "transmission": "automatico",
-   "page": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_equipamentos.pdf",
+   "page": "https://web.archive.org/web/20240809051407/https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_equipamentos.pdf",
    "file": "Camry_2018_equipamentos.pdf",
    "groups": [
     {

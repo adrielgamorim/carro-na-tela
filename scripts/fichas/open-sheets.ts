@@ -25,6 +25,10 @@ export interface OpenSheet {
   valves?: number;
   turbo?: boolean;
   electric: boolean;
+  /** A hybrid (Toyota marks them); none for the others. */
+  hybrid?: boolean;
+  /** Only for versions naming one of its trims (a plug-in hybrid FIPE does not tell from the hybrid). */
+  onlyNamed?: boolean;
   transmission?: Transmission;
   /** Pickups: "cd" (double cab), "cs" (single) or "ce" (extended). */
   cab?: "cd" | "cs" | "ce";
@@ -162,7 +166,7 @@ export function transmissionIn(text: string): Transmission | undefined {
   if (/manual|mecanic|\bmt\b|\bmec\b/.test(value)) return "manual";
   return undefined;
 }
-function cabIn(text: string): "cd" | "cs" | "ce" | undefined {
+export function cabIn(text: string): "cd" | "cs" | "ce" | undefined {
   const value = ` ${plain(text).replace(/[^a-z0-9]+/g, " ")} `;
   if (/ cd | cabine dupla /.test(value)) return "cd";
   if (/ cs | cabine simples /.test(value)) return "cs";
@@ -375,6 +379,8 @@ export interface OpenSheetTarget {
   valves?: number;
   turbo: boolean;
   electric: boolean;
+  /** FIPE fuel or name "Híbrido". */
+  hybrid?: boolean;
 }
 
 // Sheets merged for versions that several fit equally, one object per set, so the index lists each once.
@@ -426,7 +432,7 @@ export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget)
 /** What a sheet or an equipment list says it is for. */
 export type SheetKey = Pick<
   OpenSheet,
-  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "transmission" | "cab"
+  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "onlyNamed" | "transmission" | "cab"
 >;
 
 /**
@@ -452,7 +458,7 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     });
     if (longer) continue;
     if (target.modelYear < sheet.years[0] || target.modelYear > sheet.years[1]) continue;
-    if (sheet.electric !== target.electric) continue;
+    if (sheet.electric !== target.electric || Boolean(sheet.hybrid) !== Boolean(target.hybrid)) continue;
     if (sheet.engineLiters !== undefined && target.engineLiters !== undefined && Math.abs(sheet.engineLiters - target.engineLiters) > 0.05) continue;
     if (!sheet.electric && sheet.turbo !== undefined && sheet.turbo !== target.turbo) continue;
     if (sheet.transmission === "automatico" && !automatic) continue;
@@ -461,11 +467,14 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     // A sheet of a cab is of that cab only: FIPE names the double and extended ones, not always the single.
     if (sheet.cab && sheet.cab !== (versionCab ?? "cs")) continue;
     const named = sheet.trims.filter(names).length;
-    if (trimNamed && !named) continue;
-    const distance = Math.abs(target.modelYear - (sheet.years[0] + sheet.years[1]) / 2);
-    // One that says the engine and the gearbox (and they fit) over one that leaves them open.
-    const precise = (sheet.engineLiters !== undefined ? 1 : 0) + (sheet.transmission ? 1 : 0);
-    fitting.push({ sheet, score: named * 10 + precise - distance });
+    if ((trimNamed || sheet.onlyNamed) && !named) continue;
+    // From the year it starts: of two sheets for 2024 (2023–2024, 2024–2025), the 2024 one.
+    const distance = Math.abs(target.modelYear - sheet.years[0]);
+    // One that says the engine and the gearbox (and they fit) over one that leaves them open; less than a year.
+    const precise = ((sheet.engineLiters !== undefined ? 1 : 0) + (sheet.transmission ? 1 : 0)) * 0.4;
+    // Trims the version does not have count against: "SRX" over "SRX Plus" for an SRX.
+    const extra = sheet.trims.length - named;
+    fitting.push({ sheet, score: named * 10 - extra * 3 + precise - distance });
   }
   const best = Math.max(...fitting.map((item) => item.score));
   return fitting.filter((item) => item.score === best).map((item) => item.sheet);

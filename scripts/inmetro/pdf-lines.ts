@@ -24,7 +24,7 @@ export async function readPdfLines(file: string): Promise<PdfTextLine[]> {
       const rowPosition = Math.round(rotated ? -x : y);
       const center = rotated ? y + item.width / 2 : x + item.width / 2;
       const line = byRow.get(rowPosition) ?? { page: pageNumber, y: rowPosition, cells: [] };
-      line.cells.push({ center, text: item.str });
+      line.cells.push({ center, width: item.width, text: item.str });
       byRow.set(rowPosition, line);
     }
     lines.push(...byRow.values());

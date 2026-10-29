@@ -13,6 +13,8 @@ import type { Propulsion } from "../../src/catalog/types.ts";
 export interface PdfTextCell {
   /** Center of the text item along the table's columns. */
   center: number;
+  /** Its width along them, to tell words of one cell from neighboring cells. */
+  width?: number;
   text: string;
 }
 

@@ -24,6 +24,39 @@ disponibilidade dela.
       (`brochure` em `data/fichas/renault-links.json`) e os releases das outras marcas.
       Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
 
+### Fontes de dados a explorar
+
+Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
+
+- [ ] 🟡 Wayback Machine (web.archive.org): guarda arquivos que sumiram dos sites das marcas.
+      `npm run fichas:wayback -- --site=<domínio/caminho> --pasta=<nome>` baixa os PDFs salvos.
+      Toyota feita (59 PDFs de 2018–2025, lidos por `scripts/fichas/toyota.ts`); faltam as listas
+      sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020) e procurar fichas e folhetos antigos
+      das outras marcas (VW, Renault, Honda, Hyundai, Nissan…).
+- [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
+      medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
+- [ ] 🟡 Folhetos e catálogos em PDF: os da Renault estão em `brochure` de
+      `data/fichas/renault-links.json`; dão equipamentos por versão de Duster, Kwid, Captur, Oroch…
+- [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
+      tem Akamai): conferir robots.txt e o bloqueio de cada uma.
+- [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
+      `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
+      revisão à mão, como os dados de porta-malas e torque.
+- [ ] 🟡 Latin NCAP (latinncap.com): estrelas de segurança e relatórios dos carros vendidos no
+      Brasil; um selo na página da versão.
+- [ ] 🟡 SUSEP AUTOSEG (dados abertos): prêmio médio de seguro e frequência de sinistros por modelo
+      e região; daria o seguro estimado ao lado do IPVA.
+- [ ] 🟢 Recalls (Senacon, portal de recall): campanhas por marca, modelo e ano.
+- [ ] 🟢 Roubos e furtos por modelo (dados abertos da SSP-SP): índice de roubo da linha.
+- [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
+      por km.
+- [ ] 🟢 Flickr (API com filtro de licença Creative Commons, chave grátis): mais fotos por ângulo,
+      muitas de salões do automóvel no Brasil.
+- [ ] 🟢 Fotos de imprensa (VW: 27 por versão; Renault: 782 listadas; Toyota): só com permissão
+      das assessorias (contatos nas salas de imprensa).
+- Bloqueadas ou sem arquivos: Toyota (download automático bloqueado), Chevrolet (sala de imprensa
+  com login), Ford, Mitsubishi e Hyundai (só notícias). Pagas: JATO (Carspecs), Suiv.
+
 ### Produto
 
 - [ ] 🟢 Motos e caminhões no catálogo (o crawler já aceita `--category`; filtros e WMI precisam

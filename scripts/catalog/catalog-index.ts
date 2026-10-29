@@ -414,11 +414,12 @@ export function buildCatalogIndex(
         turbo: version.a?.aspiration === "turbo",
       };
       const electric = /el[eé]tric/i.test(versionFuel.get(version) ?? "");
+      const hybrid = /h[ií]brid|hybrid/i.test(`${version.n} ${versionFuel.get(version) ?? ""}`);
       const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
         // Stellantis' sheets are of the exact version and year; the open ones of an engine and a few years.
         const sheet =
           (sheets && sheetOfVersion(sheets, { ...target, modelYear }, lineTrims.get(lineKey) ?? new Set())) ??
-          (openSheets && openSheetOfVersion(openSheets, { ...target, modelYear, electric, valves: version.a?.valves }));
+          (openSheets && openSheetOfVersion(openSheets, { ...target, modelYear, electric, hybrid, valves: version.a?.valves }));
         if (!sheet) return -1;
         if (!sheetIndex.has(sheet)) {
           sheetIndex.set(sheet, sheetList.length);
@@ -449,6 +450,7 @@ export function buildCatalogIndex(
         valves: version.a?.valves,
         turbo: version.a?.aspiration === "turbo",
         electric: /el[eé]tric/i.test(versionFuel.get(version) ?? ""),
+        hybrid: /h[ií]brid|hybrid/i.test(`${version.n} ${versionFuel.get(version) ?? ""}`),
       };
       const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
         const list = equipmentOfVersion(equipment, { ...target, modelYear });

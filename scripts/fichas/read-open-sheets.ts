@@ -15,6 +15,8 @@ import type { OpenSheet, OpenSheetsFile, RenaultLink, VwLink } from "./open-shee
 import { readXlsxFile } from "./xlsx.ts";
 import { renaultEquipment } from "./equipment.ts";
 import type { EquipmentFile, EquipmentList } from "./equipment.ts";
+import { toyotaEquipment, toyotaSheets } from "./toyota.ts";
+import type { WaybackFile } from "./fetch-wayback.ts";
 
 const sheets: OpenSheet[] = [];
 const equipment: EquipmentList[] = [];
@@ -58,12 +60,60 @@ for (const link of renault) {
   else skipped.push(`Renault ${link.vehicle} (${link.file}, ${spreadsheet ? "sem números" : "formato não lido"})`);
 }
 
-// Toyota's, transcribed by hand: its press room blocks automatic downloads.
-const toyota = await readFile("data/fichas/toyota.json", "utf8")
+// Toyota's, from the Wayback Machine (npm run fichas:wayback): of each line and
+// model year, only the newest file's (the press room replaced sheets several times).
+const toyotaFiles = await readFile("data/fichas/toyota-wayback.json", "utf8")
+  .then((text) => (JSON.parse(text) as { files: WaybackFile[] }).files)
+  .catch(() => [] as WaybackFile[]);
+const toyotaSheetsRead: OpenSheet[] = [];
+const toyotaLists: EquipmentList[] = [];
+for (const { file, archived } of toyotaFiles) {
+  const lines = await readPdfLines(join("data/fichas/toyota", file)).catch(() => undefined);
+  if (!lines) continue;
+  const source = { file, url: archived };
+  const found = toyotaSheets(lines, source);
+  const lists = toyotaEquipment(lines, source);
+  toyotaSheetsRead.push(...found);
+  toyotaLists.push(...lists);
+  if (!found.length && !lists.length) skipped.push(`Toyota ${file}`);
+}
+// The file names start with the upload month ("2024-08-…"), so the greatest is the newest.
+const newestOnly = <T extends { line: string; years: [number, number]; file: string }>(items: T[]) => {
+  const newest = new Map<string, string>();
+  for (const item of items) {
+    const key = `${item.line}|${item.years[0]}`;
+    if ((newest.get(key) ?? "") < item.file) newest.set(key, item.file);
+  }
+  return items.filter((item) => newest.get(`${item.line}|${item.years[0]}`) === item.file);
+};
+const toyotaNewest = newestOnly(toyotaSheetsRead);
+sheets.push(...toyotaNewest);
+// A list says nothing of the engine; the spec sheet of the same line, year and trim does
+// (so the GR Corolla 1.6 turbo does not take the Corolla GR-S's list).
+for (const list of newestOnly(toyotaLists)) {
+  const sheet = toyotaNewest.find(
+    (item) => item.line === list.line && item.years[0] === list.years[0] && item.trims.join() === list.trims.join(),
+  );
+  equipment.push(
+    sheet
+      ? {
+          ...list,
+          ...(sheet.engineLiters !== undefined && { engineLiters: sheet.engineLiters }),
+          ...(sheet.turbo !== undefined && { turbo: sheet.turbo }),
+          ...(sheet.transmission && !list.transmission && { transmission: sheet.transmission }),
+          ...(sheet.cab && { cab: sheet.cab }),
+          ...(sheet.onlyNamed && { onlyNamed: true }),
+        }
+      : list,
+  );
+}
+
+// What the reader cannot get from Toyota's files, transcribed by hand (the Camry 2018 list has no marks).
+const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
   .then((text) => JSON.parse(text) as { sheets: OpenSheet[]; equipment: EquipmentList[] })
   .catch(() => ({ sheets: [], equipment: [] }));
-sheets.push(...toyota.sheets);
-equipment.push(...toyota.equipment);
+sheets.push(...toyotaByHand.sheets);
+equipment.push(...toyotaByHand.equipment);
 
 // Two files of the same sheets (Renault lists the Z.E. sheet twice): once.
 const seen = new Set<string>();
