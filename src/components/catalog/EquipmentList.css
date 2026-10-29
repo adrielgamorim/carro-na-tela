@@ -1,0 +1,45 @@
+/* Styles of EquipmentList.tsx. Tokens (colors) come from src/index.css. */
+
+.equipment-list {
+  padding: 18px;
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.equipment-groups {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px 24px;
+  margin-top: 6px;
+}
+
+.equipment-group h5 {
+  margin: 0 0 8px;
+  color: var(--forest);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.equipment-group ul {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.equipment-group li {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.equipment-group li svg {
+  flex: none;
+  margin-top: 2px;
+  color: var(--forest);
+}

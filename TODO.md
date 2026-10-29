@@ -19,8 +19,9 @@ disponibilidade dela.
       (a reserva é por linha, e a FIPE chama as duas só de "SERES").
 - [ ] 🟢 Fase 4, o que falta: fichas de outras marcas e equipamentos por versão. VW e Renault já
       entram (`fichas:vw`, `fichas:renault`, `fichas:abertas`), mas as da VW são de 2017–2020 e o
-      menu público só tem os modelos atuais. A Renault publica listas de equipamentos por versão
-      (Kardian, Logan, Sandero, Stepway; já lidas por `scripts/fichas/xlsx.ts`) e folhetos em PDF.
+      menu público só tem os modelos atuais. Equipamentos por versão: só as listas da Renault
+      (Kardian, Logan, Sandero, Sandero R.S., Stepway); faltam os folhetos em PDF da Renault
+      (`brochure` em `data/fichas/renault-links.json`) e os releases das outras marcas.
       Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
 
 ### Produto

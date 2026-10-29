@@ -40,12 +40,13 @@ export interface OpenSheetsFile {
   sheets: OpenSheet[];
 }
 
-const plain = (text: string) => text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
-/** "1.3" stays one word, "Z.E." is "z.e", "E-TECH" is "e" and "tech". */
-const words = (text: string) =>
+export const plain = (text: string) => text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
+/** "1.3" stays one word, "Z.E." is "ze", "E-TECH" is "e" and "tech". */
+export const words = (text: string) =>
   plain(text)
     .split(/[^a-z0-9.]+/)
-    .map((word) => word.replace(/^\.+|\.+$/g, ""))
+    // "R.S." is "rs", as FIPE writes it.
+    .map((word) => word.replace(/^\.+|\.+$/g, "").replace(/(?<=[a-z])\.(?=[a-z])/g, ""))
     .filter(Boolean);
 /** "4.095" → 4095, "1.598" → 1598, "20,4" → 20.4. */
 const number = (text: string) => Number(text.replace(/\.(?=\d{3}\b)/g, "").replace(",", "."));
@@ -153,9 +154,9 @@ export function litersOf(text: string): number | undefined {
   return liters ? Number(`${liters[1]}.${liters[2]}`) : undefined;
 }
 
-const turboIn = (text: string) => /turbo|tsi\b|tdi\b|tce\b|\btb\b|diesel|dci\b/.test(plain(text));
+export const turboIn = (text: string) => /turbo|tsi\b|tdi\b|tce\b|\btb\b|diesel|dci\b/.test(plain(text));
 const electricIn = (text: string) => /eletric|electric|z\.?e\.?\b|e-tech/.test(plain(text));
-function transmissionIn(text: string): Transmission | undefined {
+export function transmissionIn(text: string): Transmission | undefined {
   const value = plain(text);
   if (/autom|cvt|dsg|tiptronic|uma marcha a frente/.test(value)) return "automatico";
   if (/manual|mecanic|\bmt\b|\bmec\b/.test(value)) return "manual";
@@ -169,7 +170,7 @@ function cabIn(text: string): "cd" | "cs" | "ce" | undefined {
   return undefined;
 }
 /** "16 válvulas", "16V", or "4 / Em linha / 4" (cylinders, layout, valves per cylinder). */
-function valvesIn(text: string): number | undefined {
+export function valvesIn(text: string): number | undefined {
   const value = plain(text);
   const perCylinder = value.match(/(\d)\s*\/\s*(?:em linha|em v|v)\s*\/\s*(\d)\b/);
   if (perCylinder) return Number(perCylinder[1]) * Number(perCylinder[2]);
@@ -416,14 +417,32 @@ function common(sheets: OpenSheet[]): OpenSheet {
  * several that fit as well give only the figures they share.
  */
 export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget): OpenSheet | undefined {
+  const tied = bestOfVersion(sheets, target);
+  // The same sheet listed for several versions (VW's T-Cross) is still one.
+  const distinct = [...new Map(tied.map((sheet) => [`${sheet.file}|${sheet.title}`, sheet])).values()];
+  return distinct.length <= 1 ? distinct[0] : common(distinct);
+}
+
+/** What a sheet or an equipment list says it is for. */
+export type SheetKey = Pick<
+  OpenSheet,
+  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "transmission" | "cab"
+>;
+
+/**
+ * The sheets that fit a version-year best (see openSheetOfVersion), all tied.
+ * With `trimNamed`, only those whose trim the version names: equipment
+ * changes with the trim, figures mostly with the engine.
+ */
+export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheetTarget, { trimNamed = false } = {}): T[] {
   const nameWords = words(target.name);
   const family = words(target.family)[0] ?? "";
   const automatic = /\b(aut|automatico|automatica|cvt|tiptronic|tipt|dsg|at\d?)\b|s.?tronic/.test(plain(target.name));
   const versionCab = cabIn(target.name);
-  // A version word matches a trim it starts: "comfor" is "comfortline", "dyna" "dynamique".
-  const names = (word: string) => nameWords.some((own) => own === word || (own.length >= 3 && word.startsWith(own)));
+  // A version word matches a trim it starts: "comfor" is "comfortline", "dyna" "dynamique", "prem" "premiere".
+  const names = (word: string) => nameWords.some((own) => own === word || (own.length >= 3 && word.startsWith(own.replace(/\.$/, ""))));
   const ofBrand = sheets.filter((sheet) => fipeBrands[sheet.brand].includes(target.brand));
-  const fitting: { sheet: OpenSheet; score: number }[] = [];
+  const fitting: { sheet: T; score: number }[] = [];
   for (const sheet of ofBrand) {
     const own = lineWords(sheet.line);
     if (own[0] !== family || !own.every(names)) continue;
@@ -442,12 +461,12 @@ export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget)
     // A sheet of a cab is of that cab only: FIPE names the double and extended ones, not always the single.
     if (sheet.cab && sheet.cab !== (versionCab ?? "cs")) continue;
     const named = sheet.trims.filter(names).length;
+    if (trimNamed && !named) continue;
     const distance = Math.abs(target.modelYear - (sheet.years[0] + sheet.years[1]) / 2);
-    fitting.push({ sheet, score: named * 10 - distance });
+    // One that says the engine and the gearbox (and they fit) over one that leaves them open.
+    const precise = (sheet.engineLiters !== undefined ? 1 : 0) + (sheet.transmission ? 1 : 0);
+    fitting.push({ sheet, score: named * 10 + precise - distance });
   }
   const best = Math.max(...fitting.map((item) => item.score));
-  const tied = fitting.filter((item) => item.score === best).map((item) => item.sheet);
-  // The same sheet listed for several versions (VW's T-Cross) is still one.
-  const distinct = [...new Map(tied.map((sheet) => [`${sheet.file}|${sheet.title}`, sheet])).values()];
-  return distinct.length <= 1 ? distinct[0] : common(distinct);
+  return fitting.filter((item) => item.score === best).map((item) => item.sheet);
 }

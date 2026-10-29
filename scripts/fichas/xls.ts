@@ -79,6 +79,27 @@ export function compoundStreams(data: Uint8Array): Map<string, Uint8Array> {
   return streams;
 }
 
+/**
+ * When an .xls was last saved (else created), from its "SummaryInformation"
+ * property set: property 13 (or 12), a FILETIME in 100 ns since 1601.
+ */
+export function xlsModified(data: Uint8Array): Date | undefined {
+  const summary = compoundStreams(data).get("\u0005SummaryInformation");
+  if (!summary || summary.length < 48) return undefined;
+  const view = new DataView(summary.buffer, summary.byteOffset, summary.byteLength);
+  const section = view.getUint32(44, true);
+  const count = view.getUint32(section + 4, true);
+  const times = new Map<number, Date>();
+  for (let i = 0; i < count; i++) {
+    const id = view.getUint32(section + 8 + i * 8, true);
+    const offset = section + view.getUint32(section + 12 + i * 8, true);
+    if ((id !== 12 && id !== 13) || offset + 12 > summary.length || view.getUint32(offset, true) !== 64) continue;
+    const ticks = view.getUint32(offset + 4, true) + view.getUint32(offset + 8, true) * 2 ** 32;
+    if (ticks) times.set(id, new Date(ticks / 10_000 - 11_644_473_600_000));
+  }
+  return times.get(13) ?? times.get(12);
+}
+
 /** An RK number: a 30-bit integer or the top of a double, maybe divided by 100. */
 function rkNumber(rk: number): number {
   let value: number;

@@ -11,6 +11,7 @@ import { catalogBrand } from "./brands.ts";
 import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
 import type { PressSheet, PressSource, PressSpecs } from "./press.ts";
+import type { CatalogEquipment } from "./equipment.ts";
 import type {
   CatalogEntry,
   CatalogIndex,
@@ -51,6 +52,11 @@ export interface WireVersion {
   r?: [number, number][];
   /** Per entry of `y`, an index into `sheets` (-1 for none). Omitted when no year has one. */
   t?: number[];
+  /**
+   * Per entry of `y`, an index into the equipment lists of
+   * public/catalog/equipamentos.json (-1 for none). Omitted when no year has one.
+   */
+  q?: number[];
 }
 
 /** A trunk or torque figure from a press release, referenced by `WireVersion.r`. */
@@ -77,6 +83,11 @@ export interface CatalogIndexFile {
   press?: WirePressFigure[];
   /** Spec sheets referenced by `WireVersion.t` (data/fichas). */
   sheets?: PressSheet[];
+  /**
+   * Equipment lists referenced by `WireVersion.q`. Only between the build's
+   * steps: build:catalog writes them to equipamentos.json, not to the index.
+   */
+  equipment?: CatalogEquipment[];
   /** Fleet in circulation per model line (npm run fetch:frota), ranked. */
   fleet?: {
     reference: string;
@@ -212,6 +223,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
         wikidata: model && photo ? { ...model, image: photo } : model,
         fleet,
         press,
+        ...((version.q?.[yearIndex] ?? -1) >= 0 && { equipment: version.q![yearIndex] }),
         origin,
         depreciation,
         price: priceValue === null ? null : formatFipePrice(priceValue),

@@ -27,6 +27,9 @@ import type { FleetFile } from "../frota/frota.ts";
 import type { PressFactsFile } from "../imprensa/facts.ts";
 import type { ReadSheetsFile } from "../fichas/sheets.ts";
 import type { OpenSheetsFile } from "../fichas/open-sheets.ts";
+import type { EquipmentFile } from "../fichas/equipment.ts";
+import { equipmentPath } from "../../src/catalog/equipment.ts";
+import type { EquipmentFileWire } from "../../src/catalog/equipment.ts";
 import { fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
@@ -113,6 +116,9 @@ const sheets = await readFile(join(values.fichas, "fichas.json"), "utf8")
 const openSheets = await readFile(join(values.fichas, "fichas-abertas.json"), "utf8")
   .then((text) => (JSON.parse(text) as OpenSheetsFile).sheets)
   .catch(() => undefined);
+const equipment = await readFile(join(values.fichas, "equipamentos.json"), "utf8")
+  .then((text) => (JSON.parse(text) as EquipmentFile).lists)
+  .catch(() => undefined);
 const index = buildCatalogIndex(snapshots, {
   pbev,
   overrides,
@@ -122,6 +128,7 @@ const index = buildCatalogIndex(snapshots, {
   press,
   sheets,
   openSheets,
+  equipment,
 });
 
 // Photo galleries (npm run fetch:galeria): one file per model, loaded by the
@@ -143,6 +150,13 @@ for (const model of index.models ?? []) {
   model.gallery = photos.length;
   galleryPhotos += photos.length;
 }
+
+// Equipment lists (npm run fichas:abertas): one file, loaded by the version
+// page; the index keeps only each version-year's list number.
+const equipmentLists = index.equipment ?? [];
+delete index.equipment;
+const equipmentFile: EquipmentFileWire = { lists: equipmentLists };
+await writeFileRetrying(join(values.out, equipmentPath), JSON.stringify(equipmentFile));
 
 const json = JSON.stringify(index);
 
@@ -193,6 +207,10 @@ if (galleryPhotos) {
 if (index.sheets) {
   const years = index.versions.flatMap((version) => version.t ?? []).filter((sheet) => sheet >= 0).length;
   console.log(`Fichas técnicas: ${index.sheets.length} casadas com ${years} anos-modelo de ${index.versions.filter((version) => version.t).length} versões`);
+}
+if (equipmentLists.length) {
+  const years = index.versions.flatMap((version) => version.q ?? []).filter((list) => list >= 0).length;
+  console.log(`Equipamentos: ${equipmentLists.length} listas em ${years} anos-modelo de ${index.versions.filter((version) => version.q).length} versões`);
 }
 if (index.press) {
   const years = index.versions.flatMap((version) => version.r ?? []);

@@ -60,6 +60,8 @@ export interface CatalogEntry {
   fleet: CatalogFleetInfo | null;
   /** Trunk and torque from the carmaker's press releases (Stellantis brands only). */
   press: PressSpecs | null;
+  /** Its standard equipment: an index into public/catalog/equipamentos.json (Renault's lists). */
+  equipment?: number;
   /** National or imported, by the line's Renavam registrations (null without fleet data). */
   origin: Origin | null;
   /** Average yearly loss of the version, from its priced model years. */

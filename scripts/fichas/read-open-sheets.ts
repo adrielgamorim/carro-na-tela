@@ -1,6 +1,7 @@
 // Reads the spec sheets downloaded from the open press rooms (npm run
 // fichas:vw and fichas:renault) and writes their figures to
-// data/fichas/fichas-abertas.json, which build:catalog matches to the FIPE
+// data/fichas/fichas-abertas.json, and Renault's equipment lists to
+// data/fichas/equipamentos.json, which build:catalog matches to the FIPE
 // versions.
 //
 //   npm run fichas:abertas
@@ -12,8 +13,11 @@ import { writeFileRetrying } from "../write-file.ts";
 import { renaultSheets, vwSheet } from "./open-sheets.ts";
 import type { OpenSheet, OpenSheetsFile, RenaultLink, VwLink } from "./open-sheets.ts";
 import { readXlsxFile } from "./xlsx.ts";
+import { renaultEquipment } from "./equipment.ts";
+import type { EquipmentFile, EquipmentList } from "./equipment.ts";
 
 const sheets: OpenSheet[] = [];
+const equipment: EquipmentList[] = [];
 const skipped: string[] = [];
 
 const vw = await readFile("data/fichas/vw-links.json", "utf8")
@@ -41,12 +45,17 @@ for (const link of renault) {
   if (!link.file) continue;
   const spreadsheet = await readXlsxFile(join("data/fichas/renault", link.file)).catch(() => undefined);
   const found = spreadsheet ? renaultSheets(spreadsheet.rows, link, spreadsheet.modified) : [];
-  if (found.length) sheets.push(...found);
-  else {
-    // Some "spec sheets" are the versions' equipment lists.
-    const equipment = spreadsheet?.rows.some((row) => row.some((cell) => /lista de equipamentos|conforto e conveni/i.test(cell)));
-    skipped.push(`Renault ${link.vehicle} (${link.file}, ${spreadsheet ? (equipment ? "lista de equipamentos" : "sem números") : "formato não lido"})`);
+  if (found.length) {
+    sheets.push(...found);
+    continue;
   }
+  // Some "spec sheets" are the versions' equipment lists; the file's own date
+  // first, since the one in its name is when the press room moved it.
+  const named = link.file.match(/(20\d\d)-\d\d-\d\d/)?.[1];
+  const saved = spreadsheet?.modified ?? (named ? new Date(`${named}-07-01`) : undefined);
+  const lists = spreadsheet ? renaultEquipment(spreadsheet.rows, link, saved) : [];
+  if (lists.length) equipment.push(...lists);
+  else skipped.push(`Renault ${link.vehicle} (${link.file}, ${spreadsheet ? "sem números" : "formato não lido"})`);
 }
 
 // Two files of the same sheets (Renault lists the Z.E. sheet twice): once.
@@ -64,4 +73,11 @@ const out: OpenSheetsFile = {
 };
 await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
+
+const equipmentOut: EquipmentFile = {
+  _doc: "Equipamentos de série por versão da Renault (npm run fichas:abertas), das listas em data/fichas/renault.",
+  lists: equipment,
+};
+await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);
+console.log(`${equipment.length} listas de equipamentos (versões) em data/fichas/equipamentos.json`);
 if (skipped.length) console.log(`Sem números: ${skipped.join("; ")}`);

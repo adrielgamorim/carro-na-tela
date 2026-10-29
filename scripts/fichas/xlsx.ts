@@ -4,7 +4,7 @@
 
 import { readFile } from "node:fs/promises";
 import { inflateRawSync } from "node:zlib";
-import { readXls } from "./xls.ts";
+import { readXls, xlsModified } from "./xls.ts";
 
 /** The files in a zip, by name (only the stored and deflated ones). */
 export function unzip(data: Uint8Array): Map<string, Uint8Array> {
@@ -88,6 +88,9 @@ export function readXlsx(data: Uint8Array): Spreadsheet {
 export async function readXlsxFile(path: string): Promise<Spreadsheet> {
   const data = new Uint8Array(await readFile(path));
   // "\xD0\xCF\x11\xE0": an OLE compound file, the old Excel format.
-  if (data[0] === 0xd0 && data[1] === 0xcf) return { rows: readXls(data) };
+  if (data[0] === 0xd0 && data[1] === 0xcf) {
+    const modified = xlsModified(data);
+    return { rows: readXls(data), ...(modified && { modified }) };
+  }
   return readXlsx(data);
 }

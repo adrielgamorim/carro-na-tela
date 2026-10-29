@@ -10,6 +10,7 @@ import { ShareLinkButton } from "../ShareLinkButton";
 import { VehicleDetails } from "../VehicleDetails";
 import { FleetLine, PriceBlock } from "./CatalogCard";
 import { ModelGallery } from "./ModelGallery";
+import { EquipmentList } from "./EquipmentList";
 import { FavoriteButton, FavoriteNote } from "./Favorite";
 import type { LivePrice, PageLink } from "./CatalogCard";
 import "./CatalogCard.css";
@@ -143,6 +144,8 @@ export function VehiclePage({
           Consulte o preço deste ano-modelo para ver a ficha técnica, os custos e o histórico de preços.
         </p>
       )}
+
+      <EquipmentList key={entry.id} entry={entry} />
     </article>
   );
 }

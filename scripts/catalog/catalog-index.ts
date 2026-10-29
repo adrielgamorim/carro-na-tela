@@ -19,6 +19,8 @@ import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
 import type { ReadSheet } from "../fichas/sheets.ts";
 import { openSheetOfVersion } from "../fichas/open-sheets.ts";
 import type { OpenSheet } from "../fichas/open-sheets.ts";
+import { equipmentOfVersion } from "../fichas/equipment.ts";
+import type { EquipmentList } from "../fichas/equipment.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
@@ -103,6 +105,8 @@ export interface BuildOptions {
   sheets?: ReadSheet[];
   /** Spec sheets of the open press rooms, VW and Renault (data/fichas/fichas-abertas.json). */
   openSheets?: OpenSheet[];
+  /** Equipment by version, Renault (data/fichas/equipamentos.json). */
+  equipment?: EquipmentList[];
 }
 
 const sameText = (left: string, right: string) =>
@@ -138,6 +142,7 @@ export function buildCatalogIndex(
     press,
     sheets,
     openSheets,
+    equipment,
   }: BuildOptions = {},
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
@@ -431,6 +436,33 @@ export function buildCatalogIndex(
     }
   }
 
+  // Equipment: the list of each version-year's trim.
+  const equipmentLists: NonNullable<CatalogIndexFile["equipment"]> = [];
+  if (equipment?.length) {
+    const listIndex = new Map<EquipmentList, number>();
+    for (const version of sorted) {
+      const target = {
+        brand: brandName(version),
+        family: getModelFamily(version.n),
+        name: version.n,
+        engineLiters: engineLitersOf(version),
+        valves: version.a?.valves,
+        turbo: version.a?.aspiration === "turbo",
+        electric: /el[eé]tric/i.test(versionFuel.get(version) ?? ""),
+      };
+      const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
+        const list = equipmentOfVersion(equipment, { ...target, modelYear });
+        if (!list) return -1;
+        if (!listIndex.has(list)) {
+          listIndex.set(list, equipmentLists.length);
+          equipmentLists.push({ title: list.title, source: "Renault", page: list.page, groups: list.groups });
+        }
+        return listIndex.get(list)!;
+      });
+      if (perYear.some((list) => list >= 0)) version.q = perYear;
+    }
+  }
+
   return {
     version: 2,
     generatedAt: now.toISOString(),
@@ -442,6 +474,7 @@ export function buildCatalogIndex(
     ...(photos.length > 0 && { photos }),
     ...(pressFigures.length > 0 && { press: pressFigures }),
     ...(sheetList.length > 0 && { sheets: sheetList }),
+    ...(equipmentLists.length > 0 && { equipment: equipmentLists }),
     ...(fleet &&
       fleetLines && {
         fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },
