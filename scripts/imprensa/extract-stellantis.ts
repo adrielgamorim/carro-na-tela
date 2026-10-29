@@ -6,7 +6,8 @@
 //
 //   npm run extract:imprensa
 
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import type { CatalogIndexFile } from "../../src/catalog/indexFormat.ts";
 import type { CachedRelease } from "./crawl-stellantis.ts";
@@ -120,5 +121,5 @@ const list = [...candidates.values()]
   .sort(
   (a, b) => a.brand.localeCompare(b.brand) || a.family.localeCompare(b.family) || a.kind.localeCompare(b.kind) || a.from - b.from,
 );
-await writeFile("data/imprensa/stellantis-candidates.json", `${JSON.stringify(list, null, 1)}\n`);
+await writeFileRetrying("data/imprensa/stellantis-candidates.json", `${JSON.stringify(list, null, 1)}\n`);
 console.log(`${list.length} candidatos a revisar em data/imprensa/stellantis-candidates.json`);

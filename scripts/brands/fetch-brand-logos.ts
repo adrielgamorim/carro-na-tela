@@ -8,7 +8,8 @@
 //
 // Brands without one keep the Simple Icons mask or the vehicle type icon.
 
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, rm } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { deflateSync, inflateSync } from "node:zlib";
 
 const dataset = (slug: string) =>
@@ -314,11 +315,11 @@ for (const [key, url] of Object.entries(sources).sort(([a], [b]) => a.localeComp
   if (!response.ok) throw new Error(`${key}: ${response.status} em ${url}`);
   const whole = crop(decodePng(Buffer.from(await response.arrayBuffer())));
   const logo = shrink(keepWhole.has(key) ? whole : emblem(whole));
-  await writeFile(`${dir}/${key}.png`, encodePng(logo));
+  await writeFileRetrying(`${dir}/${key}.png`, encodePng(logo));
   console.log(`${key}: ${logo.width}x${logo.height}`);
   await new Promise((resolve) => setTimeout(resolve, 300));
 }
-await writeFile(
+await writeFileRetrying(
   "src/components/brandLogoKeys.ts",
   `// Brands with a color logo in public/brands/logos, written by
 // scripts/brands/fetch-brand-logos.ts (so no Vite-only APIs here).

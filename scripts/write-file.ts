@@ -10,7 +10,7 @@ const lockCodes = new Set(["EBUSY", "EPERM", "EACCES", "UNKNOWN"]);
 /** writeFile, retried with a growing pause while the file is locked. */
 export async function writeFileRetrying(
   path: string,
-  data: string,
+  data: string | Uint8Array,
   { attempts = 6, pauseMs = 250, write = writeFile }: { attempts?: number; pauseMs?: number; write?: typeof writeFile } = {},
 ): Promise<void> {
   for (let attempt = 1; ; attempt++) {

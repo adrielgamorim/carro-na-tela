@@ -5,7 +5,8 @@
 //
 // PDFs are downloaded from gov.br into data/inmetro/pbev-<year>.pdf.
 
-import { access, writeFile } from "node:fs/promises";
+import { access } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { parseArgs } from "node:util";
 import type { PbevRow } from "../../src/catalog/inmetro.ts";
 import { parsePbevLines, pbevLayouts } from "./pbev.ts";
@@ -39,7 +40,7 @@ for (const table of years) {
     continue;
   }
   const rows: PbevRow[] = parsePbevLines(await readPdfLines(pdf), table);
-  await writeFile(`${values.dir}/pbev-${table}.json`, `${JSON.stringify(rows, null, 1)}\n`);
+  await writeFileRetrying(`${values.dir}/pbev-${table}.json`, `${JSON.stringify(rows, null, 1)}\n`);
 
   const count = (key: (row: PbevRow) => unknown) =>
     rows.filter((row) => key(row) !== null && key(row) !== "").length;

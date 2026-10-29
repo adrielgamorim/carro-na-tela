@@ -9,7 +9,8 @@
 // not downloaded again. Senatran publishes one file a month.
 
 import { createReadStream, createWriteStream } from "node:fs";
-import { mkdir, open, readdir, rename, rm, stat, writeFile } from "node:fs/promises";
+import { mkdir, open, readdir, rename, rm, stat } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { Readable } from "node:stream";
 import { pipeline } from "node:stream/promises";
@@ -89,7 +90,7 @@ const file: FleetFile = {
 };
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, "frota.json");
-await writeFile(outFile, `${JSON.stringify(file)}\n`);
+await writeFileRetrying(outFile, `${JSON.stringify(file)}\n`);
 const total = Object.values(models).reduce(
   (sum, years) => sum + Object.values(years).reduce((a, b) => a + b, 0),
   0,

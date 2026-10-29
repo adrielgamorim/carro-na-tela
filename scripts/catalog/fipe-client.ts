@@ -1,4 +1,5 @@
-import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
+import { mkdir, readFile, rename } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { dirname, join } from "node:path";
 
 // FIPE (Parallelum v2) client for offline scripts. Every response is cached on
@@ -82,7 +83,7 @@ async function readCache<T>(file: string): Promise<CacheEntry<T> | undefined> {
 async function writeCache<T>(file: string, entry: CacheEntry<T>) {
   await mkdir(dirname(file), { recursive: true });
   const temporary = `${file}.${process.pid}.tmp`;
-  await writeFile(temporary, JSON.stringify(entry));
+  await writeFileRetrying(temporary, JSON.stringify(entry));
   await rename(temporary, file);
 }
 

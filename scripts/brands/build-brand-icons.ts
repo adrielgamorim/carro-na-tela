@@ -7,7 +7,8 @@
 // up, so the logos (130 KB together, the Porsche alone 24 KB) stay out of the
 // JavaScript bundle. The keys are in src/components/brandIconKeys.ts.
 
-import { mkdir, rm, writeFile } from "node:fs/promises";
+import { mkdir, rm } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import * as icons from "simple-icons";
 import type { SimpleIcon } from "simple-icons";
 import { brandIconKeys } from "../../src/components/brandIconKeys.ts";
@@ -65,7 +66,7 @@ await mkdir(dir, { recursive: true });
 for (const key of brandIconKeys) {
   const icon = (icons as unknown as Record<string, SimpleIcon>)[exportOf[key] ?? ""];
   if (!icon) throw new Error(`Simple Icons não tem ${exportOf[key]} (${key})`);
-  await writeFile(
+  await writeFileRetrying(
     `${dir}/${key}.svg`,
     `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>${icon.title}</title><path d="${icon.path}"/></svg>
 `,

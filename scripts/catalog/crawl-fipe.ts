@@ -18,7 +18,8 @@
 // or .env. They are used in that order: when one reaches its daily limit the
 // next takes over, and anonymous access (500/day) is the last resort.
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { assembleSnapshot, crawlListing, crawlPrices, oldestFipeYear } from "./crawl.ts";
@@ -122,7 +123,7 @@ const referenceMonth =
 
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, `${category}-${reference}.json`);
-await writeFile(
+await writeFileRetrying(
   outFile,
   `${JSON.stringify({
     reference,

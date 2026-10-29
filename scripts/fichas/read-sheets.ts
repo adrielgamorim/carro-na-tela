@@ -7,7 +7,8 @@
 //
 // The PDFs stay out of git (data/fichas/pdf); only the figures are committed.
 
-import { copyFile, mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readdir, readFile, rm } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { readPdfLines } from "../inmetro/pdf-lines.ts";
@@ -60,6 +61,6 @@ const out: ReadSheetsFile = {
   _doc: "Números das fichas técnicas da Stellantis (npm run fichas:ler), lidos dos PDFs em data/fichas/pdf.",
   sheets: sheets.sort((a, b) => a.brand.localeCompare(b.brand) || a.title.localeCompare(b.title) || (a.modelYear ?? 0) - (b.modelYear ?? 0)),
 };
-await writeFile("data/fichas/fichas.json", `${JSON.stringify(out, null, 1)}\n`);
+await writeFileRetrying("data/fichas/fichas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${sheets.length} fichas lidas em data/fichas/fichas.json`);
 if (unknown.length) console.log(`Sem link correspondente (rode npm run fichas:links): ${unknown.join(", ")}`);

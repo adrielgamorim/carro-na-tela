@@ -9,7 +9,8 @@
 // agent that says who is asking. The PDFs themselves sit behind bot protection:
 // they are downloaded by hand, from the checklist, in a normal browser.
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { decodeEntities } from "../imprensa/press.ts";
 import type { SheetLink, SheetLinksFile } from "./sheets.ts";
 
@@ -66,5 +67,5 @@ for (const brand of brands) {
 
 await mkdir("data/fichas", { recursive: true });
 const file: SheetLinksFile = { generatedAt: new Date().toISOString(), links };
-await writeFile("data/fichas/links.json", `${JSON.stringify(file, null, 1)}\n`);
+await writeFileRetrying("data/fichas/links.json", `${JSON.stringify(file, null, 1)}\n`);
 console.log(`${links.length} fichas em data/fichas/links.json; rode npm run fichas:lista para a lista`);

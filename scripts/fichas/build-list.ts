@@ -5,7 +5,8 @@
 //
 //   npm run fichas:lista
 
-import { readdir, readFile, writeFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { checklistOrder, linkOfFile } from "./sheets.ts";
 import type { SheetLink, SheetLinksFile } from "./sheets.ts";
 
@@ -86,5 +87,5 @@ ${sections}
 </body>
 </html>
 `;
-await writeFile("data/fichas/lista.html", html);
+await writeFileRetrying("data/fichas/lista.html", html);
 console.log(`data/fichas/lista.html: ${links.length} fichas, ${have.size} já lidas`);

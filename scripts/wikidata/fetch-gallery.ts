@@ -14,7 +14,8 @@
 // resumes.
 
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import type { CatalogIndexFile } from "../../src/catalog/indexFormat.ts";
 import type { ModelGeneration } from "./generations.ts";
@@ -102,7 +103,7 @@ async function api<T>(host: string, params: Record<string, string>): Promise<T> 
       const text = await response.text();
       const error = (JSON.parse(text) as { error?: { code: string } }).error;
       if (!error) {
-        await writeFile(cacheFile, text);
+        await writeFileRetrying(cacheFile, text);
         return JSON.parse(text) as T;
       }
       // The session expired: log in again and repeat the request.
@@ -352,6 +353,6 @@ const credited = await credits([...new Set(Object.values(gallery).flat().map((ph
 for (const photos of Object.values(gallery)) {
   for (const photo of photos) Object.assign(photo, credited.get(photo.file.replace(/_/g, " ")) ?? credited.get(photo.file));
 }
-await writeFile(out, `${JSON.stringify(gallery, null, 1)}\n`);
+await writeFileRetrying(out, `${JSON.stringify(gallery, null, 1)}\n`);
 const total = Object.values(gallery).flat().length;
 console.log(`${Object.keys(gallery).length} modelos com galeria, ${total} fotos em ${out}`);
