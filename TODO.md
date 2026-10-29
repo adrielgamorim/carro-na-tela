@@ -31,22 +31,34 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - [ ] 🟡 Wayback Machine (web.archive.org): guarda arquivos que sumiram dos sites das marcas.
       `npm run fichas:wayback -- --site=<domínio/caminho> --pasta=<nome>` baixa os PDFs salvos.
       Toyota feita (59 PDFs de 2018–2025, lidos por `scripts/fichas/toyota.ts`); faltam as listas
-      sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020) e procurar fichas e folhetos antigos
-      das outras marcas (VW, Renault, Honda, Hyundai, Nissan…).
+      sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020). Outras marcas (out/2026): vw.com.br
+      tem ~30 PDFs distintos (suplementos de manual de Taos e Jetta, fichas de 2004–2016; pouco);
+      ford.com.br tem 79 antigos (`binario.asp`, ~2010). Valem a pena: hyundai.com.br (112:
+      catálogos por versão de HB20, HB20S, Creta, Kona, Palisade, Ioniq 5 de 2024–2026, e fichas
+      técnicas com equipamentos do Creta 25/26) e honda.com.br (78: catálogos de City, HR-V, WR-V,
+      Fit, CR-V, Civic de 2015–2025); são folhetos, cada marca pede um leitor como o da Toyota.
+      Nissan e Chevrolet: o arquivo estava fora do ar; repetir.
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
 - [ ] 🟡 Folhetos e catálogos em PDF: os da Renault estão em `brochure` de
       `data/fichas/renault-links.json`; dão equipamentos por versão de Duster, Kwid, Captur, Oroch…
+      Os recentes terminam com "ficha técnica | lista de equipamentos" lado a lado na mesma página
+      (as linhas das duas tabelas se intercalam): separar por posição antes de ler, como na Toyota.
 - [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
       tem Akamai): conferir robots.txt e o bloqueio de cada uma.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque.
-- [ ] 🟢 Recalls (Senacon, portal de recall): campanhas por marca, modelo e ano.
-- [ ] 🟢 Roubos e furtos por modelo (dados abertos da SSP-SP): o AUTOSEG já dá os roubos por mil
-      carros segurados; a SSP-SP daria os da frota toda (só SP).
+- [ ] 🟢 Recalls: sem fonte aberta por modelo (out/2026). O conjunto "Campanhas de Recall" da Senatran
+      (dados.transportes.gov.br, `recall`) só tem o total do ano; a consulta oficial é por placa
+      ou chassi, com login gov.br. Ver de novo se a Senacon publicar a lista de campanhas.
+- [ ] 🟢 Roubos e furtos por modelo (SSP-SP): o AUTOSEG já dá os roubos por mil carros segurados.
+      A transparência da SSP-SP (`transparenciassp/Consulta.aspx`) só tem boletins um a um, com
+      endereço, por mês e departamento, num formulário ASP.NET; somar por modelo daria muito
+      trabalho por pouco além do AUTOSEG.
 - [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
-      por km.
+      por km. Não há tabela aberta (out/2026): os sites das marcas consultam por modelo e CEP dentro
+      dos seus apps, e as tabelas que aparecem são de reportagens antigas.
 - [ ] 🟢 Flickr (API com filtro de licença Creative Commons, chave grátis): mais fotos por ângulo,
       muitas de salões do automóvel no Brasil.
 - [ ] 🟢 Fotos de imprensa (VW: 27 por versão; Renault: 782 listadas; Toyota): só com permissão
@@ -66,10 +78,10 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       Medir de novo quando entrarem motos e caminhões.
 - [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
 
-- [ ] 🟢 Fichas técnicas: melhorar o casamento das que ainda não acham versão (458 lidas, 263
-      anos-modelo cobertos): anos em faixa ("Rampage 2023 a 2025"), linhas fora do catálogo,
-      abreviações da FIPE ("ATTRAC."), vans e minibus com nomes que a FIPE não usa. O documento 322
-      está indisponível no site.
+- [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
+      aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
+      vans só pelo nome da carroceria). Faltam as linhas fora do catálogo e o comprimento das vans
+      (Cargo "Curto" ou "Médio" contra L1H1, L4H2). O documento 322 está indisponível no site.
 
 ## Futuro
 
@@ -79,7 +91,7 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
   funciona em domínio próprio).
 - Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
-  catálogo na URL, recarregar, busca pelo chassi. `CatalogPage` ainda não tem teste de componente.
+  catálogo na URL, recarregar, busca pelo chassi (o `CatalogPage` já tem teste de componente).
 - APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído

@@ -22,6 +22,8 @@ export interface CommonsFile {
   subcategory?: string;
   artist?: string;
   license?: string;
+  /** Its own page, for files not on Commons (Flickr). */
+  page?: string;
 }
 
 export interface GalleryPhoto {
@@ -35,6 +37,8 @@ export interface GalleryPhoto {
   to: number;
   artist?: string;
   license?: string;
+  /** The photo's own page, for photos not on Commons (Flickr). */
+  page?: string;
 }
 
 const lower = (text: string) => text.normalize("NFD").replace(/\p{M}/gu, "").toLowerCase();
@@ -108,6 +112,25 @@ function score(photo: CommonsFile, angle: Angle): number {
   const brazil = fromBrazil.test(lower(`${photo.file} ${photo.categories.join(" ")}`)) ? 3 : 0;
   const named = angle === "outra" ? 0 : 2;
   return pixels + landscape + brazil + named;
+}
+
+/**
+ * A line's gallery with more photos (Flickr's) where it has fewer than it
+ * keeps: per span of years and body style, its own first, then the others'
+ * until full; spans it lacks, the others' whole.
+ */
+export function fillGallery(own: GalleryPhoto[], more: GalleryPhoto[]): GalleryPhoto[] {
+  const key = (photo: GalleryPhoto) => `${photo.from}-${photo.to}|${photo.body ?? ""}`;
+  const counts = new Map<string, number>();
+  for (const photo of own) counts.set(key(photo), (counts.get(key(photo)) ?? 0) + 1);
+  const added: GalleryPhoto[] = [];
+  for (const photo of more) {
+    const count = counts.get(key(photo)) ?? 0;
+    if (count >= photosPerGeneration) continue;
+    counts.set(key(photo), count + 1);
+    added.push(photo);
+  }
+  return [...own, ...added];
 }
 
 /** Photos kept per generation of the line. */
@@ -308,6 +331,7 @@ export function pickGallery(
           to: span.to,
           ...(file.artist && { artist: file.artist }),
           ...(file.license && { license: file.license }),
+          ...(file.page && { page: file.page }),
         }),
       );
   }

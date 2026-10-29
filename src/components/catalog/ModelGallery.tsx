@@ -50,6 +50,8 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
   if (!slide) return null;
   const go = (step: number) => setCurrent((index + step + slides.length) % slides.length);
   const credit = [slide.artist, slide.license].filter(Boolean).join(", ");
+  // Where the photo is published: Commons, or Flickr for the photos that fill a generation.
+  const site = slide.page.includes("flickr.com") ? "Flickr" : "Wikimedia Commons";
   const alt = `${label}${slide.angle ? ` (${angleLabels[slide.angle].toLowerCase()})` : ""}, foto ilustrativa do modelo`;
 
   return (
@@ -107,7 +109,7 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
       <figcaption>
         Foto ilustrativa do modelo ·{" "}
         <a href={slide.page} target="_blank" rel="noreferrer">
-          {credit ? `${credit} · ` : ""}Wikimedia Commons
+          {credit ? `${credit} · ` : ""}{site}
         </a>
       </figcaption>
 
@@ -139,7 +141,7 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
               {slide.angle && slide.angle !== "outra" ? `${angleLabels[slide.angle]} · ` : ""}
               {index + 1}/{slides.length} ·{" "}
               <a href={slide.page} target="_blank" rel="noreferrer">
-                {credit ? `${credit} · ` : ""}Wikimedia Commons
+                {credit ? `${credit} · ` : ""}{site}
               </a>
             </p>
             {slides.length > 1 && (

@@ -37,6 +37,7 @@ import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { GalleryPhoto as GalleryPhotoData } from "../wikidata/gallery.ts";
+import { fillGallery } from "../wikidata/gallery.ts";
 import { commonsFile } from "../wikidata/details.ts";
 import { galleryPath } from "../../src/catalog/gallery.ts";
 import type { GalleryFile } from "../../src/catalog/gallery.ts";
@@ -146,15 +147,22 @@ const index = buildCatalogIndex(snapshots, {
 const gallery = await readFile(join(wikidataDir, "gallery.json"), "utf8")
   .then((text) => JSON.parse(text) as Record<string, GalleryPhotoData[]>)
   .catch(() => ({}) as Record<string, GalleryPhotoData[]>);
+// Flickr's photos (npm run fetch:openverse) fill the generations Commons leaves short.
+const flickr = await readFile(join(wikidataDir, "openverse.json"), "utf8")
+  .then((text) => JSON.parse(text) as Record<string, GalleryPhotoData[]>)
+  .catch(() => ({}) as Record<string, GalleryPhotoData[]>);
+let flickrPhotos = 0;
 const galleryDir = join(values.out, "galeria");
 await rm(galleryDir, { recursive: true, force: true });
 await mkdir(galleryDir, { recursive: true });
 let galleryPhotos = 0;
 for (const model of index.models ?? []) {
-  const photos = gallery[model.id];
-  if (!photos?.length) continue;
+  const own = gallery[model.id] ?? [];
+  const photos = fillGallery(own, flickr[model.id] ?? []);
+  if (!photos.length) continue;
+  flickrPhotos += photos.length - own.length;
   const file: GalleryFile = {
-    photos: photos.map(({ file, ...photo }) => ({ ...photo, page: commonsFile(file) })),
+    photos: photos.map(({ file, page, ...photo }) => ({ ...photo, page: page ?? commonsFile(file) })),
   };
   await writeFileRetrying(join(values.out, galleryPath(model.id)), JSON.stringify(file));
   model.gallery = photos.length;
@@ -212,7 +220,7 @@ if (index.fleet) {
 }
 if (galleryPhotos) {
   const models = (index.models ?? []).filter((model) => model.gallery).length;
-  console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}`);
+  console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}${flickrPhotos ? ` (${flickrPhotos} do Flickr)` : ""}`);
 }
 if (index.sheets) {
   const years = index.versions.flatMap((version) => version.t ?? []).filter((sheet) => sheet >= 0).length;
