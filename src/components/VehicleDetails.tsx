@@ -11,6 +11,7 @@ import { formatSpec, isWikidataItem, specLabels, wikidataUrl } from "../catalog/
 import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
+import { derivedSpecs } from "../catalog/derived";
 import type { CatalogModelInfo } from "../catalog/wikidata";
 import { formatSheetValue, formatTorque, formatTrunk, releaseMonth } from "../catalog/press";
 import type { PressSpecs } from "../catalog/press";
@@ -251,6 +252,20 @@ function specRows(
     ["Vão livre do solo", exact(sheet?.groundClearanceMm, "mm")],
     ["Velocidade máxima", exact(sheet?.topSpeedKmh, "km/h")],
     ["0 a 100 km/h", exact(sheet?.zeroTo100s, "s")],
+  );
+  // The line's weight only when Wikidata gives one figure, not a range.
+  const lineMass = modelSpecs?.mass && modelSpecs.mass[0] === modelSpecs.mass[1] ? modelSpecs.mass[0] : undefined;
+  rows.push(
+    ...derivedSpecs({
+      engineLiters: specs?.engineLiters,
+      powerCv: specs?.powerCv ?? sheet?.powerCv,
+      torqueKgfm: sheet?.torqueKgfm ?? press?.torque?.value,
+      weightKg: sheet?.weightKg ?? lineMass,
+      weightApprox: !sheet?.weightKg,
+      tankLiters: sheet?.tankLiters,
+      cityKmL: consumption?.fuelCity,
+      highwayKmL: consumption?.fuelHighway,
+    }),
   );
   // IPVA rates are for passenger cars; motorcycles and trucks pay other rates.
   if (vehicle.category === "cars" && vehicle.priceValue > 0) {

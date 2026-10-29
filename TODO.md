@@ -8,8 +8,9 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Completar os preços (25% hoje; semanas de varredura). A listagem já está completa: as 28
-      marcas da FIPE que faltam não têm modelo de 2009 em diante.
+- [ ] 🔴 Completar a varredura dos anos antigos: a listagem agora desce até 1985 (os preços de 2009
+      em diante estão em 98%). Quando terminar, rodar `fetch:wikidata`, `fetch:galeria` e
+      `build:catalog` para os modelos novos.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fotos que ainda faltam: 104 versões, quase todas utilitários e marcas de nicho sem artigo
