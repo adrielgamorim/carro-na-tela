@@ -4,6 +4,7 @@ import type { InmetroSpec } from "../catalog/inmetro";
 import type { CatalogModelInfo } from "../catalog/wikidata";
 import type { ModelNameAttributes } from "../catalog/modelName";
 import type { PressSpecs } from "../catalog/press";
+import type { SafetyInfo } from "../catalog/safety";
 import type { FipePriceHistory } from "../types/vehicle";
 import { requestErrorMessage } from "./errors";
 import { isAbortError } from "./http";
@@ -13,6 +14,7 @@ import {
   inmetroProvider,
   modelInfoProvider,
   pressProvider,
+  safetyProvider,
 } from "./providers/catalog";
 import { fipeHistoryProvider } from "./providers/fipe";
 import { modelNameProvider } from "./providers/modelName";
@@ -30,6 +32,7 @@ export interface VehicleEnrichment {
   fleet: ProviderResult<CatalogFleetInfo>;
   depreciation: ProviderResult<Depreciation>;
   press: ProviderResult<PressSpecs>;
+  safety: ProviderResult<SafetyInfo>;
 }
 
 export type EnrichmentKey = keyof VehicleEnrichment;
@@ -46,6 +49,7 @@ export const defaultProviders: EnrichmentProviders = {
   fleet: fleetProvider,
   depreciation: depreciationProvider,
   press: pressProvider,
+  safety: safetyProvider,
 };
 
 export interface EnrichmentOutcome {

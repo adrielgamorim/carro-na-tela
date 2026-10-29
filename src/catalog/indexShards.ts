@@ -55,6 +55,8 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
     const pressIndex = new Map<number, number>();
     const sheets: NonNullable<CatalogIndexFile["sheets"]> = [];
     const sheetIndex = new Map<number, number>();
+    const crashTests: NonNullable<CatalogIndexFile["crashTests"]> = [];
+    const crashIndex = new Map<number, number>();
     const remap = (index: Map<number, number>, from: number, add: () => void, size: () => number) => {
       if (!index.has(from)) {
         index.set(from, size());
@@ -92,6 +94,13 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
             : remap(sheetIndex, sheet, () => sheets.push(at(file.sheets!, sheet, "ficha")), () => sheets.length),
         );
       }
+      if (version.c && file.crashTests) {
+        copy.c = version.c.map((test) =>
+          test < 0
+            ? test
+            : remap(crashIndex, test, () => crashTests.push(at(file.crashTests!, test, "teste da Latin NCAP")), () => crashTests.length),
+        );
+      }
       if (version.p !== undefined && file.fleet) {
         copy.p = remap(lineIndex, version.p, () => lines.push(at(file.fleet!.lines, version.p!, "linha da frota")), () => lines.length);
       }
@@ -109,6 +118,8 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
       ...(file.photos && { photos }),
       ...(file.press && press.length > 0 && { press }),
       ...(file.sheets && sheets.length > 0 && { sheets }),
+      ...(file.crashTests && crashTests.length > 0 && { crashTests }),
+      ...(file.insurance && shardVersions.some((version) => version.u) && { insurance: file.insurance }),
       ...(file.fleet && {
         fleet: {
           reference: file.fleet.reference,

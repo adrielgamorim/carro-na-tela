@@ -30,7 +30,9 @@
     "fichas:vw": "node scripts/fichas/fetch-vw.ts",
     "fichas:renault": "node scripts/fichas/fetch-renault.ts",
     "fichas:abertas": "node scripts/fichas/read-open-sheets.ts",
-    "fichas:wayback": "node scripts/fichas/fetch-wayback.ts"
+    "fichas:wayback": "node scripts/fichas/fetch-wayback.ts",
+    "fetch:seguro": "node scripts/seguro/fetch-autoseg.ts",
+    "fetch:latinncap": "node scripts/seguranca/fetch-latinncap.ts"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",

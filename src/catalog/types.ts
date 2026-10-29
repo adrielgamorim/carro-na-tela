@@ -5,6 +5,7 @@ import type { Depreciation } from "./depreciation.ts";
 import type { CatalogFleetInfo, Origin } from "./fleet.ts";
 import type { CatalogModelInfo } from "./wikidata.ts";
 import type { PressSpecs } from "./press.ts";
+import type { CatalogCrashTest, CatalogInsurance } from "./safety.ts";
 
 export type Propulsion =
   | "combustao"
@@ -62,6 +63,10 @@ export interface CatalogEntry {
   press: PressSpecs | null;
   /** Its standard equipment: an index into public/catalog/equipamentos.json (Renault's lists). */
   equipment?: number;
+  /** Its line's Latin NCAP test for this model year. */
+  crashTest?: CatalogCrashTest;
+  /** Insurance rate and thefts from SUSEP's AUTOSEG. */
+  insurance?: CatalogInsurance;
   /** National or imported, by the line's Renavam registrations (null without fleet data). */
   origin: Origin | null;
   /** Average yearly loss of the version, from its priced model years. */

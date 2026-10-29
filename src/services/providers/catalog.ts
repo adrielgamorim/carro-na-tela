@@ -5,6 +5,7 @@ import type { Depreciation } from "../../catalog/depreciation";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
 import type { InmetroSpec } from "../../catalog/inmetro";
 import type { PressSpecs } from "../../catalog/press";
+import type { SafetyInfo } from "../../catalog/safety";
 import type { CatalogEntry, CatalogIndex } from "../../catalog/types";
 import type { CatalogModelInfo } from "../../catalog/wikidata";
 import { HttpError, requestJson } from "../http";
@@ -202,3 +203,27 @@ export function createPressProvider(
 }
 
 export const pressProvider = createPressProvider();
+
+/**
+ * The line's Latin NCAP test for the model year and the insurance figures of
+ * the FIPE code (AUTOSEG), when the catalog has them.
+ */
+export function createSafetyProvider(
+  loadIndex: (vehicle: VehicleRef) => Promise<CatalogIndex | null> = loadCatalogIndexFor,
+): Provider<SafetyInfo> {
+  return {
+    id: "safety",
+    async lookup(vehicle) {
+      const index = await loadIndex(vehicle);
+      const entry = index ? findCatalogEntry(index, vehicle) : undefined;
+      if (!entry?.crashTest && !entry?.insurance) return null;
+      return {
+        source: "latinncap",
+        confidence: "fuzzy",
+        data: { ...(entry.crashTest && { crash: entry.crashTest }), ...(entry.insurance && { insurance: entry.insurance }) },
+      };
+    },
+  };
+}
+
+export const safetyProvider = createSafetyProvider();

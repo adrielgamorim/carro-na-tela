@@ -11,10 +11,12 @@ import { formatSpec, isWikidataItem, specLabels, wikidataUrl } from "../catalog/
 import type { CatalogFleetInfo } from "../catalog/fleet";
 import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
+import { formatCrashTest, formatInsurance, formatTheft } from "../catalog/safety";
 import { derivedSpecs } from "../catalog/derived";
 import type { CatalogModelInfo } from "../catalog/wikidata";
 import { formatSheetValue, formatTorque, formatTrunk, releaseMonth } from "../catalog/press";
 import type { PressSpecs } from "../catalog/press";
+import type { SafetyInfo } from "../catalog/safety";
 import type { VehicleEnrichmentState } from "../hooks/useVehicleEnrichment";
 import { useCostSettings } from "../services/costSettings";
 import { formatModelYear } from "../services/fipeParsing";
@@ -43,6 +45,7 @@ const providerLabels: Record<EnrichmentKey, string> = {
   fleet: "a frota da Senatran",
   depreciation: "a depreciação",
   press: "os dados dos releases",
+  safety: "a segurança e o seguro",
 };
 
 /** Links to the press releases the trunk and torque came from. */
@@ -75,6 +78,34 @@ function PressSources({ press }: { press: PressSpecs }) {
           </a>
         </span>
       ))}
+    </>
+  );
+}
+
+/** Where the crash test and the insurance figures come from, and what they are worth. */
+function SafetySources({ safety }: { safety: SafetyInfo }) {
+  return (
+    <>
+      {safety.crash && (
+        <>
+          {" · segurança: "}
+          <a href={safety.crash.url} target="_blank" rel="noreferrer" title={safety.crash.title}>
+            Latin NCAP
+          </a>
+          {" (teste da linha"}
+          {safety.crash.protocol < 2020 ? ", protocolo antigo, menos exigente)" : ")"}
+        </>
+      )}
+      {safety.insurance && (
+        <>
+          {" · seguro e roubos: "}
+          <a href="https://www2.susep.gov.br/menuestatistica/Autoseg/principal.aspx" target="_blank" rel="noreferrer">
+            SUSEP AUTOSEG
+          </a>
+          {` ${safety.insurance.period.replace(/([AB])$/, (half) => (half === "A" ? " (1º sem.)" : " (2º sem.)"))}, taxa aplicada ao preço FIPE de hoje`}
+          {safety.insurance.approx && ", média da linha"}
+        </>
+      )}
     </>
   );
 }
@@ -274,6 +305,15 @@ function specRows(
       `IPVA estimado (${settings.uf})`,
       formatIpva(estimateIpva(vehicle.priceValue, settings.uf)),
     ]);
+    const insurance = enrichment?.data.safety?.data.insurance;
+    if (insurance) {
+      rows.push([`Seguro estimado (${settings.uf})`, formatInsurance(vehicle.priceValue, insurance, settings.uf)]);
+    }
+  }
+  const safety = enrichment?.data.safety?.data;
+  if (safety?.crash) rows.push(["Latin NCAP", formatCrashTest(safety.crash)]);
+  if (safety?.insurance) {
+    rows.push(["Roubos e furtos", formatTheft(safety.insurance)]);
   }
   const cost = costPerKm(inmetro, settings.prices);
   if (cost) {
@@ -377,6 +417,7 @@ export function VehicleDetails({
                   !enrichment?.data.press?.data.sheet &&
                   " · ≈ medidas, peso e potência da linha do modelo (Wikidata e Wikipedia)"}
                 {enrichment?.data.press && <PressSources press={enrichment.data.press.data} />}
+                {enrichment?.data.safety && <SafetySources safety={enrichment.data.safety.data} />}
               </p>
             </div>
           </div>

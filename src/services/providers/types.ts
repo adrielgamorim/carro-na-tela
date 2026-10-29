@@ -1,7 +1,7 @@
 import type { FipeVehicle } from "../../types/vehicle";
 
 /** Where a piece of vehicle data came from. */
-export type DataSource = "fipe" | "fipe-name" | "inmetro" | "wikidata" | "senatran" | "imprensa";
+export type DataSource = "fipe" | "fipe-name" | "inmetro" | "wikidata" | "senatran" | "imprensa" | "latinncap";
 
 /**
  * "exact" when the data belongs to this very version; "fuzzy" when it was

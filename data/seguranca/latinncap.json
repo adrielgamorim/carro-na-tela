@@ -1,0 +1,2306 @@
+{
+ "generatedAt": "2026-10-29T19:27:52.153Z",
+ "source": "https://www.latinncap.com/en/results",
+ "tests": [
+  {
+   "id": 1,
+   "title": "Toyota Corolla XEI + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/1/toyota-corolla-xei-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 1
+  },
+  {
+   "id": 2,
+   "title": "Chevrolet Meriva GL Plus + 1 Airbag",
+   "brand": "Chevrolet",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/2/chevrolet-meriva-gl-plus-+-1-airbag",
+   "adultStars": 3,
+   "childStars": 1
+  },
+  {
+   "id": 3,
+   "title": "Fiat Palio ELX + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/3/fiat-palio-elx-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 2
+  },
+  {
+   "id": 4,
+   "title": "Volkswagen Gol Trend 1.6 + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/4/volkswagen-gol-trend-1-6-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 2
+  },
+  {
+   "id": 5,
+   "title": "Peugeot 207 Compact + 2 Airbags",
+   "brand": "Peugeot",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/5/peugeot-207-compact-+-2-airbags",
+   "adultStars": 2,
+   "childStars": 2
+  },
+  {
+   "id": 6,
+   "title": "Peugeot 207 Compact 5p 1.4 - NO Airbags",
+   "brand": "Peugeot",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/6/peugeot-207-compact-5p-1-4-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 7,
+   "title": "Volkswagen Gol Trend 1.6 - NO Airbags",
+   "brand": "Volkswagen",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/7/volkswagen-gol-trend-1-6-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 8,
+   "title": "Fiat Palio ELX 1.4 - NO Airbags",
+   "brand": "Fiat",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/8/fiat-palio-elx-1-4-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 9,
+   "title": "Geely CK 1 1.3 - NO Airbags",
+   "brand": "Geely",
+   "year": 2010,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/9/geely-ck-1-1-3-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 10,
+   "title": "Ford KA Fly Viral - NO Airbags",
+   "brand": "Ford",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/10/ford-ka-fly-viral-no-airbags",
+   "adultStars": 1,
+   "childStars": 3
+  },
+  {
+   "id": 11,
+   "title": "Chevrolet Celta - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/11/chevrolet-celta-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 12,
+   "title": "Fiat Novo Uno Evo - NO Airbags",
+   "brand": "Fiat",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/12/fiat-novo-uno-evo-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 13,
+   "title": "Chevrolet Corsa Classic - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/13/chevrolet-corsa-classic-no-airbags",
+   "adultStars": 1,
+   "childStars": 1
+  },
+  {
+   "id": 14,
+   "title": "Nissan Tiida hatch + 1 Airbag",
+   "brand": "Nissan",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/14/nissan-tiida-hatch-+-1-airbag",
+   "adultStars": 3,
+   "childStars": 1
+  },
+  {
+   "id": 15,
+   "title": "Chevrolet Cruze LT + 2 Airbags",
+   "brand": "Chevrolet",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/15/chevrolet-cruze-lt-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 16,
+   "title": "Ford Focus Hatchback+ 2 Airbags",
+   "brand": "Ford",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/16/ford-focus-hatchback+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 17,
+   "title": "Nissan March + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/17/nissan-march-+-2-airbags",
+   "adultStars": 2,
+   "childStars": 1
+  },
+  {
+   "id": 18,
+   "title": "Nissan Tiida Hatch + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2011,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/18/nissan-tiida-hatch-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 1
+  },
+  {
+   "id": 20,
+   "title": "Renault Sandero - NO Airbags",
+   "brand": "Renault",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/20/renault-sandero-no-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 21,
+   "title": "Ford Fiesta + 2 Airbags",
+   "brand": "Ford",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/21/ford-fiesta-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 22,
+   "title": "Honda City + 2 Airbags",
+   "brand": "Honda",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/22/honda-city-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 23,
+   "title": "Jac J3 + 2 Airbags",
+   "brand": "JAC",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/23/jac-j3-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 24,
+   "title": "Volkswagen Clásico (Bora) + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/24/volkswagen-clasico-bora-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 3
+  },
+  {
+   "id": 25,
+   "title": "Volkswagen Polo + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/25/volkswagen-polo-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 26,
+   "title": "Renault Fluence + 2 Airbags",
+   "brand": "Renault",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/26/renault-fluence-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 27,
+   "title": "Toyota Etios + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2012,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/27/toyota-etios-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 28,
+   "title": "Hyundai HB20 + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/28/hyundai-hb20-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 1
+  },
+  {
+   "id": 29,
+   "title": "Ford Ecosport + 2 Airbags",
+   "brand": "Ford",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/29/ford-ecosport-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 30,
+   "title": "Suzuki Alto K10 - NO Airbags",
+   "brand": "Suzuki",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/30/suzuki-alto-k10-no-airbags",
+   "adultStars": 0,
+   "childStars": 3
+  },
+  {
+   "id": 31,
+   "title": "Nissan Tsuru / Sentra B13 - NO Airbags",
+   "brand": "Nissan",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/31/nissan-tsuru-sentra-b13-no-airbags",
+   "adultStars": 0,
+   "childStars": 0
+  },
+  {
+   "id": 32,
+   "title": "Renault Clio Mio - NO Airbags",
+   "brand": "Renault",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/32/renault-clio-mio-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 33,
+   "title": "Seat Leon + 6 Airbags",
+   "brand": "Seat",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/33/seat-leon-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 34,
+   "title": "Suzuki Celerio + 2 Airbags",
+   "brand": "Suzuki",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/34/suzuki-celerio-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 35,
+   "title": "Chevrolet Agile - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/35/chevrolet-agile-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 36,
+   "title": "Ford Ecosport + 2 Airbags (from August 2013)",
+   "brand": "Ford",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/36/ford-ecosport-+-2-airbags-from-august-2013",
+   "adultStars": 5,
+   "childStars": 3
+  },
+  {
+   "id": 37,
+   "title": "Hyundai HB20 + 2 Airbags (from august 2013)",
+   "brand": "Hyundai",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/37/hyundai-hb20-+-2-airbags-from-august-2013",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 38,
+   "title": "Ford Focus III + 2 Airbags",
+   "brand": "Ford",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/38/ford-focus-iii-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 39,
+   "title": "Chevrolet Malibu + 10 Airbags",
+   "brand": "Chevrolet",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/39/chevrolet-malibu-+-10-airbags",
+   "adultStars": 4,
+   "childStars": 1
+  },
+  {
+   "id": 40,
+   "title": "Volkswagen Jetta / Vento + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2013,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/40/volkswagen-jetta-vento-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 41,
+   "title": "Volkswagen up! + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/41/volkswagen-up-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 44,
+   "title": "Chevrolet Spark - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/44/chevrolet-spark-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 45,
+   "title": "Fiat New Palio - NO Airbags",
+   "brand": "Fiat",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/45/fiat-new-palio-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 46,
+   "title": "Fiat New Palio + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/46/fiat-new-palio-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 2
+  },
+  {
+   "id": 47,
+   "title": "Peugeot 208 + 2 Airbags",
+   "brand": "Peugeot",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/47/peugeot-208-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 48,
+   "title": "Toyota Corolla + 3 Airbags",
+   "brand": "Toyota",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/48/toyota-corolla-+-3-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 49,
+   "title": "Volkswagen Golf + 7 Airbags",
+   "brand": "Volkswagen",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/49/volkswagen-golf-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 50,
+   "title": "Suzuki Swift - 2 Airbags",
+   "brand": "Suzuki",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/50/suzuki-swift-2-airbags",
+   "adultStars": 3,
+   "childStars": 1
+  },
+  {
+   "id": 51,
+   "title": "Lifan 320 - NO Airbags",
+   "brand": "Lifan",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/51/lifan-320-no-airbags",
+   "adultStars": 0,
+   "childStars": 0
+  },
+  {
+   "id": 52,
+   "title": "Chevrolet Onix + 2 Airbags (from August 2014)",
+   "brand": "Chevrolet",
+   "year": 2014,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/52/chevrolet-onix-+-2-airbags-from-august-2014",
+   "adultStars": 3,
+   "childStars": 2
+  },
+  {
+   "id": 53,
+   "title": "Seat Leon ST + 6 Airbags",
+   "brand": "Seat",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/53/seat-leon-st-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 54,
+   "title": "Citroen C3 + 2 Airbags",
+   "brand": "Citroen",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/54/citroen-c3-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 55,
+   "title": "Nissan Tiida Sedan - NO Airbags",
+   "brand": "Nissan",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/55/nissan-tiida-sedan-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 56,
+   "title": "Jeep Renegade + 2 Airbags",
+   "brand": "Jeep",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/56/jeep-renegade-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 57,
+   "title": "Chery iQ - NO Airbags",
+   "brand": "Chery / Chirey",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/57/chery-iq-no-airbags",
+   "adultStars": 0,
+   "childStars": 0
+  },
+  {
+   "id": 58,
+   "title": "Fiat New Palio + 2 Airbags (from july 2015)",
+   "brand": "Fiat",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/58/fiat-new-palio-+-2-airbags-from-july-2015",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 60,
+   "title": "Hyundai Grand i10 - NO Airbags",
+   "brand": "Hyundai",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/60/hyundai-grand-i10-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 61,
+   "title": "Renault Duster + 1 Airbag",
+   "brand": "Renault",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/61/renault-duster-+-1-airbag",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 62,
+   "title": "Nissan Tiida Sedan + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/62/nissan-tiida-sedan-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 63,
+   "title": "Chevrolet Aveo - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/63/chevrolet-aveo-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 64,
+   "title": "Volkswagen Vento / Polo Sedán + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/64/volkswagen-vento-polo-sedan-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 3
+  },
+  {
+   "id": 65,
+   "title": "Honda Fit + 2 Airbags",
+   "brand": "Honda",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/65/honda-fit-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 66,
+   "title": "Honda City + 2 Airbags",
+   "brand": "Honda",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/66/honda-city-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 67,
+   "title": "Honda HR-V + 2 Airbags",
+   "brand": "Honda",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/67/honda-hr-v-+-2-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 68,
+   "title": "Ford Ka + 2 Airbags",
+   "brand": "Ford",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/68/ford-ka-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 71,
+   "title": "Hyundai Creta + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/71/hyundai-creta-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 72,
+   "title": "Volkswagen Fox + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/72/volkswagen-fox-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 2
+  },
+  {
+   "id": 73,
+   "title": "Toyota RAV 4 + 3 Airbags",
+   "brand": "Toyota",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/73/toyota-rav-4-+-3-airbags",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 74,
+   "title": "Toyota Hilux / SW4 / Fortuner + 3 Airbags",
+   "brand": "Toyota",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/74/toyota-hilux-sw4-fortuner-+-3-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 75,
+   "title": "Mitsubishi Montero Sport + 3 Airbags",
+   "brand": "Mitsubishi",
+   "year": 2015,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/75/mitsubishi-montero-sport-+-3-airbags",
+   "adultStars": 5,
+   "childStars": 3
+  },
+  {
+   "id": 76,
+   "title": "Ford Ranger + 3 Airbags",
+   "brand": "Ford",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/76/ford-ranger-+-3-airbags",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 77,
+   "title": "Chevrolet Sail - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/77/chevrolet-sail-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 78,
+   "title": "Kia Picanto / Morning - NO Airbags",
+   "brand": "Kia",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/78/kia-picanto-morning-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 79,
+   "title": "Peugeot 208 + 2 Airbags",
+   "brand": "Peugeot",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/79/peugeot-208-+-2-airbags",
+   "adultStars": 2,
+   "childStars": 3
+  },
+  {
+   "id": 80,
+   "title": "BYD F0 - NO Airbags",
+   "brand": "BYD",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/80/byd-f0-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 81,
+   "title": "Fiat New Palio + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/81/fiat-new-palio-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 3
+  },
+  {
+   "id": 82,
+   "title": "Chevrolet Spark GT / Beat - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/82/chevrolet-spark-gt-beat-no-airbags",
+   "adultStars": 0,
+   "childStars": 0
+  },
+  {
+   "id": 84,
+   "title": "Nissan Murano + 7 Airbags",
+   "brand": "Nissan",
+   "year": 2016,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/84/nissan-murano-+-7-airbags",
+   "adultStars": 2,
+   "childStars": 4
+  },
+  {
+   "id": 85,
+   "title": "Nissan March + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2016,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/85/nissan-march-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 1
+  },
+  {
+   "id": 86,
+   "title": "Nissan Versa + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2016,
+   "protocol": 2010,
+   "url": "https://www.latinncap.com/en/result/86/nissan-versa-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 2
+  },
+  {
+   "id": 87,
+   "title": "Seat Ateca + 7 Airbags",
+   "brand": "Seat",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/87/seat-ateca-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 88,
+   "title": "Volkswagen Golf VII + 7 Airbags",
+   "brand": "Volkswagen",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/88/volkswagen-golf-vii-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 89,
+   "title": "Chevrolet Onix + 2 Airbags",
+   "brand": "Chevrolet",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/89/chevrolet-onix-+-2-airbags",
+   "adultStars": 0,
+   "childStars": 3
+  },
+  {
+   "id": 90,
+   "title": "Kia Rio Sedan - NO Airbags",
+   "brand": "Kia",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/90/kia-rio-sedan-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 91,
+   "title": "Chevrolet N300 (passengers) - NO Airbags",
+   "brand": "Chevrolet",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/91/chevrolet-n300-passengers-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 92,
+   "title": "Renault Captur + 4 Airbags",
+   "brand": "Renault",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/92/renault-captur-+-4-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 93,
+   "title": "Fiat Mobi + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/93/fiat-mobi-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 94,
+   "title": "Kia New Rio Sedan + 1 Airbag",
+   "brand": "Kia",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/94/kia-new-rio-sedan-+-1-airbag",
+   "adultStars": 2,
+   "childStars": 2
+  },
+  {
+   "id": 95,
+   "title": "Toyota Corolla + 7 Airbags",
+   "brand": "Toyota",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/95/toyota-corolla-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 96,
+   "title": "Volkswagen Polo + 4 Airbags",
+   "brand": "Volkswagen",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/96/volkswagen-polo-+-4-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 97,
+   "title": "Ford Ka / Figo + 2 Airbags",
+   "brand": "Ford",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/97/ford-ka-figo-+-2-airbags",
+   "adultStars": 0,
+   "childStars": 3
+  },
+  {
+   "id": 98,
+   "title": "Renault Kwid + 4 Airbags",
+   "brand": "Renault",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/98/renault-kwid-+-4-airbags",
+   "adultStars": 3,
+   "childStars": 3
+  },
+  {
+   "id": 99,
+   "title": "Chevrolet Aveo + 2 Airbags",
+   "brand": "Chevrolet",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/99/chevrolet-aveo-+-2-airbags",
+   "adultStars": 0,
+   "childStars": 3
+  },
+  {
+   "id": 100,
+   "title": "Nissan Kicks + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/100/nissan-kicks-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 101,
+   "title": "Nissan Murano + 7 Airbags (from 06/10/2017) VIN 5N1TANZ52JN100879",
+   "brand": "Nissan",
+   "year": 2017,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/101/nissan-murano-+-7-airbags-from-06-10-2017-vin-5n1tanz52jn100879",
+   "adultStars": 5,
+   "childStars": 3
+  },
+  {
+   "id": 102,
+   "title": "Volkswagen Virtus + 4 Airbags",
+   "brand": "Volkswagen",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/102/volkswagen-virtus-+-4-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 103,
+   "title": "Chevrolet Onix/Prisma + 2 Airbags (from 15/01/2018) VIN 9BGKS48U0JG313644",
+   "brand": "Chevrolet",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/103/chevrolet-onix-prisma-+-2-airbags-from-15-01-2018-vin-9bgks48u0jg313644",
+   "adultStars": 3,
+   "childStars": 3
+  },
+  {
+   "id": 104,
+   "title": "Fiat Toro + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/104/fiat-toro-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 106,
+   "title": "Renault Sandero / Logan + 2 Airbags",
+   "brand": "Renault",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/106/renault-sandero-logan-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 3
+  },
+  {
+   "id": 108,
+   "title": "Mazda 2 + 2 Airbags",
+   "brand": "Mazda",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/108/mazda-2-+-2-airbags",
+   "adultStars": 2,
+   "childStars": 3
+  },
+  {
+   "id": 109,
+   "title": "Nissan March + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/109/nissan-march-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 2
+  },
+  {
+   "id": 110,
+   "title": "Ford KA + 2 Airbags (from 12/06/2018) VIN 9B9BFZH55U7K8206502",
+   "brand": "Ford",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/110/ford-ka-+-2-airbags-from-12-06-2018-vin-9b9bfzh55u7k8206502",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 111,
+   "title": "Hyundai Accent NO Airbags",
+   "brand": "Hyundai",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/111/hyundai-accent-no-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 113,
+   "title": "Fiat 500X + 6 Airbags",
+   "brand": "Fiat",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/113/fiat-500x-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 114,
+   "title": "Chevrolet Cruze + 4 Airbags",
+   "brand": "Chevrolet",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/114/chevrolet-cruze-+-4-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 115,
+   "title": "Seat Ibiza + 6 Airbags (from 01/09/2018) VIN VSSZZZKJZKR021211",
+   "brand": "Seat",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/115/seat-ibiza-+-6-airbags-from-01-09-2018-vin-vsszzzkjzkr021211",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 116,
+   "title": "Seat Arona + 6 Airbags (from 01/09/2018) VIN VSSZZZKJZKR021211",
+   "brand": "Seat",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/116/seat-arona-+-6-airbags-from-01-09-2018-vin-vsszzzkjzkr021211",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 117,
+   "title": "Chevrolet New Aveo + 2 Airbags",
+   "brand": "Chevrolet",
+   "year": 2018,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/117/chevrolet-new-aveo-+-2-airbags",
+   "adultStars": 2,
+   "childStars": 4
+  },
+  {
+   "id": 118,
+   "title": "Volkswagen Suran/Fox + 2 Airbags",
+   "brand": "Volkswagen",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/118/volkswagen-suran-fox-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 3
+  },
+  {
+   "id": 119,
+   "title": "Toyota Yaris + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/119/toyota-yaris-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 120,
+   "title": "Volkswagen T-Cross + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/120/volkswagen-t-cross-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 121,
+   "title": "Toyota RAV 4 + 7 Airbags",
+   "brand": "Toyota",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/121/toyota-rav-4-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 122,
+   "title": "Renault Kangoo + 2 Airbags",
+   "brand": "Renault",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/122/renault-kangoo-+-2-airbags",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 123,
+   "title": "Fiat Argo / Cronos + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/123/fiat-argo-cronos-+-2-airbags",
+   "adultStars": 0,
+   "childStars": 4
+  },
+  {
+   "id": 124,
+   "title": "Toyota Etios + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/124/toyota-etios-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 125,
+   "title": "Toyota Hilux Double Cab / SW4 + 7 Airbags (from 01/07/2019) VIN 8AJKX3CD9L201200",
+   "brand": "Toyota",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/125/toyota-hilux-double-cab-sw4-+-7-airbags-from-01-07-2019-vin-8ajkx3cd9l201200",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 126,
+   "title": "Chevrolet Cruze + 6 Airbags (from 21/05/2019) VIN 8AGBB69S0LR100117",
+   "brand": "Chevrolet",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/126/chevrolet-cruze-+-6-airbags-from-21-05-2019-vin-8agbb69s0lr100117",
+   "adultStars": 5,
+   "childStars": 4
+  },
+  {
+   "id": 127,
+   "title": "Nissan Frontier / NP300 Navara (double cabs) + 2 Airbags",
+   "brand": "Nissan",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/127/nissan-frontier-np300-navara-double-cabs-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 128,
+   "title": "Chery Tiggo 3 + 2 Airbags",
+   "brand": "Chery / Chirey",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/128/chery-tiggo-3-+-2-airbags",
+   "adultStars": 0,
+   "childStars": 1
+  },
+  {
+   "id": 129,
+   "title": "Chevrolet New Onix Plus + 6 Airbags",
+   "brand": "Chevrolet",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/129/chevrolet-new-onix-plus-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 130,
+   "title": "Volkswagen Jetta / Vento* + 6 Airbags (* for Uruguay and Argentina)",
+   "brand": "Volkswagen",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/130/volkswagen-jetta-vento-+-6-airbags-for-uruguay-and-argentina",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 131,
+   "title": "Volkswagen Tiguan + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/131/volkswagen-tiguan-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 132,
+   "title": "Ford Figo + 4 Airbags (from 24/08/2018) VIN MAJTKNFZ0KTT67367",
+   "brand": "Ford",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/132/ford-figo-+-4-airbags-from-24-08-2018-vin-majtknfz0ktt67367",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 133,
+   "title": "Seat Tarraco + 7 Airbags",
+   "brand": "Seat",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/133/seat-tarraco-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 134,
+   "title": "Renault New Duster + 2 Airbags",
+   "brand": "Renault",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/134/renault-new-duster-+-2-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 135,
+   "title": "Mitsubishi L200 - No Airbags",
+   "brand": "Mitsubishi",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/135/mitsubishi-l200-no-airbags",
+   "adultStars": 0,
+   "childStars": 2
+  },
+  {
+   "id": 136,
+   "title": "Chevrolet New Onix Hatchback + 6 Airbags",
+   "brand": "Chevrolet",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/136/chevrolet-new-onix-hatchback-+-6-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 137,
+   "title": "Toyota New Corolla + 7 Airbags",
+   "brand": "Toyota",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/137/toyota-new-corolla-+-7-airbags",
+   "adultStars": 5,
+   "childStars": 5
+  },
+  {
+   "id": 138,
+   "title": "Peugeot 301 + 4 Airbags",
+   "brand": "Peugeot",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/138/peugeot-301-+-4-airbags",
+   "adultStars": 3,
+   "childStars": 3
+  },
+  {
+   "id": 139,
+   "title": "Renault Sandero / Logan / Stepway + 4 Airbags *",
+   "brand": "Renault",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/139/renault-sandero-logan-stepway-+-4-airbags",
+   "adultStars": 1,
+   "childStars": 4
+  },
+  {
+   "id": 140,
+   "title": "Hyundai HB20 Hatchback + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/140/hyundai-hb20-hatchback-+-2-airbags",
+   "adultStars": 1,
+   "childStars": 3
+  },
+  {
+   "id": 141,
+   "title": "Renault Sandero / Logan / Stepway + 4 Airbags **",
+   "brand": "Renault",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/141/renault-sandero-logan-stepway-+-4-airbags",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 142,
+   "title": "Chevrolet New Aveo + 2 Airbags (from May 2019) VIN LSGHD52H1KD125807",
+   "brand": "Chevrolet",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/142/chevrolet-new-aveo-+-2-airbags-from-may-2019-vin-lsghd52h1kd125807",
+   "adultStars": 3,
+   "childStars": 4
+  },
+  {
+   "id": 143,
+   "title": "Mitsubishi Eclipse Cross + 3 Airbags",
+   "brand": "Mitsubishi",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/143/mitsubishi-eclipse-cross-+-3-airbags",
+   "adultStars": 4,
+   "childStars": 3
+  },
+  {
+   "id": 144,
+   "title": "Ford Ranger + 3 Airbags (From Dic 2019)",
+   "brand": "Ford",
+   "year": 2019,
+   "protocol": 2016,
+   "url": "https://www.latinncap.com/en/result/144/ford-ranger-+-3-airbags-from-dic-2019",
+   "adultStars": 4,
+   "childStars": 4
+  },
+  {
+   "id": 145,
+   "title": "Kia Picanto / Morning + 1 Airbag",
+   "brand": "Kia",
+   "year": 2020,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/145/kia-picanto-morning-+-1-airbag",
+   "stars": 0,
+   "scores": [
+    0,
+    29,
+    51,
+    7
+   ]
+  },
+  {
+   "id": 146,
+   "title": "Ford Ka + 2 Airbags",
+   "brand": "Ford",
+   "year": 2020,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/146/ford-ka-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    34,
+    9,
+    50,
+    7
+   ]
+  },
+  {
+   "id": 147,
+   "title": "Hyundai HB20 + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2020,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/147/hyundai-hb20-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    19,
+    10,
+    43,
+    14
+   ]
+  },
+  {
+   "id": 148,
+   "title": "Renault Duster + 2 Airbags",
+   "brand": "Renault",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/148/renault-duster-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    29,
+    23,
+    51,
+    35
+   ]
+  },
+  {
+   "id": 149,
+   "title": "Suzuki Swift + 2 Airbags",
+   "brand": "Suzuki",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/149/suzuki-swift-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    16,
+    0,
+    66,
+    7
+   ]
+  },
+  {
+   "id": 151,
+   "title": "Suzuki Baleno + 2 Airbags",
+   "brand": "Suzuki",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/151/suzuki-baleno-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    20,
+    17,
+    64,
+    7
+   ]
+  },
+  {
+   "id": 152,
+   "title": "Toyota Yaris + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/152/toyota-yaris-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    41,
+    64,
+    62,
+    42
+   ]
+  },
+  {
+   "id": 153,
+   "title": "Volkswagen Taos + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/153/volkswagen-taos-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    90,
+    90,
+    61,
+    85
+   ]
+  },
+  {
+   "id": 154,
+   "title": "Fiat Argo / Cronos + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/154/fiat-argo-cronos-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    24,
+    10,
+    37,
+    7
+   ]
+  },
+  {
+   "id": 155,
+   "title": "Hyundai Tucson + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/155/hyundai-tucson-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    51,
+    4,
+    50,
+    7
+   ]
+  },
+  {
+   "id": 156,
+   "title": "Peugeot 208 + 4 Airbags",
+   "brand": "Peugeot",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/156/peugeot-208-+-4-airbags",
+   "stars": 2,
+   "scores": [
+    52,
+    55,
+    54,
+    56
+   ]
+  },
+  {
+   "id": 157,
+   "title": "Great Wall Motors Wingle 5 + 2 Airbags",
+   "brand": "Great Wall Motors",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/157/great-wall-motors-wingle-5-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    9,
+    0,
+    19,
+    0
+   ]
+  },
+  {
+   "id": 158,
+   "title": "Kia Sportage + 2 Airbags",
+   "brand": "Kia",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/158/kia-sportage-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    48,
+    15,
+    58,
+    7
+   ]
+  },
+  {
+   "id": 159,
+   "title": "Hyundai Accent + 1 Airbag",
+   "brand": "Hyundai",
+   "year": 2021,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/159/hyundai-accent-+-1-airbag",
+   "stars": 0,
+   "scores": [
+    9,
+    13,
+    53,
+    7
+   ]
+  },
+  {
+   "id": 160,
+   "title": "Hyundai Tucson + 2 Airbags",
+   "brand": "Hyundai",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/160/hyundai-tucson-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    50,
+    5,
+    48,
+    7
+   ]
+  },
+  {
+   "id": 161,
+   "title": "Hyundai Tucson + 6 Airbags",
+   "brand": "Hyundai",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/161/hyundai-tucson-+-6-airbags",
+   "stars": 3,
+   "scores": [
+    82,
+    70,
+    48,
+    56
+   ]
+  },
+  {
+   "id": 162,
+   "title": "Honda WR-V + 2 Airbags",
+   "brand": "Honda",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/162/honda-wr-v-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    41,
+    41,
+    59,
+    49
+   ]
+  },
+  {
+   "id": 163,
+   "title": "Volkswagen Nivus + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/163/volkswagen-nivus-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    92,
+    92,
+    49,
+    85
+   ]
+  },
+  {
+   "id": 164,
+   "title": "Fiat Strada (Single cabin) + 2 Airbags",
+   "brand": "Fiat",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/164/fiat-strada-single-cabin-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    47,
+    22,
+    40,
+    42
+   ]
+  },
+  {
+   "id": 165,
+   "title": "Fiat Strada (Double cabin) + 4 Airbags",
+   "brand": "Fiat",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/165/fiat-strada-double-cabin-+-4-airbags",
+   "stars": 1,
+   "scores": [
+    41,
+    53,
+    40,
+    49
+   ]
+  },
+  {
+   "id": 166,
+   "title": "RAM 700 (Double cabin) + 4 Airbags",
+   "brand": "RAM",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/166/ram-700-double-cabin-+-4-airbags",
+   "stars": 1,
+   "scores": [
+    41,
+    53,
+    40,
+    49
+   ]
+  },
+  {
+   "id": 167,
+   "title": "RAM 700 (Single Cabin) + 2 Airbags",
+   "brand": "RAM",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/167/ram-700-single-cabin-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    47,
+    22,
+    40,
+    42
+   ]
+  },
+  {
+   "id": 169,
+   "title": "Nissan Qashqai + 6 Airbags",
+   "brand": "Nissan",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/169/nissan-qashqai-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    94,
+    92,
+    54,
+    86
+   ]
+  },
+  {
+   "id": 170,
+   "title": "Toyota Corolla + 7 Airbags",
+   "brand": "Toyota",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/170/toyota-corolla-+-7-airbags",
+   "stars": 4,
+   "scores": [
+    73,
+    72,
+    60,
+    82
+   ]
+  },
+  {
+   "id": 171,
+   "title": "Volkswagen New Polo / Polo Track + 4 Airbags",
+   "brand": "Volkswagen",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/171/volkswagen-new-polo-polo-track-+-4-airbags",
+   "stars": 3,
+   "scores": [
+    73,
+    71,
+    51,
+    58
+   ]
+  },
+  {
+   "id": 172,
+   "title": "Volkswagen New Virtus + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/172/volkswagen-new-virtus-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    92,
+    92,
+    53,
+    85
+   ]
+  },
+  {
+   "id": 173,
+   "title": "JAC E-JS1 / E10x / E-S1 / S1 + 2 Airbags",
+   "brand": "JAC",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/173/jac-e-js1-e10x-e-s1-s1-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    0,
+    6,
+    20,
+    7
+   ]
+  },
+  {
+   "id": 174,
+   "title": "Mitsubishi Outlander + 7 Airbags",
+   "brand": "Mitsubishi",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/174/mitsubishi-outlander-+-7-airbags",
+   "stars": 5,
+   "scores": [
+    87,
+    91,
+    55,
+    84
+   ]
+  },
+  {
+   "id": 175,
+   "title": "Kia Sportage + 6 Airbags",
+   "brand": "Kia",
+   "year": 2022,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/175/kia-sportage-+-6-airbags",
+   "stars": 3,
+   "scores": [
+    82,
+    72,
+    48,
+    56
+   ]
+  },
+  {
+   "id": 176,
+   "title": "Volkswagen Taigun + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2023,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/176/volkswagen-taigun-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    92,
+    92,
+    55,
+    83
+   ]
+  },
+  {
+   "id": 177,
+   "title": "Jeep Renegade + 2 Airbags",
+   "brand": "Jeep",
+   "year": 2023,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/177/jeep-renegade-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    49,
+    67,
+    45,
+    56
+   ]
+  },
+  {
+   "id": 178,
+   "title": "Citroen C3 + 2 Airbags",
+   "brand": "Citroen",
+   "year": 2023,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/178/citroen-c3-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    31,
+    12,
+    50,
+    35
+   ]
+  },
+  {
+   "id": 179,
+   "title": "Hyundai New HB20 + 6 Airbags",
+   "brand": "Hyundai",
+   "year": 2023,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/179/hyundai-new-hb20-+-6-airbags",
+   "stars": 3,
+   "scores": [
+    68,
+    75,
+    34,
+    65
+   ]
+  },
+  {
+   "id": 180,
+   "title": "Fiat Pulse + 4 Airbags",
+   "brand": "Fiat",
+   "year": 2023,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/180/fiat-pulse-+-4-airbags",
+   "stars": 2,
+   "scores": [
+    67,
+    56,
+    45,
+    56
+   ]
+  },
+  {
+   "id": 181,
+   "title": "Chevrolet Montana + 6 Airbags",
+   "brand": "Chevrolet",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/181/chevrolet-montana-+-6-airbags",
+   "stars": 3,
+   "scores": [
+    79,
+    71,
+    44,
+    65
+   ]
+  },
+  {
+   "id": 182,
+   "title": "Toyota Raize + 2 Airbags",
+   "brand": "Toyota",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/182/toyota-raize-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    41,
+    72,
+    59,
+    58
+   ]
+  },
+  {
+   "id": 183,
+   "title": "Chevrolet Groove + 4 Airbags",
+   "brand": "Chevrolet",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/183/chevrolet-groove-+-4-airbags",
+   "stars": 0,
+   "scores": [
+    39,
+    69,
+    36,
+    58
+   ]
+  },
+  {
+   "id": 184,
+   "title": "Volkswagen T-Cross + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/184/volkswagen-t-cross-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    92,
+    90,
+    66,
+    85
+   ]
+  },
+  {
+   "id": 185,
+   "title": "Kia K3/K3 Sedan - K3 Hatchback/K3 Cross",
+   "brand": "Kia",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/185/kia-k3-k3-sedan-k3-hatchback-k3-cross",
+   "stars": 5,
+   "scores": [
+    87,
+    84,
+    65,
+    81
+   ]
+  },
+  {
+   "id": 186,
+   "title": "Citroen C3 Aircross / New Aircross + 2 Airbags",
+   "brand": "Citroen",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/186/citroen-c3-aircross-new-aircross-+-2-airbags",
+   "stars": 0,
+   "scores": [
+    33,
+    11,
+    50,
+    35
+   ]
+  },
+  {
+   "id": 187,
+   "title": "Mitsubishi L200 / Triton (Single Cabin) + 7Airbags",
+   "brand": "Mitsubishi",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/187/mitsubishi-l200-triton-single-cabin-+-7airbags",
+   "stars": 5,
+   "scores": [
+    90,
+    86,
+    87,
+    92
+   ]
+  },
+  {
+   "id": 188,
+   "title": "Mitsubishi L200 / Triton (Double Cabin) + 7 Airbags",
+   "brand": "Mitsubishi",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/188/mitsubishi-l200-triton-double-cabin-+-7-airbags",
+   "stars": 5,
+   "scores": [
+    90,
+    91,
+    87,
+    92
+   ]
+  },
+  {
+   "id": 189,
+   "title": "Renault Sandero / Logan / Stepway + 4 Airbags",
+   "brand": "Renault",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/189/renault-sandero-logan-stepway-+-4-airbags",
+   "stars": 0,
+   "scores": [
+    33,
+    61,
+    46,
+    0
+   ]
+  },
+  {
+   "id": 190,
+   "title": "Renault Kardian + 6 Airbags",
+   "brand": "Renault",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/190/renault-kardian-+-6-airbags",
+   "stars": 4,
+   "scores": [
+    83,
+    83,
+    48,
+    84
+   ]
+  },
+  {
+   "id": 191,
+   "title": "Volkswagen New Amarok + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/191/volkswagen-new-amarok-+-6-airbags",
+   "stars": 3,
+   "scores": [
+    81,
+    87,
+    62,
+    66
+   ]
+  },
+  {
+   "id": 192,
+   "title": "Ford Ranger + 7 Airbags",
+   "brand": "Ford",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/192/ford-ranger-+-7-airbags",
+   "stars": 5,
+   "scores": [
+    93,
+    90,
+    75,
+    92
+   ]
+  },
+  {
+   "id": 193,
+   "title": "BYD Dolphin Plus + 7 Airbags",
+   "brand": "BYD",
+   "year": 2024,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/193/byd-dolphin-plus-+-7-airbags",
+   "stars": 5,
+   "scores": [
+    93,
+    93,
+    77,
+    85
+   ]
+  },
+  {
+   "id": 195,
+   "title": "Volkswagen Jetta / Vento* + 6 Airbags (*for Uruguay and Argentina)",
+   "brand": "Volkswagen",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/195/volkswagen-jetta-vento-+-6-airbags-for-uruguay-and-argentina",
+   "stars": 5,
+   "scores": [
+    87,
+    90,
+    73,
+    91
+   ]
+  },
+  {
+   "id": 196,
+   "title": "Peugeot 2008 + 4 Airbags",
+   "brand": "Peugeot",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/196/peugeot-2008-+-4-airbags",
+   "stars": 1,
+   "scores": [
+    42,
+    59,
+    54,
+    56
+   ]
+  },
+  {
+   "id": 197,
+   "title": "Volkswagen Tera + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/197/volkswagen-tera-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    90,
+    87,
+    76,
+    85
+   ]
+  },
+  {
+   "id": 198,
+   "title": "Kia K4 Sedan / Hatchback + 6 Airbags",
+   "brand": "Kia",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/198/kia-k4-sedan-hatchback-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    92,
+    90,
+    77,
+    84
+   ]
+  },
+  {
+   "id": 199,
+   "title": "Citroen Basalt + 4 Airbags",
+   "brand": "Citroen",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/199/citroen-basalt-+-4-airbags",
+   "stars": 0,
+   "scores": [
+    39,
+    58,
+    53,
+    35
+   ]
+  },
+  {
+   "id": 200,
+   "title": "Hyundai Tucson + 6 Airbags",
+   "brand": "Hyundai",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/200/hyundai-tucson-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    84,
+    92,
+    75,
+    96
+   ]
+  },
+  {
+   "id": 201,
+   "title": "Renault Kardian + 6 Airbags",
+   "brand": "Renault",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/201/renault-kardian-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    83,
+    83,
+    73,
+    84
+   ]
+  },
+  {
+   "id": 202,
+   "title": "Volkswagen Taos + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/202/volkswagen-taos-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    91,
+    90,
+    68,
+    92
+   ]
+  },
+  {
+   "id": 203,
+   "title": "Volkswagen New Tiguan + 6 Airbags",
+   "brand": "Volkswagen",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/203/volkswagen-new-tiguan-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    86,
+    81,
+    80,
+    92
+   ]
+  },
+  {
+   "id": 204,
+   "title": "Kia EV4 + 6 Airbags",
+   "brand": "Kia",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/204/kia-ev4-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    83,
+    92,
+    69,
+    98
+   ]
+  },
+  {
+   "id": 205,
+   "title": "Suzuki Baleno + 2 Airbags",
+   "brand": "Suzuki",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/205/suzuki-baleno-+-2-airbags",
+   "stars": 1,
+   "scores": [
+    42,
+    65,
+    48,
+    58
+   ]
+  },
+  {
+   "id": 206,
+   "title": "Suzuki Baleno + 6 Airbags",
+   "brand": "Suzuki",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/206/suzuki-baleno-+-6-airbags",
+   "stars": 2,
+   "scores": [
+    79,
+    65,
+    48,
+    58
+   ]
+  },
+  {
+   "id": 207,
+   "title": "Toyota Yaris Sedan / Hatchback + 6 Airbags",
+   "brand": "Toyota",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/207/toyota-yaris-sedan-hatchback-+-6-airbags",
+   "stars": 2,
+   "scores": [
+    66,
+    64,
+    54,
+    58
+   ]
+  },
+  {
+   "id": 208,
+   "title": "Toyota Yaris Cross + 6 Airbags",
+   "brand": "Toyota",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/208/toyota-yaris-cross-+-6-airbags",
+   "stars": 2,
+   "scores": [
+    77,
+    69,
+    56,
+    58
+   ]
+  },
+  {
+   "id": 209,
+   "title": "Kia Sportage + 6 Airbags",
+   "brand": "Kia",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/209/kia-sportage-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    90,
+    92,
+    71,
+    98
+   ]
+  },
+  {
+   "id": 210,
+   "title": "Nissan New Kicks + 6 Airbags",
+   "brand": "Nissan",
+   "year": 2025,
+   "protocol": 2020,
+   "url": "https://www.latinncap.com/en/result/210/nissan-new-kicks-+-6-airbags",
+   "stars": 5,
+   "scores": [
+    86,
+    92,
+    73,
+    85
+   ]
+  },
+  {
+   "id": 211,
+   "title": "Chery - Chirey Tiggo 2 / Tiggo 2 Pro / Tiggo 2 Pro Max + 4 Airbags",
+   "brand": "Chery / Chirey",
+   "year": 2026,
+   "protocol": 2026,
+   "url": "https://www.latinncap.com/en/result/211/chery-chirey-tiggo-2-tiggo-2-pro-tiggo-2-pro-max-+-4-airbags",
+   "stars": 0,
+   "scores": [
+    0,
+    0,
+    49,
+    45
+   ]
+  }
+ ]
+}

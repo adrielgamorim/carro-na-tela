@@ -42,12 +42,9 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque.
-- [ ] 🟡 Latin NCAP (latinncap.com): estrelas de segurança e relatórios dos carros vendidos no
-      Brasil; um selo na página da versão.
-- [ ] 🟡 SUSEP AUTOSEG (dados abertos): prêmio médio de seguro e frequência de sinistros por modelo
-      e região; daria o seguro estimado ao lado do IPVA.
 - [ ] 🟢 Recalls (Senacon, portal de recall): campanhas por marca, modelo e ano.
-- [ ] 🟢 Roubos e furtos por modelo (dados abertos da SSP-SP): índice de roubo da linha.
+- [ ] 🟢 Roubos e furtos por modelo (dados abertos da SSP-SP): o AUTOSEG já dá os roubos por mil
+      carros segurados; a SSP-SP daria os da frota toda (só SP).
 - [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
       por km.
 - [ ] 🟢 Flickr (API com filtro de licença Creative Commons, chave grátis): mais fotos por ângulo,
@@ -87,6 +84,11 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ## Concluído
 
+- [x] Segurança e seguro na ficha: estrelas da Latin NCAP da linha (`npm run fetch:latinncap`, 198 testes,
+      do ano antes do teste a cinco depois) e seguro estimado e roubos por mil da SUSEP AUTOSEG
+      (`npm run fetch:seguro`, 2021, por código FIPE; a taxa do prêmio sobre o valor segurado vai
+      aplicada ao preço FIPE de hoje, com o fator do estado). Atualizar o AUTOSEG quando a SUSEP
+      publicar semestres novos (`--periodo=`).
 - [x] Fichas técnicas da Stellantis: lista dos 460 links, checklist numerada para baixar à mão, leitor
       dos PDFs (dois formatos) e casamento com as versões FIPE; 458 fichas lidas dão números exatos a
       263 anos-modelo de 120 versões, na ficha e no comparador.

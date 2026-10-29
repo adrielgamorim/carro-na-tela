@@ -28,6 +28,8 @@ import type { PressFactsFile } from "../imprensa/facts.ts";
 import type { ReadSheetsFile } from "../fichas/sheets.ts";
 import type { OpenSheetsFile } from "../fichas/open-sheets.ts";
 import type { EquipmentFile } from "../fichas/equipment.ts";
+import type { CrashTest } from "../seguranca/latinncap.ts";
+import type { AutosegFile } from "../seguro/autoseg.ts";
 import { equipmentPath } from "../../src/catalog/equipment.ts";
 import type { EquipmentFileWire } from "../../src/catalog/equipment.ts";
 import { fallbackKey } from "../wikidata/fallback.ts";
@@ -119,6 +121,12 @@ const openSheets = await readFile(join(values.fichas, "fichas-abertas.json"), "u
 const equipment = await readFile(join(values.fichas, "equipamentos.json"), "utf8")
   .then((text) => (JSON.parse(text) as EquipmentFile).lists)
   .catch(() => undefined);
+const crashTests = await readFile("data/seguranca/latinncap.json", "utf8")
+  .then((text) => (JSON.parse(text) as { tests: CrashTest[] }).tests)
+  .catch(() => undefined);
+const insurance = await readFile("data/seguro/autoseg.json", "utf8")
+  .then((text) => JSON.parse(text) as AutosegFile)
+  .catch(() => undefined);
 const index = buildCatalogIndex(snapshots, {
   pbev,
   overrides,
@@ -129,6 +137,8 @@ const index = buildCatalogIndex(snapshots, {
   sheets,
   openSheets,
   equipment,
+  crashTests,
+  insurance,
 });
 
 // Photo galleries (npm run fetch:galeria): one file per model, loaded by the
@@ -207,6 +217,15 @@ if (galleryPhotos) {
 if (index.sheets) {
   const years = index.versions.flatMap((version) => version.t ?? []).filter((sheet) => sheet >= 0).length;
   console.log(`Fichas técnicas: ${index.sheets.length} casadas com ${years} anos-modelo de ${index.versions.filter((version) => version.t).length} versões`);
+}
+if (index.crashTests) {
+  const years = index.versions.flatMap((version) => version.c ?? []).filter((test) => test >= 0).length;
+  console.log(`Latin NCAP: ${index.crashTests.length} testes em ${years} anos-modelo de ${index.versions.filter((version) => version.c).length} versões`);
+}
+if (index.insurance) {
+  const own = index.versions.filter((version) => version.u?.[2] === 0).length;
+  const line = index.versions.filter((version) => version.u?.[2] === 1).length;
+  console.log(`Seguro (AUTOSEG ${index.insurance.period}): ${own} versões pelo código FIPE, ${line} pela linha`);
 }
 if (equipmentLists.length) {
   const years = index.versions.flatMap((version) => version.q ?? []).filter((list) => list >= 0).length;

@@ -12,6 +12,7 @@ import type { CatalogModelInfo, CatalogPhoto } from "./wikidata.ts";
 import type { ModelNameAttributes } from "./modelName.ts";
 import type { PressSheet, PressSource, PressSpecs } from "./press.ts";
 import type { CatalogEquipment } from "./equipment.ts";
+import type { CatalogCrashTest, CatalogInsurance, InsuranceSource } from "./safety.ts";
 import type {
   CatalogEntry,
   CatalogIndex,
@@ -57,6 +58,14 @@ export interface WireVersion {
    * public/catalog/equipamentos.json (-1 for none). Omitted when no year has one.
    */
   q?: number[];
+  /** Per entry of `y`, an index into `crashTests` (-1 for none). Omitted when no year has one. */
+  c?: number[];
+  /**
+   * Insurance from AUTOSEG: yearly premium over insured value (per ten
+   * thousand), thefts per thousand vehicle-years (in tenths), and 1 when the
+   * figures are the line's, not this FIPE code's.
+   */
+  u?: [number, number, number];
 }
 
 /** A trunk or torque figure from a press release, referenced by `WireVersion.r`. */
@@ -88,6 +97,10 @@ export interface CatalogIndexFile {
    * steps: build:catalog writes them to equipamentos.json, not to the index.
    */
   equipment?: CatalogEquipment[];
+  /** Latin NCAP tests referenced by `WireVersion.c` (data/seguranca). */
+  crashTests?: CatalogCrashTest[];
+  /** AUTOSEG's national figures, for `WireVersion.u` (data/seguro). */
+  insurance?: InsuranceSource;
   /** Fleet in circulation per model line (npm run fetch:frota), ranked. */
   fleet?: {
     reference: string;
@@ -176,6 +189,10 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
     const origin = fleetLine ? fleetOrigin(fleetLine) : null;
 
     const model = version.w === undefined ? null : (file.models?.[version.w] ?? null);
+    const insurance: CatalogInsurance | null =
+      version.u && file.insurance
+        ? { ...file.insurance, rate: version.u[0] / 10_000, theft: version.u[1] / 10, approx: version.u[2] === 1 }
+        : null;
     for (const [yearIndex, [yearCode, priceValue]] of version.y.entries()) {
       const photo = file.photos?.[version.g?.[yearIndex] ?? -1];
       const [trunk, torque] = (version.r?.[yearIndex] ?? [-1, -1]).map((figure) => file.press?.[figure]);
@@ -224,6 +241,8 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
         fleet,
         press,
         ...((version.q?.[yearIndex] ?? -1) >= 0 && { equipment: version.q![yearIndex] }),
+        ...(file.crashTests?.[version.c?.[yearIndex] ?? -1] && { crashTest: file.crashTests[version.c![yearIndex]!] }),
+        ...(insurance && { insurance }),
         origin,
         depreciation,
         price: priceValue === null ? null : formatFipePrice(priceValue),

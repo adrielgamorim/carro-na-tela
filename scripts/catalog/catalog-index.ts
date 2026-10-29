@@ -21,6 +21,10 @@ import { openSheetOfVersion } from "../fichas/open-sheets.ts";
 import type { OpenSheet } from "../fichas/open-sheets.ts";
 import { equipmentOfVersion } from "../fichas/equipment.ts";
 import type { EquipmentList } from "../fichas/equipment.ts";
+import { crashTestOfVersion } from "../seguranca/latinncap.ts";
+import type { CrashTest } from "../seguranca/latinncap.ts";
+import type { AutosegFile } from "../seguro/autoseg.ts";
+import { catalogBrand } from "../../src/catalog/brands.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
@@ -107,6 +111,10 @@ export interface BuildOptions {
   openSheets?: OpenSheet[];
   /** Equipment by version, Renault (data/fichas/equipamentos.json). */
   equipment?: EquipmentList[];
+  /** Latin NCAP's crash tests (data/seguranca/latinncap.json). */
+  crashTests?: CrashTest[];
+  /** SUSEP's AUTOSEG summed by FIPE code (data/seguro/autoseg.json). */
+  insurance?: AutosegFile;
 }
 
 const sameText = (left: string, right: string) =>
@@ -143,6 +151,8 @@ export function buildCatalogIndex(
     sheets,
     openSheets,
     equipment,
+    crashTests,
+    insurance,
   }: BuildOptions = {},
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
@@ -437,6 +447,52 @@ export function buildCatalogIndex(
     }
   }
 
+  // Crash tests: the line's Latin NCAP test of each version-year.
+  const crashList: NonNullable<CatalogIndexFile["crashTests"]> = [];
+  if (crashTests?.length) {
+    const testIndex = new Map<CrashTest, number>();
+    for (const version of sorted) {
+      const target = { brand: catalogBrand(brandName(version)), family: getModelFamily(version.n), name: version.n };
+      const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
+        const test = crashTestOfVersion(crashTests, { ...target, modelYear });
+        if (!test) return -1;
+        if (!testIndex.has(test)) {
+          testIndex.set(test, crashList.length);
+          const { id: _id, brand: _brand, ...kept } = test;
+          void _id;
+          void _brand;
+          crashList.push(kept);
+        }
+        return testIndex.get(test)!;
+      });
+      if (perYear.some((test) => test >= 0)) version.c = perYear;
+    }
+  }
+
+  // Insurance: AUTOSEG's figures of the version's FIPE code; a code newer than
+  // the data takes its line's (the brand's codes of that family, by exposure).
+  if (insurance) {
+    const lineSums = new Map<string, { exposure: number; rate: number; theft: number }>();
+    const lineOf = (version: WireVersion) => `${brandName(version)}|${getModelFamily(version.n)}`;
+    for (const version of sorted) {
+      const own = version.f ? insurance.models[version.f] : undefined;
+      if (!own) continue;
+      const sum = lineSums.get(lineOf(version)) ?? { exposure: 0, rate: 0, theft: 0 };
+      sum.exposure += own[0];
+      sum.rate += own[1] * own[0];
+      sum.theft += own[2] * own[0];
+      lineSums.set(lineOf(version), sum);
+    }
+    for (const version of sorted) {
+      const own = version.f ? insurance.models[version.f] : undefined;
+      const line = lineSums.get(lineOf(version));
+      if (own) version.u = [Math.round(own[1] * 10_000), Math.round(own[2] * 10), 0];
+      else if (line && line.exposure > 0) {
+        version.u = [Math.round((line.rate / line.exposure) * 10_000), Math.round((line.theft / line.exposure) * 10), 1];
+      }
+    }
+  }
+
   // Equipment: the list of each version-year's trim.
   const equipmentLists: NonNullable<CatalogIndexFile["equipment"]> = [];
   if (equipment?.length) {
@@ -478,6 +534,16 @@ export function buildCatalogIndex(
     ...(pressFigures.length > 0 && { press: pressFigures }),
     ...(sheetList.length > 0 && { sheets: sheetList }),
     ...(equipmentLists.length > 0 && { equipment: equipmentLists }),
+    ...(crashList.length > 0 && { crashTests: crashList }),
+    ...(insurance && {
+      insurance: {
+        period: insurance.period,
+        source: insurance.source,
+        nationalRate: insurance.nationalRate,
+        nationalTheft: insurance.nationalTheft,
+        states: insurance.states,
+      },
+    }),
     ...(fleet &&
       fleetLines && {
         fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },
