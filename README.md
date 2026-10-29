@@ -28,13 +28,13 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
 - Marcas que a FIPE lista com mais de um nome viram uma só (`src/catalog/brands.ts`): "Caoa Chery" e
-  "Caoa Chery/Chery" são Chery; "Caoa Changan", "CHANGAN" e "CHANA" são Changan. O nome da FIPE
-  continua em cada versão para a Consulta e os links antigos.
+  "Caoa Chery/Chery" são Chery; "Caoa Changan", "CHANGAN" e "CHANA" são Changan; "GREAT WALL" é
+  GWM. O nome da FIPE continua em cada versão para a Consulta e os links antigos.
 - A linha é escrita igual em todas as versões da marca ("UNO" e "Uno" viram uma linha só) e, com uma
   linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
   Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").
 - Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
-- Cards com o logo colorido da marca (59 marcas, de `npm run fetch:brand-logos`; as demais ficam
+- Cards com o logo colorido da marca (76 marcas, de `npm run fetch:brand-logos`; as demais ficam
   com o ícone monocromático do Simple Icons ou o do tipo de veículo), foto do modelo (Wikimedia
   Commons, da geração do ano escolhido quando o artigo da Wikipedia separa gerações), frota em
   circulação, posição no ranking e IPVA estimado logo abaixo do valor FIPE (no estado das premissas).

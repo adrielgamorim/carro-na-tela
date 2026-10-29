@@ -22,6 +22,7 @@ const aliases: Record<string, string> = {
   caoachangan: "changan",
   // Chana was Changan's name abroad.
   chana: "changan",
+  greatwall: "gwm",
 };
 
 const normalize = (text: string) =>

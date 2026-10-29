@@ -10,6 +10,8 @@ const makers: Record<string, string> = {
   CHANGAN: "Changan",
   // Chang'an's name in Brazil for the Star vans (Cargo, Family, Utility).
   CHANA: "Changan",
+  // Great Wall's pickups of the 2000s; the maker sells as GWM today.
+  "GREAT WALL": "GWM",
 };
 
 /** The maker's name for a FIPE brand: "Caoa Chery/Chery" → "Chery"; most stay as they are. */

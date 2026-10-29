@@ -29,6 +29,8 @@ describe("brandLogoUrl", () => {
     expect(brandLogoUrl("GM - Chevrolet")).toBe("/brands/logos/chevrolet.png");
     expect(brandLogoUrl("Caoa Chery/Chery")).toBe("/brands/logos/chery.png");
     expect(brandLogoUrl("CHANA")).toBe("/brands/logos/changan.png");
+    expect(brandLogoUrl("GREAT WALL")).toBe("/brands/logos/gwm.png");
+    expect(brandLogoUrl("Alfa Romeo")).toBe("/brands/logos/alfaromeo.png");
     expect(brandLogoUrl("Fibravan")).toBeNull();
   });
 
