@@ -1,0 +1,255 @@
+{
+ "generatedAt": "2026-10-29T15:16:39.707Z",
+ "links": [
+  {
+   "model": "Novo Jetta GLI",
+   "modelId": 10,
+   "versionId": 45,
+   "title": "Jetta GLI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Tecnica Jetta GLI.pdf",
+   "file": "ficha-tecnica-jetta-gli.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/10/45",
+   "updatedAt": "2019-06-06T13:18:26.000Z"
+  },
+  {
+   "model": "Nivus",
+   "modelId": 24,
+   "versionId": 159,
+   "title": "Nivus Highline 200 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/5473135ae379ad47362d50df51d14af2.pdf",
+   "file": "5473135ae379ad47362d50df51d14af2.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/24/159",
+   "updatedAt": "2020-12-21T14:25:54.000Z"
+  },
+  {
+   "model": "Nivus",
+   "modelId": 24,
+   "versionId": 82,
+   "title": "Nivus Comfortline 200 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/00f45826da9cda0f51129a1f7a2792eb.pdf",
+   "file": "00f45826da9cda0f51129a1f7a2792eb.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/24/82",
+   "updatedAt": "2020-12-21T14:17:40.000Z"
+  },
+  {
+   "model": "T-Cross",
+   "modelId": 18,
+   "versionId": 39,
+   "title": "T-Cross Highline 250 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica T-Cross Highline 250 TSI.pdf",
+   "file": "ficha-tecnica-t-cross-highline-250-tsi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/18/39",
+   "updatedAt": "2020-12-21T15:09:51.000Z"
+  },
+  {
+   "model": "T-Cross",
+   "modelId": 18,
+   "versionId": 43,
+   "title": "T-Cross Comfortline 200 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI automático.pdf",
+   "file": "ficha-tecnica-200-tsi-automatico.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/18/43",
+   "updatedAt": "2020-12-21T15:09:37.000Z"
+  },
+  {
+   "model": "T-Cross",
+   "modelId": 18,
+   "versionId": 42,
+   "title": "T-Cross 200 TSI Automático",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI automático.pdf",
+   "file": "ficha-tecnica-200-tsi-automatico.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/18/42",
+   "updatedAt": "2020-12-21T15:09:19.000Z"
+  },
+  {
+   "model": "T-Cross",
+   "modelId": 18,
+   "versionId": 41,
+   "title": "T-Cross 200 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI manual.pdf",
+   "file": "ficha-tecnica-200-tsi-manual.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/18/41",
+   "updatedAt": "2020-12-21T15:08:06.000Z"
+  },
+  {
+   "model": "Novo Polo",
+   "modelId": 6,
+   "versionId": 20,
+   "title": "Polo Highline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 200 TSI.pdf",
+   "file": "ficha-tecnica-novo-polo-200-tsi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/6/20",
+   "updatedAt": "2020-12-21T19:24:27.000Z"
+  },
+  {
+   "model": "Novo Polo",
+   "modelId": 6,
+   "versionId": 47,
+   "title": "Polo GTS",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/f8a5463f9cf8b26a009efd9dfb7c90a2.pdf",
+   "file": "f8a5463f9cf8b26a009efd9dfb7c90a2.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/6/47",
+   "updatedAt": "2020-03-03T17:01:16.000Z"
+  },
+  {
+   "model": "Novo Polo",
+   "modelId": 6,
+   "versionId": 19,
+   "title": "Polo Comfortline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 200 TSI.pdf",
+   "file": "ficha-tecnica-novo-polo-200-tsi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/6/19",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  },
+  {
+   "model": "Novo Polo",
+   "modelId": 6,
+   "versionId": 18,
+   "title": "Polo MSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 1.6 MSI.pdf",
+   "file": "ficha-tecnica-novo-polo-1-6-msi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/6/18",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  },
+  {
+   "model": "Novo Polo",
+   "modelId": 6,
+   "versionId": 17,
+   "title": "Polo MPI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 1.0.pdf",
+   "file": "ficha-tecnica-novo-polo-1-0.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/6/17",
+   "updatedAt": "2019-03-07T00:10:40.000Z"
+  },
+  {
+   "model": "Taos",
+   "modelId": 25,
+   "versionId": 287,
+   "title": "Taos Comfortline 250 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/48b719d392dc434afaa6ff4ce5baa0bf.pdf",
+   "file": "48b719d392dc434afaa6ff4ce5baa0bf.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/25/287",
+   "updatedAt": "2021-08-30T16:47:40.000Z"
+  },
+  {
+   "model": "Taos",
+   "modelId": 25,
+   "versionId": 288,
+   "title": "Taos Highline 250 TSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/486182e3166393de4fd89dfa003e9566.pdf",
+   "file": "486182e3166393de4fd89dfa003e9566.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/25/288",
+   "updatedAt": "2021-08-30T15:17:55.000Z"
+  },
+  {
+   "model": "Amarok",
+   "modelId": 14,
+   "versionId": 10,
+   "title": "Amarok Highline Extreme V6",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/17ba3b91f6ab053ac15c962675bc31c3.pdf",
+   "file": "17ba3b91f6ab053ac15c962675bc31c3.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/14/10",
+   "updatedAt": "2020-12-21T13:12:47.000Z"
+  },
+  {
+   "model": "Amarok",
+   "modelId": 14,
+   "versionId": 8,
+   "title": "Amarok Highline V6",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/7bb09db7d0b32f67a4fdc5da81ffd63f.pdf",
+   "file": "7bb09db7d0b32f67a4fdc5da81ffd63f.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/14/8",
+   "updatedAt": "2020-12-21T13:12:35.000Z"
+  },
+  {
+   "model": "Amarok",
+   "modelId": 14,
+   "versionId": 7,
+   "title": "Amarok Highline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/c91765e22a631f8881cdc9ef1d8ba68c.pdf",
+   "file": "c91765e22a631f8881cdc9ef1d8ba68c.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/14/7",
+   "updatedAt": "2020-12-21T13:12:09.000Z"
+  },
+  {
+   "model": "Amarok",
+   "modelId": 14,
+   "versionId": 3,
+   "title": "Amarok Comfortline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/6fbcb9c3ed8ee488e10704732cea1b37.pdf",
+   "file": "6fbcb9c3ed8ee488e10704732cea1b37.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/14/3",
+   "updatedAt": "2020-12-21T13:11:57.000Z"
+  },
+  {
+   "model": "Virtus",
+   "modelId": 7,
+   "versionId": 48,
+   "title": "Virtus GTS",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/033f1f0ef5533125a5ec4ac6f41e82d5.pdf",
+   "file": "033f1f0ef5533125a5ec4ac6f41e82d5.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/7/48",
+   "updatedAt": "2020-03-03T17:18:59.000Z"
+  },
+  {
+   "model": "Virtus",
+   "modelId": 7,
+   "versionId": 22,
+   "title": "Virtus Comfortline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 200 TSI.pdf",
+   "file": "ficha-tecnica-virtus-200-tsi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/7/22",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  },
+  {
+   "model": "Virtus",
+   "modelId": 7,
+   "versionId": 21,
+   "title": "Virtus MSI",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 1.6 MSI.pdf",
+   "file": "ficha-tecnica-virtus-1-6-msi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/7/21",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  },
+  {
+   "model": "Virtus",
+   "modelId": 7,
+   "versionId": 23,
+   "title": "Virtus Highline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 200 TSI.pdf",
+   "file": "ficha-tecnica-virtus-200-tsi.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/7/23",
+   "updatedAt": "2019-03-07T00:11:01.000Z"
+  },
+  {
+   "model": "Saveiro",
+   "modelId": 13,
+   "versionId": 36,
+   "title": "Saveiro Cross",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha tecnica Saveiro CD Cross.pdf",
+   "file": "ficha-tecnica-saveiro-cd-cross.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/13/36",
+   "updatedAt": "2019-03-07T00:32:36.000Z"
+  },
+  {
+   "model": "Saveiro",
+   "modelId": 13,
+   "versionId": 34,
+   "title": "Saveiro Trendline",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Nova Saveiro.pdf",
+   "file": "nova-saveiro.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/13/34",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  },
+  {
+   "model": "Saveiro",
+   "modelId": 13,
+   "versionId": 33,
+   "title": "Saveiro Robust",
+   "pdf": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Nova Saveiro.pdf",
+   "file": "nova-saveiro.pdf",
+   "page": "https://www.vwnews.com.br/cars/version/13/33",
+   "updatedAt": "2019-03-07T00:32:35.000Z"
+  }
+ ]
+}

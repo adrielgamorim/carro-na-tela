@@ -26,7 +26,10 @@
     "extract:imprensa": "node scripts/imprensa/extract-stellantis.ts",
     "fichas:links": "node scripts/fichas/fetch-links.ts",
     "fichas:lista": "node scripts/fichas/build-list.ts",
-    "fichas:ler": "node scripts/fichas/read-sheets.ts"
+    "fichas:ler": "node scripts/fichas/read-sheets.ts",
+    "fichas:vw": "node scripts/fichas/fetch-vw.ts",
+    "fichas:renault": "node scripts/fichas/fetch-renault.ts",
+    "fichas:abertas": "node scripts/fichas/read-open-sheets.ts"
   },
   "dependencies": {
     "lucide-react": "^1.54.0",

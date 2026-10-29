@@ -35,6 +35,8 @@ dist-ssr
 data/imprensa/stellantis-releases.jsonl
 data/imprensa/stellantis-candidates.json
 
-# Fichas técnicas baixadas à mão e a lista gerada (npm run fichas:lista)
+# Fichas técnicas baixadas (à mão ou por fichas:vw e fichas:renault) e a lista gerada
 data/fichas/pdf/
+data/fichas/vw/
+data/fichas/renault/
 data/fichas/lista.html
