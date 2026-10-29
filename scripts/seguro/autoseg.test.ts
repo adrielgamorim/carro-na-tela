@@ -45,7 +45,7 @@ describe("AUTOSEG", () => {
     expect(estimateInsurance(100_000, insurance, "RJ")).toBeCloseTo(3900);
     expect(estimateInsurance(100_000, insurance, "XX")).toBeCloseTo(3000);
     // Intl puts a non-breaking space after "R$".
-    expect(formatInsurance(100_000, insurance, "RJ").replace(/ /g, " ")).toBe("≈ R$ 3.900/ano (3,9% do valor)");
+    expect(formatInsurance(100_000, insurance, "RJ").replace(/\u00a0/g, " ")).toBe("≈ R$ 3.900/ano (3,9% do valor)");
     expect(formatTheft(insurance)).toBe("74,0 por mil segurados/ano · 2,0× a média");
   });
 });
