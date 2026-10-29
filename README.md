@@ -20,9 +20,11 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 **Catálogo** (página inicial)
 
-- Índice estático das versões-ano de carros da FIPE desde 2009: listagem completa (80 marcas; as
-  outras 28 da FIPE não têm modelo de 2009 em diante), 5.021 versões e 17.754 versões-ano. Os preços
-  ainda estão em 25% delas; versões sem preço têm "Consultar preço", que busca ao vivo.
+- Índice estático das versões-ano de carros da FIPE: 5.021 versões e 17.754 versões-ano de 2009 em
+  diante (80 marcas), 13.381 com preço; versões sem preço têm "Consultar preço", que busca ao vivo. A
+  varredura agora desce até 1985, o ano mais antigo da tabela (mais 1.195 pares marca-ano, ~11 mil
+  versões-ano, e as 28 marcas que só têm modelos antigos); os anos antigos entram à medida que a
+  listagem e os preços avançam, só com preço e o que vem do nome FIPE (o INMETRO começa em 2009).
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
 - Marcas que a FIPE lista com mais de um nome viram uma só (`src/catalog/brands.ts`): "Caoa Chery" e
@@ -108,7 +110,7 @@ npm run unschedule:daily # remove a tarefa agendada
 
 | Fonte | O que traz | Script | Frequência | Cobertura hoje |
 |---|---|---|---|---|
-| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa (80 marcas desde 2009); 25% com preço |
+| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | De 2009 em diante: listagem completa, 75% com preço; de 1985 a 2008 em andamento |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
 | Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.917 versões com foto |
 | Wikimedia Commons (categorias) | Galeria por geração: frente, traseira, lateral, interior | `fetch:galeria` | De vez em quando | 8.243 fotos de 539 modelos |
@@ -138,7 +140,7 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   e/ou `FIPE_TOKEN1`, `FIPE_TOKEN2`… no `.env`, quando uma chave atinge o limite (ou é recusada), a
   próxima assume; o acesso anônimo fica por último.
 - Opções: `--phase=all|listing`, `--offline` (só remonta o snapshot; exige `--reference`),
-  `--reference`, `--category=cars|motorcycles|trucks`, `--min-year` (padrão 2009), `--brands`,
+  `--reference`, `--category=cars|motorcycles|trucks`, `--min-year` (padrão 1985, o ano mais antigo da tabela), `--brands`,
   `--max-requests`, `--reserve` (requisições a preservar na última chave, padrão 20; as outras
   são usadas até zerar), `--interval-ms`
   (padrão 1300), `--out`, `--cache`.

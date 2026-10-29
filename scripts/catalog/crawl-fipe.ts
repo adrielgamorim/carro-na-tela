@@ -1,7 +1,7 @@
 // Crawls the FIPE catalog into data/fipe/<category>-<reference>.json.
 //
 //   npm run crawl:fipe -- [--phase=all|listing] [--offline] [--reference=338]
-//                         [--category=cars] [--min-year=2009] [--brands=21,59]
+//                         [--category=cars] [--min-year=1985] [--brands=21,59]
 //                         [--max-requests=400] [--reserve=20] [--interval-ms=1300]
 //                         [--out=data/fipe] [--cache=.cache/fipe]
 //
@@ -21,7 +21,7 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
-import { assembleSnapshot, crawlListing, crawlPrices } from "./crawl.ts";
+import { assembleSnapshot, crawlListing, crawlPrices, oldestFipeYear } from "./crawl.ts";
 import type { CrawlOptions, FipeCategory } from "./crawl.ts";
 import { createFipeClient, fipeKeysFromEnv } from "./fipe-client.ts";
 
@@ -36,7 +36,7 @@ const { values } = parseArgs({
     offline: { type: "boolean", default: false },
     reference: { type: "string" },
     category: { type: "string", default: "cars" },
-    "min-year": { type: "string", default: "2009" },
+    "min-year": { type: "string", default: String(oldestFipeYear) },
     brands: { type: "string" },
     "max-requests": { type: "string" },
     reserve: { type: "string", default: "20" },

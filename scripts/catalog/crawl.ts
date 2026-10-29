@@ -61,9 +61,13 @@ export interface CrawledVehicle extends ListedVehicle {
   } | null;
 }
 
+/** The oldest model year in the FIPE table (1985): the listing's default floor. */
+export const oldestFipeYear = 1985;
+
 export interface CrawlOptions {
   reference: string;
   category?: FipeCategory;
+  /** Oldest model year to list; every year of the table by default. */
   minYear?: number;
   brandCodes?: string[];
   log?: (message: string) => void;
@@ -128,7 +132,7 @@ export async function crawlListing(
   options: CrawlOptions,
 ): Promise<ListingResult> {
   const category = options.category ?? "cars";
-  const minYear = options.minYear ?? 2009;
+  const minYear = options.minYear ?? oldestFipeYear;
   const log = options.log ?? (() => {});
   const { failures, tryGet } = context(client, options);
   const vehicles: ListedVehicle[] = [];

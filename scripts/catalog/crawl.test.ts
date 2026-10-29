@@ -179,7 +179,8 @@ describe("crawlPrices", () => {
 describe("assembleSnapshot", () => {
   it("joins cached listing and details; unpriced versions keep detail null", async () => {
     const { client } = fakeClient(all);
-    const snapshot = await assembleSnapshot(client, { reference: "338" });
+    // The fixture has no model list for 2008, below this floor.
+    const snapshot = await assembleSnapshot(client, { reference: "338", minYear: 2009 });
 
     expect(snapshot.listingComplete).toBe(true);
     expect(snapshot.pricesComplete).toBe(false);
