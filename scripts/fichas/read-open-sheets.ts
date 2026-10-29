@@ -16,6 +16,7 @@ import { readXlsxFile } from "./xlsx.ts";
 import { renaultEquipment } from "./equipment.ts";
 import type { EquipmentFile, EquipmentList } from "./equipment.ts";
 import { toyotaEquipment, toyotaSheets } from "./toyota.ts";
+import { hyundaiCatalog } from "./hyundai.ts";
 import type { WaybackFile } from "./fetch-wayback.ts";
 
 const sheets: OpenSheet[] = [];
@@ -108,6 +109,26 @@ for (const list of newestOnly(toyotaLists)) {
   );
 }
 
+// Hyundai's catalogs, from the Wayback Machine (npm run fichas:wayback): a version
+// each; of the same title and year, one (the press room kept several copies).
+const hyundaiFiles = await readFile("data/fichas/hyundai-wayback.json", "utf8")
+  .then((text) => (JSON.parse(text) as { files: WaybackFile[] }).files)
+  .catch(() => [] as WaybackFile[]);
+const hyundaiSeen = new Set<string>();
+for (const { file, archived } of hyundaiFiles) {
+  const lines = await readPdfLines(join("data/fichas/hyundai", file)).catch(() => undefined);
+  if (!lines) {
+    skipped.push(`Hyundai ${file} (PDF danificado no arquivo)`);
+    continue;
+  }
+  const { sheet, list } = hyundaiCatalog(lines, { file, url: archived });
+  const key = (sheet ?? list) && `${(sheet ?? list)!.title}`;
+  if (!key || hyundaiSeen.has(key)) continue;
+  hyundaiSeen.add(key);
+  if (sheet) sheets.push(sheet);
+  if (list) equipment.push(list);
+}
+
 // What the reader cannot get from Toyota's files, transcribed by hand (the Camry 2018 list has no marks).
 const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
   .then((text) => JSON.parse(text) as { sheets: OpenSheet[]; equipment: EquipmentList[] })
@@ -125,14 +146,14 @@ const unique = sheets.filter((sheet) => {
 });
 
 const out: OpenSheetsFile = {
-  _doc: "Números das fichas técnicas da Volkswagen, da Renault e da Toyota (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault e de data/fichas/toyota.json.",
+  _doc: "Números das fichas técnicas da Volkswagen, da Renault, da Toyota e da Hyundai (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota e hyundai e de data/fichas/toyota.json.",
   sheets: unique.sort((a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line) || a.years[0] - b.years[0] || a.title.localeCompare(b.title)),
 };
 await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault e da Toyota (npm run fichas:abertas), das listas em data/fichas/renault e de data/fichas/toyota.json.",
+  _doc: "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

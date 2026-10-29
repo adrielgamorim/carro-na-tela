@@ -1,0 +1,654 @@
+{
+ "generatedAt": "2026-10-29T20:51:15.502Z",
+ "site": "hyundai.com.br",
+ "files": [
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/site/downloads/AF_Catalogo%2052x21%20Creta%202019.pdf",
+   "timestamp": "20250316095442",
+   "file": "af-catalogo-52x21-creta-2019.pdf",
+   "archived": "https://web.archive.org/web/20250316095442/https://www.hyundai.com.br/content/dam/hmb/site/downloads/AF_Catalogo%2052x21%20Creta%202019.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/AF_Catalogo_Acessorios_HB20_(10).pdf",
+   "timestamp": "20191224123207",
+   "file": "af-catalogo-acessorios-hb20-10.pdf",
+   "archived": "https://web.archive.org/web/20191224123207/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/AF_Catalogo_Acessorios_HB20_(10).pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/Catalogo%2052x21%20HB20_2020_bx.pdf",
+   "timestamp": "20191224122849",
+   "file": "catalogo-52x21-hb20-2020-bx.pdf",
+   "archived": "https://web.archive.org/web/20191224122849/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/Catalogo%2052x21%20HB20_2020_bx.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/creta-action-2023/catalogos/Catalogo_Acess%C3%B3rios_Creta.pdf",
+   "timestamp": "20241125181224",
+   "file": "catalogo-acessorios-creta.pdf",
+   "archived": "https://web.archive.org/web/20241125181224/https://www.hyundai.com.br/content/dam/hmb/cars/creta/creta-action-2023/catalogos/Catalogo_Acess%C3%B3rios_Creta.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_acessorios_HB20_2022.pdf",
+   "timestamp": "20250424002331",
+   "file": "catalogo-acessorios-hb20-2022.pdf",
+   "archived": "https://web.archive.org/web/20250424002331/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_acessorios_HB20_2022.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ACTION_mobile.pdf",
+   "timestamp": "20240518234527",
+   "file": "catalogo-creta-action-mobile.pdf",
+   "archived": "https://web.archive.org/web/20240518234527/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ACTION_mobile.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/Catalogo_CRETA_Action.pdf",
+   "timestamp": "20240217094927",
+   "file": "catalogo-creta-action.pdf",
+   "archived": "https://web.archive.org/web/20240217094927/https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/Catalogo_CRETA_Action.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ATTITUDE_mobile.pdf",
+   "timestamp": "20210723174403",
+   "file": "catalogo-creta-attitude-mobile.pdf",
+   "archived": "https://web.archive.org/web/20210723174403/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ATTITUDE_mobile.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_mobile_LIMITED.pdf",
+   "timestamp": "20210723174449",
+   "file": "catalogo-creta-mobile-limited.pdf",
+   "archived": "https://web.archive.org/web/20210723174449/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_mobile_LIMITED.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_PRESTIGE_mobile.pdf",
+   "timestamp": "20210723174408",
+   "file": "catalogo-creta-prestige-mobile.pdf",
+   "archived": "https://web.archive.org/web/20210723174408/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_PRESTIGE_mobile.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_SMART_PLUS.pdf",
+   "timestamp": "20210723175514",
+   "file": "catalogo-creta-smart-plus.pdf",
+   "archived": "https://web.archive.org/web/20210723175514/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_SMART_PLUS.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2023/n-line-night-edition/catalogo/Catalogo_dig_CRETA_N_Line_Night_Edition.pdf",
+   "timestamp": "20241213013816",
+   "file": "catalogo-dig-creta-n-line-night-edition.pdf",
+   "archived": "https://web.archive.org/web/20241213013816/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2023/n-line-night-edition/catalogo/Catalogo_dig_CRETA_N_Line_Night_Edition.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_creta_2022.pdf",
+   "timestamp": "20240517183256",
+   "file": "catalogo-digital-creta-2022.pdf",
+   "archived": "https://web.archive.org/web/20240517183256/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_creta_2022.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/catalogo_digital_CRETA%20Action%202024.pdf",
+   "timestamp": "20240517175120",
+   "file": "catalogo-digital-creta-action-2024.pdf",
+   "archived": "https://web.archive.org/web/20240517175120/https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/catalogo_digital_CRETA%20Action%202024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-action/catalog/catalogo_digital_CRETA_Action_2025.pdf",
+   "timestamp": "20241126223219",
+   "file": "catalogo-digital-creta-action-2025.pdf",
+   "archived": "https://web.archive.org/web/20241126223219/https://www.hyundai.com.br/content/dam/hmb/cars/creta-action/catalog/catalogo_digital_CRETA_Action_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA%20Comfort%202024.pdf",
+   "timestamp": "20250120113442",
+   "file": "catalogo-digital-creta-comfort-2024.pdf",
+   "archived": "https://web.archive.org/web/20250120113442/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA%20Comfort%202024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_Comfort_2025.pdf",
+   "timestamp": "20241213023509",
+   "file": "catalogo-digital-creta-comfort-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213023509/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_Comfort_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_Comfort_2025.pdf",
+   "timestamp": "20240831175906",
+   "file": "catalogo-digital-creta-comfort-2025.pdf",
+   "archived": "https://web.archive.org/web/20240831175906/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_Comfort_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_LIMITED_2025.pdf",
+   "timestamp": "20241213021012",
+   "file": "catalogo-digital-creta-limited-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213021012/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_LIMITED_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_LIMITED_2025.pdf",
+   "timestamp": "20240902143638",
+   "file": "catalogo-digital-creta-limited-2025.pdf",
+   "archived": "https://web.archive.org/web/20240902143638/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_LIMITED_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_LIMITED_Safety_2024.pdf",
+   "timestamp": "20250120111340",
+   "file": "catalogo-digital-creta-limited-safety-2024.pdf",
+   "archived": "https://web.archive.org/web/20250120111340/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_LIMITED_Safety_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/n-line/Catalogo_digital_CRETA_N_Line_2024.pdf",
+   "timestamp": "20240618192204",
+   "file": "catalogo-digital-creta-n-line-2024.pdf",
+   "archived": "https://web.archive.org/web/20240618192204/https://www.hyundai.com.br/content/dam/hmb/cars/creta/n-line/Catalogo_digital_CRETA_N_Line_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/20241113/Catalogo_digital_CRETA_N_Line_2025.pdf",
+   "timestamp": "20241213032932",
+   "file": "catalogo-digital-creta-n-line-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213032932/https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/20241113/Catalogo_digital_CRETA_N_Line_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/Catalogo_digital_CRETA_N_Line_2025.pdf",
+   "timestamp": "20241116125736",
+   "file": "catalogo-digital-creta-n-line-2025.pdf",
+   "archived": "https://web.archive.org/web/20241116125736/https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/Catalogo_digital_CRETA_N_Line_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_PLATINUM_2025.pdf",
+   "timestamp": "20241213024256",
+   "file": "catalogo-digital-creta-platinum-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213024256/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_PLATINUM_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_PLATINUM_2025.pdf",
+   "timestamp": "20240904022616",
+   "file": "catalogo-digital-creta-platinum-2025.pdf",
+   "archived": "https://web.archive.org/web/20240904022616/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_PLATINUM_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_PLATINUM_Safety_2024.pdf",
+   "timestamp": "20250120090501",
+   "file": "catalogo-digital-creta-platinum-safety-2024.pdf",
+   "archived": "https://web.archive.org/web/20250120090501/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_PLATINUM_Safety_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_ULTIMATE_2024.pdf",
+   "timestamp": "20250120101118",
+   "file": "catalogo-digital-creta-ultimate-2024.pdf",
+   "archived": "https://web.archive.org/web/20250120101118/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_ULTIMATE_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_ULTIMATE_2025.pdf",
+   "timestamp": "20241213032312",
+   "file": "catalogo-digital-creta-ultimate-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213032312/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_ULTIMATE_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_ULTIMATE_2025.pdf",
+   "timestamp": "20240924084343",
+   "file": "catalogo-digital-creta-ultimate-2025.pdf",
+   "archived": "https://web.archive.org/web/20240924084343/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/catalogo_digital_CRETA_ULTIMATE_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hr/catalogo/Catalogo_Digital_Hyundai_HR_2025.pdf",
+   "timestamp": "20251009090717",
+   "file": "catalogo-digital-hyundai-hr-2025.pdf",
+   "archived": "https://web.archive.org/web/20251009090717/https://www.hyundai.com.br/content/dam/hmb/cars/hr/catalogo/Catalogo_Digital_Hyundai_HR_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/ioniq/catalog/Catalogo_Digital_IONIQ%205_2025.pdf",
+   "timestamp": "20251009090624",
+   "file": "catalogo-digital-ioniq-5-2025.pdf",
+   "archived": "https://web.archive.org/web/20251009090624/https://www.hyundai.com.br/content/dam/hmb/cars/ioniq/catalog/Catalogo_Digital_IONIQ%205_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_MY_25-26.pdf",
+   "timestamp": "20250622154556",
+   "file": "catalogo-digital-novo-creta-comfort-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20250622154556/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_Safety_MY_25-26.pdf",
+   "timestamp": "20251118171209",
+   "file": "catalogo-digital-novo-creta-comfort-safety-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20251118171209/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_Safety_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Limited_MY_25-26.pdf",
+   "timestamp": "20250622153132",
+   "file": "catalogo-digital-novo-creta-limited-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20250622153132/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Limited_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf",
+   "timestamp": "20251009090610",
+   "file": "catalogo-digital-novo-creta-my25-26.pdf",
+   "archived": "https://web.archive.org/web/20251009090610/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_N_Line_MY_25-26.pdf",
+   "timestamp": "20251010015739",
+   "file": "catalogo-digital-novo-creta-n-line-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20251010015739/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_N_Line_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Platinum_MY_25-26.pdf",
+   "timestamp": "20250622151830",
+   "file": "catalogo-digital-novo-creta-platinum-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20250622151830/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Platinum_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf",
+   "timestamp": "20261014205403",
+   "file": "catalogo-digital-novo-creta-ultimate-my-25-26.pdf",
+   "archived": "https://web.archive.org/web/20261014205403/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus_2024.pdf",
+   "timestamp": "20240903021946",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20240903021946/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus_2024.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_2025.pdf",
+   "timestamp": "20250424001759",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20250424001759/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Comfort_Plus_2025.pdf",
+   "timestamp": "20240921042550",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20240921042550/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Comfort_Plus_2025.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "timestamp": "20250424004810",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "archived": "https://web.archive.org/web/20250424004810/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025.pdf",
+   "timestamp": "20241213025550",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tech-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213025550/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus%20TGDI_2024.pdf",
+   "timestamp": "20240903193053",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2024.pdf",
+   "archived": "https://web.archive.org/web/20240903193053/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus%20TGDI_2024.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf",
+   "timestamp": "20250424000755",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20250424000755/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf",
+   "timestamp": "20250409184536",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20250409184536/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/catalogos/Catalogo_DIgital_Novo_HB20_Limited_25_26.pdf",
+   "timestamp": "20261021233425",
+   "file": "catalogo-digital-novo-hb20-limited-25-26.pdf",
+   "archived": "https://web.archive.org/web/20261021233425/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/catalogos/Catalogo_DIgital_Novo_HB20_Limited_25_26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Limited%20Plus_2024.pdf",
+   "timestamp": "20241004123517",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20241004123517/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Limited%20Plus_2024.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Limited_Plus_2025.pdf",
+   "timestamp": "20250424011328",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20250424011328/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Limited_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Limited_Plus_2025.pdf",
+   "timestamp": "20240831080633",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20240831080633/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Limited_Plus_2025.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_2024.pdf",
+   "timestamp": "20250424005905",
+   "file": "catalogo-digital-novo-hb20-platinum-2024.pdf",
+   "archived": "https://web.archive.org/web/20250424005905/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2026-2027/catalogos/Catalogo_Digital_Novo_HB20_Platinum_26_27.pdf",
+   "timestamp": "20260802090004",
+   "file": "catalogo-digital-novo-hb20-platinum-26-27.pdf",
+   "archived": "https://web.archive.org/web/20260802090004/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2026-2027/catalogos/Catalogo_Digital_Novo_HB20_Platinum_26_27.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Plus_2024.pdf",
+   "timestamp": "20250424005657",
+   "file": "catalogo-digital-novo-hb20-platinum-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20250424005657/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Plus_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2024.pdf",
+   "timestamp": "20240904115654",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2024.pdf",
+   "archived": "https://web.archive.org/web/20240904115654/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2024.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Platinum_Safety_2025.pdf",
+   "timestamp": "20250424003243",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20250424003243/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Platinum_Safety_2025.pdf",
+   "timestamp": "20241213013349",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213013349/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2025.pdf",
+   "timestamp": "20240718210102",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20240718210102/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20Plus_2024.pdf",
+   "timestamp": "20240924083706",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20240924083706/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20Plus_2024.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Sense_Plus_2025.pdf",
+   "timestamp": "20250424002607",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20250424002607/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Sense_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Sense_Plus_2025.pdf",
+   "timestamp": "20240924095731",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20240924095731/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/Catalogo_DIgital_Novo_HB20_Sense_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20TGDI_2024.pdf",
+   "timestamp": "20240901231338",
+   "file": "catalogo-digital-novo-hb20-sense-tgdi-2024.pdf",
+   "archived": "https://web.archive.org/web/20240901231338/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20TGDI_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Comfort_Plus_2024%20.pdf",
+   "timestamp": "20241125213029",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20241125213029/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Comfort_Plus_2024%20.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf",
+   "timestamp": "20241213024645",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213024645/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf",
+   "timestamp": "20240809233022",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20240809233022/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "timestamp": "20250316102525",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "archived": "https://web.archive.org/web/20250316102525/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025.pdf",
+   "timestamp": "20241213030305",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tech-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213030305/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2024.pdf",
+   "timestamp": "20241125181751",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tgdi-2024.pdf",
+   "archived": "https://web.archive.org/web/20241125181751/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2025.pdf",
+   "timestamp": "20241213020937",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213020937/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2025.pdf",
+   "timestamp": "20240809220805",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tgdi-2025.pdf",
+   "archived": "https://web.archive.org/web/20240809220805/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Comfort_Plus_TGDI_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2024.pdf",
+   "timestamp": "20241125132302",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20241125132302/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Limited_Plus_2025.pdf",
+   "timestamp": "20241213033519",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213033519/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Limited_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2025.pdf",
+   "timestamp": "20240809233412",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2025.pdf",
+   "archived": "https://web.archive.org/web/20240809233412/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_2024.pdf",
+   "timestamp": "20240809231346",
+   "file": "catalogo-digital-novo-hb20s-platinum-2024.pdf",
+   "archived": "https://web.archive.org/web/20240809231346/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Plus_2024.pdf",
+   "timestamp": "20240809233804",
+   "file": "catalogo-digital-novo-hb20s-platinum-plus-2024.pdf",
+   "archived": "https://web.archive.org/web/20240809233804/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Plus_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2024.pdf",
+   "timestamp": "20241125165000",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2024.pdf",
+   "archived": "https://web.archive.org/web/20241125165000/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2024.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "timestamp": "20250316092024",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20250316092024/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "timestamp": "20241213021718",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20241213021718/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "timestamp": "20240809214833",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2025.pdf",
+   "archived": "https://web.archive.org/web/20240809214833/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf",
+   "timestamp": "20250723215913",
+   "file": "catalogo-digital-novo-hyundai-creta-2425-2.pdf",
+   "archived": "https://web.archive.org/web/20250723215913/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Cat%C3%A1logo_Digital_Novo_Hyundai_CRETA_2425.pdf?gad_source=5",
+   "timestamp": "20250416202545",
+   "file": "catalogo-digital-novo-hyundai-creta-2425.pdf",
+   "archived": "https://web.archive.org/web/20250416202545/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Cat%C3%A1logo_Digital_Novo_Hyundai_CRETA_2425.pdf?gad_source=5"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hibrido_2025.pdf",
+   "timestamp": "20251009090636",
+   "file": "catalogo-digital-novo-hyundai-kona-hibrido-2025.pdf",
+   "archived": "https://web.archive.org/web/20251009090636/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hibrido_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hybrid_2025.pdf",
+   "timestamp": "20251009090716",
+   "file": "catalogo-digital-novo-hyundai-kona-hybrid-2025.pdf",
+   "archived": "https://web.archive.org/web/20251009090716/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hybrid_2025.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/Catalogo_digital_Palisade_25_26.pdf",
+   "timestamp": "20250723141842",
+   "file": "catalogo-digital-palisade-25-26.pdf",
+   "archived": "https://web.archive.org/web/20250723141842/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/Catalogo_digital_Palisade_25_26.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/catalogo_digital_Palisade.pdf",
+   "timestamp": "20250316094142",
+   "file": "catalogo-digital-palisade.pdf",
+   "archived": "https://web.archive.org/web/20250316094142/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/catalogo_digital_Palisade.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_digital.pdf",
+   "timestamp": "20240630105933",
+   "file": "catalogo-hb20-diamond-digital.pdf",
+   "archived": "https://web.archive.org/web/20240630105933/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_plus_digital.pdf",
+   "timestamp": "20201029141547",
+   "file": "catalogo-hb20-diamond-plus-digital.pdf",
+   "archived": "https://web.archive.org/web/20201029141547/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_plus_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Evolution_1.0_TGDI_digital.pdf",
+   "timestamp": "20201125135713",
+   "file": "catalogo-hb20-evolution-1-0-tgdi-digital.pdf",
+   "archived": "https://web.archive.org/web/20201125135713/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Evolution_1.0_TGDI_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Evolution_digital.pdf",
+   "timestamp": "20201001185348",
+   "file": "catalogo-hb20-evolution-digital.pdf",
+   "archived": "https://web.archive.org/web/20201001185348/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Evolution_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sense_digital.pdf",
+   "timestamp": "20210823033105",
+   "file": "catalogo-hb20-sense-digital.pdf",
+   "archived": "https://web.archive.org/web/20210823033105/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sense_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sport_digital.pdf",
+   "timestamp": "20201130204629",
+   "file": "catalogo-hb20-sport-digital.pdf",
+   "archived": "https://web.archive.org/web/20201130204629/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sport_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_1.6_auto_manu_digital.pdf",
+   "timestamp": "20210820142912",
+   "file": "catalogo-hb20-vision-1-6-auto-manu-digital.pdf",
+   "archived": "https://web.archive.org/web/20210820142912/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_1.6_auto_manu_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_digital.pdf",
+   "timestamp": "20201001185804",
+   "file": "catalogo-hb20-vision-digital.pdf",
+   "archived": "https://web.archive.org/web/20201001185804/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Diamond_digital.pdf",
+   "timestamp": "20220808165200",
+   "file": "catalogo-hb20s-diamond-digital.pdf",
+   "archived": "https://web.archive.org/web/20220808165200/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Diamond_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Diamond_PLUS_digital.pdf",
+   "timestamp": "20210127133229",
+   "file": "catalogo-hb20s-diamond-plus-digital.pdf",
+   "archived": "https://web.archive.org/web/20210127133229/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Diamond_PLUS_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Evolution_1.0_digital.pdf",
+   "timestamp": "20220808160039",
+   "file": "catalogo-hb20s-evolution-1-0-digital.pdf",
+   "archived": "https://web.archive.org/web/20220808160039/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Evolution_1.0_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Evolution_1.0_TGDI_digital.pdf",
+   "timestamp": "20220808155751",
+   "file": "catalogo-hb20s-evolution-1-0-tgdi-digital.pdf",
+   "archived": "https://web.archive.org/web/20220808155751/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Evolution_1.0_TGDI_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.0_digital.pdf",
+   "timestamp": "20220808161846",
+   "file": "catalogo-hb20s-vision-1-0-digital.pdf",
+   "archived": "https://web.archive.org/web/20220808161846/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.0_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.6_auto_digital.pdf",
+   "timestamp": "20210127142858",
+   "file": "catalogo-hb20s-vision-1-6-auto-digital.pdf",
+   "archived": "https://web.archive.org/web/20210127142858/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.6_auto_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.6_digital.pdf",
+   "timestamp": "20220808160801",
+   "file": "catalogo-hb20s-vision-1-6-digital.pdf",
+   "archived": "https://web.archive.org/web/20220808160801/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20S_Vision_1.6_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_diamond_PLUS_digital.pdf",
+   "timestamp": "20210127135600",
+   "file": "catalogo-hb20x-diamond-plus-digital.pdf",
+   "archived": "https://web.archive.org/web/20210127135600/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_diamond_PLUS_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_evolution_digital.pdf",
+   "timestamp": "20210127134754",
+   "file": "catalogo-hb20x-evolution-digital.pdf",
+   "archived": "https://web.archive.org/web/20210127134754/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_evolution_digital.pdf"
+  },
+  {
+   "original": "https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_vision_digital.pdf",
+   "timestamp": "20210127122753",
+   "file": "catalogo-hb20x-vision-digital.pdf",
+   "archived": "https://web.archive.org/web/20210127122753/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20X_vision_digital.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/Catalogo_Hyundai_Creta_Nova_Geracao_2022.pdf",
+   "timestamp": "20250120093201",
+   "file": "catalogo-hyundai-creta-nova-geracao-2022.pdf",
+   "archived": "https://web.archive.org/web/20250120093201/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/Catalogo_Hyundai_Creta_Nova_Geracao_2022.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "timestamp": "20251118160151",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "archived": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "timestamp": "20251118165125",
+   "file": "ficha-tecnica-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "archived": "https://web.archive.org/web/20251118165125/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/product/creta/creta-nline2025/catalogo/Manual_Bordo_Creta_A1UQ-PB-2409A.pdf",
+   "timestamp": "20241213023020",
+   "file": "manual-bordo-creta-a1uq-pb-2409a.pdf",
+   "archived": "https://web.archive.org/web/20241213023020/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta-nline2025/catalogo/Manual_Bordo_Creta_A1UQ-PB-2409A.pdf"
+  },
+  {
+   "original": "https://www.hyundai.com.br/content/dam/hmb/cars/tucson/2024/catalog/TUCSON_Catalogo_Digital.pdf",
+   "timestamp": "20251009090725",
+   "file": "tucson-catalogo-digital.pdf",
+   "archived": "https://web.archive.org/web/20251009090725/https://www.hyundai.com.br/content/dam/hmb/cars/tucson/2024/catalog/TUCSON_Catalogo_Digital.pdf"
+  }
+ ]
+}

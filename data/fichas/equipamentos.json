@@ -1,5 +1,5 @@
 {
- "_doc": "Equipamentos de série por versão da Renault e da Toyota (npm run fichas:abertas), das listas em data/fichas/renault e de data/fichas/toyota.json.",
+ "_doc": "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
  "lists": [
   {
    "brand": "renault",
@@ -7932,6 +7932,3812 @@
    "engineLiters": 2.8,
    "turbo": true,
    "cab": "cd"
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "action"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2024 · CRETA Action",
+   "page": "https://web.archive.org/web/20240517175120/https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/catalogo_digital_CRETA%20Action%202024.pdf",
+   "file": "catalogo-digital-creta-action-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Faróis com refletor e máscara cromada",
+      "Faróis de neblina dianteiros",
+      "Lanternas clear type",
+      "Rodas de liga leve de 16”, modelo fork, pneus 205/65 R16"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital de 3,5”",
+      "Painel com acabamento na cor preta",
+      "Bancos em tecido Woven"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Monitoramento de pressão dos pneus (TPMS)",
+      "Airbag frontal duplo",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Alarme perimétrico"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Computador de bordo",
+      "Piloto automático com controles no volante",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Volante com regulagem de altura e profundidade",
+      "Sistema de áudio",
+      "Rádio blueAudio®",
+      "Rádio integrado ao painel com conexão Bluetooth® com streaming de áudio e acesso à agenda e ao histórico de chamadas, MP3 player, conexões USB/iPod e auxiliar."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "action"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2025 · CRETA Action",
+   "page": "https://web.archive.org/web/20241126223219/https://www.hyundai.com.br/content/dam/hmb/cars/creta-action/catalog/catalogo_digital_CRETA_Action_2025.pdf",
+   "file": "catalogo-digital-creta-action-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Faróis com refletor e máscara cromada",
+      "Luzes diurna (DRL) em LED",
+      "Faróis de neblina dianteiros",
+      "Lanternas clear type",
+      "Rodas de liga leve de 16”, modelo fork, pneus 205/65 R16"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital de 3,5”",
+      "Painel com acabamento na cor preta",
+      "Bancos em tecido Woven"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Monitoramento de pressão dos pneus (TPMS)",
+      "Airbag frontal duplo",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Alarme perimétrico"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros e do motorista com função one touch (descida e subida) e antiesmagamento",
+      "Chave tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Computador de bordo",
+      "Piloto automático com controles no volante",
+      "Volante com regulagem de altura e profundidade",
+      "Sistema de áudio",
+      "Rádio blueAudio®",
+      "Rádio integrado ao painel com conexão Bluetooth® com streaming de áudio e acesso à agenda e ao histórico de chamadas, MP3 player, conexões USB/iPod e auxiliar."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2024 · CRETA Comfort Plus",
+   "page": "https://web.archive.org/web/20250120113442/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA%20Comfort%202024.pdf",
+   "file": "catalogo-digital-creta-comfort-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda prata",
+      "Retrovisores externos na cor da carroceria",
+      "Faróis com projetor",
+      "Luzes diurna (DRL) em LED",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata",
+      "Rodas de liga leve de 16”, pneus 205/65 R16"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel com acabamento na cor preta",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Maçanetas internas em cromo acetinado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Sensores de estacionamento traseiro",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Volante com regulagem de altura e profundidade",
+      "Câmera de ré com linhas dinâmicas",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Conexão USB traseira",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueMedia®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2025 · CRETA Comfort",
+   "page": "https://web.archive.org/web/20241213023509/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_Comfort_2025.pdf",
+   "file": "catalogo-digital-creta-comfort-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda prata",
+      "Retrovisores externos na cor da carroceria",
+      "Faróis com projetor",
+      "Luzes diurna (DRL) em LED",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata",
+      "Rodas de liga leve de 16”, pneus 205/65 R16"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel com acabamento na cor preta",
+      "Volante revestido em couro na cor preta com costura na cor preta",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Maçanetas internas em cromo acetinado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Sensores de estacionamento traseiro",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Volante com regulagem de altura e profundidade",
+      "Alavancas no volante para trocas de marcha",
+      "Câmera de ré com linhas dinâmicas",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Conexão USB traseira",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueMedia®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2025 · CRETA Limited",
+   "page": "https://web.archive.org/web/20241213021012/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_LIMITED_2025.pdf",
+   "file": "catalogo-digital-creta-limited-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda na cor prata",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Faróis com projetor",
+      "Faróis de neblina dianteiros",
+      "Luzes diurnas (DRL) em LED",
+      "Barras de teto longitudinais na cor prata1",
+      "Spolier traseiro",
+      "Moldura lateral da coluna “C” na cor prata2",
+      "Rodas de liga leve diamantadas de 17”, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento na cor preta",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor preta com costura na cor preta",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros, pedestres, ciclistas)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Sensores de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone3",
+      "Câmera de ré com linhas dinâmicas",
+      "Alavancas no volante para trocas de marcha",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueMedia®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana",
+      "1 Não disponível em veículos na cor Preto Onix",
+      "2 Cor preto brilhante quando a pintura for dual tone",
+      "3 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "limited",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2024 · CRETA Limited Safety",
+   "page": "https://web.archive.org/web/20250120111340/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_LIMITED_Safety_2024.pdf",
+   "file": "catalogo-digital-creta-limited-safety-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda na cor prata",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Faróis com projetor",
+      "Faróis de neblina dianteiros",
+      "Luzes diurnas (DRL) em LED",
+      "Barras de teto longitudinais na cor prata1",
+      "Spolier traseiro",
+      "Moldura lateral da coluna “C” na cor prata2",
+      "Rodas de liga leve diamantadas de 17”, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento na cor preta",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor preta com costura na cor preta",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros, pedestres, ciclistas)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Sensores de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone3",
+      "Câmera de ré com linhas dinâmicas",
+      "Alavancas no volante para trocas de marcha",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueMedia®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana",
+      "1 Não disponível em veículos na cor Preto Onix",
+      "2 Cor preto brilhante quando a pintura for dual tone",
+      "3 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 Sport",
+   "page": "https://web.archive.org/web/20241213032932/https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/20241113/Catalogo_digital_CRETA_N_Line_2025.pdf",
+   "file": "catalogo-digital-creta-n-line-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal N Line com acabamento dark chrome",
+      "Protetores dos para-choques dianteiro e traseiro na cor preta com detalhes em cinza brilhante",
+      "Saias laterais com detalhes em cinza brilhante",
+      "Ponteira de escapamento dupla",
+      "Retrovisores externos na cor preto brilhante",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis em LED com detalhes escurecidos",
+      "Luzes diurnas em LED (DRL)",
+      "Lanternas em LED com detalhes escurecidos",
+      "Barras de teto longitudinais na cor preto brilhante",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor grafite1",
+      "Teto solar panorâmico com funções one touch (abertura e fechamento) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 17” com design N Line, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento na cor preta",
+      "Detalhes em grafite no volante, no painel e no console",
+      "Volante revestido em couro na cor preta com costura na cor vermelha com design N Line",
+      "Alavanca de câmbio N Line com detalhes em vermelho",
+      "Apoio de braço no console central",
+      "Maçanetas internas na cor grafite",
+      "Pedais esportivos com acabamento em metal",
+      "Bancos revestidos em couro sintético na cor preta com costura vermelha e emblema N Line"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros e pedestres)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego",
+      "Sensores de estacionamento traseiro e dianteiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Banco do motorista com ventilação",
+      "Banco do motorista com ajuste de altura",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphones2",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Saída de ar para os bancos traseiros",
+      "Conexão USB traseira",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Bluelink®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana",
+      "1 Cor preto brilhante quando a pintura for dual tone",
+      "2 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)",
+      "Hyundai Service Number 1",
+      "Oferecendo sempre o melhor à sua vida.",
+      "Assistência 24 horas Hyundai",
+      "Serviço gratuito para panes e acidentes, com cobertura nacional e nos países do Mercosul.",
+      "Revisão Preço Justo Hyundai",
+      "Preços justos e transparentes para revisões, peças e serviços do Hyundai",
+      "CRETA N Line.",
+      "Call Center Hyundai 0800-770-3355",
+      "Canal de comunicação direto e fácil por meio de uma equipe de profissionais altamente qualificada.",
+      "Acessórios genuínos Hyundai",
+      "Acessórios originais desenvolvidos em harmonia com o design das linhas",
+      "Hyundai HB20 e CRETA, unindo tecnologia, praticidade, conforto e segurança.",
+      "Seu carro pronto na metade do tempo com a reconhecida qualidade do pós-venda Hyundai.",
+      "Consulte condições."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2025 · CRETA Platinum",
+   "page": "https://web.archive.org/web/20241213024256/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_PLATINUM_2025.pdf",
+   "file": "catalogo-digital-creta-platinum-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda cromada",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas com acabamento cromado",
+      "Faróis com projetor",
+      "Luz diurna (DRL) em LED",
+      "Faróis de neblina dianteiros",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata",
+      "Rodas de liga leve diamantadas de 17”, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento nas cores preto e marrom",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor preta com costura na cor preta",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético de microfibra na cor marrom"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros e pedestres)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego",
+      "Sensor de estacionamento dianteiro e traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Banco do motorista com ventilação",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone1",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Bluelink®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana",
+      "1 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2024 · CRETA Platinum Safety",
+   "page": "https://web.archive.org/web/20250120090501/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_PLATINUM_Safety_2024.pdf",
+   "file": "catalogo-digital-creta-platinum-safety-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda cromada",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas com acabamento cromado",
+      "Faróis com projetor",
+      "Luz diurna (DRL) em LED",
+      "Faróis de neblina dianteiros",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata",
+      "Rodas de liga leve diamantadas de 17”, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento nas cores preto e marrom",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor preta com costura na cor preta",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético de microfibra na cor marrom"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros e pedestres)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego",
+      "Sensores de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco Traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Banco do motorista com ventilação",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone1",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Bluelink®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana",
+      "1 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "title": "Creta 2024 · Creta ultimate",
+   "page": "https://web.archive.org/web/20250120101118/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_ULTIMATE_2024.pdf",
+   "file": "catalogo-digital-creta-ultimate-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda cromada",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas com acabamento cromado",
+      "Faróis de neblina dianteiros",
+      "Luz diurna (DRL) em LED",
+      "Lanternas em LED",
+      "Barras de teto longitudinais na cor prata1",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata1",
+      "Teto solar panorâmico com funções one touch (descida e subida) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 18”, pneus 215/55 R18"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento nas cores bege e marrom",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor marrom com costura em marrom",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético de microfibra nas cores marrom e bege"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESC)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros, pedestres e ciclistas)",
+      "Sistema de Frenagem Autônoma (convergência à esquerda)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego",
+      "Sensores de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Banco do motorista com ventilação",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone2",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Bluelink®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana",
+      "1 Cor preto brilhante quando a pintura for dual tone",
+      "2 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "title": "Creta 2025 · Creta ultimate",
+   "page": "https://web.archive.org/web/20241213032312/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_ULTIMATE_2025.pdf",
+   "file": "catalogo-digital-creta-ultimate-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal hexagonal prata com borda cromada",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas com acabamento cromado",
+      "Faróis de neblina dianteiros",
+      "Luz diurna (DRL) em LED",
+      "Lanternas em LED",
+      "Barras de teto longitudinais na cor prata1",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna “C” na cor prata1",
+      "Teto solar panorâmico com funções one touch (descida e subida) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 18”, pneus 215/55 R18"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster de 7\"",
+      "Painel com acabamento nas cores bege e marrom",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro sintético de microfibra na cor marrom com costura em marrom",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético de microfibra nas cores marrom e bege"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freio a disco nas quatro rodas",
+      "Controles de estabilidade eletrônico (ESC)",
+      "Controles de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Detector de Fadiga",
+      "Sistema de Frenagem Autônoma (carros, pedestres e ciclistas)",
+      "Sistema de Frenagem Autônoma (convergência à esquerda)",
+      "Assistentes de Permanência em Faixa (LKA) e Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego",
+      "Sensores de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol Alto Adaptativo",
+      "Alerta de Presença no Banco traseiro"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Banco do motorista com ventilação",
+      "Volante com regulagem de altura e profundidade",
+      "Carregador sem fio para smartphone2",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automáticas do motor",
+      "Porta-objetos com saída USB para o banco de trás",
+      "Travas elétricas nas portas e no porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Bluelink®",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Alto-falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana",
+      "1 Cor preto brilhante quando a pintura for dual tone",
+      "2 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort",
+    "safety"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2026 · Creta comfort safety",
+   "page": "https://web.archive.org/web/20251118171209/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_Safety_MY_25-26.pdf",
+   "file": "catalogo-digital-novo-creta-comfort-safety-my-25-26.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Comfort",
+      "Rodas de liga leve de 16\"",
+      "Hyundai Service Number 1",
+      "Oferecendo sempre o melhor à sua vida.",
+      "Assistência 24 horas Hyundai Call Center Hyundai 0800-770-3355",
+      "Serviço gratuito para panes e acidentes, com Canal de comunicação direto e fácil por meio de cobertura nacional e nos países do Mercosul. | uma equipe de profissionais altamente qualificada.",
+      "Revisão Preço Justo Hyundai",
+      "Preços justos e transparentes para revisões, peças e serviços do Hyundai CRETA Comfort Safety.",
+      "Seu carro pronto na metade do tempo com a",
+      "Consulte condições. reconhecida qualidade do pós-venda Hyundai."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Comfort Plus",
+   "page": "https://web.archive.org/web/20240903021946/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros, e o do motorista com one touch (subida e descida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Comfort Plus",
+   "page": "https://web.archive.org/web/20250424001759/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 Comfort",
+   "page": "https://web.archive.org/web/20250424004810/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve com acabamento cinza de 16”",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Sensor de estacionamento traseiro",
+      "Sistema Stop & Go (ISG)",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Antena curta no teto"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "HB20 2024 · HB20 comfort plus",
+   "page": "https://web.archive.org/web/20240903193053/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus%20TGDI_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiro e o do motorista com one touch (subida e descida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 comfort plus",
+   "page": "https://web.archive.org/web/20250424000755/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve com acabamento cinza de 16”",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Sensor de estacionamento traseiro",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Antena curta no teto"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2026 · HB20 Limited",
+   "page": "https://web.archive.org/web/20261021233425/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/catalogos/Catalogo_DIgital_Novo_HB20_Limited_25_26.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-25-26.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve com acabamento cinza de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta",
+      "Painel de instrumentos digital LCD de 10”"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco T raseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Apoio de braço deslizante no console central",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Limited Plus",
+   "page": "https://web.archive.org/web/20241004123517/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Limited%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta",
+      "Maçanetas internas cromadas",
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4.2”"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco T raseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Apoio de braço deslizante no console central",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Limited Plus",
+   "page": "https://web.archive.org/web/20250424011328/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Limited_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta",
+      "Maçanetas internas cromadas",
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4.2”"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco T raseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Apoio de braço deslizante no console central",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 Platinum",
+   "page": "https://web.archive.org/web/20250424005905/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL)",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em tecido na cor preta",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2027 · HB20 platinum",
+   "page": "https://web.archive.org/web/20260802090004/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2026-2027/catalogos/Catalogo_Digital_Novo_HB20_Platinum_26_27.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-26-27.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis com projetor",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL) em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital com tela TFT LCD de 10”",
+      "Bancos em couro sintético de microfibra na cor preta",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais das portas dianteiras revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de ponto cego (BCA)",
+      "Assistente de tráfego cruzado traseiro (RCCA)",
+      "Alerta de saída segura (SEW)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Detector de Fadiga (DAW)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado com visor digital e automático",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Smart Shift: alavancas no volante para troca de marchas",
+      "Sistema Stop & Go (ISG)",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Carregador sem-fio para smartphones",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 Platinum Plus",
+   "page": "https://web.archive.org/web/20250424005657/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis com projetor",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL) em LED",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em couro sintético de microfibra dual tone",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Manopla de câmbio revestida em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Ponto Cego (BCA)",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Assistente de Tráfego Cruzado Traseiro (RCCA)",
+      "Detector de Fadiga (DAW)",
+      "Farol Alto Adaptativo (HBA)",
+      "Alerta de Saída Segura (SEW)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Monitoramento de pressão dos pneus (TPMS)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Smart Shift: alavancas no volante para trocas de marcha",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Iluminação no para-sol para motorista e passageiro",
+      "Iluminação no porta-luvas",
+      "Iluminação no porta-malas",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro",
+      "Banco traseiro bipartido 60:40",
+      "Sistema Stop & Go (ISG)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Carregador sem fio para smartphones1",
+      "Antena tipo barbatana",
+      "1 - Smartphone deve ser compatível com a tecnologia QI."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 platinum safety",
+   "page": "https://web.archive.org/web/20240904115654/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL)",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em couro sintético de microfibra na cor preta",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Detector de Fadiga (DAW)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Sense Plus",
+   "page": "https://web.archive.org/web/20240924083706/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 14”, pneus 175/70 R14",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros",
+      "Piloto automático e limitador de velocidade",
+      "Banco do motorista com ajuste de altura por alavanca"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Rádio blueAudio®",
+      "Entrada USB (tipo A)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Sense Plus",
+   "page": "https://web.archive.org/web/20250424002607/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Sense_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros",
+      "Piloto automático e limitador de velocidade",
+      "Chave principal tipo canivete com telecomando de travamento das portas e porta-malas",
+      "Banco do motorista com ajuste de altura por alavanca"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Rádio blueAudio®",
+      "Entrada USB (tipo A)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 sense",
+   "page": "https://web.archive.org/web/20240901231338/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20TGDI_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-tgdi-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Rádio blueAudio®",
+      "Entrada USB (tipo A)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2024 · HB20S comfort plus",
+   "page": "https://web.archive.org/web/20241125213029/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Comfort_Plus_2024%20.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor cinza"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros, e o do motorista com one touch (subida e descida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2025 · HB20S comfort plus",
+   "page": "https://web.archive.org/web/20241213024645/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Calotas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor cinza"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2025 · HB20S Comfort",
+   "page": "https://web.archive.org/web/20250316102525/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve com acabamento cinza de 16”",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor cinza"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com funções one touch (descida e subida) e antiesmagamento",
+      "Chave principal tipo canivete com telecomando de travamento das portas e do porta-malas",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Sensor de estacionamento traseiro",
+      "Sistema Stop & Go (ISG)",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Antena curta no teto"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2024 · HB20S limited plus",
+   "page": "https://web.archive.org/web/20241125132302/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor cinza",
+      "Maçanetas internas cromadas",
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Apoio de braço deslizante no console central",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2025 · HB20S limited plus",
+   "page": "https://web.archive.org/web/20241213033519/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Limited_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta fosca",
+      "Faróis de luz diurna (DRL)",
+      "Rodas de liga leve diamantadas de 15”, pneus 185/60 R15",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Bancos em tecido na cor cinza",
+      "Maçanetas internas cromadas",
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Apoio de braço deslizante no console central",
+      "Volante com regulagem de altura e profundidade",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Acendimento automático dos faróis (sensor crepuscular)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S Platinum",
+   "page": "https://web.archive.org/web/20240809231346/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL)",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em tecido na cor cinza",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro",
+      "Abertura do porta-malas por aproximação Smart Trunk"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S Platinum Plus",
+   "page": "https://web.archive.org/web/20240809233804/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-plus-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis com projetor",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL) em LED",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em couro sintético de microfibra na cor cinza-clara",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Manopla de câmbio revestida em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Ponto Cego (BCA)",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Assistente de Tráfego Cruzado Traseiro (RCCA)",
+      "Detector de Fadiga (DAW)",
+      "Farol Alto Adaptativo (HBA)",
+      "Alerta de Saída Segura (SEW)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Monitoramento de pressão dos pneus (TPMS)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Smart Shift: alavancas no volante para trocas de marcha",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Iluminação no para-sol para motorista e passageiro",
+      "Iluminação no porta-luvas",
+      "Iluminação no porta-malas",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro",
+      "Abertura do porta-malas por aproximação Smart Trunk",
+      "Banco traseiro bipartido 60:40",
+      "Sistema Stop & Go (ISG)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Carregador sem fio para smartphones1",
+      "Antena tipo barbatana",
+      "1 - Smartphone deve ser compatível com a tecnologia QI."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S platinum safety",
+   "page": "https://web.archive.org/web/20241125165000/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2024.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis de neblina dianteiros com projetor",
+      "Faróis de luz diurna (DRL)",
+      "Lanternas em LED",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em couro sintético de microfibra na cor cinza-clara",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Detector de Fadiga (DAW)",
+      "Farol Alto Adaptativo (HBA)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro",
+      "Abertura do porta-malas por aproximação Smart Trunk"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2025 · HB20S platinum safety",
+   "page": "https://web.archive.org/web/20250316092024/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta brilhante",
+      "Faróis com projetor",
+      "Faróis de luz diurna (DRL) em LED",
+      "Faróis de neblina dianteiros com projetor",
+      "Rodas de liga leve diamantadas de 16\", pneus 195/55 R16",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido Supervision Cluster com tela TFT LCD de 4,2”",
+      "Bancos em couro sintético de microfibra na cor cinza-clara",
+      "Maçanetas internas cromadas",
+      "Volante revestido em couro sintético de microfibra",
+      "Console central revestido em couro sintético de microfibra",
+      "Apoios de braço laterais revestidos em couro sintético de microfibra",
+      "Botão do freio de mão cromado"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Seis airbags: frontal duplo, laterais de tórax e laterais de cortina",
+      "Freios ABS com EBD",
+      "Controle de estabilidade (ESP) e de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de ponto cego (BCA)",
+      "Alerta de saída segura (SEW)",
+      "Assistente de tráfego cruzado traseiro (RCCA)",
+      "Assistente de partida em rampa (HAC)",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Detector de Fadiga (DAW)",
+      "Farol Alto Adaptativo (HBA)",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Câmera de ré",
+      "Alarme perimétrico",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital",
+      "Direção elétrica progressiva",
+      "Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Partida remota do motor pela chave",
+      "Piloto automático e limitador de velocidade",
+      "Smart Shift: alavancas no volante para troca de marchas",
+      "Sistema Stop & Go (ISG)",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Apoio de braço deslizante no console central",
+      "Banco do motorista com ajuste de altura por alavanca",
+      "Volante com regulagem de altura e profundidade",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sensor de estacionamento traseiro",
+      "Abertura do porta-malas por aproximação Smart Trunk"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia blueMedia®",
+      "Bluelink®",
+      "Carregador sem-fio para smartphones",
+      "Entrada USB (tipo A)",
+      "Entrada USB para carregamento rápido de celular (tipo C)",
+      "Entrada USB atrás do console para o banco traseiro (tipo C)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Kona",
+   "trims": [
+    "hibrido"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "title": "Kona 2026 · KONA Híbrido",
+   "page": "https://web.archive.org/web/20251009090636/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hibrido_2025.pdf",
+   "file": "catalogo-digital-novo-hyundai-kona-hibrido-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Faróis em LED",
+      "● ●",
+      "Faróis com projetor - ●",
+      "Faixa de luz longitudinal em LED na grade frontal",
+      "- ●",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "● ●",
+      "Luzes diurnas em LED (DRL)",
+      "● ●",
+      "Lanternas em LED",
+      "● ●",
+      "Retrovisores externos na cor da carroceria",
+      "● ●",
+      "Maçanetas externas na cor da carroceria",
+      "● ●",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "● ●",
+      "Luz indicadora de direção em LED",
+      "● ●",
+      "Spoiler traseiro com luz de freio LED integrada",
+      "● ●",
+      "Moldura lateral com acabamento acetinado",
+      "● ●",
+      "Teto solar com abertura elétrica",
+      "- ●",
+      "Barras de teto longitudinais",
+      "● ●",
+      "Molduras nas caixas de roda e soleira",
+      "● ●",
+      "Rodas de liga leve diamantadas de 18\", pneus 215/55 R18",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital configurável full TFT de 12,3\"",
+      "● ●",
+      "Bancos revestidos em couro sintético na cor preta",
+      "● -",
+      "Bancos revestidos em couro nas cores cinza-claro e cinza-escuro",
+      "- ●",
+      "Bancos revestidos em couro na cor preta",
+      "- ●",
+      "Painel com acabamento na cor preta",
+      "● ●",
+      "Painel com acabamento nas cores cinza-claro e cinza-escuro",
+      "- ●",
+      "Volante revestido em couro",
+      "● ●",
+      "Alavancas para seleção de nível de regenaração da bateria (e-Shift)",
+      "● ●",
+      "Iluminação ambiente configurável",
+      "- ●",
+      "Console central com iluminação",
+      "● ●",
+      "Maçanetas internas em cromo acetinado",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbag frontal duplo",
+      "● ●",
+      "Airbags laterais de tórax",
+      "● ●",
+      "Airbags de cortina",
+      "● ●",
+      "Sistema de Alerta e Frenagem Autônomo (FCA) para carros, pedestres e ciclistas",
+      "● ●",
+      "Sistema de Frenagem Autônomo (convergência à esquerda)",
+      "● ●",
+      "Detector de Fadiga (DAW)",
+      "● ●",
+      "Assistente de Permanência em Faixa (LKA)",
+      "● ●",
+      "Assistente de Centralização em Faixa (LFA)",
+      "● ●",
+      "Assistente de Ponto Cego (BCA)",
+      "● ●",
+      "Assistente de Tráfego Cruzado Traseiro (RCCA)",
+      "● ●",
+      "Assistente de Estacionamento Traseiro (PCA)",
+      "- ●",
+      "Alerta de Saída Segura (SEW)",
+      "● ●",
+      "Câmera Para Monitoramento de Ponto Cego (BVM)",
+      "- ●",
+      "Sensor de Estacionamento Traseiro",
+      "● ●",
+      "Sensor de Estacionamento Dianteiro",
+      "● ●",
+      "Smart Camera 360º (SVM)",
+      "- ●",
+      "Monitoramento de Pressão dos Pneus (TPMS)",
+      "● ●",
+      "Freios ABS com EBD",
+      "● ●",
+      "Controle de Estabilidade (ESP)",
+      "● ●",
+      "Controle de Assistência de Partida em Subida (HAC)",
+      "● ●",
+      "Controle de Tração (TCS)",
+      "● ●",
+      "Sinalização de Frenagem de Emergência (ESS)",
+      "● ●",
+      "Cintos de segurança dianteiros e traseiros retráteis de 3 pontos com pré-tensionadores",
+      "● ●",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "● ●",
+      "Alerta visual de portas e porta-malas abertos",
+      "● ●",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "● ●",
+      "Trava de segurança para crianças nas portas traseiras",
+      "● ●",
+      "Limpador e desembaçador do vidro traseiro",
+      "● ●",
+      "Apoios de cabeça dianteiros e traseiros com regulagem de altura (x5)",
+      "● ●",
+      "Fixação ISOFIX® com Top Tether para cadeirinha de bebê",
+      "● ●",
+      "Barras de proteção lateral",
+      "● ●",
+      "Alerta sonoro de travamento das portas",
+      "● ●",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "● ●",
+      "Saída de ar para o banco traseiro",
+      "● ●",
+      "Banco do motorista com ajuste elétrico de 7 posições",
+      "● ● (frente/trás, altura, lombar e inclinação do encosto)",
+      "Piloto automático com limitador de velocidade",
+      "● ●",
+      "Sensor de chuva",
+      "● ●",
+      "Controle de velocidade adaptativo (SCC) com função Stop & Go",
+      "● ●",
+      "Câmbio eletrônico Shift by Wire - alavanca de câmbio na coluna de direção",
+      "● ●",
+      "Seleção do modo de direção",
+      "● ●",
+      "Computador de bordo",
+      "● ●",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "● ●",
+      "Partida do motor por botão",
+      "● ●",
+      "Freio de estacionamento eletrônico com auto hold",
+      "● ●",
+      "Câmera de ré com linhas dinâmicas",
+      "● ●",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "● ●",
+      "Retrovisores externos com rebatimento elétrico",
+      "● ●",
+      "Retrovisores externos com função antiembaçante",
+      "● ●",
+      "Abertura elétrica do porta-malas com ajuste de altura",
+      "- ●",
+      "Vidros elétricos dianteiros e traseiros",
+      "● ●",
+      "Para-brisa com isolamento acústico",
+      "- ●",
+      "Faróis com funções Welcome e Escort",
+      "● ●",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "● ●",
+      "Tomada 12V (x1) no console central",
+      "● ●",
+      "Conexão tipo C dianteira (x2) ● ●",
+      "Conexão USB traseira (x2)",
+      "● ●",
+      "Braço de apoio central para o banco traseiro",
+      "● ●",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "● ●",
+      "Direção elétrica",
+      "● ●",
+      "Comando interno de abertura do tanque de combustível",
+      "● ●",
+      "Volante com regulagem de altura e profundidade",
+      "● ●",
+      "Console de teto com luzes de leitura dianteira e iluminação central",
+      "● ●",
+      "Iluminação em LED no porta-malas",
+      "- ●",
+      "Luzes de teto central",
+      "● ●",
+      "Espelho de cortesia no para-sol para motorista e passageiro",
+      "● ●",
+      "Espelho retrovisor interno eletrocrômico",
+      "● ●",
+      "Iluminação no para-sol para motorista e passageiro",
+      "● ●",
+      "Iluminação no para-sol para motorista e passageiro em LED",
+      "- ●",
+      "Bolsa porta-revista no encosto dos bancos dianteiros",
+      "● ●",
+      "Banco traseiro bipartido 40:20:40",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia",
+      "Central multimídia touchscreen de 12,3\" com conexão sem fio para Apple CarPlay®",
+      "● ● e Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e ao histórico de chamadas, MP3 player e conexão USB tipo C.",
+      "Alto-falante dianteiro, tweeter, alto-falante traseiro",
+      "● ●",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "● ●",
+      "Antena tipo barbatana",
+      "● ●",
+      "Carregador sem fio para smartphones",
+      "● ●",
+      "Os recursos e as especificações podem variar conforme o modelo. Consulte sua concessionária para mais detalhes."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Kona",
+   "trims": [
+    "hybrid"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "title": "Kona 2026 · KONA Hybrid",
+   "page": "https://web.archive.org/web/20251009090716/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hybrid_2025.pdf",
+   "file": "catalogo-digital-novo-hyundai-kona-hybrid-2025.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Faróis em LED",
+      "● ●",
+      "Faróis com projetor - ●",
+      "Faixa de luz longitudinal em LED na grade frontal",
+      "- ●",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "● ●",
+      "Luzes diurnas em LED (DRL)",
+      "● ●",
+      "Lanternas em LED",
+      "● ●",
+      "Retrovisores externos na cor da carroceria",
+      "● ●",
+      "Maçanetas externas na cor da carroceria",
+      "● ●",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "● ●",
+      "Luz indicadora de direção em LED",
+      "● ●",
+      "Spoiler traseiro com luz de freio LED integrada",
+      "● ●",
+      "Moldura lateral com acabamento acetinado",
+      "● ●",
+      "Teto solar com abertura elétrica",
+      "- ●",
+      "Barras de teto longitudinais",
+      "● ●",
+      "Molduras nas caixas de roda e soleira",
+      "● ●",
+      "Rodas de liga leve diamantadas de 18\", pneus 215/55 R18",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital configurável full TFT de 12,3\"",
+      "● ●",
+      "Bancos revestidos em couro sintético na cor preta",
+      "● -",
+      "Bancos revestidos em couro nas cores cinza-claro e cinza-escuro",
+      "- ●",
+      "Bancos revestidos em couro na cor preta",
+      "- ●",
+      "Painel com acabamento na cor preta",
+      "● ●",
+      "Painel com acabamento nas cores cinza-claro e cinza-escuro",
+      "- ●",
+      "Volante revestido em couro",
+      "● ●",
+      "Alavancas para seleção de nível de regenaração da bateria (e-Shift)",
+      "● ●",
+      "Iluminação ambiente configurável",
+      "- ●",
+      "Console central com iluminação",
+      "● ●",
+      "Maçanetas internas em cromo acetinado",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbag frontal duplo",
+      "● ●",
+      "Airbags laterais de tórax",
+      "● ●",
+      "Airbags de cortina",
+      "● ●",
+      "Sistema de Alerta e Frenagem Autônomo (FCA) para carros, pedestres e ciclistas",
+      "● ●",
+      "Sistema de Frenagem Autônomo (convergência à esquerda)",
+      "● ●",
+      "Detector de Fadiga (DAW)",
+      "● ●",
+      "Assistente de Permanência em Faixa (LKA)",
+      "● ●",
+      "Assistente de Centralização em Faixa (LFA)",
+      "● ●",
+      "Assistente de Ponto Cego (BCA)",
+      "● ●",
+      "Assistente de Tráfego Cruzado Traseiro (RCCA)",
+      "● ●",
+      "Assistente de Estacionamento Traseiro (PCA)",
+      "- ●",
+      "Alerta de Saída Segura (SEW)",
+      "● ●",
+      "Câmera Para Monitoramento de Ponto Cego (BVM)",
+      "- ●",
+      "Sensor de Estacionamento Traseiro",
+      "● ●",
+      "Sensor de Estacionamento Dianteiro",
+      "● ●",
+      "Smart Camera 360º (SVM)",
+      "- ●",
+      "Monitoramento de Pressão dos Pneus (TPMS)",
+      "● ●",
+      "Freios ABS com EBD",
+      "● ●",
+      "Controle de Estabilidade (ESP)",
+      "● ●",
+      "Controle de Assistência de Partida em Subida (HAC)",
+      "● ●",
+      "Controle de Tração (TCS)",
+      "● ●",
+      "Sinalização de Frenagem de Emergência (ESS)",
+      "● ●",
+      "Cintos de segurança dianteiros e traseiros retráteis de 3 pontos com pré-tensionadores",
+      "● ●",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "● ●",
+      "Alerta visual de portas e porta-malas abertos",
+      "● ●",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "● ●",
+      "Trava de segurança para crianças nas portas traseiras",
+      "● ●",
+      "Limpador e desembaçador do vidro traseiro",
+      "● ●",
+      "Apoios de cabeça dianteiros e traseiros com regulagem de altura (x5)",
+      "● ●",
+      "Fixação ISOFIX® com Top Tether para cadeirinha de bebê",
+      "● ●",
+      "Barras de proteção lateral",
+      "● ●",
+      "Alerta sonoro de travamento das portas",
+      "● ●",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "● ●",
+      "Saída de ar para o banco traseiro",
+      "● ●",
+      "Banco do motorista com ajuste elétrico de 7 posições",
+      "● ● (frente/trás, altura, lombar e inclinação do encosto)",
+      "Piloto automático com limitador de velocidade",
+      "● ●",
+      "Sensor de chuva",
+      "● ●",
+      "Controle de velocidade adaptativo (SCC) com função Stop & Go",
+      "● ●",
+      "Câmbio eletrônico Shift by Wire - alavanca de câmbio na coluna de direção",
+      "● ●",
+      "Seleção do modo de direção",
+      "● ●",
+      "Computador de bordo",
+      "● ●",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "● ●",
+      "Partida do motor por botão",
+      "● ●",
+      "Freio de estacionamento eletrônico com auto hold",
+      "● ●",
+      "Câmera de ré com linhas dinâmicas",
+      "● ●",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "● ●",
+      "Retrovisores externos com rebatimento elétrico",
+      "● ●",
+      "Retrovisores externos com função antiembaçante",
+      "● ●",
+      "Abertura elétrica do porta-malas com ajuste de altura",
+      "- ●",
+      "Vidros elétricos dianteiros e traseiros",
+      "● ●",
+      "Para-brisa com isolamento acústico",
+      "- ●",
+      "Faróis com funções Welcome e Escort",
+      "● ●",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "● ●",
+      "Tomada 12V (x1) no console central",
+      "● ●",
+      "Conexão tipo C dianteira (x2) ● ●",
+      "Conexão USB traseira (x2)",
+      "● ●",
+      "Braço de apoio central para o banco traseiro",
+      "● ●",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "● ●",
+      "Direção elétrica",
+      "● ●",
+      "Comando interno de abertura do tanque de combustível",
+      "● ●",
+      "Volante com regulagem de altura e profundidade",
+      "● ●",
+      "Console de teto com luzes de leitura dianteira e iluminação central",
+      "● ●",
+      "Iluminação em LED no porta-malas",
+      "- ●",
+      "Luzes de teto central",
+      "● ●",
+      "Espelho de cortesia no para-sol para motorista e passageiro",
+      "● ●",
+      "Espelho retrovisor interno eletrocrômico",
+      "● ●",
+      "Iluminação no para-sol para motorista e passageiro",
+      "● ●",
+      "Iluminação no para-sol para motorista e passageiro em LED",
+      "- ●",
+      "Bolsa porta-revista no encosto dos bancos dianteiros",
+      "● ●",
+      "Banco traseiro bipartido 40:20:40",
+      "● ●"
+     ]
+    },
+    {
+     "name": "Sistema de áudio e conectividade",
+     "items": [
+      "Central multimídia",
+      "Central multimídia touchscreen de 12,3\" com conexão sem fio para Apple CarPlay®",
+      "● ● e Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e ao histórico de chamadas, MP3 player e conexão USB tipo C.",
+      "Alto-falante dianteiro, tweeter, alto-falante traseiro",
+      "● ●",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "● ●",
+      "Antena tipo barbatana",
+      "● ●",
+      "Carregador sem fio para smartphones",
+      "● ●",
+      "Os recursos e as especificações podem variar conforme o modelo. Consulte sua concessionária para mais detalhes."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Palisade",
+   "trims": [],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 3.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Palisade 2026 · Palisade",
+   "page": "https://web.archive.org/web/20250723141842/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/Catalogo_digital_Palisade_25_26.pdf",
+   "file": "catalogo-digital-palisade-25-26.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta",
+      "Faróis em LED",
+      "Faróis de neblina traseiros em LED",
+      "Luzes diurnas em LED (DRL)",
+      "Lanternas em LED",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor do veículo",
+      "Moldura lateral da coluna “C” e dos vidros cromada",
+      "Spoiler traseiro com luz de freio em LED",
+      "Rodas de liga leve diamantadas de 20”, pneus 245/50 R20"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 12,3”",
+      "Head-up display",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro1",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro1",
+      "Acabamento interno do teto, colunas e espelho de cortesia em suede"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "7 airbags: frontal duplo, laterais de tórax, cortina de joelho para o motorista",
+      "Freios ABS com EBD",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Sistema de freio multicolisão (MCB)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Sistema de Frenagem Autônoma (convergência à esquerda)",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego (BVM)",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado frontal automático digital de duas zonas",
+      "Ar-condicionado traseiro automático digital",
+      "Teto solar panorâmico dianteiro e traseiro com funções one touch (abertura e fechamento) e antiesmagamento",
+      "Bancos dianteiros e traseiros com ventilação e aquecimento",
+      "Banco do motorista com ajuste elétrico, apoio lombar e memória",
+      "Banco do passageiro com ajuste elétrico",
+      "Carregador sem fio para smartphones2",
+      "Sensor de estacionamento traseiro e dianteiro",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Controle de velocidade adaptativo com função Stop & Go",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Banco traseiro com ajuste elétrico (2ª fileira)",
+      "Sensor de chuva",
+      "Abertura automática do porta-malas",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Central multimídia de 12,3\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e ao histórico de chamadas",
+      "Sistema de som premium Infinity®",
+      "Com 12 alto-falantes",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Antena tipo barbatana",
+      "1 Couro sintético de alta qualidade",
+      "2 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Palisade",
+   "trims": [],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 3.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Palisade 2025 · Palisade",
+   "page": "https://web.archive.org/web/20250316094142/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/catalogo_digital_Palisade.pdf",
+   "file": "catalogo-digital-palisade.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal na cor preta",
+      "Faróis em LED",
+      "Faróis de neblina traseiros em LED",
+      "Luzes diurnas em LED (DRL)",
+      "Lanternas em LED",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor do veículo",
+      "Moldura lateral da coluna “C” e dos vidros cromada",
+      "Spoiler traseiro com luz de freio em LED",
+      "Rodas de liga leve diamantadas de 20”, pneus 245/50 R20"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 12,3”",
+      "Head-up display",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro1",
+      "Apoio de braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro1",
+      "Acabamento interno do teto, colunas e espelho de cortesia em suede"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "7 airbags: frontal duplo, laterais de tórax, cortina de joelho para o motorista",
+      "Freios ABS com EBD",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Sistema de freio multicolisão (MCB)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Sistema de Alerta e Frenagem Autônoma (FCA) para carros, pedestres e ciclistas",
+      "Sistema de Frenagem Autônoma (convergência à esquerda)",
+      "Assistente de Permanência em Faixa (LKA)",
+      "Assistente de Centralização em Faixa (LFA)",
+      "Câmera para Monitoramento de Ponto Cego (BVM)",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de Presença no Banco Traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado frontal automático digital de duas zonas",
+      "Ar-condicionado traseiro automático digital",
+      "Teto solar panorâmico dianteiro e traseiro com funções one touch (abertura e fechamento) e antiesmagamento",
+      "Bancos dianteiros e traseiros com ventilação e aquecimento",
+      "Banco do motorista com ajuste elétrico, apoio lombar e memória",
+      "Banco do passageiro com ajuste elétrico",
+      "Carregador sem fio para smartphones2",
+      "Sensor de estacionamento traseiro e dianteiro",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart Camera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Controle de velocidade adaptativo com função Stop & Go",
+      "Chave presencial Smart Key com telecomando de travamento das portas e do porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Banco traseiro com ajuste elétrico (2ª fileira)",
+      "Sensor de chuva",
+      "Abertura automática do porta-malas",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia blueNav®",
+      "Central multimídia de 12,3\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e ao histórico de chamadas",
+      "Sistema de som premium Infinity®",
+      "Com 12 alto-falantes",
+      "Controles de áudio e Bluetooth® no volante com reconhecimento de voz",
+      "Antena tipo barbatana",
+      "1 Couro sintético de alta qualidade",
+      "2 Disponível para aparelhos com tecnologia de carregamento sem fio (wireless)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Tucson",
+   "trims": [],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "title": "Tucson 2025 · Tucson",
+   "page": "https://web.archive.org/web/20251009090725/https://www.hyundai.com.br/content/dam/hmb/cars/tucson/2024/catalog/TUCSON_Catalogo_Digital.pdf",
+   "file": "tucson-catalogo-digital.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal cromada",
+      "Faróis em LED (full LED)",
+      "Faróis de luz diurna (DRL) em LED",
+      "Faróis de neblina dianteiros",
+      "Lanternas em LED",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas cromadas",
+      "Moldura inferior dos vidros cromada",
+      "Barras de teto longitudinais",
+      "Rodas de liga leve diamantada de 18”, pneus 225/55 R18"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos com tela de 4.2”",
+      "Bancos revestidos em couro1",
+      "Volante revestido em couro",
+      "Manopla de câmbio revestida em couro",
+      "Console central revestido em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags frontal duplo, lateral de tórax e de cortina",
+      "Freios ABS com EBD",
+      "Controles de estabilidade eletrônico (ESP)",
+      "Controles de tração (TCS)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Assistente de partida em rampa (HAC)",
+      "Assistente de Descida em Rampa (HDC)",
+      "Alerta de tráfego cruzado traseiro (RCCW)",
+      "Alerta de ponto cego (BSD)",
+      "Monitoramento de pressão dos pneus (TPMS)",
+      "Fixação Isofix® com top tether para cadeirinha de bebê",
+      "Alerta sonoro de não colocação do cinto de segurança para motorista e passageiros"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital dual zone",
+      "Saída de ar para o banco traseiro",
+      "Teto solar panorâmico",
+      "Banco do motorista com ajuste elétrico (altura, distância e lombar)",
+      "Banco do passageiro com ajuste elétrico (altura e distância)",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento para o motorista",
+      "Espelho interno eletrocrômico",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico",
+      "Retrovisores externos com função antiembaçante",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Câmera de ré",
+      "Sensor de estacionamento traseiro",
+      "Sensor de estacionamento dianteiro",
+      "Piloto automático",
+      "Seleção do modo de direção (Comfort, ECO e Sport)",
+      "Abertura do porta-malas por aproximação",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Sistema de áudio",
+      "Central multimídia com tela touchscreen de 9” polegadas, conetividade com smartphone",
+      "Apple CarPlay® e Google Android Auto, conexão Bluetooth®, comandos de voz e comandos no volante.",
+      "Entrada USB no console central",
+      "Carregador sem-fio para smartphones2",
+      "Alto falante dianteiro e traseiros (x4)",
+      "Tweeter (x2)",
+      "1 Couro sintético de alta qualidade",
+      "2 Smarthone deve ser compatível com a tecnlogia QI"
+     ]
+    }
+   ]
   },
   {
    "brand": "toyota",

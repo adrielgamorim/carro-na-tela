@@ -3,6 +3,7 @@
 // PDFs saved under a site, and each is fetched from the archive as saved.
 //
 //   npm run fichas:wayback -- --site=toyotacomunica.com.br/wp-content/uploads --pasta=toyota
+//   npm run fichas:wayback -- --site=hyundai.com.br --pasta=hyundai --nomes="ficha|catalogo|cat%C3%A1logo"
 //
 // Only names that look like a sheet or a list ("ficha", "técnica",
 // "equipamentos"); the newest copy of each. One request every 3 s, which the
@@ -14,7 +15,7 @@ import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { writeFileRetrying } from "../write-file.ts";
 
-const { values } = parseArgs({ options: { site: { type: "string" }, pasta: { type: "string" } } });
+const { values } = parseArgs({ options: { site: { type: "string" }, pasta: { type: "string" }, nomes: { type: "string" } } });
 if (!values.site || !values.pasta) throw new Error("use --site=<domínio/caminho> --pasta=<nome>");
 const headers = { "user-agent": "carro-na-tela/1.0 (https://github.com/adrielgamorim/carro-na-tela)" };
 const delayMs = 3000;
@@ -31,11 +32,13 @@ export interface WaybackFile {
   archived: string;
 }
 
-const wanted = /ficha|t[eé]cnica|tecnica|equipamento/i;
+// --nomes=<regex> for brands that name them otherwise ("Catalogo_Digital").
+const wanted = new RegExp(values.nomes ?? "ficha|t[eé]cnica|tecnica|equipamento", "i");
 
 /** "…/2020/10/Ficha-Tecnica-Hilux-2024-1.pdf" → "2020-10-ficha-tecnica-hilux-2024-1.pdf" (two months may share a name). */
 export function waybackFileName(original: string): string {
-  const path = decodeURIComponent(original.split("/uploads/")[1] ?? original.split("/").pop() ?? "ficha.pdf");
+  const address = original.split("?")[0]!;
+  const path = decodeURIComponent(address.split("/uploads/")[1] ?? address.split("/").pop() ?? "ficha.pdf");
   return path
     .normalize("NFD")
     .replace(/\p{M}/gu, "")
@@ -67,7 +70,8 @@ const newest = new Map<string, string>();
 for (const line of listing.split("\n")) {
   const [timestamp, original] = line.trim().split(" ");
   if (!timestamp || !original || !wanted.test(decodeURIComponent(original))) continue;
-  const key = original.replace(/^https?:\/\/(www\.)?/, "");
+  // Without the scheme, "www." or tracking parameters ("?gad_source=…"): one file, one key.
+  const key = original.replace(/^https?:\/\/(www\.)?/, "").split("?")[0]!;
   if ((newest.get(key)?.split(" ")[0] ?? "") < timestamp) newest.set(key, `${timestamp} ${original}`);
 }
 

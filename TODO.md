@@ -33,10 +33,11 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       Toyota feita (59 PDFs de 2018–2025, lidos por `scripts/fichas/toyota.ts`); faltam as listas
       sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020). Outras marcas (out/2026): vw.com.br
       tem ~30 PDFs distintos (suplementos de manual de Taos e Jetta, fichas de 2004–2016; pouco);
-      ford.com.br tem 79 antigos (`binario.asp`, ~2010). Valem a pena: hyundai.com.br (112:
-      catálogos por versão de HB20, HB20S, Creta, Kona, Palisade, Ioniq 5 de 2024–2026, e fichas
-      técnicas com equipamentos do Creta 25/26) e honda.com.br (78: catálogos de City, HR-V, WR-V,
-      Fit, CR-V, Civic de 2015–2025); são folhetos, cada marca pede um leitor como o da Toyota.
+      ford.com.br tem 79 antigos (`binario.asp`, ~2010). Hyundai feita (catálogos por versão de
+      HB20, HB20S, Creta, Kona… de 2024–2026, lidos por `scripts/fichas/hyundai.ts`); faltam as
+      tabelas `ficha-tecnica-equipamentos-…` do Creta 25/26 (várias versões lado a lado) e os PDFs
+      danificados no arquivo. Falta honda.com.br (78: catálogos de City, HR-V, WR-V, Fit, CR-V,
+      Civic de 2015–2025), que pede um leitor próprio.
       Nissan e Chevrolet: o arquivo estava fora do ar; repetir.
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
@@ -59,12 +60,13 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
       por km. Não há tabela aberta (out/2026): os sites das marcas consultam por modelo e CEP dentro
       dos seus apps, e as tabelas que aparecem são de reportagens antigas.
-- [ ] 🟢 Flickr (API com filtro de licença Creative Commons, chave grátis): mais fotos por ângulo,
+- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): `npm run fetch:openverse`
+      estava fora do ar (504); repetir. Mais fotos por ângulo,
       muitas de salões do automóvel no Brasil.
 - [ ] 🟢 Fotos de imprensa (VW: 27 por versão; Renault: 782 listadas; Toyota): só com permissão
       das assessorias (contatos nas salas de imprensa).
 - Bloqueadas ou sem arquivos: Toyota (download automático bloqueado), Chevrolet (sala de imprensa
-  com login), Ford, Mitsubishi e Hyundai (só notícias). Pagas: JATO (Carspecs), Suiv.
+  com login), Ford e Mitsubishi (só notícias; Hyundai só pelo Wayback). Pagas: JATO (Carspecs), Suiv.
 
 ### Produto
 

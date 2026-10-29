@@ -6,7 +6,7 @@
 
 import type { SheetSpecs } from "../../src/catalog/press.ts";
 
-export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis";
+export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai";
 export type Transmission = "automatico" | "manual";
 
 /** A sheet read from a press room's file (data/fichas/fichas-abertas.json). */
@@ -67,7 +67,7 @@ const numbersIn = (text: string) => [...plain(text).matchAll(new RegExp(numberPa
 
 // What a car's figures can be, to tell them from a table's other numbers.
 const ranges: Record<keyof SheetSpecs, [number, number]> = {
-  powerCv: [10, 900],
+  powerCv: [40, 900],
   torqueKgfm: [5, 160],
   weightKg: [400, 4500],
   lengthMm: [2000, 7500],
@@ -374,7 +374,7 @@ export function renaultSheets(rows: string[][], link: RenaultLink, modified: Dat
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [] };
+const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"] };
 
 export interface OpenSheetTarget {
   brand: string;
@@ -454,7 +454,12 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
   const automatic = /\b(aut|automatico|automatica|cvt|tiptronic|tipt|dsg|at\d?)\b|s.?tronic/.test(plain(target.name));
   const versionCab = cabIn(target.name);
   // A version word matches a trim it starts: "comfor" is "comfortline", "dyna" "dynamique", "prem" "premiere".
-  const names = (word: string) => nameWords.some((own) => own === word || (own.length >= 3 && word.startsWith(own.replace(/\.$/, ""))));
+  // A two-letter abbreviation counts for a long word only: "ed" for "edition", not "cd" for "cdi".
+  const names = (word: string) =>
+    nameWords.some(
+      (own) =>
+        own === word || ((own.length >= 3 || (own.length === 2 && word.length >= 5)) && word.startsWith(own.replace(/\.$/, ""))),
+    );
   const ofBrand = sheets.filter((sheet) => (sheet.fipeBrands ?? fipeBrands[sheet.brand]).includes(target.brand));
   const fitting: { sheet: T; score: number }[] = [];
   for (const sheet of ofBrand) {
@@ -477,6 +482,8 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     if (sheet.cab && sheet.cab !== (versionCab ?? "cs")) continue;
     const named = sheet.trims.filter(names).length;
     if ((trimNamed || sheet.onlyNamed) && !named) continue;
+    // Equipment is of the trim it names, all of it: "Comfort Plus" is not the Comfort's.
+    if (trimNamed && named < sheet.trims.length) continue;
     // From the year it starts: of two sheets for 2024 (2023–2024, 2024–2025), the 2024 one.
     const distance = Math.abs(target.modelYear - sheet.years[0]);
     // One that says the engine and the gearbox (and they fit) over one that leaves them open; less than a year.

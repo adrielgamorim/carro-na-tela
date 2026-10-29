@@ -1,6 +1,1548 @@
 {
- "_doc": "Números das fichas técnicas da Volkswagen, da Renault e da Toyota (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault e de data/fichas/toyota.json.",
+ "_doc": "Números das fichas técnicas da Volkswagen, da Renault, da Toyota e da Hyundai (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota e hyundai e de data/fichas/toyota.json.",
  "sheets": [
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "action"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2021 · CRETA Action 1.6",
+   "page": "https://web.archive.org/web/20240518234527/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ACTION_mobile.pdf",
+   "url": "https://web.archive.org/web/20240518234527/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ACTION_mobile.pdf",
+   "file": "catalogo-creta-action-mobile.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 11.9,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "attitude"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Creta 2021 · CRETA Attitude 1.6",
+   "page": "https://web.archive.org/web/20210723174403/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ATTITUDE_mobile.pdf",
+   "url": "https://web.archive.org/web/20210723174403/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_ATTITUDE_mobile.pdf",
+   "file": "catalogo-creta-attitude-mobile.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 11.9,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2021 · CRETA Limited",
+   "page": "https://web.archive.org/web/20210723174449/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_mobile_LIMITED.pdf",
+   "url": "https://web.archive.org/web/20210723174449/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_mobile_LIMITED.pdf",
+   "file": "catalogo-creta-mobile-limited.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 11.9,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "prestige"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": false,
+   "electric": false,
+   "title": "Creta 2021 · Creta prestige",
+   "page": "https://web.archive.org/web/20210723174408/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_PRESTIGE_mobile.pdf",
+   "url": "https://web.archive.org/web/20210723174408/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_PRESTIGE_mobile.pdf",
+   "file": "catalogo-creta-prestige-mobile.pdf",
+   "specs": {
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "smart",
+    "plus"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2021 · CRETA Smart Plus",
+   "page": "https://web.archive.org/web/20210723175514/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_SMART_PLUS.pdf",
+   "url": "https://web.archive.org/web/20210723175514/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_creta_SMART_PLUS.pdf",
+   "file": "catalogo-creta-smart-plus.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 11.9,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [],
+   "years": [
+    2022,
+    2022
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2022 · Creta",
+   "page": "https://web.archive.org/web/20240517183256/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_creta_2022.pdf",
+   "url": "https://web.archive.org/web/20240517183256/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_creta_2022.pdf",
+   "file": "catalogo-digital-creta-2022.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "action"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2024 · CRETA Action",
+   "page": "https://web.archive.org/web/20240517175120/https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/catalogo_digital_CRETA%20Action%202024.pdf",
+   "url": "https://web.archive.org/web/20240517175120/https://hyundai.com.br/content/dam/hmb/cars/creta/creta-action/catalogo_digital_CRETA%20Action%202024.pdf",
+   "file": "catalogo-digital-creta-action-2024.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 12,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2024 · CRETA Comfort Plus",
+   "page": "https://web.archive.org/web/20250120113442/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA%20Comfort%202024.pdf",
+   "url": "https://web.archive.org/web/20250120113442/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA%20Comfort%202024.pdf",
+   "file": "catalogo-digital-creta-comfort-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "limited",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2024 · CRETA Limited Safety",
+   "page": "https://web.archive.org/web/20250120111340/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_LIMITED_Safety_2024.pdf",
+   "url": "https://web.archive.org/web/20250120111340/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_LIMITED_Safety_2024.pdf",
+   "file": "catalogo-digital-creta-limited-safety-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2024 · CRETA Platinum Safety",
+   "page": "https://web.archive.org/web/20250120090501/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_PLATINUM_Safety_2024.pdf",
+   "url": "https://web.archive.org/web/20250120090501/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_PLATINUM_Safety_2024.pdf",
+   "file": "catalogo-digital-creta-platinum-safety-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "title": "Creta 2024 · Creta ultimate",
+   "page": "https://web.archive.org/web/20250120101118/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_ULTIMATE_2024.pdf",
+   "url": "https://web.archive.org/web/20250120101118/https://www.hyundai.com.br/content/dam/hmb/cars/creta/2022/catalogos/catalogo_digital_CRETA_ULTIMATE_2024.pdf",
+   "file": "catalogo-digital-creta-ultimate-2024.pdf",
+   "specs": {
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2025 · Creta",
+   "page": "https://web.archive.org/web/20250723215913/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf",
+   "url": "https://web.archive.org/web/20250723215913/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf",
+   "file": "catalogo-digital-novo-hyundai-creta-2425-2.pdf",
+   "specs": {
+    "powerCv": 193,
+    "torqueKgfm": 27,
+    "topSpeedKmh": 210,
+    "zeroTo100s": 7.8,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "action"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2025 · CRETA Action",
+   "page": "https://web.archive.org/web/20241126223219/https://www.hyundai.com.br/content/dam/hmb/cars/creta-action/catalog/catalogo_digital_CRETA_Action_2025.pdf",
+   "url": "https://web.archive.org/web/20241126223219/https://www.hyundai.com.br/content/dam/hmb/cars/creta-action/catalog/catalogo_digital_CRETA_Action_2025.pdf",
+   "file": "catalogo-digital-creta-action-2025.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 16.5,
+    "topSpeedKmh": 172,
+    "zeroTo100s": 12,
+    "lengthMm": 4290,
+    "wheelbaseMm": 2590,
+    "widthMm": 1780,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Creta 2025 · CRETA Comfort",
+   "page": "https://web.archive.org/web/20241213023509/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_Comfort_2025.pdf",
+   "url": "https://web.archive.org/web/20241213023509/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_Comfort_2025.pdf",
+   "file": "catalogo-digital-creta-comfort-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2025 · CRETA Limited",
+   "page": "https://web.archive.org/web/20241213021012/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_LIMITED_2025.pdf",
+   "url": "https://web.archive.org/web/20241213021012/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_LIMITED_2025.pdf",
+   "file": "catalogo-digital-creta-limited-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2025 · CRETA Platinum",
+   "page": "https://web.archive.org/web/20241213024256/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_PLATINUM_2025.pdf",
+   "url": "https://web.archive.org/web/20241213024256/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_PLATINUM_2025.pdf",
+   "file": "catalogo-digital-creta-platinum-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5,
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "title": "Creta 2025 · Creta ultimate",
+   "page": "https://web.archive.org/web/20241213032312/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_ULTIMATE_2025.pdf",
+   "url": "https://web.archive.org/web/20241213032312/https://www.hyundai.com.br/content/dam/hmb/cars/creta-nova-geracao/catalog/20241113/catalogo_digital_CRETA_ULTIMATE_2025.pdf",
+   "file": "catalogo-digital-creta-ultimate-2025.pdf",
+   "specs": {
+    "lengthMm": 4300,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2026 · Creta",
+   "page": "https://web.archive.org/web/20251009090610/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf",
+   "url": "https://web.archive.org/web/20251009090610/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf",
+   "file": "catalogo-digital-novo-creta-my25-26.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 175,
+    "zeroTo100s": 11.6,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "comfort",
+    "safety"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2026 · Creta comfort safety",
+   "page": "https://web.archive.org/web/20251118171209/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_Safety_MY_25-26.pdf",
+   "url": "https://web.archive.org/web/20251118171209/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Comfort_Safety_MY_25-26.pdf",
+   "file": "catalogo-digital-novo-creta-comfort-safety-my-25-26.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 175,
+    "zeroTo100s": 11.6,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "Creta 2026 · Creta ultimate",
+   "page": "https://web.archive.org/web/20261014205403/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf",
+   "url": "https://web.archive.org/web/20261014205403/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf",
+   "file": "catalogo-digital-novo-creta-ultimate-my-25-26.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 175,
+    "zeroTo100s": 11.6,
+    "lengthMm": 4330,
+    "wheelbaseMm": 2610,
+    "widthMm": 1790,
+    "heightMm": 1635
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "diamond"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2022 · HB20 diamond",
+   "page": "https://web.archive.org/web/20240630105933/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_digital.pdf",
+   "url": "https://web.archive.org/web/20240630105933/https://www.hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Diamond_digital.pdf",
+   "file": "catalogo-hb20-diamond-digital.pdf",
+   "specs": {
+    "lengthMm": 3940,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense",
+    "mt"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2022 · HB20 Sense 1.0 MT",
+   "page": "https://web.archive.org/web/20210823033105/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sense_digital.pdf",
+   "url": "https://web.archive.org/web/20210823033105/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Sense_digital.pdf",
+   "file": "catalogo-hb20-sense-digital.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 3940,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "vision"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "title": "HB20 2022 · HB20 Vision",
+   "page": "https://web.archive.org/web/20210820142912/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_1.6_auto_manu_digital.pdf",
+   "url": "https://web.archive.org/web/20210820142912/https://hyundai.com.br/content/dam/hmb/cat%C3%A1logos/catalogo_HB20_Vision_1.6_auto_manu_digital.pdf",
+   "file": "catalogo-hb20-vision-1-6-auto-manu-digital.pdf",
+   "specs": {
+    "torqueKgfm": 16,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.5,
+    "lengthMm": 3940,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "title": "HB20 2024 · HB20 comfort plus",
+   "page": "https://web.archive.org/web/20240903193053/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus%20TGDI_2024.pdf",
+   "url": "https://web.archive.org/web/20240903193053/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus%20TGDI_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2024.pdf",
+   "specs": {
+    "topSpeedKmh": 192,
+    "zeroTo100s": 9.3,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Comfort Plus",
+   "page": "https://web.archive.org/web/20240903021946/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20240903021946/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Comfort%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2024.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Limited Plus",
+   "page": "https://web.archive.org/web/20241004123517/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Limited%20Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20241004123517/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Limited%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2024.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 Platinum",
+   "page": "https://web.archive.org/web/20250424005905/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_2024.pdf",
+   "url": "https://web.archive.org/web/20250424005905/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 Platinum Plus",
+   "page": "https://web.archive.org/web/20250424005657/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20250424005657/https://hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-plus-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 platinum safety",
+   "page": "https://web.archive.org/web/20240904115654/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2024.pdf",
+   "url": "https://web.archive.org/web/20240904115654/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Platinum_Safety_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-safety-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2024 · HB20 sense",
+   "page": "https://web.archive.org/web/20240901231338/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20TGDI_2024.pdf",
+   "url": "https://web.archive.org/web/20240901231338/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20TGDI_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-tgdi-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2024 · HB20 Sense Plus",
+   "page": "https://web.archive.org/web/20240924083706/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20240924083706/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2023/catalogos/Catalogo_DIgital_Novo_HB20_Sense%20Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2024.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 Comfort",
+   "page": "https://web.archive.org/web/20250424004810/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "url": "https://web.archive.org/web/20250424004810/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 comfort plus",
+   "page": "https://web.archive.org/web/20250424000755/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf",
+   "url": "https://web.archive.org/web/20250424000755/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_TGDI_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-tgdi-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Comfort Plus",
+   "page": "https://web.archive.org/web/20250424001759/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_2025.pdf",
+   "url": "https://web.archive.org/web/20250424001759/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Comfort_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-comfort-plus-2025.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Limited Plus",
+   "page": "https://web.archive.org/web/20250424011328/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Limited_Plus_2025.pdf",
+   "url": "https://web.archive.org/web/20250424011328/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Limited_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-plus-2025.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sense",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2025 · HB20 Sense Plus",
+   "page": "https://web.archive.org/web/20250424002607/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Sense_Plus_2025.pdf",
+   "url": "https://web.archive.org/web/20250424002607/https://hyundai.com.br/content/dam/hmb/cars/hb20/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20_Sense_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20-sense-plus-2025.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2025 · HB20 Sport",
+   "page": "https://web.archive.org/web/20241213032932/https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/20241113/Catalogo_digital_CRETA_N_Line_2025.pdf",
+   "url": "https://web.archive.org/web/20241213032932/https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/catalog/20241113/Catalogo_digital_CRETA_N_Line_2025.pdf",
+   "file": "catalogo-digital-creta-n-line-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 11.5
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20 2026 · HB20 Limited",
+   "page": "https://web.archive.org/web/20261021233425/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/catalogos/Catalogo_DIgital_Novo_HB20_Limited_25_26.pdf",
+   "url": "https://web.archive.org/web/20261021233425/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/catalogos/Catalogo_DIgital_Novo_HB20_Limited_25_26.pdf",
+   "file": "catalogo-digital-novo-hb20-limited-25-26.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20 2027 · HB20 platinum",
+   "page": "https://web.archive.org/web/20260802090004/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2026-2027/catalogos/Catalogo_Digital_Novo_HB20_Platinum_26_27.pdf",
+   "url": "https://web.archive.org/web/20260802090004/https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2026-2027/catalogos/Catalogo_Digital_Novo_HB20_Platinum_26_27.pdf",
+   "file": "catalogo-digital-novo-hb20-platinum-26-27.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4015,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 300
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2024 · HB20S comfort plus",
+   "page": "https://web.archive.org/web/20241125213029/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Comfort_Plus_2024%20.pdf",
+   "url": "https://web.archive.org/web/20241125213029/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Comfort_Plus_2024%20.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2024.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 162,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2024 · HB20S limited plus",
+   "page": "https://web.archive.org/web/20241125132302/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20241125132302/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_DIgital_Novo_HB20S_Limited_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2024.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 162,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S Platinum",
+   "page": "https://web.archive.org/web/20240809231346/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_2024.pdf",
+   "url": "https://web.archive.org/web/20240809231346/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "plus"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S Platinum Plus",
+   "page": "https://web.archive.org/web/20240809233804/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Plus_2024.pdf",
+   "url": "https://web.archive.org/web/20240809233804/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Plus_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-plus-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2024 · HB20S platinum safety",
+   "page": "https://web.archive.org/web/20241125165000/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2024.pdf",
+   "url": "https://web.archive.org/web/20241125165000/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2022/produto/catalogo/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2024.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2024.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2025 · HB20S Comfort",
+   "page": "https://web.archive.org/web/20250316102525/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "url": "https://web.archive.org/web/20250316102525/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Comfort_Plus_Tech_TGDI_2025_JANEIRO.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-tech-tgdi-2025-janeiro.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "comfort",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2025 · HB20S comfort plus",
+   "page": "https://web.archive.org/web/20241213024645/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf",
+   "url": "https://web.archive.org/web/20241213024645/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Comfort_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-comfort-plus-2025.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 162,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "limited",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "HB20S 2025 · HB20S limited plus",
+   "page": "https://web.archive.org/web/20241213033519/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Limited_Plus_2025.pdf",
+   "url": "https://web.archive.org/web/20241213033519/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/20241113/Catalogo_Digital_Novo_HB20S_Limited_Plus_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-limited-plus-2025.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.2,
+    "topSpeedKmh": 162,
+    "zeroTo100s": 14.5,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "HB20S",
+   "trims": [
+    "platinum",
+    "safety"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HB20S 2025 · HB20S platinum safety",
+   "page": "https://web.archive.org/web/20250316092024/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "url": "https://web.archive.org/web/20250316092024/https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2024-2025/catalog/13012025/Catalogo_Digital_Novo_HB20S_Platinum_Safety_2025.pdf",
+   "file": "catalogo-digital-novo-hb20s-platinum-safety-2025.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 17.5,
+    "topSpeedKmh": 191,
+    "zeroTo100s": 10.7,
+    "lengthMm": 4325,
+    "wheelbaseMm": 2530,
+    "widthMm": 1720,
+    "heightMm": 1470,
+    "trunkLiters": 475
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Ioniq 5",
+   "trims": [
+    "ioniq"
+   ],
+   "years": [
+    2025,
+    2025
+   ],
+   "turbo": false,
+   "electric": true,
+   "title": "Ioniq 5 2025 · IONIQ 5",
+   "page": "https://web.archive.org/web/20251009090624/https://www.hyundai.com.br/content/dam/hmb/cars/ioniq/catalog/Catalogo_Digital_IONIQ%205_2025.pdf",
+   "url": "https://web.archive.org/web/20251009090624/https://www.hyundai.com.br/content/dam/hmb/cars/ioniq/catalog/Catalogo_Digital_IONIQ%205_2025.pdf",
+   "file": "catalogo-digital-ioniq-5-2025.pdf",
+   "specs": {
+    "powerCv": 325,
+    "topSpeedKmh": 185,
+    "zeroTo100s": 5.3,
+    "lengthMm": 4655,
+    "wheelbaseMm": 3000,
+    "widthMm": 1890,
+    "heightMm": 1605
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Kona",
+   "trims": [
+    "hibrido"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "title": "Kona 2026 · KONA Híbrido",
+   "page": "https://web.archive.org/web/20251009090636/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hibrido_2025.pdf",
+   "url": "https://web.archive.org/web/20251009090636/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hibrido_2025.pdf",
+   "file": "catalogo-digital-novo-hyundai-kona-hibrido-2025.pdf",
+   "specs": {
+    "lengthMm": 4350,
+    "wheelbaseMm": 2660,
+    "widthMm": 1825,
+    "heightMm": 1580
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Kona",
+   "trims": [
+    "hybrid"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "turbo": false,
+   "electric": false,
+   "hybrid": true,
+   "title": "Kona 2026 · KONA Hybrid",
+   "page": "https://web.archive.org/web/20251009090716/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hybrid_2025.pdf",
+   "url": "https://web.archive.org/web/20251009090716/https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/download/Catalogo_Digital_Novo_Hyundai_KONA_Hybrid_2025.pdf",
+   "file": "catalogo-digital-novo-hyundai-kona-hybrid-2025.pdf",
+   "specs": {
+    "lengthMm": 4350,
+    "wheelbaseMm": 2660,
+    "widthMm": 1825,
+    "heightMm": 1580
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Palisade",
+   "trims": [],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 3.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Palisade 2025 · Palisade",
+   "page": "https://web.archive.org/web/20250316094142/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/catalogo_digital_Palisade.pdf",
+   "url": "https://web.archive.org/web/20250316094142/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/catalogo_digital_Palisade.pdf",
+   "file": "catalogo-digital-palisade.pdf",
+   "specs": {
+    "topSpeedKmh": 210,
+    "zeroTo100s": 7.7,
+    "lengthMm": 4995,
+    "wheelbaseMm": 2900,
+    "widthMm": 1975,
+    "heightMm": 1750
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Palisade",
+   "trims": [],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 3.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Palisade 2026 · Palisade",
+   "page": "https://web.archive.org/web/20250723141842/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/Catalogo_digital_Palisade_25_26.pdf",
+   "url": "https://web.archive.org/web/20250723141842/https://www.hyundai.com.br/content/dam/hmb/cars/palisade/catalogo/Catalogo_digital_Palisade_25_26.pdf",
+   "file": "catalogo-digital-palisade-25-26.pdf",
+   "specs": {
+    "topSpeedKmh": 210,
+    "zeroTo100s": 7.7,
+    "lengthMm": 4995,
+    "wheelbaseMm": 2900,
+    "widthMm": 1975,
+    "heightMm": 1750
+   }
+  },
+  {
+   "brand": "hyundai",
+   "line": "Tucson",
+   "trims": [],
+   "years": [
+    2025,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "title": "Tucson 2025 · Tucson",
+   "page": "https://web.archive.org/web/20251009090725/https://www.hyundai.com.br/content/dam/hmb/cars/tucson/2024/catalog/TUCSON_Catalogo_Digital.pdf",
+   "url": "https://web.archive.org/web/20251009090725/https://www.hyundai.com.br/content/dam/hmb/cars/tucson/2024/catalog/TUCSON_Catalogo_Digital.pdf",
+   "file": "tucson-catalogo-digital.pdf",
+   "specs": {
+    "topSpeedKmh": 201,
+    "zeroTo100s": 8.9,
+    "lengthMm": 4480,
+    "wheelbaseMm": 2670,
+    "widthMm": 1850,
+    "heightMm": 1660
+   }
+  },
   {
    "brand": "renault",
    "line": "Captur",
@@ -835,7 +2377,6 @@
    "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-13-490.xlsx",
    "file": "13-fluence-ze-pt.xlsx",
    "specs": {
-    "powerCv": 17,
     "torqueKgfm": 7.14,
     "weightKg": 445,
     "lengthMm": 2320,
