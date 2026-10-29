@@ -11,11 +11,13 @@
 import { mkdir, readdir } from "node:fs/promises";
 import { join } from "node:path";
 import { writeFileRetrying } from "../write-file.ts";
+import { brochureFile } from "./renault-brochure.ts";
 
 const site = "https://imprensa.renault.com.br";
 const headers = { "user-agent": "carro-na-tela/1.0 (https://github.com/adrielgamorim/carro-na-tela)" };
 const delayMs = 1500;
 const sheetDir = "data/fichas/renault";
+const brochureDir = "data/fichas/renault/folhetos";
 
 export interface RenaultSheetLink {
   id: number;
@@ -100,10 +102,28 @@ for (const link of links) {
   downloaded++;
 }
 
+// The brochures, for the equipment by version (npm run fichas:abertas reads them).
+await mkdir(brochureDir, { recursive: true });
+const haveBrochures = new Set(await readdir(brochureDir));
+let brochures = 0;
+for (const url of new Set(links.map((link) => link.brochure))) {
+  const file = url && brochureFile(url);
+  if (!file || haveBrochures.has(file)) continue;
+  await new Promise((resolve) => setTimeout(resolve, delayMs));
+  const response = await fetch(url.split("#")[0]!, { headers }).catch(() => undefined);
+  if (!response?.ok) {
+    console.log(`  ${file}: ${response?.status ?? "sem resposta"} ao baixar o folheto`);
+    continue;
+  }
+  await writeFileRetrying(join(brochureDir, file), new Uint8Array(await response.arrayBuffer()));
+  haveBrochures.add(file);
+  brochures++;
+}
+
 await writeFileRetrying(
   "data/fichas/renault-links.json",
   `${JSON.stringify({ generatedAt: new Date().toISOString(), links }, null, 1)}\n`,
 );
 const withSheet = links.filter((link) => link.excel).length;
 const photos = links.reduce((sum, link) => sum + link.photos, 0);
-console.log(`${links.length} veículos, ${withSheet} com planilha; ${downloaded} planilhas novas em ${sheetDir}; ${photos} fotos listadas`);
+console.log(`${links.length} veículos, ${withSheet} com planilha; ${downloaded} planilhas e ${brochures} folhetos novos em ${sheetDir}; ${photos} fotos listadas`);

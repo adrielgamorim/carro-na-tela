@@ -8,43 +8,42 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Completar a varredura dos anos antigos: a listagem agora desce até 1985 (os preços de 2009
-      em diante estão em 98%). Quando terminar, rodar `fetch:wikidata`, `fetch:galeria` e
-      `build:catalog` para os modelos novos.
+- [ ] 🔴 Completar a varredura dos anos antigos: a listagem até 1985 terminou (30.551 versões-ano,
+      `listingComplete`); faltam os preços, que o daily busca conforme a cota da FIPE. Quando
+      terminarem, rodar `fetch:wikidata`, `fetch:galeria` e `build:catalog` para os modelos novos.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fotos que ainda faltam: 104 versões, quase todas utilitários e marcas de nicho sem artigo
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
       (a reserva é por linha, e a FIPE chama as duas só de "SERES").
-- [ ] 🟢 Fase 4, o que falta: fichas de outras marcas e equipamentos por versão. VW e Renault já
-      entram (`fichas:vw`, `fichas:renault`, `fichas:abertas`), mas as da VW são de 2017–2020 e o
-      menu público só tem os modelos atuais. Equipamentos por versão: só as listas da Renault
-      (Kardian, Logan, Sandero, Sandero R.S., Stepway); faltam os folhetos em PDF da Renault
-      (`brochure` em `data/fichas/renault-links.json`) e os releases das outras marcas.
-      Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
+- [ ] 🟢 Fase 4, o que falta: fichas de outras marcas (Honda, Chevrolet, Nissan, Ford…) e
+      equipamentos dos folhetos que listam em texto. As fichas da VW são de 2017–2020 e o menu
+      público só tem os modelos atuais. Revisar `npm run extract:imprensa` de vez em quando para
+      os releases novos.
+- [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
+      aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
+      vans só pelo nome da carroceria). Faltam as linhas fora do catálogo e o comprimento das vans
+      (Cargo "Curto" ou "Médio" contra L1H1, L4H2). O documento 322 está indisponível no site.
 
 ### Fontes de dados a explorar
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Wayback Machine (web.archive.org): guarda arquivos que sumiram dos sites das marcas.
-      `npm run fichas:wayback -- --site=<domínio/caminho> --pasta=<nome>` baixa os PDFs salvos.
-      Toyota feita (59 PDFs de 2018–2025, lidos por `scripts/fichas/toyota.ts`); faltam as listas
-      sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020). Outras marcas (out/2026): vw.com.br
-      tem ~30 PDFs distintos (suplementos de manual de Taos e Jetta, fichas de 2004–2016; pouco);
-      ford.com.br tem 79 antigos (`binario.asp`, ~2010). Hyundai feita (catálogos por versão de
-      HB20, HB20S, Creta, Kona… de 2024–2026, lidos por `scripts/fichas/hyundai.ts`); faltam as
-      tabelas `ficha-tecnica-equipamentos-…` do Creta 25/26 (várias versões lado a lado) e os PDFs
-      danificados no arquivo. Falta honda.com.br (78: catálogos de City, HR-V, WR-V, Fit, CR-V,
-      Civic de 2015–2025), que pede um leitor próprio.
-      Nissan e Chevrolet: o arquivo estava fora do ar; repetir.
+- [ ] 🟡 Wayback Machine (web.archive.org), o que falta (Toyota e Hyundai feitas, ver Concluído):
+      honda.com.br (117 PDFs com "catálogo"/"ficha" no nome: City, HR-V, WR-V, Fit, CR-V, Civic de
+      2015–2025), que pede um leitor próprio; chevrolet.com.br (13). Em 29/10/2026 o arquivo estava
+      fora do ar ("Temporarily Offline"); repetir. nissan.com.br não tem nenhum. Também faltam as
+      listas da Toyota sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020), as tabelas
+      `ficha-tecnica-equipamentos-…` do Creta 25/26 (várias versões lado a lado) e os PDFs da
+      Hyundai danificados no arquivo. Pouco útil: vw.com.br (~30, suplementos de manual e fichas de
+      2004–2016) e ford.com.br (79 antigos, `binario.asp`, ~2010).
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
-- [ ] 🟡 Folhetos e catálogos em PDF: os da Renault estão em `brochure` de
-      `data/fichas/renault-links.json`; dão equipamentos por versão de Duster, Kwid, Captur, Oroch…
-      Os recentes terminam com "ficha técnica | lista de equipamentos" lado a lado na mesma página
-      (as linhas das duas tabelas se intercalam): separar por posição antes de ler, como na Toyota.
+- [ ] 🟢 Folhetos da Renault, o que falta (os com tabela já entram, ver Concluído): os que listam os
+      equipamentos em texto, versão por versão ("Zen", "além da Life: …"): Captur 2021, Logan e
+      Stepway 2024, Kwid E-Tech; a Master 2022 tem duas tabelas lado a lado. Os folhetos antigos
+      em `www.cdn.renault.com` (Clio, Fluence, Sandero 2019, Oroch, Kangoo, Master) não respondem mais.
 - [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
       tem Akamai): conferir robots.txt e o bloqueio de cada uma.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
@@ -60,9 +59,9 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
       por km. Não há tabela aberta (out/2026): os sites das marcas consultam por modelo e CEP dentro
       dos seus apps, e as tabelas que aparecem são de reportagens antigas.
-- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): `npm run fetch:openverse`
-      estava fora do ar (504); repetir. Mais fotos por ângulo,
-      muitas de salões do automóvel no Brasil.
+- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): o código e a galeria
+      já aceitam as fotos, mas a busca da Openverse não respondia em 29/10/2026; rodar
+      `npm run fetch:openverse` de novo. Mais fotos por ângulo, muitas de salões do automóvel no Brasil.
 - [ ] 🟢 Fotos de imprensa (VW: 27 por versão; Renault: 782 listadas; Toyota): só com permissão
       das assessorias (contatos nas salas de imprensa).
 - Bloqueadas ou sem arquivos: Toyota (download automático bloqueado), Chevrolet (sala de imprensa
@@ -80,11 +79,6 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       Medir de novo quando entrarem motos e caminhões.
 - [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
 
-- [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
-      aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
-      vans só pelo nome da carroceria). Faltam as linhas fora do catálogo e o comprimento das vans
-      (Cargo "Curto" ou "Médio" contra L1H1, L4H2). O documento 322 está indisponível no site.
-
 ## Futuro
 
 - Conta para sincronizar os favoritos entre aparelhos: login pelo Cloudflare Access (código por
@@ -98,6 +92,12 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ## Concluído
 
+- [x] Equipamentos e fichas de outras marcas: Toyota (59 PDFs de 2018–2025) e Hyundai (catálogos por
+      versão de HB20, HB20S, Creta, Kona… de 2024–2026) pelo Wayback Machine (`npm run fichas:wayback`,
+      `scripts/fichas/toyota.ts` e `hyundai.ts`), e as tabelas de equipamentos dos folhetos da
+      Renault (Duster 2021 e 2025, Kwid 2024, Kangoo 2024, `scripts/fichas/renault-brochure.ts`;
+      `fichas:renault` baixa os folhetos). Fichas em 755 anos-modelo de 344 versões; equipamentos
+      em 216 anos-modelo de 83 versões.
 - [x] Segurança e seguro na ficha: estrelas da Latin NCAP da linha (`npm run fetch:latinncap`, 198 testes,
       do ano antes do teste a cinco depois) e seguro estimado e roubos por mil da SUSEP AUTOSEG
       (`npm run fetch:seguro`, 2021, por código FIPE; a taxa do prêmio sobre o valor segurado vai
@@ -107,7 +107,7 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       dos PDFs (dois formatos) e casamento com as versões FIPE; 458 fichas lidas dão números exatos a
       263 anos-modelo de 120 versões, na ficha e no comparador.
 - [x] Galeria de fotos na página da versão: até 8 fotos por geração do Wikimedia Commons, com ângulo
-      (frente, traseira, lateral, interior), crédito e vista ampliada. 8.243 fotos de 539 modelos.
+      (frente, traseira, lateral, interior), crédito e vista ampliada. 11.661 fotos de 548 modelos.
 - [x] Favoritos no navegador: estrela no card e na página da versão, aba Favoritos com a variação da
       FIPE desde que o carro foi marcado e "Comparar favoritos" (até 4).
 - [x] Geração pela versão: quando as gerações se sobrepõem, a primeira palavra depois da linha

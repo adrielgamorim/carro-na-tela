@@ -1,5 +1,5 @@
 {
- "_doc": "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
+ "_doc": "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas e folhetos em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
  "lists": [
   {
    "brand": "renault",
@@ -1672,6 +1672,673 @@
      "name": "Transmissão",
      "items": [
       "Transmissão automática CVT"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2025 · Intense Plus 1.6 MT/CVT",
+   "trims": [
+    "intense",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
+   "file": "af-rma000425a-catalogo-duster-jan.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "6 airbags (frontal, laterais e de cortina)",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa (HSA)",
+      "Banco traseiro com 2 posições Isofix",
+      "Câmera de ré com linhas-guia dinâmicas",
+      "Sistema CAR - travamento central automático (+6 km/h) com destravamento em caso de colisão",
+      "Controle de estabilidade (ESP)",
+      "Controle de tração (TC)",
+      "Desembaçador traseiro",
+      "Desativação do airbag do passageiro",
+      "Faróis de neblina",
+      "Luzes de indicação de direção laterais",
+      "Luzes de circulação diurnas em LED",
+      "Protetor de cárter",
+      "Sensores de estacionamento traseiros",
+      "Regulagem manual de altura dos faróis"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "6 alto-falantes",
+      "4x USB (1x USB-A e 1x USB-C para os ocupantes frontais e 2x USB-C para os ocupantes traseiros)",
+      "Android Auto® e Apple CarPlay® sem fio",
+      "Comandos satélites de áudio",
+      "Eco Scoring + Eco Coaching",
+      "Novo painel de instrumentos TFT 3,5\"",
+      "Stop & Start"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2025 · Iconic Plus 1.6 CVT",
+   "trims": [
+    "iconic",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
+   "file": "af-rma000425a-catalogo-duster-jan.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "6 airbags (frontal, laterais e de cortina)",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa (HSA)",
+      "Banco traseiro com 2 posições Isofix",
+      "Câmera Multiview",
+      "Sistema CAR - travamento central automático (+6 km/h) com destravamento em caso de colisão",
+      "Controle de estabilidade (ESP)",
+      "Controle de tração (TC)",
+      "Desembaçador traseiro",
+      "Desativação do airbag do passageiro",
+      "Faróis de neblina",
+      "Luzes de indicação de direção laterais",
+      "Luzes de circulação diurnas em LED",
+      "Protetor de cárter",
+      "Sensor crepuscular e de chuva",
+      "Sensor de ponto cego",
+      "Sensores de estacionamento traseiros",
+      "Regulagem manual de altura dos faróis"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "6 alto-falantes",
+      "4x USB (1x USB-A e 1x USB-C para os ocupantes frontais e 2x USB-C para os ocupantes traseiros)",
+      "Android Auto® e Apple CarPlay® sem fio",
+      "Carregador de smartphone por indução",
+      "Comandos satélites de áudio",
+      "Eco Scoring + Eco Coaching",
+      "Função \"Follow me home\"",
+      "Novo painel de instrumentos TFT 3,5\"",
+      "Stop & Start"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2025 · Iconic Plus 1.3 TCe",
+   "trims": [
+    "iconic",
+    "plus"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.3,
+   "turbo": true,
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
+   "file": "af-rma000425a-catalogo-duster-jan.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "6 airbags (frontal, laterais e de cortina)",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa (HSA)",
+      "Banco traseiro com 2 posições Isofix",
+      "Câmera Multiview",
+      "Sistema CAR - travamento central automático (+6 km/h) com destravamento em caso de colisão",
+      "Controle de estabilidade (ESP)",
+      "Controle de tração (TC)",
+      "Desembaçador traseiro",
+      "Desativação do airbag do passageiro",
+      "Faróis de neblina",
+      "Luzes de indicação de direção laterais",
+      "Luzes de circulação diurnas em LED",
+      "Protetor de cárter",
+      "Sensor crepuscular e de chuva",
+      "Sensor de ponto cego",
+      "Sensores de estacionamento traseiros",
+      "Regulagem manual de altura dos faróis"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "6 alto-falantes",
+      "4x USB (1x USB-A e 1x USB-C para os ocupantes frontais e 2x USB-C para os ocupantes traseiros)",
+      "Android Auto® e Apple CarPlay® sem fio",
+      "Carregador de smartphone por indução",
+      "Comandos satélites de áudio",
+      "Eco Scoring + Eco Coaching",
+      "Função \"Follow me home\"",
+      "Novo painel de instrumentos TFT 3,5\"",
+      "Stop & Start"
+     ]
+    },
+    {
+     "name": "Pack adicional",
+     "items": [
+      "Pack Outsider (opcional)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid 2024 · ZEN",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/kwid/AF_RMA000724_Catalogo_Janeiro_Kwid.pdf.asset.pdf/15f0b3332e.pdf",
+   "file": "af-rma000724-catalogo-janeiro-kwid.pdf",
+   "groups": [
+    {
+     "name": "Segurança e dirigibilidade",
+     "items": [
+      "4 airbags (2 frontais e 2 laterais)",
+      "2 Isofix",
+      "Ajuste de altura dos cintos de segurança nos bancos dianteiros",
+      "Alerta visual e sonoro de não utilização do cinto de segurança",
+      "Assistente de partida em rampa (HSA)",
+      "Cintos de segurança dianteiros e traseiros de 3 pontos",
+      "Controle eletrônico de estabilidade (ESP)",
+      "Desembaçador do vidro traseiro",
+      "Direção elétrica",
+      "Freios ABS",
+      "Farol com regulagem de altura",
+      "Limpador do vidro traseiro",
+      "Luzes de circulação diurna em LED (DRL)",
+      "Monitoramento da pressão dos pneus (TPMS)",
+      "Repetidores laterais de seta",
+      "Retrovisores externos com regulagem manual interna",
+      "Retrovisor interno dia/noite",
+      "Sistema CAR - travamento automático das portas a 6 km/h"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Computador de bordo",
+      "Indicador de troca de marcha",
+      "Painel de instrumentos com mostradores em LED",
+      "Rádio Continental 2DIN (Bluetooth®, USB, AUX) com dois alto-falantes",
+      "Sistema Stop&Start"
+     ]
+    },
+    {
+     "name": "Conforto",
+     "items": [
+      "abertura do porta-malas com acionamento elétrico",
+      "Abertura interna do porta-malas",
+      "Apoios de cabeça traseiros com ajuste de altura",
+      "Ar-condicionado",
+      "Banco rebatível 1/1",
+      "Console central com porta-copos",
+      "Espelho de cortesia no lado do passageiro",
+      "Indicador de temperatura externa",
+      "Para-sol do motorista e do passageiro",
+      "Tacômetro",
+      "Tomadas de 12 V",
+      "Travas elétricas das portas",
+      "Vidros elétricos dianteiros"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Farol dupla parábola",
+      "Maçanetas externas e retrovisores na cor preta",
+      "Rodas de aço de 14\""
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid 2024 · INTENSE",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/kwid/AF_RMA000724_Catalogo_Janeiro_Kwid.pdf.asset.pdf/15f0b3332e.pdf",
+   "file": "af-rma000724-catalogo-janeiro-kwid.pdf",
+   "groups": [
+    {
+     "name": "Segurança e dirigibilidade",
+     "items": [
+      "4 airbags (2 frontais e 2 laterais)",
+      "2 Isofix",
+      "Ajuste de altura dos cintos de segurança nos bancos dianteiros",
+      "Alerta visual e sonoro de não utilização do cinto de segurança",
+      "Assistente de partida em rampa (HSA)",
+      "Cintos de segurança dianteiros e traseiros de 3 pontos",
+      "Controle eletrônico de estabilidade (ESP)",
+      "Desembaçador do vidro traseiro",
+      "Direção elétrica",
+      "Freios ABS",
+      "Farol com regulagem de altura",
+      "Limpador do vidro traseiro",
+      "Luzes de circulação diurna em LED (DRL)",
+      "Monitoramento da pressão dos pneus (TPMS)",
+      "Repetidores laterais de seta",
+      "Retrovisores elétricos",
+      "Retrovisor interno dia/noite",
+      "Sistema CAR - travamento automático das portas a 6 km/h"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Câmera de ré",
+      "Computador de bordo",
+      "Indicador de troca de marcha",
+      "Media Nav 8\" com espelhamento de smartphone com Android Auto® e Apple CarPlay®, indicador de temperatura externa, funções Eco Coaching e Eco Scoring integradas ao multimídia e comando satélite de áudio",
+      "Painel de instrumentos com mostradores em LED",
+      "Sistema Stop&Start"
+     ]
+    },
+    {
+     "name": "Conforto",
+     "items": [
+      "abertura do porta-malas com acionamento elétrico",
+      "Abertura interna elétrica e a distância do porta-malas via chave",
+      "Apoios de cabeça traseiros com ajuste de altura",
+      "Ar-condicionado",
+      "Banco rebatível 1/1",
+      "Chave tipo canivete",
+      "Console central com porta-copos",
+      "Espelho de cortesia no lado do passageiro",
+      "Indicador de temperatura externa",
+      "Para-sol do motorista e do passageiro",
+      "Tacômetro",
+      "Tomadas de 12 V",
+      "Travas elétricas das portas",
+      "Vidros elétricos dianteiros"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Farol dupla parábola",
+      "Maçanetas externas na cor da carroceria",
+      "Pintura biton (opcional)",
+      "Retrovisores na cor preto brilhante",
+      "Calotas Flex Wheel 14\" biton",
+      "Rodas de liga leve 14\" diamantadas (opcional)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid 2024 · OUTSIDER",
+   "trims": [
+    "outsider"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/kwid/AF_RMA000724_Catalogo_Janeiro_Kwid.pdf.asset.pdf/15f0b3332e.pdf",
+   "file": "af-rma000724-catalogo-janeiro-kwid.pdf",
+   "groups": [
+    {
+     "name": "Segurança e dirigibilidade",
+     "items": [
+      "4 airbags (2 frontais e 2 laterais)",
+      "2 Isofix",
+      "Ajuste de altura dos cintos de segurança nos bancos dianteiros",
+      "Alerta visual e sonoro de não utilização do cinto de segurança",
+      "Assistente de partida em rampa (HSA)",
+      "Cintos de segurança dianteiros e traseiros de 3 pontos",
+      "Controle eletrônico de estabilidade (ESP)",
+      "Desembaçador do vidro traseiro",
+      "Direção elétrica",
+      "Freios ABS",
+      "Farol com regulagem de altura",
+      "Limpador do vidro traseiro",
+      "Luzes de circulação diurna em LED (DRL)",
+      "Monitoramento da pressão dos pneus (TPMS)",
+      "Repetidores laterais de seta",
+      "Retrovisores elétricos",
+      "Retrovisor interno dia/noite",
+      "Sistema CAR - travamento automático das portas a 6 km/h"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Câmera de ré",
+      "Computador de bordo",
+      "Indicador de troca de marcha",
+      "Media Nav 8\" com espelhamento de smartphone com Android Auto® e Apple CarPlay®, indicador de temperatura externa, funções Eco Coaching e Eco Scoring integradas ao multimídia e comando satélite de áudio",
+      "Painel de instrumentos com mostradores em LED",
+      "Sistema Stop&Start"
+     ]
+    },
+    {
+     "name": "Conforto",
+     "items": [
+      "abertura do porta-malas com acionamento elétrico",
+      "Abertura interna elétrica e a distância do porta-malas via chave",
+      "Apoios de cabeça traseiros com ajuste de altura",
+      "Ar-condicionado",
+      "Banco rebatível 1/1",
+      "Chave tipo canivete",
+      "Console central com porta-copos",
+      "Espelho de cortesia no lado do passageiro",
+      "Indicador de temperatura externa",
+      "Para-sol do motorista e do passageiro",
+      "Tacômetro",
+      "Tomadas de 12 V",
+      "Travas elétricas das portas",
+      "Vidros elétricos dianteiros"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Farol dupla parábola",
+      "Maçanetas externas na cor da carroceria",
+      "Retrovisores na cor preto brilhante",
+      "Rodas de liga leve 14\" diamantadas"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "title": "Kangoo 2024 · advanced",
+   "trims": [
+    "advanced"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/kangoo/maio/AF_RMA003424A_Catalogo_Kangoo-24.pdf.asset.pdf/fc9190a78f.pdf",
+   "file": "af-rma003424a-catalogo-kangoo-24.pdf",
+   "groups": [
+    {
+     "name": "Condução e segurança",
+     "items": [
+      "airbags dianteiros para motorista e passageiro",
+      "freios ABS com EBD (dIstribuição eletrônica de frenagem)",
+      "controle eletrônico de estabilidade (ESP)",
+      "assistente de partida em rampa (HSA)",
+      "assistente de frenagem de urgência (AFU)"
+     ]
+    },
+    {
+     "name": "Conforto",
+     "items": [
+      "vidros elétricos",
+      "retrovisores elétricos",
+      "direção eletro-hidráulica",
+      "ar-condicionado",
+      "regulagem de cinto de segurança",
+      "Media Nav com tela touchscreen de 7\", Android Auto e Apple CarPlay",
+      "sensores traseiros de estacionamento"
+     ]
+    },
+    {
+     "name": "Design externo",
+     "items": [
+      "rodas de 15\" em aço",
+      "indicadores de seta laterais",
+      "porta lateral deslizante",
+      "portas traseiras 1/3-2/3",
+      "faróis halógenos",
+      "Faróis de rodagem diurna halógenos (DRL)",
+      "protetor lateral de porta",
+      "retrovisores e maçanetas em preto"
+     ]
+    },
+    {
+     "name": "Design interno",
+     "items": [
+      "33 L em compartimentos de armazenamento (painel, porta lateral, porta- luvas, console central e de teto)",
+      "comando satélite",
+      "bancos com revestimento em tecido"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2021 · Zen 1.6 MT",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
+   "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "3 apoios de cabeça no banco traseiro",
+      "2 luzes de ré",
+      "3ª luz de freio",
+      "Airbag frontal",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa",
+      "Banco traseiro com 2 posições Isofix",
+      "CAR - travamento central automático com destravamento em caso de colisão",
+      "Cintos de segurança de 3 pontos em todas as posições",
+      "Controle de estabilidade",
+      "Desembaçador traseiro",
+      "Desligamento airbag do passageiro",
+      "Indicador de direção lateral",
+      "Luzes de circulação diurnas",
+      "Protetor de cárter em metal"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "4 alto-falantes",
+      "Eco Scoring + Eco Coaching",
+      "Radio AM/FM com Bluetooth®, USB, 2DIN",
+      "Stop & Start"
+     ]
+    },
+    {
+     "name": "Packs",
+     "items": [
+      "Pack Techno (opcional)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2021 · Intense 1.6 CVT",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
+   "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "3 apoios de cabeça no banco traseiro",
+      "2 luzes de ré",
+      "3ª luz de freio",
+      "Airbag frontal",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa",
+      "Banco traseiro com 2 posições Isofix",
+      "Câmera de ré com linhas-guia dinâmicas",
+      "CAR - travamento central automático com destravamento em caso de colisão",
+      "Cintos de segurança de 3 pontos em todas as posições",
+      "Controle de estabilidade",
+      "Desembaçador traseiro",
+      "Desligamento airbag do passageiro",
+      "Faróis de neblina",
+      "Indicador de direção lateral",
+      "Luzes de circulação diurnas",
+      "Protetor de cárter em metal",
+      "Sensores de estacionamento traseiros"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "6 alto-falantes",
+      "Android Auto e Apple CarPlay",
+      "Eco Scoring + Eco Coaching",
+      "Painel de instrumentos TFT",
+      "Sistema de áudio Easy Link AM/FM com Bluetooth® e USB",
+      "Stop & Start",
+      "Tela 8\" capacitive touch"
+     ]
+    },
+    {
+     "name": "Packs",
+     "items": [
+      "Pack Outsider (opcional)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "Duster 2021 · Iconic 1.6 CVT",
+   "trims": [
+    "iconic"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
+   "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
+   "groups": [
+    {
+     "name": "Segurança",
+     "items": [
+      "3 apoios de cabeça no banco traseiro",
+      "2 luzes de ré",
+      "3ª luz de freio",
+      "Airbag frontal",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança não afivelado",
+      "Anti-locking braking system (ABS)",
+      "Auxílio à frenagem de urgência (AFU)",
+      "Auxílio de partida em rampa",
+      "Banco traseiro com 2 posições Isofix",
+      "Câmera Multiview",
+      "CAR - travamento central automático com destravamento em caso de colisão",
+      "Cintos de segurança de 3 pontos em todas as posições",
+      "Controle de estabilidade",
+      "Desembaçador traseiro",
+      "Desligamento airbag do passageiro",
+      "Faróis de neblina",
+      "Indicador de direção lateral",
+      "Luzes de circulação diurnas",
+      "Protetor de cárter em metal",
+      "Sensor crepuscular",
+      "Sensor de ponto cego",
+      "Sensores de estacionamento traseiros"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "6 alto-falantes",
+      "Android Auto e Apple CarPlay",
+      "Eco Scoring + Eco Coaching",
+      "Painel de instrumentos TFT",
+      "Sistema de áudio Easy Link AM/FM com Bluetooth® e USB",
+      "Stop & Start",
+      "Tela 8\" capacitive touch"
+     ]
+    },
+    {
+     "name": "Packs",
+     "items": [
+      "Pack Outsider (opcional)"
      ]
     }
    ]

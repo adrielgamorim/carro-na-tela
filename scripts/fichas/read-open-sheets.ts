@@ -17,6 +17,7 @@ import { renaultEquipment } from "./equipment.ts";
 import type { EquipmentFile, EquipmentList } from "./equipment.ts";
 import { toyotaEquipment, toyotaSheets } from "./toyota.ts";
 import { hyundaiCatalog } from "./hyundai.ts";
+import { brochureFile, renaultBrochureEquipment } from "./renault-brochure.ts";
 import type { WaybackFile } from "./fetch-wayback.ts";
 
 const sheets: OpenSheet[] = [];
@@ -59,6 +60,26 @@ for (const link of renault) {
   const lists = spreadsheet ? renaultEquipment(spreadsheet.rows, link, saved) : [];
   if (lists.length) equipment.push(...lists);
   else skipped.push(`Renault ${link.vehicle} (${link.file}, ${spreadsheet ? "sem números" : "formato não lido"})`);
+}
+
+// Renault's brochures: the equipment of the lines and years the spreadsheets do not list (Duster, Kwid, Kangoo).
+const fromSpreadsheets = [...equipment];
+const brochuresRead = new Set<string>();
+for (const link of renault) {
+  const file = link.brochure && brochureFile(link.brochure);
+  if (!link.brochure || !file || brochuresRead.has(file)) continue;
+  brochuresRead.add(file);
+  const lines = await readPdfLines(join("data/fichas/renault/folhetos", file)).catch(() => undefined);
+  if (!lines) continue;
+  const lists = renaultBrochureEquipment(lines, { vehicle: link.vehicle, brochure: link.brochure, page: link.page });
+  equipment.push(
+    ...lists.filter(
+      (list) =>
+        !fromSpreadsheets.some(
+          (other) => other.line === list.line && other.years[0] <= list.years[1] && list.years[0] <= other.years[1],
+        ),
+    ),
+  );
 }
 
 // Toyota's, from the Wayback Machine (npm run fichas:wayback): of each line and
@@ -153,7 +174,7 @@ await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
+  _doc: "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas e folhetos em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

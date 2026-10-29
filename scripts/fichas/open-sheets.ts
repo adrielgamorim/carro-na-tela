@@ -275,6 +275,8 @@ export interface RenaultLink {
   vehicle: string;
   excel: string | null;
   file: string | null;
+  /** The brochure (PDF), read by renault-brochure.ts. */
+  brochure?: string | null;
   page: string;
 }
 
