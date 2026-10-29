@@ -396,7 +396,7 @@ export function buildCatalogIndex(
   const sheetList: NonNullable<CatalogIndexFile["sheets"]> = [];
   if (sheets?.length || openSheets?.length) {
     const sheetIndex = new Map<ReadSheet | OpenSheet, number>();
-    const sources = { vw: "Volkswagen", renault: "Renault" } as const;
+    const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota" } as const;
     // Each line's trim words, to read them in the sheets' titles.
     const lineNames = new Map<string, string[]>();
     for (const version of sorted) {
@@ -426,8 +426,8 @@ export function buildCatalogIndex(
             title: sheet.title,
             page: sheet.page,
             specs: sheet.specs,
-            // VW's PDF opens in the browser; Renault's spreadsheet would download, so its page.
-            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand === "vw" && { url: sheet.url }) }),
+            // A PDF opens in the browser; Renault's spreadsheet would download, so its page.
+            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand !== "renault" && { url: sheet.url }) }),
           });
         }
         return sheetIndex.get(sheet)!;
@@ -455,7 +455,8 @@ export function buildCatalogIndex(
         if (!list) return -1;
         if (!listIndex.has(list)) {
           listIndex.set(list, equipmentLists.length);
-          equipmentLists.push({ title: list.title, source: "Renault", page: list.page, groups: list.groups });
+          const source = list.brand === "toyota" ? "Toyota" : list.brand === "vw" ? "Volkswagen" : "Renault";
+          equipmentLists.push({ title: list.title, source, page: list.page, groups: list.groups });
         }
         return listIndex.get(list)!;
       });

@@ -58,6 +58,13 @@ for (const link of renault) {
   else skipped.push(`Renault ${link.vehicle} (${link.file}, ${spreadsheet ? "sem números" : "formato não lido"})`);
 }
 
+// Toyota's, transcribed by hand: its press room blocks automatic downloads.
+const toyota = await readFile("data/fichas/toyota.json", "utf8")
+  .then((text) => JSON.parse(text) as { sheets: OpenSheet[]; equipment: EquipmentList[] })
+  .catch(() => ({ sheets: [], equipment: [] }));
+sheets.push(...toyota.sheets);
+equipment.push(...toyota.equipment);
+
 // Two files of the same sheets (Renault lists the Z.E. sheet twice): once.
 const seen = new Set<string>();
 const unique = sheets.filter((sheet) => {
@@ -68,14 +75,14 @@ const unique = sheets.filter((sheet) => {
 });
 
 const out: OpenSheetsFile = {
-  _doc: "Números das fichas técnicas da Volkswagen e da Renault (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault.",
+  _doc: "Números das fichas técnicas da Volkswagen, da Renault e da Toyota (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault e de data/fichas/toyota.json.",
   sheets: unique.sort((a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line) || a.years[0] - b.years[0] || a.title.localeCompare(b.title)),
 };
 await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault (npm run fichas:abertas), das listas em data/fichas/renault.",
+  _doc: "Equipamentos de série por versão da Renault e da Toyota (npm run fichas:abertas), das listas em data/fichas/renault e de data/fichas/toyota.json.",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

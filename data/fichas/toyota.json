@@ -1,0 +1,175 @@
+{
+ "_doc": "Fichas técnicas e equipamentos da Toyota, transcritos à mão dos PDFs da sala de imprensa (toyotacomunica.com.br/downloads, que bloqueia download automático; os PDFs ficam em data/fichas/toyota, fora do git). Só os números que a ficha dá sem ambiguidade: a do SW4 2024 tem três pesos para quatro versões, então fica sem peso. A Toyota não dá velocidade máxima nem 0 a 100.",
+ "sheets": [
+  {
+   "brand": "toyota",
+   "line": "Camry",
+   "title": "Camry 2018 XLE (3.5L V6 24V, automática de 8 velocidades)",
+   "trims": ["xle"],
+   "years": [2018, 2019],
+   "engineLiters": 3.5,
+   "valves": 24,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_ficha_tecnica.pdf",
+   "file": "Camry_2018_ficha_tecnica.pdf",
+   "specs": {
+    "powerCv": 310,
+    "torqueKgfm": 37,
+    "lengthMm": 4885,
+    "widthMm": 1840,
+    "heightMm": 1455,
+    "wheelbaseMm": 2825,
+    "groundClearanceMm": 150,
+    "trunkLiters": 593,
+    "tankLiters": 60
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "SW4 2024 · SRX / Diamond (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "trims": ["srx", "diamond"],
+   "years": [2024, 2025],
+   "engineLiters": 2.8,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
+   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "SW4 2024 · GR-Sport (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "trims": ["grs", "gr", "sport"],
+   "years": [2024, 2025],
+   "engineLiters": 2.8,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
+   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "specs": {
+    "powerCv": 224,
+    "torqueKgfm": 55,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  }
+ ],
+ "equipment": [
+  {
+   "brand": "toyota",
+   "line": "Camry",
+   "title": "Camry 2018 XLE",
+   "trims": ["xle"],
+   "years": [2018, 2019],
+   "engineLiters": 3.5,
+   "valves": 24,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_equipamentos.pdf",
+   "file": "Camry_2018_equipamentos.pdf",
+   "groups": [
+    {
+     "name": "Estilo",
+     "items": [
+      "Acabamento interno com revestimento de couro e partes revestidas de material sintético",
+      "Acabamento interno com revestimento em padrão Tiger Eye Stone",
+      "Acabamento interno cromado",
+      "Acabamento interno prateado",
+      "Bancos com partes revestidas de couro (parte anterior dos bancos dianteiros e traseiros, e parte anterior dos apoios de cabeça dianteiros e traseiros), e partes revestidas de material sintético derivado de PVC (parte posterior dos bancos dianteiros, laterais dos bancos dianteiros e traseiros, laterais e parte posterior dos apoios de cabeça dianteiros e traseiros) na cor preta e na cor bege",
+      "Escapamento duplo com ponteiras cromadas",
+      "Faróis bi-LED com lavadores e regulagem automática de altura, e indicador de direção",
+      "Lanternas traseiras de LED",
+      "Luzes diurnas de LED (Daytime Running Lights - DRL mode)",
+      "Painel de instrumentos com iluminação de LED",
+      "Para-brisas com faixa degrade e vidro acústico",
+      "Vidros verdes (vidros laterais dianteiros e traseiros, e vidro traseiro)",
+      "Volante de 3 raios"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado integrado frio e quente, digital, Three Zone (com controle de temperatura independente para motorista, passageiro dianteiro e bancos traseiros) e com tecnologia S-Flow e sistema purificador de ar Nanoe™",
+      "Banco do motorista com regulagem elétrica para 8 posições: distância, reclinação do encosto, altura e lombar",
+      "Banco do passageiro dianteiro com regulagem elétrica para 4 posições: distância e reclinação do encosto",
+      "Bancos traseiros com descansa-braços central e painel de controle touch: ajuste de ar condicionado, áudio, cortina de privacidade elétrica traseira, e reclinação do encosto",
+      "Bancos traseiros com regulagem elétrica: reclinação do encosto",
+      "Chave com comandos integrados de trava e destrava das portas dianteiras e traseiras, e porta-malas",
+      "Coluna de direção com regulagem elétrica de altura e profundidade",
+      "Computador de bordo com tela de TFT Color de 7''",
+      "Controle de velocidade de cruzeiro (Cruise Control)",
+      "Cortina de privacidade elétrica para vidro traseiro e cortinas manuais para os vidros laterais traseiros",
+      "Desembaçador do vidro traseiro com temporizador",
+      "Entrada para conexão USB e conexão Aux-in",
+      "Espelho retrovisor interno eletrocrômico (antiofuscante)",
+      "Espelhos retrovisores externos eletrorretráteis com indicador de direção de LED e sistema de aquecimento (desembaçador)",
+      "Freio de estacionamento com acionamento eletrônico (EPB)",
+      "Gancho para reboque dianteiro (um) e traseiro (um)",
+      "Iluminação interna para porta-luvas (LED), porta-malas e cabine",
+      "Indicador de direção econômica ECO Driving",
+      "Luz de leitura individual dianteira e traseira de LED com sistema Down Light",
+      "Material antirruído no interior do capô e assoalho",
+      "Para-sol do motorista e do passageiro dianteiro com espelho e iluminação",
+      "Porta-revistas nos bancos dianteiros (parte posterior)",
+      "Portas dianteiras e traseiras com descansa-braço, porta-copos e porta-objetos",
+      "Engine Start/Stop Button: sistema de acionamento e desligamento do motor por botão",
+      "Relógio digital",
+      "Sistema de áudio com tela de LCD de 8\" compatível com funções de DVD player, CD-R/RW, MP3, WMA e AAC + rádio AM/FM + sistema de navegação GPS + câmera de ré (com linhas-guia estáticas) + Bluetooth + 6 alto-falantes",
+      "Sistema Smart Entry: sistema de trava e destrava automático das portas dianteiras e traseiras, e porta-malas por proximidade da chave",
+      "Volante multifuncional com controles de áudio, computador de bordo, telefone e velocidade de cruzeiro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Air bags frontais (2): um para motorista e um para passageiro dianteiro",
+      "Air bags laterais (2): um para motorista e um para passageiro dianteiro",
+      "Air bags de joelho (1): um para motorista",
+      "Air bags de cortina (2 sistemas com duas bolsas cada)",
+      "Aviso para cintos de segurança dianteiros (luz e sonoro)",
+      "Aviso sonoro para faróis acesos",
+      "Faróis de neblina dianteiros de LED com lâmpadas de direcionamento",
+      "Limpador do para-brisa intermitente com sensor de chuva",
+      "Controle Eletrônico de Tração (TRC)",
+      "Controle Eletrônico de Estabilidade Veicular (VSC)",
+      "Controle de Assistência de Arranque em Subida (HAC)",
+      "Sensores de estacionamento dianteiros (2) e traseiros (2)",
+      "Cintos de segurança dianteiros (2) de três pontos com sistema de retração de emergência ELR (Emergency Locking Retractor)",
+      "Cintos de segurança traseiros (2) de três pontos com sistema de retração de emergência ELR (Emergency Locking Retractor), pré-tensionador e limitador de força",
+      "Cinto de segurança traseiro (1) de três pontos com sistema de retração de emergência ELR (Emergency Locking Retractor)",
+      "Sistema universal ISOFIX com ancoragem de 2 pontos no banco traseiro (para cadeirinha de criança)",
+      "Vidros elétricos das quatro portas",
+      "Interruptor inercial da bomba de combustível (por sensor de impacto)",
+      "Sistema de segurança com imobilizador eletrônico e alarme sonoro",
+      "Vidros laterais dianteiros hidrofóbicos (repelentes à água)"
+     ]
+    }
+   ]
+  }
+ ]
+}

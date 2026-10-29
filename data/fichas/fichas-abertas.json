@@ -1,5 +1,5 @@
 {
- "_doc": "Números das fichas técnicas da Volkswagen e da Renault (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault.",
+ "_doc": "Números das fichas técnicas da Volkswagen, da Renault e da Toyota (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault e de data/fichas/toyota.json.",
  "sheets": [
   {
    "brand": "renault",
@@ -899,6 +899,100 @@
     "trunkLiters": 338,
     "topSpeedKmh": 135,
     "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Camry",
+   "title": "Camry 2018 XLE (3.5L V6 24V, automática de 8 velocidades)",
+   "trims": [
+    "xle"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
+   "engineLiters": 3.5,
+   "valves": 24,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Camry_2018_ficha_tecnica.pdf",
+   "file": "Camry_2018_ficha_tecnica.pdf",
+   "specs": {
+    "powerCv": 310,
+    "torqueKgfm": 37,
+    "lengthMm": 4885,
+    "widthMm": 1840,
+    "heightMm": 1455,
+    "wheelbaseMm": 2825,
+    "groundClearanceMm": 150,
+    "trunkLiters": 593,
+    "tankLiters": 60
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "SW4 2024 · GR-Sport (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "trims": [
+    "grs",
+    "gr",
+    "sport"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
+   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "specs": {
+    "powerCv": 224,
+    "torqueKgfm": 55,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Hilux SW4",
+   "title": "SW4 2024 · SRX / Diamond (2.8L 16V turbo diesel, automática de 6 velocidades)",
+   "trims": [
+    "srx",
+    "diamond"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 2.8,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://www.toyotacomunica.com.br/wp-content/uploads/2020/11/Ficha-Tecnica-SW4-2024.pdf",
+   "file": "Ficha-Tecnica-SW4-2024.pdf",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 50.9,
+    "lengthMm": 4795,
+    "widthMm": 1855,
+    "heightMm": 1835,
+    "wheelbaseMm": 2745,
+    "groundClearanceMm": 279,
+    "tankLiters": 80
    }
   },
   {
