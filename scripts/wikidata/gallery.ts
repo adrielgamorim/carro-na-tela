@@ -3,6 +3,8 @@
 // angles (front, rear, side, interior), by the file names and categories.
 
 import type { ModelGeneration } from "./generations.ts";
+import { bodyOf } from "../../src/catalog/gallery.ts";
+import type { GalleryBody } from "../../src/catalog/gallery.ts";
 
 export type Angle = "frente" | "traseira" | "lateral" | "interior" | "outra";
 
@@ -26,6 +28,8 @@ export interface GalleryPhoto {
   file: string;
   thumb: string;
   angle: Angle;
+  /** The body style it shows, when it is named ("Logan MCV", "A4 Avant"). */
+  body?: GalleryBody;
   /** Model years the photo is shown for (its generation, or around its year). */
   from: number;
   to: number;
@@ -177,11 +181,30 @@ export function seriesOf(file: string): string {
     .trim();
 }
 
+/** The body style of a file: by its name, else the subcategory it was found in, else its categories. */
+export function bodyOfFile(file: CommonsFile, label: string): GalleryBody | undefined {
+  return (
+    bodyOf(file.file.replace(/\.\w+$/, ""), label) ??
+    (file.subcategory ? bodyOf(file.subcategory, label) : undefined) ??
+    bodyOf(file.categories.join(" | "), label)
+  );
+}
+
+const romans = new Set(["ii", "iii", "iv", "vi", "vii", "viii", "ix"]);
+/** A generation's codes ("b9", "e210", "mk7", "iii"), not the words of the line's name. */
+export function generationCodes(names: string, label: string): string[] {
+  const own = new Set(lower(label).split(/[^a-z0-9]+/));
+  return names
+    .split(" ")
+    .filter((word) => (/^(?:[a-z]{1,3}\d{1,3}[a-z]?|mk\d+)$/.test(word) || romans.has(word)) && !own.has(word));
+}
+
 /**
  * The gallery of a model line: per generation (or per five model years, for
- * lines without generations), the best photos of each angle. A photo with no
- * year goes to the line's only generation, or to the whole line when no photo
- * of it has a year; otherwise it is left out.
+ * lines without generations) and body style, the best photos of each angle.
+ * A photo naming a generation's code ("A4 B9") goes to it; else by its year.
+ * A photo with no year goes to the line's only generation, or to the whole
+ * line when no photo of it has a year; otherwise it is left out.
  */
 export function pickGallery(
   files: CommonsFile[],
@@ -199,9 +222,15 @@ export function pickGallery(
   },
 ): GalleryPhoto[] {
   const thisYear = now.getFullYear();
+  // A generation with no end ends when a newer one starts.
+  const starts = [...new Set(generations.map((generation) => generation.from).filter(Boolean))].sort((a, b) => a - b);
   const spans = generations
     .filter((generation) => generation.from)
-    .map((generation) => ({ from: generation.from, to: generation.to ?? thisYear + 1 }))
+    .map((generation) => ({
+      from: generation.from,
+      to: generation.to ?? starts.find((start) => start > generation.from) ?? thisYear + 1,
+      codes: generationCodes(generation.names ?? "", label),
+    }))
     .sort((a, b) => a.to - a.from - (b.to - b.from));
   const seen = new Set<string>();
   const usable: { file: CommonsFile; year?: number }[] = [];
@@ -216,10 +245,17 @@ export function pickGallery(
   }
   const anyYear = usable.some((photo) => photo.year !== undefined);
 
-  const buckets = new Map<string, { span: { from: number; to: number }; photos: { file: CommonsFile; angle: Angle }[] }>();
+  const buckets = new Map<
+    string,
+    { span: { from: number; to: number }; photos: { file: CommonsFile; angle: Angle; body?: GalleryBody }[] }
+  >();
   for (const { file, year } of usable) {
     let span: { from: number; to: number } | undefined;
-    if (year !== undefined) {
+    const words = new Set(lower(`${file.file} ${file.subcategory ?? ""}`).split(/[^a-z0-9]+/));
+    const coded = spans.filter((item) => item.codes.some((code) => words.has(code)));
+    if (coded.length) {
+      span = coded.find((item) => year !== undefined && year >= item.from && year <= item.to) ?? coded[0];
+    } else if (year !== undefined) {
       // The narrowest generation with that year; else its five-year window (2021–2025).
       const window = Math.floor((year - 1) / 5) * 5 + 1;
       span = spans.find((item) => year >= item.from && year <= item.to) ?? { from: window, to: window + 4 };
@@ -229,9 +265,12 @@ export function pickGallery(
       span = { from: 1900, to: thisYear + 1 };
     }
     if (!span) continue;
-    const key = `${span.from}-${span.to}`;
-    if (!buckets.has(key)) buckets.set(key, { span, photos: [] });
-    buckets.get(key)!.photos.push({ file, angle: angleOf(file.file, file.categories) });
+    // Sedan, hatch and untagged photos share the line's usual body; the others get their own.
+    const body = bodyOfFile(file, label);
+    const group = body === "sedan" || body === "hatch" ? "" : (body ?? "");
+    const key = `${span.from}-${span.to}|${group}`;
+    if (!buckets.has(key)) buckets.set(key, { span: { from: span.from, to: span.to }, photos: [] });
+    buckets.get(key)!.photos.push({ file, angle: angleOf(file.file, file.categories), ...(body && { body }) });
   }
 
   const gallery: GalleryPhoto[] = [];
@@ -259,11 +298,12 @@ export function pickGallery(
     chosen
       .slice(0, photosPerGeneration)
       .sort((a, b) => order.indexOf(a.angle) - order.indexOf(b.angle))
-      .forEach(({ file, angle }) =>
+      .forEach(({ file, angle, body }) =>
         gallery.push({
           file: file.file,
           thumb: file.thumb,
           angle,
+          ...(body && { body }),
           from: span.from,
           to: span.to,
           ...(file.artist && { artist: file.artist }),

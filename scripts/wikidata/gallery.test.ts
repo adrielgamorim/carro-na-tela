@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { bodyOf, photosOfBody, versionBody } from "../../src/catalog/gallery.ts";
+import type { GalleryPhoto as AppPhoto } from "../../src/catalog/gallery.ts";
 import {
   angleOf,
+  generationCodes,
   isNotTheCar,
   isNotTheCarFile,
   namesTheModel,
@@ -122,5 +125,65 @@ describe("gallery", () => {
     expect(gallery.map((photo) => `${photo.from}-${photo.to}`)).toEqual(["2021-2025"]);
     const undated = pickGallery([file("Aston Martin DB12.jpg")], { label: "Aston Martin DB12", now });
     expect(undated.map((photo) => `${photo.from}-${photo.to}`)).toEqual(["1900-2027"]);
+  });
+
+  it("tells the body style by the name, not the line's own name", () => {
+    expect(bodyOf("2017 Dacia Logan MCV Laureate DCi 1.5 Front", "Dacia Logan")).toBe("perua");
+    expect(bodyOf("Dacia Logan MCV Van (33043469088)", "Dacia Logan")).toBe("furgao");
+    expect(bodyOf("White Dacia Logan Pick-Up", "Dacia Logan")).toBe("picape");
+    expect(bodyOf("A4allroadDetroit Auto Show 2016", "Audi A4")).toBe("perua");
+    expect(bodyOf("2019 Audi A4 Sedan Sport 2.0 TFSI Quattro (1)", "Audi A4")).toBe("sedan");
+    expect(bodyOf("Dacia Logan 1.4 mpi", "Dacia Logan")).toBeUndefined();
+    expect(bodyOf("1975 Volkswagen Kombi", "Volkswagen Kombi")).toBeUndefined();
+    expect(versionBody("LOGAN Zen Flex 1.0 12V 4p Mec.")).toBeUndefined();
+    expect(versionBody("A4 Avant Ambiente 2.0 TFSI")).toBe("perua");
+    expect(versionBody("STRADA Freedom 1.3 Flex 8V CD")).toBe("picape");
+  });
+
+  it("shows a version the photos of its body style", () => {
+    const photo = (name: string, body?: AppPhoto["body"]): AppPhoto => ({
+      thumb: name,
+      page: name,
+      angle: "frente",
+      from: 2020,
+      to: 2027,
+      ...(body && { body }),
+    });
+    const photos = [photo("a"), photo("b", "sedan"), photo("c"), photo("d", "perua"), photo("e", "picape")];
+    expect(photosOfBody(photos, "LOGAN Zen Flex 1.0 12V 4p Mec.").map((item) => item.thumb)).toEqual(["a", "b", "c"]);
+    expect(photosOfBody(photos, "A4 Avant Ambiente").map((item) => item.thumb)).toEqual(["a", "c", "d"]);
+    // Too few left: all of them.
+    expect(photosOfBody(photos.slice(3), "Logan Zen")).toHaveLength(2);
+  });
+
+  it("puts a photo in the generation its name codes, before its year", () => {
+    expect(generationCodes("fifth generation b9 8w", "Audi A4")).toEqual(["b9"]);
+    expect(generationCodes("logan iii renault taliant", "Dacia Logan")).toEqual(["iii"]);
+    const generations = [
+      { file: "a.jpg", from: 2008, to: 2016, names: "fourth generation b8 8k" },
+      { file: "b.jpg", from: 2015, to: 2025, names: "fifth generation b9 8w" },
+    ];
+    const gallery = pickGallery([file("2015 Audi A4 B9 2.0 TFSI front.jpg"), file("2015 Audi A4 Avant front.jpg")], {
+      label: "Audi A4",
+      generations,
+      now,
+    });
+    expect(gallery.map((photo) => `${photo.from}-${photo.to} ${photo.body ?? "-"} ${photo.file}`)).toEqual([
+      "2015-2025 - 2015 Audi A4 B9 2.0 TFSI front.jpg",
+      "2008-2016 perua 2015 Audi A4 Avant front.jpg",
+    ]);
+  });
+
+  it("ends a generation without an end when the next one starts", () => {
+    const generations = [
+      { file: "a.jpg", from: 2004, to: null },
+      { file: "b.jpg", from: 2012, to: null },
+    ];
+    const gallery = pickGallery([file("2009 Dacia Logan.jpg"), file("2017 Dacia Logan.jpg")], {
+      label: "Dacia Logan",
+      generations,
+      now,
+    });
+    expect(gallery.map((photo) => `${photo.from}-${photo.to}`)).toEqual(["2004-2012", "2012-2027"]);
   });
 });

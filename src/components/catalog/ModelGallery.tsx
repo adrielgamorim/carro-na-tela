@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Expand, X } from "lucide-react";
-import { angleLabels, largerThumb, photosOfYear } from "../../catalog/gallery";
+import { angleLabels, largerThumb, photosOfBody, photosOfYear } from "../../catalog/gallery";
 import type { GalleryAngle } from "../../catalog/gallery";
 import type { CatalogEntry } from "../../catalog/types";
 import { useModelGallery } from "../../hooks/useModelGallery";
@@ -32,7 +32,9 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
   const main = model?.image;
   // The gallery is split by generation, so it leads; the line's main photo
   // (which may show another generation) comes last.
-  const ofYear = photosOfYear(gallery, entry.modelYear).filter((photo) => photo.page !== main?.page);
+  const ofYear = photosOfBody(photosOfYear(gallery, entry.modelYear), entry.model).filter(
+    (photo) => photo.page !== main?.page,
+  );
   const slides: Slide[] = [...ofYear, ...(main ? [{ ...main, thumb: largePhoto(main.thumb) }] : [])];
   const index = Math.min(current, Math.max(0, slides.length - 1));
   const slide = slides[index];
