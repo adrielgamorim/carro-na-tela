@@ -17,6 +17,8 @@ import { pressSpecsOf } from "../imprensa/facts.ts";
 import type { PressFact } from "../imprensa/facts.ts";
 import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
 import type { ReadSheet } from "../fichas/sheets.ts";
+import { openSheetOfVersion } from "../fichas/open-sheets.ts";
+import type { OpenSheet } from "../fichas/open-sheets.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
 import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
@@ -99,6 +101,8 @@ export interface BuildOptions {
   press?: PressFact[];
   /** Spec sheets read from the carmaker's PDFs (data/fichas/fichas.json). */
   sheets?: ReadSheet[];
+  /** Spec sheets of the open press rooms, VW and Renault (data/fichas/fichas-abertas.json). */
+  openSheets?: OpenSheet[];
 }
 
 const sameText = (left: string, right: string) =>
@@ -133,6 +137,7 @@ export function buildCatalogIndex(
     fleet,
     press,
     sheets,
+    openSheets,
   }: BuildOptions = {},
 ): CatalogIndexFile {
   const brands: CatalogIndexFile["brands"] = [];
@@ -384,8 +389,9 @@ export function buildCatalogIndex(
 
   // Spec sheets: the one of each version-year, by trim, engine, transmission and year.
   const sheetList: NonNullable<CatalogIndexFile["sheets"]> = [];
-  if (sheets?.length) {
-    const sheetIndex = new Map<ReadSheet, number>();
+  if (sheets?.length || openSheets?.length) {
+    const sheetIndex = new Map<ReadSheet | OpenSheet, number>();
+    const sources = { vw: "Volkswagen", renault: "Renault" } as const;
     // Each line's trim words, to read them in the sheets' titles.
     const lineNames = new Map<string, string[]>();
     for (const version of sorted) {
@@ -402,12 +408,22 @@ export function buildCatalogIndex(
         engineLiters: engineLitersOf(version),
         turbo: version.a?.aspiration === "turbo",
       };
+      const electric = /el[eé]tric/i.test(versionFuel.get(version) ?? "");
       const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
-        const sheet = sheetOfVersion(sheets, { ...target, modelYear }, lineTrims.get(lineKey) ?? new Set());
+        // Stellantis' sheets are of the exact version and year; the open ones of an engine and a few years.
+        const sheet =
+          (sheets && sheetOfVersion(sheets, { ...target, modelYear }, lineTrims.get(lineKey) ?? new Set())) ??
+          (openSheets && openSheetOfVersion(openSheets, { ...target, modelYear, electric, valves: version.a?.valves }));
         if (!sheet) return -1;
         if (!sheetIndex.has(sheet)) {
           sheetIndex.set(sheet, sheetList.length);
-          sheetList.push({ title: sheet.title, page: sheet.page, specs: sheet.specs });
+          sheetList.push({
+            title: sheet.title,
+            page: sheet.page,
+            specs: sheet.specs,
+            // VW's PDF opens in the browser; Renault's spreadsheet would download, so its page.
+            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand === "vw" && { url: sheet.url }) }),
+          });
         }
         return sheetIndex.get(sheet)!;
       });

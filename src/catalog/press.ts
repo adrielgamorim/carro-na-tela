@@ -41,6 +41,10 @@ export interface PressSheet {
   /** The model-year page of the press room it is listed on. */
   page: string;
   specs: SheetSpecs;
+  /** The press room ("Volkswagen", "Renault"); none for Stellantis'. */
+  source?: string;
+  /** The sheet's own file, for the press rooms that link it openly. */
+  url?: string;
 }
 
 /** The release figures of a version-year, and its spec sheet. */

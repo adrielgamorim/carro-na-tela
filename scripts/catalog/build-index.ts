@@ -10,7 +10,8 @@
 // models (data/wikidata, from npm run fetch:wikidata) and the Senatran fleet
 // (data/frota, from npm run fetch:frota), and so are the press release
 // figures reviewed in data/imprensa/stellantis.json and the spec sheets read
-// in data/fichas/fichas.json (npm run fichas:ler).
+// in data/fichas/fichas.json (npm run fichas:ler) and fichas-abertas.json
+// (npm run fichas:abertas).
 
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import { writeFileRetrying } from "../write-file.ts";
@@ -25,6 +26,7 @@ import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import type { PressFactsFile } from "../imprensa/facts.ts";
 import type { ReadSheetsFile } from "../fichas/sheets.ts";
+import type { OpenSheetsFile } from "../fichas/open-sheets.ts";
 import { fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile, FallbackTitle } from "../wikidata/fallback.ts";
 import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
@@ -108,6 +110,9 @@ const press = await readFile(join(values.imprensa, "stellantis.json"), "utf8")
 const sheets = await readFile(join(values.fichas, "fichas.json"), "utf8")
   .then((text) => (JSON.parse(text) as ReadSheetsFile).sheets)
   .catch(() => undefined);
+const openSheets = await readFile(join(values.fichas, "fichas-abertas.json"), "utf8")
+  .then((text) => (JSON.parse(text) as OpenSheetsFile).sheets)
+  .catch(() => undefined);
 const index = buildCatalogIndex(snapshots, {
   pbev,
   overrides,
@@ -116,6 +121,7 @@ const index = buildCatalogIndex(snapshots, {
   fleet,
   press,
   sheets,
+  openSheets,
 });
 
 // Photo galleries (npm run fetch:galeria): one file per model, loaded by the

@@ -52,10 +52,11 @@ function PressSources({ press }: { press: PressSpecs }) {
     return (
       <>
         {" · "}
-        <a href={press.sheet.page} target="_blank" rel="noreferrer" title={press.sheet.title}>
-          ficha técnica da Stellantis
+        <a href={press.sheet.url ?? press.sheet.page} target="_blank" rel="noreferrer" title={press.sheet.title}>
+          ficha técnica da {press.sheet.source ?? "Stellantis"}
         </a>
-        {" desta versão e ano"}
+        {/* The open press rooms' sheets are of the engine and gearbox, over a couple of model years. */}
+        {press.sheet.source ? ` (${press.sheet.title})` : " desta versão e ano"}
       </>
     );
   }

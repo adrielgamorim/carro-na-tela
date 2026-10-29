@@ -1,0 +1,1629 @@
+{
+ "_doc": "Números das fichas técnicas da Volkswagen e da Renault (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw e data/fichas/renault.",
+ "sheets": [
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "title": "Captur · automático",
+   "trims": [],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/captur-pt_1705427332830",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-81-480.xlsx",
+   "file": "81-captur-pt.xlsx",
+   "specs": {
+    "powerCv": 170,
+    "torqueKgfm": 27.5,
+    "weightKg": 1366,
+    "lengthMm": 4379,
+    "widthMm": 1813,
+    "heightMm": 1619,
+    "wheelbaseMm": 2673,
+    "groundClearanceMm": 212,
+    "trunkLiters": 437,
+    "tankLiters": 50,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 9.2
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "title": "Novo Clio 1.0 16V Hi-Power · Authentique · manual",
+   "trims": [
+    "authentique"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/clio-2023-02-08-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-4-41.xlsx",
+   "file": "4-clio-2023-02-08-pt.xlsx",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.5,
+    "weightKg": 912,
+    "lengthMm": 3811,
+    "widthMm": 1639,
+    "heightMm": 1417,
+    "wheelbaseMm": 2472,
+    "trunkLiters": 255,
+    "tankLiters": 50,
+    "topSpeedKmh": 168,
+    "zeroTo100s": 13.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "DUSTER 2026 · Iconic Plus 1.3 TURBO · automático",
+   "trims": [
+    "iconic",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.3,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-2022-04-14-pt_1705429992743_1705430255923_1718715324244",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_ac7ac022-a78b-46bc-9cf9-be98cb335c8b.xlsx",
+   "file": "34-duster-2022-04-14-pt_1705429992743_1705430255923.xlsx",
+   "specs": {
+    "powerCv": 163,
+    "torqueKgfm": 27.5,
+    "weightKg": 1353,
+    "lengthMm": 4376,
+    "widthMm": 1832,
+    "heightMm": 1693,
+    "wheelbaseMm": 2673,
+    "groundClearanceMm": 237,
+    "trunkLiters": 475,
+    "tankLiters": 46,
+    "topSpeedKmh": 180,
+    "zeroTo100s": 9.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "DUSTER 2026 · Iconic Plus 1.6 CVT",
+   "trims": [
+    "iconic",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-2022-04-14-pt_1705429992743_1705430255923_1718715324244",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_ac7ac022-a78b-46bc-9cf9-be98cb335c8b.xlsx",
+   "file": "34-duster-2022-04-14-pt_1705429992743_1705430255923.xlsx",
+   "specs": {
+    "powerCv": 112,
+    "torqueKgfm": 15.6,
+    "weightKg": 1292,
+    "lengthMm": 4376,
+    "widthMm": 1832,
+    "heightMm": 1693,
+    "wheelbaseMm": 2673,
+    "groundClearanceMm": 237,
+    "trunkLiters": 475,
+    "tankLiters": 46,
+    "topSpeedKmh": 167,
+    "zeroTo100s": 12.9
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "DUSTER 2026 · Intense Plus 1.6 CVT",
+   "trims": [
+    "intense",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-2022-04-14-pt_1705429992743_1705430255923_1718715324244",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_ac7ac022-a78b-46bc-9cf9-be98cb335c8b.xlsx",
+   "file": "34-duster-2022-04-14-pt_1705429992743_1705430255923.xlsx",
+   "specs": {
+    "powerCv": 112,
+    "torqueKgfm": 15.6,
+    "weightKg": 1289,
+    "lengthMm": 4376,
+    "widthMm": 1832,
+    "heightMm": 1693,
+    "wheelbaseMm": 2673,
+    "groundClearanceMm": 237,
+    "trunkLiters": 475,
+    "tankLiters": 46,
+    "topSpeedKmh": 167,
+    "zeroTo100s": 12.9
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "title": "DUSTER 2026 · Intense Plus 1.6 MT",
+   "trims": [
+    "intense",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-2022-04-14-pt_1705429992743_1705430255923_1718715324244",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_ac7ac022-a78b-46bc-9cf9-be98cb335c8b.xlsx",
+   "file": "34-duster-2022-04-14-pt_1705429992743_1705430255923.xlsx",
+   "specs": {
+    "powerCv": 112,
+    "torqueKgfm": 15.6,
+    "weightKg": 1256,
+    "lengthMm": 4376,
+    "widthMm": 1832,
+    "heightMm": 1693,
+    "wheelbaseMm": 2673,
+    "groundClearanceMm": 237,
+    "trunkLiters": 475,
+    "tankLiters": 46,
+    "topSpeedKmh": 178,
+    "zeroTo100s": 11.4
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster Oroch",
+   "title": "Duster Oroch · 1.6 16V Expression/Dynamique · manual",
+   "trims": [
+    "expression",
+    "dynamique"
+   ],
+   "years": [
+    2016,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-oroch-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-35-485.xlsx",
+   "file": "35-duster-oroch-pt.xlsx",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 16.2,
+    "weightKg": 1296,
+    "lengthMm": 4693,
+    "widthMm": 1821,
+    "heightMm": 1695,
+    "wheelbaseMm": 2829,
+    "groundClearanceMm": 206,
+    "tankLiters": 50,
+    "topSpeedKmh": 161,
+    "zeroTo100s": 12.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Duster Oroch",
+   "title": "Duster Oroch · 2.0 16V Dynamique · manual",
+   "trims": [
+    "dynamique"
+   ],
+   "years": [
+    2016,
+    2017
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/duster-oroch-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-35-485.xlsx",
+   "file": "35-duster-oroch-pt.xlsx",
+   "specs": {
+    "powerCv": 148,
+    "torqueKgfm": 20.9,
+    "weightKg": 1346,
+    "lengthMm": 4693,
+    "widthMm": 1821,
+    "heightMm": 1695,
+    "wheelbaseMm": 2829,
+    "groundClearanceMm": 206,
+    "tankLiters": 50,
+    "topSpeedKmh": 186,
+    "zeroTo100s": 9.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Novo Fluence 2015 · Dynamique / Dynamique CVT / Dynamique CVT Plus / Privilêge",
+   "trims": [
+    "dynamique",
+    "dynamique",
+    "dynamique",
+    "plus",
+    "privilege"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-7-28.xlsx",
+   "file": "7-fluence-pt.xlsx",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1369,
+    "lengthMm": 4620,
+    "widthMm": 1810,
+    "heightMm": 1470,
+    "wheelbaseMm": 2700,
+    "trunkLiters": 530,
+    "tankLiters": 60,
+    "topSpeedKmh": 200,
+    "zeroTo100s": 9.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Novo Fluence 2015 · Dynamique / Dynamique CVT / Dynamique CVT Plus / Privilêge",
+   "trims": [
+    "dynamique",
+    "dynamique",
+    "dynamique",
+    "plus",
+    "privilege"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-7-28.xlsx",
+   "file": "7-fluence-pt.xlsx",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4620,
+    "widthMm": 1810,
+    "heightMm": 1470,
+    "wheelbaseMm": 2700,
+    "trunkLiters": 530,
+    "tankLiters": 60,
+    "topSpeedKmh": 195,
+    "zeroTo100s": 9.9
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence Z.E.",
+   "title": "Fluence Z.E.",
+   "trims": [],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-ze-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-13-490.xlsx",
+   "file": "13-fluence-ze-pt.xlsx",
+   "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 23,
+    "weightKg": 1535,
+    "lengthMm": 4740,
+    "widthMm": 1810,
+    "heightMm": 1470,
+    "wheelbaseMm": 2700,
+    "trunkLiters": 317,
+    "topSpeedKmh": 135,
+    "zeroTo100s": 13.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "title": "Kangoo",
+   "trims": [],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "page": "https://imprensa.renault.com.br/produto/item/kangoo_1718634239554_1718635001157",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_f45927cc-8946-4c9e-bebe-ee291c32632b.xlsx",
+   "file": "98-kangoo_1718634239554.xlsx",
+   "specs": {
+    "powerCv": 115,
+    "torqueKgfm": 15.7,
+    "weightKg": 1196,
+    "lengthMm": 4409,
+    "widthMm": 1728,
+    "heightMm": 1808,
+    "wheelbaseMm": 2812,
+    "tankLiters": 47,
+    "topSpeedKmh": 176,
+    "zeroTo100s": 10.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo E-Tech",
+   "title": "KANGOO E-TECH 100% ELÉTRICO",
+   "trims": [],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/kangoo-etech",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_b6b05535-715a-4fa1-901f-76880dc805dc.xlsx",
+   "file": "92-kangoo-etech.xlsx",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 25,
+    "lengthMm": 4910,
+    "widthMm": 2159,
+    "heightMm": 1890,
+    "wheelbaseMm": 3100,
+    "topSpeedKmh": 130,
+    "zeroTo100s": 12
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo Z.E.",
+   "title": "Kangoo Z.E.",
+   "trims": [],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-ze-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-13-490.xlsx",
+   "file": "13-fluence-ze-pt.xlsx",
+   "specs": {
+    "powerCv": 60,
+    "torqueKgfm": 23,
+    "weightKg": 1410,
+    "lengthMm": 4210,
+    "widthMm": 2130,
+    "heightMm": 1840,
+    "wheelbaseMm": 2690,
+    "topSpeedKmh": 130,
+    "zeroTo100s": 20.3
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Iconic · manual",
+   "trims": [
+    "iconic"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/kwid-pt_1718715019249",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_a158938c-6892-4315-b169-6b3d3667648b.xlsx",
+   "file": "82-kwid-pt.xlsx",
+   "specs": {
+    "powerCv": 71,
+    "torqueKgfm": 10,
+    "weightKg": 820,
+    "lengthMm": 3731,
+    "widthMm": 1579,
+    "heightMm": 1481,
+    "wheelbaseMm": 2423,
+    "groundClearanceMm": 185,
+    "trunkLiters": 290,
+    "tankLiters": 38,
+    "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Intense · manual",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/kwid-pt_1718715019249",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_a158938c-6892-4315-b169-6b3d3667648b.xlsx",
+   "file": "82-kwid-pt.xlsx",
+   "specs": {
+    "powerCv": 71,
+    "torqueKgfm": 10,
+    "weightKg": 820,
+    "lengthMm": 3731,
+    "widthMm": 1579,
+    "heightMm": 1481,
+    "wheelbaseMm": 2423,
+    "groundClearanceMm": 185,
+    "trunkLiters": 290,
+    "tankLiters": 38,
+    "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Outsider · manual",
+   "trims": [
+    "outsider"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/kwid-pt_1718715019249",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_a158938c-6892-4315-b169-6b3d3667648b.xlsx",
+   "file": "82-kwid-pt.xlsx",
+   "specs": {
+    "powerCv": 71,
+    "torqueKgfm": 10,
+    "weightKg": 825,
+    "lengthMm": 3731,
+    "widthMm": 1579,
+    "heightMm": 1481,
+    "wheelbaseMm": 2423,
+    "groundClearanceMm": 185,
+    "trunkLiters": 290,
+    "tankLiters": 38,
+    "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Zen · manual",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/kwid-pt_1718715019249",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2F%2Fapplication_a158938c-6892-4315-b169-6b3d3667648b.xlsx",
+   "file": "82-kwid-pt.xlsx",
+   "specs": {
+    "powerCv": 71,
+    "torqueKgfm": 10,
+    "weightKg": 818,
+    "lengthMm": 3731,
+    "widthMm": 1579,
+    "heightMm": 1481,
+    "wheelbaseMm": 2423,
+    "groundClearanceMm": 185,
+    "trunkLiters": 290,
+    "tankLiters": 38,
+    "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid E-TECH",
+   "title": "Kwid E-TECH",
+   "trims": [],
+   "years": [
+    2022,
+    2023
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/kwid-e-tech-2022-04-14-pt_1715871308524",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-89-36.xlsx",
+   "file": "89-kwid-e-tech-2022-04-14-pt.xlsx",
+   "specs": {
+    "powerCv": 65,
+    "torqueKgfm": 11.5,
+    "weightKg": 977,
+    "lengthMm": 3734,
+    "widthMm": 1770,
+    "heightMm": 1500,
+    "wheelbaseMm": 2423,
+    "trunkLiters": 290,
+    "topSpeedKmh": 130,
+    "zeroTo100s": 14.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master · Chassi Cabine · manual",
+   "trims": [
+    "chassi",
+    "cabine"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/master-2022-05-06-pt-02",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-90-44.xlsx",
+   "file": "90-master-2022-05-06-pt-02.xlsx",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7,
+    "weightKg": 1740,
+    "tankLiters": 100,
+    "topSpeedKmh": 145,
+    "zeroTo100s": 17.1
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master · Furgão · manual",
+   "trims": [
+    "furgao"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/master-2022-05-06-pt-02",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-90-44.xlsx",
+   "file": "90-master-2022-05-06-pt-02.xlsx",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7,
+    "tankLiters": 100,
+    "topSpeedKmh": 145,
+    "zeroTo100s": 17.1
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master · Furgão Vitré · manual",
+   "trims": [
+    "furgao",
+    "vitre"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/master-2022-05-06-pt-02",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-90-44.xlsx",
+   "file": "90-master-2022-05-06-pt-02.xlsx",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7,
+    "tankLiters": 100,
+    "topSpeedKmh": 145,
+    "zeroTo100s": 17.1
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master · Minibus · manual",
+   "trims": [
+    "minibus"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/master-2022-05-06-pt-02",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-90-44.xlsx",
+   "file": "90-master-2022-05-06-pt-02.xlsx",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7,
+    "weightKg": 2508,
+    "tankLiters": 80,
+    "topSpeedKmh": 144,
+    "zeroTo100s": 19.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "title": "OROCH 2023 · Intense · manual",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/oroch-pt_1711547631852",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-87-37.xlsx",
+   "file": "87-oroch-pt.xlsx",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 16.2,
+    "weightKg": 1339,
+    "lengthMm": 4700,
+    "widthMm": 1821,
+    "heightMm": 1631,
+    "wheelbaseMm": 2829,
+    "groundClearanceMm": 212,
+    "tankLiters": 45,
+    "topSpeedKmh": 169,
+    "zeroTo100s": 11.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "title": "OROCH 2023 · Outsider · automático",
+   "trims": [
+    "outsider"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.3,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/oroch-pt_1711547631852",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-87-37.xlsx",
+   "file": "87-oroch-pt.xlsx",
+   "specs": {
+    "powerCv": 170,
+    "torqueKgfm": 27.5,
+    "weightKg": 1432,
+    "lengthMm": 4719,
+    "widthMm": 1834,
+    "heightMm": 1634,
+    "wheelbaseMm": 2829,
+    "groundClearanceMm": 212,
+    "tankLiters": 45,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 9.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "title": "OROCH 2023 · PRO · manual",
+   "trims": [
+    "pro"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/produto/item/oroch-pt_1711547631852",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-87-37.xlsx",
+   "file": "87-oroch-pt.xlsx",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 16.2,
+    "weightKg": 1292,
+    "lengthMm": 4700,
+    "widthMm": 1821,
+    "heightMm": 1631,
+    "wheelbaseMm": 2829,
+    "groundClearanceMm": 212,
+    "tankLiters": 45,
+    "topSpeedKmh": 169,
+    "zeroTo100s": 11.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Twizy",
+   "title": "Twizy",
+   "trims": [],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-ze-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-13-490.xlsx",
+   "file": "13-fluence-ze-pt.xlsx",
+   "specs": {
+    "powerCv": 17,
+    "torqueKgfm": 7.14,
+    "weightKg": 445,
+    "lengthMm": 2320,
+    "widthMm": 1190,
+    "heightMm": 1460,
+    "wheelbaseMm": 2700,
+    "topSpeedKmh": 45
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Zoe",
+   "title": "Zoe",
+   "trims": [],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/zoe-2021-05-24-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-85-40.xlsx",
+   "file": "85-zoe-2021-05-24-pt.xlsx",
+   "specs": {
+    "powerCv": 135,
+    "torqueKgfm": 25,
+    "weightKg": 1502,
+    "lengthMm": 4084,
+    "widthMm": 1945,
+    "heightMm": 1562,
+    "wheelbaseMm": 2588,
+    "trunkLiters": 338,
+    "topSpeedKmh": 140,
+    "zeroTo100s": 9.5
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "ZOE",
+   "title": "ZOE",
+   "trims": [],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": true,
+   "transmission": "automatico",
+   "page": "https://imprensa.renault.com.br/produto/item/fluence-ze-pt",
+   "url": "https://storage.googleapis.com/ire-74774-ope/files%2Fmigration%2Ftb_veiculos-13-490.xlsx",
+   "file": "13-fluence-ze-pt.xlsx",
+   "specs": {
+    "powerCv": 88,
+    "torqueKgfm": 22.4,
+    "weightKg": 1392,
+    "lengthMm": 4080,
+    "widthMm": 1780,
+    "heightMm": 1540,
+    "wheelbaseMm": 2590,
+    "trunkLiters": 338,
+    "topSpeedKmh": 135,
+    "zeroTo100s": 13.5
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Amarok",
+   "title": "Amarok Highline (Amarok CD 2.0 TDI 132kW Automático 4 Portas)",
+   "trims": [
+    "highline"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "cab": "cd",
+   "page": "https://www.vwnews.com.br/cars/version/14/7",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/c91765e22a631f8881cdc9ef1d8ba68c.pdf",
+   "file": "c91765e22a631f8881cdc9ef1d8ba68c.pdf",
+   "specs": {
+    "powerCv": 180,
+    "torqueKgfm": 42.8,
+    "weightKg": 2030,
+    "lengthMm": 5254,
+    "widthMm": 1944,
+    "heightMm": 1834,
+    "wheelbaseMm": 3097,
+    "tankLiters": 80,
+    "topSpeedKmh": 179,
+    "zeroTo100s": 10.9
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Amarok",
+   "title": "Amarok Highline Extreme V6 (Amarok 3.0 TDI V6 190kW Automático 4 Portas)",
+   "trims": [
+    "highline",
+    "extreme",
+    "v6"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 3,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/14/10",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/17ba3b91f6ab053ac15c962675bc31c3.pdf",
+   "file": "17ba3b91f6ab053ac15c962675bc31c3.pdf",
+   "specs": {
+    "powerCv": 258,
+    "torqueKgfm": 59.1,
+    "weightKg": 2134,
+    "lengthMm": 5254,
+    "widthMm": 1944,
+    "heightMm": 1834,
+    "wheelbaseMm": 3097,
+    "tankLiters": 80,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 7.4
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Amarok",
+   "title": "Amarok Highline V6 (Amarok 3.0 TDI V6 190kW Automático 4 Portas)",
+   "trims": [
+    "highline",
+    "v6"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 3,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/14/8",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/7bb09db7d0b32f67a4fdc5da81ffd63f.pdf",
+   "file": "7bb09db7d0b32f67a4fdc5da81ffd63f.pdf",
+   "specs": {
+    "powerCv": 258,
+    "torqueKgfm": 59.1,
+    "weightKg": 2134,
+    "lengthMm": 5254,
+    "widthMm": 1944,
+    "heightMm": 1834,
+    "wheelbaseMm": 3097,
+    "tankLiters": 80,
+    "topSpeedKmh": 190,
+    "zeroTo100s": 7.4
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus Comfortline 200 TSI (Nivus 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "comfortline",
+    "tsi"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/24/82",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/00f45826da9cda0f51129a1f7a2792eb.pdf",
+   "file": "00f45826da9cda0f51129a1f7a2792eb.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1199,
+    "lengthMm": 4266,
+    "widthMm": 1757,
+    "heightMm": 1493,
+    "wheelbaseMm": 2566,
+    "trunkLiters": 415,
+    "tankLiters": 52,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 10
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus Highline 200 TSI (Nivus 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "highline",
+    "tsi"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/24/159",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/5473135ae379ad47362d50df51d14af2.pdf",
+   "file": "5473135ae379ad47362d50df51d14af2.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1199,
+    "lengthMm": 4266,
+    "widthMm": 1757,
+    "heightMm": 1493,
+    "wheelbaseMm": 2566,
+    "trunkLiters": 415,
+    "tankLiters": 52,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 10
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Jetta GLI",
+   "title": "Jetta GLI (Jetta GLI Automático DSG 4 Portas)",
+   "trims": [],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/10/45",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Tecnica Jetta GLI.pdf",
+   "file": "ficha-tecnica-jetta-gli.pdf",
+   "specs": {
+    "powerCv": 230,
+    "torqueKgfm": 35.7,
+    "weightKg": 1432,
+    "lengthMm": 4709,
+    "widthMm": 1799,
+    "heightMm": 1478,
+    "wheelbaseMm": 2680,
+    "trunkLiters": 510,
+    "tankLiters": 50,
+    "topSpeedKmh": 250,
+    "zeroTo100s": 6.8
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Polo",
+   "title": "Polo Comfortline (Polo 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "comfortline"
+   ],
+   "years": [
+    2017,
+    2018
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/6/19",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 200 TSI.pdf",
+   "file": "ficha-tecnica-novo-polo-200-tsi.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1147,
+    "lengthMm": 4057,
+    "widthMm": 1751,
+    "heightMm": 1468,
+    "wheelbaseMm": 2565,
+    "trunkLiters": 300,
+    "tankLiters": 52,
+    "topSpeedKmh": 192,
+    "zeroTo100s": 9.6
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Polo",
+   "title": "Polo Highline (Polo 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "highline"
+   ],
+   "years": [
+    2017,
+    2018
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/6/20",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 200 TSI.pdf",
+   "file": "ficha-tecnica-novo-polo-200-tsi.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1147,
+    "lengthMm": 4057,
+    "widthMm": 1751,
+    "heightMm": 1468,
+    "wheelbaseMm": 2565,
+    "trunkLiters": 300,
+    "tankLiters": 52,
+    "topSpeedKmh": 192,
+    "zeroTo100s": 9.6
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Polo",
+   "title": "Polo MPI (Polo 1.0 MPI 62kW Manual 4 Portas)",
+   "trims": [
+    "mpi"
+   ],
+   "years": [
+    2017,
+    2018
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/6/17",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 1.0.pdf",
+   "file": "ficha-tecnica-novo-polo-1-0.pdf",
+   "specs": {
+    "powerCv": 84,
+    "torqueKgfm": 10.4,
+    "weightKg": 1058,
+    "lengthMm": 4057,
+    "widthMm": 1751,
+    "heightMm": 1468,
+    "wheelbaseMm": 2565,
+    "trunkLiters": 300,
+    "tankLiters": 52,
+    "topSpeedKmh": 170,
+    "zeroTo100s": 13
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Polo",
+   "title": "Polo MSI (Polo 1.6 MPI 86kW Manual 4 Portas)",
+   "trims": [
+    "msi"
+   ],
+   "years": [
+    2017,
+    2018
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/6/18",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Novo Polo 1.6 MSI.pdf",
+   "file": "ficha-tecnica-novo-polo-1-6-msi.pdf",
+   "specs": {
+    "powerCv": 117,
+    "torqueKgfm": 16.5,
+    "weightKg": 1083,
+    "lengthMm": 4057,
+    "widthMm": 1751,
+    "heightMm": 1468,
+    "wheelbaseMm": 2565,
+    "trunkLiters": 300,
+    "tankLiters": 52,
+    "topSpeedKmh": 193,
+    "zeroTo100s": 9.6
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Novo Polo",
+   "title": "Polo GTS (Polo 1.4 TSI 110kW GTS Automático 4 Portas)",
+   "trims": [
+    "gts"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1.4,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/6/47",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/f8a5463f9cf8b26a009efd9dfb7c90a2.pdf",
+   "file": "f8a5463f9cf8b26a009efd9dfb7c90a2.pdf",
+   "specs": {
+    "powerCv": 150,
+    "torqueKgfm": 25.5,
+    "weightKg": 1214,
+    "lengthMm": 4068,
+    "widthMm": 1751,
+    "heightMm": 1477,
+    "wheelbaseMm": 2564,
+    "trunkLiters": 300,
+    "tankLiters": 52,
+    "topSpeedKmh": 207,
+    "zeroTo100s": 8.4
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro Robust (Saveiro 1.6 76kW Manual MOTOR)",
+   "trims": [
+    "robust"
+   ],
+   "years": [
+    2016,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/13/33",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Nova Saveiro.pdf",
+   "file": "nova-saveiro.pdf",
+   "specs": {
+    "powerCv": 104,
+    "torqueKgfm": 15.6,
+    "weightKg": 1025,
+    "lengthMm": 4474,
+    "widthMm": 1713,
+    "wheelbaseMm": 2752,
+    "tankLiters": 55,
+    "topSpeedKmh": 174,
+    "zeroTo100s": 10.7
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro Trendline (Saveiro 1.6 76kW Manual MOTOR)",
+   "trims": [
+    "trendline"
+   ],
+   "years": [
+    2016,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/13/34",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Nova Saveiro.pdf",
+   "file": "nova-saveiro.pdf",
+   "specs": {
+    "powerCv": 104,
+    "torqueKgfm": 15.6,
+    "weightKg": 1025,
+    "lengthMm": 4474,
+    "widthMm": 1713,
+    "wheelbaseMm": 2752,
+    "tankLiters": 55,
+    "topSpeedKmh": 174,
+    "zeroTo100s": 10.7
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro Cross (Novo Saveiro CD Cross 1.6 88kW Manual 2 Portas)",
+   "trims": [
+    "cross"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "cab": "cd",
+   "page": "https://www.vwnews.com.br/cars/version/13/36",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha tecnica Saveiro CD Cross.pdf",
+   "file": "ficha-tecnica-saveiro-cd-cross.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 16.8,
+    "weightKg": 1125,
+    "lengthMm": 4497,
+    "widthMm": 1728,
+    "heightMm": 1553,
+    "wheelbaseMm": 2753,
+    "tankLiters": 55,
+    "topSpeedKmh": 177,
+    "zeroTo100s": 10
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross 200 TSI (T-Cross 200 TSI Manual 4 Portas)",
+   "trims": [
+    "tsi"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/18/41",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI manual.pdf",
+   "file": "ficha-tecnica-200-tsi-manual.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1215,
+    "lengthMm": 4199,
+    "widthMm": 1760,
+    "heightMm": 1568,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 373,
+    "tankLiters": 52,
+    "topSpeedKmh": 189,
+    "zeroTo100s": 9.6
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross 200 TSI Automático (T-Cross 200 TSI Automático 4 Portas)",
+   "trims": [
+    "tsi",
+    "automatico"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/18/42",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI automático.pdf",
+   "file": "ficha-tecnica-200-tsi-automatico.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1252,
+    "lengthMm": 4199,
+    "widthMm": 1760,
+    "heightMm": 1568,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 373,
+    "tankLiters": 52,
+    "topSpeedKmh": 184,
+    "zeroTo100s": 10.4
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross Comfortline 200 TSI (T-Cross 200 TSI Automático 4 Portas)",
+   "trims": [
+    "comfortline",
+    "tsi"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/18/43",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica - 200 TSI automático.pdf",
+   "file": "ficha-tecnica-200-tsi-automatico.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1252,
+    "lengthMm": 4199,
+    "widthMm": 1760,
+    "heightMm": 1568,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 373,
+    "tankLiters": 52,
+    "topSpeedKmh": 184,
+    "zeroTo100s": 10.4
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross Highline 250 TSI (T-Cross Highline 250 TSI Automático 4 Portas)",
+   "trims": [
+    "highline",
+    "tsi"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1.4,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/18/39",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica T-Cross Highline 250 TSI.pdf",
+   "file": "ficha-tecnica-t-cross-highline-250-tsi.pdf",
+   "specs": {
+    "powerCv": 150,
+    "torqueKgfm": 25.5,
+    "weightKg": 1292,
+    "lengthMm": 4199,
+    "widthMm": 1760,
+    "heightMm": 1570,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 373,
+    "tankLiters": 52,
+    "topSpeedKmh": 198,
+    "zeroTo100s": 8.7
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Virtus",
+   "title": "Virtus Comfortline (Virtus 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "comfortline"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/7/22",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 200 TSI.pdf",
+   "file": "ficha-tecnica-virtus-200-tsi.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1192,
+    "lengthMm": 4482,
+    "widthMm": 1751,
+    "heightMm": 1472,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 521,
+    "tankLiters": 52,
+    "topSpeedKmh": 194,
+    "zeroTo100s": 9.9
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Virtus",
+   "title": "Virtus Highline (Virtus 1.0 TSI 94kW Automático 4 Portas)",
+   "trims": [
+    "highline"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/7/23",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 200 TSI.pdf",
+   "file": "ficha-tecnica-virtus-200-tsi.pdf",
+   "specs": {
+    "powerCv": 128,
+    "torqueKgfm": 20.4,
+    "weightKg": 1192,
+    "lengthMm": 4482,
+    "widthMm": 1751,
+    "heightMm": 1472,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 521,
+    "tankLiters": 52,
+    "topSpeedKmh": 194,
+    "zeroTo100s": 9.9
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Virtus",
+   "title": "Virtus MSI (Virtus 1.6 MSI 86kW Manual 4 Portas)",
+   "trims": [
+    "msi"
+   ],
+   "years": [
+    2018,
+    2019
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/cars/version/7/21",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/Ficha Técnica Virtus 1.6 MSI.pdf",
+   "file": "ficha-tecnica-virtus-1-6-msi.pdf",
+   "specs": {
+    "powerCv": 117,
+    "torqueKgfm": 16.5,
+    "weightKg": 1134,
+    "lengthMm": 4482,
+    "widthMm": 1751,
+    "heightMm": 1472,
+    "wheelbaseMm": 2651,
+    "trunkLiters": 521,
+    "tankLiters": 52,
+    "topSpeedKmh": 195,
+    "zeroTo100s": 9.8
+   }
+  },
+  {
+   "brand": "vw",
+   "line": "Virtus",
+   "title": "Virtus GTS (Virtus 1.4 TSI 110kW GTS Automático 4 Portas)",
+   "trims": [
+    "gts"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1.4,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/cars/version/7/48",
+   "url": "https://vw-digital-cdn-br.itd.vw.com.br/assets/newsroom-cdn-br-ps/033f1f0ef5533125a5ec4ac6f41e82d5.pdf",
+   "file": "033f1f0ef5533125a5ec4ac6f41e82d5.pdf",
+   "specs": {
+    "powerCv": 150,
+    "torqueKgfm": 25.5,
+    "weightKg": 1255,
+    "lengthMm": 4492,
+    "widthMm": 1751,
+    "heightMm": 1476,
+    "wheelbaseMm": 2649,
+    "trunkLiters": 521,
+    "tankLiters": 52,
+    "topSpeedKmh": 210,
+    "zeroTo100s": 8.7
+   }
+  }
+ ]
+}

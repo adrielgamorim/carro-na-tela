@@ -17,9 +17,11 @@ disponibilidade dela.
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
       (a reserva é por linha, e a FIPE chama as duas só de "SERES").
-- [ ] 🟢 Fase 4, o que falta: porta-malas e torque fora da Stellantis, e equipamentos por versão. Os
-      releases só listam itens nos de "versões e preços" (70 versões), e GM, VW e as demais não têm
-      sala de imprensa aberta. Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
+- [ ] 🟢 Fase 4, o que falta: fichas de outras marcas e equipamentos por versão. VW e Renault já
+      entram (`fichas:vw`, `fichas:renault`, `fichas:abertas`), mas as da VW são de 2017–2020 e o
+      menu público só tem os modelos atuais. A Renault publica listas de equipamentos por versão
+      (Kardian, Logan, Sandero, Stepway; já lidas por `scripts/fichas/xlsx.ts`) e folhetos em PDF.
+      Revisar `npm run extract:imprensa` de vez em quando para os releases novos.
 
 ### Produto
 
