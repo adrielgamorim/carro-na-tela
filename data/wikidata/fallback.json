@@ -1236,17 +1236,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "BYD\neT3": {
-  "id": "wikipedia:en:BYD M3",
-  "label": "BYD M3",
-  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
-  "image": {
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
-   "artist": "Navigator84",
-   "license": "CC BY-SA 3.0"
-  }
- },
  "DFSK\nEC35": {
   "id": "wikipedia:en:DFSK C-Series",
   "label": "DFSK C-Series",
@@ -1313,17 +1302,6 @@
    "license": "CC BY-SA 4.0"
   }
  },
- "MG\n550": {
-  "id": "wikipedia:en:Roewe 550",
-  "label": "Roewe 550",
-  "wikipedia": "https://en.wikipedia.org/wiki/Roewe_550",
-  "image": {
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
-   "artist": "Navigator84",
-   "license": "CC BY-SA 4.0"
-  }
- },
  "CHANA\nFamily": {
   "id": "wikipedia:en:Chana Star",
   "label": "Chana Star",
@@ -1343,6 +1321,28 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Kaicene_Xingka_facelift_IMG001.jpg/500px-Kaicene_Xingka_facelift_IMG001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "page": "https://commons.wikimedia.org/wiki/File:Kaicene_Xingka_facelift_IMG001.jpg",
    "artist": "Anonymousfox36",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "BYD\neT3": {
+  "id": "wikipedia:en:BYD M3",
+  "label": "BYD M3",
+  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "MG\n550": {
+  "id": "wikipedia:en:Roewe 550",
+  "label": "Roewe 550",
+  "wikipedia": "https://en.wikipedia.org/wiki/Roewe_550",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
+   "artist": "Navigator84",
    "license": "CC BY-SA 4.0"
   }
  }

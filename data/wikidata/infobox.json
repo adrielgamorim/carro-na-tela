@@ -9921,5 +9921,220 @@
   ]
  },
  "en:Hafei Zhongyi": {},
- "en:Chana Star": {}
+ "en:Chana Star": {},
+ "pt:Ford_F-Series": {},
+ "en:Ford F-Series": {},
+ "pt:Volkswagen_Delivery": {},
+ "en:Volkswagen Delivery": {},
+ "pt:Renault_Oroch": {
+  "power": [
+   110,
+   148
+  ],
+  "length": [
+   4.693,
+   4.693
+  ],
+  "wheelbase": [
+   2.829,
+   2.829
+  ],
+  "width": [
+   1.821,
+   1.821
+  ],
+  "height": [
+   1.695,
+   1.695
+  ],
+  "mass": [
+   1292,
+   1346
+  ]
+ },
+ "en:Renault Duster Oroch": {
+  "wheelbase": [
+   2.829,
+   2.829
+  ],
+  "length": [
+   4.7,
+   4.7
+  ],
+  "width": [
+   1.822,
+   1.822
+  ],
+  "height": [
+   1.694,
+   1.694
+  ]
+ },
+ "en:Toyota Yaris (XP150)": {
+  "wheelbase": [
+   2.55,
+   2.55
+  ],
+  "length": [
+   4.115,
+   4.44
+  ],
+  "width": [
+   1.7,
+   1.73
+  ],
+  "height": [
+   1.475,
+   1.5
+  ],
+  "mass": [
+   1010,
+   1150
+  ]
+ },
+ "pt:Dodge_Journey": {
+  "wheelbase": [
+   2.891,
+   2.891
+  ],
+  "length": [
+   4.887,
+   4.887
+  ],
+  "width": [
+   1.834,
+   1.834
+  ],
+  "height": [
+   1.692,
+   1.692
+  ],
+  "power": [
+   185,
+   280
+  ]
+ },
+ "en:Dodge Journey": {
+  "wheelbase": [
+   2.89,
+   2.89
+  ],
+  "mass": [
+   1732,
+   1732
+  ]
+ },
+ "pt:Fiat_Freemont": {
+  "wheelbase": [
+   2.891,
+   2.891
+  ],
+  "length": [
+   4.887,
+   4.887
+  ],
+  "width": [
+   1.834,
+   1.834
+  ],
+  "height": [
+   1.692,
+   1.692
+  ],
+  "mass": [
+   1755,
+   1809
+  ],
+  "power": [
+   172,
+   172
+  ]
+ },
+ "en:Fiat Freemont": {
+  "wheelbase": [
+   2.89,
+   2.89
+  ],
+  "mass": [
+   1732,
+   1732
+  ]
+ },
+ "en:Jaguar F-Type": {
+  "wheelbase": [
+   2.622,
+   2.622
+  ],
+  "length": [
+   4.47,
+   4.47
+  ],
+  "width": [
+   1.923,
+   1.923
+  ],
+  "height": [
+   1.308,
+   1.308
+  ],
+  "mass": [
+   1597,
+   1665
+  ]
+ },
+ "pt:Fiat_Punto": {
+  "length": [
+   4.065,
+   4.065
+  ],
+  "wheelbase": [
+   2.51,
+   2.51
+  ],
+  "width": [
+   1.687,
+   1.687
+  ],
+  "height": [
+   1.499,
+   1.499
+  ]
+ },
+ "en:Fiat Punto": {},
+ "pt:Land_Rover_Range_Rover_Evoque": {},
+ "en:Range Rover Evoque": {},
+ "pt:Iveco_Daily": {},
+ "en:Iveco Daily": {},
+ "pt:BMW_M3": {
+  "wheelbase": [
+   2.73,
+   2.73
+  ],
+  "length": [
+   4.49,
+   4.49
+  ],
+  "width": [
+   1.78,
+   1.78
+  ],
+  "height": [
+   1.36,
+   1.36
+  ],
+  "mass": [
+   1385,
+   1385
+  ]
+ },
+ "en:BMW M3": {},
+ "pt:Land_Rover_Defender": {},
+ "en:Land Rover Defender": {},
+ "pt:Volkswagen_Passat_CC": {
+  "power": [
+   300,
+   300
+  ]
+ },
+ "en:Volkswagen CC": {}
 }

@@ -10324,5 +10324,229 @@
    "to": null,
    "names": "chana star 3 kaicene star 3 tirsam mini truck algeria"
   }
- ]
+ ],
+ "pt:Ford_F-Series": [
+  {
+   "file": "1949 Ford F-3 3.9 Front.jpg",
+   "from": 1952,
+   "to": 1952,
+   "names": "ford f series ford f 1"
+  },
+  {
+   "file": "1955 Ford F-100 front.jpg",
+   "from": 1953,
+   "to": 1956,
+   "names": "segunda geracao"
+  },
+  {
+   "file": "1957 Ford F-350 Custom Cab Styleside, fR.jpg",
+   "from": 1957,
+   "to": 1960,
+   "names": "terceira geracao"
+  }
+ ],
+ "en:Ford F-Series": [],
+ "pt:Volkswagen_Delivery": [],
+ "en:Volkswagen Delivery": [
+  {
+   "file": "Volkswagen Delivery.jpg",
+   "from": 1995,
+   "to": null,
+   "names": "volkswagen delivery volkswagen nueva linea argentina 1998 2002 volkswagen livianos argentina 2008 2011"
+  },
+  {
+   "file": "Bondinho de Balneário Camboriú SC.JPG",
+   "from": 1995,
+   "to": 2018,
+   "names": "delivery i"
+  },
+  {
+   "file": "Volkswagen Delivery.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "delivery ii"
+  }
+ ],
+ "pt:Renault_Oroch": [],
+ "en:Renault Duster Oroch": [],
+ "en:Toyota Yaris (XP150)": [],
+ "pt:Dodge_Journey": [],
+ "en:Dodge Journey": [],
+ "pt:Fiat_Freemont": [],
+ "en:Fiat Freemont": [],
+ "en:Jaguar F-Type": [],
+ "pt:Fiat_Punto": [
+  {
+   "file": "2006 Fiat Grande Punto Sporting T-J 1.4 Front.jpg",
+   "from": 2007,
+   "to": 2017,
+   "names": "fiat punto"
+  },
+  {
+   "file": "1998 Fiat Punto SX Selecta 1.2 Front.jpg",
+   "from": 1993,
+   "to": 1999,
+   "names": "fiat punto"
+  },
+  {
+   "file": "2000 Fiat Punto 1.2 Front.jpg",
+   "from": 1999,
+   "to": 2011,
+   "names": "fiat punto fiat punto classic zastava 10 servia 2005 2008"
+  },
+  {
+   "file": "Grande punto 5tuerer.jpg",
+   "from": 2005,
+   "to": 2018,
+   "names": "fiat punto fiat grande punto ueb fiat avventura indb fiat punto evo ueb"
+  }
+ ],
+ "en:Fiat Punto": [
+  {
+   "file": "Fiat Punto 2012 5door front.JPG",
+   "from": 1993,
+   "to": 2018,
+   "names": "fiat punto"
+  },
+  {
+   "file": "1998 Fiat Punto SX Selecta 1.2 Front.jpg",
+   "from": 1993,
+   "to": 1999,
+   "names": "first generation"
+  },
+  {
+   "file": "2000 Fiat Punto 1.2 Front.jpg",
+   "from": 1999,
+   "to": 2013,
+   "names": "second generation fiat punto classic zastava 10"
+  },
+  {
+   "file": "2006 Fiat Grande Punto Sporting T-J 1.4 Front.jpg",
+   "from": 2004,
+   "to": 2018,
+   "names": "third generation fiat grande punto fiat avventura india crossover version fiat urban cross india crossover version"
+  }
+ ],
+ "pt:Land_Rover_Range_Rover_Evoque": [],
+ "en:Range Rover Evoque": [
+  {
+   "file": "2019 Land Rover Range Rover Evoque R-Dynamic 2.0.jpg",
+   "from": 2011,
+   "to": null,
+   "names": "range rover evoque"
+  },
+  {
+   "file": "2011 Land Rover Range Rover Evoque Pure SD4 2.2 Front.jpg",
+   "from": 2011,
+   "to": 2018,
+   "names": "first generation"
+  },
+  {
+   "file": "2019 Land Rover Range Rover Evoque First Edition D180 Automatic 2.0 Front.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "second generation"
+  }
+ ],
+ "pt:Iveco_Daily": [],
+ "en:Iveco Daily": [
+  {
+   "file": "2014 Iveco Daily 35 S13 MWB 2.3.jpg",
+   "from": 1978,
+   "to": null,
+   "names": "iveco daily"
+  },
+  {
+   "file": "Early Fiat Daily truck.jpg",
+   "from": 1978,
+   "to": 1985,
+   "names": "fiat daily om grinta alfa romeo ar8 unic daily magirus deutz daily saurer daily grinta"
+  },
+  {
+   "file": "Iveco TurboDaily first generation.JPG",
+   "from": 1978,
+   "to": null,
+   "names": "iveco turbodaily ubl alfa romeo ar8 iveco ford daily fiat daily om grinta zastava rival iveco pegaso daily iveco duty pegaso duty"
+  },
+  {
+   "file": "Horsham Dial-a-Ride GN04 UVD 2.JPG",
+   "from": 1999,
+   "to": null,
+   "names": "second generation irisbus daily irisbus ecodaily 2009 11 iveco turin china 2004 2008 iveco power daily china 2009 2021 iveco daily ousheng china since 2017 maxus h90 second facelift rv china"
+  },
+  {
+   "file": "2014 Iveco Daily 35 S13 MWB 2.3.jpg",
+   "from": 2014,
+   "to": null,
+   "names": "third generation"
+  }
+ ],
+ "pt:BMW_M3": [],
+ "en:BMW M3": [
+  {
+   "file": "BMW M3 Competition (G80) IMG 4041.jpg",
+   "from": 1986,
+   "to": null,
+   "names": "bmw m3"
+  },
+  {
+   "file": "1991 BMW M3 Evo II BS O24.jpg",
+   "from": 1986,
+   "to": 1991,
+   "names": "bmw m3 e30"
+  },
+  {
+   "file": "1998 BMW M3 Coupe 3.2.jpg",
+   "from": 1992,
+   "to": 1999,
+   "names": "bmw m3 e36"
+  },
+  {
+   "file": "BMW E46 M3 Phoenix Yellow (1).jpg",
+   "from": 2000,
+   "to": 2006,
+   "names": "bmw m3 e46"
+  },
+  {
+   "file": "2008-2010 BMW M3 (E90) sedan 04.jpg",
+   "from": 2007,
+   "to": 2013,
+   "names": "e90 92 93 m3"
+  },
+  {
+   "file": "2017 BMW M3 (F80) sedan (2018-08-31) 01.jpg",
+   "from": 2014,
+   "to": 2018,
+   "names": "f80 m3"
+  },
+  {
+   "file": "2021 BMW M3 Competition Automatic 3.0 Front.jpg",
+   "from": 2020,
+   "to": null,
+   "names": "g80 m3"
+  }
+ ],
+ "pt:Land_Rover_Defender": [],
+ "en:Land Rover Defender": [
+  {
+   "file": "2015 Land Rover Defender (L316 MY15) 90 3-door wagon (2015-10-24) 01.jpg",
+   "from": 1983,
+   "to": 2016,
+   "names": "land rover defender land rover 90 ninety 110 one ten one two seven 1983 1990"
+  },
+  {
+   "file": "1985 Land Rover 110 County (39887330091).jpg",
+   "from": 1983,
+   "to": 1990,
+   "names": "ninety one ten and one two seven"
+  },
+  {
+   "file": "Defender90.JPG",
+   "from": 1990,
+   "to": 2016,
+   "names": "land rover defender"
+  }
+ ],
+ "pt:Volkswagen_Passat_CC": [],
+ "en:Volkswagen CC": []
 }

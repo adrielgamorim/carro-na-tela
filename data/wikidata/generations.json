@@ -1616,6 +1616,34 @@
    "license": "CC BY 2.0"
   }
  ],
+ "Q1146685": [
+  {
+   "file": "1949 Ford F-3 3.9 Front.jpg",
+   "from": 1952,
+   "to": 1952,
+   "names": "ford f series ford f 1",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/1949_Ford_F-3_3.9_Front.jpg/500px-1949_Ford_F-3_3.9_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "1955 Ford F-100 front.jpg",
+   "from": 1953,
+   "to": 1956,
+   "names": "segunda geracao",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/1955_Ford_F-100_front.jpg/500px-1955_Ford_F-100_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "1957 Ford F-350 Custom Cab Styleside, fR.jpg",
+   "from": 1957,
+   "to": 1960,
+   "names": "terceira geracao",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/1957_Ford_F-350_Custom_Cab_Styleside%2C_fR.jpg/500px-1957_Ford_F-350_Custom_Cab_Styleside%2C_fR.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Mr.choppers",
+   "license": "CC BY-SA 3.0"
+  }
+ ],
  "Q1162891": [
   {
    "file": "0 Honda City (7th generation) sedan.jpg",
@@ -2415,6 +2443,35 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Peugeot_408_II_Shishi_01_2022-03-01.jpg/500px-Peugeot_408_II_Shishi_01_2022-03-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "artist": "JamesYoung8167",
    "license": "CC BY-SA 4.0"
+  }
+ ],
+ "Q1344307": [
+  {
+   "file": "Volkswagen Delivery.jpg",
+   "from": 1995,
+   "to": null,
+   "names": "volkswagen delivery volkswagen nueva linea argentina 1998 2002 volkswagen livianos argentina 2008 2011",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Volkswagen_Delivery.jpg/500px-Volkswagen_Delivery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Jason Lawrence",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "Bondinho de Balneário Camboriú SC.JPG",
+   "from": 1995,
+   "to": 2018,
+   "names": "delivery i",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Bondinho_de_Balne%C3%A1rio_Cambori%C3%BA_SC.JPG/500px-Bondinho_de_Balne%C3%A1rio_Cambori%C3%BA_SC.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "HVL",
+   "license": "CC BY 4.0"
+  },
+  {
+   "file": "Volkswagen Delivery.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "delivery ii",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Volkswagen_Delivery.jpg/500px-Volkswagen_Delivery.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Jason Lawrence",
+   "license": "CC BY 2.0"
   }
  ],
  "Q1352931": [
@@ -4269,6 +4326,80 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Renault_M%C3%A9gane_%28IV%29_%E2%80%93_f_26082025.jpg/500px-Renault_M%C3%A9gane_%28IV%29_%E2%80%93_f_26082025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "artist": "© M 93",
    "license": "CC BY-SA 3.0 de"
+  }
+ ],
+ "Q223864": [
+  {
+   "file": "2006 Fiat Grande Punto Sporting T-J 1.4 Front.jpg",
+   "from": 2007,
+   "to": 2017,
+   "names": "fiat punto",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/2006_Fiat_Grande_Punto_Sporting_T-J_1.4_Front.jpg/500px-2006_Fiat_Grande_Punto_Sporting_T-J_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "1998 Fiat Punto SX Selecta 1.2 Front.jpg",
+   "from": 1993,
+   "to": 1999,
+   "names": "fiat punto",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/1998_Fiat_Punto_SX_Selecta_1.2_Front.jpg/500px-1998_Fiat_Punto_SX_Selecta_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Makizox",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2000 Fiat Punto 1.2 Front.jpg",
+   "from": 1999,
+   "to": 2011,
+   "names": "fiat punto fiat punto classic zastava 10 servia 2005 2008",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2000_Fiat_Punto_1.2_Front.jpg/500px-2000_Fiat_Punto_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "Grande punto 5tuerer.jpg",
+   "from": 2005,
+   "to": 2018,
+   "names": "fiat punto fiat grande punto ueb fiat avventura indb fiat punto evo ueb",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Grande_punto_5tuerer.jpg/500px-Grande_punto_5tuerer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Blutgretchen",
+   "license": "CC BY 3.0"
+  },
+  {
+   "file": "Fiat Punto 2012 5door front.JPG",
+   "from": 1993,
+   "to": 2018,
+   "names": "fiat punto",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Fiat_Punto_2012_5door_front.JPG/500px-Fiat_Punto_2012_5door_front.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Corvettec6r",
+   "license": "CC0"
+  },
+  {
+   "file": "1998 Fiat Punto SX Selecta 1.2 Front.jpg",
+   "from": 1993,
+   "to": 1999,
+   "names": "first generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/1998_Fiat_Punto_SX_Selecta_1.2_Front.jpg/500px-1998_Fiat_Punto_SX_Selecta_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Makizox",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2000 Fiat Punto 1.2 Front.jpg",
+   "from": 1999,
+   "to": 2013,
+   "names": "second generation fiat punto classic zastava 10",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/2000_Fiat_Punto_1.2_Front.jpg/500px-2000_Fiat_Punto_1.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2006 Fiat Grande Punto Sporting T-J 1.4 Front.jpg",
+   "from": 2004,
+   "to": 2018,
+   "names": "third generation fiat grande punto fiat avventura india crossover version fiat urban cross india crossover version",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/2006_Fiat_Grande_Punto_Sporting_T-J_1.4_Front.jpg/500px-2006_Fiat_Grande_Punto_Sporting_T-J_1.4_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
   }
  ],
  "Q22754238": [
@@ -9586,6 +9717,35 @@
    "license": "CC BY-SA 4.0"
   }
  ],
+ "Q642647": [
+  {
+   "file": "2019 Land Rover Range Rover Evoque R-Dynamic 2.0.jpg",
+   "from": 2011,
+   "to": null,
+   "names": "range rover evoque",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/2019_Land_Rover_Range_Rover_Evoque_R-Dynamic_2.0.jpg/500px-2019_Land_Rover_Range_Rover_Evoque_R-Dynamic_2.0.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2011 Land Rover Range Rover Evoque Pure SD4 2.2 Front.jpg",
+   "from": 2011,
+   "to": 2018,
+   "names": "first generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2011_Land_Rover_Range_Rover_Evoque_Pure_SD4_2.2_Front.jpg/500px-2011_Land_Rover_Range_Rover_Evoque_Pure_SD4_2.2_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2019 Land Rover Range Rover Evoque First Edition D180 Automatic 2.0 Front.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "second generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/2019_Land_Rover_Range_Rover_Evoque_First_Edition_D180_Automatic_2.0_Front.jpg/500px-2019_Land_Rover_Range_Rover_Evoque_First_Edition_D180_Automatic_2.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
  "Q659251": [
   {
    "file": "Mercedes-Benz W463 G 350 BlueTEC 01.jpg",
@@ -10087,6 +10247,53 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Nissan_Micra_Evolve_%28VI%29_%E2%80%93_f_11042026.jpg/500px-Nissan_Micra_Evolve_%28VI%29_%E2%80%93_f_11042026.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "artist": "© M 93",
    "license": "CC BY-SA 3.0 de"
+  }
+ ],
+ "Q740862": [
+  {
+   "file": "2014 Iveco Daily 35 S13 MWB 2.3.jpg",
+   "from": 1978,
+   "to": null,
+   "names": "iveco daily",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/2014_Iveco_Daily_35_S13_MWB_2.3.jpg/500px-2014_Iveco_Daily_35_S13_MWB_2.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "Early Fiat Daily truck.jpg",
+   "from": 1978,
+   "to": 1985,
+   "names": "fiat daily om grinta alfa romeo ar8 unic daily magirus deutz daily saurer daily grinta",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Early_Fiat_Daily_truck.jpg/500px-Early_Fiat_Daily_truck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "photobeppus",
+   "license": "CC BY-SA 2.0"
+  },
+  {
+   "file": "Iveco TurboDaily first generation.JPG",
+   "from": 1978,
+   "to": null,
+   "names": "iveco turbodaily ubl alfa romeo ar8 iveco ford daily fiat daily om grinta zastava rival iveco pegaso daily iveco duty pegaso duty",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Iveco_TurboDaily_first_generation.JPG/500px-Iveco_TurboDaily_first_generation.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Corvettec6r",
+   "license": "Public domain"
+  },
+  {
+   "file": "Horsham Dial-a-Ride GN04 UVD 2.JPG",
+   "from": 1999,
+   "to": null,
+   "names": "second generation irisbus daily irisbus ecodaily 2009 11 iveco turin china 2004 2008 iveco power daily china 2009 2021 iveco daily ousheng china since 2017 maxus h90 second facelift rv china",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Horsham_Dial-a-Ride_GN04_UVD_2.JPG/500px-Horsham_Dial-a-Ride_GN04_UVD_2.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Arriva436",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "2014 Iveco Daily 35 S13 MWB 2.3.jpg",
+   "from": 2014,
+   "to": null,
+   "names": "third generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/2014_Iveco_Daily_35_S13_MWB_2.3.jpg/500px-2014_Iveco_Daily_35_S13_MWB_2.3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
   }
  ],
  "Q741949": [
@@ -11041,6 +11248,71 @@
    "names": "third generation",
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Volkswagen_Tiguan_III_DSC_7193_%28cropped%29.jpg/500px-Volkswagen_Tiguan_III_DSC_7193_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
+ "Q796579": [
+  {
+   "file": "BMW M3 Competition (G80) IMG 4041.jpg",
+   "from": 1986,
+   "to": null,
+   "names": "bmw m3",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/BMW_M3_Competition_%28G80%29_IMG_4041.jpg/500px-BMW_M3_Competition_%28G80%29_IMG_4041.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "1991 BMW M3 Evo II BS O24.jpg",
+   "from": 1986,
+   "to": 1991,
+   "names": "bmw m3 e30",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/1991_BMW_M3_Evo_II_BS_O24.jpg/500px-1991_BMW_M3_Evo_II_BS_O24.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "MrWalkr",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "1998 BMW M3 Coupe 3.2.jpg",
+   "from": 1992,
+   "to": 1999,
+   "names": "bmw m3 e36",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/1998_BMW_M3_Coupe_3.2.jpg/500px-1998_BMW_M3_Coupe_3.2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "BMW E46 M3 Phoenix Yellow (1).jpg",
+   "from": 2000,
+   "to": 2006,
+   "names": "bmw m3 e46",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/BMW_E46_M3_Phoenix_Yellow_%281%29.jpg/500px-BMW_E46_M3_Phoenix_Yellow_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Damian B Oh",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2008-2010 BMW M3 (E90) sedan 04.jpg",
+   "from": 2007,
+   "to": 2013,
+   "names": "e90 92 93 m3",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/2008-2010_BMW_M3_%28E90%29_sedan_04.jpg/500px-2008-2010_BMW_M3_%28E90%29_sedan_04.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "OSX",
+   "license": "Public domain"
+  },
+  {
+   "file": "2017 BMW M3 (F80) sedan (2018-08-31) 01.jpg",
+   "from": 2014,
+   "to": 2018,
+   "names": "f80 m3",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/2017_BMW_M3_%28F80%29_sedan_%282018-08-31%29_01.jpg/500px-2017_BMW_M3_%28F80%29_sedan_%282018-08-31%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "EurovisionNim",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "2021 BMW M3 Competition Automatic 3.0 Front.jpg",
+   "from": 2020,
+   "to": null,
+   "names": "g80 m3",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/2021_BMW_M3_Competition_Automatic_3.0_Front.jpg/500px-2021_BMW_M3_Competition_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Vauxford",
    "license": "CC BY-SA 4.0"
   }
  ],
@@ -12481,6 +12753,35 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Renault_Captur_II_1X7A1982.jpg/500px-Renault_Captur_II_1X7A1982.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "artist": "Alexander-93",
    "license": "CC BY-SA 4.0"
+  }
+ ],
+ "Q908027": [
+  {
+   "file": "2015 Land Rover Defender (L316 MY15) 90 3-door wagon (2015-10-24) 01.jpg",
+   "from": 1983,
+   "to": 2016,
+   "names": "land rover defender land rover 90 ninety 110 one ten one two seven 1983 1990",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg/500px-2015_Land_Rover_Defender_%28L316_MY15%29_90_3-door_wagon_%282015-10-24%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "OSX",
+   "license": "Public domain"
+  },
+  {
+   "file": "1985 Land Rover 110 County (39887330091).jpg",
+   "from": 1983,
+   "to": 1990,
+   "names": "ninety one ten and one two seven",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/1985_Land_Rover_110_County_%2839887330091%29.jpg/500px-1985_Land_Rover_110_County_%2839887330091%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Riley from Christchurch, New Zealand",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "Defender90.JPG",
+   "from": 1990,
+   "to": 2016,
+   "names": "land rover defender",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Defender90.JPG/500px-Defender90.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Shelka04 (talk)",
+   "license": "CC BY-SA 3.0"
   }
  ],
  "Q9094747": [
