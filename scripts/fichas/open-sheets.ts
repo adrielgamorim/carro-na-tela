@@ -6,7 +6,7 @@
 
 import type { SheetSpecs } from "../../src/catalog/press.ts";
 
-export type OpenBrand = "vw" | "renault" | "toyota";
+export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis";
 export type Transmission = "automatico" | "manual";
 
 /** A sheet read from a press room's file (data/fichas/fichas-abertas.json). */
@@ -27,6 +27,10 @@ export interface OpenSheet {
   electric: boolean;
   /** A hybrid (Toyota marks them); none for the others. */
   hybrid?: boolean;
+  /** Diesel or not, when the sheet says (Stellantis' titles); else either. */
+  diesel?: boolean;
+  /** Its FIPE brands, for a press room of several ("Fiat", "Jeep"…); else its brand's. */
+  fipeBrands?: string[];
   /** Only for versions naming one of its trims (a plug-in hybrid FIPE does not tell from the hybrid). */
   onlyNamed?: boolean;
   transmission?: Transmission;
@@ -158,11 +162,13 @@ export function litersOf(text: string): number | undefined {
   return liters ? Number(`${liters[1]}.${liters[2]}`) : undefined;
 }
 
-export const turboIn = (text: string) => /turbo|tsi\b|tdi\b|tce\b|\btb\b|diesel|dci\b/.test(plain(text));
+// Stellantis names its turbos by torque ("T270", "TD350").
+export const turboIn = (text: string) =>
+  /turbo|tsi\b|tdi\b|tce\b|\btb\b|diesel|dci\b|\bt ?(180|200|270|350)\b|\btd ?\d/.test(plain(text));
 const electricIn = (text: string) => /eletric|electric|z\.?e\.?\b|e-tech/.test(plain(text));
 export function transmissionIn(text: string): Transmission | undefined {
   const value = plain(text);
-  if (/autom|cvt|dsg|tiptronic|uma marcha a frente/.test(value)) return "automatico";
+  if (/autom|cvt|dsg|tiptronic|uma marcha a frente|\bat\d?\b/.test(value)) return "automatico";
   if (/manual|mecanic|\bmt\b|\bmec\b/.test(value)) return "manual";
   return undefined;
 }
@@ -368,7 +374,7 @@ export function renaultSheets(rows: string[][], link: RenaultLink, modified: Dat
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"] };
+const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [] };
 
 export interface OpenSheetTarget {
   brand: string;
@@ -381,6 +387,8 @@ export interface OpenSheetTarget {
   electric: boolean;
   /** FIPE fuel or name "Híbrido". */
   hybrid?: boolean;
+  /** FIPE fuel "Diesel". */
+  diesel?: boolean;
 }
 
 // Sheets merged for versions that several fit equally, one object per set, so the index lists each once.
@@ -432,7 +440,7 @@ export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget)
 /** What a sheet or an equipment list says it is for. */
 export type SheetKey = Pick<
   OpenSheet,
-  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "onlyNamed" | "transmission" | "cab"
+  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "diesel" | "fipeBrands" | "onlyNamed" | "transmission" | "cab"
 >;
 
 /**
@@ -447,7 +455,7 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
   const versionCab = cabIn(target.name);
   // A version word matches a trim it starts: "comfor" is "comfortline", "dyna" "dynamique", "prem" "premiere".
   const names = (word: string) => nameWords.some((own) => own === word || (own.length >= 3 && word.startsWith(own.replace(/\.$/, ""))));
-  const ofBrand = sheets.filter((sheet) => fipeBrands[sheet.brand].includes(target.brand));
+  const ofBrand = sheets.filter((sheet) => (sheet.fipeBrands ?? fipeBrands[sheet.brand]).includes(target.brand));
   const fitting: { sheet: T; score: number }[] = [];
   for (const sheet of ofBrand) {
     const own = lineWords(sheet.line);
@@ -459,6 +467,7 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     if (longer) continue;
     if (target.modelYear < sheet.years[0] || target.modelYear > sheet.years[1]) continue;
     if (sheet.electric !== target.electric || Boolean(sheet.hybrid) !== Boolean(target.hybrid)) continue;
+    if (sheet.diesel !== undefined && target.diesel !== undefined && sheet.diesel !== target.diesel) continue;
     if (sheet.engineLiters !== undefined && target.engineLiters !== undefined && Math.abs(sheet.engineLiters - target.engineLiters) > 0.05) continue;
     if (!sheet.electric && sheet.turbo !== undefined && sheet.turbo !== target.turbo) continue;
     if (sheet.transmission === "automatico" && !automatic) continue;

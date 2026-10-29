@@ -118,7 +118,7 @@ export function linkOfFile(file: string, links: SheetLink[]): SheetLink | undefi
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<string, string[]> = {
+export const fipeBrands: Record<string, string[]> = {
   fiat: ["Fiat"], abarth: ["Fiat"], jeep: ["Jeep"], ram: ["RAM"], peugeot: ["Peugeot"],
   citroen: ["Citroën"], leapmotor: ["Leapmotor"], chrysler: ["Chrysler"], dodge: ["Dodge"],
 };

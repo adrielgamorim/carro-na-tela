@@ -19,6 +19,7 @@ import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
 import type { ReadSheet } from "../fichas/sheets.ts";
 import { openSheetOfVersion } from "../fichas/open-sheets.ts";
 import type { OpenSheet } from "../fichas/open-sheets.ts";
+import { stellantisAsOpen } from "../fichas/stellantis-open.ts";
 import { equipmentOfVersion } from "../fichas/equipment.ts";
 import type { EquipmentList } from "../fichas/equipment.ts";
 import { crashTestOfVersion } from "../seguranca/latinncap.ts";
@@ -405,8 +406,10 @@ export function buildCatalogIndex(
   // Spec sheets: the one of each version-year, by trim, engine, transmission and year.
   const sheetList: NonNullable<CatalogIndexFile["sheets"]> = [];
   if (sheets?.length || openSheets?.length) {
+    // Stellantis' sheets the exact match leaves out are tried the open press rooms' way.
+    const fallback = [...(openSheets ?? []), ...(sheets ?? []).flatMap((sheet) => stellantisAsOpen(sheet) ?? [])];
     const sheetIndex = new Map<ReadSheet | OpenSheet, number>();
-    const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota" } as const;
+    const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota", stellantis: "Stellantis" } as const;
     // Each line's trim words, to read them in the sheets' titles.
     const lineNames = new Map<string, string[]>();
     for (const version of sorted) {
@@ -429,7 +432,14 @@ export function buildCatalogIndex(
         // Stellantis' sheets are of the exact version and year; the open ones of an engine and a few years.
         const sheet =
           (sheets && sheetOfVersion(sheets, { ...target, modelYear }, lineTrims.get(lineKey) ?? new Set())) ??
-          (openSheets && openSheetOfVersion(openSheets, { ...target, modelYear, electric, hybrid, valves: version.a?.valves }));
+          openSheetOfVersion(fallback, {
+            ...target,
+            modelYear,
+            electric,
+            hybrid,
+            diesel: /diesel/i.test(versionFuel.get(version) ?? ""),
+            valves: version.a?.valves,
+          });
         if (!sheet) return -1;
         if (!sheetIndex.has(sheet)) {
           sheetIndex.set(sheet, sheetList.length);
@@ -438,7 +448,7 @@ export function buildCatalogIndex(
             page: sheet.page,
             specs: sheet.specs,
             // A PDF opens in the browser; Renault's spreadsheet would download, so its page.
-            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand !== "renault" && { url: sheet.url }) }),
+            ...("line" in sheet && { source: sources[sheet.brand], ...((sheet.brand === "vw" || sheet.brand === "toyota") && { url: sheet.url }) }),
           });
         }
         return sheetIndex.get(sheet)!;
