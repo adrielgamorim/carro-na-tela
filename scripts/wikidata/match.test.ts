@@ -90,6 +90,8 @@ describe("parseSparqlModels", () => {
           from: value("2017"),
         },
         { m: value("http://www.wikidata.org/entity/Q1"), aliases: value("") },
+        // Only the "mul" label (every language), as the Fiat Punto has now.
+        { m: value("http://www.wikidata.org/entity/Q223864"), mul: value("Fiat Punto"), aliases: value("") },
       ]),
     ).toEqual([
       {
@@ -102,6 +104,7 @@ describe("parseSparqlModels", () => {
         ptwiki: "Fiat_Argo",
         from: 2017,
       },
+      { id: "Q223864", label: "Fiat Punto", names: ["Fiat Punto"], labelCount: 1, brands: [] },
     ]);
   });
 });

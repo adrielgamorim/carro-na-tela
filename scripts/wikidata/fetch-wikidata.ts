@@ -8,7 +8,8 @@
 // Wikidata id). Details already downloaded are kept; --cached reuses the
 // models file instead of running the query again.
 
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { selectLatestSnapshots } from "../catalog/catalog-index.ts";
@@ -40,15 +41,25 @@ const modelsFile = join(values.out, "models.json");
 const detailsFile = join(values.out, "details.json");
 const fallbackFile = join(values.out, "fallback.json");
 
-// Car models (Q3231690) and car model series (Q59773381: Golf, Uno, Hilux…).
-// Listing the ids is cheap; their data comes in batches, since one query for
-// everything exceeds the 60 s limit of the query service.
-const classes = ["Q3231690", "Q59773381"];
+// Car models (Q3231690) and car model series (Q59773381: Golf, Uno, Hilux…),
+// with their subclasses; and items typed only as a vehicle model (Q29048322:
+// Renault Oroch), vehicle model series (Q29048319: Ford F-250) or truck model
+// (Q21546143: Iveco Daily, VW Delivery), without subclasses, which would bring
+// motorcycles and aircraft. Listing the ids is cheap; their data comes in
+// batches, since one query for everything exceeds the 60 s limit of the query
+// service.
+const classes = [
+  { id: "Q3231690", subclasses: true },
+  { id: "Q59773381", subclasses: true },
+  { id: "Q29048322", subclasses: false },
+  { id: "Q29048319", subclasses: false },
+  { id: "Q21546143", subclasses: false },
+];
 // One class per query: VALUES over the class makes the planner time out.
-const idsQuery = (wikidataClass: string) =>
-  `SELECT DISTINCT ?m WHERE { ?m wdt:P31/wdt:P279* wd:${wikidataClass} }`;
+const idsQuery = ({ id, subclasses }: (typeof classes)[number]) =>
+  `SELECT DISTINCT ?m WHERE { ?m wdt:P31${subclasses ? "/wdt:P279*" : ""} wd:${id} }`;
 const dataQuery = (ids: string[]) => `
-SELECT ?m ?en ?pt ?ptDesc
+SELECT ?m ?en ?pt ?mul ?ptDesc
   (GROUP_CONCAT(DISTINCT ?alias; separator="|") AS ?aliases)
   (GROUP_CONCAT(DISTINCT ?brandName; separator="|") AS ?brands)
   (SAMPLE(?img) AS ?image) (SAMPLE(?ptw) AS ?ptwiki)
@@ -57,15 +68,17 @@ WHERE {
   VALUES ?m { ${ids.map((id) => `wd:${id}`).join(" ")} }
   OPTIONAL { ?m rdfs:label ?en FILTER(LANG(?en) = "en") }
   OPTIONAL { ?m rdfs:label ?pt FILTER(LANG(?pt) = "pt") }
+  # "mul" is the label for every language: items that have it often drop "en" and "pt" (Fiat Punto).
+  OPTIONAL { ?m rdfs:label ?mul FILTER(LANG(?mul) = "mul") }
   OPTIONAL { ?m schema:description ?ptDesc FILTER(LANG(?ptDesc) = "pt") }
-  OPTIONAL { ?m skos:altLabel ?alias FILTER(LANG(?alias) IN ("en", "pt", "pt-br")) }
+  OPTIONAL { ?m skos:altLabel ?alias FILTER(LANG(?alias) IN ("en", "pt", "pt-br", "mul")) }
   OPTIONAL { ?m wdt:P176|wdt:P1716 ?b . ?b rdfs:label ?brandName FILTER(LANG(?brandName) = "en") }
   OPTIONAL { ?m wdt:P18 ?img }
   OPTIONAL { ?ptw schema:about ?m ; schema:isPartOf <https://pt.wikipedia.org/> }
   OPTIONAL { ?m wdt:P2031 ?start }
   OPTIONAL { ?m wdt:P2032 ?end }
 }
-GROUP BY ?m ?en ?pt ?ptDesc`;
+GROUP BY ?m ?en ?pt ?mul ?ptDesc`;
 
 type SparqlRow = Record<string, { value: string }>;
 
@@ -118,12 +131,22 @@ async function loadModels(): Promise<WikidataModel[]> {
   }
   const rows: SparqlRow[] = [];
   const list = [...ids];
+  // The query service may cut an answer short and still say 200: a batch that
+  // comes back with too few items is split in halves and asked again.
+  async function batch(batchIds: string[]): Promise<SparqlRow[]> {
+    const found = await sparql(dataQuery(batchIds));
+    const items = new Set(found.map((row) => row.m!.value));
+    if (items.size >= batchIds.length * 0.9 || batchIds.length <= 50) return found;
+    console.warn(`Aviso: ${items.size} de ${batchIds.length} itens; pedindo em duas metades`);
+    const half = Math.ceil(batchIds.length / 2);
+    return [...(await batch(batchIds.slice(0, half))), ...(await batch(batchIds.slice(half)))];
+  }
   for (let start = 0; start < list.length; start += 2000) {
-    rows.push(...(await sparql(dataQuery(list.slice(start, start + 2000)))));
+    rows.push(...(await batch(list.slice(start, start + 2000))));
     console.log(`  ${Math.min(start + 2000, list.length)} de ${list.length}`);
   }
   const models = parseSparqlModels(rows);
-  await writeFile(
+  await writeFileRetrying(
     modelsFile,
     `${JSON.stringify({ fetchedAt: new Date().toISOString(), models })}
 `,
@@ -285,7 +308,7 @@ for (const model of missing) {
   if (done % 100 === 0) console.log(`  ${done} de ${missing.length}`);
 }
 
-await writeFile(detailsFile, `${JSON.stringify(details, null, 1)}\n`);
+await writeFileRetrying(detailsFile, `${JSON.stringify(details, null, 1)}\n`);
 console.log(`Detalhes em ${detailsFile}: ${Object.keys(details).length} modelos`);
 
 // Size and mass of the matched models: one small query per 200 models, so
@@ -334,7 +357,7 @@ const politeGetJson = async <T,>(url: string): Promise<T> => {
   await wait(700);
   return getJson<T>(url);
 };
-const saveFallback = () => writeFile(fallbackFile, `${JSON.stringify(fallback, null, 1)}\n`);
+const saveFallback = () => writeFileRetrying(fallbackFile, `${JSON.stringify(fallback, null, 1)}\n`);
 let searched = 0;
 for (const [key, { brand, family }] of toSearch) {
   try {
@@ -396,18 +419,18 @@ for (const article of toRead) {
   }
   read += 1;
   if (read % 25 === 0) {
-    await writeFile(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
+    await writeFileRetrying(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
     console.log(`  ${read} de ${toRead.length}`);
   }
 }
-await writeFile(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
+await writeFileRetrying(infoboxFile, `${JSON.stringify(infoboxes, null, 1)}\n`);
 
 const specs: Record<string, InfoboxSpecs> = {};
 for (const [id, articles] of articlesOf) {
   const merged = mergeSpecs(wikidataSpecs[id], ...articles.map((article) => infoboxes[article]));
   if (Object.keys(merged).length) specs[id] = merged;
 }
-await writeFile(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
+await writeFileRetrying(specsFile, `${JSON.stringify(specs, null, 1)}\n`);
 console.log(`Dimensões, peso e potência em ${specsFile}: ${Object.keys(specs).length} modelos`);
 
 // One photo per generation (generations.ts), from the infoboxes of the same
@@ -426,7 +449,7 @@ const toParse = [...new Set([...articlesOf.values()].flat())].filter(
 );
 console.log(`Gerações na Wikipedia: ${toParse.length} artigos para ler`);
 const saveArticleGenerations = () =>
-  writeFile(articleGenerationsFile, `${JSON.stringify(articleGenerations, null, 1)}\n`);
+  writeFileRetrying(articleGenerationsFile, `${JSON.stringify(articleGenerations, null, 1)}\n`);
 let parsed = 0;
 for (const article of toParse) {
   const [lang, ...rest] = article.split(":");
@@ -466,7 +489,7 @@ const newCredits = await commonsCredits(newFiles);
 for (const file of newFiles) {
   if (!newCredits.failed.has(file)) generationPhotos[file] = newCredits.credits.get(file) ?? null;
 }
-await writeFile(generationPhotosFile, `${JSON.stringify(generationPhotos, null, 1)}\n`);
+await writeFileRetrying(generationPhotosFile, `${JSON.stringify(generationPhotos, null, 1)}\n`);
 
 const generations: Record<string, ModelGeneration[]> = {};
 for (const [id, articles] of articlesOf) {
@@ -479,7 +502,7 @@ for (const [id, articles] of articlesOf) {
   if (list.length) generations[id] = list;
 }
 const generationsFile = join(values.out, "generations.json");
-await writeFile(generationsFile, `${JSON.stringify(generations, null, 1)}\n`);
+await writeFileRetrying(generationsFile, `${JSON.stringify(generations, null, 1)}\n`);
 console.log(
   `Fotos por geração em ${generationsFile}: ${Object.keys(generations).length} modelos, ` +
     `${new Set(Object.values(generations).flat().map(({ file }) => file)).size} fotos`,

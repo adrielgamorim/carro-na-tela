@@ -24,6 +24,36 @@
       "modelPrefix": "GT ",
       "id": "Q18011551",
       "reason": "Os 'GT' da Mercedes na FIPE são o Mercedes-AMG GT, que no Wikidata tem a marca Mercedes-AMG."
+    },
+    {
+      "brand": "Toyota",
+      "modelPrefix": "YARIS Cross",
+      "id": "Q91621558",
+      "reason": "O Yaris Cross antes do 'YARIS' genérico abaixo, para manter o modelo dele."
+    },
+    {
+      "brand": "Toyota",
+      "modelPrefix": "YARIS GR",
+      "id": "Q96335350",
+      "reason": "O GR Yaris antes do 'YARIS' genérico abaixo, para manter o modelo dele."
+    },
+    {
+      "brand": "Toyota",
+      "modelPrefix": "YARIS",
+      "id": "Q60740801",
+      "reason": "O Yaris vendido no Brasil (2018–2023, hatch e sedã) é o Yaris XP150 asiático (Yaris ATIV/Vios); o artigo 'Toyota Yaris' da Wikipedia em português redireciona para o Toyota Vitz japonês, e o casamento pegava ele."
+    },
+    {
+      "brand": "IVECO",
+      "modelPrefix": "Daily",
+      "id": "Q740862",
+      "reason": "A Daily do catálogo é a atual; o casamento pegava a 'Iveco Daily (first generation)', de 1978."
+    },
+    {
+      "brand": "Renault",
+      "modelPrefix": "OROCH",
+      "id": "Q22969024",
+      "reason": "A FIPE chama a picape de 'OROCH' (e de 'DUSTER OROCH'); no Wikidata ela é a Renault Duster Oroch."
     }
   ]
 }

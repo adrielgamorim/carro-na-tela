@@ -293,7 +293,8 @@ export function parseSparqlModels(rows: Record<string, SparqlValue | undefined>[
 
   for (const row of rows) {
     const id = row.m!.value.split("/").pop()!;
-    const labels = [row.pt?.value, row.en?.value].filter((label): label is string => !!label);
+    // "mul" (every language) last: many items now carry only it.
+    const labels = [row.pt?.value, row.en?.value, row.mul?.value].filter((label): label is string => !!label);
     const [label] = labels;
     if (!label) continue;
     const names = [...new Set([...labels, ...list(row.aliases)])];
