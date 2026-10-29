@@ -5,7 +5,8 @@
 //
 // The survey is weekly; running it more often only repeats the same week.
 
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { formatAnpWeek } from "../../src/catalog/fuelPrices.ts";
@@ -37,7 +38,7 @@ for (const file of files) {
 const summary = summarizeFuelPrices(samples);
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, "fuel-prices.json");
-await writeFile(outFile, `${JSON.stringify(summary)}\n`);
+await writeFileRetrying(outFile, `${JSON.stringify(summary)}\n`);
 
 const { gasolina, etanol, diesel } = summary.national;
 console.log(

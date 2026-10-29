@@ -12,7 +12,8 @@
 // figures reviewed in data/imprensa/stellantis.json and the spec sheets read
 // in data/fichas/fichas.json (npm run fichas:ler).
 
-import { mkdir, readdir, readFile, rm, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile, rm } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import { buildCatalogIndex } from "./catalog-index.ts";
@@ -132,7 +133,7 @@ for (const model of index.models ?? []) {
   const file: GalleryFile = {
     photos: photos.map(({ file, ...photo }) => ({ ...photo, page: commonsFile(file) })),
   };
-  await writeFile(join(values.out, galleryPath(model.id)), JSON.stringify(file));
+  await writeFileRetrying(join(values.out, galleryPath(model.id)), JSON.stringify(file));
   model.gallery = photos.length;
   galleryPhotos += photos.length;
 }
@@ -141,7 +142,7 @@ const json = JSON.stringify(index);
 
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, "index.json");
-await writeFile(outFile, json);
+await writeFileRetrying(outFile, json);
 
 // One slice per category and brand, for the Consulta FIPE (src/catalog/indexShards.ts).
 const shardDir = join(values.out, "marcas");
@@ -152,7 +153,7 @@ let largestShard = 0;
 for (const [path, shard] of shards) {
   const text = JSON.stringify(shard);
   largestShard = Math.max(largestShard, text.length);
-  await writeFile(join(values.out, path), text);
+  await writeFileRetrying(join(values.out, path), text);
 }
 
 for (const snapshot of index.snapshots) {

@@ -7,7 +7,8 @@
 // FIPE brands come from the catalog index and the crawler cache. The list
 // changes rarely; run it again after new brands enter the catalog.
 
-import { mkdir, readdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readdir, readFile } from "node:fs/promises";
+import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import type { WmiFile, WmiMaker } from "../../src/catalog/vin.ts";
@@ -73,7 +74,7 @@ const file: WmiFile = {
 };
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, "wmi.json");
-await writeFile(outFile, `${JSON.stringify(file)}\n`);
+await writeFileRetrying(outFile, `${JSON.stringify(file)}\n`);
 console.log(
   `${outFile}: ${Object.keys(wmi).length} WMIs, ${matched} fabricantes casados com ${brands.size} marcas FIPE, ${countries.length} faixas de país`,
 );
