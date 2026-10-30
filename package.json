@@ -29,6 +29,7 @@
     "fichas:ler": "node scripts/fichas/read-sheets.ts",
     "fichas:vw": "node scripts/fichas/fetch-vw.ts",
     "fichas:renault": "node scripts/fichas/fetch-renault.ts",
+    "fotos:imprensa": "node scripts/imprensa/build-press-photos.ts",
     "fichas:abertas": "node scripts/fichas/read-open-sheets.ts",
     "fichas:wayback": "node scripts/fichas/fetch-wayback.ts",
     "fetch:seguro": "node scripts/seguro/fetch-autoseg.ts",
@@ -53,10 +54,11 @@
     "globals": "^17.12.0",
     "jsdom": "^29.1.1",
     "pdfjs-dist": "^4.10.38",
+    "sharp": "^0.35.5",
+    "simple-icons": "^16.36.0",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.69.0",
     "vite": "^8.3.0",
-    "vitest": "^5.0.3",
-    "simple-icons": "^16.36.0"
+    "vitest": "^5.0.3"
   }
 }

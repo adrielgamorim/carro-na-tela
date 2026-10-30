@@ -14,7 +14,12 @@ function loadGallery(modelId: string): Promise<GalleryPhoto[]> {
     promise = requestJson<GalleryFile>("Galeria", `${import.meta.env.BASE_URL}catalog/${galleryPath(modelId)}`, {
       timeoutMs: 15_000,
     })
-      .then((file) => file.photos)
+      // Press photos are served with the catalog.
+      .then((file) =>
+        file.photos.map((photo) =>
+          /^https?:/.test(photo.thumb) ? photo : { ...photo, thumb: `${import.meta.env.BASE_URL}catalog/${photo.thumb}` },
+        ),
+      )
       .catch(() => {
         galleries.delete(modelId);
         return [];

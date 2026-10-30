@@ -12,6 +12,7 @@ interface Slide {
   angle?: GalleryAngle;
   artist?: string;
   license?: string;
+  site?: string;
 }
 
 /** Commons serves standard thumbnail widths; the catalog keeps the 500 px one. */
@@ -50,8 +51,8 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
   if (!slide) return null;
   const go = (step: number) => setCurrent((index + step + slides.length) % slides.length);
   const credit = [slide.artist, slide.license].filter(Boolean).join(", ");
-  // Where the photo is published: Commons, or Flickr for the photos that fill a generation.
-  const site = slide.page.includes("flickr.com") ? "Flickr" : "Wikimedia Commons";
+  // Where the photo is published: the brand's press room, Commons, or Flickr for the photos that fill a generation.
+  const site = slide.site ?? (slide.page.includes("flickr.com") ? "Flickr" : "Wikimedia Commons");
   const alt = `${label}${slide.angle ? ` (${angleLabels[slide.angle].toLowerCase()})` : ""}, foto ilustrativa do modelo`;
 
   return (

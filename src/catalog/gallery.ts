@@ -6,7 +6,7 @@ export type GalleryAngle = "frente" | "traseira" | "lateral" | "interior" | "out
 export type GalleryBody = "sedan" | "hatch" | "perua" | "picape" | "furgao" | "conversivel" | "cupe";
 
 export interface GalleryPhoto {
-  /** About 960 px wide. */
+  /** About 960 px wide; a press photo's is relative to the catalog folder ("imprensa/renault/…"). */
   thumb: string;
   /** Commons file page (author and license). */
   page: string;
@@ -17,6 +17,8 @@ export interface GalleryPhoto {
   to: number;
   artist?: string;
   license?: string;
+  /** Where it is published, when not Commons or Flickr: "Sala de imprensa da Renault". */
+  site?: string;
 }
 
 export interface GalleryFile {

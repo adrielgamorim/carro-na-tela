@@ -151,7 +151,12 @@ const gallery = await readFile(join(wikidataDir, "gallery.json"), "utf8")
 const flickr = await readFile(join(wikidataDir, "openverse.json"), "utf8")
   .then((text) => JSON.parse(text) as Record<string, GalleryPhotoData[]>)
   .catch(() => ({}) as Record<string, GalleryPhotoData[]>);
+// The press photos the brands allowed (npm run fotos:imprensa) lead their models' galleries.
+const pressGallery = await readFile("data/imprensa/fotos.json", "utf8")
+  .then((text) => (JSON.parse(text) as { photos: (GalleryFile["photos"][number] & { model: string; source?: string })[] }).photos)
+  .catch(() => []);
 let flickrPhotos = 0;
+let pressPhotos = 0;
 const galleryDir = join(values.out, "galeria");
 await rm(galleryDir, { recursive: true, force: true });
 await mkdir(galleryDir, { recursive: true });
@@ -159,14 +164,19 @@ let galleryPhotos = 0;
 for (const model of index.models ?? []) {
   const own = gallery[model.id] ?? [];
   const photos = fillGallery(own, flickr[model.id] ?? []);
-  if (!photos.length) continue;
+  // Without their model and source file, which only the build uses.
+  const fromPress = pressGallery
+    .filter((photo) => photo.model === model.id)
+    .map(({ thumb, page, angle, from, to, artist, site }) => ({ thumb, page, angle, from, to, artist, site }));
+  if (!photos.length && !fromPress.length) continue;
   flickrPhotos += photos.length - own.length;
+  pressPhotos += fromPress.length;
   const file: GalleryFile = {
-    photos: photos.map(({ file, page, ...photo }) => ({ ...photo, page: page ?? commonsFile(file) })),
+    photos: [...fromPress, ...photos.map(({ file, page, ...photo }) => ({ ...photo, page: page ?? commonsFile(file) }))],
   };
   await writeFileRetrying(join(values.out, galleryPath(model.id)), JSON.stringify(file));
-  model.gallery = photos.length;
-  galleryPhotos += photos.length;
+  model.gallery = file.photos.length;
+  galleryPhotos += file.photos.length;
 }
 
 // Equipment lists (npm run fichas:abertas): one file, loaded by the version
@@ -220,7 +230,7 @@ if (index.fleet) {
 }
 if (galleryPhotos) {
   const models = (index.models ?? []).filter((model) => model.gallery).length;
-  console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}${flickrPhotos ? ` (${flickrPhotos} do Flickr)` : ""}`);
+  console.log(`Galeria: ${galleryPhotos} fotos de ${models} modelos em ${galleryDir}${flickrPhotos ? ` (${flickrPhotos} do Flickr)` : ""}${pressPhotos ? ` (${pressPhotos} de imprensa)` : ""}`);
 }
 if (index.sheets) {
   const years = index.versions.flatMap((version) => version.t ?? []).filter((sheet) => sheet >= 0).length;

@@ -41,4 +41,11 @@ data/fichas/vw/
 data/fichas/renault/
 data/fichas/toyota/
 data/fichas/hyundai/
+data/fichas/honda/
+data/fichas/chevrolet/
 data/fichas/lista.html
+
+# Fotos de imprensa originais (as autorizações têm contatos); só as reduzidas em public/catalog/imprensa entram
+data/imprensa/fotos/*
+!data/imprensa/fotos/LEIA-ME.md
+!data/imprensa/fotos/_exemplo/
