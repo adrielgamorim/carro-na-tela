@@ -34,7 +34,9 @@ export const angleLabels: Record<GalleryAngle, string> = {
 };
 
 /** Path of a model's gallery, relative to the catalog folder ("Q107108337"). */
-export const galleryPath = (modelId: string) => `galeria/${modelId}.json`;
+export const galleryPath = (modelId: string) =>
+  // Lines with no Wikidata model have ids like "wikipedia:pt:Agrale Marruá": only safe characters in a file name.
+  `galeria/${modelId.normalize("NFD").replace(/\p{M}/gu, "").replace(/[^A-Za-z0-9._-]+/g, "_")}.json`;
 
 /** The photos of a model year (0 km counts as this year). */
 export function photosOfYear(photos: GalleryPhoto[], modelYear: number | null, now = new Date()) {

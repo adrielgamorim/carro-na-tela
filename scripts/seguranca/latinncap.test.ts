@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { crashTestOfVersion, crashTests, testedModels } from "./latinncap.ts";
+import { crashTestOfVersion, crashTests, gapBetween, testedModels } from "./latinncap.ts";
 import type { CrashTest } from "./latinncap.ts";
 
 // Two cards of the results page, as the site writes them.
@@ -78,5 +78,17 @@ describe("Latin NCAP", () => {
     // Older than a year before the test, or more than five after: none.
     expect(of("ONIX HATCH LT 1.0 12V Flex 5p Mec.", 2015)).toBeUndefined();
     expect(of("ONIX HATCH LT 1.0 12V Flex 5p Mec.", 2026)).toBeUndefined();
+  });
+});
+
+describe("a test and the generations", () => {
+  it("does not cross four years the version was not sold (it came back as another generation)", () => {
+    const wrv = [2018, 2019, 2020, 2021, 2026, 2027];
+    expect(gapBetween(wrv, 2022, 2026)).toBe(true);
+    expect(gapBetween(wrv, 2022, 2021)).toBe(false);
+    // A year or two without prices in FIPE is not a new generation.
+    expect(gapBetween([2015, 2017, 2018, 2019, 2020], 2015, 2020)).toBe(false);
+    expect(gapBetween([2019, 2020, 2023, 2024, 2025], 2021, 2025)).toBe(false);
+    expect(gapBetween(undefined, 2022, 2026)).toBe(false);
   });
 });

@@ -1689,7 +1689,6 @@
     2026
    ],
    "engineLiters": 1.6,
-   "turbo": false,
    "electric": false,
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
    "file": "af-rma000425a-catalogo-duster-jan.pdf",
@@ -1782,7 +1781,6 @@
     2026
    ],
    "engineLiters": 1.6,
-   "turbo": false,
    "electric": false,
    "transmission": "automatico",
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
@@ -2279,6 +2277,186 @@
   },
   {
    "brand": "renault",
+   "line": "Master",
+   "title": "Master 2022",
+   "trims": [],
+   "years": [
+    2022,
+    2023
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2022/catalogos/master/fevereiro/af-online-RMA001722-CatalogoMaster-fev2022.pdf.asset.pdf/e013a7a498.pdf",
+   "file": "af-online-rma001722-catalogomaster-fev2022.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "-",
+      "/- -",
+      "/- o",
+      "-/ - -",
+      "- - -",
+      "- -",
+      "= série | Android Auto® é uma marca Google Inc. Apple CarPlay® é uma marca Apple Inc."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid E-TECH",
+   "title": "Kwid E-TECH 2024",
+   "trims": [],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": true,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/kwid-e-tech/fevereiro/novo-AF_RMA001423R_CatalogoSetembro_Kwid_ETech.pdf.asset.pdf/27714b5a6b.pdf",
+   "file": "novo-af-rma001423r-catalogosetembro-kwid-etech.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Monitoramento da pressão dos pneus (TPMS)",
+      "6 airbags (2 frontais | 2 laterais | 2 cortina)",
+      "Câmera de ré",
+      "Abertura elétrica do porta-malas",
+      "Farol dupla parábola",
+      "Retrovisores elétricos com indicador de direção",
+      "Carregador portátil para tomada doméstica de 20A (127V/220V)",
+      "Maçanetas externas na cor da carroceria",
+      "2 Isofix",
+      "Abertura a distância do porta-malas via chave",
+      "Ajuste de altura dos cintos de segurança nos bancos dianteiros",
+      "Sensor de estacionamento traseiro",
+      "Retrovisores na cor preto brilhante",
+      "Computador de bordo",
+      "Ar-condicionado",
+      "Regulagem de altura dos faróis",
+      "Função ECO",
+      "Chave tipo canivete",
+      "Calotas Flex Wheel 14\"",
+      "Alerta de não utilização do cinto de segurança de todos os ocupantes",
+      "Frenagem regenerativa",
+      "Console central",
+      "Barras de teto",
+      "Sistema CAR - travamento automático das portas a 6 km/h",
+      "Multimídia de 7'' com espelhamento sem fio de smartphone via Android Auto® e Apple CarPlay®",
+      "Vidros elétricos dianteiros e traseiros",
+      "Assistente de partida em rampa (HSA)",
+      "Travas elétricas das portas",
+      "Suspensão elevada",
+      "AVAS (Audible Vehicle Alert Sound)",
+      "Painel de instrumentos com mostradores em LED",
+      "Cintos de segurança dianteiros e traseiros de 3 pontos com pré-tensionador",
+      "Portas de carregamento AC e DC",
+      "Controle eletrônico de estabilidade (ESP)",
+      "Direção elétrica",
+      "Freios ABS",
+      "Limitador de velocidade",
+      "Luzes de circulação diurna em LED (DRL)",
+      "Luz de neblina traseira"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "title": "Captur 2021 · Zen 1.3 cvt",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/2021/AF_Brochure_Captur_HHA_2021_Pt_Digital.pdf.asset.pdf/2013d6baf9.pdf",
+   "file": "af-brochure-captur-hha-2021-pt-digital.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Volante com revestimento premium, botões iluminados e regulagem de altura e profundidade",
+      "Computador de bordo",
+      "Alarme perimétrico",
+      "Retrovisores externos elétricos com rebatimento elétrico",
+      "Ski dianteiro",
+      "Regulador e limitador de velocidade",
+      "Multimedia Easylink 8”",
+      "Câmera de estacionamento traseira",
+      "Stop&Start",
+      "Porta luvas e porta-malas com luz de cortesia",
+      "Monitoramento da pressão dos pneus iTPMS",
+      "Roda de liga leve 17”",
+      "Descansa braço central móvel com porta objetos",
+      "Airbags frontais e laterais",
+      "Parassóis com espelho de cortesia e iluminação",
+      "DRL em LED",
+      "ESP/ HSA",
+      "Ajuste de altura do banco do motorista",
+      "Chave-cartão",
+      "Ar Condicionado manual"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "title": "Captur 2021 · Intense 1.3 cvt",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/2021/AF_Brochure_Captur_HHA_2021_Pt_Digital.pdf.asset.pdf/2013d6baf9.pdf",
+   "file": "af-brochure-captur-hha-2021-pt-digital.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Volante com revestimento premium, botões iluminados e regulagem de altura e profundidade",
+      "Computador de bordo",
+      "Alarme perimétrico",
+      "Retrovisores externos elétricos com rebatimento elétrico",
+      "Ski dianteiro",
+      "Regulador e limitador de velocidade",
+      "Multimedia Easylink 8”",
+      "Câmera de estacionamento traseira",
+      "Stop&Start",
+      "Porta luvas e porta-malas com luz de cortesia",
+      "Monitoramento da pressão dos pneus iTPMS",
+      "Roda de liga leve 17”",
+      "Descansa braço central móvel com porta objetos",
+      "Airbags frontais e laterais",
+      "Parassóis com espelho de cortesia e iluminação",
+      "DRL em LED",
+      "ESP/ HSA",
+      "Ajuste de altura do banco do motorista",
+      "Chave-cartão",
+      "Ar Condicionado manual",
+      "Ar-condicionado automático",
+      "Sensor de chuva",
+      "Sensor crepuscular",
+      "Faróis de neblina em LED",
+      "Rodas de liga-leve 17\" com acabamento diamantado",
+      "2 saídas USB para o banco traseiro"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
    "line": "Duster",
    "title": "Duster 2021 · Zen 1.6 MT",
    "trims": [
@@ -2289,7 +2467,6 @@
     2022
    ],
    "engineLiters": 1.6,
-   "turbo": false,
    "electric": false,
    "transmission": "manual",
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
@@ -2377,7 +2554,6 @@
     2022
    ],
    "engineLiters": 1.6,
-   "turbo": false,
    "electric": false,
    "transmission": "automatico",
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
@@ -2480,7 +2656,6 @@
     2022
    ],
    "engineLiters": 1.6,
-   "turbo": false,
    "electric": false,
    "transmission": "automatico",
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
@@ -2576,6 +2751,92 @@
   },
   {
    "brand": "renault",
+   "line": "Logan",
+   "title": "Logan 2024 · Life",
+   "trims": [
+    "life"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/logan/janeiro/AF_RMA000724_Catalogo_Janeiro_Logan.pdf.asset.pdf/122cb168d4.pdf",
+   "file": "af-rma000724-catalogo-janeiro-logan.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Direção eletro-hidráulica",
+      "Ar-condicionado manual",
+      "Vidros dianteiros e travas elétricos",
+      "Rodas com Calotas Eptius 15”",
+      "C-Shape LED",
+      "Airbag lateral e Isofix",
+      "Cinto traseiro de 3 pontos",
+      "3º apoio de cabeça traseiro",
+      "Predisposição para rádio",
+      "Interior escurecido",
+      "Stop & Start",
+      "Computador de bordo",
+      "Farol com regulagem de altura",
+      "Repetidores laterais de seta",
+      "Controle Eletrônico de Estabilidade (ESP)",
+      "Assistente de Partida em Rampa (HSA)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "title": "Logan 2024 · Zen",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/logan/janeiro/AF_RMA000724_Catalogo_Janeiro_Logan.pdf.asset.pdf/122cb168d4.pdf",
+   "file": "af-rma000724-catalogo-janeiro-logan.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Direção eletro-hidráulica",
+      "Ar-condicionado manual",
+      "Vidros dianteiros e travas elétricos",
+      "Rodas com Calotas Eptius 15”",
+      "C-Shape LED",
+      "Airbag lateral e Isofix",
+      "Cinto traseiro de 3 pontos",
+      "3º apoio de cabeça traseiro",
+      "Predisposição para rádio",
+      "Interior escurecido",
+      "Stop & Start",
+      "Computador de bordo",
+      "Farol com regulagem de altura",
+      "Repetidores laterais de seta",
+      "Controle Eletrônico de Estabilidade (ESP)",
+      "Assistente de Partida em Rampa (HSA)",
+      "MEDIA Evolution com Apple CarPlay® e Android Auto® e tela touchscreen 7”",
+      "Comando de satélite no volante",
+      "Sensor de estacionamento",
+      "Vidros elétricos com one touch (dianteiro e traseiro)",
+      "Alarme",
+      "Banco do motorista com regulagem de altura",
+      "Volante com regulagem de altura",
+      "Chave canivete",
+      "Maçanetas na cor da carroceria",
+      "Tecido no painel de porta"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
    "line": "Stepway",
    "title": "Stepway 2024 · Zen 1.0",
    "trims": [
@@ -2586,7 +2847,6 @@
     2025
    ],
    "engineLiters": 1,
-   "turbo": false,
    "electric": false,
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/stepway/janeiro/AF_RMA000724_Catalogo_Janeiro_Stepway-24-2.pdf.asset.pdf/c6b4257def.pdf",
    "file": "af-rma000724-catalogo-janeiro-stepway-24-2.pdf",

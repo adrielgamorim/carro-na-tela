@@ -265,6 +265,91 @@ function tableUnder(page: PdfTextLine[], labelFrom: number, pageNumber: number):
   }));
 }
 
+/** Renault's version names, to find them over their lists ("Life", "Zen 1.3 cvt"). */
+const trimHeading =
+  /^(life|zen|intense|iconic|outsider|techno|evolution|expression|authentique|dynamique|bose|premi[eè]re)\b[\w\s.,/-]{0,20}$/i;
+const bullet = /^[•·●]$/;
+
+/**
+ * The equipment a brochure lists as text, version after version ("Life":
+ * "• Direção eletro-hidráulica"…; "Zen": "além dos principais equipamentos da
+ * versão Life, conta, ainda, com:" and its own): the page with the most
+ * bullets, each item under the version name nearest above it and in line with
+ * it, a name's next lines joined to it. A version that starts "além d…" or
+ * "… e ainda" also has the one before's. With no version names (the Kwid
+ * E-Tech's, of one version), one list with no name.
+ */
+export function brochureBullets(lines: PdfTextLine[]): BrochureColumn[] {
+  interface Item {
+    left: number;
+    y: number;
+    text: string;
+  }
+  const byPage = new Map<number, Item[]>();
+  for (const line of lines) {
+    const cells = cellsOf(line);
+    cells.forEach((cell, index) => {
+      // "• Direção…" as one cell, or "•" and the text in the next.
+      const inline = cell.text.match(/^[•·●]\s+(.+)$/)?.[1];
+      const next = bullet.test(cell.text) ? cells[index + 1] : undefined;
+      const text = inline ?? (next && next.left - cell.left < 80 && !bullet.test(next.text) ? next.text : undefined);
+      if (!text) return;
+      const left = inline ? cell.left + (cell.text.length - inline.length) * 4 : next!.left;
+      byPage.set(line.page, [...(byPage.get(line.page) ?? []), { left, y: line.y, text }]);
+    });
+  }
+  // Of the pages that say "equipamentos" when some do (not the Koleos's in Spanish, "equipamientos", in the Captur's).
+  const saysIt = new Set(lines.filter((line) => line.cells.some((cell) => /equipamentos/i.test(cell.text))).map((line) => line.page));
+  const [page, items] = [...byPage]
+    .filter(([number]) => !saysIt.size || saysIt.has(number))
+    .sort((a, b) => b[1].length - a[1].length)[0] ?? [];
+  if (!page || !items || items.length < 8) return [];
+  const pageLines = lines.filter((line) => line.page === page).sort((a, b) => b.y - a.y);
+
+  // A name's next lines: text a line below an item, starting where its text does.
+  const ys = [...new Set(items.map((item) => item.y))].sort((a, b) => b - a);
+  const gaps = ys.slice(1).map((y, index) => ys[index]! - y).filter((gap) => gap > 2).sort((a, b) => a - b);
+  const lineGap = gaps[Math.floor(gaps.length / 2)] ?? 10;
+  for (const line of pageLines) {
+    for (const cell of cellsOf(line)) {
+      if (bullet.test(cell.text) || /^[•·●]\s/.test(cell.text)) continue;
+      const item = items.find(
+        (open) => Math.abs(open.left - cell.left) <= 8 && open.y > line.y && open.y - line.y <= lineGap * 1.3,
+      );
+      if (!item || items.some((other) => other.y === line.y && Math.abs(other.left - cell.left) <= 8)) continue;
+      item.text = `${item.text} ${cell.text}`;
+      item.y = line.y;
+    }
+  }
+
+  // The versions: their names on the page, and what each says before its list.
+  const headings = pageLines.flatMap((line) =>
+    cellsOf(line)
+      .filter((cell) => trimHeading.test(cell.text))
+      .map((cell) => ({ name: cell.text, center: cell.center, y: line.y })),
+  );
+  const named = headings.length
+    ? headings.sort((a, b) => a.center - b.center)
+    : [{ name: "", center: 0, y: Infinity }];
+  const lists = named.map(() => [] as string[]);
+  for (const item of items) {
+    // The nearest name above, by how far it is across the page.
+    const owner = named
+      .map((heading, index) => ({ index, distance: Math.abs(heading.center - item.left) }))
+      .filter(({ index }) => named[index]!.y > item.y)
+      .sort((a, b) => a.distance - b.distance)[0];
+    if (owner) lists[owner.index]!.push(item.text.replace(/\s+/g, " ").trim());
+  }
+  const pageText = pageLines.map((line) => cellsOf(line).map((cell) => cell.text).join(" ")).join(" ");
+  return named.map((heading, index) => {
+    // "além dos principais equipamentos da versão Life", "da série ZEN e ainda": the one before's too.
+    const before = index > 0 && new RegExp(`(al[eé]m d[ao]s?[^.:]*|s[eé]rie\\s+)${plain(named[index - 1]!.name.split(" ")[0]!)}`, "i").test(plain(pageText));
+    const items = [...new Set([...(before ? lists[index - 1]! : []), ...lists[index]!])];
+    if (before) lists[index] = items;
+    return { name: heading.name, center: heading.center, page, groups: items.length ? [{ name: "Equipamentos", items }] : [] };
+  });
+}
+
 /** A brochure's equipment lists, one per version column, keyed like the spreadsheets' (renaultEquipment). */
 export function renaultBrochureEquipment(
   lines: PdfTextLine[],
@@ -273,25 +358,30 @@ export function renaultBrochureEquipment(
   const year = brochureYear(link.brochure);
   const file = brochureFile(link.brochure);
   if (!year || !file) return [];
-  return brochureColumns(lines).flatMap(({ name, groups }) => {
-    if (!name || !groups.length) return [];
+  // A table's columns, else the lists of a brochure that writes them as text.
+  const columns = brochureColumns(lines).filter((column) => column.groups.length);
+  return (columns.length ? columns : brochureBullets(lines)).flatMap(({ name, groups }) => {
+    if (!groups.length) return [];
     const engines = name.match(/\d[.,]\d/g) ?? [];
     const liters = engines.length === 1 ? litersOf(name) : undefined;
     // "1.6 MT/CVT": both gearboxes, so neither.
     const both = /\bmt\s*\/\s*cvt\b/i.test(name);
     const transmission = both ? undefined : transmissionIn(name);
     const valves = engines.length === 1 ? valvesIn(name) : undefined;
+    // "Zen 1.3 cvt" says nothing of the turbo FIPE's "1.3 TB" has: only a name that says it counts.
+    const turbo = engines.length === 1 && (turboIn(name) || /\d\s*t\b/.test(plain(name)));
+    const electric = /e-tech|z\.e\./i.test(link.vehicle);
     return [
       {
         brand: "renault" as const,
         line: link.vehicle,
-        title: `${link.vehicle} ${year} · ${name}`,
+        title: `${link.vehicle} ${year}${name ? ` · ${name}` : ""}`,
         trims: words(name).filter((word) => !/^\d|^(mt|at|cvt|t|turbo|tce|sce|flex)$/.test(word) && !/\//.test(word)),
         years: [year, year + 1] as [number, number],
         ...(liters !== undefined && { engineLiters: liters }),
         ...(valves && { valves }),
-        ...(engines.length === 1 && { turbo: turboIn(name) || /\d\s*t\b/.test(plain(name)) }),
-        electric: false,
+        ...(turbo && { turbo }),
+        electric,
         ...(transmission && { transmission }),
         page: link.brochure.split("#")[0]!,
         file,

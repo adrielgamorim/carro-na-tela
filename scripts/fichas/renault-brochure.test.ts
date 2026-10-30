@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import type { PdfTextLine } from "../inmetro/pbev.ts";
-import { brochureColumns, brochureFile, brochureYear, renaultBrochureEquipment } from "./renault-brochure.ts";
+import { brochureBullets, brochureColumns, brochureFile, brochureYear, renaultBrochureEquipment } from "./renault-brochure.ts";
 
 // [y, ...[left, text]]: a page of the brochure, a line per entry, 4 points a character.
 const page = (rows: [number, ...[number, string][]][]): PdfTextLine[] =>
@@ -90,5 +90,42 @@ describe("Renault brochures", () => {
     expect(intense).toMatchObject({ line: "Duster", trims: ["intense", "plus"], years: [2025, 2026], engineLiters: 1.6 });
     expect(intense?.transmission).toBeUndefined();
     expect(iconic).toMatchObject({ trims: ["iconic", "plus"], transmission: "automatico", file: "af-catalogo-duster-jan.pdf" });
+  });
+});
+
+describe("Renault brochures that list as text", () => {
+  // The Logan 2024's: "Life" and its bullets on the left, "Zen" with the Life's and its own on the right,
+  // a name over two lines; and a page of another car in Spanish, with more bullets.
+  const lines: PdfTextLine[] = [
+    ...page([
+      [550, [60, "LOGAN gama"]],
+      [527, [410, "Life"]],
+      [516, [1270, "Zen"]],
+      [510, [380, "principais equipamentos de série:"]],
+      [499, [380, "• Direção eletro-hidráulica"], [1240, "além dos principais equipamentos da"]],
+      [488, [380, "• Ar-condicionado manual"], [1240, "versão Life, conta, ainda, com:"]],
+      [477, [380, "• Vidros dianteiros e travas elétricos"], [1266, "•"], [1280, "MEDIA Evolution com Apple CarPlay®"]],
+      [466, [380, "• C-Shape LED"], [1280, "e Android Auto® e tela touchscreen 7”"]],
+      [455, [380, "• Airbag lateral e Isofix"], [1266, "•"], [1280, "Comando de satélite no volante"]],
+      [444, [380, "• Stop & Start"], [1266, "•"], [1280, "Sensor de estacionamento"]],
+      [433, [380, "• Computador de bordo"], [1266, "•"], [1280, "Alarme"]],
+      [421, [1150, "Calotas Eptius 15”"]],
+    ]),
+    ...page([
+      [550, [60, "KOLEOS equipamientos"]],
+      [527, [513, "Zen"]],
+      ...Array.from({ length: 12 }, (_, index): [number, ...[number, string][]] => [510 - index * 8, [500, `• Rines ${index}`]]),
+    ]).map((line) => ({ ...line, page: 3 })),
+  ];
+
+  it("gives each version its items, the one before's too when it says so", () => {
+    const [life, zen] = brochureBullets(lines);
+    expect(life).toMatchObject({ name: "Life", groups: [{ items: ["Direção eletro-hidráulica", "Ar-condicionado manual", "Vidros dianteiros e travas elétricos", "C-Shape LED", "Airbag lateral e Isofix", "Stop & Start", "Computador de bordo"] }] });
+    expect(zen?.groups[0]?.items.slice(7)).toEqual([
+      "MEDIA Evolution com Apple CarPlay® e Android Auto® e tela touchscreen 7”",
+      "Comando de satélite no volante",
+      "Sensor de estacionamento",
+      "Alarme",
+    ]);
   });
 });

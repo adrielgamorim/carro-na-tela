@@ -17,10 +17,9 @@ disponibilidade dela.
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
       (a reserva é por linha, e a FIPE chama as duas só de "SERES").
-- [ ] 🟢 Fase 4, o que falta: fichas de outras marcas (Honda, Chevrolet, Nissan, Ford…) e
-      equipamentos dos folhetos que listam em texto. As fichas da VW são de 2017–2020 e o menu
-      público só tem os modelos atuais. Revisar `npm run extract:imprensa` de vez em quando para
-      os releases novos.
+- [ ] 🟢 Fotos de imprensa: preencher o `credito` (e a data e o contato) no `autorizacao.json` das
+      marcas que autorizaram, rodar `npm run fotos:imprensa` e `build:catalog` e revisar as páginas
+      (fotos sem nada no nome ficam com o modelo da linha em que vieram).
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
       vans só pelo nome da carroceria). Faltam as linhas fora do catálogo e o comprimento das vans
@@ -30,58 +29,51 @@ disponibilidade dela.
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Wayback Machine (web.archive.org), o que falta (Toyota, Hyundai e Honda feitas, ver
-      Concluído): chevrolet.com.br (13; a listagem do arquivo falhou em 30/10/2026, repetir). Da
-      Honda ficam de fora os folhetos sem tabela (CR-V, ZR-V, Accord, Civic 2023 e Type R, em texto
-      ou só imagem), o Civic G10 e o Fit 2017 (sem o ano no nome) e os que vieram sem texto.
-      nissan.com.br não tem nenhum. Também faltam as
-      listas da Toyota sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020), as tabelas
-      os PDFs da Hyundai danificados no arquivo. Pouco útil: vw.com.br (~30, suplementos de manual e fichas de
-      2004–2016) e ford.com.br (79 antigos, `binario.asp`, ~2010).
+- [ ] 🟡 Wayback Machine, o que sobrou (Toyota, Hyundai e Honda feitas, ver Concluído): as listas da
+      Toyota sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020), os PDFs da Hyundai danificados
+      no arquivo e os folhetos da Honda sem tabela (CR-V, ZR-V, Accord, Civic 2023 e Type R, em
+      texto ou só imagem), além do Civic G10 e do Fit 2017 (sem o ano no nome).
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
-- [ ] 🟢 Folhetos da Renault, o que falta (os com tabela já entram, ver Concluído): os que listam os
-      equipamentos em texto, versão por versão ("Zen", "além da Life: …"): Captur 2021, Logan 2024,
-      Kwid E-Tech; a Master 2022 tem duas tabelas lado a lado. Os folhetos antigos
-      em `www.cdn.renault.com` (Clio, Fluence, Sandero 2019, Oroch, Kangoo, Master) não respondem mais.
 - [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
       tem Akamai): conferir robots.txt e o bloqueio de cada uma.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
-      revisão à mão, como os dados de porta-malas e torque.
-- [ ] 🟢 Recalls: sem fonte aberta por modelo (out/2026). O conjunto "Campanhas de Recall" da Senatran
-      (dados.transportes.gov.br, `recall`) só tem o total do ano; a consulta oficial é por placa
-      ou chassi, com login gov.br. Ver de novo se a Senacon publicar a lista de campanhas.
-- [ ] 🟢 Roubos e furtos por modelo (SSP-SP): o AUTOSEG já dá os roubos por mil carros segurados.
-      A transparência da SSP-SP (`transparenciassp/Consulta.aspx`) só tem boletins um a um, com
-      endereço, por mês e departamento, num formulário ASP.NET; somar por modelo daria muito
-      trabalho por pouco além do AUTOSEG.
-- [ ] 🟢 Revisões com preço fixo (sites das marcas): custo das revisões por modelo, para o custo
-      por km. Não há tabela aberta (out/2026): os sites das marcas consultam por modelo e CEP dentro
-      dos seus apps, e as tabelas que aparecem são de reportagens antigas.
-- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): o código e a galeria
-      já aceitam as fotos, mas a busca da Openverse não respondia em 29/10/2026; rodar
-      `npm run fetch:openverse` de novo. Mais fotos por ângulo, muitas de salões do automóvel no Brasil.
-- [ ] 🟢 Fotos de imprensa (VW: 27 por versão; Renault: 782 listadas; Toyota): só com permissão
-      das assessorias (contatos nas salas de imprensa).
-- Bloqueadas ou sem arquivos: Toyota (download automático bloqueado), Chevrolet (sala de imprensa
-  com login), Ford e Mitsubishi (só notícias; Hyundai só pelo Wayback). Pagas: JATO (Carspecs), Suiv.
+      revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
+      vez em quando para os releases novos.
+- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
+      tempo no meio (em 30/10/2026 parou em 32 de 932 modelos, com 156 fotos de 30); rodar
+      `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio), ou pedir uma chave
+      da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
 
 ### Produto
-
-- [ ] 🟡 Latin NCAP por geração: o teste vale do ano antes a cinco depois, e passa para a geração
-      seguinte (o WR-V 2026, nova geração, mostra o teste de 2022 do anterior). Cortar o período
-      no início da geração seguinte (as gerações da galeria têm os anos).
 
 - [ ] 🟢 Motos e caminhões no catálogo (o crawler já aceita `--category`; filtros e WMI precisam
       de ajuste).
 
-### Desempenho
+### Sem fonte aberta ou sem ganho por enquanto
 
-- [ ] 🟢 Web Worker para expandir e filtrar o índice: medido em out/2026, não compensa ainda
-      (expandir 30 ms; filtrar + contar facetas + agrupar 18–60 ms com 17.754 versões-ano).
-      Medir de novo quando entrarem motos e caminhões.
-- [ ] 🟢 Chunk principal (292 KB, 92 KB com gzip) é quase todo React DOM; só mexer se aparecer algo pesado.
+Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
+
+- Recalls por modelo: o conjunto "Campanhas de Recall" da Senatran (dados.transportes.gov.br,
+  `recall`) só tem o total do ano; a consulta oficial é por placa ou chassi, com login gov.br. Ver
+  de novo se a Senacon publicar a lista de campanhas.
+- Roubos e furtos por modelo pela SSP-SP: o AUTOSEG já dá os roubos por mil carros segurados; a
+  transparência da SSP-SP só tem boletins um a um, num formulário ASP.NET.
+- Revisões com preço fixo: os sites das marcas consultam por modelo e CEP dentro dos seus apps; as
+  tabelas que aparecem são de reportagens antigas.
+- Fichas da Chevrolet, Ford, Mitsubishi e Nissan: a sala de imprensa da Chevrolet pede login, a da
+  Ford e a da Mitsubishi só têm notícias, e o Wayback guardou só 5 PDFs da Chevrolet (Sonic 2027,
+  com série/opcional por ícone) e nenhum da Nissan. As da VW são de 2017–2020 e o menu público só
+  tem os modelos atuais. Pagas: JATO (Carspecs), Suiv.
+- Folhetos da Renault que faltam: a Master 2022 (a FIPE não diz L1H1/L2H2/L3H2, só "Furgão",
+  "Extra", "Grand"), o Kwid E-Tech (o folheto de 2023/2024 não diz a versão, e a FIPE só tem o
+  Techno de 2025) e os antigos em `www.cdn.renault.com` (Clio, Fluence, Sandero 2019, Oroch,
+  Kangoo, Master), que não respondem mais.
+- Web Worker para expandir e filtrar o índice: medido em out/2026, não compensa (expandir 30 ms;
+  filtrar + contar facetas + agrupar 18–60 ms com 17.754 versões-ano). Medir de novo quando
+  entrarem motos e caminhões.
+- Chunk principal (292 KB, 92 KB com gzip): quase todo React DOM; só mexer se aparecer algo pesado.
 
 ## Futuro
 
@@ -96,6 +88,14 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ## Concluído
 
+- [x] Latin NCAP por geração: o teste não passa por quatro anos ou mais em que a versão saiu da FIPE
+      (voltou como outra geração, como o WR-V de 2026, que mostrava o teste de 2022 do anterior).
+      As gerações do Wikidata não serviram: incluem as de outros mercados (Sandero III, Duster III,
+      C3 europeu) e tiravam testes certos de 429 anos-modelo.
+- [x] Folhetos da Renault que listam em texto (`brochureBullets`): Logan 2024 (Life e Zen) e Captur 2021
+      (Zen e Intense), com a versão de cima somando a de baixo ("além da Life…", "série ZEN e ainda").
+- [x] Fase 4, fichas e equipamentos de outras marcas: ver o item abaixo; o que não tem fonte ficou em
+      "Sem fonte aberta ou sem ganho por enquanto".
 - [x] Equipamentos e fichas de outras marcas: Toyota (59 PDFs de 2018–2025) e Hyundai (catálogos por
       versão de HB20, HB20S, Creta, Kona… de 2024–2026) pelo Wayback Machine (`npm run fichas:wayback`,
       `scripts/fichas/toyota.ts` e `hyundai.ts`, que também lê a tabela do Creta 25/26 com todas as

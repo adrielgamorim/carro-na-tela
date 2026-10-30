@@ -95,6 +95,8 @@ export interface CrashTarget {
   family: string;
   name: string;
   modelYear: number;
+  /** The version's model years in FIPE: a gap means it stopped and came back, another generation. */
+  modelYears?: number[];
 }
 
 /**
@@ -115,6 +117,10 @@ export function crashTestOfVersion<T extends CrashTest>(tests: T[], target: Cras
   for (const test of tests) {
     if (brandOf(test.brand) !== brand) continue;
     if (target.modelYear < test.year - 1 || target.modelYear > test.year + 5) continue;
+    // Not across years the version was not sold: it came back as another generation (the WR-V EXL
+    // of 2018–2021 and of 2026, whose 2022 test is of the first). Wikidata's generations would not
+    // do: they include other markets' (the Sandero III, Brazil never had).
+    if (gapBetween(target.modelYears, test.year, target.modelYear)) continue;
     for (const model of testedModels(test)) {
       const own = wordsOf(model).filter((word) => !notInFipe.test(word));
       if (own[0] !== family || !own.slice(1).every(names)) continue;
@@ -126,6 +132,23 @@ export function crashTestOfVersion<T extends CrashTest>(tests: T[], target: Cras
     }
   }
   return best?.test;
+}
+
+/**
+ * Four years in a row, from the test's (or after the version's first, if later) to this one, that
+ * the version lacks: it left the market and came back. One or two missing are often only prices
+ * FIPE lacks (the Hilux's 2016, the Yaris's 2021 and 2022).
+ */
+export function gapBetween(years: number[] | undefined, testYear: number, modelYear: number): boolean {
+  if (!years?.length) return false;
+  const have = new Set(years);
+  let missing = 0;
+  // From the test's year on (the WR-V was not sold in 2022 either).
+  for (let year = Math.max(testYear - 1, Math.min(...years)) + 1; year < modelYear; year++) {
+    missing = have.has(year) ? 0 : missing + 1;
+    if (missing >= 4) return true;
+  }
+  return false;
 }
 
 /**

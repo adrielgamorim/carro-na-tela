@@ -462,8 +462,10 @@ export function buildCatalogIndex(
   if (crashTests?.length) {
     const testIndex = new Map<CrashTest, number>();
     for (const version of sorted) {
-      const target = { brand: catalogBrand(brandName(version)), family: getModelFamily(version.n), name: version.n };
-      const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
+      // The version's years, so a test does not cross a gap in them (another generation).
+      const modelYears = versionYears(version.y.map(([yearCode]) => yearCode), now);
+      const target = { brand: catalogBrand(brandName(version)), family: getModelFamily(version.n), name: version.n, modelYears };
+      const perYear = modelYears.map((modelYear) => {
         const test = crashTestOfVersion(crashTests, { ...target, modelYear });
         if (!test) return -1;
         if (!testIndex.has(test)) {
