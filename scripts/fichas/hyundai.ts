@@ -10,6 +10,8 @@ import type { PdfTextLine } from "../inmetro/pbev.ts";
 import type { EquipmentGroup, EquipmentList } from "./equipment.ts";
 import { litersOf, plain, specsOfFields, transmissionIn, words } from "./open-sheets.ts";
 import type { OpenSheet } from "./open-sheets.ts";
+import { brochureColumns } from "./renault-brochure.ts";
+import { assignColumns } from "./toyota.ts";
 
 export interface HyundaiFile {
   file: string;
@@ -82,6 +84,56 @@ export function hyundaiFileTrims(file: string, lineWord: string): string[] {
   return parts
     .slice(at + 1)
     .filter((part) => !/^(\d+|my\d*|janeiro|fevereiro|digital|catalogo|tgdi|auto|mobile|bx)$/.test(part));
+}
+
+/**
+ * The equipment table of a "ficha-tecnica-equipamentos-…" file (the Creta 25/26's): the versions
+ * as columns ("Comfort" over "Automática" and "25/26"), "●" or "-" by item, as Renault's brochures
+ * (brochureColumns). The engine is a row of merged cells over the columns ("Kappa 1.0 Turbo GDI"
+ * over the first four): each column takes the nearest.
+ */
+export function hyundaiTable(pdfLines: PdfTextLine[], source: HyundaiFile): EquipmentList[] {
+  const columns = brochureColumns(pdfLines);
+  const year = hyundaiYear(textLines(pdfLines), source.file);
+  const line = lines.find(([pattern]) => pattern.test(source.file.replace(/-/g, " ")))?.[1];
+  if (!columns.length || !year || !line) return [];
+  const motor = pdfLines.find(
+    (item) => item.page === columns[0]!.page && /^motor$/i.test(item.cells.find((cell) => cell.center < columns[0]!.center - 40)?.text.trim() ?? ""),
+  );
+  const engines = (motor?.cells ?? [])
+    .filter((cell) => /\d[.,]\d/.test(cell.text))
+    .map((cell) => ({ center: cell.center, left: cell.center, right: cell.center, y: 0, text: cell.text.trim() }));
+  // Merged cells: each over a run of columns, in order.
+  const owners = assignColumns(
+    engines,
+    columns.map((column) => column.center),
+  );
+  return columns.flatMap(({ name, groups }, column) => {
+    const engine = engines[owners[column] ?? -1]?.text ?? "";
+    // "Ultimate Sem Teto Automatizada de embreagem": the version is the first words.
+    const trims = words(name).filter(
+      (word) => !/^(automatica|automatizada|manual|de|dupla|embreagem|sem|com|teto|solar|\d+)$/.test(word),
+    );
+    if (!trims.length || !groups.length) return [];
+    const liters = litersOf(engine);
+    const transmission = transmissionIn(name);
+    return [
+      {
+        brand: "hyundai" as const,
+        line,
+        title: `${line} ${year} · ${trims.map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ")}${engine ? ` ${engine}` : ""}`,
+        trims,
+        years: [year, year] as [number, number],
+        ...(liters !== undefined && { engineLiters: liters }),
+        turbo: /turbo|t-?gdi/i.test(engine),
+        electric: false,
+        ...(transmission && { transmission }),
+        page: source.url,
+        file: source.file,
+        groups,
+      },
+    ];
+  });
 }
 
 /** A Hyundai catalog's sheet and equipment list, for its one version. */

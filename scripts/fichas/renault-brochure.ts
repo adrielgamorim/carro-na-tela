@@ -37,6 +37,8 @@ export function brochureYear(url: string): number | undefined {
 
 interface Cell {
   center: number;
+  /** Where its text starts. */
+  left: number;
   text: string;
 }
 interface Row {
@@ -50,7 +52,7 @@ const standardMark = /^[•●▪■]$/;
 const optionalMark = /^o$/i;
 const absentMark = /^[-–—]$/;
 const isMark = (text: string) => standardMark.test(text) || optionalMark.test(text) || absentMark.test(text);
-const heading = /^(lista de )?equipamentos( e opcionais)?$/i;
+const heading = /^((lista de )?equipamentos( e opcionais)?|ficha t[eé]cnica)$/i;
 /** "• = série | O = opcional", "Série: •": the legend under the table. */
 const legend = /= ?s[eé]rie|^s[eé]rie:|^n[aã]o dispon[ií]vel/i;
 /** A name cut in the middle: a comma or a preposition at its end. */
@@ -59,26 +61,61 @@ const median = (values: number[]) => [...values].sort((a, b) => a - b)[Math.floo
 const sentenceCase = (text: string) => text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
 const upperCase = (text: string) => /\p{L}{3}/u.test(text) && text === text.toUpperCase();
 
+export interface BrochureColumn {
+  /** The version's name, its header's lines joined: "Intense Plus 1.6 MT/CVT". */
+  name: string;
+  /** Where its marks are on the page (the first page's, when the table goes on). */
+  center: number;
+  page: number;
+  groups: EquipmentGroup[];
+}
+
 /** The version columns of a brochure's equipment table, each with its standard and optional items. */
-export function brochureColumns(lines: PdfTextLine[]): { name: string; groups: EquipmentGroup[] }[] {
+export function brochureColumns(lines: PdfTextLine[]): BrochureColumn[] {
   const sorted = [...lines].sort((a, b) => a.page - b.page || b.y - a.y);
-  // The first "equipamentos" with a table under it (the Duster's first one opens a page of photos).
-  for (const start of sorted.filter((line) => heading.test(cellsOf(line)[0]?.text ?? ""))) {
-    const columns = tableUnder(sorted.filter((line) => line.page === start.page && line.y < start.y));
-    if (columns.length) return columns;
+  // Every "equipamentos" with a table under it (the Duster's first one opens a page of photos, and
+  // its table goes on over two pages); the Stepway 2024's is in its "ficha técnica". With the spec
+  // sheet on the left half ("ficha técnica | lista de equipamentos"), the heading nearest the table.
+  const found: BrochureColumn[] = [];
+  const pagesRead = new Set<number>();
+  for (const start of sorted) {
+    // A page's table once, whichever of its headings ("06. ficha técnica", "equipamentos") finds it.
+    if (pagesRead.has(start.page)) continue;
+    const page = sorted.filter((line) => line.page === start.page && line.y < start.y);
+    for (const cell of cellsOf(start).filter((item) => heading.test(item.text)).reverse()) {
+      const columns = tableUnder(page, cell.left - 320, start.page);
+      if (!columns.length) continue;
+      pagesRead.add(start.page);
+      for (const column of columns) {
+        const same = found.find((item) => plain(item.name) === plain(column.name));
+        if (!same) found.push({ ...column, groups: [] });
+        // A group may go on in the next column of the page or on the next page.
+        const groups = (same ?? found.at(-1)!).groups;
+        for (const group of column.groups) {
+          const named = groups.find((item) => item.name === group.name);
+          if (named) named.items.push(...group.items);
+          else groups.push({ name: group.name, items: [...group.items] });
+        }
+      }
+      break;
+    }
   }
-  return [];
+  return found;
 }
 
 function cellsOf(line: PdfTextLine): Cell[] {
   return line.cells
-    .map((cell) => ({ center: cell.center, text: cell.text.trim() }))
+    .map((cell) => ({
+      center: cell.center,
+      left: cell.center - (cell.width ?? cell.text.trim().length * 4) / 2,
+      text: cell.text.trim(),
+    }))
     .filter((cell) => cell.text)
     .sort((a, b) => a.center - b.center);
 }
 
-function tableUnder(page: PdfTextLine[]): { name: string; groups: EquipmentGroup[] }[] {
-
+/** The table on a page, its labels starting right of labelFrom (not the spec sheet beside it). */
+function tableUnder(page: PdfTextLine[], labelFrom: number, pageNumber: number): BrochureColumn[] {
   // A row of the table: marks, every other cell to their left (not "• airbags", a list's bullet).
   const isTableRow = (cells: Cell[]) => {
     const marks = cells.filter((cell) => isMark(cell.text));
@@ -108,9 +145,16 @@ function tableUnder(page: PdfTextLine[]): { name: string; groups: EquipmentGroup
 
   // The versions' names: the lines above the first mark, by column.
   const firstMark = page.find((line) => isTableRow(cellsOf(line)))!;
-  const headerLines = page.filter(
-    (line) => line.y > firstMark.y && cellsOf(line).some((cell) => !isMark(cell.text) && columnOf(cell.center) >= 0),
-  );
+  // Rows labeled on the left ("MOTOR", "TRANSMISSÃO", "ANO MODELO") say other things than the name; "VERSÃO" does.
+  const headerLines = page.filter((line) => {
+    const cells = cellsOf(line);
+    const label = cells.find((cell) => cell.center < labelLimit)?.text;
+    return (
+      line.y > firstMark.y &&
+      (!label || /^vers/i.test(label)) &&
+      cells.some((cell) => !isMark(cell.text) && columnOf(cell.center) >= 0)
+    );
+  });
   const names = columns.map((_, index) =>
     headerLines
       .flatMap((line) => cellsOf(line).filter((cell) => columnOf(cell.center) === index && !isMark(cell.text)))
@@ -120,15 +164,27 @@ function tableUnder(page: PdfTextLine[]): { name: string; groups: EquipmentGroup
   const bodyTop = headerLines.length ? Math.min(...headerLines.map((line) => line.y)) : Infinity;
 
   // The body: label text and marks by line, until the legend.
-  const raw: Row[] = [];
+  const body: Cell[][] = [];
   for (const line of page.filter((item) => item.y < bodyTop)) {
     const cells = cellsOf(line);
     if (cells.some((cell) => legend.test(cell.text))) break;
-    // Without a "®" set apart on the line under its name.
-    const label = cells
-      .filter((cell) => cell.center < labelLimit && !isMark(cell.text) && !/^[®™]$/.test(cell.text))
-      .map((cell) => cell.text)
-      .join(" ");
+    body.push(cells);
+  }
+  // The names start at one x (their left margin); a spec sheet beside the table, at others.
+  const isText = (cell: Cell) =>
+    cell.center < labelLimit && cell.left > labelFrom && !isMark(cell.text) && !/^[®™]$/.test(cell.text);
+  const margins = new Map<number, number>();
+  for (const cell of body.flat().filter(isText)) {
+    const bin = Math.round(cell.left / 4);
+    margins.set(bin, (margins.get(bin) ?? 0) + 1);
+  }
+  const margin = 4 * ([...margins].sort((a, b) => b[1] - a[1])[0]?.[0] ?? 0);
+  const raw: Row[] = [];
+  for (const [index, line] of page.filter((item) => item.y < bodyTop).slice(0, body.length).entries()) {
+    const cells = body[index]!;
+    // From the cell at the margin on (a "®" set apart on the line under its name left out).
+    const first = cells.findIndex((cell) => isText(cell) && Math.abs(cell.left - margin) <= 10);
+    const label = first < 0 ? "" : cells.slice(first).filter(isText).map((cell) => cell.text).join(" ");
     const marks = new Map<number, string>();
     if (isTableRow(cells))
       for (const cell of cells.filter((item) => isMark(item.text))) {
@@ -192,6 +248,8 @@ function tableUnder(page: PdfTextLine[]): { name: string; groups: EquipmentGroup
 
   return names.map((name, column) => ({
     name,
+    center: columns[column]!,
+    page: pageNumber,
     groups: groups
       .map((item) => ({
         name: item.name,

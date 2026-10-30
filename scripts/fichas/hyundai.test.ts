@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { hyundaiCatalog, hyundaiDimensions, hyundaiFileTrims, hyundaiYear } from "./hyundai.ts";
+import { hyundaiCatalog, hyundaiDimensions, hyundaiFileTrims, hyundaiTable, hyundaiYear } from "./hyundai.ts";
 import type { PdfTextLine } from "../inmetro/pbev.ts";
 
 // The end of "catalogo-digital-novo-hb20-platinum-2024.pdf", a line per row.
@@ -73,6 +73,40 @@ describe("Hyundai catalogs", () => {
         name: "Conforto e conveniência",
         items: ["Vidros elétricos dianteiros e traseiros com one touch (descida e subida) e antiesmagamento"],
       },
+    ]);
+  });
+});
+
+// The Creta 25/26's table: rows labeled on the left, the engine in merged cells over the columns.
+const table = [
+  [805, [40, "LISTA DE EQUIPAMENTOS"]],
+  [793, [40, "MOTOR"], [350, "Kappa 1.0 Turbo GDI"], [500, "Gamma 1.6 Turbo GDI"]],
+  [778, [40, "VERSÃO"], [320, "Comfort"], [400, "N Line"], [500, "Ultimate"]],
+  [761, [40, "TRANSMISSÃO"], [320, "Automática"], [400, "Automática"], [490, "Automatizada"]],
+  [743, [40, "ANO MODELO"], [320, "25/26"], [400, "25/26"], [490, "25/26"]],
+  [729, [40, "ESTILO EXTERIOR"]],
+  [720, [40, "Grade frontal cinza"], [326, "●"], [406, "-"], [506, "●"]],
+  [711, [40, "Grade frontal N Line"], [326, "-"], [406, "●"], [506, "-"]],
+  [702, [40, "Faróis em LED"], [326, "-"], [406, "●"], [506, "●"]],
+  [693, [40, "Lanternas em LED"], [326, "-"], [406, "●"], [506, "●"]],
+  [684, [40, "Luzes diurnas em LED"], [326, "●"], [406, "●"], [506, "●"]],
+] as [number, ...[number, string][]][];
+const tablePdf: PdfTextLine[] = table.map(([y, ...cells]) => ({
+  page: 1,
+  y,
+  cells: cells.map(([left, text]) => ({ center: left + text.length * 2, width: text.length * 4, text })),
+}));
+
+describe("Hyundai's equipment tables", () => {
+  it("gives each version column its items and the engine over it", () => {
+    const lists = hyundaiTable(tablePdf, { file: "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate.pdf", url: "x" });
+    expect(lists.map((list) => [list.title, list.trims, list.engineLiters, list.years])).toEqual([
+      ["Creta 2026 · Comfort Kappa 1.0 Turbo GDI", ["comfort"], 1, [2026, 2026]],
+      ["Creta 2026 · N Line Kappa 1.0 Turbo GDI", ["n", "line"], 1, [2026, 2026]],
+      ["Creta 2026 · Ultimate Gamma 1.6 Turbo GDI", ["ultimate"], 1.6, [2026, 2026]],
+    ]);
+    expect(lists[1]?.groups).toEqual([
+      { name: "Estilo exterior", items: ["Grade frontal N Line", "Faróis em LED", "Lanternas em LED", "Luzes diurnas em LED"] },
     ]);
   });
 });

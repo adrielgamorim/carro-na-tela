@@ -1,0 +1,798 @@
+{
+ "generatedAt": "2026-10-30T03:49:47.615Z",
+ "site": "honda.com.br",
+ "files": [
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2023-11/04_Catalogo_de_Acessorios_ZR_V.pdf",
+   "timestamp": "20250410192822",
+   "file": "04-catalogo-de-acessorios-zr-v.pdf",
+   "archived": "https://web.archive.org/web/20250410192822/https://www.honda.com.br/automoveis/sites/hab/files/2023-11/04_Catalogo_de_Acessorios_ZR_V.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-03/05_Catalogo_Acess%C3%B3rios_CIVIC_2020_0.pdf",
+   "timestamp": "20200728085847",
+   "file": "05-catalogo-acessorios-civic-2020-0.pdf",
+   "archived": "https://web.archive.org/web/20200728085847/https://www.honda.com.br/automoveis/sites/hab/files/2020-03/05_Catalogo_Acess%C3%B3rios_CIVIC_2020_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-03/05_Catalogo_Acess%C3%B3rios_CIVIC_2020.pdf",
+   "timestamp": "20200728094342",
+   "file": "05-catalogo-acessorios-civic-2020.pdf",
+   "archived": "https://web.archive.org/web/20200728094342/https://www.honda.com.br/automoveis/sites/hab/files/2020-03/05_Catalogo_Acess%C3%B3rios_CIVIC_2020.pdf"
+  },
+  {
+   "original": "http://honda.com.br/automoveis/campanhas/Documents/ACCORD/1553_FOLHETO_ACCORD_260x2800.pdf",
+   "timestamp": "20150425084039",
+   "file": "1553-folheto-accord-260x2800.pdf",
+   "archived": "https://web.archive.org/web/20150425084039/http://honda.com.br/automoveis/campanhas/Documents/ACCORD/1553_FOLHETO_ACCORD_260x2800.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/campanhas/Documents/CR-V/1709_FOLHETO_CRV_210X297.pdf",
+   "timestamp": "20150412004602",
+   "file": "1709-folheto-crv-210x297.pdf",
+   "archived": "https://web.archive.org/web/20150412004602/http://www.honda.com.br:80/automoveis/campanhas/Documents/CR-V/1709_FOLHETO_CRV_210X297.pdf"
+  },
+  {
+   "original": "http://honda.com.br/automoveis/campanhas/Documents/CR-V/1709_FOLHETO_CRV_210X297.pdf",
+   "timestamp": "20150424213703",
+   "file": "1709-folheto-crv-210x297.pdf",
+   "archived": "https://web.archive.org/web/20150424213703/http://honda.com.br/automoveis/campanhas/Documents/CR-V/1709_FOLHETO_CRV_210X297.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/campanhas/Documents/Honda%20Fit/1709_FOLHETO_FIT_210X297.pdf",
+   "timestamp": "20150430173207",
+   "file": "1709-folheto-fit-210x297.pdf",
+   "archived": "https://web.archive.org/web/20150430173207/http://www.honda.com.br:80/automoveis/campanhas/Documents/Honda%20Fit/1709_FOLHETO_FIT_210X297.pdf"
+  },
+  {
+   "original": "http://honda.com.br/automoveis/campanhas/Documents/Honda%20Fit/1709_FOLHETO_FIT_210X297.pdf",
+   "timestamp": "20150425011212",
+   "file": "1709-folheto-fit-210x297.pdf",
+   "archived": "https://web.archive.org/web/20150425011212/http://honda.com.br/automoveis/campanhas/Documents/Honda%20Fit/1709_FOLHETO_FIT_210X297.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf",
+   "timestamp": "20141212070936",
+   "file": "1802-folheto-civic-2015-891x210.pdf",
+   "archived": "https://web.archive.org/web/20141212070936/http://www.honda.com.br:80/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf"
+  },
+  {
+   "original": "http://honda.com.br/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf",
+   "timestamp": "20150425011403",
+   "file": "1802-folheto-civic-2015-891x210.pdf",
+   "archived": "https://web.archive.org/web/20150425011403/http://honda.com.br/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "timestamp": "20160717104636",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "archived": "https://web.archive.org/web/20160717104636/http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf"
+  },
+  {
+   "original": "http://honda.com.br/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "timestamp": "20150425013310",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "archived": "https://web.archive.org/web/20150425013310/http://honda.com.br/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf",
+   "timestamp": "20210926154622",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23-0.pdf",
+   "archived": "https://web.archive.org/web/20210926154622/https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf",
+   "timestamp": "20220526131634",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23-0.pdf",
+   "archived": "https://web.archive.org/web/20220526131634/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf",
+   "timestamp": "20240713194530",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23-0.pdf",
+   "archived": "https://web.archive.org/web/20240713194530/https://www.honda.com.br/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf",
+   "timestamp": "20210926155144",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23.pdf",
+   "archived": "https://web.archive.org/web/20210926155144/https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf",
+   "timestamp": "20220526144428",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23.pdf",
+   "archived": "https://web.archive.org/web/20220526144428/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf",
+   "timestamp": "20240713234316",
+   "file": "2021-05-20-cr-v-2021-folheto-premium-218x306mm-r23.pdf",
+   "archived": "https://web.archive.org/web/20240713234316/https://www.honda.com.br/automoveis/sites/hab/files/2021-06/2021%2005%2020%20CR-V%202021_FOLHETO%20PREMIUM_218X306MM_R23.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-11/27%20de%20novembroCat%C3%A1logo_Honda_Store_20241121_view_media2-01.pdf",
+   "timestamp": "20250420171729",
+   "file": "27-de-novembrocatalogo-honda-store-20241121-view-media2-01.pdf",
+   "archived": "https://web.archive.org/web/20250420171729/https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-11/27%20de%20novembroCat%C3%A1logo_Honda_Store_20241121_view_media2-01.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/685c2f41-392e-4e93-a3c9-b7fec111c432-635455380092948878CIVIC15_FINAL.pdf",
+   "timestamp": "20160407160404",
+   "file": "685c2f41-392e-4e93-a3c9-b7fec111c432-635455380092948878civic15-final.pdf",
+   "archived": "https://web.archive.org/web/20160407160404/http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/685c2f41-392e-4e93-a3c9-b7fec111c432-635455380092948878CIVIC15_FINAL.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/72a97b66-6434-4c4d-a873-5fd3b7475b28-634836733254131207Catalogo%20CR-V.pdf",
+   "timestamp": "20150513154636",
+   "file": "72a97b66-6434-4c4d-a873-5fd3b7475b28-634836733254131207catalogo-cr-v.pdf",
+   "archived": "https://web.archive.org/web/20150513154636/http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/72a97b66-6434-4c4d-a873-5fd3b7475b28-634836733254131207Catalogo%20CR-V.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_18_MPV_2016_FOLHETO_CB_250F_TWISTER_50x16cm.compressed.pdf",
+   "timestamp": "20170110181800",
+   "file": "74780-18-mpv-2016-folheto-cb-250f-twister-50x16cm-compressed.pdf",
+   "archived": "https://web.archive.org/web/20170110181800/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_18_MPV_2016_FOLHETO_CB_250F_TWISTER_50x16cm.compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/motos/sites/hda/files/2016-11/74780_24_MPV%202016_FOLHETO_CRF_150F_50x16cm.compressed.pdf",
+   "timestamp": "20171107055448",
+   "file": "74780-24-mpv-2016-folheto-crf-150f-50x16cm-compressed.pdf",
+   "archived": "https://web.archive.org/web/20171107055448/http://www.honda.com.br/motos/sites/hda/files/2016-11/74780_24_MPV%202016_FOLHETO_CRF_150F_50x16cm.compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_24_MPV%202016_FOLHETO_CRF_150F_50x16cm.compressed.pdf",
+   "timestamp": "20171209063147",
+   "file": "74780-24-mpv-2016-folheto-crf-150f-50x16cm-compressed.pdf",
+   "archived": "https://web.archive.org/web/20171209063147/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_24_MPV%202016_FOLHETO_CRF_150F_50x16cm.compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_25_MPV%202016_FOLHETO_CRF_230F_50x16cm.compressed.pdf",
+   "timestamp": "20180328220249",
+   "file": "74780-25-mpv-2016-folheto-crf-230f-50x16cm-compressed.pdf",
+   "archived": "https://web.archive.org/web/20180328220249/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/74780_25_MPV%202016_FOLHETO_CRF_230F_50x16cm.compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed_0.pdf",
+   "timestamp": "20170329001957",
+   "file": "79619-8-af-folheto-500cc-480x150-compressed-0.pdf",
+   "archived": "https://web.archive.org/web/20170329001957/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed_0.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed_1.pdf",
+   "timestamp": "20170708173629",
+   "file": "79619-8-af-folheto-500cc-480x150-compressed-1.pdf",
+   "archived": "https://web.archive.org/web/20170708173629/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed_1.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed.pdf",
+   "timestamp": "20170712200549",
+   "file": "79619-8-af-folheto-500cc-480x150-compressed.pdf",
+   "archived": "https://web.archive.org/web/20170712200549/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79619_8_AF_Folheto_500cc_480x150.compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79730_5_AF_Folheto_MJE_650cc_50x16cm.compressed-ilovepdf-compressed.pdf",
+   "timestamp": "20170709115821",
+   "file": "79730-5-af-folheto-mje-650cc-50x16cm-compressed-ilovepdf-compressed.pdf",
+   "archived": "https://web.archive.org/web/20170709115821/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79730_5_AF_Folheto_MJE_650cc_50x16cm.compressed-ilovepdf-compressed.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79730_5_AF_Folheto_MJE_650cc_50x16cm.pdf",
+   "timestamp": "20170921004257",
+   "file": "79730-5-af-folheto-mje-650cc-50x16cm.pdf",
+   "archived": "https://web.archive.org/web/20170921004257/http://www.honda.com.br:80/motos/sites/hda/files/2016-11/79730_5_AF_Folheto_MJE_650cc_50x16cm.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/7c61a9b3-f216-4198-969f-79ba6c6dc6e6-635473433738959800Cat%C3%A1logo%20City%202015.pdf",
+   "timestamp": "20160406134809",
+   "file": "7c61a9b3-f216-4198-969f-79ba6c6dc6e6-635473433738959800catalogo-city-2015.pdf",
+   "archived": "https://web.archive.org/web/20160406134809/http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/7c61a9b3-f216-4198-969f-79ba6c6dc6e6-635473433738959800Cat%C3%A1logo%20City%202015.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170Imgem-pdf.pdf",
+   "timestamp": "20150613201656",
+   "file": "8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170imgem-pdf.pdf",
+   "archived": "https://web.archive.org/web/20150613201656/http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170Imgem-pdf.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170Imgem-pdf.pdf",
+   "timestamp": "20160429175510",
+   "file": "8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170imgem-pdf.pdf",
+   "archived": "https://web.archive.org/web/20160429175510/http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/8507d68a-3d44-4650-8857-db53e0a753a8-635488803103090170Imgem-pdf.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/98809182-b464-480a-8474-a70b72fcf830-634836732269630207Catalogo%20CIVIC.pdf",
+   "timestamp": "20130903114730",
+   "file": "98809182-b464-480a-8474-a70b72fcf830-634836732269630207catalogo-civic.pdf",
+   "archived": "https://web.archive.org/web/20130903114730/http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/98809182-b464-480a-8474-a70b72fcf830-634836732269630207Catalogo%20CIVIC.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/a36c428a-4371-40e4-9e73-9cd095de1484-635627063220534746HONDA_HRV_SAIDA_SITE.pdf",
+   "timestamp": "20151227133049",
+   "file": "a36c428a-4371-40e4-9e73-9cd095de1484-635627063220534746honda-hrv-saida-site.pdf",
+   "archived": "https://web.archive.org/web/20151227133049/http://www.honda.com.br:80/automoveis/Acessorios/DescricaoCatalogo/a36c428a-4371-40e4-9e73-9cd095de1484-635627063220534746HONDA_HRV_SAIDA_SITE.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-08/CAMPANHA_HR-V_2023_CATALOGO_DE_ACESSORIOS_R14.pdf",
+   "timestamp": "20250410192409",
+   "file": "campanha-hr-v-2023-catalogo-de-acessorios-r14.pdf",
+   "archived": "https://web.archive.org/web/20250410192409/https://www.honda.com.br/automoveis/sites/hab/files/2022-08/CAMPANHA_HR-V_2023_CATALOGO_DE_ACESSORIOS_R14.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/Catalogo-ACCORD.pdf",
+   "timestamp": "20150618134343",
+   "file": "catalogo-accord.pdf",
+   "archived": "https://web.archive.org/web/20150618134343/http://www.honda.com.br/automoveis/Acessorios/DescricaoCatalogo/Catalogo-ACCORD.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_de_Acess%C3%B3rios_New_City_Hatchback_2025.pdf",
+   "timestamp": "20250930214520",
+   "file": "catalogo-de-acessorios-new-city-hatchback-2025.pdf",
+   "archived": "https://web.archive.org/web/20250930214520/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_de_Acess%C3%B3rios_New_City_Hatchback_2025.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_de_Acess%C3%B3rios_New_City_Sedan_2025.pdf",
+   "timestamp": "20251028061449",
+   "file": "catalogo-de-acessorios-new-city-sedan-2025.pdf",
+   "archived": "https://web.archive.org/web/20251028061449/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_de_Acess%C3%B3rios_New_City_Sedan_2025.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_Civic_Advanced_Hybrid_2025.pdf",
+   "timestamp": "20260201211105",
+   "file": "catalogo-do-veiculo-civic-advanced-hybrid-2025.pdf",
+   "archived": "https://web.archive.org/web/20260201211105/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_Civic_Advanced_Hybrid_2025.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf",
+   "timestamp": "20251103061942",
+   "file": "catalogo-do-veiculo-hr-v-2026.pdf",
+   "archived": "https://web.archive.org/web/20251103061942/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2018-06/Catalogo_Eletronico_CITY_2018.pdf",
+   "timestamp": "20240326005903",
+   "file": "catalogo-eletronico-city-2018.pdf",
+   "archived": "https://web.archive.org/web/20240326005903/https://www.honda.com.br/automoveis/sites/hab/files/2018-06/Catalogo_Eletronico_CITY_2018.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/Catalogo_Eletronico_CITY_2018.pdf",
+   "timestamp": "20190919103553",
+   "file": "catalogo-eletronico-city-2018.pdf",
+   "archived": "https://web.archive.org/web/20190919103553/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/Catalogo_Eletronico_CITY_2018.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-04/Catalogo_Eletronico_CIVIC_G10%20%281%29.pdf",
+   "timestamp": "20210725025156",
+   "file": "catalogo-eletronico-civic-g10-1.pdf",
+   "archived": "https://web.archive.org/web/20210725025156/https://www.honda.com.br/automoveis/sites/hab/files/2019-04/Catalogo_Eletronico_CIVIC_G10%20%281%29.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br:80/automoveis/sites/hab/files/2018-06/Catalogo_Eletronico_CIVIC_G10.pdf",
+   "timestamp": "20180728221108",
+   "file": "catalogo-eletronico-civic-g10.pdf",
+   "archived": "https://web.archive.org/web/20180728221108/http://www.honda.com.br:80/automoveis/sites/hab/files/2018-06/Catalogo_Eletronico_CIVIC_G10.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-01/Catalogo_Eletronico_CIVIC_G10.pdf",
+   "timestamp": "20250312084604",
+   "file": "catalogo-eletronico-civic-g10.pdf",
+   "archived": "https://web.archive.org/web/20250312084604/https://www.honda.com.br/automoveis/sites/hab/files/2019-01/Catalogo_Eletronico_CIVIC_G10.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2018-07/Catalogo_Eletronico_FIT_2018_final.pdf",
+   "timestamp": "20250215033916",
+   "file": "catalogo-eletronico-fit-2018-final.pdf",
+   "archived": "https://web.archive.org/web/20250215033916/https://www.honda.com.br/automoveis/sites/hab/files/2018-07/Catalogo_Eletronico_FIT_2018_final.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/Catalogo_Eletronico_FIT_2018_final.pdf",
+   "timestamp": "20190919101926",
+   "file": "catalogo-eletronico-fit-2018-final.pdf",
+   "archived": "https://web.archive.org/web/20190919101926/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/Catalogo_Eletronico_FIT_2018_final.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/modelos/img_models/hrv/Catalogo_Eletronico_HR-V_2015.pdf",
+   "timestamp": "20210725033955",
+   "file": "catalogo-eletronico-hr-v-2015.pdf",
+   "archived": "https://web.archive.org/web/20210725033955/https://www.honda.com.br/automoveis/sites/hab/files/modelos/img_models/hrv/Catalogo_Eletronico_HR-V_2015.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-01/Cat%C3%A1logo_Honda_Store_01_2024_print.pdf",
+   "timestamp": "20251117214518",
+   "file": "catalogo-honda-store-01-2024-print.pdf",
+   "archived": "https://web.archive.org/web/20251117214518/https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-01/Cat%C3%A1logo_Honda_Store_01_2024_print.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-08/Cat%C3%A1logo_Honda_Store_06_2024_visualizacao_pagina_simples_new.pdf",
+   "timestamp": "20241203011855",
+   "file": "catalogo-honda-store-06-2024-visualizacao-pagina-simples-new.pdf",
+   "archived": "https://web.archive.org/web/20241203011855/https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2024-08/Cat%C3%A1logo_Honda_Store_06_2024_visualizacao_pagina_simples_new.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2023-11/Cat%C3%A1logo_Honda_Store_11_2023_07_print.pdf",
+   "timestamp": "20250326173116",
+   "file": "catalogo-honda-store-11-2023-07-print.pdf",
+   "archived": "https://web.archive.org/web/20250326173116/https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2023-11/Cat%C3%A1logo_Honda_Store_11_2023_07_print.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2025-05/Cat%C3%A1logo_Honda_Store_20250508.pdf",
+   "timestamp": "20250711184101",
+   "file": "catalogo-honda-store-20250508.pdf",
+   "archived": "https://web.archive.org/web/20250711184101/https://www.honda.com.br/motos/honda-store/sites/honda_store/files/2025-05/Cat%C3%A1logo_Honda_Store_20250508.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf",
+   "timestamp": "20251207212503",
+   "file": "catalogo-produto-city-hatch-2024.pdf",
+   "archived": "https://web.archive.org/web/20251207212503/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Sedan_2024.pdf",
+   "timestamp": "20251221214105",
+   "file": "catalogo-produto-city-sedan-2024.pdf",
+   "archived": "https://web.archive.org/web/20251221214105/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Sedan_2024.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2025-10/CATALOGO_PRODUTO_WR-V_2025%201.pdf",
+   "timestamp": "20260204162544",
+   "file": "catalogo-produto-wr-v-2025-1.pdf",
+   "archived": "https://web.archive.org/web/20260204162544/https://www.honda.com.br/automoveis/sites/hab/files/2025-10/CATALOGO_PRODUTO_WR-V_2025%201.pdf"
+  },
+  {
+   "original": "http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf",
+   "timestamp": "20140422202459",
+   "file": "especificacoes.pdf",
+   "archived": "https://web.archive.org/web/20140422202459/http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf"
+  },
+  {
+   "original": "http://www4.honda.com.br:80/hondacity2014/content/especificacoes.pdf",
+   "timestamp": "20180107090158",
+   "file": "especificacoes.pdf",
+   "archived": "https://web.archive.org/web/20180107090158/http://www4.honda.com.br:80/hondacity2014/content/especificacoes.pdf"
+  },
+  {
+   "original": "http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf",
+   "timestamp": "20150319064033",
+   "file": "especificacoes2015.pdf",
+   "archived": "https://web.archive.org/web/20150319064033/http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf"
+  },
+  {
+   "original": "http://www4.honda.com.br:80/hondafit/ie8/especificacoes2015.pdf",
+   "timestamp": "20160804093822",
+   "file": "especificacoes2015.pdf",
+   "archived": "https://web.archive.org/web/20160804093822/http://www4.honda.com.br:80/hondafit/ie8/especificacoes2015.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motores-e-maquinas/sites/hpf/files/2022-03/EZ6500_FOLHETO%20(2)_0.pdf",
+   "timestamp": "20250805123457",
+   "file": "ez6500-folheto-2-0.pdf",
+   "archived": "https://web.archive.org/web/20250805123457/https://www.honda.com.br/motores-e-maquinas/sites/hpf/files/2022-03/EZ6500_FOLHETO%20(2)_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/motores-e-maquinas/sites/hpf/files/2022-03/EZ6500_FOLHETO%20%282%29_0.pdf",
+   "timestamp": "20241107223619",
+   "file": "ez6500-folheto-2-0.pdf",
+   "archived": "https://web.archive.org/web/20241107223619/https://www.honda.com.br/motores-e-maquinas/sites/hpf/files/2022-03/EZ6500_FOLHETO%20%282%29_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2024-04/%5BHONDA%5D%20CAMPANHA%20ACCORD%20E%202023_FOLHETO%20PREMIUM_218X306MM_R11_1.pdf",
+   "timestamp": "20251013011945",
+   "file": "honda-campanha-accord-e-2023-folheto-premium-218x306mm-r11-1.pdf",
+   "archived": "https://web.archive.org/web/20251013011945/https://www.honda.com.br/automoveis/sites/hab/files/2024-04/%5BHONDA%5D%20CAMPANHA%20ACCORD%20E%202023_FOLHETO%20PREMIUM_218X306MM_R11_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCampanha%20City%202019_Catalogo%20YMC_R13.pdf",
+   "timestamp": "20190919104405",
+   "file": "honda-campanha-city-2019-catalogo-ymc-r13.pdf",
+   "archived": "https://web.archive.org/web/20190919104405/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCampanha%20City%202019_Catalogo%20YMC_R13.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-11/%5BHONDA%5DCampanha_City_2021-Catalogo-R5-DUPLA_0.pdf",
+   "timestamp": "20210118231921",
+   "file": "honda-campanha-city-2021-catalogo-r5-dupla-0.pdf",
+   "archived": "https://web.archive.org/web/20210118231921/https://www.honda.com.br/automoveis/sites/hab/files/2020-11/%5BHONDA%5DCampanha_City_2021-Catalogo-R5-DUPLA_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-11/%5BHONDA%5DCampanha_City_2021-Catalogo-R5-DUPLA.pdf",
+   "timestamp": "20210119001154",
+   "file": "honda-campanha-city-2021-catalogo-r5-dupla.pdf",
+   "archived": "https://web.archive.org/web/20210119001154/https://www.honda.com.br/automoveis/sites/hab/files/2020-11/%5BHONDA%5DCampanha_City_2021-Catalogo-R5-DUPLA.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "timestamp": "20191201002030",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "archived": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp.pdf",
+   "timestamp": "20200728092306",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp.pdf",
+   "archived": "https://web.archive.org/web/20200728092306/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "timestamp": "20220520033240",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "archived": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "timestamp": "20240518122342",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "archived": "https://web.archive.org/web/20240518122342/https://www.honda.com.br/automoveis/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-SIMPLES.pdf",
+   "timestamp": "20220520033452",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-simples.pdf",
+   "archived": "https://web.archive.org/web/20220520033452/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-SIMPLES.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-SIMPLES.pdf",
+   "timestamp": "20211022012408",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-simples.pdf",
+   "archived": "https://web.archive.org/web/20211022012408/https://www.honda.com.br/automoveis/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-SIMPLES.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2023-02/%5BHONDA%5D%20CAMPANHA%20CIVIC%20E%202023_FOLHETO%20PREMIUM_218X306MM_R10_PAGINADO.pdf",
+   "timestamp": "20240602215035",
+   "file": "honda-campanha-civic-e-2023-folheto-premium-218x306mm-r10-paginado.pdf",
+   "archived": "https://web.archive.org/web/20240602215035/https://www.honda.com.br/automoveis/sites/hab/files/2023-02/%5BHONDA%5D%20CAMPANHA%20CIVIC%20E%202023_FOLHETO%20PREMIUM_218X306MM_R10_PAGINADO.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2024-07/%5BHONDA%5D%20CAMPANHA%20CIVIC%20E%202023_FOLHETO%20PREMIUM_218X306MM_R13.pdf",
+   "timestamp": "20250410192714",
+   "file": "honda-campanha-civic-e-2023-folheto-premium-218x306mm-r13.pdf",
+   "archived": "https://web.archive.org/web/20250410192714/https://www.honda.com.br/automoveis/sites/hab/files/2024-07/%5BHONDA%5D%20CAMPANHA%20CIVIC%20E%202023_FOLHETO%20PREMIUM_218X306MM_R13.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2023-06/%5BHONDA%5D%20CAMPANHA%20CIVIC%20TYPER%202023_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R11.1.pdf",
+   "timestamp": "20250410193113",
+   "file": "honda-campanha-civic-typer-2023-catalogo-de-acessorios-230x220mm-r11-1.pdf",
+   "archived": "https://web.archive.org/web/20250410193113/https://www.honda.com.br/automoveis/sites/hab/files/2023-06/%5BHONDA%5D%20CAMPANHA%20CIVIC%20TYPER%202023_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R11.1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2023-06/%5BHONDA%5D%20CAMPANHA%20CIVIC%20TYPER%202023_FOLHETO%20PREMIUM_218X306MM_R18-view.pdf",
+   "timestamp": "20250912040651",
+   "file": "honda-campanha-civic-typer-2023-folheto-premium-218x306mm-r18-view.pdf",
+   "archived": "https://web.archive.org/web/20250912040651/https://www.honda.com.br/automoveis/sites/hab/files/2023-06/%5BHONDA%5D%20CAMPANHA%20CIVIC%20TYPER%202023_FOLHETO%20PREMIUM_218X306MM_R18-view.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/sites/hab/files/2019-04/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf",
+   "timestamp": "20201127022951",
+   "file": "honda-campanha-cr-v-2018-folheto-premium-218x306mm-r19.pdf",
+   "archived": "https://web.archive.org/web/20201127022951/https://www.honda.com.br/automoveis/pos-venda/sites/hab/files/2019-04/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/sites/hab/files/2019-06/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf",
+   "timestamp": "20201127021331",
+   "file": "honda-campanha-cr-v-2018-folheto-premium-218x306mm-r19.pdf",
+   "archived": "https://web.archive.org/web/20201127021331/https://www.honda.com.br/automoveis/pos-venda/sites/hab/files/2019-06/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf",
+   "timestamp": "20190919103410",
+   "file": "honda-campanha-cr-v-2018-folheto-premium-218x306mm-r19.pdf",
+   "archived": "https://web.archive.org/web/20190919103410/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5D%20CAMPANHA%20CR-V%202018_FOLHETO%20PREMIUM_218X306MM_R19.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf",
+   "timestamp": "20210926161554",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8-0.pdf",
+   "archived": "https://web.archive.org/web/20210926161554/https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf",
+   "timestamp": "20220526152010",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8-0.pdf",
+   "archived": "https://web.archive.org/web/20220526152010/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf",
+   "timestamp": "20240727231036",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8-0.pdf",
+   "archived": "https://web.archive.org/web/20240727231036/https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5bHONDA%5dCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf",
+   "timestamp": "20240712030515",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8-0.pdf",
+   "archived": "https://web.archive.org/web/20240712030515/https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5bHONDA%5dCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf",
+   "timestamp": "20210926153104",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8.pdf",
+   "archived": "https://web.archive.org/web/20210926153104/https://www.honda.com.br/automoveis/pos-venda/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf",
+   "timestamp": "20220526133326",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8.pdf",
+   "archived": "https://web.archive.org/web/20220526133326/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf",
+   "timestamp": "20240719135454",
+   "file": "honda-campanha-cr-v-2021-catalogo-de-acessorios-230x220mm-r8.pdf",
+   "archived": "https://web.archive.org/web/20240719135454/https://www.honda.com.br/automoveis/sites/hab/files/2021-05/%5BHONDA%5DCampanha_CR-V-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R8.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20FIT2019_Folheto%20Simples_863x306MM_R16.pdf",
+   "timestamp": "20190919103733",
+   "file": "honda-campanha-fit2019-folheto-simples-863x306mm-r16.pdf",
+   "archived": "https://web.archive.org/web/20190919103733/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20FIT2019_Folheto%20Simples_863x306MM_R16.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20FIT2020_Folheto%20Simples_863x306MM_R6.pdf",
+   "timestamp": "20190919101812",
+   "file": "honda-campanha-fit2020-folheto-simples-863x306mm-r6.pdf",
+   "archived": "https://web.archive.org/web/20190919101812/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20FIT2020_Folheto%20Simples_863x306MM_R6.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29_0.pdf",
+   "timestamp": "20210514124233",
+   "file": "honda-campanha-fit2021-catalogo-de-acessorios-230x220mm-r10-2-0.pdf",
+   "archived": "https://web.archive.org/web/20210514124233/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20(2)_0.pdf",
+   "timestamp": "20240711234819",
+   "file": "honda-campanha-fit2021-catalogo-de-acessorios-230x220mm-r10-2-0.pdf",
+   "archived": "https://web.archive.org/web/20240711234819/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20(2)_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29.pdf",
+   "timestamp": "20210514135032",
+   "file": "honda-campanha-fit2021-catalogo-de-acessorios-230x220mm-r10-2.pdf",
+   "archived": "https://web.archive.org/web/20210514135032/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20(2).pdf",
+   "timestamp": "20211021184650",
+   "file": "honda-campanha-fit2021-catalogo-de-acessorios-230x220mm-r10-2.pdf",
+   "archived": "https://web.archive.org/web/20211021184650/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/%5BHONDA%5DCampanha_FIT2021_Catalogo%20%20de%20acess%C3%B3rios_230x220mm_R10%20(2).pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13_0.pdf",
+   "timestamp": "20210418020745",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13-0.pdf",
+   "archived": "https://web.archive.org/web/20210418020745/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "timestamp": "20240517223843",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "archived": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20HRV2019_Folheto%20Simples_863x306mm_R17-2_0.pdf",
+   "timestamp": "20190919105328",
+   "file": "honda-campanha-hrv2019-folheto-simples-863x306mm-r17-2-0.pdf",
+   "archived": "https://web.archive.org/web/20190919105328/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20HRV2019_Folheto%20Simples_863x306mm_R17-2_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-04/%5BHONDA%5DCAMPANHA%20HRV2020_Folheto%20Duplo_R2.pdf",
+   "timestamp": "20200925155648",
+   "file": "honda-campanha-hrv2020-folheto-duplo-r2.pdf",
+   "archived": "https://web.archive.org/web/20200925155648/https://www.honda.com.br/automoveis/sites/hab/files/2020-04/%5BHONDA%5DCAMPANHA%20HRV2020_Folheto%20Duplo_R2.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "timestamp": "20210514135854",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "archived": "https://web.archive.org/web/20210514135854/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "timestamp": "20211021220307",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "archived": "https://web.archive.org/web/20211021220307/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_2.pdf",
+   "timestamp": "20210514133123",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-2.pdf",
+   "archived": "https://web.archive.org/web/20210514133123/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_2.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_2.pdf",
+   "timestamp": "20211021222601",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-2.pdf",
+   "archived": "https://web.archive.org/web/20211021222601/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_2.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1_0.pdf",
+   "timestamp": "20220625143250",
+   "file": "honda-campanha-newcity2021-hatchback-catalogo-de-acessorios-pdf-1-0.pdf",
+   "archived": "https://web.archive.org/web/20220625143250/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1_0.pdf",
+   "timestamp": "20220520042330",
+   "file": "honda-campanha-newcity2021-hatchback-catalogo-de-acessorios-pdf-1-0.pdf",
+   "archived": "https://web.archive.org/web/20220520042330/https://www.honda.com.br/automoveis/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1.pdf",
+   "timestamp": "20220625135609",
+   "file": "honda-campanha-newcity2021-hatchback-catalogo-de-acessorios-pdf-1.pdf",
+   "archived": "https://web.archive.org/web/20220625135609/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1.pdf",
+   "timestamp": "20250410193030",
+   "file": "honda-campanha-newcity2021-hatchback-catalogo-de-acessorios-pdf-1.pdf",
+   "archived": "https://web.archive.org/web/20250410193030/https://www.honda.com.br/automoveis/sites/hab/files/2022-02/%5BHONDA%5DCampanha_NewCity2021_HATCHBACK_Cat%C3%A1logo%20de%20acess%C3%B3rios_pdf_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/carreira-na-honda/pos-venda/automoveis/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf",
+   "timestamp": "20220808193204",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios-0.pdf",
+   "archived": "https://web.archive.org/web/20220808193204/https://www.honda.com.br/automoveis/pos-venda/automoveis/carreira-na-honda/pos-venda/automoveis/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf",
+   "timestamp": "20220625131935",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios-0.pdf",
+   "archived": "https://web.archive.org/web/20220625131935/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf",
+   "timestamp": "20220123151928",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios-0.pdf",
+   "archived": "https://web.archive.org/web/20220123151928/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5bHONDA%5dCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf",
+   "timestamp": "20240727055518",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios-0.pdf",
+   "archived": "https://web.archive.org/web/20240727055518/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5bHONDA%5dCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/automoveis/carreira-na-honda/pos-venda/automoveis/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf",
+   "timestamp": "20220808183150",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios.pdf",
+   "archived": "https://web.archive.org/web/20220808183150/https://www.honda.com.br/automoveis/pos-venda/automoveis/carreira-na-honda/pos-venda/automoveis/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf",
+   "timestamp": "20220625141344",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios.pdf",
+   "archived": "https://web.archive.org/web/20220625141344/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf",
+   "timestamp": "20250410192459",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios.pdf",
+   "archived": "https://web.archive.org/web/20250410192459/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5BHONDA%5DCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5bHONDA%5dCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf",
+   "timestamp": "20240719031427",
+   "file": "honda-campanha-newcity2022-sedan-catalogo-de-acessorios.pdf",
+   "archived": "https://web.archive.org/web/20240719031427/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/%5bHONDA%5dCampanha_NewCity2022_Sedan_Cat%C3%A1logo%20de%20acess%C3%B3rios.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20WR-V%202019_Folheto%20Simples_863x306mm_R17.pdf",
+   "timestamp": "20250520002827",
+   "file": "honda-campanha-wr-v-2019-folheto-simples-863x306mm-r17.pdf",
+   "archived": "https://web.archive.org/web/20250520002827/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20WR-V%202019_Folheto%20Simples_863x306mm_R17.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2024-04/%5BHONDA%5D%20CAMPANHA%20ZR-V%202023_FOLHETO%20PREMIUM_218X306MM_R12-view.pdf",
+   "timestamp": "20250410192852",
+   "file": "honda-campanha-zr-v-2023-folheto-premium-218x306mm-r12-view.pdf",
+   "archived": "https://web.archive.org/web/20250410192852/https://www.honda.com.br/automoveis/sites/hab/files/2024-04/%5BHONDA%5D%20CAMPANHA%20ZR-V%202023_FOLHETO%20PREMIUM_218X306MM_R12-view.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf",
+   "timestamp": "20211127112319",
+   "file": "honda-wr-v-2021-catalogo-de-produto-digital-1250x1443px.pdf",
+   "archived": "https://web.archive.org/web/20211127112319/https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf",
+   "timestamp": "20240525162205",
+   "file": "honda-wr-v-2021-catalogo-de-produto-digital-1250x1443px.pdf",
+   "archived": "https://web.archive.org/web/20240525162205/https://www.honda.com.br/automoveis/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V2021_Cat%C3%A1logo%20de%20Acess%C3%B3rios_230x220mm.pdf",
+   "timestamp": "20211127105938",
+   "file": "honda-wr-v2021-catalogo-de-acessorios-230x220mm.pdf",
+   "archived": "https://web.archive.org/web/20211127105938/https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V2021_Cat%C3%A1logo%20de%20Acess%C3%B3rios_230x220mm.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2020-09/HONDA_WR-V2021_Cat%C3%A1logo%20de%20Acess%C3%B3rios_230x220mm.pdf",
+   "timestamp": "20211022054355",
+   "file": "honda-wr-v2021-catalogo-de-acessorios-230x220mm.pdf",
+   "archived": "https://web.archive.org/web/20211022054355/https://www.honda.com.br/automoveis/sites/hab/files/2020-09/HONDA_WR-V2021_Cat%C3%A1logo%20de%20Acess%C3%B3rios_230x220mm.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29_0.pdf",
+   "timestamp": "20210514123749",
+   "file": "hondacampanha-city2021-catalogo-de-acessorios-230x220mm-r10-2-0.pdf",
+   "archived": "https://web.archive.org/web/20210514123749/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20(2)_0.pdf",
+   "timestamp": "20240713141708",
+   "file": "hondacampanha-city2021-catalogo-de-acessorios-230x220mm-r10-2-0.pdf",
+   "archived": "https://web.archive.org/web/20240713141708/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20(2)_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29.pdf",
+   "timestamp": "20210514140741",
+   "file": "hondacampanha-city2021-catalogo-de-acessorios-230x220mm-r10-2.pdf",
+   "archived": "https://web.archive.org/web/20210514140741/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20%282%29.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20(2).pdf",
+   "timestamp": "20240713140814",
+   "file": "hondacampanha-city2021-catalogo-de-acessorios-230x220mm-r10-2.pdf",
+   "archived": "https://web.archive.org/web/20240713140814/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_City2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R10%20(2).pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20%282%29_1.pdf",
+   "timestamp": "20210514142551",
+   "file": "hondacampanha-hr-v-touring-2021-catalogo-de-acessorios-230x220mm-r6-2-1.pdf",
+   "archived": "https://web.archive.org/web/20210514142551/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20%282%29_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20(2)_1.pdf",
+   "timestamp": "20240720091345",
+   "file": "hondacampanha-hr-v-touring-2021-catalogo-de-acessorios-230x220mm-r6-2-1.pdf",
+   "archived": "https://web.archive.org/web/20240720091345/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20(2)_1.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20%282%29.pdf",
+   "timestamp": "20210514142216",
+   "file": "hondacampanha-hr-v-touring-2021-catalogo-de-acessorios-230x220mm-r6-2.pdf",
+   "archived": "https://web.archive.org/web/20210514142216/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20%282%29.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20(2).pdf",
+   "timestamp": "20240719114008",
+   "file": "hondacampanha-hr-v-touring-2021-catalogo-de-acessorios-230x220mm-r6-2.pdf",
+   "archived": "https://web.archive.org/web/20240719114008/https://www.honda.com.br/automoveis/sites/hab/files/2021-04/HONDACampanha_HR-V-TOURING-2021_Cat%C3%A1logo%20de%20acess%C3%B3rios_230x220mm_R6%20(2).pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Acess%C3%B3rios.pdf",
+   "timestamp": "20240809045321",
+   "file": "newcityhatchback2022-catalogo-de-acessorios.pdf",
+   "archived": "https://web.archive.org/web/20240809045321/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Acess%C3%B3rios.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo_0.pdf",
+   "timestamp": "20220625142233",
+   "file": "newcityhatchback2022-catalogo-de-veiculo-0.pdf",
+   "archived": "https://web.archive.org/web/20220625142233/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo_0.pdf",
+   "timestamp": "20220520051859",
+   "file": "newcityhatchback2022-catalogo-de-veiculo-0.pdf",
+   "archived": "https://web.archive.org/web/20220520051859/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo_0.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo.pdf",
+   "timestamp": "20220625140257",
+   "file": "newcityhatchback2022-catalogo-de-veiculo.pdf",
+   "archived": "https://web.archive.org/web/20220625140257/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo.pdf"
+  },
+  {
+   "original": "https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo.pdf",
+   "timestamp": "20240422221343",
+   "file": "newcityhatchback2022-catalogo-de-veiculo.pdf",
+   "archived": "https://web.archive.org/web/20240422221343/https://www.honda.com.br/automoveis/sites/hab/files/2022-01/NewCityHatchback2022_Cat%C3%A1logo%20de%20Veiculo.pdf"
+  },
+  {
+   "original": "http://www.honda.com.br/harmonianotransito/Midia/TecnicasPilotagem_CETHe.pdf",
+   "timestamp": "20131012053652",
+   "file": "tecnicaspilotagem-cethe.pdf",
+   "archived": "https://web.archive.org/web/20131012053652/http://www.honda.com.br/harmonianotransito/Midia/TecnicasPilotagem_CETHe.pdf"
+  }
+ ]
+}

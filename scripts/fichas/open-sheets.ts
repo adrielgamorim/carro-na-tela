@@ -6,7 +6,7 @@
 
 import type { SheetSpecs } from "../../src/catalog/press.ts";
 
-export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai";
+export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai" | "honda";
 export type Transmission = "automatico" | "manual";
 
 /** A sheet read from a press room's file (data/fichas/fichas-abertas.json). */
@@ -376,7 +376,7 @@ export function renaultSheets(rows: string[][], link: RenaultLink, modified: Dat
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"] };
+const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"], honda: ["Honda"] };
 
 export interface OpenSheetTarget {
   brand: string;

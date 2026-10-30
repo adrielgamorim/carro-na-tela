@@ -1,5 +1,5 @@
 {
- "_doc": "Equipamentos de série por versão da Renault, da Toyota e da Hyundai (npm run fichas:abertas), das listas e folhetos em data/fichas/renault, toyota e hyundai e de data/fichas/toyota.json.",
+ "_doc": "Equipamentos de série por versão da Renault, da Toyota, da Hyundai e da Honda (npm run fichas:abertas), das listas e folhetos em data/fichas/renault, toyota, hyundai e honda e de data/fichas/toyota.json.",
  "lists": [
   {
    "brand": "renault",
@@ -1695,6 +1695,43 @@
    "file": "af-rma000425a-catalogo-duster-jan.pdf",
    "groups": [
     {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do bocal de abastecimento",
+      "Ar-condicionado manual",
+      "Banco do motorista com regulagem de altura",
+      "Bancos em tecido Noir Black embossed com detalhes Light Gray e Blue Heaven",
+      "Banco traseiro rebatível 1/3 - 2/3",
+      "Chave rebatível",
+      "Console central com apoio de braços e porta-objetos",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Controle de cruzeiro e limitador de velocidade",
+      "Luz de cortesia no porta-luvas e no porta-malas",
+      "Luz de cortesia traseira",
+      "Para-sóis com espelhos",
+      "Retrovisores externos elétricos",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade",
+      "Volante com revestimento premium"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Barras de teto longitudinais na cor preta",
+      "Faróis em LED e novas lanternas",
+      "Grade frontal na cor preto brilhante",
+      "Maçanetas internas cromadas",
+      "Ponteira cromada do escapamento",
+      "Retrovisores na cor preto fosco",
+      "Rodas de liga leve de 16\" Cyclade"
+     ]
+    },
+    {
      "name": "Segurança",
      "items": [
       "6 airbags (frontal, laterais e de cortina)",
@@ -1751,6 +1788,49 @@
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
    "file": "af-rma000425a-catalogo-duster-jan.pdf",
    "groups": [
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do bocal de abastecimento",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Bancos com revestimento premium Noir Titane",
+      "Banco traseiro rebatível 1/3 - 2/3",
+      "Chave-cartão presencial com walk away closing",
+      "Console central com apoio de braços e porta-objetos",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Controle de cruzeiro e limitador de velocidade",
+      "Luz de cortesia no porta-luvas e no porta-malas",
+      "Luz de cortesia traseira",
+      "Para-sóis com espelhos",
+      "Retrovisores externos elétricos",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade",
+      "Volante com revestimento premium"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Alargadores de para-lamas",
+      "Aplicações decorativas externas em laranja",
+      "Barras de teto longitudinais na cor cinza Megalith",
+      "Faróis em LED e novas lanternas",
+      "Grade frontal na cor preto brilhante",
+      "Maçanetas internas cromadas",
+      "Novos revestimentos dos bancos com detalhes em laranja",
+      "Ponteira cromada do escapamento",
+      "Retrovisores na cor preto brilhante com detalhes em laranja",
+      "Rodas de liga leve de 17\" Tergan",
+      "Skis em cinza Megalith",
+      "Teto preto",
+      "Antena Shark"
+     ]
+    },
     {
      "name": "Segurança",
      "items": [
@@ -1811,6 +1891,48 @@
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/catalogo/jan/duster/AF-RMA000425A-Catalogo-Duster-JAN.pdf.asset.pdf/b67e4b909e.pdf",
    "file": "af-rma000425a-catalogo-duster-jan.pdf",
    "groups": [
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do bocal de abastecimento",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Bancos com revestimento premium Noir Titane",
+      "Chave-cartão presencial com walk away closing",
+      "Console central com apoio de braços e porta-objetos",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Controle de cruzeiro e limitador de velocidade",
+      "Luz de cortesia no porta-luvas e no porta-malas",
+      "Luz de cortesia traseira",
+      "Para-sóis com espelhos",
+      "Retrovisores externos elétricos",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade",
+      "Volante com revestimento premium"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Alargadores de para-lamas",
+      "Aplicações decorativas externas em laranja",
+      "Barras de teto longitudinais na cor cinza Megalith",
+      "Faróis em LED e novas lanternas",
+      "Grade frontal na cor preto brilhante",
+      "Maçanetas internas cromadas",
+      "Novos revestimentos dos bancos com detalhes em laranja",
+      "Ponteira cromada do escapamento",
+      "Retrovisores na cor preto brilhante com detalhes em laranja",
+      "Rodas de liga leve de 17\" Tergan pretas",
+      "Skis em cinza Megalith",
+      "Teto preto",
+      "Antena Shark"
+     ]
+    },
     {
      "name": "Segurança",
      "items": [
@@ -2174,6 +2296,36 @@
    "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
    "groups": [
     {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura das portas a distância",
+      "Abertura elétrica do porta-malas",
+      "Abertura interna mecânica do bocal de abastecimento",
+      "Ar-condicionado",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível 1/3 - 2/3",
+      "Chave rebatível",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Luz de cortesia traseira",
+      "Tecido Noir Black com detalhe Light Gray",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Assinatura LED nos faróis \" C-Shape \"",
+      "Barras de teto longitudinais na cor preta",
+      "Retrovisores pintados na cor preta",
+      "Rodas de aço 16\""
+     ]
+    },
+    {
      "name": "Segurança",
      "items": [
       "3 apoios de cabeça no banco traseiro",
@@ -2231,6 +2383,45 @@
    "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/catalogos/catalogo-af-RMA002621-Folh-Duster-MARCO-2021.pdf.asset.pdf/e17717454d.pdf",
    "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
    "groups": [
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura das portas a distância",
+      "Abertura elétrica do porta-malas",
+      "Abertura interna mecânica do bocal de abastecimento",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível 1/3 - 2/3",
+      "Bancos com revestimento Premium Noir Titane (opcional)",
+      "Chave rebatível",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Limitador e regulador de velocidade",
+      "Luz de cortesia no porta-luvas e no porta-malas",
+      "Luz de cortesia traseira",
+      "Para-sóis com espelhos",
+      "Retrovisores externos elétricos",
+      "Tecido Noir Black embossed com detalhes Light Gray e Blue Heaven",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade",
+      "Volante com revestimento Premium"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Assinatura LED nos faróis \" C-Shape \"",
+      "Barras de teto longitudinais na cor prata",
+      "Grade dianteira com aplique cromado",
+      "Maçanetas internas cromadas",
+      "Ponteira cromada do escapamento",
+      "Retrovisores pintados na cor da carroceria",
+      "Rodas de alumínio 16\" cyclade com acabamento pintado"
+     ]
+    },
     {
      "name": "Segurança",
      "items": [
@@ -2296,6 +2487,46 @@
    "file": "catalogo-af-rma002621-folh-duster-marco-2021.pdf",
    "groups": [
     {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura das portas a distância",
+      "Abertura elétrica do porta-malas",
+      "Abertura interna mecânica do bocal de abastecimento",
+      "Apoio de braço no banco do motorista",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível 1/3 - 2/3",
+      "Bancos com revestimento Premium Noir Titane (opcional)",
+      "Chave-cartão keyless entry + walk away closing",
+      "Direção elétrica",
+      "Estepe de uso temporário",
+      "Indicador de mudança de marcha (GSI)",
+      "Indicador de temperatura externa",
+      "Limitador e regulador de velocidade",
+      "Luz de cortesia no porta-luvas e no porta-malas",
+      "Luz de cortesia traseira",
+      "Para-sóis com espelhos",
+      "Retrovisores externos elétricos",
+      "Tecido Noir Black embossed com detalhes Light Gray e Blue Heaven",
+      "Tomada 12 V traseira",
+      "Vidros elétricos nas 4 portas",
+      "Volante com regulagem de altura e profundidade",
+      "Volante com revestimento Premium"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Assinatura LED nos faróis \" C-Shape \"",
+      "Barras de teto longitudinais na cor prata",
+      "Grade dianteira com aplique cromado",
+      "Maçanetas internas cromadas",
+      "Ponteira cromada do escapamento",
+      "Retrovisores pintados na cor da carroceria",
+      "Rodas de alumínio 17\" maldives com acabamento diamantado"
+     ]
+    },
+    {
      "name": "Segurança",
      "items": [
       "3 apoios de cabeça no banco traseiro",
@@ -2339,6 +2570,107 @@
      "name": "Packs",
      "items": [
       "Pack Outsider (opcional)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "renault",
+   "line": "Stepway",
+   "title": "Stepway 2024 · Zen 1.0",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "electric": false,
+   "page": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/catalogos/stepway/janeiro/AF_RMA000724_Catalogo_Janeiro_Stepway-24-2.pdf.asset.pdf/c6b4257def.pdf",
+   "file": "af-rma000724-catalogo-janeiro-stepway-24-2.pdf",
+   "groups": [
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura elétrica do porta-malas",
+      "Abertura interna do reservatório do combustível",
+      "Acionamento soft touch da tampa traseira através do logo Renault",
+      "Alarme sonoro de advertência de luzes acesas",
+      "Ar-condicionado",
+      "Banco do motorista com regulagem de altura",
+      "Chave canivete",
+      "Coluna de direção com regulagem de altura",
+      "Computador de bordo multifunções",
+      "Conta-giros",
+      "Direção eletro-hidráulica",
+      "Iluminação do porta-malas",
+      "Limpador do vidro traseiro",
+      "Para-sol do motorista com espelho de cortesia oculto",
+      "Para-sol do passageiro com espelho de cortesia",
+      "Porta-copo/objetos no console central dianteiro",
+      "Porta-copo/objetos no console central traseiro",
+      "Repetidores laterais de seta",
+      "Retrovisores externos com regulagem manual interna",
+      "Sensor de estacionamento",
+      "Travas elétricas das portas e do porta-malas",
+      "Vidros dianteiros elétricos com tecnologia “one touch”"
+     ]
+    },
+    {
+     "name": "Design",
+     "items": [
+      "Arcos de proteção nas caixas de roda dianteira e traseira na cor preta",
+      "Detalhes internos em Preto Brilhante",
+      "Faróis de neblina com moldura cromada",
+      "Frisos cromados na grade dianteira",
+      "Lanternas traseiras com assinatura em LED integral",
+      "Luzes diurnas em LED integradas aos faróis dianteiros",
+      "Manopla da alavanca de câmbio com detalhe cromado",
+      "Moldura instrumento combinado cromada",
+      "Proteção de soleira nas portas dianteiras",
+      "Retrovisores em Preto Brilhante e maçanetas da cor da carroceria",
+      "Revestimento do apoia de braço em tecido",
+      "Rodas de aço 15”",
+      "Saídas de ar com moldura Preto Brilhante",
+      "Volante com detalhes cromados"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "4 airbags (2 frontais e 2 laterais)",
+      "Alarme perimétrico",
+      "Alerta visual e sonoro de não utilização do cinto de segurança do motorista",
+      "Apoios de cabeça traseiros (3) reguláveis em altura",
+      "Assistente de partida em rampas",
+      "Barras laterais de proteção nas portas",
+      "Cintos de segurança dianteiros e laterais de 3 pontos",
+      "Cintos de segurança dianteiros reguláveis em altura",
+      "Controle eletrônico de estabilidade",
+      "Desembaçador do vidro traseiro",
+      "Farol com regulagem de altura",
+      "Freios ABS",
+      "Pneu estepe no interior, na parte inferior do porta-malas",
+      "Sistema CAR - travamento automático a 6 km/h",
+      "Sistema de fixação para cadeirinhas Isofix",
+      "Trava para crianças nas portas traseiras"
+     ]
+    },
+    {
+     "name": "Tecnologia e conectividade",
+     "items": [
+      "Indicador de troca de marcha",
+      "MEDIA Evolution com Android Auto® e Apple CarPlay® e tela touchscreen 7\" + comando de satélite no volante",
+      "Sistema VVT - comando de válvula variável",
+      "Stop & Start - sistema de parada automática do motor"
+     ]
+    },
+    {
+     "name": "Transmissão",
+     "items": [
+      "Transmissão manual"
      ]
     }
    ]
@@ -12315,6 +12647,906 @@
   },
   {
    "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · Comfort Kappa 1.0 Turbo GDI",
+   "trims": [
+    "comfort"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal com acabamento cinza metalizado e contorno em black piano",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis com projetor",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor prata",
+      "Rodas de liga leve de 16\", pneus 205/65 R16"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos Supervision Cluster",
+      "Painel com acabamento na cor preta",
+      "Iluminação ambiente",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Detalhe em cromo acetinado no freio de mão",
+      "Apoia braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos de tecido na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado",
+      "Banco do motorista com ajuste de altura",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Câmera de ré com linhas dinâmicas",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e iluminação central",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueMedia® Central multimídia touchscreen de 8\" com conexão sem fio para Apple CarPlay® e Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · Limited Kappa 1.0 Turbo GDI",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal com acabamento cinza metalizado e contorno em black piano",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis com projetor",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor prata",
+      "Rodas de liga leve diamantadas de 17\", pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos Supervision Cluster",
+      "Painel com acabamento na cor preta",
+      "Iluminação ambiente",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro na cor preta com costura na cor preta",
+      "Detalhe em cromo acetinado no freio de mão",
+      "Apoia braço no console central",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético na cor preta³"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Detector de fadiga (DAW)",
+      "Sistema de alerta e frenagem autônomo (FCA) para carros, pedestres e ciclistas",
+      "Sistema de frenagem autônomo (convergência à esquerda)",
+      "Assistente de permanência em faixa (LKA)"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assistente de centralização em faixa (LFA)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Farol alto adaptativo (HBA)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "Banco do motorista com ajuste de altura",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Carregador sem fio para smartphones",
+      "Câmera de ré com linhas dinâmicas",
+      "Alavancas no volante para trocas de marcha",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Saída de ar para o banco traseiro",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e iluminação central",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueMedia® Central multimídia touchscreen de 8\" com conexão sem fio para Apple CarPlay® e Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · Platinum Kappa 1.0 Turbo GDI",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal com acabamento cinza metalizado e contorno em black piano",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis com projetor",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor prata",
+      "Teto solar panorâmico com funções one-touch (abertura e fechamento) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 17\", pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 10.25\"",
+      "Painel com acabamento nas cores preto e marrom",
+      "Iluminação ambiente",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro na cor preta com costura na cor preta",
+      "Apoia braço no console central",
+      "Apoia braço central para o banco traseiro com porta copos",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético na cor marrom³"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Detector de fadiga (DAW)",
+      "Sistema de alerta e frenagem autônomo (FCA) para carros, pedestres e ciclistas",
+      "Sistema de frenagem autônomo (convergência à esquerda)",
+      "Assistente de permanência em faixa (LKA)"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assistente de centralização em faixa (LFA)",
+      "Câmera para monitoramento de ponto cego (BVM)",
+      "Sensor de estacionamento traseiro",
+      "Sensor de estacionamento dianteiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol alto adaptativo (HBA)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "Banco do motorista com ventilação",
+      "Banco do motorista com ajuste de altura",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Carregador sem fio para smartphones",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart câmera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Saída de ar para o banco traseiro",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e luzes individuais na 2 fileira",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueNav® Central multimídia de 10.25\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · N Line Kappa 1.0 Turbo GDI",
+   "trims": [
+    "n",
+    "line"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal N Line com acabamento em preto brilhante",
+      "Protetores dos para-choques dianteiro na cor prata e traseiro na cor preta",
+      "Saias laterais com detalhes em cinza brilhante",
+      "Ponteira de escapamento dupla",
+      "Retrovisores externos na cor preto brilhante",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis em LED",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na grade frontal",
+      "Lanternas em LED",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Luz indicadora de direção sequencial",
+      "Barras de teto longitudinais na cor preto brilhante",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor preto brilhante",
+      "Teto solar panorâmico com funções one-touch (abertura e fechamento) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 17\" com design N Line, pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 10.25\"",
+      "Painel com acabamento na cor preta",
+      "Iluminação ambiente",
+      "Detalhes em grafite no volante, no painel e no console",
+      "Volante revestido em couro na cor preta com costura na cor vermelha com design N Line",
+      "Alavanca de câmbio N Line com detalhes em vermelho",
+      "Apoia braço no console central",
+      "Apoia braço central para o banco traseiro com porta copos",
+      "Maçanetas internas na cor grafite",
+      "Pedais esportivos com acabamento em metal",
+      "Bancos revestidos em couro sintético na cor preta com costura vermelha e emblema N Line³",
+      "Acabamento interno do teto na cor preta"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Detector de fadiga (DAW)",
+      "Sistema de alerta e frenagem autônomo (FCA) para carros, pedestres e ciclistas",
+      "Sistema de frenagem autônomo (convergência à esquerda)",
+      "Assistente de permanência em faixa (LKA)"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assistente de centralização em faixa (LFA)",
+      "Câmera para monitoramento de ponto cego (BVM)",
+      "Sensor de estacionamento traseiro",
+      "Sensor de estacionamento dianteiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol alto adaptativo (HBA)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "Banco do motorista com ventilação",
+      "Banco do motorista com ajuste de altura",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Carregador sem fio para smartphones",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart câmera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Saída de ar para o banco traseiro",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e luzes individuais na 2 fileira",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueNav® Central multimídia de 10.25\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · Ultimate Gamma 1.6 Turbo GDI",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal com acabamento em black piano e contorno em black piano",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis em LED",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na grade frontal",
+      "Lanternas em LED",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Luz indicadora de direção sequencial",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor prata",
+      "Rodas de liga leve diamantadas de 17\", pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 10.25\"",
+      "Painel com acabamento nas cores cinza claro e cinza escuro",
+      "Iluminação ambiente",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro na cor cinza com costura na cor cinza",
+      "Apoia braço no console central",
+      "Apoia braço central para o banco traseiro com porta copos",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético nas cores cinza claro e cinza escuro³"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Detector de fadiga (DAW)",
+      "Sistema de alerta e frenagem autônomo (FCA) para carros, pedestres e ciclistas",
+      "Sistema de frenagem autônomo (convergência à esquerda)",
+      "Assistente de permanência em faixa (LKA)"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assistente de centralização em faixa (LFA)",
+      "Assistente de ponto cego (BCA)",
+      "Assistente de tráfego cruzado traseiro (RCCA)",
+      "Alerta de saída segura (SEW)",
+      "Câmera para monitoramento de ponto cego (BVM)",
+      "Sensor de estacionamento traseiro",
+      "Sensor de estacionamento dianteiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol alto adaptativo (HBA)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "Banco do motorista com ventilação",
+      "Banco do motorista com ajuste de altura",
+      "Banco do motorista com ajuste elétrico de 4 posições (frente/trás e inclinação do encosto)",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Carregador sem fio para smartphones",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart câmera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Saída de ar para o banco traseiro",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e iluminação central",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho retrovisor interno eletrocrômico",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueNav® Central multimídia de 10.25\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
+   "line": "Creta",
+   "title": "Creta 2026 · Ultimate Gamma 1.6 Turbo GDI",
+   "trims": [
+    "ultimate"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "page": "https://web.archive.org/web/20251118160151/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/ficha_tecnica_equipamentos_-_Novo_Creta_-_25_26_Ultimate_sem_teto_solar.pdf",
+   "file": "ficha-tecnica-equipamentos-novo-creta-25-26-ultimate-sem-teto-solar.pdf",
+   "groups": [
+    {
+     "name": "Estilo exterior",
+     "items": [
+      "Grade frontal com acabamento em black piano e contorno em black piano",
+      "Protetores dos para-choques dianteiro e traseiro na cor prata",
+      "Retrovisores externos na cor da carroceria",
+      "Maçanetas externas na cor da carroceria",
+      "Acabamento em preto fosco nas molduras das portas e coluna B",
+      "Faróis em LED",
+      "Luzes diurnas em LED (DRL)",
+      "Faixa de luz longitudinal em LED na grade frontal",
+      "Lanternas em LED",
+      "Faixa de luz longitudinal em LED na tampa traseira",
+      "Luz indicadora de direção sequencial",
+      "Barras de teto longitudinais na cor prata",
+      "Spoiler traseiro",
+      "Moldura lateral da coluna \"C\" na cor prata",
+      "Teto solar panorâmico com funções one-touch (abertura e fechamento) e antiesmagamento",
+      "Rodas de liga leve diamantadas de 18\", pneus 215/55 R18"
+     ]
+    },
+    {
+     "name": "Estilo interior",
+     "items": [
+      "Painel de instrumentos digital colorido de 10.25\"",
+      "Painel com acabamento nas cores cinza claro e cinza escuro",
+      "Iluminação ambiente",
+      "Detalhes em cromo acetinado no volante, no painel e no console",
+      "Volante revestido em couro na cor cinza com costura na cor cinza",
+      "Apoia braço no console central",
+      "Apoia braço central para o banco traseiro com porta copos",
+      "Maçanetas internas em cromo acetinado",
+      "Bancos revestidos em couro sintético nas cores cinza claro e cinza escuro³"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Freios ABS com EBD",
+      "Freio a disco nas quatro rodas",
+      "Controle de estabilidade eletrônico (ESP)",
+      "Controle de tração (TCS)",
+      "Assistente de partida em rampa (HAC)",
+      "Sinalização de frenagem de emergência (ESS)",
+      "Airbag frontal duplo",
+      "Airbag lateral de tórax",
+      "Airbag cortina",
+      "Fixação ISOFIX® com top tether para cadeirinha de bebê",
+      "Detector de fadiga (DAW)",
+      "Sistema de alerta e frenagem autônomo (FCA) para carros, pedestres e ciclistas",
+      "Sistema de frenagem autônomo (convergência à esquerda)",
+      "Assistente de permanência em faixa (LKA)"
+     ]
+    },
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assistente de centralização em faixa (LFA)",
+      "Assistente de ponto cego (BCA)",
+      "Assistente de tráfego cruzado traseiro (RCCA)",
+      "Alerta de saída segura (SEW)",
+      "Câmera para monitoramento de ponto cego (BVM)",
+      "Sensor de estacionamento traseiro",
+      "Sensor de estacionamento dianteiro",
+      "Sistema de monitoramento de pressão dos pneus (indicação)",
+      "Freio de estacionamento eletrônico com auto hold",
+      "Farol alto adaptativo (HBA)",
+      "Ajuste manual de altura dos faróis",
+      "Alerta de não utilização do cinto de segurança para motorista e passageiros",
+      "Alerta de presença no banco traseiro (ROA)",
+      "Alerta visual de portas e porta-malas abertos",
+      "Travamento automático das portas e do porta-malas a 20 km/h",
+      "Trava de segurança para crianças nas portas traseiras",
+      "Limpador e desembaçador do vidro traseiro",
+      "Destravamento automático das portas em caso de acidente",
+      "Cintos de segurança dianteiros de 3 pontos com pré-tensionador e ajuste de altura",
+      "Cintos de segurança traseiros de 3 pontos (x3)",
+      "Apoios de cabeça dianteiros e traseiros (x3) com regulagem de altura",
+      "Estrutura com deformação programada",
+      "Barras de proteção lateral",
+      "Imobilizador do motor",
+      "Alarme perimétrico",
+      "Alarme volumétrico com sensor de inclinação",
+      "Alerta sonoro de travamento das portas"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Ar-condicionado automático digital de duas zonas",
+      "Banco do motorista com ventilação",
+      "Banco do motorista com ajuste de altura",
+      "Banco do motorista com ajuste elétrico de 4 posições (frente/trás e inclinação do encosto)",
+      "Volante com regulagem de altura e profundidade",
+      "Console central com porta-copos e porta-objetos",
+      "Tomada 12V (x1) no console central",
+      "Carregador sem fio para smartphones",
+      "Câmera de ré com linhas dinâmicas",
+      "Smart câmera 360º (SVM)",
+      "Alavancas no volante para trocas de marcha",
+      "Seleção do modo de direção",
+      "Direção elétrica progressiva",
+      "Computador de bordo",
+      "Controle de velocidade de cruzeiro com limitador de velocidade",
+      "Controle de velocidade adaptativo",
+      "Chave presencial Smart Key com telecomando de travamento das portas e porta-malas",
+      "Partida do motor por botão",
+      "Sistema Stop & Go de parada e partida automática do motor",
+      "Saída de ar para o banco traseiro",
+      "Conexão USB traseira",
+      "Banco traseiro rebatível e bipartido 60:40",
+      "Iluminação no porta-malas",
+      "Comando interno de abertura do tanque de combustível",
+      "Travas elétricas nas portas e porta-malas",
+      "Vidros elétricos dianteiros e traseiros com funções one-touch (descida e subida) e antiesmagamento",
+      "Abertura e fechamento dos vidros elétricos por meio da chave",
+      "Retrovisores externos com ajuste elétrico e luz indicadora de direção",
+      "Retrovisores externos com rebatimento elétrico automático",
+      "Acendimento automático dos faróis (sensor crepuscular)",
+      "Faróis com funções welcome e escort",
+      "Acionamento inteligente one-touch das luzes de direção",
+      "Porta-objetos nas portas dianteiras e traseiras",
+      "Console de teto com luzes de leitura dianteira e luzes individuais na 2 fileira",
+      "Alças de segurança para os passageiros dianteiro e traseiros",
+      "Espelho retrovisor interno eletrocrômico",
+      "Espelho de cortesia com iluminação no para sol para motorista e passageiro"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Central Multimídia blueNav® Central multimídia de 10.25\" com navegação GPS, Apple CarPlay®, Google Android Auto®, conexão Bluetooth® com streaming de áudio, acesso à agenda e histórico de chamadas, MP3 player e conexões USB (2x).",
+      "Bluelink® Sistema de carro conectado com serviços de prevenção ao roubo, assistência 24h, controles remotos, diagnóstico e alertas de uso do veículo.",
+      "Controles de áudio e Bluetooth no volante com reconhecimento de voz",
+      "Alto falantes nas portas dianteiras (x2) e portas traseiras (x2)",
+      "Tweeter (x2)",
+      "Antena tipo barbatana"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "hyundai",
    "line": "Tucson",
    "trims": [],
    "years": [
@@ -12402,6 +13634,2224 @@
       "Tweeter (x2)",
       "1 Couro sintético de alta qualidade",
       "2 Smarthone deve ser compatível com a tecnlogia QI"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "lxs"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Civic Sedan 2015 · LXS",
+   "page": "https://web.archive.org/web/20141212070936/http://www.honda.com.br:80/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf",
+   "file": "1802-folheto-civic-2015-891x210.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "1.8 16V: SOHC i-VTEC FlexOne",
+      "Transmissão manual de 6 velocidades",
+      "Transmissão automática de 5 velocidades com Shift Hold Control",
+      "Estepe temporário: T125/70D15 95M",
+      "Direção com assistência elétrica progressiva - EPS",
+      "PRATA GLOBAL METÁLICO: BRANCO TAFFETA SÓLIDO",
+      "PRETO CRISTAL PEROLIZADO: CINZA IRIDIUM METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: e 9,2 km/l (etanol) e 13,5 km/l (gasolina) em ciclo rodoviário (estrada). Classificação no Programa Brasileiro de Etiquetagem Veicular: A."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "lxr"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Civic Sedan 2015 · LXR",
+   "page": "https://web.archive.org/web/20141212070936/http://www.honda.com.br:80/automoveis/campanhas/Documents/NEW-CIVIC/1802_FOLHETO_CIVIC_2015_891X210.pdf",
+   "file": "1802-folheto-civic-2015-891x210.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "1.8 16V: SOHC i-VTEC FlexOne",
+      "Estepe temporário: T125/70D15 95M",
+      "Direção com assistência elétrica progressiva - EPS",
+      "PRATA GLOBAL METÁLICO: BRANCO TAFFETA SÓLIDO",
+      "PRETO CRISTAL PEROLIZADO: AZUL DENIM METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: e 9,2 km/l (etanol) e 13,5 km/l (gasolina) em ciclo rodoviário (estrada). Classificação no Programa Brasileiro de Etiquetagem Veicular: A."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "dx"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "City Sedan 2015 · DX",
+   "page": "https://web.archive.org/web/20160717104636/http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão manual de 5 velocidades",
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "PRATA GLOBAL METÁLICO: CINZA IRIDIUM METÁLICO",
+      "PRETO CRISTAL PEROLIZADO: MARROM JÚPITER METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: ou ecológico (couro sintético). **Porta-malas de 536 litros (485 litros acima da tampa do assoalho, mais 51 litros de espaço útil abaixo da tampa do assoalho)."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "City Sedan 2015 · LX",
+   "page": "https://web.archive.org/web/20160717104636/http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "PRATA GLOBAL METÁLICO: CINZA IRIDIUM METÁLICO",
+      "PRETO CRISTAL PEROLIZADO: MARROM JÚPITER METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: ou ecológico (couro sintético). **Porta-malas de 536 litros (485 litros acima da tampa do assoalho, mais 51 litros de espaço útil abaixo da tampa do assoalho)."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "City Sedan 2015 · EX",
+   "page": "https://web.archive.org/web/20160717104636/http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "PRATA GLOBAL METÁLICO: CINZA IRIDIUM METÁLICO",
+      "PRETO CRISTAL PEROLIZADO: MARROM JÚPITER METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: ou ecológico (couro sintético). **Porta-malas de 536 litros (485 litros acima da tampa do assoalho, mais 51 litros de espaço útil abaixo da tampa do assoalho)."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "City Sedan 2015 · EXL",
+   "page": "https://web.archive.org/web/20160717104636/http://www.honda.com.br:80/automoveis/campanhas/Documents/CITY/1984_FOLHETO_NOVO_CITY_2015_WEB.pdf",
+   "file": "1984-folheto-novo-city-2015-web.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "PRATA GLOBAL METÁLICO: CINZA IRIDIUM METÁLICO",
+      "PRETO CRISTAL PEROLIZADO: MARROM JÚPITER METÁLICO",
+      "Todos juntos fazem um trânsito melhor.: ou ecológico (couro sintético). **Porta-malas de 536 litros (485 litros acima da tampa do assoalho, mais 51 litros de espaço útil abaixo da tampa do assoalho)."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2026 · EX",
+   "page": "https://web.archive.org/web/20251103061942/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf",
+   "file": "catalogo-do-veiculo-hr-v-2026.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "HDC (Assistente de Controle de Descida)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré multivisão com linhas dinâmicas (três vistas)",
+      "Faróis com DRL e acendimento automático",
+      "Revestimento dos bancos: Tecido",
+      "Ar-condicionado Digital: ventilação para os ocupantes",
+      "Carregador por indução",
+      "TM",
+      "Painel digital TFT de alta resolução: 7\"",
+      "Exclusiva Tecnologia Magic Seat",
+      "B r a n c o Ta f e t á S ó l i d o: A z u l C ó s m i c o M e t á l i c o",
+      "B r a n c o To p á z i o P e r o l i z a d o: C i n z a Ti t â n i o P e r o l i z a d o",
+      "não detectar todas as linhas de marcação da pista.: A c e s s e",
+      "Cores: Conforto e Tecnologia"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2026 · EXL",
+   "page": "https://web.archive.org/web/20251103061942/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf",
+   "file": "catalogo-do-veiculo-hr-v-2026.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "HDC (Assistente de Controle de Descida)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré multivisão com linhas dinâmicas (três vistas)",
+      "Faróis com DRL e acendimento automático: Full LED",
+      "Revestimento dos bancos: Couro na cor Preta",
+      "Sensores de estacionamento com aviso sonoro: Dianteiro e Traseiro",
+      "Ar-condicionado Digital: ventilação para os ocupantes",
+      "Carregador por indução",
+      "TM",
+      "Painel digital TFT de alta resolução: 7\"",
+      "Sensor de chuva",
+      "Exclusiva Tecnologia Magic Seat",
+      "B r a n c o Ta f e t á S ó l i d o: C i n z a B a s a l t o M e t á l i c o",
+      "B r a n c o To p á z i o P e r o l i z a d o: P r e t o C r i s t a l P e r o l i z a d o",
+      "não detectar todas as linhas de marcação da pista.: A c e s s e",
+      "Cores: Conforto e Tecnologia"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2026 · Advance",
+   "page": "https://web.archive.org/web/20251103061942/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf",
+   "file": "catalogo-do-veiculo-hr-v-2026.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "HDC (Assistente de Controle de Descida)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré multivisão com linhas dinâmicas (três vistas)",
+      "Faróis com DRL e acendimento automático: Full LED",
+      "Revestimento dos bancos: Couro na cor Preta",
+      "Sensores de estacionamento com aviso sonoro: Dianteiro e Traseiro",
+      "Ar-condicionado Digital: ventilação para os ocupantes",
+      "myHonda Connect - Conexão única entre você e o seu Honda",
+      "Carregador por indução",
+      "TM",
+      "Painel digital TFT de alta resolução: 7\"",
+      "Sensor de chuva",
+      "Exclusiva Tecnologia Magic Seat",
+      "B r a n c o Ta f e t á S ó l i d o: P r a t a P l a t i n u m M e t á l i c o",
+      "B r a n c o To p á z i o P e r o l i z a d o: V e r m e l h o S u p e r n o v a P e r o l i z a d o",
+      "não detectar todas as linhas de marcação da pista.: A c e s s e",
+      "Cores: Acabamento"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "touring"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2026 · Touring",
+   "page": "https://web.archive.org/web/20251103061942/https://www.honda.com.br/automoveis/sites/hab/files/2025-07/Cat%C3%A1logo_do_Ve%C3%ADculo_HR-V_2026.pdf",
+   "file": "catalogo-do-veiculo-hr-v-2026.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "HDC (Assistente de Controle de Descida)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré multivisão com linhas dinâmicas (três vistas)",
+      "Faróis com DRL e acendimento automático: Full LED",
+      "Revestimento dos bancos: Couro na cor Preta",
+      "Sensores de estacionamento com aviso sonoro: Dianteiro e Traseiro",
+      "Ar-condicionado Digital: ventilação para os ocupantes",
+      "myHonda Connect - Conexão única entre você e o seu Honda",
+      "Carregador por indução",
+      "TM",
+      "Painel digital TFT de alta resolução: 7\"",
+      "Sensor de chuva",
+      "Banco do motorista com ajuste elétrico",
+      "Exclusiva Tecnologia Magic Seat",
+      "B r a n c o Ta f e t á S ó l i d o: P r a t a P l a t i n u m M e t á l i c o",
+      "B r a n c o To p á z i o P e r o l i z a d o: V e r m e l h o S u p e r n o v a P e r o l i z a d o",
+      "não detectar todas as linhas de marcação da pista.",
+      "Cores: Segurança"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Hatchback",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Hatchback 2024 · LX",
+   "page": "https://web.archive.org/web/20251207212503/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf",
+   "file": "catalogo-produto-city-hatch-2024.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de estabilidade e tração",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em rampa",
+      "Sistema ESS (Emergency Stop Signal) 8 - Sistema de luzes de emergência",
+      "TPMS (Tire Pressure Monitoring System) - Alerta de pressão dos pneus",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Limpador de para-brisa com função intermitente",
+      "Conjunto óptico com DRL em LED (faróis alto, baixo, de neblina, luzes diurnas DRL)",
+      "Chave com função Smart Entry de destravamento das portas e do porta-malas",
+      "Portas USB: 2 Dianteiras tipo A",
+      "Ar-Condicionado: Manual",
+      "Banco traseiro Bipartido (60/40) com exclusiva tecnologia Magic Seat",
+      "Multimídia 8” com interface para smartphones com Apple CarPlay™ e Android: não exclui o dever do motorista que é responsável por conduzir o veículo com segurança, a fim de evitar colisões.",
+      "Auto™: 6) O CMBS pode não detectar todos os objetos à frente do veículo; a precisão do sistema pode variar com base nas condições climáticas, velocidade entre outros fatores. O sistema pode ser afetado por temperaturas excessivas. O sistema foi desenvolvido com o propósito evitar colisões. A tecnologia não exclui"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Hatchback",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Hatchback 2024 · EX",
+   "page": "https://web.archive.org/web/20251207212503/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf",
+   "file": "catalogo-produto-city-hatch-2024.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de estabilidade e tração",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em rampa",
+      "Sistema ESS (Emergency Stop Signal) 8 - Sistema de luzes de emergência",
+      "TPMS (Tire Pressure Monitoring System) - Alerta de pressão dos pneus",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré de alta resolução multivisão (três vistas) e linhas dinâmicas",
+      "Honda SENSING ® - Exclusiva tecnologia de segurança e assistência ao condutor",
+      "Limpador de para-brisa com função intermitente",
+      "Conjunto óptico com DRL em LED (faróis alto, baixo, de neblina, luzes diurnas DRL)",
+      "Chave com função Smart Entry de destravamento das portas e do porta-malas",
+      "Carregador sem fio para smartphones",
+      "Portas USB: 2 dianteiras tipo A + 2 traseiras tipo C",
+      "Ar-Condicionado: Manual",
+      "Banco traseiro Bipartido (60/40) com exclusiva tecnologia Magic Seat",
+      "Multimídia 8” com interface para smartphones com Apple CarPlay™ e Android: não exclui o dever do motorista que é responsável por conduzir o veículo com segurança, a fim de evitar colisões.",
+      "Auto™: 6) O CMBS pode não detectar todos os objetos à frente do veículo; a precisão do sistema pode variar com base nas condições climáticas, velocidade entre outros fatores. O sistema pode ser afetado por temperaturas excessivas. O sistema foi desenvolvido com o propósito evitar colisões. A tecnologia não exclui",
+      "Painel Digital TFT de alta resolução: 4.2”"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Hatchback",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Hatchback 2024 · EXL",
+   "page": "https://web.archive.org/web/20251207212503/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf",
+   "file": "catalogo-produto-city-hatch-2024.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de estabilidade e tração",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em rampa",
+      "Sistema ESS (Emergency Stop Signal) 8 - Sistema de luzes de emergência",
+      "TPMS (Tire Pressure Monitoring System) - Alerta de pressão dos pneus",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré de alta resolução multivisão (três vistas) e linhas dinâmicas",
+      "Honda SENSING ® - Exclusiva tecnologia de segurança e assistência ao condutor",
+      "Limpador de para-brisa com função intermitente: Com ajuste de velocidade",
+      "Conjunto óptico com DRL em LED (faróis alto, baixo, de neblina, luzes diurnas DRL)",
+      "Chave com função Smart Entry de destravamento das portas e do porta-malas: aproximação e partida com controle",
+      "Sensores de estacionamento com aviso sonoro: Traseiros",
+      "Carregador sem fio para smartphones",
+      "Portas USB: 2 dianteiras tipo A + 2 traseiras tipo C",
+      "Ar-Condicionado: Manual",
+      "Banco traseiro Bipartido (60/40) com exclusiva tecnologia Magic Seat",
+      "Multimídia 8” com interface para smartphones com Apple CarPlay™ e Android: não exclui o dever do motorista que é responsável por conduzir o veículo com segurança, a fim de evitar colisões.",
+      "Auto™: 6) O CMBS pode não detectar todos os objetos à frente do veículo; a precisão do sistema pode variar com base nas condições climáticas, velocidade entre outros fatores. O sistema pode ser afetado por temperaturas excessivas. O sistema foi desenvolvido com o propósito evitar colisões. A tecnologia não exclui",
+      "Painel Digital TFT de alta resolução: 7\"",
+      "myHonda Connect - Conexão única entre você e o seu Honda"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Hatchback",
+   "trims": [
+    "touring"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Hatchback 2024 · Touring",
+   "page": "https://web.archive.org/web/20251207212503/https://www.honda.com.br/automoveis/sites/hab/files/2024-10/Catalogo_Produto_City_Hatch_2024.pdf",
+   "file": "catalogo-produto-city-hatch-2024.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de estabilidade e tração",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em rampa",
+      "Sistema ESS (Emergency Stop Signal) 8 - Sistema de luzes de emergência",
+      "TPMS (Tire Pressure Monitoring System) - Alerta de pressão dos pneus",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Câmera de ré de alta resolução multivisão (três vistas) e linhas dinâmicas",
+      "Honda LaneWatch TM - Assistente para redução de ponto cego",
+      "Honda SENSING ® - Exclusiva tecnologia de segurança e assistência ao condutor",
+      "Limpador de para-brisa com função intermitente: Com ajuste de velocidade",
+      "Conjunto óptico com DRL em LED (faróis alto, baixo, de neblina, luzes diurnas DRL)",
+      "Chave com função Smart Entry de destravamento das portas e do porta-malas: aproximação e partida com controle",
+      "Sensores de estacionamento com aviso sonoro: Traseiros e Dianteiros",
+      "Carregador sem fio para smartphones",
+      "Portas USB: 2 dianteiras tipo A + 2 traseiras tipo C",
+      "Ar-Condicionado: Manual",
+      "Banco traseiro Bipartido (60/40) com exclusiva tecnologia Magic Seat",
+      "Multimídia 8” com interface para smartphones com Apple CarPlay™ e Android: não exclui o dever do motorista que é responsável por conduzir o veículo com segurança, a fim de evitar colisões.",
+      "Auto™: 6) O CMBS pode não detectar todos os objetos à frente do veículo; a precisão do sistema pode variar com base nas condições climáticas, velocidade entre outros fatores. O sistema pode ser afetado por temperaturas excessivas. O sistema foi desenvolvido com o propósito evitar colisões. A tecnologia não exclui",
+      "Painel Digital TFT de alta resolução: 7\"",
+      "myHonda Connect - Conexão única entre você e o seu Honda"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2025 · EX",
+   "page": "https://web.archive.org/web/20260204162544/https://www.honda.com.br/automoveis/sites/hab/files/2025-10/CATALOGO_PRODUTO_WR-V_2025%201.pdf",
+   "file": "catalogo-produto-wr-v-2025-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "ESS (Emergency Stop Signal - Sistema de luzes de emergência)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Cinto de segurança de 3 pontos e encosto de cabeça para todos os ocupantes",
+      "Cinto de segurança dianteiro com sistema de tensionamento",
+      "Lembrete de afivelamento dos cintos dianteiros e traseiros",
+      "Trava infantil nas portas traseiras",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Honda SENSING ®1 - Exclusiva Tecnologia de Segurança e Assistência ao Condutor",
+      "Conjunto óptico com DRL em LED (Luzes de Rodagem Diurna)",
+      "Faróis com acendimento automático (sensor crepuscular)",
+      "Lanternas traseiras em LED",
+      "Antena tipo Tubarão",
+      "Limpador de para-brisa com função intermitente",
+      "Espelhos retrovisores na cor do veículo com indicadores em LED e rebatimento elétrico automático",
+      "Sensores de estacionamento traseiro com aviso sonoro",
+      "Ar-condicionado Automático com ventilação para os bancos traseiros",
+      "Painel digital 7” TFT de alta resolução (Thin-Film Transistor): 7''",
+      "Multimídia 10” com interface sem-fio para smartphones com Apple CarPlay™ 7 e Android Auto™ 7 com Voice Tag: 10''",
+      "Botão de partida do motor (START/STOP)",
+      "Chave com função Smart Entry com controle remoto, abertura e destravamento das portas por sensor aproximação na chave"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2025 · EXL",
+   "page": "https://web.archive.org/web/20260204162544/https://www.honda.com.br/automoveis/sites/hab/files/2025-10/CATALOGO_PRODUTO_WR-V_2025%201.pdf",
+   "file": "catalogo-produto-wr-v-2025-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Sistema VSA (Assistente de Tração e Estabilidade)",
+      "Sistema HSA (Assistente de Partidas em Aclive)",
+      "ESS (Emergency Stop Signal - Sistema de luzes de emergência)",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Cinto de segurança de 3 pontos e encosto de cabeça para todos os ocupantes",
+      "Cinto de segurança dianteiro com sistema de tensionamento",
+      "Lembrete de afivelamento dos cintos dianteiros e traseiros",
+      "Trava infantil nas portas traseiras",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Honda SENSING ®1 - Exclusiva Tecnologia de Segurança e Assistência ao Condutor",
+      "Conjunto óptico com DRL em LED (Luzes de Rodagem Diurna)",
+      "Faróis com acendimento automático (sensor crepuscular)",
+      "Faróis de neblina em LED",
+      "Lanternas traseiras em LED",
+      "Barras longitudinais no teto",
+      "Antena tipo Tubarão",
+      "Limpador de para-brisa com função intermitente",
+      "Espelhos retrovisores na cor do veículo com indicadores em LED e rebatimento elétrico automático",
+      "Sensores de estacionamento traseiro com aviso sonoro",
+      "Ar-condicionado Automático com ventilação para os bancos traseiros",
+      "Banco traseiro com apoio de braço central e porta-copos",
+      "myHonda Connect - Segurança, conveniência e comunicação com seu Honda",
+      "Carregador de celular por indução",
+      "Painel digital 7” TFT de alta resolução (Thin-Film Transistor): 7''",
+      "Multimídia 10” com interface sem-fio para smartphones com Apple CarPlay™ 7 e Android Auto™ 7 com Voice Tag: 10''",
+      "Botão de partida do motor (START/STOP)",
+      "Chave com função Smart Entry com controle remoto, abertura e destravamento das portas por sensor aproximação na chave"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "dx"
+   ],
+   "years": [
+    2014,
+    2015
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Sedan 2014 · DX",
+   "page": "https://web.archive.org/web/20140422202459/http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf",
+   "file": "especificacoes.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe em aço: 175/65 R15",
+      "Acabamento do suporte da placa traseira: preto"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2014,
+    2015
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Sedan 2014 · LX",
+   "page": "https://web.archive.org/web/20140422202459/http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf",
+   "file": "especificacoes.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe em aço: 175/65 R15",
+      "Acabamento do suporte da placa traseira: cromado"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2014,
+    2015
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Sedan 2014 · EX",
+   "page": "https://web.archive.org/web/20140422202459/http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf",
+   "file": "especificacoes.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe em aço: 175/65 R15",
+      "Acabamento do suporte da placa traseira: cromado"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "City Sedan",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2014,
+    2015
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "City Sedan 2014 · Sport",
+   "page": "https://web.archive.org/web/20140422202459/http://www4.honda.com.br:80/hondacity/content/especificacoes.pdf",
+   "file": "especificacoes.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe em aço: 175/65 R15",
+      "Acabamento do suporte da placa traseira: Na cor do carro"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "dx"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2015 · DX",
+   "page": "https://web.archive.org/web/20150319064033/http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf",
+   "file": "especificacoes2015.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão manual de 5 velocidades",
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário em aço",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Antena na parte traseira do teto",
+      "Brake light",
+      "Camera de ré multivisão: x",
+      "Farol de Neblina: x",
+      "Grade frontal com acabamento blackpiano: x",
+      "Limpador de pára-brisa com intermitente",
+      "Limpador do vidro traseiro",
+      "Maçanetas externas na cor do veículo",
+      "Para-brisa degradê: x",
+      "Retrovisores elétricos na cor do veículo: x",
+      "Abertura do bocal de abastecimento com alavanca interna",
+      "Vidros verdes com filtro UV",
+      "Apoio para o pé",
+      "Ar condicionado",
+      "Audio 2DIN (AM-FM/USB/bluetooth): x",
+      "Alto-falantes - dois dianteiros e dois traseiros: x",
+      "Aviso sonoro do cinto de segurança para motorista",
+      "Banco do motorista com regulagem de altura: x",
+      "Coluna de direção ajustável: Altura",
+      "Console central com porta-copos",
+      "Desembaçador do vidro traseiro",
+      "Encosto de cabeça para todos os ocupantes",
+      "Iluminação interna dianteira individual e central: dianteira individual",
+      "Iluminação interna do porta-malas: x",
+      "Painel com computador de bordo multifunções (Bluemeter): x",
+      "Pára-sois com espelho para motorista e passageiro",
+      "Piloto automático (cruise control): x",
+      "Porta-objetos nas portas dianteiras",
+      "Porta-revistas atrás do banco dianteiro do passageiro: x",
+      "Revestimento dos bancos: tecido",
+      "Tomada 12 Volts",
+      "Vidros elétricos",
+      "Airbag frontal para motorista e passageiro dianteiro",
+      "Airbag lateral para motorista e passageiro dianteiro: x",
+      "Alarme: x",
+      "Barras de proteção lateral",
+      "Chave com controle de travas das portas",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Sistema Immobilizer",
+      "Trava de segurança central dos vidros dos passageiros",
+      "Trava de segurança na portas traseiras",
+      "Travas elétricas com travamento automático acima de 15 km/h"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2015 · LX",
+   "page": "https://web.archive.org/web/20150319064033/http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf",
+   "file": "especificacoes2015.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão manual de 5 velocidades",
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário em aço",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Antena na parte traseira do teto",
+      "Brake light",
+      "Camera de ré multivisão: x",
+      "Farol de Neblina: x",
+      "Grade frontal com acabamento blackpiano: x",
+      "Limpador de pára-brisa com intermitente",
+      "Limpador do vidro traseiro",
+      "Maçanetas externas na cor do veículo",
+      "Para-brisa degradê: x",
+      "Retrovisores elétricos na cor do veículo",
+      "Abertura do bocal de abastecimento com alavanca interna",
+      "Vidros verdes com filtro UV",
+      "Apoio para o pé",
+      "Ar condicionado",
+      "Audio 2DIN (AM-FM/USB/bluetooth)",
+      "Alto-falantes - dois dianteiros e dois traseiros",
+      "Aviso sonoro do cinto de segurança para motorista",
+      "Banco do motorista com regulagem de altura",
+      "Coluna de direção ajustável: Altura",
+      "Console central com porta-copos",
+      "Desembaçador do vidro traseiro",
+      "Encosto de cabeça para todos os ocupantes",
+      "Iluminação interna dianteira individual e central",
+      "Iluminação interna do porta-malas",
+      "Painel com computador de bordo multifunções (Bluemeter): x",
+      "Pára-sois com espelho para motorista e passageiro",
+      "Piloto automático (cruise control): x",
+      "Porta-objetos nas portas dianteiras",
+      "Porta-revistas atrás do banco dianteiro do passageiro: x",
+      "Revestimento dos bancos: tecido",
+      "Tomada 12 Volts",
+      "Vidros elétricos",
+      "Airbag frontal para motorista e passageiro dianteiro",
+      "Airbag lateral para motorista e passageiro dianteiro: x",
+      "Alarme",
+      "Barras de proteção lateral",
+      "Chave com controle de travas das portas",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Sistema Immobilizer",
+      "Trava de segurança central dos vidros dos passageiros",
+      "Trava de segurança na portas traseiras",
+      "Travas elétricas com travamento automático acima de 15 km/h"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2015 · EX",
+   "page": "https://web.archive.org/web/20150319064033/http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf",
+   "file": "especificacoes2015.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário em aço",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Antena na parte traseira do teto",
+      "Brake light",
+      "Camera de ré multivisão",
+      "Farol de Neblina",
+      "Grade frontal com acabamento blackpiano",
+      "Limpador de pára-brisa com intermitente",
+      "Limpador do vidro traseiro",
+      "Maçanetas externas na cor do veículo",
+      "Para-brisa degradê: x",
+      "Retrovisores elétricos na cor do veículo",
+      "Abertura do bocal de abastecimento com alavanca interna",
+      "Vidros verdes com filtro UV",
+      "Apoio para o pé",
+      "Ar condicionado",
+      "Audio 2DIN (AM-FM/USB/bluetooth): x",
+      "Alto-falantes - dois dianteiros e dois traseiros",
+      "Aviso sonoro do cinto de segurança para motorista",
+      "Banco do motorista com regulagem de altura",
+      "Coluna de direção ajustável: Altura e profundidade",
+      "Console central com porta-copos",
+      "Desembaçador do vidro traseiro",
+      "Encosto de cabeça para todos os ocupantes",
+      "Iluminação interna dianteira individual e central",
+      "Iluminação interna do porta-malas",
+      "Painel com computador de bordo multifunções (Bluemeter): x",
+      "Pára-sois com espelho para motorista e passageiro",
+      "Piloto automático (cruise control): x",
+      "Porta-objetos nas portas dianteiras",
+      "Porta-revistas atrás do banco dianteiro do passageiro",
+      "Revestimento dos bancos: tecido",
+      "Tomada 12 Volts",
+      "Vidros elétricos",
+      "Airbag frontal para motorista e passageiro dianteiro",
+      "Airbag lateral para motorista e passageiro dianteiro: x",
+      "Alarme",
+      "Barras de proteção lateral",
+      "Chave com controle de travas das portas: Tipo Canivete",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Sistema Immobilizer",
+      "Trava de segurança central dos vidros dos passageiros",
+      "Trava de segurança na portas traseiras",
+      "Travas elétricas com travamento automático acima de 15 km/h"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2015,
+    2016
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2015 · EXL",
+   "page": "https://web.archive.org/web/20150319064033/http://www4.honda.com.br:80/hondafit/especificacoes2015.pdf",
+   "file": "especificacoes2015.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário em aço",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Antena na parte traseira do teto",
+      "Brake light",
+      "Camera de ré multivisão",
+      "Farol de Neblina",
+      "Grade frontal com acabamento blackpiano",
+      "Limpador de pára-brisa com intermitente",
+      "Limpador do vidro traseiro",
+      "Maçanetas externas na cor do veículo",
+      "Para-brisa degradê",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "Abertura do bocal de abastecimento com alavanca interna",
+      "Vidros verdes com filtro UV",
+      "Apoio para o pé",
+      "Ar condicionado",
+      "Audio 2DIN (AM-FM/USB/bluetooth): x",
+      "Alto-falantes - dois dianteiros e dois traseiros",
+      "Aviso sonoro do cinto de segurança para motorista",
+      "Banco do motorista com regulagem de altura",
+      "Coluna de direção ajustável: Altura e profundidade",
+      "Console central com porta-copos",
+      "Desembaçador do vidro traseiro",
+      "Encosto de cabeça para todos os ocupantes",
+      "Iluminação interna dianteira individual e central",
+      "Iluminação interna do porta-malas",
+      "Painel com computador de bordo multifunções (Bluemeter)",
+      "Pára-sois com espelho para motorista e passageiro",
+      "Piloto automático (cruise control)",
+      "Porta-objetos nas portas dianteiras",
+      "Porta-revistas atrás do banco dianteiro do passageiro",
+      "Revestimento dos bancos: couro",
+      "Tomada 12 Volts",
+      "Vidros elétricos",
+      "Airbag frontal para motorista e passageiro dianteiro",
+      "Airbag lateral para motorista e passageiro dianteiro",
+      "Alarme",
+      "Barras de proteção lateral",
+      "Chave com controle de travas das portas: Tipo Canivete",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Sistema Immobilizer",
+      "Trava de segurança central dos vidros dos passageiros",
+      "Trava de segurança na portas traseiras",
+      "Travas elétricas com travamento automático acima de 15 km/h"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2020 · LX",
+   "page": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Rodas de Rodas de liga leve 17’’ liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Alerta de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: Tecido Premium com novos acabamentos",
+      "Alto-falantes: 4 alto-falantes - 160W",
+      "Display multimídia com tela de 5’’ com câmera de ré",
+      "| C O R E S E X T E R N A S 7: |",
+      "Branco Tafetá Sólido: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Cinza Barium Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Novo Honda Civic 2020 em",
+      "solar, partida à distância e com travamento e destravamento das portas por sensor aproximação na chave.: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2020 · SPORT",
+   "page": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Alerta de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Faróis (halógenos) com acendimento automático",
+      "Aerofólio traseiro",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: Tecido Premium com novos acabamentos",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 4 alto-falantes - 160W",
+      "| C O R E S E X T E R N A S 7: |",
+      "Branco Tafetá Sólido: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Cinza Barium Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Novo Honda Civic 2020 em",
+      "solar, partida à distância e com travamento e destravamento das portas por sensor aproximação na chave.: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2020 · EX",
+   "page": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Rodas de Rodas de liga leve 17’’ liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Alerta de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Faróis (halógenos) com acendimento automático",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Espelho retrovisor eletrocrômico",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "| C O R E S E X T E R N A S 7: C O R E S",
+      "Branco Tafetá Sólido: Preto Cristal Perolizado",
+      "Prata Platinum Metálico: Azul Cósmico Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Novo Honda Civic 2020 em",
+      "solar, partida à distância e com travamento e destravamento das portas por sensor aproximação na chave.: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2020 · EXL",
+   "page": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Rodas de Rodas de liga leve 17’’ liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas): com linhas dinâmicas",
+      "Alerta de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Faróis (halógenos) com acendimento automático",
+      "Chave com função Smart Key",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Sensores de estacionamento dianteiros e traseiros",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Espelho retrovisor eletrocrômico",
+      "Botão de partida do motor (START/STOP)",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "Painel digital TFT 7” de alta resolução",
+      "| C O R E S E X T E R N A S 7: I N T E R N A S",
+      "Branco Tafetá Sólido: Cinza",
+      "Prata Platinum Metálico: Preto",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Novo Honda Civic 2020 em",
+      "solar, partida à distância e com travamento e destravamento das portas por sensor aproximação na chave.: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "touring"
+   ],
+   "years": [
+    2020,
+    2021
+   ],
+   "engineLiters": 1.5,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2020 · Touring",
+   "page": "https://web.archive.org/web/20191201002030/https://www.honda.com.br/automoveis/sites/hab/files/2019-10/%5BHONDA%5DCAMPANHA%20CIVIC%202020_FOLHETO%20COMPLETO_440x310mm_R21-WhatsApp_0.pdf",
+   "file": "honda-campanha-civic-2020-folheto-completo-440x310mm-r21-whatsapp-0.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Escapamento Duplo",
+      "Rodas de Rodas de liga leve 17’’ liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas): com linhas dinâmicas",
+      "Alerta de pressão dos pneus - TPMS",
+      "Honda LaneWatch - Assistente para redução de ponto cego",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Faróis Full LED com acendimento automático",
+      "Chave com função Smart Key",
+      "Teto solar",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Sensores de estacionamento dianteiros e traseiros",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Carregador por indução (wireless) para celular",
+      "Ar-condicionado Digital",
+      "Para-brisa com tratamento acústico para conforto sonoro",
+      "Espelho retrovisor eletrocrômico",
+      "Botão de partida do motor (START/STOP)",
+      "Partida do motor à distância",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "Banco do motorista com ajuste elétrico e regulagem lombar",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "Painel digital TFT 7” de alta resolução",
+      "| C O R E S E X T E R N A S 7: 7",
+      "Branco Tafetá Sólido: Cinza",
+      "Prata Platinum Metálico: Preto",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Novo Honda Civic 2020 em",
+      "solar, partida à distância e com travamento e destravamento das portas por sensor aproximação na chave.: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2021 · LX",
+   "page": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Rodas de liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Sensor de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: Tecido Premium",
+      "EXL e Motor 1.5l turbo de 173cv com injeção direta para",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 4 alto-falantes - 160W",
+      "Projetado para o seu conforto, o Honda Civic possui câmbio",
+      "7: 7",
+      "| C O R E S E X T E R N A S: |",
+      "Branco Tafetá Sólido: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Cinza Barium Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Honda Civic em",
+      "distância e travamento e destravamento das portas por sensor aproximação na chave: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2021 · SPORT",
+   "page": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Sensor de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Aerofólio traseiro",
+      "Chave com função Smart Key",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital",
+      "Botão de partida do motor (START/STOP)",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: Tecido Premium",
+      "EXL e Motor 1.5l turbo de 173cv com injeção direta para",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 4 alto-falantes - 160W",
+      "Projetado para o seu conforto, o Honda Civic possui câmbio",
+      "7: 7",
+      "| C O R E S E X T E R N A S: |",
+      "Branco Tafetá Sólido: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Cinza Barium Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Honda Civic em",
+      "distância e travamento e destravamento das portas por sensor aproximação na chave: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2021 · EX",
+   "page": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Rodas de liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas)",
+      "Sensor de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Chave com função Smart Key",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital: Com saída para os bancos traseiros",
+      "Espelho retrovisor eletrocrômico",
+      "Botão de partida do motor (START/STOP)",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "EXL e Motor 1.5l turbo de 173cv com injeção direta para",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "Projetado para o seu conforto, o Honda Civic possui câmbio",
+      "7: 7",
+      "| C O R E S E X T E R N A S: |",
+      "Branco Tafetá Sólido: Preto Cristal Perolizado",
+      "Prata Platinum Metálico: Azul Cósmico Metálico",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Honda Civic em",
+      "distância e travamento e destravamento das portas por sensor aproximação na chave: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2021 · EXL",
+   "page": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Rodas de liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas): com linhas dinâmicas",
+      "Sensor de pressão dos pneus - TPMS",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Chave com função Smart Key",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Sensores de estacionamento dianteiros e traseiros",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Ar-condicionado Digital: Com saída para os bancos traseiros",
+      "Espelho retrovisor eletrocrômico",
+      "Botão de partida do motor (START/STOP)",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "EXL e Motor 1.5l turbo de 173cv com injeção direta para",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "Projetado para o seu conforto, o Honda Civic possui câmbio: + Navegador GPS",
+      "Painel digital TFT 7” de alta resolução",
+      "7: 7",
+      "| C O R E S E X T E R N A S: C O R E S",
+      "Branco Tafetá Sólido: Cinza",
+      "Prata Platinum Metálico: Preto",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Honda Civic em",
+      "distância e travamento e destravamento das portas por sensor aproximação na chave: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Civic Sedan",
+   "trims": [
+    "touring"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.5,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "Civic Sedan 2021 · Touring",
+   "page": "https://web.archive.org/web/20220520033240/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2020-10/%5BHONDA%5DCAMPANHA%20CIVIC%202021_FOLHETO%20COMPLETO_440x310mm_R11-DUPLA.pdf",
+   "file": "honda-campanha-civic-2021-folheto-completo-440x310mm-r11-dupla.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Escapamento Duplo",
+      "Rodas de liga leve 17’’",
+      "Estrutura de deformação progressiva ACE",
+      "Freios com sistemas ABS e EBD",
+      "Sistema VSA - Assistente de tração e estabilidade",
+      "Sistema HSA - Assistente de partidas em aclive",
+      "ESS - Sistema de luzes de emergência",
+      "Airbags frontais, laterais e de cortina (6 airbags)",
+      "Sistema ISOFIX de fixação para cadeirinhas infantis",
+      "Câmera de ré multivisão (três vistas): com linhas dinâmicas",
+      "Sensor de pressão dos pneus - TPMS",
+      "Honda LaneWatch - Assistente para redução de ponto cego",
+      "Lanternas traseiras em LED",
+      "Conjunto óptico com DRL em LED",
+      "Chave com função Smart Key",
+      "Teto solar",
+      "Freio de estacionamento eletrônico (EPB) com função Brake Hold",
+      "Sensores de estacionamento dianteiros e traseiros",
+      "Piloto automático (Cruise Control)",
+      "Console central elevado com apoio de braços e porta-copos",
+      "Carregador por indução (wireless) para celular",
+      "Ar-condicionado Digital: Com saída para os bancos traseiros",
+      "Para-brisa com tratamento acústico para conforto sonoro",
+      "Espelho retrovisor eletrocrômico",
+      "Botão de partida do motor (START/STOP)",
+      "Partida do motor à distância",
+      "Banco traseiro Bipartido: 60 / 40",
+      "Revestimento dos bancos: couro",
+      "Banco do motorista com ajuste elétrico e regulagem lombar",
+      "EXL e Motor 1.5l turbo de 173cv com injeção direta para",
+      "Interface para smartphones Apple CarPlay e Android Auto™",
+      "Alto-falantes: 8 alto-falantes - 180W",
+      "Projetado para o seu conforto, o Honda Civic possui câmbio: + Navegador GPS",
+      "Painel digital TFT 7” de alta resolução",
+      "7: 7",
+      "| C O R E S E X T E R N A S: I N T E R N A S",
+      "Branco Tafetá Sólido: Cinza",
+      "Prata Platinum Metálico: Preto",
+      "travamento e destravamento das portas por sensor aproximação na chave.: Conheça tudo sobre o Honda Civic em",
+      "distância e travamento e destravamento das portas por sensor aproximação na chave: www.honda.com.br/automoveis/civic"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "personal"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2021 · Personal",
+   "page": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assist – assistente de partidas em aclives) , o modelo conta: 1.5 16V SOHC i-VTEC FlexOne",
+      "Airbags: 2 airbags (frontais)",
+      "Estrutura de deformação progressiva ACE: TM",
+      "Frenagem Emergencial: 3",
+      "sempre realçar a sua personalidade.: ®",
+      "Ar-condicionado: manual",
+      "Revestimento dos bancos: tecido",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "2 Electronic Brake Distribution",
+      "4: - Não disponível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "dx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2021 · DX",
+   "page": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assist – assistente de partidas em aclives) , o modelo conta: 1.5 16V SOHC i-VTEC FlexOne",
+      "Airbags: 2 airbags (frontais)",
+      "Estrutura de deformação progressiva ACE: TM",
+      "Frenagem Emergencial: 3",
+      "sempre realçar a sua personalidade.: ®",
+      "Ar-condicionado: manual",
+      "Revestimento dos bancos: tecido",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "2 Electronic Brake Distribution",
+      "4: - Não disponível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2021 · LX",
+   "page": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assist – assistente de partidas em aclives) , o modelo conta: 1.5 16V SOHC i-VTEC FlexOne",
+      "Airbags: 2 airbags (frontais)",
+      "Estrutura de deformação progressiva ACE: TM",
+      "Frenagem Emergencial: 3",
+      "sempre realçar a sua personalidade.: ®",
+      "Ar-condicionado: manual",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante: com função Voice Tag",
+      "Revestimento dos bancos: tecido",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "2 Electronic Brake Distribution",
+      "4: - Não disponível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2021 · EX",
+   "page": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assist – assistente de partidas em aclives) , o modelo conta: 1.5 16V SOHC i-VTEC FlexOne",
+      "Airbags: 4 airbags (frontais e laterais)",
+      "Estrutura de deformação progressiva ACE: TM",
+      "Frenagem Emergencial: 3",
+      "sempre realçar a sua personalidade.: ®",
+      "Ar-condicionado: digital FULL Touchscreen",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante: com função Voice Tag",
+      "Volante Multifuncional: com acabamento em couro",
+      "Revestimento dos bancos: tecido",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "2 Electronic Brake Distribution",
+      "4: - Não disponível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "Fit",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "title": "Fit 2021 · EXL",
+   "page": "https://web.archive.org/web/20240517223843/https://www.honda.com.br/automoveis/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20FIT2021_Folheto%20Simples_863x306MM_R13.pdf",
+   "file": "honda-campanha-fit2021-folheto-simples-863x306mm-r13.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Assist – assistente de partidas em aclives) , o modelo conta: 1.5 16V SOHC i-VTEC FlexOne",
+      "Airbags: 6 airbags (frontais, laterais e cortina)",
+      "Estrutura de deformação progressiva ACE: TM",
+      "Frenagem Emergencial: 3",
+      "sempre realçar a sua personalidade.: ®",
+      "Ar-condicionado: digital FULL Touchscreen",
+      "Multimídia 7’’ multi-touchscreen com interfaces 4 para smartphones: GPS com navegador integrado",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante: com função Voice Tag",
+      "Volante Multifuncional: com acabamento em couro",
+      "Revestimento dos bancos: couro",
+      "Retrovisores elétricos na cor do veículo: com luz indicadora de direção",
+      "2 Electronic Brake Distribution: Item de série",
+      "4: - Não disponível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2021 · LX",
+   "page": "https://web.archive.org/web/20210514135854/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Airbags: 6 airbags (frontais, laterais e de cortina)",
+      "Estrutura de deformação progressiva ACE TM",
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de tração e estabilidade",
+      "Farol de neblina",
+      "Grade frontal cromada",
+      "Acendimento automático de faróis (sensor crepuscular)",
+      "Ar-condicionado: manual",
+      "Câmera de marcha a ré multivisão com guias de referência",
+      "Volante multifuncional com comandos de áudio e piloto automático",
+      "função tilt-down: com Voice Tag",
+      "Console central com acabamento superior em blackpiano, apoio de braço e compartimento porta-objetos",
+      "Vidros elétricos com função 1 toque para todos ocupantes",
+      "Invisible Handle - Maçaneta externa da porta traseira embutida na coluna",
+      "Revestimento dos bancos: Tecido",
+      "Exclusivo sistema de rebatimento dos bancos Magic Seat (ULT)",
+      "Azul Cósmico Metálico: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Preto Cristal Perolizado",
+      "Mais detalhes que vão revolucionar a sua vida em: Revolucione o seu dia.",
+      "honda.com.br/hondahrv: Faça já um Test Drive."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2021 · EX",
+   "page": "https://web.archive.org/web/20210514135854/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Airbags: 6 airbags (frontais, laterais e de cortina)",
+      "Estrutura de deformação progressiva ACE TM",
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de tração e estabilidade",
+      "Farol de neblina",
+      "Grade frontal cromada",
+      "Acendimento automático de faróis (sensor crepuscular)",
+      "Ar-condicionado: digital full touchscreen",
+      "Câmera de marcha a ré multivisão com guias de referência",
+      "Volante multifuncional com comandos de áudio e piloto automático",
+      "função tilt-down: com Voice Tag",
+      "Console central com acabamento superior em blackpiano, apoio de braço e compartimento porta-objetos",
+      "Vidros elétricos com função 1 toque para todos ocupantes",
+      "Rebatimento elétrico dos retrovisores e Função Tilt-Down no retrovisor do lado do passageiro",
+      "Invisible Handle - Maçaneta externa da porta traseira embutida na coluna",
+      "Revestimento dos bancos: Tecido",
+      "Exclusivo sistema de rebatimento dos bancos Magic Seat (ULT)",
+      "Azul Cósmico Metálico: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Preto Cristal Perolizado",
+      "Mais detalhes que vão revolucionar a sua vida em: Revolucione o seu dia.",
+      "honda.com.br/hondahrv: Faça já um Test Drive."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2021 · EXL",
+   "page": "https://web.archive.org/web/20210514135854/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Airbags: 6 airbags (frontais, laterais e de cortina)",
+      "Estrutura de deformação progressiva ACE TM",
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de tração e estabilidade",
+      "Farol de neblina",
+      "Grade frontal cromada",
+      "Acendimento automático de faróis (sensor crepuscular)",
+      "Ar-condicionado: digital full touchscreen",
+      "Câmera de marcha a ré multivisão com guias de referência",
+      "Volante multifuncional com comandos de áudio e piloto automático",
+      "função tilt-down: com Voice Tag",
+      "Console central com acabamento superior em blackpiano, apoio de braço e compartimento porta-objetos",
+      "Vidros elétricos com função 1 toque para todos ocupantes",
+      "Rebatimento elétrico dos retrovisores e Função Tilt-Down no retrovisor do lado do passageiro",
+      "Sensores de estacionamento dianteiros",
+      "Invisible Handle - Maçaneta externa da porta traseira embutida na coluna",
+      "Revestimento dos bancos: Couro",
+      "Exclusivo sistema de rebatimento dos bancos Magic Seat (ULT)",
+      "Azul Cósmico Metálico: Branco Estelar Perolizado",
+      "Prata Platinum Metálico: Preto Cristal Perolizado",
+      "Mais detalhes que vão revolucionar a sua vida em: Revolucione o seu dia.",
+      "honda.com.br/hondahrv: Faça já um Test Drive."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "HR-V",
+   "trims": [
+    "touring"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.5,
+   "turbo": true,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "HR-V 2021 · Touring",
+   "page": "https://web.archive.org/web/20210514135854/https://www.honda.com.br/automoveis/pos-venda/motos/sites/hab/files/2021-02/%5BHONDA%5DCAMPANHA%20HRV2021_Folheto%20Simples_863x306mm_R12_1.pdf",
+   "file": "honda-campanha-hrv2021-folheto-simples-863x306mm-r12-1.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Airbags: 6 airbags (frontais, laterais e de cortina)",
+      "Estrutura de deformação progressiva ACE TM",
+      "Freio de estacionamento eletrônico com função Brake Hold",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) - Assistente de tração e estabilidade",
+      "Farol de neblina",
+      "Grade frontal cromada",
+      "Acendimento automático de faróis (sensor crepuscular)",
+      "Ar-condicionado: digital full touchscreen",
+      "Câmera de marcha a ré multivisão com guias de referência",
+      "Volante multifuncional com comandos de áudio e piloto automático",
+      "função tilt-down: com Voice Tag",
+      "Console central com acabamento superior em blackpiano, apoio de braço e compartimento porta-objetos",
+      "Vidros elétricos com função 1 toque para todos ocupantes",
+      "Rebatimento elétrico dos retrovisores e Função Tilt-Down no retrovisor do lado do passageiro",
+      "Sensores de estacionamento dianteiros",
+      "Invisible Handle - Maçaneta externa da porta traseira embutida na coluna",
+      "Revestimento dos bancos: Couro",
+      "Exclusivo sistema de rebatimento dos bancos Magic Seat (ULT)",
+      "Azul Cósmico Metálico: Vermelho Mercúrio Perolizado",
+      "Prata Platinum Metálico: Branco Tafetá Sólido",
+      "Mais detalhes que vão revolucionar a sua vida em: Revolucione o seu dia.",
+      "honda.com.br/hondahrv: Faça já um Test Drive."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2019 · EX",
+   "page": "https://web.archive.org/web/20250520002827/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20WR-V%202019_Folheto%20Simples_863x306mm_R17.pdf",
+   "file": "honda-campanha-wr-v-2019-folheto-simples-863x306mm-r17.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Rodas de liga leve 16” com design exclusivo",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Amortecedores dianteiros com batentes hidráulicos",
+      "Câmera de marcha a ré",
+      "Faróis de halogênio com Luzes de Rodagem Diurna (DRL) em LED",
+      "Farol de Neblina",
+      "Grade frontal cromada com acabamento blackpiano",
+      "Retrovisores com ajustes elétricos na cor do veículo com luz indicadora de direção",
+      "Rack de teto",
+      "Apoio central de braço com revestimento em couro 1",
+      "Ar-condicionado digital FULL Touchscreen",
+      "4 Alto-falantes (dois dianteiros e dois traseiros)",
+      "Multimídia de 7” multi-touchscreen (AM-FM / Bluetooth / internet browser - via hospot)",
+      "Interface para smartphones Apple CarPlay e Android Auto™ com Tag Voice",
+      "Conectividade: Bluetooth e 2 entradas USB",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante",
+      "Painel de instrumentos com computador de bordo multifunções, com iluminação azul e branca (Blue/Whitemeter)",
+      "Piloto automático (cruise control)",
+      "Revestimento exclusivo dos bancos de tecido com combinação dos acabamentos em preto e laranja ou preto e prata 2",
+      "Sistema de rebatimento dos bancos Magic Seat",
+      "Volante multifuncional com revestimento em couro 1 e ajustes de áudio",
+      "Airbag frontal e lateral para motorista e passageiro dianteiro",
+      "Chave tipo canivete com controle de abertura / fechamento das portas",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Freios com sistema ABS e EBD (Antilock Brake System / Electronic Brake Distribuiton)",
+      "Sistema ISOFIX de fixação de cadeirinha infantis",
+      "1 Alguns itens são revestidos em couro e/ou materiais sintéticos de alta qualidade.: Legenda:"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2019,
+    2020
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2019 · EXL",
+   "page": "https://web.archive.org/web/20250520002827/https://www.honda.com.br/automoveis/sites/hab/files/2019-06/%5BHONDA%5DCAMPANHA%20WR-V%202019_Folheto%20Simples_863x306mm_R17.pdf",
+   "file": "honda-campanha-wr-v-2019-folheto-simples-863x306mm-r17.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Rodas de liga leve 16” com design exclusivo",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Amortecedores dianteiros com batentes hidráulicos",
+      "Câmera de marcha a ré",
+      "Faróis de halogênio com Luzes de Rodagem Diurna (DRL) em LED",
+      "Farol de Neblina",
+      "Grade frontal cromada com acabamento blackpiano",
+      "Retrovisores com ajustes elétricos na cor do veículo com luz indicadora de direção",
+      "Retrovisor com rebatimento elétrico",
+      "Rack de teto",
+      "Apoio central de braço com revestimento em couro 1",
+      "Ar-condicionado digital FULL Touchscreen",
+      "4 Alto-falantes (dois dianteiros e dois traseiros): +2 tweeters",
+      "Multimídia de 7” multi-touchscreen com navegador GPS (AM-FM / Bluetooth / internet browser - via hospot)",
+      "Interface para smartphones Apple CarPlay e Android Auto™ com Tag Voice",
+      "Conectividade: Bluetooth e 2 entradas USB",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante",
+      "Painel de instrumentos com computador de bordo multifunções, com iluminação azul e branca (Blue/Whitemeter)",
+      "Piloto automático (cruise control)",
+      "Sistema de rebatimento dos bancos Magic Seat",
+      "Volante multifuncional com revestimento em couro 1 e ajustes de áudio",
+      "Airbag frontal e lateral para motorista e passageiro dianteiro: + airbag de cortina",
+      "Chave tipo canivete com controle de abertura / fechamento das portas",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Freios com sistema ABS e EBD (Antilock Brake System / Electronic Brake Distribuiton)",
+      "Sistema ISOFIX de fixação de cadeirinha infantis",
+      "1 Alguns itens são revestidos em couro e/ou materiais sintéticos de alta qualidade.: Legenda:"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "lx"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2021 · LX",
+   "page": "https://web.archive.org/web/20211127112319/https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf",
+   "file": "honda-wr-v-2021-catalogo-de-produto-digital-1250x1443px.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Transmissão automática do tipo CVT",
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Faróis de halogênio com Luzes de Rodagem Diurna (DRL) em LED",
+      "Faróis de neblina",
+      "Grade frontal cromada, com barras longitudinais e acabamentos em BlackPiano",
+      "Rack de teto",
+      "Ar-condicionado: Manual",
+      "Áudio com visor LCD de 5 polegadas (CD / AM-FM / Bluetooth / USB)",
+      "4 Alto-falantes (dois dianteiros e dois traseiros)",
+      "Câmera de marcha a ré multivisão",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante",
+      "Faróis com acendimento automático (sensor crepuscular) e ajuste manual de altura",
+      "Retrovisores elétricos na cor do veículo com luz indicadora de direção",
+      "Revestimento dos bancos: Tecido",
+      "Vidros elétricos com função AUTO: Motorista",
+      "Volante multifuncional com comandos de áudio",
+      "Airbags: Frontais (2)",
+      "Estrutura de deformação progressiva ACE (Advanced Compatibility Engineering)",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Freios com sistema ABS / EBD (Antilock Brake System / Electronic Brake Distribuiton)",
+      "Sistema de alerta de frenagem emergencial ESS (Emergency Stop Signal)",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) – Assistente de estabilidade e tração",
+      "Sistema TPMS de monitoramento de pressão dos pneus",
+      "Sistema ISOFIX de fixação de cadeirinha infantil",
+      "CONFORTO E TECNOLOGIA: DESIGN"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2021 · EX",
+   "page": "https://web.archive.org/web/20211127112319/https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf",
+   "file": "honda-wr-v-2021-catalogo-de-produto-digital-1250x1443px.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Faróis, Luzes de Rodagem Diurna (DRL) e Lanternas traseiras em LED",
+      "Faróis de neblina: em LED",
+      "Grade frontal cromada, com barras longitudinais e acabamentos em BlackPiano",
+      "Rack de teto",
+      "Apoio central de braço em couro",
+      "Ar-condicionado: Digital full touchscreen",
+      "4 Alto-falantes (dois dianteiros e dois traseiros): + 2 tweeters",
+      "Câmera de marcha a ré multivisão",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante: com Voice Tag",
+      "Faróis com acendimento automático (sensor crepuscular) e ajuste manual de altura",
+      "Retrovisores elétricos na cor do veículo com luz indicadora de direção",
+      "Revestimento dos bancos: Tecido",
+      "Sensores de estacionamento: Traseiros",
+      "Vidros elétricos com função AUTO: Motorista + passageiro",
+      "Airbags: Frontais e laterais (4)",
+      "Estrutura de deformação progressiva ACE (Advanced Compatibility Engineering)",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Freios com sistema ABS / EBD (Antilock Brake System / Electronic Brake Distribuiton)",
+      "Sistema de alerta de frenagem emergencial ESS (Emergency Stop Signal)",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) – Assistente de estabilidade e tração",
+      "Sistema TPMS de monitoramento de pressão dos pneus",
+      "Sistema ISOFIX de fixação de cadeirinha infantil",
+      "CONFORTO E TECNOLOGIA: FICHA TÉCNICA"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "honda",
+   "line": "WR-V",
+   "trims": [
+    "exl"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "title": "WR-V 2021 · EXL",
+   "page": "https://web.archive.org/web/20211127112319/https://www.honda.com.br/automoveis/produtos-de-forca/sites/hab/files/2020-09/HONDA_WR-V%202021_Cat%C3%A1logo%20de%20Produto_Digital_1250x1443px.pdf",
+   "file": "honda-wr-v-2021-catalogo-de-produto-digital-1250x1443px.pdf",
+   "groups": [
+    {
+     "name": "Equipamentos",
+     "items": [
+      "Estepe temporário",
+      "Direção com assistência elétrica progressiva (EPS)",
+      "Faróis, Luzes de Rodagem Diurna (DRL) e Lanternas traseiras em LED",
+      "Faróis de neblina: em LED",
+      "Grade frontal cromada, com barras longitudinais e acabamentos em BlackPiano",
+      "Rack de teto",
+      "Apoio central de braço em couro",
+      "Ar-condicionado: Digital full touchscreen",
+      "4 Alto-falantes (dois dianteiros e dois traseiros): + 2 tweeters",
+      "Câmera de marcha a ré multivisão",
+      "Bluetooth com comandos HFT (Hands Free Telephone) no volante: com Voice Tag",
+      "Faróis com acendimento automático (sensor crepuscular) e ajuste manual de altura",
+      "Retrovisores elétricos na cor do veículo com luz indicadora de direção: + Rebatimento elétrico",
+      "Retrovisor interno fotocrômico (antiofuscamento)",
+      "Revestimento dos bancos: Couro",
+      "Sensores de estacionamento: Dianteiros e traseiros",
+      "Vidros elétricos com função AUTO: Motorista + passageiro",
+      "Airbags: Frontais, laterais e de cortina (6)",
+      "Estrutura de deformação progressiva ACE (Advanced Compatibility Engineering)",
+      "Freios dianteiros a disco e traseiros a tambor",
+      "Freios com sistema ABS / EBD (Antilock Brake System / Electronic Brake Distribuiton)",
+      "Sistema de alerta de frenagem emergencial ESS (Emergency Stop Signal)",
+      "Sistema HSA (Hill Start Assist) - Assistente de partidas em aclives",
+      "Sistema VSA (Vehicle Stability Assist) – Assistente de estabilidade e tração",
+      "Sistema TPMS de monitoramento de pressão dos pneus",
+      "Sistema ISOFIX de fixação de cadeirinha infantil",
+      "CONFORTO E TECNOLOGIA: FICHA TÉCNICA"
      ]
     }
    ]

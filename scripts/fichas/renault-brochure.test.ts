@@ -2,28 +2,32 @@ import { describe, expect, it } from "vitest";
 import type { PdfTextLine } from "../inmetro/pbev.ts";
 import { brochureColumns, brochureFile, brochureYear, renaultBrochureEquipment } from "./renault-brochure.ts";
 
-// [y, ...[center, text]]: a page of the brochure, a line per entry.
+// [y, ...[left, text]]: a page of the brochure, a line per entry, 4 points a character.
 const page = (rows: [number, ...[number, string][]][]): PdfTextLine[] =>
-  rows.map(([y, ...cells]) => ({ page: 2, y, cells: cells.map(([center, text]) => ({ center, text })) }));
+  rows.map(([y, ...cells]) => ({
+    page: 2,
+    y,
+    cells: cells.map(([left, text]) => ({ center: left + text.length * 2, width: text.length * 4, text })),
+  }));
 
 // The Duster's: two lines of names, an item per line, marks a point under or on its line.
 const duster = page([
-  [545, [154, "lista de equipamentos"]],
+  [545, [40, "lista de equipamentos"]],
   [516, [434, "Intense Plus"], [545, "Iconic Plus"]],
   [507, [434, "1.6 MT/CVT"], [545, "1.6 CVT"]],
-  [494, [70, "SEGURANÇA"]],
-  [483, [96, "6 airbags (frontal, laterais e de cortina)"]],
+  [494, [40, "SEGURANÇA"]],
+  [483, [40, "6 airbags (frontal, laterais e de cortina)"]],
   [482, [434, "•"], [545, "•"]],
-  [471, [72, "Alarme perimétrico"]],
+  [471, [40, "Alarme perimétrico"]],
   [470, [434, "•"], [545, "•"]],
-  [460, [90, "Câmera de ré"], [545, "–"]],
+  [460, [40, "Câmera de ré"], [545, "–"]],
   [459, [434, "•"]],
-  [449, [80, "Sensor de ponto cego"]],
+  [449, [40, "Sensor de ponto cego"]],
   [448, [434, "–"], [545, "•"]],
-  [436, [107, "TECNOLOGIA E CONECTIVIDADE"]],
-  [424, [65, "6 alto-falantes"]],
+  [436, [40, "TECNOLOGIA E CONECTIVIDADE"]],
+  [424, [40, "6 alto-falantes"]],
   [423, [434, "•"], [545, "•"]],
-  [412, [64, "Pack Outsider"], [545, "O"]],
+  [412, [40, "Pack Outsider"], [545, "O"]],
   [411, [434, "–"]],
   [31, [46, "•"], [75, "= série | O = opcional"]],
 ]);
@@ -32,20 +36,20 @@ const duster = page([
 const kardian = page([
   [5397, [343, "equipamentos"]],
   [5194, [454, "evolution"], [694, "techno"]],
-  [5157, [142, "design exterior"]],
-  [5120, [152, "aerofólio traseiro"]],
+  [5157, [40, "design exterior"]],
+  [5120, [40, "aerofólio traseiro"]],
   [5117, [456, "•"], [696, "•"]],
-  [5083, [189, "alargador de para-lamas"]],
+  [5083, [40, "alargador de para-lamas"]],
   [5080, [456, "•"], [696, "•"]],
-  [4964, [190, "barras de teto modulares"]],
+  [4964, [40, "barras de teto modulares"]],
   [4951, [454, "-"], [696, "•"]],
-  [4944, [165, "em prata acetinado"]],
-  [4907, [190, "Media Nav com Android Auto,"]],
+  [4944, [40, "em prata acetinado"]],
+  [4907, [40, "Media Nav com Android Auto,"]],
   [4894, [456, "•"], [694, "•"]],
-  [4887, [113, "integradas ao"]],
-  [4860, [113, "multimídia"]],
-  [4800, [140, "design interior"]],
-  [4760, [167, "maçanetas internas"]],
+  [4887, [40, "integradas ao"]],
+  [4860, [40, "multimídia"]],
+  [4800, [40, "design interior"]],
+  [4760, [40, "maçanetas internas"]],
   [4757, [456, "•"], [696, "•"]],
 ]);
 
@@ -61,7 +65,7 @@ describe("Renault brochures", () => {
 
   it("reads a table of an item per line, the marks under or on it", () => {
     const [intense, iconic] = brochureColumns(duster);
-    expect(intense).toEqual({
+    expect(intense).toMatchObject({
       name: "Intense Plus 1.6 MT/CVT",
       groups: [
         { name: "Segurança", items: ["6 airbags (frontal, laterais e de cortina)", "Alarme perimétrico", "Câmera de ré"] },

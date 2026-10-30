@@ -30,19 +30,19 @@ disponibilidade dela.
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Wayback Machine (web.archive.org), o que falta (Toyota e Hyundai feitas, ver Concluído):
-      honda.com.br (117 PDFs com "catálogo"/"ficha" no nome: City, HR-V, WR-V, Fit, CR-V, Civic de
-      2015–2025), que pede um leitor próprio; chevrolet.com.br (13). Em 29/10/2026 o arquivo estava
-      fora do ar ("Temporarily Offline"); repetir. nissan.com.br não tem nenhum. Também faltam as
+- [ ] 🟡 Wayback Machine (web.archive.org), o que falta (Toyota, Hyundai e Honda feitas, ver
+      Concluído): chevrolet.com.br (13; a listagem do arquivo falhou em 30/10/2026, repetir). Da
+      Honda ficam de fora os folhetos sem tabela (CR-V, ZR-V, Accord, Civic 2023 e Type R, em texto
+      ou só imagem), o Civic G10 e o Fit 2017 (sem o ano no nome) e os que vieram sem texto.
+      nissan.com.br não tem nenhum. Também faltam as
       listas da Toyota sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020), as tabelas
-      `ficha-tecnica-equipamentos-…` do Creta 25/26 (várias versões lado a lado) e os PDFs da
-      Hyundai danificados no arquivo. Pouco útil: vw.com.br (~30, suplementos de manual e fichas de
+      os PDFs da Hyundai danificados no arquivo. Pouco útil: vw.com.br (~30, suplementos de manual e fichas de
       2004–2016) e ford.com.br (79 antigos, `binario.asp`, ~2010).
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
 - [ ] 🟢 Folhetos da Renault, o que falta (os com tabela já entram, ver Concluído): os que listam os
-      equipamentos em texto, versão por versão ("Zen", "além da Life: …"): Captur 2021, Logan e
-      Stepway 2024, Kwid E-Tech; a Master 2022 tem duas tabelas lado a lado. Os folhetos antigos
+      equipamentos em texto, versão por versão ("Zen", "além da Life: …"): Captur 2021, Logan 2024,
+      Kwid E-Tech; a Master 2022 tem duas tabelas lado a lado. Os folhetos antigos
       em `www.cdn.renault.com` (Clio, Fluence, Sandero 2019, Oroch, Kangoo, Master) não respondem mais.
 - [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
       tem Akamai): conferir robots.txt e o bloqueio de cada uma.
@@ -69,6 +69,10 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ### Produto
 
+- [ ] 🟡 Latin NCAP por geração: o teste vale do ano antes a cinco depois, e passa para a geração
+      seguinte (o WR-V 2026, nova geração, mostra o teste de 2022 do anterior). Cortar o período
+      no início da geração seguinte (as gerações da galeria têm os anos).
+
 - [ ] 🟢 Motos e caminhões no catálogo (o crawler já aceita `--category`; filtros e WMI precisam
       de ajuste).
 
@@ -94,10 +98,17 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 - [x] Equipamentos e fichas de outras marcas: Toyota (59 PDFs de 2018–2025) e Hyundai (catálogos por
       versão de HB20, HB20S, Creta, Kona… de 2024–2026) pelo Wayback Machine (`npm run fichas:wayback`,
-      `scripts/fichas/toyota.ts` e `hyundai.ts`), e as tabelas de equipamentos dos folhetos da
-      Renault (Duster 2021 e 2025, Kwid 2024, Kangoo 2024, `scripts/fichas/renault-brochure.ts`;
-      `fichas:renault` baixa os folhetos). Fichas em 755 anos-modelo de 344 versões; equipamentos
-      em 216 anos-modelo de 83 versões.
+      `scripts/fichas/toyota.ts` e `hyundai.ts`, que também lê a tabela do Creta 25/26 com todas as
+      versões), e as tabelas de equipamentos dos folhetos da Renault (Duster 2021 e 2025, Kwid 2024,
+      Kangoo 2024, Stepway 2024, `scripts/fichas/renault-brochure.ts`; `fichas:renault` baixa os
+      folhetos), e as tabelas de especificações dos folhetos da Honda (City 2014, 2015 e Hatchback
+      2024, Civic 2015, 2020 e 2021, Fit 2015 e 2021, HR-V 2021 e 2026, WR-V 2019, 2021 e 2025,
+      `scripts/fichas/honda.ts`). Fichas em 814 anos-modelo de 370 versões; equipamentos em 287
+      anos-modelo de 112 versões.
+- [x] Lugar para as fotos de imprensa autorizadas (`data/imprensa/fotos/<Marca>/`, fora do git, com
+      `autorizacao.json`; `npm run fotos:imprensa` reduz e lista, e o `build:catalog` as põe na frente
+      da galeria, com o crédito e o link da sala de imprensa). Falta preencher o crédito das marcas
+      que autorizaram.
 - [x] Segurança e seguro na ficha: estrelas da Latin NCAP da linha (`npm run fetch:latinncap`, 198 testes,
       do ano antes do teste a cinco depois) e seguro estimado e roubos por mil da SUSEP AUTOSEG
       (`npm run fetch:seguro`, 2021, por código FIPE; a taxa do prêmio sobre o valor segurado vai
