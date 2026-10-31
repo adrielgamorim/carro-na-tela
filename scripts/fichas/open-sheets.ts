@@ -6,7 +6,7 @@
 
 import type { SheetSpecs } from "../../src/catalog/press.ts";
 
-export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai" | "honda";
+export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai" | "honda" | "kia" | "gwm";
 export type Transmission = "automatico" | "manual";
 
 /** A sheet read from a press room's file (data/fichas/fichas-abertas.json). */
@@ -33,6 +33,8 @@ export interface OpenSheet {
   fipeBrands?: string[];
   /** Only for versions naming one of its trims (a plug-in hybrid FIPE does not tell from the hybrid). */
   onlyNamed?: boolean;
+  /** Of the line's plain version, which names no trim (Kia's Stonic): equipment for any version, after those naming one. */
+  base?: boolean;
   transmission?: Transmission;
   /** Pickups: "cd" (double cab), "cs" (single) or "ce" (extended). */
   cab?: "cd" | "cs" | "ce";
@@ -140,12 +142,12 @@ export function specsOfFields(fields: { label: string; text: string }[]): SheetS
   set("heightMm", [...millimeters(of(/^altura/, /solo|livre|piso/)), ...inDimensions("altura")]);
   set("wheelbaseMm", [...millimeters(of(/entre.?eixos/)), ...inDimensions("entre.?eixos")]);
   set("groundClearanceMm", millimeters(of(/(altura|vao|distancia) (livre )?do solo|altura livre|vao livre/)));
-  set("trunkLiters", valuesOf(of(/porta.?malas/), "(?:litros|l)\\b", /litros|capacidades|\(l\)/));
-  set("tankLiters", valuesOf(of(/tanque(?! de ureia)/), "(?:litros|l)\\b", /litros|capacidades|\(l\)/));
+  set("trunkLiters", valuesOf(of(/porta.?malas/, /rebatid/), "(?:litros|l)\\b", /litros|capacidades|\(l\)/));
+  set("tankLiters", valuesOf(of(/tanque(?! de ureia| do agente)/), "(?:litros|l)\\b", /litros|capacidades|\(l\)/));
   set("topSpeedKmh", valuesOf(of(/velocidade maxima/), "km\\s?/\\s?h", /km\/h/), "max");
   // Seconds, written or not: "11,5 (gasolina)", "9,2 segundos", "10,1 9,6".
-  // "o - 100 km/h (s)" has a letter for the zero; "80 km/h" is not 8 s.
-  const seconds = of(/[0o]\s*(a|-)\s*100/).flatMap(({ text }) =>
+  // "o - 100 km/h (s)" has a letter for the zero; "80 km/h" is not 8 s, "60 - 100 km/h" a pick-up time.
+  const seconds = of(/(?<!\d)[0o]\s*(a|-)\s*100/).flatMap(({ text }) =>
     [...plain(text).matchAll(new RegExp(`${numberPattern}(?![\\d.,]|\\s*(?:km|cv|m\\b))`, "g"))].map((match) =>
       number(match[1]!),
     ),
@@ -376,7 +378,7 @@ export function renaultSheets(rows: string[][], link: RenaultLink, modified: Dat
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"], honda: ["Honda"] };
+const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"], honda: ["Honda"], kia: ["Kia Motors"], gwm: ["GWM"] };
 
 export interface OpenSheetTarget {
   brand: string;
@@ -442,7 +444,7 @@ export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget)
 /** What a sheet or an equipment list says it is for. */
 export type SheetKey = Pick<
   OpenSheet,
-  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "diesel" | "fipeBrands" | "onlyNamed" | "transmission" | "cab"
+  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "diesel" | "fipeBrands" | "onlyNamed" | "base" | "transmission" | "cab"
 >;
 
 /**
@@ -483,7 +485,7 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     // A sheet of a cab is of that cab only: FIPE names the double and extended ones, not always the single.
     if (sheet.cab && sheet.cab !== (versionCab ?? "cs")) continue;
     const named = sheet.trims.filter(names).length;
-    if ((trimNamed || sheet.onlyNamed) && !named) continue;
+    if ((trimNamed || sheet.onlyNamed) && !named && !sheet.base) continue;
     // Equipment is of the trim it names, all of it: "Comfort Plus" is not the Comfort's.
     if (trimNamed && named < sheet.trims.length) continue;
     // From the year it starts: of two sheets for 2024 (2023–2024, 2024–2025), the 2024 one.

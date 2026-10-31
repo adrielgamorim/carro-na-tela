@@ -1,6 +1,210 @@
 {
- "_doc": "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai e da Honda (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai e honda e de data/fichas/toyota.json.",
+ "_doc": "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
  "sheets": [
+  {
+   "brand": "gwm",
+   "line": "Haval H9",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2.4,
+   "electric": false,
+   "diesel": true,
+   "onlyNamed": true,
+   "title": "Haval H9 · Exclusive",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/haval-h9/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h9/specification",
+   "file": "gwm/haval-h9.html",
+   "specs": {
+    "powerCv": 184,
+    "torqueKgfm": 48.9,
+    "weightKg": 2525,
+    "lengthMm": 4950,
+    "widthMm": 1976,
+    "heightMm": 1930,
+    "tankLiters": 78,
+    "topSpeedKmh": 170
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Haval H9",
+   "trims": [
+    "selection"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2.4,
+   "electric": false,
+   "diesel": true,
+   "onlyNamed": true,
+   "title": "Haval H9 · Selection",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/haval-h9-selection/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h9-selection/specification",
+   "file": "gwm/haval-h9-selection.html",
+   "specs": {
+    "powerCv": 184,
+    "torqueKgfm": 48.9,
+    "lengthMm": 4950,
+    "widthMm": 1976,
+    "heightMm": 1930,
+    "wheelbaseMm": 2850,
+    "zeroTo100s": 13
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Ora",
+   "trims": [
+    "05"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "electric": true,
+   "onlyNamed": true,
+   "title": "Ora · 05",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/ora5/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/ora5/specification",
+   "file": "gwm/ora5.html",
+   "specs": {
+    "powerCv": 204,
+    "torqueKgfm": 26.5,
+    "lengthMm": 4471,
+    "widthMm": 1833,
+    "heightMm": 1641,
+    "wheelbaseMm": 2720,
+    "zeroTo100s": 7.7
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Tank",
+   "trims": [
+    "300"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "hybrid": true,
+   "onlyNamed": true,
+   "title": "Tank · 300",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification",
+   "file": "gwm/tank-300.html",
+   "specs": {
+    "powerCv": 394,
+    "torqueKgfm": 76.5,
+    "lengthMm": 4760,
+    "widthMm": 1930,
+    "heightMm": 1903,
+    "wheelbaseMm": 2750,
+    "zeroTo100s": 6.8
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Tank",
+   "trims": [
+    "300",
+    "terraforce"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "hybrid": true,
+   "onlyNamed": true,
+   "title": "Tank · 300 Terraforce",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/tank-300-terra-force/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300-terra-force/specification",
+   "file": "gwm/tank-300-terra-force.html",
+   "specs": {
+    "powerCv": 394,
+    "torqueKgfm": 76.5,
+    "lengthMm": 4760,
+    "widthMm": 1930,
+    "heightMm": 1903,
+    "wheelbaseMm": 2750,
+    "zeroTo100s": 6.8
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Wey",
+   "trims": [
+    "07"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "electric": false,
+   "hybrid": true,
+   "onlyNamed": true,
+   "title": "Wey · 07",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/wey-07/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/wey-07/specification",
+   "file": "gwm/wey-07.html",
+   "specs": {
+    "powerCv": 517,
+    "torqueKgfm": 83.6,
+    "weightKg": 3075,
+    "lengthMm": 5156,
+    "widthMm": 1980,
+    "heightMm": 1805,
+    "wheelbaseMm": 3050,
+    "trunkLiters": 239,
+    "tankLiters": 79,
+    "zeroTo100s": 4.9
+   }
+  },
+  {
+   "brand": "gwm",
+   "line": "Wey",
+   "trims": [
+    "07",
+    "dark",
+    "edition"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.5,
+   "electric": false,
+   "hybrid": true,
+   "onlyNamed": true,
+   "title": "Wey · 07 Dark Edition",
+   "page": "https://www.gwmmotors.com.br/pt/modelos/wey-07-dark-edition/specification",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/wey-07-dark-edition/specification",
+   "file": "gwm/wey-07-dark-edition.html",
+   "specs": {
+    "powerCv": 517,
+    "torqueKgfm": 83.6,
+    "weightKg": 3075,
+    "lengthMm": 5156,
+    "widthMm": 1980,
+    "heightMm": 1805,
+    "wheelbaseMm": 3050,
+    "trunkLiters": 239,
+    "tankLiters": 79,
+    "zeroTo100s": 4.9
+   }
+  },
   {
    "brand": "honda",
    "line": "City Hatchback",
@@ -2912,6 +3116,357 @@
     "wheelbaseMm": 2670,
     "widthMm": 1850,
     "heightMm": 1660
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Bongo",
+   "trims": [],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2.5,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "base": true,
+   "title": "Bongo · COM A/C",
+   "page": "https://www.kia.com.br/bongo/especificacoes",
+   "url": "https://www.kia.com.br/bongo/especificacoes",
+   "file": "kia/bongo.html",
+   "specs": {
+    "powerCv": 130.5,
+    "torqueKgfm": 26,
+    "weightKg": 1664,
+    "lengthMm": 4825,
+    "widthMm": 1740,
+    "heightMm": 2105,
+    "wheelbaseMm": 2415,
+    "tankLiters": 60
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Carnival",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "hybrid": true,
+   "diesel": false,
+   "title": "Carnival · HEV EX",
+   "page": "https://www.kia.com.br/carnival/especificacoes",
+   "url": "https://www.kia.com.br/carnival/especificacoes",
+   "file": "kia/carnival.html",
+   "specs": {
+    "powerCv": 245,
+    "torqueKgfm": 37.4,
+    "weightKg": 2220,
+    "lengthMm": 5155,
+    "widthMm": 1995,
+    "heightMm": 1750,
+    "wheelbaseMm": 3090,
+    "trunkLiters": 627,
+    "tankLiters": 72
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "EV5",
+   "trims": [
+    "land"
+   ],
+   "years": [
+    2024,
+    2026
+   ],
+   "electric": true,
+   "title": "EV5 · LAND",
+   "page": "https://www.kia.com.br/ev5/especificacoes",
+   "url": "https://www.kia.com.br/ev5/especificacoes",
+   "file": "kia/ev5.html",
+   "specs": {
+    "powerCv": 217.5,
+    "weightKg": 2141,
+    "lengthMm": 4615,
+    "widthMm": 1875,
+    "heightMm": 1715,
+    "wheelbaseMm": 2750,
+    "trunkLiters": 513
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "EV9",
+   "trims": [
+    "gtl"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "electric": true,
+   "title": "EV9 · GTL",
+   "page": "https://www.kia.com.br/ev9/especificacoes",
+   "url": "https://www.kia.com.br/ev9/especificacoes",
+   "file": "kia/ev9.html",
+   "specs": {
+    "powerCv": 385,
+    "weightKg": 2704,
+    "lengthMm": 5015,
+    "widthMm": 1980,
+    "heightMm": 1780,
+    "wheelbaseMm": 3100,
+    "trunkLiters": 333
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "EV9",
+   "trims": [
+    "gtl",
+    "fosco"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "electric": true,
+   "title": "EV9 · GTL FOSCO",
+   "page": "https://www.kia.com.br/ev9/especificacoes",
+   "url": "https://www.kia.com.br/ev9/especificacoes",
+   "file": "kia/ev9.html",
+   "specs": {
+    "powerCv": 385,
+    "weightKg": 2704,
+    "lengthMm": 5015,
+    "widthMm": 1980,
+    "heightMm": 1780,
+    "wheelbaseMm": 3100,
+    "trunkLiters": 333
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Niro",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "electric": false,
+   "hybrid": true,
+   "title": "Niro · HEV EX",
+   "page": "https://www.kia.com.br/niro/especificacoes",
+   "url": "https://www.kia.com.br/niro/especificacoes",
+   "file": "kia/niro.html",
+   "specs": {
+    "powerCv": 141,
+    "torqueKgfm": 27,
+    "weightKg": 1394,
+    "lengthMm": 4420,
+    "widthMm": 1825,
+    "heightMm": 1545,
+    "wheelbaseMm": 2720,
+    "trunkLiters": 425,
+    "tankLiters": 42
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Niro",
+   "trims": [
+    "sx",
+    "prestige"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "electric": false,
+   "hybrid": true,
+   "title": "Niro · HEV SX PRESTIGE",
+   "page": "https://www.kia.com.br/niro/especificacoes",
+   "url": "https://www.kia.com.br/niro/especificacoes",
+   "file": "kia/niro.html",
+   "specs": {
+    "powerCv": 141,
+    "torqueKgfm": 27,
+    "weightKg": 1394,
+    "lengthMm": 4420,
+    "widthMm": 1825,
+    "heightMm": 1545,
+    "wheelbaseMm": 2720,
+    "trunkLiters": 425,
+    "tankLiters": 42
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Sorento",
+   "trims": [
+    "ex"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 2.2,
+   "electric": false,
+   "diesel": true,
+   "title": "Sorento · EX",
+   "page": "https://www.kia.com.br/sorento/especificacoes",
+   "url": "https://www.kia.com.br/sorento/especificacoes",
+   "file": "kia/sorento.html",
+   "specs": {
+    "powerCv": 194,
+    "torqueKgfm": 45,
+    "weightKg": 1974,
+    "lengthMm": 4815,
+    "widthMm": 1900,
+    "heightMm": 1695,
+    "wheelbaseMm": 2815,
+    "trunkLiters": 179,
+    "tankLiters": 67,
+    "topSpeedKmh": 201
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Sportage",
+   "trims": [
+    "ex",
+    "prestige"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "electric": false,
+   "hybrid": true,
+   "diesel": false,
+   "title": "Sportage · MHEV EX PRESTIGE",
+   "page": "https://www.kia.com.br/sportage/especificacoes",
+   "url": "https://www.kia.com.br/sportage/especificacoes",
+   "file": "kia/sportage.html",
+   "specs": {
+    "powerCv": 178,
+    "torqueKgfm": 27,
+    "weightKg": 1574,
+    "lengthMm": 4540,
+    "widthMm": 1865,
+    "heightMm": 1645,
+    "wheelbaseMm": 2680,
+    "groundClearanceMm": 200,
+    "trunkLiters": 562,
+    "tankLiters": 54
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Stonic",
+   "trims": [],
+   "years": [
+    2024,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "electric": false,
+   "hybrid": true,
+   "diesel": false,
+   "base": true,
+   "title": "Stonic · MHEV",
+   "page": "https://www.kia.com.br/stonic/especificacoes",
+   "url": "https://www.kia.com.br/stonic/especificacoes",
+   "file": "kia/stonic.html",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 20.4,
+    "weightKg": 1256,
+    "lengthMm": 4140,
+    "widthMm": 1760,
+    "heightMm": 1520,
+    "wheelbaseMm": 2580,
+    "trunkLiters": 325,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Tasman",
+   "trims": [
+    "gl"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2.2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "title": "Tasman · GL",
+   "page": "https://www.kia.com.br/tasman/especificacoes",
+   "url": "https://www.kia.com.br/tasman/especificacoes",
+   "file": "kia/tasman.html",
+   "specs": {
+    "powerCv": 210,
+    "torqueKgfm": 45,
+    "weightKg": 2248,
+    "lengthMm": 5410,
+    "widthMm": 1930,
+    "heightMm": 1870,
+    "wheelbaseMm": 3270,
+    "groundClearanceMm": 231,
+    "tankLiters": 80,
+    "topSpeedKmh": 201,
+    "zeroTo100s": 9.7
+   }
+  },
+  {
+   "brand": "kia",
+   "line": "Tasman",
+   "trims": [
+    "pgl"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2.2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "title": "Tasman · PGL",
+   "page": "https://www.kia.com.br/tasman/especificacoes",
+   "url": "https://www.kia.com.br/tasman/especificacoes",
+   "file": "kia/tasman.html",
+   "specs": {
+    "powerCv": 210,
+    "torqueKgfm": 45,
+    "weightKg": 2248,
+    "lengthMm": 5410,
+    "widthMm": 1930,
+    "heightMm": 1870,
+    "wheelbaseMm": 3270,
+    "groundClearanceMm": 231,
+    "tankLiters": 80,
+    "topSpeedKmh": 201,
+    "zeroTo100s": 9.7
    }
   },
   {
@@ -6640,8 +7195,70 @@
   {
    "brand": "toyota",
    "line": "Yaris",
-   "title": "Yaris 2023 · Yaris hatchback 2023",
-   "trims": [],
+   "title": "Yaris 2023 · XL",
+   "trims": [
+    "xl"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121204512/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-hatch-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-hatch-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1125,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2023 · XLS",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121204512/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-hatch-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-hatch-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1150,
+    "lengthMm": 4145,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 310,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris",
+   "title": "Yaris 2023 · XS",
+   "trims": [
+    "xs"
+   ],
    "years": [
     2023,
     2024
@@ -6668,8 +7285,70 @@
   {
    "brand": "toyota",
    "line": "Yaris Sedan",
-   "title": "Yaris Sedan 2023 · Yaris sedã 2023",
-   "trims": [],
+   "title": "Yaris Sedan 2023 · XL",
+   "trims": [
+    "xl"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121205340/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-seda-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-seda-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1130,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris Sedan",
+   "title": "Yaris Sedan 2023 · XLS",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.5,
+   "turbo": false,
+   "electric": false,
+   "page": "https://www.toyotacomunica.com.br/downloads/",
+   "url": "https://web.archive.org/web/20220121205340/https://www.toyotacomunica.com.br/wp-content/uploads/2022/01/Ficha-tecnica-Yaris-seda-2023.pdf",
+   "file": "2022-01-ficha-tecnica-yaris-seda-2023.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 14.9,
+    "weightKg": 1150,
+    "lengthMm": 4425,
+    "widthMm": 1730,
+    "heightMm": 1490,
+    "wheelbaseMm": 2550,
+    "groundClearanceMm": 150,
+    "trunkLiters": 473,
+    "tankLiters": 45
+   }
+  },
+  {
+   "brand": "toyota",
+   "line": "Yaris Sedan",
+   "title": "Yaris Sedan 2023 · XS",
+   "trims": [
+    "xs"
+   ],
    "years": [
     2023,
     2024

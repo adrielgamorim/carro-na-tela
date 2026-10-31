@@ -1,0 +1,126 @@
+{
+ "_doc": "Páginas de especificações dos sites da Kia e da GWM (npm run fichas:sites), baixadas em data/fichas/sites; lidas por npm run fichas:abertas.",
+ "pages": [
+  {
+   "brand": "kia",
+   "slug": "bongo",
+   "url": "https://www.kia.com.br/bongo/especificacoes",
+   "file": "kia/bongo.html",
+   "modelFile": "kia/bongo-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "carnival",
+   "url": "https://www.kia.com.br/carnival/especificacoes",
+   "file": "kia/carnival.html",
+   "modelFile": "kia/carnival-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "ev5",
+   "url": "https://www.kia.com.br/ev5/especificacoes",
+   "file": "kia/ev5.html",
+   "modelFile": "kia/ev5-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "ev9",
+   "url": "https://www.kia.com.br/ev9/especificacoes",
+   "file": "kia/ev9.html",
+   "modelFile": "kia/ev9-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "niro",
+   "url": "https://www.kia.com.br/niro/especificacoes",
+   "file": "kia/niro.html",
+   "modelFile": "kia/niro-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "sorento",
+   "url": "https://www.kia.com.br/sorento/especificacoes",
+   "file": "kia/sorento.html",
+   "modelFile": "kia/sorento-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "sportage",
+   "url": "https://www.kia.com.br/sportage/especificacoes",
+   "file": "kia/sportage.html",
+   "modelFile": "kia/sportage-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "stonic",
+   "url": "https://www.kia.com.br/stonic/especificacoes",
+   "file": "kia/stonic.html",
+   "modelFile": "kia/stonic-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "kia",
+   "slug": "tasman",
+   "url": "https://www.kia.com.br/tasman/especificacoes",
+   "file": "kia/tasman.html",
+   "modelFile": "kia/tasman-modelo.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "haval-h9",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h9/specification",
+   "file": "gwm/haval-h9.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "haval-h9-selection",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/haval-h9-selection/specification",
+   "file": "gwm/haval-h9-selection.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "tank-300",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300/specification",
+   "file": "gwm/tank-300.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "tank-300-terra-force",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/tank-300-terra-force/specification",
+   "file": "gwm/tank-300-terra-force.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "wey-07",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/wey-07/specification",
+   "file": "gwm/wey-07.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "wey-07-dark-edition",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/wey-07-dark-edition/specification",
+   "file": "gwm/wey-07-dark-edition.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "gwm",
+   "slug": "ora5",
+   "url": "https://www.gwmmotors.com.br/pt/modelos/ora5/specification",
+   "file": "gwm/ora5.html",
+   "fetched": "2026-10-31"
+  }
+ ]
+}

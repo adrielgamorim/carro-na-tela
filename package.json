@@ -32,6 +32,7 @@
     "fotos:imprensa": "node scripts/imprensa/build-press-photos.ts",
     "fichas:abertas": "node scripts/fichas/read-open-sheets.ts",
     "fichas:wayback": "node scripts/fichas/fetch-wayback.ts",
+    "fichas:sites": "node scripts/fichas/fetch-sites.ts",
     "fetch:seguro": "node scripts/seguro/fetch-autoseg.ts",
     "fetch:latinncap": "node scripts/seguranca/fetch-latinncap.ts",
     "fetch:openverse": "node --env-file-if-exists=.env scripts/wikidata/fetch-openverse.ts"

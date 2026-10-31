@@ -200,11 +200,11 @@ export function hondaBrochure(pdfLines: PdfTextLine[], source: HondaFile): { she
 }
 
 /** "4.068" under "Comprimento (mm)" → "4.068 mm"; "115 / 6000 - 116 / 6000" under "Potência (cv / rpm)" → "115 cv". */
-function withUnit(label: string, value: string): string {
-  const unit = label.match(/\((cv|kgf\.?m|mm|kg|l|litros|km\/h|s)\b/i)?.[1]?.toLowerCase();
+export function withUnit(label: string, value: string): string {
+  const unit = label.match(/\((cv|kgf\.?m|kgm|mm|kg|l|litros|km\/h|s)\b/i)?.[1]?.toLowerCase();
   if (!unit || /[a-z]/i.test(value.replace(/rpm|@|gasolina|etanol|\(|\)|[eg]\b/gi, ""))) return value;
   const first = value.match(/\d+(?:[.,]\d+)*/)?.[0];
   if (!first) return value;
-  const units: Record<string, string> = { cv: "cv", "kgf.m": "kgfm", kgfm: "kgfm", mm: "mm", kg: "kg", l: "litros", litros: "litros", "km/h": "km/h", s: "s" };
+  const units: Record<string, string> = { cv: "cv", "kgf.m": "kgfm", kgfm: "kgfm", kgm: "kgfm", mm: "mm", kg: "kg", l: "litros", litros: "litros", "km/h": "km/h", s: "s" };
   return `${first} ${units[unit] ?? unit}`;
 }

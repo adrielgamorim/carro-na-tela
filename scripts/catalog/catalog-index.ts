@@ -409,7 +409,7 @@ export function buildCatalogIndex(
     // Stellantis' sheets the exact match leaves out are tried the open press rooms' way.
     const fallback = [...(openSheets ?? []), ...(sheets ?? []).flatMap((sheet) => stellantisAsOpen(sheet) ?? [])];
     const sheetIndex = new Map<ReadSheet | OpenSheet, number>();
-    const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota", stellantis: "Stellantis", hyundai: "Hyundai", honda: "Honda" } as const;
+    const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota", stellantis: "Stellantis", hyundai: "Hyundai", honda: "Honda", kia: "Kia", gwm: "GWM" } as const;
     // Each line's trim words, to read them in the sheets' titles.
     const lineNames = new Map<string, string[]>();
     for (const version of sorted) {
@@ -448,7 +448,7 @@ export function buildCatalogIndex(
             page: sheet.page,
             specs: sheet.specs,
             // A PDF opens in the browser; Renault's spreadsheet would download, so its page.
-            ...("line" in sheet && { source: sources[sheet.brand], ...((sheet.brand === "vw" || sheet.brand === "toyota" || sheet.brand === "hyundai" || sheet.brand === "honda") && { url: sheet.url }) }),
+            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand !== "renault" && sheet.brand !== "stellantis" && { url: sheet.url }) }),
           });
         }
         return sheetIndex.get(sheet)!;
@@ -525,7 +525,7 @@ export function buildCatalogIndex(
         if (!list) return -1;
         if (!listIndex.has(list)) {
           listIndex.set(list, equipmentLists.length);
-          const source = { toyota: "Toyota", vw: "Volkswagen", hyundai: "Hyundai", honda: "Honda", renault: "Renault", stellantis: "Stellantis" }[list.brand];
+          const source = { toyota: "Toyota", vw: "Volkswagen", hyundai: "Hyundai", honda: "Honda", renault: "Renault", stellantis: "Stellantis", kia: "Kia", gwm: "GWM" }[list.brand];
           equipmentLists.push({ title: list.title, source, page: list.page, groups: list.groups });
         }
         return listIndex.get(list)!;

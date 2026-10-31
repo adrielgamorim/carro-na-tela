@@ -29,21 +29,20 @@ disponibilidade dela.
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Wayback Machine, o que sobrou (Toyota, Hyundai e Honda feitas, ver Concluído): as listas da
-      Toyota sem marcas (Yaris 2020 e 2023, Camry 2023, RAV4 2020), os PDFs da Hyundai danificados
-      no arquivo e os folhetos da Honda sem tabela (CR-V, ZR-V, Accord, Civic 2023 e Type R, em
-      texto ou só imagem), além do Civic G10 e do Fit 2017 (sem o ano no nome).
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
-- [ ] 🟢 Páginas de "ficha técnica"/"especificações" nos sites das marcas (fora a Stellantis, que
-      tem Akamai): conferir robots.txt e o bloqueio de cada uma.
+- [ ] 🟡 Fichas da Ford e da Nissan nos sites (os robots.txt permitem): a Ford tem uma página por
+      versão, `/<categoria>/<modelo>/compare-as-versoes/<versão>/` (Ranger, Transit…, no sitemap), e
+      a Nissan `/veiculos/modelos/<modelo>/versoes.html` e `compare.html`. Ler como as da Kia e da GWM
+      (`npm run fichas:sites`). A página `especificacoes.html` da Renault não traz o que as planilhas
+      da sala de imprensa já não deem.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
       vez em quando para os releases novos.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
-      tempo no meio (em 30/10/2026 parou em 32 de 932 modelos, com 156 fotos de 30); rodar
-      `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio), ou pedir uma chave
+      tempo no meio (em 31/10/2026, depois de várias rodadas, parou em 767 de 932 modelos, com 646
+      modelos e 3390 fotos); rodar `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio), ou pedir uma chave
       da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
 
 ### Produto
@@ -70,6 +69,9 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
   "Extra", "Grand"), o Kwid E-Tech (o folheto de 2023/2024 não diz a versão, e a FIPE só tem o
   Techno de 2025) e os antigos em `www.cdn.renault.com` (Clio, Fluence, Sandero 2019, Oroch,
   Kangoo, Master), que não respondem mais.
+- Wayback, o que não deu: o Yaris 2020 (11 colunas de versões e o cabeçalho com só 7 nomes), o
+  Civic G10 (é um catálogo de acessórios, com códigos de peça), os folhetos da Honda só em imagem
+  (CR-V, ZR-V, Accord, Civic 2023 e Type R) e os PDFs da Hyundai que o arquivo guardou danificados.
 - Web Worker para expandir e filtrar o índice: medido em out/2026, não compensa (expandir 30 ms;
   filtrar + contar facetas + agrupar 18–60 ms com 17.754 versões-ano). Medir de novo quando
   entrarem motos e caminhões.
@@ -87,6 +89,22 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 - APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído
+
+- [x] Fichas e equipamentos dos sites da Kia e da GWM (`npm run fichas:sites`, depois
+      `fichas:abertas`): a Kia põe tudo em HTML por código de versão (`N.855.2627`: anos 26/27), a
+      página do modelo dá o nome; a GWM tem uma página por versão, ligada à versão FIPE à mão. Entram
+      as 10 versões da Kia à venda (Bongo, Carnival, EV5, EV9, Niro, Sorento, Sportage, Stonic,
+      Tasman) e 7 da GWM (Haval H9, Tank 300, Wey 07, Ora 5). Faltam as páginas que a GWM tirou do ar
+      (Haval H6, Poer P30) e o Ora 03, cuja página não diz a versão; os PDFs da Kia não foram lidos.
+- [x] Wayback Machine, o que sobrou: as listas da Toyota que o leitor não lia têm marcas, só outras
+      ("O" no Yaris 2023, um caractere de fonte de símbolos no Camry 2023) e cabeçalho sem "Versão";
+      agora entram Yaris 2023 hatch e sedã (XL, XS, XLS) e Camry Hybrid 2023. A do RAV4 2023 já
+      entrava. Equipamentos em 309 anos-modelo de 121 versões. Ficaram sem fonte (ver abaixo) o
+      Yaris 2020, o Civic G10, os folhetos da Honda só em imagem e os PDFs danificados da Hyundai.
+- [x] Levantamento dos sites das marcas (30/10/2026): Toyota, Honda, Caoa Chery, Audi e Volvo
+      respondem 403 a um acesso comum (não contornar); VW, Chevrolet, Hyundai, Renault, Nissan, Ford,
+      Mitsubishi, Kia, BYD, GWM e BMW abrem, sem robots.txt que proíba tudo. As que dão fichas
+      viraram o item "Fichas nos sites das marcas que abrem".
 
 - [x] Latin NCAP por geração: o teste não passa por quatro anos ou mais em que a versão saiu da FIPE
       (voltou como outra geração, como o WR-V de 2026, que mostrava o teste de 2022 do anterior).

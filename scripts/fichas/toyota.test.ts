@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { assignColumns, toyotaLine, toyotaSheets, toyotaYear } from "./toyota.ts";
+import { assignColumns, toyotaEquipment, toyotaLine, toyotaSheets, toyotaYear } from "./toyota.ts";
 import type { PdfTextLine } from "../inmetro/pbev.ts";
 
 const cell = (center: number, text: string) => ({ center, left: center - 20, right: center + 20, y: 0, text });
@@ -49,5 +49,35 @@ describe("Toyota sheets", () => {
       ["Hilux 2024 · GR-Sport AT", 224, 3085, "cd", "automatico"],
     ]);
     expect(sheets[2]!.trims).toEqual(["gr", "sport", "grs"]);
+  });
+});
+
+describe("Toyota lists with their own marks", () => {
+  // The Yaris hatchback 2023's: no "Versão" before the names, "O" standard and "-" not offered.
+  const rows: [number, ...[number, string][]][] = [
+    [758, [282, "Lista de Equipamentos - Yaris hatchback 2023"]],
+    [737, [348, "XL"], [402, "XS"], [455, "XLS"]],
+    [727, [283, "Segurança"]],
+    ...Array.from({ length: 10 }, (_, index): [number, ...[number, string][]] => [
+      715 - index * 11,
+      [120, `Item ${index + 1}`],
+      [348, index < 4 ? "O" : "-"],
+      [402, "O"],
+      [455, "O"],
+    ]),
+  ];
+  const lines: PdfTextLine[] = rows.map(([y, ...cells]) => ({
+    page: 1,
+    y,
+    cells: cells.map(([center, text]) => ({ center, width: text.length * 5, text })),
+  }));
+
+  it("finds the versions without \"Versão\" and reads its marks", () => {
+    const lists = toyotaEquipment(lines, { file: "2022-01-lista-de-equipamentos-yaris-hatch-2023.pdf", url: "x" });
+    expect(lists.map((list) => [list.title, list.groups.flatMap((group) => group.items).length])).toEqual([
+      ["Yaris 2023 · XL", 4],
+      ["Yaris 2023 · XS", 10],
+      ["Yaris 2023 · XLS", 10],
+    ]);
   });
 });

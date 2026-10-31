@@ -43,7 +43,7 @@ export function cellsOf(line: PdfTextLine): Cell[] {
 }
 
 /** "•", or one character of a symbol font (a check drawn as a private-use glyph). */
-const standardMark = (text: string) => /^[•●▪■✓✔]$/.test(text) || /^[-]$/.test(text);
+const standardMark = (text: string) => /^[•●▪■✓✔]$/.test(text) || /^[\uE000-\uF8FF]$/u.test(text);
 const absentMark = (text: string) => /^[-─–—]$/.test(text);
 const isMark = (text: string) => standardMark(text) || absentMark(text);
 
@@ -153,7 +153,22 @@ export function toyotaTable(lines: PdfTextLine[]): Table {
   }
   const sorted = merged.map(cellsOf).filter((cells) => cells.length);
   const title = sorted.map(joined).find((line) => /ficha t[eé]cnica|equipamentos/i.test(line) && /[a-z]{4}/i.test(line)) ?? "";
-  const at = sorted.findIndex((cells) => /^vers(ao|oes)$/.test(plain(cells[0]?.text ?? "")));
+  let at = sorted.findIndex((cells) => /^vers(ao|oes)$/.test(plain(cells[0]?.text ?? "")));
+  // Without "Versão" (the Yaris 2023's lists): the first line of version names alone, on the right of the labels.
+  if (at < 0) {
+    const names = sorted.findIndex(
+      (cells, index) =>
+        index < 12 &&
+        cells.length >= 2 &&
+        cells.every((cell) => cell.left > 250 && !isMark(cell.text) && /^[A-Z][\w+ -]{0,14}$/.test(cell.text)),
+    );
+    if (names > 0) {
+      // As if "Versão" stood on its left.
+      const first = sorted[names]![0]!;
+      sorted[names] = [{ ...first, left: first.left - 60, right: first.left - 40, text: "Versão" }, ...sorted[names]!];
+      at = names;
+    }
+  }
   if (at < 0) return { title, versions: [], rows: rowsOf(sorted, 200, true), body: sorted, labelLimit: 200 };
 
   const labelEdge = sorted[at]![0]!.right + 20;
@@ -161,7 +176,7 @@ export function toyotaTable(lines: PdfTextLine[]): Table {
   // ("MOTORIZAÇÃO") or a value ("Dual VVT-I Flex 2.7 L 16V").
   const header = (cells: Cell[]) =>
     cells.every((cell) => cell.left > labelEdge) &&
-    !/h[ií]brid|combust|diesel|^\d|\d[.,]\d|\d+v\b|motoriza|dimens|suspens|freios|pneus|conforto|seguran|estilo|equipamentos/i.test(joined(cells)) &&
+    !/h[ií]brid|combust|diesel|^\d|\d[.,]\d|\d+v\b|motoriza|dimens|suspens|freios|pneus|conforto|seguran|estilo|equipamentos|legenda|std spec|n\/[ad]|aplic[aá]vel|dispon[ií]vel/i.test(joined(cells)) &&
     !cells.some((cell) => isMark(cell.text));
   const headerLines: Cell[][] = [sorted[at]!.slice(1)];
   if (at > 0 && header(sorted[at - 1]!) && sorted[at - 1]!.length <= 2) headerLines.unshift(sorted[at - 1]!);
@@ -320,10 +335,21 @@ export function toyotaEquipment(lines: PdfTextLine[], source: ToyotaFile): Equip
   const year = toyotaYear(table.title, source.file);
   if (!line || !year || !table.versions.length || !/equipamentos/i.test(table.title)) return [];
   type Item = { name: string; marks: Cell[] };
+  // The file's own marks when it has no "•": the Yaris 2023's "O" (and "-"), or "n" and "X" by its legend.
+  const single = table.body.flat().filter((cell) => cell.left > table.labelLimit - 1 && cell.text.length === 1);
+  const own = single.some((cell) => standardMark(cell.text))
+    ? undefined
+    : single.filter((cell) => cell.text === "O").length >= 10
+      ? { standard: "O", absent: "-" }
+      : single.filter((cell) => cell.text === "n").length >= 10
+        ? { standard: "n", absent: "X" }
+        : undefined;
+  const isStandard = (text: string) => standardMark(text) || text === own?.standard;
+  const isMarkHere = (text: string) => isMark(text) || text === own?.standard || text === own?.absent;
   const groups: { name: string; items: Item[] }[] = [];
   let opening = "";
   for (const cells of table.body) {
-    const marks = cells.filter((cell) => isMark(cell.text) && cell.left > table.labelLimit - 1);
+    const marks = cells.filter((cell) => isMarkHere(cell.text) && cell.left > table.labelLimit - 1);
     const text = joined(cells.filter((cell) => !marks.includes(cell) && cell.right <= table.labelLimit + 40)).trim();
     const values = cells.filter((cell) => !marks.includes(cell) && cell.right > table.labelLimit + 40);
     if (/^(legenda|std spec|item de s[eé]rie|novo item|dispon[ií]vel|n[aã]o dispon[ií]vel|n\/[ad]|vers[aã]o)/i.test(text)) continue;
@@ -350,7 +376,7 @@ export function toyotaEquipment(lines: PdfTextLine[], source: ToyotaFile): Equip
       .map((group) => ({
         name: group.name,
         items: group.items
-          .filter((item) => item.name && standardMark(perVersion(table, item.marks)[column] ?? ""))
+          .filter((item) => item.name && isStandard(perVersion(table, item.marks)[column] ?? ""))
           // Without the footnote number some start with ("14 Controle Eletrônico…").
           .map((item) => item.name.replace(/\s+/g, " ").replace(/^\d{1,2}\s+(?=\p{Lu})/u, "")),
       }))

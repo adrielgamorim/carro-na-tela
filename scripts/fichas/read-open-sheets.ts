@@ -1,5 +1,5 @@
 // Reads the spec sheets downloaded from the open press rooms (npm run
-// fichas:vw and fichas:renault) and writes their figures to
+// fichas:vw, fichas:renault, fichas:wayback and fichas:sites) and writes their figures to
 // data/fichas/fichas-abertas.json, and Renault's equipment lists to
 // data/fichas/equipamentos.json, which build:catalog matches to the FIPE
 // versions.
@@ -20,6 +20,9 @@ import { hyundaiCatalog, hyundaiTable } from "./hyundai.ts";
 import { hondaBrochure } from "./honda.ts";
 import { brochureFile, renaultBrochureEquipment } from "./renault-brochure.ts";
 import type { WaybackFile } from "./fetch-wayback.ts";
+import type { SitesFile } from "./fetch-sites.ts";
+import { kiaNames, kiaSpecPage } from "./kia.ts";
+import { gwmPages, gwmSpecPage } from "./gwm.ts";
 
 const sheets: OpenSheet[] = [];
 const equipment: EquipmentList[] = [];
@@ -171,6 +174,29 @@ for (const { file, archived } of hondaFiles) {
   equipment.push(...lists.filter((list) => !hondaSeen.has(`l|${list.title}`) && hondaSeen.add(`l|${list.title}`)));
 }
 
+// Kia's and GWM's spec pages (npm run fichas:sites): the versions on sale when they were downloaded.
+const sitePages = await readFile("data/fichas/sites.json", "utf8")
+  .then((text) => (JSON.parse(text) as SitesFile).pages)
+  .catch(() => [] as SitesFile["pages"]);
+for (const site of sitePages) {
+  const html = await readFile(join("data/fichas/sites", site.file), "utf8").catch(() => undefined);
+  if (!html) continue;
+  const source = { url: site.url, file: site.file, fetched: site.fetched };
+  if (site.brand === "kia") {
+    const model = site.modelFile && (await readFile(join("data/fichas/sites", site.modelFile), "utf8").catch(() => ""));
+    const found = kiaSpecPage(html, kiaNames(model || ""), source);
+    sheets.push(...found.sheets);
+    equipment.push(...found.lists);
+    if (!found.sheets.length) skipped.push(`Kia ${site.slug}`);
+    continue;
+  }
+  const page = gwmPages.find((item) => item.slug === site.slug);
+  const found = page && gwmSpecPage(html, page, source);
+  if (found?.sheet) sheets.push(found.sheet);
+  else skipped.push(`GWM ${site.slug}`);
+  if (found?.list) equipment.push(found.list);
+}
+
 // What the reader cannot get from Toyota's files, transcribed by hand (the Camry 2018 list has no marks).
 const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
   .then((text) => JSON.parse(text) as { sheets: OpenSheet[]; equipment: EquipmentList[] })
@@ -188,14 +214,14 @@ const unique = sheets.filter((sheet) => {
 });
 
 const out: OpenSheetsFile = {
-  _doc: "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai e da Honda (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai e honda e de data/fichas/toyota.json.",
+  _doc: "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
   sheets: unique.sort((a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line) || a.years[0] - b.years[0] || a.title.localeCompare(b.title)),
 };
 await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai e da Honda (npm run fichas:abertas), das listas e folhetos em data/fichas/renault, toyota, hyundai e honda e de data/fichas/toyota.json.",
+  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

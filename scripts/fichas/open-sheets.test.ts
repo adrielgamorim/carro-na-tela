@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { litersOf, openSheetOfVersion, renaultSheets, specsOfFields, vwSheet } from "./open-sheets.ts";
+import { bestOfVersion, litersOf, openSheetOfVersion, renaultSheets, specsOfFields, vwSheet } from "./open-sheets.ts";
 import type { OpenSheet } from "./open-sheets.ts";
 
 // Lines of VW's "Ficha Técnica Novo Polo 200 TSI.pdf", as readPdfLines gives them.
@@ -156,5 +156,16 @@ describe("open press room sheets", () => {
     expect(openSheetOfVersion(saveiro, { ...saveiroTarget, name: "Saveiro CROSS 1.6 T.Flex 16V CD", valves: 16 })?.title).toBe("Saveiro Cross");
     expect(openSheetOfVersion(saveiro, { ...saveiroTarget, name: "Saveiro Robust 1.6 Total Flex 8V", valves: 8 })).toBeUndefined();
     expect(openSheetOfVersion(saveiro, { ...saveiroTarget, name: "Saveiro Pepper 1.6 Flex 16V CE", valves: 16 })).toBeUndefined();
+  });
+  it("gives the line's plain version equipment only where no list names the version's trim", () => {
+    const lists = [
+      sheet({ brand: "kia", line: "Wey", title: "base", trims: [], base: true }),
+      sheet({ brand: "kia", line: "Wey", title: "Dark", trims: ["dark"] }),
+    ];
+    const wey = { ...target, brand: "Kia Motors", family: "Wey" };
+    const titles = (name: string) => bestOfVersion(lists, { ...wey, name }, { trimNamed: true }).map((list) => list.title);
+    expect(titles("Wey 1.5 Turbo AWD")).toEqual(["base"]);
+    expect(titles("Wey Dark 1.5 Turbo AWD")).toEqual(["Dark"]);
+    expect(bestOfVersion([{ ...lists[0]!, base: undefined }], { ...wey, name: "Wey 1.5" }, { trimNamed: true })).toEqual([]);
   });
 });
