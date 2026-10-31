@@ -9,21 +9,23 @@ disponibilidade dela.
 ### Publicação e infraestrutura
 
 - [ ] 🔴 Completar a varredura dos anos antigos: a listagem até 1985 terminou (30.551 versões-ano,
-      `listingComplete`); faltam os preços, que o daily busca conforme a cota da FIPE. Quando
+      `listingComplete`); faltam os preços (23.205 com preço, 76%, em 31/10/2026), que o daily busca conforme a cota da FIPE. Quando
       terminarem, rodar `fetch:wikidata`, `fetch:galeria` e `build:catalog` para os modelos novos.
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
-- [ ] 🟢 Fotos que ainda faltam: 104 versões, quase todas utilitários e marcas de nicho sem artigo
+- [ ] 🟢 Fotos que ainda faltam: 79 versões recentes (de 2019 em diante), quase todas utilitários e marcas de nicho sem artigo
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
-      de RAM Dakota (o artigo "Ram Dakota" é o antigo Dodge), JAC iEV e E-J*, Jetour S06 e Seres 3/5
-      (a reserva é por linha, e a FIPE chama as duas só de "SERES").
+      de JAC iEV e E-J* (a linha junta carros, picapes e furgões), Jetour S06, GAC GS9 e Seres 3/5 (a
+      reserva é por linha, e a FIPE chama as duas só de "SERES"); no Commons não há foto que sirva.
 - [ ] 🟢 Fotos de imprensa: preencher o `credito` (e a data e o contato) no `autorizacao.json` das
       marcas que autorizaram, rodar `npm run fotos:imprensa` e `build:catalog` e revisar as páginas
       (fotos sem nada no nome ficam com o modelo da linha em que vieram).
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
-      vans só pelo nome da carroceria). Faltam as linhas fora do catálogo e o comprimento das vans
-      (Cargo "Curto" ou "Médio" contra L1H1, L4H2). O documento 322 está indisponível no site.
+      vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
+      linhas fora do catálogo, a Expert 2.2 (a página não diz o ano), as Jumpy 1.5 e Boxer de outros
+      anos, sem ficha, e o comprimento das vans (a FIPE não diz L1H1 ou L3H2: as que empatam dão só os
+      números em comum). O documento 322 está indisponível no site.
 
 ### Fontes de dados a explorar
 
@@ -31,18 +33,14 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 - [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
       medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
-- [ ] 🟡 Fichas da Ford e da Nissan nos sites (os robots.txt permitem): a Ford tem uma página por
-      versão, `/<categoria>/<modelo>/compare-as-versoes/<versão>/` (Ranger, Transit…, no sitemap), e
-      a Nissan `/veiculos/modelos/<modelo>/versoes.html` e `compare.html`. Ler como as da Kia e da GWM
-      (`npm run fichas:sites`). A página `especificacoes.html` da Renault não traz o que as planilhas
-      da sala de imprensa já não deem.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
       vez em quando para os releases novos.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
-      tempo no meio (em 31/10/2026, depois de várias rodadas, parou em 767 de 932 modelos, com 646
-      modelos e 3390 fotos); rodar `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio), ou pedir uma chave
+      tempo no meio (em 31/10/2026 faltam 166 de 968 modelos; 676 têm 3.542 fotos); rodar
+      `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
+      só deixa de buscar, não descarta o que está no cache), ou pedir uma chave
       da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
 
 ### Produto
@@ -61,9 +59,12 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
   transparência da SSP-SP só tem boletins um a um, num formulário ASP.NET.
 - Revisões com preço fixo: os sites das marcas consultam por modelo e CEP dentro dos seus apps; as
   tabelas que aparecem são de reportagens antigas.
-- Fichas da Chevrolet, Ford, Mitsubishi e Nissan: a sala de imprensa da Chevrolet pede login, a da
-  Ford e a da Mitsubishi só têm notícias, e o Wayback guardou só 5 PDFs da Chevrolet (Sonic 2027,
-  com série/opcional por ícone) e nenhum da Nissan. As da VW são de 2017–2020 e o menu público só
+- Fichas da Chevrolet e da Mitsubishi: a sala de imprensa da Chevrolet pede login, a da Mitsubishi
+  só tem notícias, e o Wayback guardou só 5 PDFs da Chevrolet (Sonic 2027, com série/opcional por
+  ícone). Nos sites da Ford e da Nissan (`npm run fichas:sites`) faltam as versões sem página de
+  versão: Ranger XL (página sem linhas) e Raptor, Maverick, Territory, Bronco Sport, Mustang,
+  F-150 Tremor, Frontier e Sentra; e as Transit que a FIPE não separa (Furgão Longo 380L/400L,
+  Minibus Vidrada 440E L4H3). A Renault `especificacoes.html` não traz o que as planilhas já dão. As da VW são de 2017–2020 e o menu público só
   tem os modelos atuais. Pagas: JATO (Carspecs), Suiv.
 - Folhetos da Renault que faltam: a Master 2022 (a FIPE não diz L1H1/L2H2/L3H2, só "Furgão",
   "Extra", "Grand"), o Kwid E-Tech (o folheto de 2023/2024 não diz a versão, e a FIPE só tem o
@@ -90,6 +91,12 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Fichas e equipamentos dos sites da Ford e da Nissan (`npm run fichas:sites`): a Ford tem
+      uma página por versão (`compare-as-versoes/<versão>.html`), ligada à versão FIPE à mão em
+      `scripts/fichas/ford.ts`; a Nissan põe todas as versões num JSON do `compare.html`, com o ano
+      ("Ano de produção 2026/2027") e os opcionais. Entram 20 versões da Ford (Ranger Black, XLS,
+      XLT, Limited, F-150 Lariat, Transit, E-Transit) e 15 da Nissan (Kait, Kicks 2026 e 2027,
+      Versa). O câmbio "DCT"/"dupla embreagem" agora conta como automático.
 - [x] Fichas e equipamentos dos sites da Kia e da GWM (`npm run fichas:sites`, depois
       `fichas:abertas`): a Kia põe tudo em HTML por código de versão (`N.855.2627`: anos 26/27), a
       página do modelo dá o nome; a GWM tem uma página por versão, ligada à versão FIPE à mão. Entram

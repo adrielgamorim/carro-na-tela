@@ -6,7 +6,7 @@
 
 import type { SheetSpecs } from "../../src/catalog/press.ts";
 
-export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai" | "honda" | "kia" | "gwm";
+export type OpenBrand = "vw" | "renault" | "toyota" | "stellantis" | "hyundai" | "honda" | "kia" | "gwm" | "ford" | "nissan";
 export type Transmission = "automatico" | "manual";
 
 /** A sheet read from a press room's file (data/fichas/fichas-abertas.json). */
@@ -170,7 +170,7 @@ export const turboIn = (text: string) =>
 const electricIn = (text: string) => /eletric|electric|z\.?e\.?\b|e-tech/.test(plain(text));
 export function transmissionIn(text: string): Transmission | undefined {
   const value = plain(text);
-  if (/autom|cvt|dsg|tiptronic|uma marcha a frente|\bat\d?\b/.test(value)) return "automatico";
+  if (/autom|cvt|dsg|\bdct\b|dupla embreagem|tiptronic|uma marcha a frente|\bat\d?\b/.test(value)) return "automatico";
   if (/manual|mecanic|\bmt\b|\bmec\b/.test(value)) return "manual";
   return undefined;
 }
@@ -378,7 +378,7 @@ export function renaultSheets(rows: string[][], link: RenaultLink, modified: Dat
 }
 
 /** FIPE brands of each press room. */
-const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"], honda: ["Honda"], kia: ["Kia Motors"], gwm: ["GWM"] };
+const fipeBrands: Record<OpenBrand, string[]> = { vw: ["VW - VolksWagen"], renault: ["Renault"], toyota: ["Toyota"], stellantis: [], hyundai: ["Hyundai"], honda: ["Honda"], kia: ["Kia Motors"], gwm: ["GWM"], ford: ["Ford"], nissan: ["Nissan"] };
 
 export interface OpenSheetTarget {
   brand: string;

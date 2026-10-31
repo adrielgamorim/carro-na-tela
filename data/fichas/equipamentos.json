@@ -1,5 +1,5 @@
 {
- "_doc": "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
+ "_doc": "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
  "lists": [
   {
    "brand": "renault",
@@ -19041,6 +19041,3943 @@
       "Sistema de Áudio com 9 Alto-falantes",
       "Atualização de Software OTA (Over-the-Air)",
       "Sistema de Chamada de Concierge (B-Call)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "black"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · Black 2.0L 4x2 AT Diesel",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/black-2-0-diesel-4x2-at.html",
+   "file": "ford/ranger--black-2-0-diesel-4x2-at.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Estribos laterais",
+      "Retrovisores externos com ajuste elétrico e indicação de direção",
+      "Ajuste elétrico da altura dos farois",
+      "Degrau de acesso à caçamba",
+      "Estribo Plataforma",
+      "Luzes de condução diuna (DRL)",
+      "Moldura de para-lamas na cor preta",
+      "Para-barros traseiro",
+      "Para-choque na cor do veículo",
+      "Tampa traseira com assistente de abertura e fechamento",
+      "Pneus 255/65 R18 All Terrain",
+      "Rodas de liga leve 18\"",
+      "Faróis FullLed",
+      "Farois de neblina halogenos",
+      "Santo Antônio esportivo"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Tapetes de borracha",
+      "Ar condicionado",
+      "Volante com ajuste de altura e profundidade",
+      "Bancos com revestimento premium",
+      "Acendimento automático dos faróis",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Carregador por Indução",
+      "Painel de instrumentos colorido, configuráveis através de comandos no volante: 8\"",
+      "Pontos de amarração de carga: 6",
+      "Vidros elétricos dianteiros/traseiros"
+     ]
+    },
+    {
+     "name": "Sistema multimidia sync 4",
+     "items": [
+      "Alto falantes: 6",
+      "AppLink",
+      "Assistência de Emergência",
+      "Bluetooth",
+      "Comandos de áudio no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB: 4",
+      "Sistema Multimidia Sync 4 com tela touch screen: 10\""
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Sensor de estacionamento traseiro",
+      "Câmera de ré",
+      "Trava da tampa da caçamba com chave",
+      "Controle Eletrônico de Estabilidade",
+      "Alarme Perimétrico",
+      "Air bags (7): frontais, laterais, cortinas e joelho para o motorista",
+      "Limitador de velocidade",
+      "Assitente de partida em rampas",
+      "Piloto automático"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "4 modos de condução selecionáveis – Normal, Eco, Rebocar/Transp, Escorregadio",
+      "Direção elétrica",
+      "Provisão elétrica de reboque"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Monitoramento da vida útil do óleo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo",
+      "Conectividade via aplicativo app Ford",
+      "Concierge proativo - Monitoramento Preventivo Inteligente"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLS 2.0 Diesel 4x4 AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-2-0-diesel-4x4-at.html",
+   "file": "ford/ranger--xls-2-0-diesel-4x4-at.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Retrovisores externos com ajuste elétrico e indicação de direção",
+      "Ajuste elétrico da altura dos farois",
+      "Degrau de acesso à caçamba",
+      "Luzes de condução diuna (DRL)",
+      "Moldura de para-lamas na cor preta",
+      "Para-barros dianteiros",
+      "Para-barros traseiro",
+      "Para-choque na cor do veículo",
+      "Tampa traseira com assistente de abertura e fechamento",
+      "Pneus 255/70 R17 All Terrain",
+      "Rodas de liga leve 17\"",
+      "Faróis FullLed",
+      "Farois de neblina halogenos"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Tapetes de borracha",
+      "Ar condicionado",
+      "Volante com ajuste de altura e profundidade",
+      "Acendimento automático dos faróis",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Carregador por Indução",
+      "Painel de instrumentos colorido, configuráveis através de comandos no volante",
+      "Pontos de amarração de carga: 6",
+      "Vidros elétricos dianteiros/traseiros",
+      "Bancos revestidos em tecido"
+     ]
+    },
+    {
+     "name": "Sistema multimidia sync 4",
+     "items": [
+      "Alto falantes: 6",
+      "AppLink",
+      "Assistência de Emergência",
+      "Bluetooth",
+      "Comandos de áudio no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB: 4",
+      "Sistema Multimidia Sync 4 com tela touch screen: 10\""
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Sensor de estacionamento traseiro",
+      "Câmera de ré",
+      "Trava da tampa da caçamba com chave",
+      "Controle Eletrônico de Estabilidade",
+      "Alarme Perimétrico",
+      "Air bags (7): frontais, laterais, cortinas e joelho para o motorista",
+      "Limitador de velocidade",
+      "Assitente de partida em rampas",
+      "Piloto automático"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "4 modos de condução selecionáveis – Normal, Eco, Rebocar/Transp, Escorregadio",
+      "Controle automático em descidas",
+      "Diferencial traseiro blocante",
+      "Direção elétrica",
+      "Provisão elétrica de reboque"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Monitoramento da vida útil do óleo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo",
+      "Conectividade via aplicativo app Ford",
+      "Concierge proativo - Monitoramento Preventivo Inteligente"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLS 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at.html",
+   "file": "ford/ranger--xls-3-0-diesel-4wd-at.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Retrovisores externos com ajuste elétrico e indicação de direção",
+      "Ajuste elétrico da altura dos farois",
+      "Degrau de acesso à caçamba",
+      "Luzes de condução diuna (DRL)",
+      "Moldura de para-lamas na cor preta",
+      "Para-barros dianteiros",
+      "Para-barros traseiro",
+      "Para-choque na cor do veículo",
+      "Tampa traseira com assistente de abertura e fechamento",
+      "Pneus 255/70 R17 All Terrain",
+      "Rodas de liga leve 17\"",
+      "Faróis FullLed",
+      "Farois de neblina halogenos"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Tapetes de borracha",
+      "Ar condicionado",
+      "Volante com ajuste de altura e profundidade",
+      "Acendimento automático dos faróis",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Carregador por Indução",
+      "Painel de instrumentos colorido, configuráveis através de comandos no volante: 8\"",
+      "Pontos de amarração de carga: 6",
+      "Vidros elétricos dianteiros/traseiros",
+      "Bancos revestidos em tecido"
+     ]
+    },
+    {
+     "name": "Sistema multimidia sync 4",
+     "items": [
+      "Alto falantes",
+      "AppLink",
+      "Assistência de Emergência",
+      "Bluetooth",
+      "Comandos de áudio no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB: 4",
+      "Sistema Multimidia Sync 4 com tela touch screen: 10\""
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Sensor de estacionamento traseiro",
+      "Câmera de ré",
+      "Trava da tampa da caçamba com chave",
+      "Controle Eletrônico de Estabilidade",
+      "Alarme Perimétrico",
+      "Air bags (7): frontais, laterais, cortinas e joelho para o motorista",
+      "Limitador de velocidade",
+      "Assitente de partida em rampas",
+      "Piloto automático"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "4 modos de condução selecionáveis – Normal, Eco, Rebocar/Transp, Escorregadio",
+      "Cambio eletrônico (E-Shifter)",
+      "Controle automático em descidas",
+      "Diferencial traseiro blocante",
+      "Direção elétrica",
+      "Freio a disco nas 4 rodas",
+      "Provisão elétrica de reboque",
+      "Start & Stop"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Monitoramento da vida útil do óleo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo",
+      "Conectividade via aplicativo app Ford",
+      "Concierge proativo - Monitoramento Preventivo Inteligente"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xlt"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLT 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xlt-30-diesel-4wd-at.html",
+   "file": "ford/ranger--xlt-30-diesel-4wd-at.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Protetor de caçamba",
+      "Ajuste elétrico da altura dos farois",
+      "Degrau de acesso à caçamba",
+      "Estribo Plataforma",
+      "Luzes de condução diuna (DRL)",
+      "Moldura de para-lamas na cor preta",
+      "Para-barros dianteiros",
+      "Para-barros traseiro",
+      "Para-choque na cor do veículo",
+      "Retrovisores externos com ajuste elétrico, indicador de direção e rebatimento elétrico",
+      "Tampa traseira com assistente de abertura e fechamento",
+      "Tomada 12V na caçamba",
+      "Pneus 255/70 R17 All Terrain",
+      "Rodas de liga leve 17\"",
+      "Faróis de neblina em Led",
+      "Faróis FullLed"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Tapetes de borracha",
+      "Ar condicionado",
+      "Volante com revestimento Premium",
+      "Volante com ajuste de altura e profundidade",
+      "Bancos com revestimento premium",
+      "Acendimento automático dos faróis",
+      "Ajuste do banco do motorista elétrico em 8 posições",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Carregador por Indução",
+      "Painel de instrumentos colorido, configuráveis através de comandos no volante: 8\"",
+      "Pontos de amarração de carga: 6",
+      "Retrovisor eletrocrômico",
+      "Sensor de chuva",
+      "Vidros elétricos dianteiros/traseiros"
+     ]
+    },
+    {
+     "name": "Sistema multimidia sync 4",
+     "items": [
+      "Alto falantes: 6",
+      "AppLink",
+      "Assistência de Emergência",
+      "Bluetooth",
+      "Comando de voz em português nativo",
+      "Comandos de áudio no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB: 4",
+      "Sistema Multimidia Sync 4 com tela touch screen: 10\""
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Farol alto automático",
+      "Sistema de reconhecimento de sinais de trânsito",
+      "Assistente de permanência em faixa",
+      "Controle Eletrônico de Estabilidade",
+      "Assistente Autônomo de frenagem (com detecção de pedestres)",
+      "Air bags (7): frontais, laterais, cortinas e joelho para o motorista",
+      "Alarme Volumétrico",
+      "Alerta de colisão com aviso luminoso e sonoro no painel de instrumentos",
+      "Frenagem pós colisão",
+      "Limitador de velocidade",
+      "Trava da tampa da caçamba elétrica",
+      "Assistente de partida em rampas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Câmera de ré",
+      "Piloto automático",
+      "Freio de mão eletrônico",
+      "4 modos de condução selecionáveis – Normal, Eco, Rebocar/Transp, Escorregadio",
+      "Cambio eletrônico (E-Shifter)",
+      "Controle automático em descidas",
+      "Diferencial traseiro blocante",
+      "Direção elétrica",
+      "Freio a disco nas 4 rodas",
+      "Provisão elétrica de reboque",
+      "Start & Stop"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Monitoramento da vida útil do óleo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo",
+      "Conectividade via aplicativo app Ford"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · Limited 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/limited-30-diesel-4wd-at-kit-opcional.html",
+   "file": "ford/ranger--limited-30-diesel-4wd-at-kit-opcional.html",
+   "groups": [
+    {
+     "name": "Itens do kit opcional",
+     "items": [
+      "Rodas de liga leve 20\" (opcional)",
+      "Painel de instrumentos colorido, configuráveis através de comandos no volante: 12.4\" (opcional)",
+      "Alerta de trafego cruzado em marcha ré (opcional)",
+      "Assistente Autônomo de frenagem em marcha ré (com detecção de pedestres) (opcional)",
+      "Assistente de manobras evasivas (opcional)",
+      "Assistente de permanência e centralização em faixa (opcional)",
+      "Assistente em cruzamentos (opcional)",
+      "Sistema de monitoramento de ponto-cego (BLIS) (opcional)",
+      "Câmera 360° (opcional)",
+      "Piloto automático adaptativo (ACC) com Stop and Go (opcional)",
+      "Pneus 255/55 R20 All Session (opcional)"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Bagageiro de teto",
+      "Protetor de caçamba",
+      "Lanternas traseiras em LED",
+      "Iluminação na caçamba",
+      "Ajuste elétrico da altura dos farois",
+      "Degrau de acesso à caçamba",
+      "Estribo Plataforma",
+      "Luzes de condução diuna (DRL)",
+      "Para-barros dianteiros",
+      "Para-barros traseiro",
+      "Para-choque na cor do veículo",
+      "Retrovisores externos com ajuste elétrico, indicador de direção e rebatimento elétrico",
+      "Tampa traseira com assistente de abertura e fechamento",
+      "Tomada 12V na caçamba",
+      "Moldura de para-lamas na cor do veículo",
+      "Santo Antônio esportivo pintado na cor do veículo",
+      "Faróis de neblina em Led",
+      "Faróis FullLed"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Tapetes de borracha",
+      "Ar condicionado automático e digital com controle individual de temperatura para motorista e passageiro",
+      "Volante com revestimento Premium",
+      "Volante com ajuste de altura e profundidade",
+      "Bancos com revestimento premium",
+      "Acendimento automático dos faróis",
+      "Ajuste do banco do motorista elétrico em 8 posições",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Carregador por Indução",
+      "Pontos de amarração de carga: 6",
+      "Retrovisor eletrocrômico",
+      "Sensor de chuva",
+      "Vidros elétricos dianteiros/traseiros",
+      "Chave com sensor de presença e partida sem chave",
+      "Descança braço traseiro"
+     ]
+    },
+    {
+     "name": "Sistema multimidia sync 4",
+     "items": [
+      "Alto falantes: 6",
+      "AppLink",
+      "Assistência de Emergência",
+      "Bluetooth",
+      "Comando de voz em português nativo",
+      "Comandos de áudio no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB: 4",
+      "Navegador Off road",
+      "Sistema Multimidia Sync 4 com tela touch screen: 12\""
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Farol alto automático",
+      "Sistema de reconhecimento de sinais de trânsito",
+      "Assistente de permanência em faixa",
+      "Controle Eletrônico de Estabilidade",
+      "Assistente Autônomo de frenagem (com detecção de pedestres)",
+      "Air bags (7): frontais, laterais, cortinas e joelho para o motorista",
+      "Alarme Volumétrico",
+      "Alerta de colisão com aviso luminoso e sonoro no painel de instrumentos",
+      "Frenagem pós colisão",
+      "Limitador de velocidade",
+      "Trava da tampa da caçamba elétrica",
+      "Assistente de partida em rampas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Câmera de ré",
+      "Piloto automático",
+      "Freio de mão eletrônico",
+      "6 modos de condução selecionáveis – Normal, Eco, Rebocar/Transp, Escorregadio, Lama/Terra, Areia",
+      "Cambio eletrônico (E-Shifter)",
+      "Controle automático em descidas",
+      "Diferencial traseiro blocante",
+      "Direção elétrica",
+      "Freio a disco nas 4 rodas",
+      "Provisão elétrica de reboque",
+      "Sensor de monitoramento de pressão dos pneus (TPMS)",
+      "Start & Stop"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Monitoramento da vida útil do óleo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo",
+      "Conectividade via aplicativo app Ford"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "F-150",
+   "trims": [
+    "lariat"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 5,
+   "electric": false,
+   "diesel": false,
+   "onlyNamed": true,
+   "title": "F-150 · Lariat",
+   "page": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat.html",
+   "file": "ford/f-150--lariat.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Abertura da tampa traseira com Pro-Access",
+      "Abertura elétrica da porta da caçamba",
+      "Acesso ao veículo iluminado",
+      "BoxLink™ com (4) travas na caçamba",
+      "Engate para reboque com conector de 4 pinos",
+      "Escada de acesso à caçamba no para-choque",
+      "Estribos laterais fixos",
+      "Faróis de neblina em Led",
+      "Faróis de neblina em LED",
+      "Faróis Dianteiros em LED",
+      "Ganchos de reboque dianteiro",
+      "Iluminação externa 360°",
+      "Iluminação na caçamba",
+      "Lanternas traseiras em LED",
+      "Luz elevada de freio (Brake-light)",
+      "Maçanetas, retrovisores e ganchos dianteiros cromados",
+      "Para-choques cromados",
+      "Pneus 275/60 R20 AT2",
+      "Pontos e ganchos de fixação na caçamba",
+      "Projetores LED dinâmicos",
+      "Protetor de caçamba",
+      "Retrovisores externos com ajuste elétrico e indicação de direção",
+      "Rodas de liga leve de 20\" Cromadas"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "8 Air bags (dianteiros, laterais, cortinas e joelhos)",
+      "Acendimento automático dos faróis",
+      "Alarme Perimétrico",
+      "Alças de segurança dianteira/traseira",
+      "Alerta de colisão frontal",
+      "Alerta de Permanência em Faixa",
+      "Assistente Autônomo de frenagem (com detecção de pedestres)",
+      "Assistente de manobras evasivas",
+      "Assistente de Partida em Rampas (HLA)",
+      "Assistente em cruzamentos com sistema de Frenagem Autônoma",
+      "Câmera de ré com detecção de objetos e assistente de engate",
+      "Cintos de segurança dianteiros com ajuste de altura e pré-tensionadores",
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Controle automático em descidas (HDC)",
+      "Controle de Oscilação de Reboque (TSM)",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle eletrônico de estabilidade (ESC) e tração (TCS)",
+      "Farol alto automático",
+      "Freios ABS com EBD",
+      "Freios a disco nas 4 rodas com ABS",
+      "ISOFIX - Ganchos de fixação de cadeiras de crianças",
+      "Luzes de condução diurna (DTRL)",
+      "Piloto automático adaptativo com Stop & Go e centralização em faixa",
+      "Protetores inferiores off-road",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sensor de monitoramento da pressão dos pneus (TPMS)",
+      "Sistema de Assistência de Frenagem (DBS)",
+      "Sistema de Assistência em Curvas",
+      "Sistema de monitoramento de ponto cego com (BLIS) cobertura de reboque",
+      "Sistema de permanência em faixa",
+      "Travamento Elétrico da Caçamba",
+      "Travamento Elétrico das Portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Ar condicionado automático digital de duas zonas",
+      "Câmera 360°",
+      "Câmeras: frontal, traseira e engate",
+      "Carregador de celular por Indução",
+      "Chave com sensor de presença: Acesso inteligente e Partida sem chave (Ford Power)",
+      "Controle de freio para reboque",
+      "Freio de mão eletrônico",
+      "Função Auto Hold",
+      "Head-up Display",
+      "Painel de Instrumentos digital de 12\"",
+      "Pro Trailer assistente de reboque",
+      "Sensor de chuva",
+      "Tomadas 110v (1) frontal, (1) banco taseiros e (1) caçamba",
+      "Tomadas de 12V (1) frontal e (1) banco traseiros",
+      "Vidros elétricos dianteiros com abertura e fechamento com um toque para cima/baixo",
+      "Vidros Elétricos frontal / traseiro"
+     ]
+    },
+    {
+     "name": "Sistema multimidia",
+     "items": [
+      "Bluetooth",
+      "Comandos de áudio e voz no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB tipo A e tipo C",
+      "Rádio AM/FM",
+      "Sistema de som premium com 14 Alto-falantes feito por Bang & Olufsen HD Radio™",
+      "Sync 4",
+      "Tela central multifuncional touch screen de 12\""
+     ]
+    },
+    {
+     "name": "Interior / conforto",
+     "items": [
+      "Ajuste elétrico de pedais com memória",
+      "Ajuste manual de altura e profundidade do volante",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Banco do motorista com ajuste elétrico de 10 posições com memória",
+      "Banco do passageiro com ajuste elétrico de 8 posições",
+      "Bancos dianteiros aquecidos/ventilados",
+      "Bancos traseiros aquecidos",
+      "Compartimento com trava sob o banco traseiro",
+      "Console central com porta-objetos e descansa braço integrado",
+      "Console central com superfície de apoio",
+      "Encosto de cabeça com ajuste",
+      "Espelho retrovisor eletrocrômico",
+      "Iluminação Interna Ambiente",
+      "Luz de Leitura",
+      "Para-brisa Acústico",
+      "Para-sol com espelho e luzes de cortesia (motorista / passageiro)",
+      "Tapetes de Borracha",
+      "Teto solar panorâmico"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "F-150",
+   "trims": [
+    "lariat",
+    "black"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 5,
+   "electric": false,
+   "diesel": false,
+   "onlyNamed": true,
+   "title": "F-150 · Lariat Black",
+   "page": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat-black.html",
+   "file": "ford/f-150--lariat-black.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Abertura da tampa traseira com Pro-Access",
+      "Abertura elétrica da porta da caçamba",
+      "Acesso ao veículo iluminado",
+      "BoxLink™ com (4) travas na caçamba",
+      "Engate para reboque com conector de 4 pinos",
+      "Escada de acesso à caçamba no para-choque",
+      "Estribos laterais fixos",
+      "Faróis de neblina em Led",
+      "Faróis de neblina em LED",
+      "Faróis Dianteiros em LED",
+      "Ganchos de reboque dianteiro",
+      "Iluminação externa 360°",
+      "Iluminação na caçamba",
+      "Lanternas traseiras em LED",
+      "Luz elevada de freio (Brake-light)",
+      "Maçanetas, retrovisores e ganchos dianteiros escurecidos",
+      "Para-choques na cor do veículo",
+      "Pneus 275/60 R20 AT2",
+      "Pontos e ganchos de fixação na caçamba",
+      "Projetores LED dinâmicos",
+      "Protetor de caçamba",
+      "Retrovisores externos com ajuste elétrico e indicação de direção",
+      "Rodas de liga leve de 20\" Escurecidas"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "8 Air bags (dianteiros, laterais, cortinas e joelhos)",
+      "Acendimento automático dos faróis",
+      "Alarme Perimétrico",
+      "Alças de segurança dianteira/traseira",
+      "Alerta de colisão frontal",
+      "Alerta de Permanência em Faixa",
+      "Assistente Autônomo de frenagem (com detecção de pedestres)",
+      "Assistente de manobras evasivas",
+      "Assistente de Partida em Rampas (HLA)",
+      "Assistente em cruzamentos com sistema de Frenagem Autônoma",
+      "Câmera de ré com detecção de objetos e assistente de engate",
+      "Cintos de segurança dianteiros com ajuste de altura e pré-tensionadores",
+      "Cintos de segurança traseiros laterais e central de 3 pontos",
+      "Controle automático em descidas (HDC)",
+      "Controle de Oscilação de Reboque (TSM)",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle eletrônico de estabilidade (ESC) e tração (TCS)",
+      "Farol alto automático",
+      "Freios ABS com EBD",
+      "Freios a disco nas 4 rodas com ABS",
+      "ISOFIX - Ganchos de fixação de cadeiras de crianças",
+      "Luzes de condução diurna (DTRL)",
+      "Piloto automático adaptativo com Stop & Go e centralização em faixa",
+      "Protetores inferiores off-road",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sensor de monitoramento da pressão dos pneus (TPMS)",
+      "Sistema de Assistência de Frenagem (DBS)",
+      "Sistema de Assistência em Curvas",
+      "Sistema de monitoramento de ponto cego com (BLIS) cobertura de reboque",
+      "Sistema de permanência em faixa",
+      "Travamento Elétrico da Caçamba",
+      "Travamento Elétrico das Portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Ar condicionado automático digital de duas zonas",
+      "Câmera 360°",
+      "Câmeras: frontal, traseira e engate",
+      "Carregador de celular por Indução",
+      "Chave com sensor de presença: Acesso inteligente e Partida sem chave (Ford Power)",
+      "Controle de freio para reboque",
+      "Freio de mão eletrônico",
+      "Função Auto Hold",
+      "Head-up Display",
+      "Painel de Instrumentos digital de 12\"",
+      "Pro Trailer assistente de reboque",
+      "Sensor de chuva",
+      "Tomadas 110v (1) frontal, (1) banco taseiros e (1) caçamba",
+      "Tomadas de 12V (1) frontal e (1) banco traseiros",
+      "Vidros elétricos dianteiros com abertura e fechamento com um toque para cima/baixo",
+      "Vidros Elétricos frontal / traseiro"
+     ]
+    },
+    {
+     "name": "Sistema multimidia",
+     "items": [
+      "Bluetooth",
+      "Comandos de áudio e voz no volante",
+      "Conectividade Android Auto e Apple Car Play sem fio",
+      "Entradas USB tipo A e tipo C",
+      "Rádio AM/FM",
+      "Sistema de som premium com 14 Alto-falantes desenvolvido por Bang & Olufsen HD Radio™",
+      "Sync 4",
+      "Tela central multifuncional touch screen de 12\""
+     ]
+    },
+    {
+     "name": "Interior / conforto",
+     "items": [
+      "Ajuste elétrico de pedais com memória",
+      "Ajuste manual de altura e profundidade do volante",
+      "Ar condicionado para a segunda fileira de bancos",
+      "Banco do motorista com ajuste elétrico de 10 posições com memória",
+      "Banco do passageiro com ajuste elétrico de 8 posições",
+      "Bancos dianteiros aquecidos/ventilados",
+      "Bancos traseiros aquecidos",
+      "Compartimento com trava sob o banco traseiro",
+      "Console central com porta-objetos e descansa braço integrado",
+      "Console central com superfície de apoio",
+      "Encosto de cabeça com ajuste",
+      "Espelho retrovisor eletrocrômico",
+      "Iluminação Interna Ambiente",
+      "Luz de Leitura",
+      "Para-brisa Acústico",
+      "Para-sol com espelho e luzes de cortesia (motorista / passageiro)",
+      "Tapetes de Borracha",
+      "Teto solar panorâmico"
+     ]
+    },
+    {
+     "name": "Conectividade via app ford",
+     "items": [
+      "Alerta de acionamento do alarme no celular",
+      "Alertas de funcionamento do veículo",
+      "Partida Remota Agendada",
+      "Partida remota com acionamento do ar condicionado",
+      "Sistema de localização do veículo no celular",
+      "Status remoto do veículo (nível do combustível, odômetro)",
+      "Travamento e destravamento remoto do veículo"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "medio"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L2H3 350M MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3.html",
+   "file": "ford/transit-furgao--furgao-l2h3.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de Pedestres",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "medio"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L2H3 350M AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3-at.html",
+   "file": "ford/transit-furgao--furgao-l2h3-at.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de Pedestres",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com rebatimento e ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L3H3 350L MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3.html",
+   "file": "ford/transit-furgao--furgao-l3h3.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de Pedestres",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Abertura de porta traseira com 270 graus",
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L3H3 350L AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3-at.html",
+   "file": "ford/transit-furgao--furgao-l3h3-at.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de Pedestres",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Abertura de porta traseira com 270 graus",
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Chassi",
+   "trims": [
+    "350e"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Chassi · 350E MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/350e-mt.html",
+   "file": "ford/transit-chassi--350e-mt.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de limite de velocidade",
+      "Assistente de partidas em rampas",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Luz de condução diurna",
+      "Sensor de estacionamento dianteiro",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Chassi",
+   "trims": [
+    "470e"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Chassi · 470E MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/470e-mt.html",
+   "file": "ford/transit-chassi--470e-mt.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de neblina dianteiros",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de limite de velocidade",
+      "Assistente de partidas em rampas",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Luz de condução diurna",
+      "Sensor de estacionamento dianteiro",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol)",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "15"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L 14+1 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14.html",
+   "file": "ford/transit-minibus--minibus-14.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Ar-condicionado traseiro",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 14",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 5",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Estribo lateral elétrico",
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "15"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L 14+1 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14-at.html",
+   "file": "ford/transit-minibus--minibus-14-at.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Ar-condicionado traseiro",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 14",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 5",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Estribo lateral elétrico",
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "18"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 460E 17+1 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17.html",
+   "file": "ford/transit-minibus--minibus-17.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Ar-condicionado traseiro",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Bancos de passageiros reclináveis",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 17",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 5",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Estribo lateral elétrico",
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "18"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 460E 17+1 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17-at.html",
+   "file": "ford/transit-minibus--minibus-17-at.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Ar-condicionado traseiro",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Bancos de passageiros reclináveis",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 17",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 5",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Estribo lateral elétrico",
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "vidrada"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L L3H2 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada.html",
+   "file": "ford/transit-minibus--minibus-vidrada.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "vidrada"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · Vidrada 410L L3H2 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada-at.html",
+   "file": "ford/transit-minibus--minibus-vidrada-at.html",
+   "groups": [
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro para motorista",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado: Digital",
+      "Banco do motorista: Com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Perimétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de Frenagem Autônoma com detecção de pedestre",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Luz de condução diurna",
+      "Sensor de Chuva",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de Monitoramento de Ponto Cego (BLIS)",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Central Multimídia Sync™ 4 (pol): 12",
+      "Chave canivete",
+      "Comandos de áudio no volante",
+      "Comandos de voz",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Monitoramento de Pressão de Pneus",
+      "MyKey - Chave programável",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível"
+     ]
+    },
+    {
+     "name": "Exterior",
+     "items": [
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste elétrico e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "ford",
+   "line": "E-Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "electric": true,
+   "onlyNamed": true,
+   "title": "E-Transit Furgão · L3H3 350L",
+   "page": "https://www.ford.com.br/veiculos-comerciais/e-transit-furgao/compare-as-versoes/furgao-12-4-m3.html",
+   "file": "ford/e-transit-furgao--furgao-12-4-m3.html",
+   "groups": [
+    {
+     "name": "Exterior",
+     "items": [
+      "Abertura de porta traseira com 270 graus",
+      "Faróis de Neblina Dianteiro",
+      "Gancho para reboque dianteiro",
+      "Retrovisores externos: Com ajuste e rebatimento elétrico, aquecimento e indicador de direção",
+      "Seta nos retrovisores"
+     ]
+    },
+    {
+     "name": "Interior",
+     "items": [
+      "Alto Falantes: 2",
+      "Apoio de braço dianteiro",
+      "Apoio de cabeça dianteiro com regulagem",
+      "Ar-condicionado eletrônico",
+      "Bancos: Motorista com ajuste de distância, altura, encosto e lombar",
+      "Direção - ajustes: Ajustes de altura e profundidade do volante",
+      "Passageiros, excluindo o motorista: 2",
+      "Porta Copos: 5",
+      "Tomada(s) 12v: 1",
+      "Vidros elétricos: Dianteiros com sistema de abertura / fechamento com um toque para cima / baixo",
+      "Volante com revestimento em couro"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Acendimento automático dos faróis",
+      "Airbag: 2 (Motorista e Passageiro)",
+      "Alarme Volumétrico",
+      "Alerta de colisão",
+      "Alerta de limite de velocidade",
+      "Alerta de tráfego cruzado",
+      "Assistente Autônomo de Frenagem com detecção de pedestre",
+      "Assistente de marcha ré",
+      "Assistente de partidas em rampas",
+      "Assistente de permanência em faixa",
+      "Camera 360°",
+      "Controle Adaptativo de Carga",
+      "Controle Eletrônico Anti-capotamento",
+      "Controle Eletrônico de Estabilidade",
+      "Detector de Fadiga",
+      "Freio de estacionamento eletrônico",
+      "Luz de condução diurna",
+      "Monitoramento de ponto-cego",
+      "Sensor de Chuva",
+      "Sensor de estacionamento traseiro",
+      "Trava elétrica das portas",
+      "Travamento automático das portas"
+     ]
+    },
+    {
+     "name": "Tecnologia",
+     "items": [
+      "Bluetooth",
+      "Câmera de ré",
+      "Chave com sensor de presença",
+      "Comandos de voz",
+      "Comandos no volante",
+      "Computador de bordo",
+      "Conectividade via aplicativo app Ford",
+      "Conexão Android Auto / Apple Car Play Sem Fio",
+      "Entrada(s) USB: 2",
+      "Função Auto Hold",
+      "Gerenciamento de recarga da bateria de alta",
+      "Limitador de velocidade",
+      "Modos de condução",
+      "Partida sem chave",
+      "Piloto automático adaptativo",
+      "Rádio AM/FM",
+      "Retrovisor elétrico rebatível",
+      "Seletor de marchas rotativo",
+      "Sensor de monitoramento de pneus",
+      "Tela LCD touchscreen (pol): 12"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Sense",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" estilo \"Blades\" em Black Piano e pneus 205/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamento das portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Ar-condicionado manual",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento em tecido",
+      "Bancos dianteiros com tecnologia Zero Gravity®",
+      "Chave inteligente presencial (I-Key)",
+      "Cobertura do porta-malas",
+      "Console central com porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Portas USB tipo C traseiras (1)",
+      "Seletor de modo de condução (Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tapete de Borracha²",
+      "Tomada de 12V no console central",
+      "Vidros elétricos com sistema “one touch down” somente para o motorista",
+      "Volante multifuncional",
+      "Volante com regulagem de altura e profundidade"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Faróis Full LED",
+      "Lanternas traseiras em LED",
+      "Maçanetas externas na cor do veículo",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle de velocidade de cruzeiro (CC)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD+BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Câmera traseira de estacionamento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 8'', portas USB (tipo A + tipo C), Bluetooth e conexão para Apple CarPlay® e Android Auto®",
+      "Alto-falantes Dianteiros (2)",
+      "Alto-falantes Traseiros (2)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "active"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Active",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" estilo \"Blades\" em Black Piano e pneus 205/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamento das portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Ar-condicionado manual",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento em tecido",
+      "Bancos dianteiros com tecnologia Zero Gravity®",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Portas USB tipo C traseiras (1)",
+      "Seletor de modo de condução (Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tapete de Borracha²",
+      "Tomada de 12V no console central",
+      "Vidros elétricos com sistema “one touch down” somente para o motorista",
+      "Volante multifuncional",
+      "Volante com regulagem de altura e profundidade"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Faróis Full LED",
+      "Lanternas traseiras em LED",
+      "Maçanetas externas na cor do veículo",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle de velocidade de cruzeiro (CC)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD+BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Câmera traseira de estacionamento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Alto-falantes Dianteiros (2)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Advance",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" estilo \"Blades\" Diamantadas e pneus 205/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamento das portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Ar-condicionado manual",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento em tecido",
+      "Bancos dianteiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Cobertura do porta-malas",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Portas USB tipo C traseiras (2)",
+      "Seletor de modo de condução (Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tapete de Borracha²",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante multifuncional",
+      "Volante com regulagem de altura e profundidade"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Faróis Full LED",
+      "Lanternas traseiras em LED",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas cromadas",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle de velocidade de cruzeiro (CC)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD+BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Câmera traseira de estacionamento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Pioneer² com display touchscreen colorido de 9'', portas USB (tipo A), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes Dianteiros (2)",
+      "Alto-falantes Traseiros (2)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Exclusive",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" estilo \"Blades\" Diamantadas e pneus 205/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamento das portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹",
+      "Bancos dianteiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Cobertura do porta-malas",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Painel com revestimento premium¹",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Portas USB tipo C traseiras (2)",
+      "Seletor de modo de condução (Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tapete de Borracha²",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com acabamento premium¹",
+      "Volante multifuncional",
+      "Volante com regulagem de altura e profundidade"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Faróis Full LED",
+      "Lanternas traseiras em LED",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas cromadas",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW+P-FEB)",
+      "Alerta de tráfego cruzado traseiro (RCTA)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Alerta de ponto cego (BSW)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Espelho retrovisor interno eletrocrômico",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD+BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Pioneer² com display touchscreen colorido de 9'', portas USB (tipo A), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes Dianteiros (2)",
+      "Alto-falantes Traseiros (2)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Exclusive 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve de 19\" e pneus 225/45 R19"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro com apoio de braço central e porta-copos duplo",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Iluminação ambiente no painel e nas portas dianteiras",
+      "Limpador de para-brisa automático com sensor de chuva",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Nivelador de profundidade do porta-malas (Flexible board)",
+      "Painel com revestimento premium",
+      "Painel de instrumentos digital em HD de 12.3\"",
+      "Para-sol com espelhos e iluminação",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-óculos",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Retrovisores externos rebatíveis automaticamente",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com acabamento premium",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Carpete²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED com projetores"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Espelho retrovisor interno eletrocrômico",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (6)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Platinum 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve de 19\" e pneus 225/45 R19"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital touch",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro com apoio de braço central e porta-copos duplo",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Iluminação ambiente no painel e nas portas dianteiras",
+      "Limpador de para-brisa automático com sensor de chuva",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Nivelador de profundidade do porta-malas (Flexible board)",
+      "Painel com revestimento premium",
+      "Painel de instrumentos digital em HD de 12.3\"",
+      "Para-sol com espelhos e iluminação",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-óculos",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Retrovisores externos rebatíveis automaticamente",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com acabamento premium",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Carpete²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Teto solar panorâmico com abertura e fechamento elétrico",
+      "Faróis Full LED com projetores"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta de tráfego cruzado traseiro (RCTA)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Assistente inteligente de centralização em faixa (LKA)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Espelho retrovisor interno eletrocrômico",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Monitoramento inteligente de ponto cego com intervenção (BSWI)",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de auxílio a condução – ProPILOT® (SAE level 2™)",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Sistema premium de som BOSE® Personal Plus com 10 alto-falantes"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Advance 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" e pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro com apoio de braço central e porta-copos duplo",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Nivelador de profundidade do porta-malas (Flexible board)",
+      "Painel com revestimento premium",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Retrovisores externos rebatíveis automaticamente",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Carpete²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (4)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Sense 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" e pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento em tecido",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Borracha²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Lanternas traseiras em LED",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Câmera traseira de estacionamento em HD",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (4)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Advance 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve Diamantada 17\" e pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Borracha²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Câmera traseira de estacionamento em HD",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (4)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Platinum 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve de 19\" e pneus 225/45 R19"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ \"Plus\" Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro com apoio de braço central e porta-copos duplo",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹ “plus”",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Faróis com sistemas \"Welcome\" e “Follow me Home”",
+      "Iluminação ambiente no painel e nas portas dianteiras",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Nivelador de profundidade do porta-malas (Flexible board)",
+      "Painel com revestimento premium¹",
+      "Painel de instrumentos digital em HD de 12.3\"",
+      "Para-sol com espelhos",
+      "Para-sol com iluminação",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-óculos",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Retrovisores externos rebatíveis automaticamente",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com acabamento premium",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Carpete²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Teto solar panorâmico com abertura e fechamento elétrico",
+      "Faróis Full LED com projetores"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta de tráfego cruzado traseiro (RCTA)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Assistente inteligente de centralização em faixa (LKA)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Espelho retrovisor interno eletrocrômico",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Monitoramento inteligente de ponto cego com intervenção (BSWI)",
+      "Sensor de estacionamento dianteiro",
+      "Sensor de estacionamento traseiro",
+      "Sistema de auxílio a condução – ProPILOT® (SAE level 2™)",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Sistema premium de som BOSE® Personal Plus com 10 alto-falantes"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Sense 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve 17\" e pneus 215/60 R17"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento em tecido",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Painel de instrumentos digital de 7\"",
+      "Para-sol com espelhos",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Borracha²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Lanternas traseiras em LED",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Câmera traseira de estacionamento em HD",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (4)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Exclusive 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Liga leve de 19\" e pneus 225/45 R19"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento Premium¹ \"Plus\" Preto"
+     ]
+    },
+    {
+     "name": "Conforto e Conveniência",
+     "items": [
+      "Abertura e fechamentos dos vidros e portas através da chave",
+      "Acionamento de alarme através da chave",
+      "Acendimento inteligente dos faróis (Sensor Crepuscular)",
+      "Aletas para troca de marchas no volante (Paddle Shift)",
+      "Ar-condicionado automático digital",
+      "Banco do motorista com regulagem de altura",
+      "Banco traseiro com apoio de braço central e porta-copos duplo",
+      "Banco traseiro rebatível e bipartido (60/40)",
+      "Bancos com revestimento premium¹ “plus”",
+      "Bancos dianteiros e traseiros com tecnologia Zero Gravity®",
+      "Carregador de celular por indução (Wireless Charger)",
+      "Chave inteligente presencial (I-Key)",
+      "Console central com apoio de braço e porta-copos duplo",
+      "Direção elétrica com assistência variável (EPS)",
+      "Faróis com regulagem elétrica de altura",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Limpador e desembaçador de vidro traseiro",
+      "Luzes de leitura dianteira e traseira em LED",
+      "Painel com revestimento premium¹",
+      "Painel de instrumentos digital em HD de 12.3\"",
+      "Para-sol com espelhos",
+      "Para-sol com iluminação",
+      "Partida remota do motor",
+      "Porta-malas com iluminação interna e alças para sacolas (2)",
+      "Porta-revistas no banco dianteiro do motorista",
+      "Portas USB tipo C dianteiras (2) e traseiras (2)",
+      "Retrovisores externos rebatíveis automaticamente",
+      "Seletor da transmissão por botões (E-Shifter)",
+      "Seletor de modo de condução (Normal, ECO, Sport)",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Tag SEM PARAR instalada³",
+      "Tomada de 12V no console central",
+      "Vidros dianteiros e traseiros elétricos com sistema \"One Touch\" e antiesmagamento",
+      "Volante com acabamento premium",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Tapete de Carpete²"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena estilo \"shark\"",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas de abertura das portas na cor prata",
+      "Lanternas traseiras em LED",
+      "Rack de teto longitudinal na cor prata",
+      "Retrovisores externos com regulagem elétrica e indicador de direção em LED",
+      "Retrovisores externos na cor Preto Premium",
+      "Faróis Full LED"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme perimétrico anti-furto com imobilizador",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta avançado de colisão frontal (PFCW)",
+      "Alerta de colisão frontal com assistente inteligente de frenagem e detecção de pedestre (FCW/FEB)",
+      "Alerta de objetos no banco traseiro",
+      "Assistente inteligente de frenagem traseira com detecção de pedestres (RAEB)",
+      "Alerta inteligente de atenção do motorista (DAA)",
+      "Alerta inteligente e assistente de prevenção de mudança de faixa (LDP/LDW)",
+      "Cintos de segurança de três pontos para motorista e passageiros (5)",
+      "Cintos de segurança dianteiros com ajuste de altura, pré-tensionador e limitador de força",
+      "Controle de cruzeiro adaptativo de velocidade e distância (ICC)",
+      "Controle de tração e estabilidade (VDC)",
+      "Controle inteligente em curvas (ATC)",
+      "Espelho retrovisor interno eletrocrômico",
+      "Faróis com ajuste inteligente de altura e intensidade (HBA)",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freio eletrônico de estacionamento com “Auto Hold” (EPB/Auto Hold)",
+      "Freios ABS com controle eletrônico de frenagem e assistência de frenagem (EBD/BA)",
+      "Luzes de condução diurna em LED (DTRL)",
+      "Sensor de estacionamento traseiro",
+      "Sistema de monitoramento de pressão dos pneus (TPMS)",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Travamento automático das portas e do porta-malas com o veículo em movimento",
+      "Visão 360° inteligente e detector de objetos em movimento (AVM/MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "Multimídia Nissan Connect com display touchscreen colorido de 12.3'', portas USB tipo C (2), Bluetooth e conexão sem fio para Apple CarPlay® e Android Auto®",
+      "Alto-falantes (4)"
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Advance CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Rodas de liga leve de 16\" diamantadas"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido preto com detalhes em azul"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do porta-malas",
+      "Acabamento de tecido nos bancos",
+      "Acendimento inteligente dos faróis",
+      "Ar-condicionado",
+      "Bancos dianteiros com Tecnologia Zero Gravity",
+      "Bancos dianteiros com regulagem manual de altura",
+      "Banco traseiro bipartido 60/40, rebatível",
+      "Carregador sem fio",
+      "Chave inteligente presencial (I-Key)",
+      "Comando do piloto automático no volante",
+      "Computador de bordo",
+      "Console central dianteiro com tampa e apoio de braço integrado",
+      "Desembaçador do vidro traseiro com temporizador",
+      "Direção elétrica progressiva",
+      "Follow me home",
+      "Iluminação interna frontal e central",
+      "Indicador de temperatura externa",
+      "Painel central multifuncional em TFT de 7\" com 12 funções",
+      "Para-sol com espelhos para o motorista e passageiro",
+      "Porta USB dianteiro",
+      "Porta-copos dianteiros (2) integrados console central",
+      "Porta-malas com iluminação",
+      "Porta-objetos na lateral das portas dianteiras e traseiras",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Retrovisores externos com indicadores de direção",
+      "Retrovisores externos com regulagem elétrica",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Spots de leitura para o motorista e passageiro dianteiro",
+      "Tacômetro",
+      "Tag Sem Parar instalada[2]",
+      "Tomada de 12V integrada ao console central",
+      "Travamento e destravamento das portas por proximidade",
+      "Vidros dianteiros elétricos com função one touch down para o motorista",
+      "Vidros traseiros elétricos",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Acabamento prata na manopla",
+      "Antena de teto",
+      "Faróis halogênios",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas cromadas",
+      "Para-choque frontal na cor do veículo",
+      "Para-choque traseiro na cor do veículo",
+      "Retrovisores externos rebatíveis na cor preto premium",
+      "Rodas de liga leve de 16\" diamantadas e pneus 205/55 R16"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme com acionamento por controle remoto",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta de colisão frontal com assistente inteligente de frenagem (FCW/FEB)",
+      "Alerta de objetos no banco traseiro (Rear Seat Alert)",
+      "Apoios de cabeça dianteiros com regulagem de altura",
+      "Apoios de cabeça traseiros (3)",
+      "Bloqueio de ignição através de imobilizador do motor",
+      "Câmera traseira de estacionamento",
+      "Cintos de segurança dianteiros com pré-tensionadores e limitadores de carga",
+      "Cintos de segurança traseiros laterais e central retráteis de 3 pontos",
+      "Controle de tração e estabilidade (VDC)",
+      "Espelho retrovisor + câmera",
+      "Faróis de neblina",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem (EBD) e assistência de frenagem (BA)",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Luzes de condução diurna (DTRL)",
+      "Piloto automático",
+      "Sensor de estacionamento traseiro",
+      "Sinal de parada de emergência",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Trava elétrica com acionamento por controle remoto",
+      "Visão 360° inteligente e detecção de objetos em movimento (AVM + MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "4 alto-falantes",
+      "Multimídia Nissan Connect com display touch screen colorido de 7\", Apple CarPlay®, Android Auto®, Bluetooth e conector USB."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Sense CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Rodas de liga leve de 15\""
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Tecido preto com detalhes em azul"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do porta-malas",
+      "Acabamento de tecido nos bancos",
+      "Acendimento inteligente dos faróis",
+      "Apoio de braço frontal",
+      "Ar-condicionado",
+      "Bancos dianteiros com Tecnologia Zero Gravity",
+      "Bancos dianteiros com regulagem manual de altura",
+      "Banco traseiro fixo",
+      "Chave inteligente presencial (I-Key)",
+      "Comando do piloto automático no volante",
+      "Computador de bordo",
+      "Desembaçador do vidro traseiro com temporizador",
+      "Direção elétrica progressiva",
+      "Follow me home",
+      "Iluminação interna frontal e central",
+      "Painel central com display de 3,5\"",
+      "Para-sol com espelhos para o motorista e passageiro",
+      "Porta USB dianteiro",
+      "Porta-copos dianteiros (2) integrados console central",
+      "Porta-malas com iluminação",
+      "Porta-objetos na lateral das portas dianteiras e traseiras",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Retrovisores externos com regulagem elétrica",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Spots de leitura para o motorista e passageiro dianteiro",
+      "Tacômetro",
+      "Tag Sem Parar instalada[2]",
+      "Tomada de 12V integrada ao console central",
+      "Vidros dianteiros elétricos com função one touch down para o motorista",
+      "Vidros traseiros elétricos",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Antena de teto",
+      "Faróis halogênios",
+      "Maçanetas externas na cor do veículo",
+      "Para-choque frontal na cor do veículo",
+      "Para-choque traseiro na cor do veículo",
+      "Retrovisores externos rebatíveis na cor preta",
+      "Rodas de liga leve de 15\" e pneus 195/65 R15"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme com acionamento por controle remoto",
+      "Alarme perimétrico",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta de colisão frontal com assistente inteligente de frenagem (FCW/FEB)",
+      "Apoios de cabeça dianteiros com regulagem de altura",
+      "Apoios de cabeça traseiros (3)",
+      "Bloqueio de ignição através de imobilizador do motor",
+      "Cintos de segurança dianteiros com pré-tensionadores e limitadores de carga",
+      "Cintos de segurança traseiros laterais e central retráteis de 3 pontos",
+      "Controle de tração e estabilidade (VDC)",
+      "Faróis de neblina",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem (EBD) e assistência de frenagem (BA)",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Luzes de condução diurna (DTRL)",
+      "Piloto automático",
+      "Sensor de estacionamento traseiro",
+      "Sinal de parada de emergência",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Trava elétrica com acionamento por controle remoto"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "2 alto-falantes",
+      "Multimídia Nissan Connect com display touch screen colorido de 7\", Apple CarPlay®, Android Auto®, Bluetooth e conector USB."
+     ]
+    }
+   ]
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Exclusive CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "groups": [
+    {
+     "name": "Rodas",
+     "items": [
+      "Rodas de liga leve de 17\" diamantadas"
+     ]
+    },
+    {
+     "name": "Estofamento",
+     "items": [
+      "Acabamento premium preto com detalhes em azul (opcional)",
+      "Acabamento premium cinza com detalhes em preto"
+     ]
+    },
+    {
+     "name": "Conforto e conveniência",
+     "items": [
+      "Abertura interna do porta-malas",
+      "Acabamento premium[1] nos bancos",
+      "Acendimento inteligente dos faróis",
+      "Apoio de braço central traseiro",
+      "Ar-condicionado automático digital",
+      "Bancos dianteiros com Tecnologia Zero Gravity",
+      "Bancos dianteiros com regulagem manual de altura",
+      "Banco traseiro bipartido 60/40, rebatível",
+      "Câmbio com acabamento premium[1]",
+      "Carregador sem fio",
+      "Chave inteligente presencial (I-Key)",
+      "Comando do piloto automático no volante",
+      "Computador de bordo",
+      "Console central dianteiro com tampa e apoio de braço integrado",
+      "Desembaçador do vidro traseiro com temporizador",
+      "Direção elétrica progressiva",
+      "Follow me home",
+      "Iluminação interna frontal e central",
+      "Indicador de temperatura externa",
+      "Painel central multifuncional em TFT de 7\" com 12 funções",
+      "Para-sol com espelhos para o motorista e passageiro",
+      "Porta USB dianteiro",
+      "Porta-copos dianteiros (2) integrados console central",
+      "Porta-copos traseiros (2) integrados ao descansa-braço",
+      "Porta-malas com iluminação",
+      "Porta-objetos na lateral das portas dianteiras e traseiras",
+      "Porta-revistas no banco dianteiro do passageiro",
+      "Retrovisores externos com indicadores de direção",
+      "Retrovisores externos com regulagem elétrica",
+      "Sistema eletrônico de ignição (botão Push Start)",
+      "Spots de leitura para o motorista e passageiro dianteiro",
+      "Tacômetro",
+      "Tag Sem Parar instalada[2]",
+      "Tomada de 12V integrada ao console central",
+      "Travamento e destravamento das portas por proximidade",
+      "Vidros dianteiros elétricos com função one touch down para o motorista",
+      "Vidros traseiros elétricos",
+      "Volante com acabamento premium[1]",
+      "Volante com regulagem de altura e profundidade",
+      "Volante multifuncional",
+      "Welcome function"
+     ]
+    },
+    {
+     "name": "Aparência",
+     "items": [
+      "Acabamento prata na manopla",
+      "Aerofólio traseiro",
+      "Antena estilo barbatana de tubarão",
+      "Assinatura dos faróis dianteiros em LED",
+      "Faróis dianteiros em LED",
+      "Freio de mão com detalhe cromado",
+      "Maçanetas externas na cor do veículo",
+      "Maçanetas internas cromadas",
+      "Para-choque frontal na cor do veículo",
+      "Para-choque traseiro na cor do veículo",
+      "Retrovisores externos rebatíveis na cor preto premium",
+      "Rodas de liga leve de 17\" diamantadas e pneus 205/50 R17"
+     ]
+    },
+    {
+     "name": "Segurança",
+     "items": [
+      "Airbags duplos frontais",
+      "Airbags laterais e de cortina",
+      "Alarme com acionamento por controle remoto",
+      "Alarme perimétrico",
+      "Alerta de atenção do motorista (DAA)",
+      "Alerta de cinto de segurança destravado - frontais e traseiros",
+      "Alerta de colisão frontal com assistente inteligente de frenagem (FCW/FEB)",
+      "Alerta de objetos no banco traseiro (Rear Seat Alert)",
+      "Alerta de ponto cego (BSW)",
+      "Alerta de tráfego cruzado traseiro (RCTA)",
+      "Apoios de cabeça dianteiros com regulagem de altura",
+      "Apoios de cabeça traseiros (3)",
+      "Bloqueio de ignição através de imobilizador do motor",
+      "Câmera traseira de estacionamento",
+      "Cintos de segurança dianteiros com pré-tensionadores e limitadores de carga",
+      "Cintos de segurança traseiros laterais e central retráteis de 3 pontos",
+      "Controle de tração e estabilidade (VDC)",
+      "Espelho retrovisor + câmera",
+      "Faróis de neblina",
+      "Fixadores traseiros para cadeiras de crianças (ISOFIX)",
+      "Freios ABS com controle eletrônico de frenagem (EBD) e assistência de frenagem (BA)",
+      "Limpador de para-brisa com controle intermitente variável",
+      "Luzes de condução diurna (DTRL)",
+      "Piloto automático",
+      "Sensor de estacionamento traseiro",
+      "Sinal de parada de emergência",
+      "Sistema inteligente de partida em rampa (HSA)",
+      "Trava elétrica com acionamento por controle remoto",
+      "Visão 360° inteligente e detecção de objetos em movimento (AVM + MOD)"
+     ]
+    },
+    {
+     "name": "Sistema de áudio",
+     "items": [
+      "2 Tweeters",
+      "4 alto-falantes",
+      "Multimídia Nissan Connect com display touch screen colorido de 8\", Apple CarPlay® , Android Auto®, Bluetooth e conector USB."
      ]
     }
    ]

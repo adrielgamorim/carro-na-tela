@@ -23,6 +23,8 @@ import type { WaybackFile } from "./fetch-wayback.ts";
 import type { SitesFile } from "./fetch-sites.ts";
 import { kiaNames, kiaSpecPage } from "./kia.ts";
 import { gwmPages, gwmSpecPage } from "./gwm.ts";
+import { fordPages, fordSpecPage } from "./ford.ts";
+import { nissanComparePage, nissanModels } from "./nissan.ts";
 
 const sheets: OpenSheet[] = [];
 const equipment: EquipmentList[] = [];
@@ -174,7 +176,7 @@ for (const { file, archived } of hondaFiles) {
   equipment.push(...lists.filter((list) => !hondaSeen.has(`l|${list.title}`) && hondaSeen.add(`l|${list.title}`)));
 }
 
-// Kia's and GWM's spec pages (npm run fichas:sites): the versions on sale when they were downloaded.
+// Kia's, GWM's, Ford's and Nissan's spec pages (npm run fichas:sites): the versions on sale when they were downloaded.
 const sitePages = await readFile("data/fichas/sites.json", "utf8")
   .then((text) => (JSON.parse(text) as SitesFile).pages)
   .catch(() => [] as SitesFile["pages"]);
@@ -188,6 +190,22 @@ for (const site of sitePages) {
     sheets.push(...found.sheets);
     equipment.push(...found.lists);
     if (!found.sheets.length) skipped.push(`Kia ${site.slug}`);
+    continue;
+  }
+  if (site.brand === "nissan") {
+    const model = nissanModels.find((item) => item.slug === site.slug);
+    const found = model ? nissanComparePage(html, model.line, source) : { sheets: [], lists: [] };
+    sheets.push(...found.sheets);
+    equipment.push(...found.lists);
+    if (!found.sheets.length) skipped.push(`Nissan ${site.slug}`);
+    continue;
+  }
+  if (site.brand === "ford") {
+    const page = fordPages.find((item) => item.path === site.slug);
+    const found = page && fordSpecPage(html, page, source);
+    if (found?.sheet) sheets.push(found.sheet);
+    else skipped.push(`Ford ${site.slug}`);
+    if (found?.list) equipment.push(found.list);
     continue;
   }
   const page = gwmPages.find((item) => item.slug === site.slug);
@@ -204,24 +222,25 @@ const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
 sheets.push(...toyotaByHand.sheets);
 equipment.push(...toyotaByHand.equipment);
 
-// Two files of the same sheets (Renault lists the Z.E. sheet twice): once.
+// Two files of the same sheets (Renault lists the Z.E. sheet twice): once. Not
+// the same figures for other years (Nissan's Kicks of 2026 and of 2027).
 const seen = new Set<string>();
 const unique = sheets.filter((sheet) => {
-  const key = `${sheet.brand}|${sheet.title}|${JSON.stringify(sheet.specs)}`;
+  const key = `${sheet.brand}|${sheet.title}|${sheet.years.join("-")}|${JSON.stringify(sheet.specs)}`;
   if (seen.has(key)) return false;
   seen.add(key);
   return true;
 });
 
 const out: OpenSheetsFile = {
-  _doc: "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
+  _doc: "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
   sheets: unique.sort((a, b) => a.brand.localeCompare(b.brand) || a.line.localeCompare(b.line) || a.years[0] - b.years[0] || a.title.localeCompare(b.title)),
 };
 await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out, null, 1)}\n`);
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
+  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

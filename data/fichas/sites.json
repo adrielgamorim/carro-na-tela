@@ -1,5 +1,5 @@
 {
- "_doc": "Páginas de especificações dos sites da Kia e da GWM (npm run fichas:sites), baixadas em data/fichas/sites; lidas por npm run fichas:abertas.",
+ "_doc": "Páginas de especificações dos sites da Kia, da GWM, da Ford e da Nissan (npm run fichas:sites), baixadas em data/fichas/sites; lidas por npm run fichas:abertas.",
  "pages": [
   {
    "brand": "kia",
@@ -120,6 +120,174 @@
    "slug": "ora5",
    "url": "https://www.gwmmotors.com.br/pt/modelos/ora5/specification",
    "file": "gwm/ora5.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "ranger/compare-as-versoes/black-2-0-diesel-4x2-at",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/black-2-0-diesel-4x2-at.html",
+   "file": "ford/ranger--black-2-0-diesel-4x2-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "ranger/compare-as-versoes/xls-2-0-diesel-4x4-at",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-2-0-diesel-4x4-at.html",
+   "file": "ford/ranger--xls-2-0-diesel-4x4-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "ranger/compare-as-versoes/xls-3-0-diesel-4wd-at",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at.html",
+   "file": "ford/ranger--xls-3-0-diesel-4wd-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "ranger/compare-as-versoes/xlt-30-diesel-4wd-at",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xlt-30-diesel-4wd-at.html",
+   "file": "ford/ranger--xlt-30-diesel-4wd-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "ranger/compare-as-versoes/limited-30-diesel-4wd-at-kit-opcional",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/limited-30-diesel-4wd-at-kit-opcional.html",
+   "file": "ford/ranger--limited-30-diesel-4wd-at-kit-opcional.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "f-150/compare-as-versoes/lariat",
+   "url": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat.html",
+   "file": "ford/f-150--lariat.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "f-150/compare-as-versoes/lariat-black",
+   "url": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat-black.html",
+   "file": "ford/f-150--lariat-black.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-furgao/compare-as-versoes/furgao-l2h3",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3.html",
+   "file": "ford/transit-furgao--furgao-l2h3.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-furgao/compare-as-versoes/furgao-l2h3-at",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3-at.html",
+   "file": "ford/transit-furgao--furgao-l2h3-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-furgao/compare-as-versoes/furgao-l3h3",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3.html",
+   "file": "ford/transit-furgao--furgao-l3h3.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-furgao/compare-as-versoes/furgao-l3h3-at",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3-at.html",
+   "file": "ford/transit-furgao--furgao-l3h3-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-chassi/compare-as-versoes/350e-mt",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/350e-mt.html",
+   "file": "ford/transit-chassi--350e-mt.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-chassi/compare-as-versoes/470e-mt",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/470e-mt.html",
+   "file": "ford/transit-chassi--470e-mt.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-14",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14.html",
+   "file": "ford/transit-minibus--minibus-14.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-14-at",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14-at.html",
+   "file": "ford/transit-minibus--minibus-14-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-17",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17.html",
+   "file": "ford/transit-minibus--minibus-17.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-17-at",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17-at.html",
+   "file": "ford/transit-minibus--minibus-17-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-vidrada",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada.html",
+   "file": "ford/transit-minibus--minibus-vidrada.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "transit-minibus/compare-as-versoes/minibus-vidrada-at",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada-at.html",
+   "file": "ford/transit-minibus--minibus-vidrada-at.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "ford",
+   "slug": "e-transit-furgao/compare-as-versoes/furgao-12-4-m3",
+   "url": "https://www.ford.com.br/veiculos-comerciais/e-transit-furgao/compare-as-versoes/furgao-12-4-m3.html",
+   "file": "ford/e-transit-furgao--furgao-12-4-m3.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "nissan",
+   "slug": "kait",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "nissan",
+   "slug": "kicks-my26",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "nissan",
+   "slug": "novo-kicks",
+   "url": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "fetched": "2026-10-31"
+  },
+  {
+   "brand": "nissan",
+   "slug": "versa",
+   "url": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
    "fetched": "2026-10-31"
   }
  ]

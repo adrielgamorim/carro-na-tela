@@ -48,11 +48,16 @@ if (clientId && clientSecret) {
 
 class Stop extends Error {}
 
-/** A model's search, from the cache or Openverse; Stop when the day's limit is reached or the service keeps failing. */
-async function search(label: string, id: string): Promise<OpenverseImage[]> {
+/**
+ * A model's search, from the cache or Openverse; Stop when the day's limit is
+ * reached or the service keeps failing. With `cachedOnly` (after a Stop),
+ * undefined for a model not in the cache.
+ */
+async function search(label: string, id: string, cachedOnly = false): Promise<OpenverseImage[] | undefined> {
   const cached = join(cacheDir, `${id}.json`);
   const known = await readFile(cached, "utf8").catch(() => undefined);
   if (known) return JSON.parse(known) as OpenverseImage[];
+  if (cachedOnly) return undefined;
   const params = new URLSearchParams({ q: label, license: openverseLicenses, source: "flickr", page_size: "20", mature: "false" });
   for (let attempt = 1; attempt <= 4; attempt++) {
     await sleep(attempt === 1 ? 1500 : 20_000 * attempt);
@@ -90,14 +95,21 @@ for (const version of index.versions) {
 const gallery: Record<string, GalleryPhoto[]> = {};
 let searched = 0;
 let stopped = "";
+// After a stop, the rest only from the cache: the lines new to the catalog come
+// first, and a stop among them must not drop the ones already searched.
+let missing = 0;
 for (const model of models) {
-  let images: OpenverseImage[];
+  let images: OpenverseImage[] | undefined;
   try {
-    images = await search(model.label, model.id.replace(/[^\w-]+/g, "_"));
+    images = await search(model.label, model.id.replace(/[^\w-]+/g, "_"), Boolean(stopped));
   } catch (error) {
     if (!(error instanceof Stop)) throw error;
     stopped = error.message;
-    break;
+    images = undefined;
+  }
+  if (!images) {
+    missing++;
+    continue;
   }
   searched++;
   const files = images.flatMap((image) => openverseFile(image) ?? []);
@@ -109,4 +121,4 @@ for (const model of models) {
 await writeFileRetrying(out, `${JSON.stringify(gallery, null, 1)}\n`);
 const total = Object.values(gallery).flat().length;
 console.log(`${Object.keys(gallery).length} modelos com fotos do Flickr (via Openverse), ${total} fotos em ${out}`);
-if (stopped) console.log(`Parou em ${searched} de ${models.length} modelos: ${stopped}. Rode de novo depois; o cache guarda o que já veio.`);
+if (stopped) console.log(`Faltam ${missing} de ${models.length} modelos: ${stopped}. Rode de novo depois; o cache guarda o que já veio.`);

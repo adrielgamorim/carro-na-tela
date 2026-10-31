@@ -38,7 +38,10 @@ export function stellantisAsOpen(sheet: ReadSheet): OpenSheet | undefined {
   if (!lineWords.length) return undefined;
   const line = lineWords.join(" ");
   // PDFs split numbers into pieces ("20 0 8", "202 6"); not a code's ("AT9 4x4").
-  const title = sheet.title.replace(/(?<![a-z\d])(\d+)\s+(?=\d)/gi, "$1");
+  // And the vans' words: "C argo L 3 H 2", "Turbo d iesel", "Vitr é", "MAXI CARGO" (FIPE's "MaxiCargo").
+  const title = sheet.title
+    .replace(/(?<![a-z\d])(\d+)\s+(?=\d)/gi, "$1")
+    .replace(/\b(?:c ?argo|d ?iesel|vitr ?[eé]|executiv ?o|maxi ?cargo|l ?\d ?h ?\d)(?![a-z\d])/gi, (piece) => piece.replace(/\s+/g, ""));
   const liters = litersOf(title);
   const transmission = transmissionIn(title);
   // Fiat's "Cabine Plus" is the extended cab.
@@ -56,7 +59,8 @@ export function stellantisAsOpen(sheet: ReadSheet): OpenSheet | undefined {
     ...((vans.test(lineWords[0]!) || trims.some((word) => bodies.test(word))) && { onlyNamed: true }),
     years,
     ...(liters !== undefined && { engineLiters: liters }),
-    turbo: turboIn(title),
+    // The vans are all turbodiesel (or electric), which their titles do not always say ("FIAT DUCATO MAXI CARGO").
+    ...(!vans.test(lineWords[0]!) && { turbo: turboIn(title) }),
     electric,
     ...(/h[ií]brid|hybrid|mhev|phev/i.test(title) && { hybrid: true }),
     // "TD380", "Turbodiesel", "Multijet"; a flex or gasoline engine is not ("Hurricane", "T270").

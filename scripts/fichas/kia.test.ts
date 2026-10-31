@@ -56,11 +56,12 @@ describe("Kia's spec pages", () => {
       engineLiters: 1.6,
       electric: false,
       hybrid: true,
-      transmission: "automatico",
       // The combined power, the torque in kgm, the trunk with the seats up; not the pick-up time.
       specs: { powerCv: 141, torqueKgfm: 27, lengthMm: 4420, trunkLiters: 425, tankLiters: 42, zeroTo100s: 10.8 },
     });
+    // FIPE names the hybrids without their gearbox: left open.
     expect(ex?.turbo).toBeUndefined();
+    expect(ex?.transmission).toBeUndefined();
     expect(lists.map((list) => [list.title, list.groups])).toEqual([
       ["Niro · HEV EX", [{ name: "Conforto & Conveniência", items: ["Rodas de liga leve"] }]],
       ["Niro · HEV SX PRESTIGE", [{ name: "Conforto & Conveniência", items: ["Bancos dianteiros com ventilação", "Rodas de liga leve: aro 18”"] }]],

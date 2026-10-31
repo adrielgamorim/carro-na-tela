@@ -1,6 +1,595 @@
 {
- "_doc": "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia e da GWM (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
+ "_doc": "Números das fichas técnicas da Volkswagen, da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), lidos dos arquivos de data/fichas/vw, renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
  "sheets": [
+  {
+   "brand": "ford",
+   "line": "E-Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "electric": true,
+   "onlyNamed": true,
+   "title": "E-Transit Furgão · L3H3 350L",
+   "page": "https://www.ford.com.br/veiculos-comerciais/e-transit-furgao/compare-as-versoes/furgao-12-4-m3.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/e-transit-furgao/compare-as-versoes/furgao-12-4-m3.html",
+   "file": "ford/e-transit-furgao--furgao-12-4-m3.html",
+   "specs": {
+    "powerCv": 269,
+    "torqueKgfm": 43.8,
+    "weightKg": 2719,
+    "lengthMm": 5981,
+    "widthMm": 2059,
+    "heightMm": 2769,
+    "wheelbaseMm": 3750
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "F-150",
+   "trims": [
+    "lariat"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 5,
+   "electric": false,
+   "diesel": false,
+   "onlyNamed": true,
+   "title": "F-150 · Lariat",
+   "page": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat.html",
+   "url": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat.html",
+   "file": "ford/f-150--lariat.html",
+   "specs": {
+    "powerCv": 405,
+    "torqueKgfm": 56.7,
+    "weightKg": 2481,
+    "lengthMm": 5894,
+    "widthMm": 2089,
+    "heightMm": 1958,
+    "wheelbaseMm": 3694,
+    "tankLiters": 136
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "F-150",
+   "trims": [
+    "lariat",
+    "black"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 5,
+   "electric": false,
+   "diesel": false,
+   "onlyNamed": true,
+   "title": "F-150 · Lariat Black",
+   "page": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat-black.html",
+   "url": "https://www.ford.com.br/picapes/f-150/compare-as-versoes/lariat-black.html",
+   "file": "ford/f-150--lariat-black.html",
+   "specs": {
+    "powerCv": 405,
+    "torqueKgfm": 56.7,
+    "weightKg": 2481,
+    "lengthMm": 5894,
+    "heightMm": 1958,
+    "wheelbaseMm": 3694,
+    "tankLiters": 136
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "black"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · Black 2.0L 4x2 AT Diesel",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/black-2-0-diesel-4x2-at.html",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/black-2-0-diesel-4x2-at.html",
+   "file": "ford/ranger--black-2-0-diesel-4x2-at.html",
+   "specs": {
+    "powerCv": 170,
+    "torqueKgfm": 41.3,
+    "weightKg": 2069,
+    "lengthMm": 5370,
+    "heightMm": 1884,
+    "wheelbaseMm": 3270,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · Limited 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/limited-30-diesel-4wd-at-kit-opcional.html",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/limited-30-diesel-4wd-at-kit-opcional.html",
+   "file": "ford/ranger--limited-30-diesel-4wd-at-kit-opcional.html",
+   "specs": {
+    "powerCv": 250,
+    "torqueKgfm": 61.2,
+    "weightKg": 2357,
+    "lengthMm": 5370,
+    "heightMm": 1884,
+    "wheelbaseMm": 3270,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLS 2.0 Diesel 4x4 AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-2-0-diesel-4x4-at.html",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-2-0-diesel-4x4-at.html",
+   "file": "ford/ranger--xls-2-0-diesel-4x4-at.html",
+   "specs": {
+    "powerCv": 170,
+    "torqueKgfm": 41.3,
+    "weightKg": 2183,
+    "lengthMm": 5370,
+    "heightMm": 1884,
+    "wheelbaseMm": 3270,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xls"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLS 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at.html",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at.html",
+   "file": "ford/ranger--xls-3-0-diesel-4wd-at.html",
+   "specs": {
+    "powerCv": 250,
+    "torqueKgfm": 61.2,
+    "weightKg": 2266,
+    "lengthMm": 5370,
+    "heightMm": 1884,
+    "wheelbaseMm": 3270,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Ranger",
+   "trims": [
+    "xlt"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 3,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Ranger · XLT 3.0 V6 Diesel 4WD AT",
+   "page": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xlt-30-diesel-4wd-at.html",
+   "url": "https://www.ford.com.br/picapes/ranger/compare-as-versoes/xlt-30-diesel-4wd-at.html",
+   "file": "ford/ranger--xlt-30-diesel-4wd-at.html",
+   "specs": {
+    "powerCv": 250,
+    "torqueKgfm": 61.2,
+    "weightKg": 2283,
+    "lengthMm": 5370,
+    "heightMm": 1884,
+    "wheelbaseMm": 3270,
+    "tankLiters": 80
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Chassi",
+   "trims": [
+    "350e"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Chassi · 350E MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/350e-mt.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/350e-mt.html",
+   "file": "ford/transit-chassi--350e-mt.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2099,
+    "lengthMm": 6579,
+    "widthMm": 2111,
+    "heightMm": 2215,
+    "wheelbaseMm": 3954,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Chassi",
+   "trims": [
+    "470e"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Chassi · 470E MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/470e-mt.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-chassi/compare-as-versoes/470e-mt.html",
+   "file": "ford/transit-chassi--470e-mt.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2099,
+    "lengthMm": 6579,
+    "widthMm": 2111,
+    "heightMm": 2215,
+    "wheelbaseMm": 3954,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "medio"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L2H3 350M AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3-at.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3-at.html",
+   "file": "ford/transit-furgao--furgao-l2h3-at.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2273,
+    "lengthMm": 5531,
+    "widthMm": 2059,
+    "heightMm": 2771,
+    "wheelbaseMm": 3300,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "medio"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L2H3 350M MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l2h3.html",
+   "file": "ford/transit-furgao--furgao-l2h3.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2246,
+    "lengthMm": 5531,
+    "widthMm": 2059,
+    "heightMm": 2771,
+    "wheelbaseMm": 3300,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L3H3 350L AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3-at.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3-at.html",
+   "file": "ford/transit-furgao--furgao-l3h3-at.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2349,
+    "lengthMm": 5531,
+    "widthMm": 2059,
+    "heightMm": 2771,
+    "wheelbaseMm": 3300,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Furgão",
+   "trims": [
+    "longo"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Furgão · L3H3 350L MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-furgao/compare-as-versoes/furgao-l3h3.html",
+   "file": "ford/transit-furgao--furgao-l3h3.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2319,
+    "lengthMm": 5531,
+    "widthMm": 2059,
+    "heightMm": 2771,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "15"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L 14+1 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14-at.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14-at.html",
+   "file": "ford/transit-minibus--minibus-14-at.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2828,
+    "lengthMm": 5981,
+    "widthMm": 2059,
+    "heightMm": 2547,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "15"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L 14+1 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-14.html",
+   "file": "ford/transit-minibus--minibus-14.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2779,
+    "lengthMm": 5981,
+    "widthMm": 2059,
+    "heightMm": 2547,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "vidrada"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 410L L3H2 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada.html",
+   "file": "ford/transit-minibus--minibus-vidrada.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2336,
+    "lengthMm": 5981,
+    "widthMm": 2059,
+    "heightMm": 2547,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "18"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 460E 17+1 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17-at.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17-at.html",
+   "file": "ford/transit-minibus--minibus-17-at.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 3244,
+    "lengthMm": 6704,
+    "widthMm": 2126,
+    "heightMm": 2781,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "18"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "manual",
+   "onlyNamed": true,
+   "title": "Transit Minibus · 460E 17+1 MT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-17.html",
+   "file": "ford/transit-minibus--minibus-17.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 3186,
+    "lengthMm": 6704,
+    "widthMm": 2126,
+    "heightMm": 2781,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
+  {
+   "brand": "ford",
+   "line": "Transit Minibus",
+   "trims": [
+    "vidrada"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 2,
+   "electric": false,
+   "diesel": true,
+   "transmission": "automatico",
+   "onlyNamed": true,
+   "title": "Transit Minibus · Vidrada 410L L3H2 AT",
+   "page": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada-at.html",
+   "url": "https://www.ford.com.br/veiculos-comerciais/transit-minibus/compare-as-versoes/minibus-vidrada-at.html",
+   "file": "ford/transit-minibus--minibus-vidrada-at.html",
+   "specs": {
+    "powerCv": 165,
+    "torqueKgfm": 39.7,
+    "weightKg": 2376,
+    "lengthMm": 5981,
+    "widthMm": 2059,
+    "heightMm": 2547,
+    "wheelbaseMm": 3750,
+    "tankLiters": 71
+   }
+  },
   {
    "brand": "gwm",
    "line": "Haval H9",
@@ -1894,6 +2483,7 @@
    "engineLiters": 1.6,
    "turbo": true,
    "electric": false,
+   "transmission": "automatico",
    "title": "Creta 2025 · Creta",
    "page": "https://web.archive.org/web/20250723215913/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf",
    "url": "https://web.archive.org/web/20250723215913/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/Catalogo_Digital_Novo_Hyundai_CRETA_2425_2.pdf",
@@ -2058,6 +2648,7 @@
    "engineLiters": 1,
    "turbo": true,
    "electric": false,
+   "transmission": "automatico",
    "title": "Creta 2026 · Creta",
    "page": "https://web.archive.org/web/20251009090610/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf",
    "url": "https://web.archive.org/web/20251009090610/https://www.hyundai.com.br/content/dam/hmb/product/creta/creta2025/catalogo/catalogo_digital_Novo_CRETA_MY25_26.pdf",
@@ -2115,6 +2706,7 @@
    "engineLiters": 1,
    "turbo": true,
    "electric": false,
+   "transmission": "automatico",
    "title": "Creta 2026 · Creta ultimate",
    "page": "https://web.archive.org/web/20261014205403/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf",
    "url": "https://web.archive.org/web/20261014205403/https://www.hyundai.com.br/content/dam/hmb/download-manuais/creta_25-26/Catalogo_Digital_-_Novo_CRETA_Ultimate_MY_25-26.pdf",
@@ -3467,6 +4059,495 @@
     "tankLiters": 80,
     "topSpeedKmh": 201,
     "zeroTo100s": 9.7
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "active"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Active",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1139,
+    "lengthMm": 4304,
+    "widthMm": 1760,
+    "heightMm": 1611,
+    "wheelbaseMm": 2620,
+    "groundClearanceMm": 200,
+    "trunkLiters": 432,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Advance",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1139,
+    "lengthMm": 4304,
+    "widthMm": 1760,
+    "heightMm": 1611,
+    "wheelbaseMm": 2620,
+    "groundClearanceMm": 200,
+    "trunkLiters": 432,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Exclusive",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1157,
+    "lengthMm": 4304,
+    "widthMm": 1760,
+    "heightMm": 1611,
+    "wheelbaseMm": 2620,
+    "groundClearanceMm": 200,
+    "trunkLiters": 432,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kait",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kait · Sense",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kait/compare.html",
+   "file": "nissan/kait.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1139,
+    "lengthMm": 4304,
+    "widthMm": 1760,
+    "heightMm": 1611,
+    "wheelbaseMm": 2620,
+    "groundClearanceMm": 200,
+    "trunkLiters": 432,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Advance 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1333,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Advance 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1333,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Exclusive 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1366,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Exclusive 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1366,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Platinum 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1366,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "platinum"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Platinum 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1366,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Sense 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/kicks-my26/compare.html",
+   "file": "nissan/kicks-my26.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1322,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Kicks",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": true,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Kicks · Sense 220T",
+   "page": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/novo-kicks/compare.html",
+   "file": "nissan/novo-kicks.html",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 22.4,
+    "weightKg": 1322,
+    "lengthMm": 4365,
+    "widthMm": 1800,
+    "heightMm": 1625,
+    "wheelbaseMm": 2655,
+    "groundClearanceMm": 200,
+    "trunkLiters": 470,
+    "tankLiters": 48
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "advance"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Advance CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1122.4,
+    "lengthMm": 4495,
+    "widthMm": 1740,
+    "heightMm": 1465,
+    "wheelbaseMm": 2620,
+    "trunkLiters": 482,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "exclusive"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Exclusive CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1139,
+    "lengthMm": 4495,
+    "widthMm": 1740,
+    "heightMm": 1475,
+    "wheelbaseMm": 2620,
+    "trunkLiters": 482,
+    "tankLiters": 41
+   }
+  },
+  {
+   "brand": "nissan",
+   "line": "Versa",
+   "trims": [
+    "sense"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "electric": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "title": "Versa · 1.6 Sense CVT",
+   "page": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "url": "https://www.nissan.com.br/veiculos/modelos/versa/compare.html",
+   "file": "nissan/versa.html",
+   "specs": {
+    "powerCv": 113,
+    "torqueKgfm": 15.2,
+    "weightKg": 1105.4,
+    "lengthMm": 4495,
+    "widthMm": 1740,
+    "heightMm": 1465,
+    "wheelbaseMm": 2620,
+    "trunkLiters": 466,
+    "tankLiters": 41
    }
   },
   {

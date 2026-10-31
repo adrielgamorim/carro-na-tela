@@ -90,6 +90,7 @@ export function kiaSpecPage(specHtml: string, names: Map<string, string>, source
     const transmission = transmissionIn(valueOf(/^transmissao tipo|^relacao de transmissao/));
     const engineLiters = litersOf(`${valueOf(/^cilindrada/)} cm³`) ?? litersOf(engine);
     const electric = /el[eé]tric/i.test(engine);
+    const hybrid = /\bm?hev\b|h[ií]brid/i.test(`${engine} ${name}`);
     const key = {
       brand: "kia" as const,
       line,
@@ -99,9 +100,10 @@ export function kiaSpecPage(specHtml: string, names: Map<string, string>, source
       // Diesels are all turbo, which FIPE does not always write ("Sorento EX 2.2 16V 4x4 Aut. Diesel"): left open.
       ...(turboIn(engine) && !/diesel/i.test(fuel) && { turbo: true }),
       electric,
-      ...(/\bm?hev\b|h[ií]brid/i.test(`${engine} ${name}`) && { hybrid: true }),
+      ...(hybrid && { hybrid: true }),
       ...(fuel && { diesel: /diesel/i.test(fuel) }),
-      ...(transmission && { transmission }),
+      // Nor the hybrids' gearbox: "Niro EX 1.6 GDI (Híbrido)".
+      ...(transmission && !hybrid && { transmission }),
       ...(!trims.length && { base: true }),
     };
     const title = `${line} · ${rest.join(" ") || code}`;

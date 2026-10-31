@@ -37,4 +37,16 @@ describe("Stellantis sheets matched the open way", () => {
     expect(stellantisAsOpen(sheet({ pageTitle: "Fiat Ducato MY26", title: "FIAT DUCATO MINIBUS LUXO" }))?.onlyNamed).toBe(true);
     expect(stellantisAsOpen(sheet({ title: "FIAT TORO ENDURANCE TURBO 270 FLEX AT6" }))?.onlyNamed).toBeUndefined();
   });
+
+  it("joins a van's words the PDF split, and leaves its turbo open", () => {
+    const jumper = stellantisAsOpen(sheet({ brand: "citroen", pageTitle: "Citroën Jumper 2018 a 2023", title: "Citroën Jumper 2.2 16V C argo L 3 H 2" }))!;
+    expect(jumper).toMatchObject({ line: "jumper", trims: ["cargo", "l3h2"], engineLiters: 2.2 });
+    // All turbodiesel; "FIAT DUCATO MAXI CARGO" says neither, FIPE writes "Turbo" for some.
+    expect(jumper.turbo).toBeUndefined();
+    expect(stellantisAsOpen(sheet({ pageTitle: "Fiat Ducato MY26", title: "FIAT DUCATO MAXI CARGO" }))?.trims).toEqual(["maxicargo"]);
+    expect(stellantisAsOpen(sheet({ brand: "peugeot", pageTitle: "Peugeot Expert", modelYear: 2025, title: "Peugeot Expert 2.2 Turbo d iesel Vitr é" }))).toMatchObject({
+      trims: ["vitre"],
+      diesel: true,
+    });
+  });
 });

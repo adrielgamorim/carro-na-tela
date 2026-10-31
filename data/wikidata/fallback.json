@@ -751,7 +751,6 @@
    "license": "CC BY-SA 2.0"
   }
  },
- "RAM\nDAKOTA": null,
  "Renault\nOROCH": {
   "id": "wikipedia:pt:Renault Oroch",
   "label": "Renault Oroch",
@@ -1324,6 +1323,278 @@
    "license": "CC BY-SA 4.0"
   }
  },
+ "RAM\nDAKOTA": {
+  "id": "commons:Ram Dakota South America front left 1 - Autosdeprimera.jpg",
+  "label": "RAM DAKOTA",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Ram_Dakota_South_America_front_left_1_-_Autosdeprimera.jpg/500px-Ram_Dakota_South_America_front_left_1_-_Autosdeprimera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Ram_Dakota_South_America_front_left_1_-_Autosdeprimera.jpg",
+   "artist": "https://www.youtube.com/@AutosdeprimeraYT",
+   "license": "CC BY 4.0"
+  }
+ },
+ "Chrysler\nCaravan": {
+  "id": "commons:Chrysler Grand Caravan -- Rear.jpg",
+  "label": "Chrysler Caravan",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Chrysler_Grand_Caravan_--_Rear.jpg/500px-Chrysler_Grand_Caravan_--_Rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chrysler_Grand_Caravan_--_Rear.jpg",
+   "artist": "Bull-Doser",
+   "license": "Public domain"
+  }
+ },
+ "Chrysler\nGrand Caravan": {
+  "id": "commons:Chrysler Grand Caravan -- Rear.jpg",
+  "label": "Chrysler Grand Caravan",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Chrysler_Grand_Caravan_--_Rear.jpg/500px-Chrysler_Grand_Caravan_--_Rear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chrysler_Grand_Caravan_--_Rear.jpg",
+   "artist": "Bull-Doser",
+   "license": "Public domain"
+  }
+ },
+ "Cross Lander\nCL-244": null,
+ "Cross Lander\nCL-330": null,
+ "Mercedes-Benz\nE-55": {
+  "id": "commons:Mercedes-Benz E 55 AMG (S210) IMG 7406.jpg",
+  "label": "Mercedes-Benz E-55",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Mercedes-Benz_E_55_AMG_%28S210%29_IMG_7406.jpg/500px-Mercedes-Benz_E_55_AMG_%28S210%29_IMG_7406.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E_55_AMG_(S210)_IMG_7406.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Matra\nPick-Up": null,
+ "VW - VolksWagen\nGrand Saveiro": {
+  "id": "wikipedia:pt:Volkswagen Saveiro",
+  "label": "Volkswagen Saveiro",
+  "description": "O Volkswagen Saveiro é um utilitário leve derivado da linha Gol, fabricado pela Volkswagen desde 1982.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Volkswagen_Saveiro",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Volkswagen_Saveiro_Mk8_Double_Cab_base_black_in_Maldonado_-_front.jpg/500px-Volkswagen_Saveiro_Mk8_Double_Cab_base_black_in_Maldonado_-_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Saveiro_Mk8_Double_Cab_base_black_in_Maldonado_-_front.jpg",
+   "artist": "NaBUru38",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "VW - VolksWagen\nPolo": {
+  "id": "wikipedia:pt:Volkswagen Polo",
+  "label": "Volkswagen Polo",
+  "description": "O Volkswagen Polo é um automóvel fabricado pela Volkswagen no Brasil desde 2002, e na Alemanha desde 1974.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Volkswagen_Polo",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg/500px-Volkswagen_Polo_VI_GTI_%282021%29_1X7A0344.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Volkswagen_Polo_VI_GTI_(2021)_1X7A0344.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "VW - VolksWagen\nVan": null,
+ "Ferrari\n456": {
+  "id": "wikipedia:pt:Ferrari 456",
+  "label": "Ferrari 456",
+  "description": "A 456 é um automóvel grand tourer da Ferrari. Equipado com motor V12, teve duas versões bases: a primeira, produzida até 1997, denominada apenas 456 e uma segunda versão, denominada 456M, produzida de 1998 a 2003, onde sofreu pequenas alterações mecânicas e principalmente estéticas, perdendo inclusive as características entradas de ar do capô frontal.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Ferrari_456",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/1996_Ferrari_456_5.5.jpg/500px-1996_Ferrari_456_5.5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1996_Ferrari_456_5.5.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "JPX\nJipe": null,
+ "JPX\nPicape": null,
+ "Toyota\nBand.Jipe": {
+  "id": "wikipedia:pt:Toyota Bandeirante",
+  "label": "Toyota Bandeirante",
+  "description": "Toyota Bandeirante é um modelo de automóvel de tração nas quatro rodas da montadora japonesa Toyota, sendo encontrado como jipe curto ou longo, camionete e caminhão pequeno. Em outros países também é conhecido como série 40 da linha Land Cruiser.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Toyota_Bandeirante",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Toyota_Bandeirante_IBGE.JPG/500px-Toyota_Bandeirante_IBGE.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Bandeirante_IBGE.JPG",
+   "artist": "Pedro Spoladore",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Toyota\nBand.Picape": null,
+ "Troller\nRF": null,
+ "AM Gen\nHummer": null,
+ "Jaguar\nDaimler": {
+  "id": "commons:Daimler Sovereign - Jaguar 420.jpg",
+  "label": "Jaguar Daimler",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Daimler_Sovereign_-_Jaguar_420.jpg/500px-Daimler_Sovereign_-_Jaguar_420.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Daimler_Sovereign_-_Jaguar_420.jpg",
+   "artist": "Steepwiki",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Mazda\nProtegé": {
+  "id": "commons:Mazda 323 Protegé LX sedan (2003), Toronto, Canada - 20110929.jpg",
+  "label": "Mazda Protegé",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Mazda_323_Proteg%C3%A9_LX_sedan_%282003%29%2C_Toronto%2C_Canada_-_20110929.jpg/500px-Mazda_323_Proteg%C3%A9_LX_sedan_%282003%29%2C_Toronto%2C_Canada_-_20110929.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mazda_323_Proteg%C3%A9_LX_sedan_(2003)%2C_Toronto%2C_Canada_-_20110929.jpg",
+   "artist": "Katarighe.",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Mazda\nB-2500": {
+  "id": "commons:Mazda B 2500.JPG",
+  "label": "Mazda B-2500",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Mazda_B_2500.JPG/500px-Mazda_B_2500.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mazda_B_2500.JPG",
+   "artist": "User:Mattes",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Asia Motors\nTowner": null,
+ "Asia Motors\nTopic": null,
+ "GM - Chevrolet\nTigra": {
+  "id": "commons:Chevrolte tigra with chevrolet emblem.jpg",
+  "label": "Chevrolet Tigra",
+  "image": {
+   "thumb": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Chevrolte_tigra_with_chevrolet_emblem.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+   "page": "https://commons.wikimedia.org/wiki/File:Chevrolte_tigra_with_chevrolet_emblem.jpg",
+   "artist": "Loudenvier at English Wikipedia",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Toyota\nBand.": {
+  "id": "wikipedia:pt:Toyota Bandeirante",
+  "label": "Toyota Bandeirante",
+  "description": "Toyota Bandeirante é um modelo de automóvel de tração nas quatro rodas da montadora japonesa Toyota, sendo encontrado como jipe curto ou longo, camionete e caminhão pequeno. Em outros países também é conhecido como série 40 da linha Land Cruiser.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Toyota_Bandeirante",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Toyota_Bandeirante_IBGE.JPG/500px-Toyota_Bandeirante_IBGE.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Toyota_Bandeirante_IBGE.JPG",
+   "artist": "Pedro Spoladore",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Asia Motors\nAM-825": null,
+ "Asia Motors\nHi-Topic": null,
+ "GM - Chevrolet\nIpanema": {
+  "id": "wikipedia:pt:Chevrolet Ipanema",
+  "label": "Chevrolet Ipanema",
+  "description": "A Ipanema é um automóvel, do tipo station wagon, fabricado pela General Motors.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Chevrolet_Ipanema",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Chevrolet_Ipanema_SL_20150731-DSC_0067.JPG/500px-Chevrolet_Ipanema_SL_20150731-DSC_0067.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chevrolet_Ipanema_SL_20150731-DSC_0067.JPG",
+   "artist": "Matti Blume",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "GM - Chevrolet\nSpaceVan": null,
+ "GM - Chevrolet\nTrafic": null,
+ "Hyundai\nCupê": null,
+ "Nissan\nPick-Up": {
+  "id": "commons:2016 D22 Nissan Pick up Rear Bahrain.jpg",
+  "label": "Nissan Pick-Up",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/2016_D22_Nissan_Pick_up_Rear_Bahrain.jpg/500px-2016_D22_Nissan_Pick_up_Rear_Bahrain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2016_D22_Nissan_Pick_up_Rear_Bahrain.jpg",
+   "artist": "https://sayartii.com/BH/l/plx-199",
+   "license": "CC0"
+  }
+ },
+ "Land Rover\nNew Range/Range": {
+  "id": "wikipedia:en:Range Rover",
+  "label": "Range Rover",
+  "wikipedia": "https://en.wikipedia.org/wiki/Range_Rover",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2022_Land_Rover_Range_Rover_SE_P440e_AWD_Automatic_3.0_Front.jpg/500px-2022_Land_Rover_Range_Rover_SE_P440e_AWD_Automatic_3.0_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2022_Land_Rover_Range_Rover_SE_P440e_AWD_Automatic_3.0_Front.jpg",
+   "artist": "Vauxford",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Miura\nPicape": null,
+ "Envemo\nCamper": {
+  "id": "wikipedia:pt:Envemo Camper",
+  "label": "Envemo Camper",
+  "description": "O Camper foi um automóvel SUV brasileiro, produzido pela empresa Envemo, entre 1989 e 1995. Foi desenvolvido com base no desenho do Jeep Cherokee Sport de primeira geração e utilizando o chassi do jipe Engesa 4.9L Q20B4 Perkins diesel.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Envemo_Camper",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Envemo_Camper_1992.jpg/500px-Envemo_Camper_1992.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Envemo_Camper_1992.jpg",
+   "artist": "Tiorico",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Envemo\nMaster": null,
+ "Fiat\nUno": {
+  "id": "wikipedia:pt:Fiat Uno",
+  "label": "Fiat Uno",
+  "description": "O Fiat Uno é um modelo de automóvel do tipo hatch compacto fabricado pela Fiat. Foi lançado na Europa em 1983 e, no ano seguinte, no Brasil. Em 2010 foi lançada sua segunda geração destinada à América Latina. O nome é uma referência ao número um em italiano.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Fiat_Uno",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Fiat_Uno_front_20070829.jpg/500px-Fiat_Uno_front_20070829.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Fiat_Uno_front_20070829.jpg",
+   "artist": "Rudolf Stricker",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Ford\nRoyale": {
+  "id": "commons:1931 Bugatti Type 41 Royale - The Henry Ford - Engines Exposed Exhibit 2-22-2016 (6) (31341825553).jpg",
+  "label": "Ford Royale",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/1931_Bugatti_Type_41_Royale_-_The_Henry_Ford_-_Engines_Exposed_Exhibit_2-22-2016_%286%29_%2831341825553%29.jpg/500px-1931_Bugatti_Type_41_Royale_-_The_Henry_Ford_-_Engines_Exposed_Exhibit_2-22-2016_%286%29_%2831341825553%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1931_Bugatti_Type_41_Royale_-_The_Henry_Ford_-_Engines_Exposed_Exhibit_2-22-2016_(6)_(31341825553).jpg",
+   "artist": "Joe Ross from Lansing, Michigan",
+   "license": "CC BY-SA 2.0"
+  }
+ },
+ "GM - Chevrolet\nSS10": null,
+ "GM - Chevrolet\nSuprema": null,
+ "GM - Chevrolet\nVeraneio": null,
+ "Mercedes-Benz\n180-D": {
+  "id": "commons:Mercedes-Benz 180 D (2012-08-19 Sp).JPG",
+  "label": "Mercedes-Benz 180-D",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Mercedes-Benz_180_D_%282012-08-19_Sp%29.JPG/500px-Mercedes-Benz_180_D_%282012-08-19_Sp%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_180_D_(2012-08-19_Sp).JPG",
+   "artist": "Lothar Spurzem",
+   "license": "CC BY-SA 2.0 de"
+  }
+ },
+ "Nissan\nAX": {
+  "id": "commons:Nissan Terrano AX 2005 (40456727264).jpg",
+  "label": "Nissan AX",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Nissan_Terrano_AX_2005_%2840456727264%29.jpg/500px-Nissan_Terrano_AX_2005_%2840456727264%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Nissan_Terrano_AX_2005_(40456727264).jpg",
+   "artist": "RL GNZLZ from Chile",
+   "license": "CC BY-SA 2.0"
+  }
+ },
+ "Asia Motors\nJipe": null,
+ "CBT Jipe\nJavali": null,
+ "Chrysler\nVision": {
+  "id": "commons:1995 Chrysler Vision (3629909168).jpg",
+  "label": "Chrysler Vision",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/1995_Chrysler_Vision_%283629909168%29.jpg/500px-1995_Chrysler_Vision_%283629909168%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1995_Chrysler_Vision_(3629909168).jpg",
+   "artist": "Spanish Coches",
+   "license": "CC BY 2.0"
+  }
+ },
+ "Daewoo\nRacer": {
+  "id": "commons:Daewoo Racer Fliessheck.jpg",
+  "label": "Daewoo Racer",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Daewoo_Racer_Fliessheck.jpg/500px-Daewoo_Racer_Fliessheck.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Daewoo_Racer_Fliessheck.jpg",
+   "artist": "Renegate98 at German Wikipedia",
+   "license": "Public domain"
+  }
+ },
+ "Ford\nIbiza": null,
+ "GM - Chevrolet\nBrasinca": null,
  "BYD\neT3": {
   "id": "wikipedia:en:BYD M3",
   "label": "BYD M3",
@@ -1343,6 +1614,259 @@
    "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
    "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
    "artist": "Navigator84",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "GM - Chevrolet\nCheynne": null,
+ "GM - Chevrolet\nSaturn": null,
+ "GM - Chevrolet\nSierra": null,
+ "GM - Chevrolet\nSonoma": {
+  "id": "commons:1961 Chevrolet Corvette - 2015 Sonoma - Sarah Stierch.jpg",
+  "label": "Chevrolet Sonoma",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/1961_Chevrolet_Corvette_-_2015_Sonoma_-_Sarah_Stierch.jpg/500px-1961_Chevrolet_Corvette_-_2015_Sonoma_-_Sarah_Stierch.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1961_Chevrolet_Corvette_-_2015_Sonoma_-_Sarah_Stierch.jpg",
+   "artist": "SarahStierch",
+   "license": "CC BY 4.0"
+  }
+ },
+ "Lada\nLaika": null,
+ "Mazda\nB2200": {
+  "id": "commons:1989 Mazda B2200 Cab Plus.jpg",
+  "label": "Mazda B2200",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/1989_Mazda_B2200_Cab_Plus.jpg/500px-1989_Mazda_B2200_Cab_Plus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1989_Mazda_B2200_Cab_Plus.jpg",
+   "artist": "Shervin Nakhjavani",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\nClassic": {
+  "id": "commons:Mercedes-Benz W112C Classic-Gala 2021 1X7A0199.jpg",
+  "label": "Mercedes-Benz Classic",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Mercedes-Benz_W112C_Classic-Gala_2021_1X7A0199.jpg/500px-Mercedes-Benz_W112C_Classic-Gala_2021_1X7A0199.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_W112C_Classic-Gala_2021_1X7A0199.jpg",
+   "artist": "Alexander Migl",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Nissan\nKing-Cab": {
+  "id": "commons:2014 Nissan Frontier SV V6 4x4 King Cab, rear left, 12-01-2022.jpg",
+  "label": "Nissan King-Cab",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/2014_Nissan_Frontier_SV_V6_4x4_King_Cab%2C_rear_left%2C_12-01-2022.jpg/500px-2014_Nissan_Frontier_SV_V6_4x4_King_Cab%2C_rear_left%2C_12-01-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2014_Nissan_Frontier_SV_V6_4x4_King_Cab%2C_rear_left%2C_12-01-2022.jpg",
+   "artist": "MercurySable99",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Plymouth\nGran Voyager": {
+  "id": "wikipedia:en:Plymouth Voyager",
+  "label": "Plymouth Voyager",
+  "wikipedia": "https://en.wikipedia.org/wiki/Plymouth_Voyager",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/3rd_Plymouth_Grand_Voyager.jpg/500px-3rd_Plymouth_Grand_Voyager.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:3rd_Plymouth_Grand_Voyager.jpg",
+   "artist": "IFCAR",
+   "license": "Public domain"
+  }
+ },
+ "Suzuki\nSuper": {
+  "id": "commons:2026 Suzuki Super Carry X Limited.jpg",
+  "label": "Suzuki Super",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/2026_Suzuki_Super_Carry_X_Limited.jpg/500px-2026_Suzuki_Super_Carry_X_Limited.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:2026_Suzuki_Super_Carry_X_Limited.jpg",
+   "artist": "TTTNIS",
+   "license": "CC0"
+  }
+ },
+ "Engesa\nEngesa": null,
+ "GM - Chevrolet\nBonanza": {
+  "id": "commons:1980 Chevrolet C10 Bonanza 8' Fleetside, front left, 07-18-2024.jpg",
+  "label": "Chevrolet Bonanza",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/1980_Chevrolet_C10_Bonanza_8%27_Fleetside%2C_front_left%2C_07-18-2024.jpg/500px-1980_Chevrolet_C10_Bonanza_8%27_Fleetside%2C_front_left%2C_07-18-2024.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1980_Chevrolet_C10_Bonanza_8'_Fleetside%2C_front_left%2C_07-18-2024.jpg",
+   "artist": "MercurySable99",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Gurgel\nCarajas/Tocantis/Xavante/Vip": null,
+ "Mercedes-Benz\n500-SEC/": {
+  "id": "commons:Mercedes-Benz 500 SEC, EMS 2023, Essen (P1160549).jpg",
+  "label": "Mercedes-Benz 500-SEC/",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Mercedes-Benz_500_SEC%2C_EMS_2023%2C_Essen_%28P1160549%29.jpg/500px-Mercedes-Benz_500_SEC%2C_EMS_2023%2C_Essen_%28P1160549%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_500_SEC%2C_EMS_2023%2C_Essen_(P1160549).jpg",
+   "artist": "MB-one",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Nissan\nZX": {
+  "id": "wikipedia:en:Nissan GTP ZX-Turbo",
+  "label": "Nissan GTP ZX-Turbo",
+  "wikipedia": "https://en.wikipedia.org/wiki/Nissan_GTP_ZX-Turbo",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Nissan_GTP_ZX-Turbo_rollout.jpg/500px-Nissan_GTP_ZX-Turbo_rollout.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Nissan_GTP_ZX-Turbo_rollout.jpg",
+   "artist": "The359",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\n230-E": {
+  "id": "commons:Mercedes-Benz 230 G, Techno-Classica 2018, Essen (IMG 9831).jpg",
+  "label": "Mercedes-Benz 230-E",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Mercedes-Benz_230_G%2C_Techno-Classica_2018%2C_Essen_%28IMG_9831%29.jpg/500px-Mercedes-Benz_230_G%2C_Techno-Classica_2018%2C_Essen_%28IMG_9831%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_230_G%2C_Techno-Classica_2018%2C_Essen_(IMG_9831).jpg",
+   "artist": "Matti Blume",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\n260-E": {
+  "id": "commons:1988 Mercedes-Benz 260 E (W124) (51260430067).jpg",
+  "label": "Mercedes-Benz 260-E",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/1988_Mercedes-Benz_260_E_%28W124%29_%2851260430067%29.jpg/500px-1988_Mercedes-Benz_260_E_%28W124%29_%2851260430067%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1988_Mercedes-Benz_260_E_(W124)_(51260430067).jpg",
+   "artist": "Rutger van der Maar",
+   "license": "CC BY 2.0"
+  }
+ },
+ "Mercedes-Benz\n300-SE": {
+  "id": "wikipedia:pt:Mercedes-Benz 300 SLR",
+  "label": "Mercedes-Benz 300 SLR",
+  "description": "O Mercedes-Benz 300 SLR (W196S) é um carro de corrida com dois assentos que foi fabricado pela Mercedes-Benz no ano 1955. A sigla SLR de seu nome significa Sport Leicht-Rennen; desportivo-competição superleve. O desenvolvimento do 300 SLR foi amplamente influenciado pelo Mercedes-Benz 300 SL.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Mercedes-Benz_300_SLR",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Mercedes-Benz_300_SLR_1955.jpg/500px-Mercedes-Benz_300_SLR_1955.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_300_SLR_1955.jpg",
+   "artist": "LSDSL",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "Mercedes-Benz\n500-SEL": {
+  "id": "commons:MERCEDES-BENZ 500 SEL (W126) China.jpg",
+  "label": "Mercedes-Benz 500-SEL",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/MERCEDES-BENZ_500_SEL_%28W126%29_China.jpg/500px-MERCEDES-BENZ_500_SEL_%28W126%29_China.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:MERCEDES-BENZ_500_SEL_(W126)_China.jpg",
+   "artist": "Dinkun Chen",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Mercedes-Benz\nSE-500": {
+  "id": "wikipedia:pt:Mercedes-Benz O-500",
+  "label": "Mercedes-Benz O-500",
+  "description": "Mercedes-Benz O-500 é uma série de chassis encarroçáveis com motor traseiro e suspensão 100% pneumática. É construída no Brasil pela Mercedes-Benz do Brasil desde 2001.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Mercedes-Benz_O-500",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/%C3%94nibus_da_Via%C3%A7%C3%A3o_Unida_em_Coronel_Fabriciano_MG.JPG/500px-%C3%94nibus_da_Via%C3%A7%C3%A3o_Unida_em_Coronel_Fabriciano_MG.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%94nibus_da_Via%C3%A7%C3%A3o_Unida_em_Coronel_Fabriciano_MG.JPG",
+   "artist": "HVL",
+   "license": "CC BY 4.0"
+  }
+ },
+ "Mitsubishi\nDiamant": {
+  "id": "wikipedia:pt:Mitsubishi Diamante",
+  "label": "Mitsubishi Diamante",
+  "description": "O Mitsubishi Diamante é um sedan de porte grande fabricado pela Mitsubishi Motors entre 1990 e 2005.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Mitsubishi_Diamante",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Mitsubishi_diamante_f31a_25v_1_f.jpg/500px-Mitsubishi_diamante_f31a_25v_1_f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Mitsubishi_diamante_f31a_25v_1_f.jpg",
+   "artist": "Toyotacoronaexsaloon",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Nissan\nSX": {
+  "id": "commons:Nissan 200 SX Boss, EMS 23, Essen (P1170083).jpg",
+  "label": "Nissan SX",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Nissan_200_SX_Boss%2C_EMS_23%2C_Essen_%28P1170083%29.jpg/500px-Nissan_200_SX_Boss%2C_EMS_23%2C_Essen_%28P1170083%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Nissan_200_SX_Boss%2C_EMS_23%2C_Essen_(P1170083).jpg",
+   "artist": "MB-one",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "GM - Chevrolet\nCaravan": {
+  "id": "commons:Chevrolet Opala Caravan late.jpg",
+  "label": "Chevrolet Caravan",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Chevrolet_Opala_Caravan_late.jpg/500px-Chevrolet_Opala_Caravan_late.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chevrolet_Opala_Caravan_late.jpg",
+   "artist": "Bruno Kussler Marques from Uberlandia, Brazil;cropped and lightly adjusted by uploader Mr.choppers",
+   "license": "CC BY 2.0"
+  }
+ },
+ "GM - Chevrolet\nSyclone": null,
+ "Mercedes-Benz\n560-SEL": {
+  "id": "commons:1989 Mercedes-Benz 560 SEL (V 126) sedan (23213887641).jpg",
+  "label": "Mercedes-Benz 560-SEL",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/1989_Mercedes-Benz_560_SEL_%28V_126%29_sedan_%2823213887641%29.jpg/500px-1989_Mercedes-Benz_560_SEL_%28V_126%29_sedan_%2823213887641%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:1989_Mercedes-Benz_560_SEL_(V_126)_sedan_(23213887641).jpg",
+   "artist": "Jeremy from Sydney, Australia",
+   "license": "CC BY 2.0"
+  }
+ },
+ "Nissan\nInfinit": null,
+ "Saturn\nSL-2": {
+  "id": "commons:00-02 Saturn SL 2.jpg",
+  "label": "Saturn SL-2",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/00-02_Saturn_SL_2.jpg/500px-00-02_Saturn_SL_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:00-02_Saturn_SL_2.jpg",
+   "artist": "IFCAR",
+   "license": "Public domain"
+  }
+ },
+ "VW - VolksWagen\nApolo": {
+  "id": "commons:Transportes Carmelo S.A. 261025 Modasa Apolo 10 Volkswagen 10.160 OD.jpg",
+  "label": "Volkswagen Apolo",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Transportes_Carmelo_S.A._261025_Modasa_Apolo_10_Volkswagen_10.160_OD.jpg/500px-Transportes_Carmelo_S.A._261025_Modasa_Apolo_10_Volkswagen_10.160_OD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Transportes_Carmelo_S.A._261025_Modasa_Apolo_10_Volkswagen_10.160_OD.jpg",
+   "artist": "Fabco09",
+   "license": "CC BY 4.0"
+  }
+ },
+ "Ford\nFurglaine": null,
+ "GM - Chevrolet\nA-10": {
+  "id": "wikipedia:pt:Chevrolet Série 10",
+  "label": "Chevrolet Série 10",
+  "description": "A Chevrolet Série 10 é a segunda linha de picapes que a General Motors produziu no Brasil, de 1964 a 1997.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Chevrolet_S%C3%A9rie_10",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Chevrolet_C-10.jpg/500px-Chevrolet_C-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chevrolet_C-10.jpg",
+   "artist": "Túllio F",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "Gurgel\nCarajas": {
+  "id": "wikipedia:pt:Gurgel Carajás",
+  "label": "Gurgel Carajás",
+  "description": "O Gurgel Carajás foi o maior utilitário fabricado pela Gurgel. O grande porta-malas e o relativo conforto o diferenciavam dos demais jipes nacionais. Produzido nas versões Standard, LE e VIP, os modelos inicialmente planejados seriam: MM, TL, RL e TR, mas somente o último foi produzido em série.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Gurgel_Caraj%C3%A1s",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Gurgel_Caraj%C3%A1s.jpg/500px-Gurgel_Caraj%C3%A1s.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Gurgel_Caraj%C3%A1s.jpg",
+   "artist": "Marcelo Bezerra Cavalcanti",
+   "license": "CC BY 3.0"
+  }
+ },
+ "GM - Chevrolet\nD-10": {
+  "id": "wikipedia:pt:Chevrolet Série 10",
+  "label": "Chevrolet Série 10",
+  "description": "A Chevrolet Série 10 é a segunda linha de picapes que a General Motors produziu no Brasil, de 1964 a 1997.",
+  "wikipedia": "https://pt.wikipedia.org/wiki/Chevrolet_S%C3%A9rie_10",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Chevrolet_C-10.jpg/500px-Chevrolet_C-10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Chevrolet_C-10.jpg",
+   "artist": "Túllio F",
    "license": "CC BY-SA 4.0"
   }
  }
