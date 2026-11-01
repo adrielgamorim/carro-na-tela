@@ -73,7 +73,21 @@ if (values.only !== "renault") {
       status: news?.id ? response.status : 404,
       title: decodeEntities(news?.title ?? ""),
       date: year ? `${year}-${month}-${day}` : "",
-      text: news?.id ? htmlText([news.description, news.sideDescription].filter(Boolean).join("\n")) : "",
+      // The summary, then the body: the templates' text blocks (type 1) in order, between the photos (type 2).
+      text: news?.id
+        ? htmlText(
+            [
+              news.description,
+              news.sideDescription,
+              ...(news.templates ?? [])
+                .filter((template) => template.type === 1)
+                .sort((a, b) => a.position - b.position)
+                .map((template) => template.text),
+            ]
+              .filter(Boolean)
+              .join("\n"),
+          )
+        : "",
     };
     await appendFile(file, JSON.stringify(release) + "\n");
     if (++count % 100 === 0) console.log(`${count} de ${pending.length}`);
@@ -105,4 +119,6 @@ interface VwNews {
   description: string | null;
   sideDescription: string | null;
   news_date: string;
+  /** The body, in blocks: text (type 1) and photos (type 2, their URL). */
+  templates?: { type: number; position: number; text: string | null }[];
 }
