@@ -128,6 +128,11 @@ describe("parseModelName", () => {
     ).toEqual({ engineLiters: 2.2, fuel: "diesel", bodyHint: "furgao" });
   });
 
+  it("reads Stellantis's turbo names by torque", () => {
+    expect(parseModelName("Toro Freedom 1.3 T270 4x2 Flex Aut.")).toMatchObject({ engineLiters: 1.3, aspiration: "turbo" });
+    expect(parseModelName("Commander Overl. TD380 2.0 4x4 Die. Aut.")).toMatchObject({ aspiration: "turbo", fuel: "diesel" });
+  });
+
   it("detects superchargers and van/chassis bodies", () => {
     expect(
       parseModelName("C-200 Kompressor Avant.1.8 16V Aut"),
@@ -168,6 +173,33 @@ describe("parseModelName", () => {
   it("reads an engine size glued to an abbreviation", () => {
     expect(parseModelName("VOYAGE I MOTION COMF/Hghli.1.6 T.Flex 8V").engineLiters).toBe(1.6);
     expect(parseModelName("Versão 1.0.1").engineLiters).toBeUndefined();
+  });
+
+  it("reads a motorcycle's displacement from cc or the model number", () => {
+    const cc = (name: string) => parseModelName(name, { motorcycle: true }).displacementCc;
+    expect(cc("SR 150cc")).toBe(150);
+    expect(cc("XTZ 250 LANDER 249cc/LANDER BLUEFLEX/ABS")).toBe(249);
+    expect(cc("CB 650F")).toBe(650);
+    expect(cc("YBR 125i FACTOR ED/FLEX")).toBe(125);
+    expect(cc("CBR 1000RR FIREBLADE")).toBe(1000);
+    expect(cc("50-Q RAY")).toBe(50);
+    expect(cc("R 1300 GS 719 ASA")).toBe(1300);
+  });
+
+  it("does not read watts, anniversaries or glued codes as displacement", () => {
+    const cc = (name: string) => parseModelName(name, { motorcycle: true }).displacementCc;
+    expect(cc("TC 3000W (Elétrica)")).toBeUndefined();
+    expect(cc("W125 3000W (Elétrica)")).toBeUndefined();
+    expect(cc("CVO ROAD GLIDE 120th ANNIVERSARY FLTRXSE")).toBeUndefined();
+    expect(cc("CG 160 TITAN 50 Anos")).toBe(160);
+    expect(cc("Interceptor 120 Year Edition 650")).toBe(650);
+    expect(cc("VESPA 946 EMPORIO ARMANI 150")).toBe(150);
+    expect(cc("Lambreta V200 Special")).toBeUndefined();
+    expect(cc("MT-07 TRACER")).toBeUndefined();
+  });
+
+  it("leaves cars without a displacement in cc", () => {
+    expect(parseModelName("206 CC 1.6 16V 2p").displacementCc).toBeUndefined();
   });
 
   it("handles accented tokens", () => {

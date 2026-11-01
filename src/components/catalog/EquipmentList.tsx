@@ -8,6 +8,8 @@ export function EquipmentList({ entry }: { entry: CatalogEntry }) {
   const list = useEquipment(entry.equipment);
   if (!list) return null;
   const count = list.groups.reduce((sum, group) => sum + group.items.length, 0);
+  // From a press release (scripts/imprensa/release-lists.ts): the items it names, not a full list.
+  const release = list.groups.some((group) => group.name === "Itens citados no release");
 
   return (
     <section className="equipment-list" aria-labelledby="equipment-list-title">
@@ -16,9 +18,10 @@ export function EquipmentList({ entry }: { entry: CatalogEntry }) {
           <h4 id="equipment-list-title">Equipamentos de série · {count} itens</h4>
           <p>
             <a href={list.page} target="_blank" rel="noreferrer">
-              Lista de equipamentos da {list.source}
+              {release ? `Release da ${list.source}` : `Lista de equipamentos da ${list.source}`}
             </a>{" "}
-            ({list.title}) · da versão como lançada; pode variar de um ano para outro
+            ({list.title}) · {release ? "os principais itens que o release cita" : "da versão como lançada"}; pode variar de um ano para
+            outro
           </p>
         </div>
       </div>

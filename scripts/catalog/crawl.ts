@@ -252,7 +252,7 @@ export async function assembleSnapshot(
       ...listed,
       id: `${listed.brandCode}-${listed.modelCode}:${listed.yearCode}`,
       zeroKm: listed.modelYear === zeroKmYear,
-      attributes: parseModelName(listed.model),
+      attributes: parseModelName(listed.model, { motorcycle: category === "motorcycles" }),
       detail: detail
         ? {
             codeFipe: detail.codeFipe,

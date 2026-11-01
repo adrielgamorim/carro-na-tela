@@ -107,7 +107,7 @@ describe("buildCatalogIndex", () => {
           m: "10",
           n: "PULSE AUDACE 1.0 Turbo 200 Flex Aut.",
           f: "001580-1",
-          a: { engineLiters: 1, aspiration: "turbo" },
+          a: { engineLiters: 1, aspiration: "turbo", transmission: "automatico", fuel: "flex" },
           y: [
             ["32000-5", null],
             ["2024-5", 98990],

@@ -24,6 +24,8 @@
     "fetch:brand-logos": "node scripts/brands/fetch-brand-logos.ts",
     "crawl:imprensa": "node scripts/imprensa/crawl-stellantis.ts",
     "extract:imprensa": "node scripts/imprensa/extract-stellantis.ts",
+    "crawl:releases": "node scripts/imprensa/crawl-releases.ts",
+    "extract:equipamentos": "node scripts/imprensa/extract-equipment.ts",
     "fichas:links": "node scripts/fichas/fetch-links.ts",
     "fichas:lista": "node scripts/fichas/build-list.ts",
     "fichas:ler": "node scripts/fichas/read-sheets.ts",

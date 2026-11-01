@@ -14,7 +14,7 @@ export interface PressEngine {
 const entities: Record<string, string> = {
   nbsp: " ", amp: "&", quot: '"', lt: "<", gt: ">", ndash: "–", mdash: "—", bull: "•",
   ordm: "º", ordf: "ª", deg: "°", rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“",
-  hellip: "…", sup2: "²", sup3: "³", times: "×",
+  hellip: "…", sup2: "²", sup3: "³", times: "×", middot: "·", sect: "§", reg: "®", trade: "™", copy: "©",
 };
 const marks: Record<string, string> = {
   acute: "́", grave: "̀", circ: "̂", tilde: "̃", uml: "̈", cedil: "̧",
@@ -44,7 +44,11 @@ export function releaseText(html: string): string {
   const start = html.indexOf("fca-Description_News");
   if (start < 0) return "";
   const end = html.indexOf('id="DamAssets-shortcut-container"', start);
-  const body = html.slice(html.indexOf(">", start) + 1, end > 0 ? end : undefined);
+  return htmlText(html.slice(html.indexOf(">", start) + 1, end > 0 ? end : undefined));
+}
+
+/** HTML as plain text, one paragraph or list item per line. */
+export function htmlText(body: string): string {
   return decodeEntities(
     body
       .replace(/<(script|style)\b[\s\S]*?<\/\1>/g, "")

@@ -1,0 +1,4982 @@
+{
+ "_doc": "Equipamentos por versão tirados de releases (npm run extract:equipamentos) e revisados à mão: lists entram no catálogo pelo npm run fichas:abertas; rejected são as versões cujo rascunho estava errado ou não era de equipamentos.",
+ "lists": [
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-sport-flex-2027",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "COMPASS",
+   "title": "COMPASS · JEEP COMPASS SPORT FLEX 2027 (release 2026-10)",
+   "trims": [
+    "sport"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4",
+   "items": [
+    "Motor TurboFlex com 176 cv de potência",
+    "Apple Carplay e Android Auto com espelhamento sem fio",
+    "Ar-Condicionado automático dual zone",
+    "Bancos com revestimento premium",
+    "Central multimidia com tela de 8,4\"",
+    "Faróis Full LED com assinatura em LED",
+    "Jeep Traction Control+",
+    "Lanternas com assinatura em LED",
+    "Modo sport",
+    "Motor Turbo Flex com 176 cv de potência",
+    "Painel de instrumentos Full Digital e HD de 10,25\"",
+    "Acendimento automático dos faróis",
+    "Apoia-braço com porta objetos",
+    "Assistente de partida em rampas (Hill Start Assist)",
+    "Banco do motorista com regulagem de altura",
+    "Banco traseiro bipartido 60/40 e rebatível",
+    "Câmbio automático de 6 marchas",
+    "Câmera de estacionamento traseira",
+    "Chave presencial com telecomando para abertura de portas e vidros - Keyless Entry n Go",
+    "Cintos de segurança dianteiros com ajuste de altura",
+    "Controle de Tração",
+    "Controle eletrônico anti capotamento",
+    "Controle eletronico de estabilidade (ESC)",
+    "Direção elétrica",
+    "Estepe de uso emergencial",
+    "Freio de estacionamento eletrônico",
+    "Limitador de velocidade",
+    "Limpador e desembaçador dos vidros traseiros",
+    "Protetor de cárter",
+    "Protetor de Tanque de Combustível",
+    "Rack do teto na cor preta",
+    "Repetidor lateral nos retrovisores",
+    "Retrovisores externos elétricos",
+    "Rodas em liga aro 18'' e pneus 225/55",
+    "Seis airbags (Frontais, laterais e de cortina)",
+    "Sensor de chuva",
+    "Sensor de estacionamento traseiro",
+    "Sistema Auto Hold",
+    "Sistema de monitoramento de pressão dos pneus",
+    "Sistema Start&Stop (desligamento /acionamento automático do motor)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-longitude-flex-2027",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "COMPASS",
+   "title": "COMPASS · JEEP COMPASS LONGITUDE FLEX 2027 (release 2026-10)",
+   "trims": [
+    "longitude"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4",
+   "addsTo": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-sport-flex-2027",
+   "items": [
+    "Sensores de Estacionamento Dianteiros",
+    "Assistente de Estacionamento",
+    "Retrovisor Interno Eletrocrômico",
+    "Rodas de 18” com novo design",
+    "Central Multimídia de 10,1” com assistente de voz avançado",
+    "Bancos com revestimento premium",
+    "Adas Nível 2"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-longitude-night-eagle-mhev-2027",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "COMPASS",
+   "title": "COMPASS · JEEP COMPASS LONGITUDE NIGHT EAGLE MHEV 2027 (release 2026-10)",
+   "trims": [
+    "longitude",
+    "night",
+    "eagle"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4",
+   "addsTo": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-longitude-flex-2027",
+   "items": [
+    "Motor TurboFlex MHEV de 48V com 176 cv de potência",
+    "Rodas de 19” com novo design",
+    "Emblemas escurecidos"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-serie-s-mhev-2027",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "COMPASS",
+   "title": "COMPASS · JEEP COMPASS SÉRIE S MHEV 2027 (release 2026-10)",
+   "trims": [
+    "serie",
+    "s"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4",
+   "addsTo": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-longitude-night-eagle-mhev-2027",
+   "items": [
+    "Motor TurboFlex MHEV de 48V com 176 cv de potência",
+    "Rodas de 19” com novo design",
+    "Revestimento Premium com Suede",
+    "Detecção de Tráfego Cruzado Traseiro",
+    "Monitoramento de Pontos Cegos",
+    "Pintura das partes plásticas na cor da carroceria (painted lowers)",
+    "Revestimento interno do teto em preto",
+    "Sistema de som premium com 506W e subwoofer",
+    "Teto solar panorâmico"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-blackhawk-hurricane-turboflex-4x4-2027",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "COMPASS",
+   "title": "COMPASS · JEEP COMPASS BLACKHAWK HURRICANE TURBOFLEX 4X4 2027 (release 2026-10)",
+   "trims": [
+    "blackhawk",
+    "hurricane",
+    "turboflex"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4",
+   "addsTo": "https://www.media.stellantis.com/br-pt/jeep/press/jeep-compass-2027-estreia-motorizacao-mhev-de-48v-amplia-eficiencia-e-reforca-tecnologia-seguranca-e-vocacao-4x4#jeep-compass-serie-s-mhev-2027",
+   "items": [
+    "Motor Turbo Hurricane TurboFlex com 272 cv de potência",
+    "Rodas de 19” com novo design",
+    "Revestimento Premium com Suede",
+    "Tração 4x4",
+    "Seletor de Terrenos",
+    "Hill Descent Control",
+    "Transmissão Automática de 9 Velocidades",
+    "Design Interno Exclusivo em Couro+Suede",
+    "Pinças de Freio Vermelhas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-amplia-a-oferta-da-linha-duster-com-a-nova-versao--zen-plus-16-com-cambio-manual#duster-zen-plus-1-6-mt",
+   "brand": "renault",
+   "line": "DUSTER",
+   "title": "DUSTER · Duster Zen Plus 1.6 MT (release 2026-10)",
+   "trims": [
+    "zen",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "manual",
+   "page": "https://imprensa.renault.com.br/release/renault-amplia-a-oferta-da-linha-duster-com-a-nova-versao--zen-plus-16-com-cambio-manual",
+   "items": [
+    "Motor 1.6 SCe flex",
+    "Câmbio manual",
+    "Seis airbags",
+    "Controle eletrônico de estabilidade (ESP)",
+    "Controle eletrônico de tração (TC)",
+    "Assistente de partida em rampa (HSA)",
+    "Direção elétrica",
+    "Faróis com DRL em LED",
+    "Grade frontal em preto brilhante",
+    "Rodas de 16\"",
+    "Sistema Stop & Start",
+    "Ar-condicionado",
+    "Renault Duster: uma trajetória de sucesso"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/historia-aventura-e-autenticidade-jeep-inicia-vendas-da-serie-especial-85-anos-para-avenger-e-renegade#jeep-avenger-serie-especial-85-anos",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Avenger",
+   "title": "Avenger · JEEP AVENGER SÉRIE ESPECIAL 85 ANOS (release 2026-09)",
+   "trims": [
+    "serie",
+    "especial"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/historia-aventura-e-autenticidade-jeep-inicia-vendas-da-serie-especial-85-anos-para-avenger-e-renegade",
+   "items": [
+    "Tecnologia MHEV 12V",
+    "ACC (Piloto automático adaptativo)",
+    "Farol Matrix",
+    "Bancos revestidos em tecido e vinil",
+    "Barras longitudinais no teto",
+    "Câmera 360°",
+    "Câmera de ré",
+    "Faróis de Neblina com sistema Cornering",
+    "Maçanetas na cor do veículo",
+    "Paddle-shifters",
+    "Rodas em liga leve de 18\"",
+    "Volante multifuncional em couro e acabamento black piano",
+    "Walk Away Lock",
+    "Hill Holder (sistema ativo freio com controle eletrônico que auxilia nas arrancadas do veículo em subida)",
+    "Hill Descent Control",
+    "Airbags (6) - laterais (2) cortina (2) Frontal (2)",
+    "Ar-condicionado digital automático",
+    "Aviso de colisão frontal com frenagem de emergência (AEB) + Câmera + Radar",
+    "Aviso de saída de faixa e assistente de permanência de faixa (LDW/LKA)",
+    "Central Multimidia 10\" + Apple Carplay e Android Auto",
+    "Cluster de 10,25\" full digital",
+    "Console central com apoio de braço, porta copos removível, porta-celular e porta-objetos",
+    "Controle de Estabilidade (ESC)",
+    "Detector de fadiga do motorista",
+    "Entradas USB (1) e USB-C (1)",
+    "Estepe de uso emergencial",
+    "Faróis em LED + Automatic High Beam",
+    "Freio de estacionamento elétrico",
+    "Lanternas escurecidas em LED",
+    "Chave presencial (Keyless Entry N Go)",
+    "Piloto automático (Cruise Control)",
+    "Reconhecimento de placas de trânsito",
+    "Selec-Terrain (Seletor de terrenos)",
+    "Sensor de chuva",
+    "Sensor de estacionamento traseiro",
+    "TPMS (sensor de pressão dos pneus)",
+    "Alto falantes traseiros",
+    "Wireless Charger",
+    "Retrovisores em black piano",
+    "Conectividade Jeep Aventure Intelligence + Chat GPT embarcado",
+    "Sete fendas iluminadas",
+    "Teto bicolor"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/historia-aventura-e-autenticidade-jeep-inicia-vendas-da-serie-especial-85-anos-para-avenger-e-renegade#jeep-renegade-serie-especial-85-anos",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Renegade",
+   "title": "Renegade · JEEP RENEGADE SÉRIE ESPECIAL 85 ANOS (release 2026-09)",
+   "trims": [
+    "serie",
+    "especial"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/historia-aventura-e-autenticidade-jeep-inicia-vendas-da-serie-especial-85-anos-para-avenger-e-renegade",
+   "items": [
+    "Tecnologia MHEV 48V",
+    "Central multimidia de 10,1”",
+    "Design das rodas de liga leve 18”",
+    "Saídas de ar traseiras",
+    "Câmbio automático de 6 marchas",
+    "6 Airbags",
+    "Sistema de monitoramento de ponto cego",
+    "Carregador de telefone por indução ventilado",
+    "Bancos revestidos em couro",
+    "Volante revestido em couro",
+    "Sensor de estacionamento traseiro",
+    "Controle de Estabilidade (ESC)",
+    "Controle de Tração",
+    "Controle eletrônico anti capotamento",
+    "Detector de fadiga do motorista",
+    "Direção elétrica",
+    "Piloto automático",
+    "Jeep Healthy Cabin",
+    "Jeep Traction Control+",
+    "Lanternas em LED",
+    "Limitador de velocidade",
+    "Teto solar",
+    "Jeep Adventure Intelligence",
+    "Retrovisor Eletrocrômico",
+    "Sensor de chuva",
+    "Comutação automática de faróis",
+    "Paddle Shifters",
+    "Farol de neblina",
+    "Blind Spot (Detector de Ponto Cego)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-inicia-as-vendas-do-novo-kardian-vibe-em-todo-o-brasil#kardian-vibe",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · Kardian Vibe (release 2026-09)",
+   "trims": [
+    "vibe"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://imprensa.renault.com.br/release/renault-inicia-as-vendas-do-novo-kardian-vibe-em-todo-o-brasil",
+   "items": [
+    "6 airbags (frontal, lateral e de cortina)",
+    "Aerofólio traseiro",
+    "Antena shark",
+    "Ar-condicionado digital com função auto",
+    "Assistente de partida (HSA)",
+    "Bancos com acabamento exclusivo na cor azul",
+    "Controlador de velocidade e limitador de velocidade (CC + SL)",
+    "Controles eletrônicos de estabilidade e tração (ESP+ASR)",
+    "Faróis e assinatura luminosa 100% em LED",
+    "Multimídia com tela de 8” com Android Auto e Apple CarPlay com espelhamento sem fio",
+    "Painel com acabamento na cor azul",
+    "Regulagem manual de altura dos faróis",
+    "Retrovisores externos com ajuste elétrico",
+    "Sensores de estacionamento traseiro",
+    "Sistema de monitoramento de pressão dos pneus (TPMS)",
+    "Start&Stop",
+    "Vidro do motorista com função one-touch e antiesmagamento",
+    "Vidros elétricos para passageiros",
+    "Volante com ajustes de altura e profundidade"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-208-style-1-0-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · Peugeot 208 Style 1.0 MT (release 2026-09)",
+   "trims": [
+    "style"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "items": [
+    "2 Entradas USB (Tipo C: Carregamento - Tipo A: Carregamento e Dados)",
+    "3 Apoios de cabeça traseiros com regulagem de altura",
+    "Acendimento automático das luzes de emergência após frenagem brusca",
+    "Aerofólio esportivo em preto brilhante",
+    "Alarme perimétrico",
+    "Alerta sonoro de não colocação do cinto de segurança do motorista",
+    "Alerta sonoro de portas abertas com o carro em movimento",
+    "Ar-condicionado automático digital",
+    "Atalho para reconhecimento de voz no volante",
+    "Badge Style na coluna C (na cor laranja)",
+    "Banco do motorista com regulagem de altura",
+    "Banco traseiro rebatível",
+    "Bancos em tecido",
+    "Câmera 150º Angular",
+    "Chave tipo canivete com comandos de abertura das portas",
+    "Cluster i-Cockpit TFT 3,5\" com ponteiros em vermelho",
+    "Destravamento interna do tanque de combustível",
+    "Espelhamento Sem Fio Apple CarPlay e Google Android Auto",
+    "Espelho no para-sol para motorista e passageiro",
+    "Faixa Black Piano com lettering PEUGEOT interligada pelas lanternas traseiras",
+    "Faróis dianteiros com tecnologia LED",
+    "Ganchos para sacolas no porta-malas",
+    "Grade dianteira em preto brilhante",
+    "Hill Assist - sistema de auxílio de partida em subidas",
+    "Interior escurecido",
+    "Lanternas traseiras em LED em formato de \"Garra de Leão\"",
+    "Luzes DRL \"Garra de Leão\" em LED",
+    "Multimídia Peugeot i-Connect 10,3\" integrada ao painel",
+    "Painel com revestimento \"Carbon\"",
+    "Painel de instrumentos i-Cockpit",
+    "Porta-objetos nas portas dianteiras",
+    "Rodas de liga-leve Dark Style de 16\"",
+    "Sensor de Estacionamento Traseiro",
+    "Som Premium: 6 alto falantes (4 alto falantes + 2 Tweeters)",
+    "Travas elétricas nas portas e porta-malas com comandos na chave e no painel",
+    "Vidros elétricos nas portas dianteiras, com comandos nas portas e antiesmagamento",
+    "Vidros elétricos nas portas traseiras, com comandos nas portas e antiesmagamento",
+    "Volante com regulagem de altura e profundidade",
+    "Volante Sport Drive com comandos de som e diâmetro reduzido"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-208-allure-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · Peugeot 208 Allure Turbo 200 AT (release 2026-09)",
+   "trims": [
+    "allure"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "addsTo": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-208-style-1-0-mt",
+   "items": [
+    "Aerofólio na cor da carroceria",
+    "Badge Turbo 200",
+    "Botão liga-desliga",
+    "Chave tipo keyless (presencial) com comandos de abertura das portas e porta malas",
+    "Friso cromado nos difusores de ar e painel",
+    "Modo de condução Sport",
+    "Painel de porta em couro",
+    "Peugeot Entry n' Go",
+    "Peugeot i-Cockpit 2D",
+    "Piloto automático (regulador de velocidade) e limitador de velocidade",
+    "Roda de liga-leve 16'' Diamantadas",
+    "Volante Sport Drive com comandos de som e diâmetro reduzido revestido com costuras cinzas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-208-gt-mhev-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · Peugeot 208 GT MHEV Turbo 200 AT (release 2026-09)",
+   "trims": [
+    "gt"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "addsTo": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-208-allure-turbo-200-at",
+   "items": [
+    "Aerofólio esportivo preto brilhante",
+    "Antena de teto shark",
+    "Badge GT",
+    "Badge MHEV",
+    "Cluster 3D MHEV 10\"",
+    "Faróis dianteiros com tecnologia Full LED",
+    "Peugeot Driver Assist - Alerta de colisão",
+    "Peugeot Driver Assist - Alerta e correção de permanência em faixa",
+    "Peugeot Driver Assist - Auxílio de Farol Alto",
+    "Peugeot Driver Assist - Detector de Fadiga",
+    "Peugeot Driver Assist - Frenagem de emergência automática",
+    "Peugeot Driver Assist - Reconhecimento automático de sinalização de velocidade",
+    "Peugeot i-Cockpit® 3D",
+    "Programa eletrônico de estabilidade (ESP)",
+    "Rodas de liga-leve 17\" Diamantadas",
+    "Saída de escapamento com ponteira cromada",
+    "Soleira PEUGEOT em alumínio",
+    "Tapetes GT",
+    "Visiopark 180º (Sensores traseiros + Câmera 180º)",
+    "Volante Sport Drive revestido em couro e badge GT",
+    "Peugeot 2008"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-2008-active-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · Peugeot 2008 Active Turbo 200 AT (release 2026-09)",
+   "trims": [
+    "active"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "items": [
+    "3 Apoios de cabeça traseiros com regulagem de altura",
+    "4 Entradas USB",
+    "6 alto falantes (4 alto falantes + 2 Tweeters)",
+    "Acendimento automático das luzes de emergência após frenagem brusca",
+    "Alarme perimétrico",
+    "Antena de teto shark",
+    "Apoio de braço (banco motorista)",
+    "Ar-condicionado Automático Digital",
+    "Badge Turbo 200",
+    "Banco do motorista com regulagem de altura",
+    "Banco traseiro rebatível em peça única",
+    "Bancos em tecido",
+    "Barras de teto",
+    "Câmera Traseira 180º",
+    "Capa do retrovisor em Preto Brilhante",
+    "Chave tipo canivete com comandos de abertura das portas",
+    "Cluster i-Cockpit TFT 3,5\" com ponteiros em vermelho",
+    "Console de teto com luz de leitura",
+    "Destravamento automático do tanque de combustível",
+    "Espelhamento Sem Fio Apple CarPlay e Google Android Auto",
+    "Espelho no para-sol para motorista e passageiro",
+    "Estrutura com deformação programada (Crash-box)",
+    "Faixa em preto brilhante interligada pelas lanternas traseiras com lettering PEUGEOT",
+    "Faróis Halógenos",
+    "Freio de estacionamento elétrico",
+    "Friso cromado nos difusores de ar e painel",
+    "Friso no painel de porta em preto fosco",
+    "Função ''Follow me home'' (faróis acesos por tempo determinado)",
+    "Função ''lead me to the car'' (faróis acesos por tempo determinado)",
+    "Grade dianteira em Preto Brilhante",
+    "Hill Assist - sistema de auxílio de partida em subidas",
+    "Iluminação interior traseira",
+    "Iluminação no interior do porta-luvas",
+    "Interior Escurecido (Dark Interior)",
+    "Lanternas traseiras 3D em LED com formato de \"Garra de Leão\"",
+    "Luzes DRL em formato de \"Garras de Leão\" em LED",
+    "Maçanetas externas na cor do veículo",
+    "Maçanetas internas com acabamento cromado",
+    "Modo de condução Sport",
+    "Motor flex sem tanque adicional de gasolina para partida a frio",
+    "Multimídia Peugeot i-Connect Advanced 10,3\" HD integrada ao painel",
+    "Painel com revestimento \"Carbon\"",
+    "Painel de instrumentos em posição elevada",
+    "Piloto automático (regulador de velocidade) e limitador de velocidade",
+    "Porta-objetos central",
+    "Porta-objetos nas portas dianteiras",
+    "Programa eletrônico de estabilidade (ESP)",
+    "Rodas de 16\" Silom",
+    "Sensor traseiro de estacionamento",
+    "Travas elétricas nas portas e porta-malas com comandos na chave e no painel",
+    "Vidros elétricos com anti-esmagamento",
+    "Vidros elétricos nas portas dianteiras, com comandos nas portas",
+    "Vidros elétricos nas portas traseiras, com comandos nas portas",
+    "Volante com regulagem de altura e profundidade",
+    "Volante de diâmetro reduzido (Sport Drive)",
+    "Volante Sport Drive com comandos de som"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-2008-allure-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · Peugeot 2008 Allure Turbo 200 AT (release 2026-09)",
+   "trims": [
+    "allure"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "addsTo": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-2008-active-turbo-200-at",
+   "items": [
+    "Bancos com revestimento sintético premium",
+    "Bancos traseiros bipartidos (60/40) rebatíveis",
+    "Câmera 360º (Visiopark 360º)",
+    "Carregamento do Smartphone por indução",
+    "Chave tipo keyless (presencial) com comandos de abertura das portas e porta-malas",
+    "Friso no painel de porta em preto brilhante",
+    "Peugeot Driver Assist – Alerta de ponto cego",
+    "Peugeot i-Cockpit 2D",
+    "Retrovisores externos com comandos elétricos",
+    "Retrovisores externos com rebatimento eletrônico",
+    "Rodas de liga-leve diamantadas de 17\" Karakoy",
+    "Sensor dianteiros e traseiros de estacionamento",
+    "Volante de diâmetro reduzido (Sport Drive) revestido em couro"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-2008-gt-mhev-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · Peugeot 2008 GT MHEV Turbo 200 AT (release 2026-09)",
+   "trims": [
+    "gt"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt",
+   "addsTo": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-reforca-a-personalidade-dos-modelos-208-e-2008-na-linha-2027-apresenta-nova-cor-e-traz-assinatura-mhev-para-versao-gt#peugeot-2008-allure-turbo-200-at",
+   "items": [
+    "Antena de teto shark",
+    "Badge GT",
+    "Badge MHEV e Turbo 200",
+    "Bancos com costura verde GT",
+    "Bancos com revestimento sintético premium",
+    "Bancos traseiros bipartidos (60/40) rebatíveis",
+    "Barras de teto",
+    "Costura verde nos detalhes internos e painel de porta",
+    "Peugeot Driver Assist – Alerta de colisão",
+    "Peugeot Driver Assist – Alerta de ponto cego",
+    "Peugeot Driver Assist – Alerta e correção de permanência em faixa",
+    "Peugeot Driver Assist – Auxílio de Farol Alto",
+    "Peugeot Driver Assist – Detector de Fadiga",
+    "Peugeot Driver Assist – Frenagem de emergência automática",
+    "Peugeot Driver Assist – Reconhecimento automático de sinalização de velocidade",
+    "Peugeot i-Cockpit 3D MHEV",
+    "Rodas de liga-leve 18\" Evissa Black Mist",
+    "Tapetes GT bordados",
+    "Teto bitom",
+    "Troca de marcha no volante (Paddle Shift)",
+    "Volante GT com costura verde"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-apresenta-kardian-vibe-com-motor-turbo-e-a-melhor-eficiencia-energetica-da-categoria#kardian-vibe",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · Kardian Vibe (release 2026-08)",
+   "trims": [
+    "vibe"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://imprensa.renault.com.br/release/renault-apresenta-kardian-vibe-com-motor-turbo-e-a-melhor-eficiencia-energetica-da-categoria",
+   "items": [
+    "6 airbags (frontal, lateral e de cortina)",
+    "Aerofólio traseiro",
+    "Antena shark",
+    "Ar-condicionado digital com função auto",
+    "Assistente de partida (HSA)",
+    "Bancos com acabamento exclusivo na cor azul",
+    "Controlador de velocidade e limitador de velocidade (CC + SL)",
+    "Controles eletrônicos de estabilidade e tração (ESP+ASR)",
+    "Faróis e assinatura luminosa 100% em LED",
+    "Multimídia com tela de 8” com Android Auto e Apple CarPlay com espelhamento sem fio",
+    "Painel com acabamento na cor azul",
+    "Regulagem manual de altura dos faróis",
+    "Retrovisores externos com ajuste elétrico",
+    "Sensores de estacionamento traseiro",
+    "Sistema de monitoramento de pressão dos pneus (TPMS)",
+    "Start&Stop",
+    "Vidro do motorista com função one-touch e antiesmagamento",
+    "Vidros elétricos para passageiros",
+    "Volante com ajustes de altura e profundidade"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade#evolution",
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Evolution (release 2026-08)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade",
+   "items": [
+    "4 airbags (2 frontais e 2 laterais)",
+    "Alerta visual e sonoro de não utilização do cinto de segurança de todos os ocupantes",
+    "Antena Shark",
+    "Ar-condicionado",
+    "Assistente de partida em rampa (HSA)",
+    "Computador de bordo",
+    "Controle eletrônico de estabilidade (ESP)",
+    "Direção elétrica",
+    "Indicador de temperatura externa",
+    "Luzes de circulação diurna (DRL) em LED",
+    "Painel de instrumentos digital TFT de 7”",
+    "Sensor de estacionamento traseiro",
+    "Sistema de monitoramento da pressão dos pneus (TPMS)",
+    "Sistema Start & Stop",
+    "Tacômetro",
+    "Travas elétricas das portas",
+    "Vidros dianteiros elétricos"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade#techno",
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Techno (release 2026-08)",
+   "trims": [
+    "techno"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade",
+   "items": [
+    "Chave tipo canivete",
+    "Câmera de ré",
+    "Controles de áudio no volante",
+    "Lanternas obscurecidas com assinatura em LED",
+    "Maçanetas externas na cor da carroceria",
+    "Retrovisores elétricos",
+    "Retrovisores em preto brilhante",
+    "Roda de aço biton de 14”",
+    "Sistema multimídia com tela de 10.1\" com espelhamento de smartphone sem fio",
+    "2 USB-C"
+   ],
+   "optional": [],
+   "addsTo": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade#evolution"
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade#outsider",
+   "brand": "renault",
+   "line": "Kwid",
+   "title": "Kwid · Outsider (release 2026-08)",
+   "trims": [
+    "outsider"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade",
+   "addsTo": "https://imprensa.renault.com.br/release/com-design-renovado-renault-kwid-2027-traz-mais-tecnologia-e-conectividade#techno",
+   "items": [
+    "Barras de teto com nova decoração de cor",
+    "Molduras de proteção lateral e frontal",
+    "Skis frontais e traseiros",
+    "Bancos exclusivos com revestimento em tecido e eco-leather",
+    "Rodas de liga leve diamantadas 14'' bíton com NBI",
+    "Sensor crepuscular"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr#citroen-aircross-feel-7-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "AIRCROSS",
+   "title": "AIRCROSS · Citroën Aircross Feel 7 Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "feel"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr",
+   "items": [
+    "Motor Turbo 200",
+    "Câmbio automático CVT com 7 marchas simuladas e Modo Sport",
+    "1 Porta USB tipo A e tomada 12v no painel",
+    "2 portas USB tipo C na segunda fileira",
+    "3ª fileira com 2 assentos individuais, rebatíveis e removíveis",
+    "Aerofólio traseiro",
+    "Alarme",
+    "Ar-condicionado manual",
+    "Apoio de braço do painel de porta revestido em tecido",
+    "Banco do motorista com ajuste de altura",
+    "Bancos traseiros bipartidos e rebatíveis com ISOFIX e TOP TETHER (fixação para cadeiras de crianças)",
+    "Chave tipo canivete com abertura remota",
+    "Direção elétrica",
+    "DRL com LED",
+    "Emblema “Aircross” centralizado",
+    "Espelho de cortesia no para-sol motorista e passageiro",
+    "Exclusivo sistema de ventilação suplementar no teto",
+    "Hill Assist - Assistente de Partida em Rampa",
+    "iTPMS - Monitoramento de pressão de pneus",
+    "Luz de iluminação no porta-malas",
+    "Luz no porta-luvas",
+    "Maçanetas na cor da carroceria",
+    "Painel com revestimento em tecido",
+    "Painel de instrumentos digital 7\" TFT",
+    "Porta celular na 3ª fileira",
+    "Porta documentos no para-sol",
+    "Travamento automático das portas e do porta-malas com veículo em movimento",
+    "Vidros elétricos dianteiros e traseiros com função One Touch e antiesmagamento"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr#citroen-aircross-feel-pack-7-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "AIRCROSS",
+   "title": "AIRCROSS · Citroën Aircross Feel Pack 7 Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "feel",
+    "pack"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr#citroen-aircross-feel-7-turbo-200-at",
+   "items": [
+    "Câmera de ré",
+    "Painel de instrumentos digital 7\" TFT",
+    "3ª fileira com 2 assentos individuais, rebatíveis e removíveis",
+    "Exclusivo sistema de ventilação suplementar no teto",
+    "Faixa traseira em preto brilhante",
+    "Logotipo 7 no porta-malas",
+    "Porta celular na 3ª fileira",
+    "Retrovisores elétricos",
+    "Roda de liga 16”"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr#citroen-aircross-xtr-7-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "AIRCROSS",
+   "title": "AIRCROSS · Citroën Aircross XTR 7 Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "xtr"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-aircross-2027-ganha-nova-interface-na-multimidia-e-novas-cores-na-versao-xtr#citroen-aircross-feel-pack-7-turbo-200-at",
+   "items": [
+    "Adesivo \"XTR\" no capô",
+    "Adesivo verde na coluna C",
+    "Apliques inferiores de para-choque dianteiros e traseiros (skid plates) na cor Technical Gray",
+    "Apoio de braço com revestimento premium soft touch e costura Light Green",
+    "Ar-condicionado digital e automático",
+    "Banco do motorista com apoia braço com revestimento premium soft touch",
+    "Bancos com revestimento premium e costura Light Green (com porta-revista)",
+    "Câmera traseira",
+    "Capa do retrovisor em preto brilhante",
+    "Controlador e limitador de velocidade",
+    "Duplo chevron dianteiro escurecido",
+    "Emblema XTR na traseira, bancos dianteiros e soleira",
+    "Faixa traseira em preto brilhante",
+    "Faróis de neblina",
+    "Grade frontal em preto brilhante",
+    "Interior escurecido",
+    "Keyless, partida sem a necessidade da chave",
+    "Painel com revestimento premium soft touch com costura Light Green",
+    "Pedaleira com acabamento cromado",
+    "Porta objetivos com acabamento premium no painel",
+    "Pneus 215/60 - Uso misto (Pirelli Scorpion HT)",
+    "Protetor inferior lateral de porta com detalhe na cor Light Green",
+    "Retrovisores elétricos",
+    "Rodas de liga leve 17\" escurecidas",
+    "Sensor de estacionamento",
+    "Soleira de porta",
+    "Volante revestido em acabamento premium"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-live-go",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Live Go (release 2026-08)",
+   "trims": [
+    "live",
+    "go"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama",
+   "items": [
+    "Motor Firefly 1.0",
+    "Ar- condicionado",
+    "Assistente de Partida em Rampa - Hill Assist",
+    "Aviso de portas e porta-malas abertos",
+    "Banco traseiro rebatível",
+    "Chave canivete",
+    "Computador de bordo",
+    "ESS - Emergency Stop Signal",
+    "GSI - Gear Shift (indicador de troca de marcha)",
+    "Indicadores de direção laterais nos retrovisores externos",
+    "iTPMS - Monitoramento de pressão de pneus",
+    "Limpador, lavador e desembaçador traseiro",
+    "Luz no porta-luvas",
+    "Painel de bordo na cor Cinza Steel",
+    "Para-choques dianteiros e traseiros na cor da carroceria",
+    "Para-sol com espelhos internos para motorista e passageiro",
+    "Porta documentos",
+    "Rodas de 15” e pneus 195/65",
+    "Saída de ar e comandos de ventilação com detalhes cromados",
+    "Travamento automático das portas com veículo em movimento"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-live-plus",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Live Plus (release 2026-08)",
+   "trims": [
+    "live",
+    "plus"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-live-go",
+   "items": [
+    "1 Porta USB tipo A",
+    "Alarme",
+    "Banco do motorista com ajuste de altura",
+    "Barras longitudinais no teto",
+    "Porta documentos no para-sol"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-feel-plus",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Feel Plus (release 2026-08)",
+   "trims": [
+    "feel",
+    "plus"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-live-plus",
+   "items": [
+    "1 Porta USB tipo A e Tomada 12v no painel",
+    "2 portas USB tipo C para 2ª fileira",
+    "Alarme",
+    "Bancos dianteiros com apoia cabeça regulável",
+    "Câmera traseira",
+    "DLR com LED",
+    "Duplo Chevron dianteiro cromado",
+    "Maçanetas externas na cor da carroceira",
+    "Painel com tecido e costura azul",
+    "Painel de instrumentos digital 7\"",
+    "Retrovisores laterais com ajuste elétrico",
+    "Rodas em liga diamantadas 15”",
+    "Saída de ar em preto brilhante",
+    "Vidros elétricos dianteiros e traseiros com sistema One Touch e anti-esmagamento",
+    "Porta revistas opcional bancos de couro"
+   ],
+   "optional": [
+    "bancos em revestimento premium"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-xtr",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 XTR (release 2026-08)",
+   "trims": [
+    "xtr"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-feel-plus",
+   "items": [
+    "Adesivo \"XTR\" no capô",
+    "Adesivo Light Green na coluna C",
+    "Ar-condicionado automático e digital",
+    "Bancos com revestimento premium, costura Light Green e encosto rebatível",
+    "Duplo Chevron dianteiro escurecido",
+    "Emblema XTR na traseira, bancos dianteiros e soleira",
+    "Faróis de neblina",
+    "Interior escurecido",
+    "Maçanetas internas cromadas",
+    "Painel com revestimento premium soft touch com costura Light Green",
+    "Painel de instrumentos digital 7\"",
+    "Pedaleira com acabamento cromado",
+    "Pneus 205/60 - Uso misto (Pirelli Scorpion ATR)",
+    "Portas com revestimento premium soft touch com costura Light Green",
+    "Protetor inferior lateral de porta com detalhes na cor Light Green",
+    "Rodas em liga leve 15\" escurecidas",
+    "Sensor de estacionamento",
+    "Soleira de porta",
+    "Volante com revestimento premium com costura Light Green"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-you-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 YOU! Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "you"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-2027-chega-mais-equipado-e-amplia-opcoes-de-cores-para-toda-a-gama#citroen-c3-feel-plus",
+   "items": [
+    "Motor Turbo 200",
+    "Câmbio automático CVT com 7 marchas simuladas e Modo Sport",
+    "Adesivo Emerald Blue na coluna C",
+    "Adesivos nas cores preto e Emerald Blue nas portas",
+    "Ar- condicionado automático e digital",
+    "Bancos com revestimento premium com costura azul",
+    "Controlador e limitador de velocidade",
+    "Emblema YOU!",
+    "Faróis de neblina",
+    "Moldura do farol de neblina na cor Emerald Blue",
+    "Painel com revestimento premium soft touch e costura azul",
+    "Painel de instrumentos digital 7\"",
+    "Rodas em liga leve 15\" pintadas em Preto com pneus 195/65",
+    "Soleira de porta cromada",
+    "Tapetes com emblema",
+    "Volante com revestimento premium com costura azul"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-feel-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Feel MT (release 2026-08)",
+   "trims": [
+    "feel"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos",
+   "items": [
+    "Motor 1.0 Firefly",
+    "1 Porta USB tipo A e tomada 12v no painel",
+    "2 Portas USB tipo C para 2ª fileira",
+    "Airbags laterais",
+    "Alarme",
+    "Ar-condicionado",
+    "Assistente de Partida em Rampa - Hill Assist",
+    "Banco do motorista com ajuste de altura",
+    "Banco do motorista com apoia braço",
+    "Bancos com revestimento de tecido",
+    "Bancos dianteiros com apoia cabeça regulável",
+    "Bancos traseiros com apoio de cabeça regulável nas 3 posições",
+    "Bancos traseiros rebatíveis com ISOFIX e TOP TETHER (fixação para cadeiras de crianças)",
+    "Câmera traseira",
+    "Capa do retrovisor em preto brilhante",
+    "Comando interno de abertura da tampa de combustível",
+    "Detalhes na cor \"Andre Red\" na grade frontal e na coluna C",
+    "Direção com assistência elétrica",
+    "DRL com LED",
+    "Espelho de cortesia no para sol motorista e passageiro",
+    "GSI - Gear Shift (indicador de troca de marcha)",
+    "iTPMS - Monitoramento de pressão de pneus",
+    "Luz de iluminação no porta-malas",
+    "Luz no porta-luvas",
+    "Luzes indicadoras de direção nos retrovisores",
+    "Maçanetas na cor da carroceria",
+    "Painel com revestimento de tecido",
+    "Painel de instrumentos digital TFT 7\"",
+    "Porta documentos",
+    "Porta-objetos no painel com pintura cromada",
+    "Retrovisores elétricos",
+    "Rodas 16\" (liga leve opcional)",
+    "Sensor de estacionamento traseiro",
+    "Travamento automático das portas e do porta-malas com veículo em movimento",
+    "Vidros elétricos dianteiros e traseiros com função One Touch e antiesmagamento"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-dark-edition-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Dark Edition MT (release 2026-08)",
+   "trims": [
+    "dark",
+    "edition"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-feel-mt",
+   "items": [
+    "Ar-condicionado manual",
+    "Apoia-braço no painel de porta com revestimento premium",
+    "Bancos com revestimento premium na cor preta com costura vermelha (com porta-revista)",
+    "Chevron e logos escurecidos",
+    "Interior escurecido",
+    "Logotipo \"Dark Edition\"",
+    "Pedaleiras esportivas",
+    "Porta-documento no para-sol",
+    "Porta-objetos no painel com pintura escurecida",
+    "Protetor de soleiras dianteiras exclusiva \"Dark Edition\"",
+    "Volante com revestimento premium e costura aparente vermelha"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-feel-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Feel Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "feel"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-feel-mt",
+   "items": [
+    "Motor Turbo 200 de até 115 cv",
+    "Câmbio automático CVT com 7 marchas simuladas e Modo Sport",
+    "Logotipo T200",
+    "Ar-condicionado automático e digital",
+    "Roda de 16” (liga diamantada como opcional)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-shine-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Shine Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "shine"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-feel-turbo-200-at",
+   "items": [
+    "Bancos com revestimento premium na cor cinza (com porta revista)",
+    "Bancos traseiros com apoio de cabeça com abas nas posições laterais",
+    "Controlador e limitador de velocidade com comandos no volante",
+    "Detalhes na cor \"Terre de Toscane\" na grade frontal e na coluna C",
+    "Faróis de neblina",
+    "Interior escurecido",
+    "Keyless, partida sem a necessidade da chave",
+    "Painel com revestimento premium soft touch",
+    "Rodas de liga leve 16\" diamantadas",
+    "Volante com revestimento premium e costura aparente amarela"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-dark-edition-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Dark Edition Turbo 200 AT (release 2026-08)",
+   "trims": [
+    "dark",
+    "edition"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-2027-traz-a-bem-sucedida-topo-de-gama-dark-edition-para-a-versao-manual-alem-de-novos-conteudos#citroen-basalt-shine-turbo-200-at",
+   "items": [
+    "Aerofólio com detalhes na cor \"Andre Red\"",
+    "Apliques inferiores de para-choque dianteiros e traseiros (skid plates) escurecidos",
+    "Bancos com revestimento premium na cor preta",
+    "Detalhes na cor \"Andre Red\" na grade frontal e na coluna C",
+    "Duplo chevron escurecido",
+    "Logotipo Dark Edition nas laterais dianteiras",
+    "Painel com revestimento premium soft touch",
+    "Pedaleiras esportivas",
+    "Porta-objetos no painel com pintura escurecida",
+    "Protetor de soleiras dianteiras exclusiva \"Dark Edition”",
+    "Rodas de liga leve 16\" pintadas de preto",
+    "Tapetes de carpete exclusivos",
+    "Volante com revestimento premium e costura aparente vermelha"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil#novo-jeep-avenger-longitude",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Avenger",
+   "title": "Avenger · NOVO JEEP AVENGER LONGITUDE (release 2026-08)",
+   "trims": [
+    "longitude"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil",
+   "items": [
+    "ACC (Piloto automático adaptativo)",
+    "Bancos revestidos em tecido e vinil",
+    "Barras longitudinais no teto",
+    "Câmera de ré",
+    "Faróis de Neblina com sistema Cornering",
+    "Maçanetas na cor do veículo",
+    "Paddle-shifters",
+    "Rodas em liga leve de 17\"",
+    "Volante multifuncional em couro e acabamento black piano",
+    "Walk Away Lock",
+    "Hill Holder (sistema ativo freio com controle eletrônico que auxilia nas arrancadas do veículo em subida)",
+    "Hill Descent Control",
+    "Airbags (6) - laterais (2) cortina (2) Frontal (2)",
+    "Ar-condicionado digital automático",
+    "Aviso de colisão frontal com frenagem de emergência (AEB) + Câmera + Radar",
+    "Aviso de saída de faixa e assistente de permanência de faixa (LDW/LKA)",
+    "Central Multimidia 10\" + Apple Carplay e Android Auto",
+    "Cluster de 7\" full digital",
+    "Console central com apoio de braço, porta copos removível, porta-celular e porta-objetos",
+    "Controle de Estabilidade (ESC)",
+    "Detector de fadiga do motorista",
+    "Entradas USB (1) e USB-C (1)",
+    "Estepe de uso emergencial",
+    "Faróis em LED + Automatic High Beam",
+    "Freio de estacionamento elétrico",
+    "Lanternas escurecidas em LED",
+    "Chave presencial (Keyless Entry N Go)",
+    "Piloto automático (Cruise Control)",
+    "Reconhecimento de placas de trânsito",
+    "Selec-Terrain (Seletor de terrenos)",
+    "Sensor de chuva",
+    "Sensor de estacionamento traseiro",
+    "TPMS (sensor de pressão dos pneus)",
+    "Alto falantes traseiros",
+    "Wireless Charger",
+    "Retrovisores em black piano"
+   ],
+   "optional": [
+    "Entradas USB e USBC traseiras",
+    "Retrovisor Frameless",
+    "Espelhos rebatíveis",
+    "Detector de ponto cego",
+    "Sensores de estacionamento frontais",
+    "traseiros e laterais",
+    "Teto Solar",
+    "Jeep Adventure Intelligence",
+    "ChatGPT embarcada e Cluster Full digital de 10,25”"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil#novo-jeep-avenger-limited",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Avenger",
+   "title": "Avenger · NOVO JEEP AVENGER LIMITED (release 2026-08)",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-avenger-inovador-tecnologico-e-sofisticado-modelo-representa-a-essencia-da-marca-para-conquistar-novos-territorios-no-brasil",
+   "items": [
+    "Farol LED Matrix",
+    "Bancos em vinil premium",
+    "Câmera 360°",
+    "Chave presencial (Keyless Entry N Go)",
+    "Cluster Full Digital 10,25\"",
+    "Central Multimídia 10” + Apple Carplay e Android Auto",
+    "Espelho retrovisor Frameless + Eletrocrômico",
+    "Iluminação interna em LED",
+    "JEEP Adventure Intelligence + Inteligência Artificial embarcada",
+    "Ambient Light - 8 opções de cores",
+    "Navegação embarcada",
+    "Retrovisores em Black Piano",
+    "Retrovisores externos com rebatimento automático",
+    "Rodas de liga-leve de 18\"",
+    "Segunda porta USB para passageiros traseiros",
+    "Sensor de estacionamento Frontal",
+    "Sistema de monitoramento de pontos cegos",
+    "Teto pintado em preto",
+    "Wireless Charger",
+    "Hill Holder (sistema ativo freio com controle eletrônico que auxilia nas arrancadas do veículo em subida)",
+    "Hill Descent Control",
+    "Airbags (6) - laterais (2) cortina (2) Frontal (2)",
+    "Ar-condicionado digital e automático",
+    "Aviso de colisão frontal com frenagem de emergência (AEB) + Câmera + Radar",
+    "Aviso de saída de faixa e assistente de permanência de faixa (LDW/LKA)",
+    "Barras longitudinais no teto",
+    "Câmera de ré 360°",
+    "Console central com apoio de braço, porta copos removível, porta-celular e porta-objetos",
+    "Controle de Estabilidade (ESC)",
+    "Detector de fadiga do motorista",
+    "Entradas USB (1) e USB-C (1)",
+    "Estepe de uso emergencial",
+    "Faróis de Neblina com sistema Cornering",
+    "Freio de estacionamento elétrico",
+    "Lanternas escurecidas em LED",
+    "Maçanetas na cor do veículo",
+    "Paddle-shifters",
+    "Partida do motor sem chave",
+    "Piloto automático (Cruise Control)",
+    "Reconhecimento de placas de trânsito",
+    "Selec-Terrain (Seletor de Terrenos)",
+    "Sensor de chuva",
+    "Sensor de estacionamento traseiro e frontal",
+    "TPMS (sensor de pressão dos pneus)",
+    "Volante multifuncional em couro e acabamento black piano",
+    "Walk Away Lock"
+   ],
+   "optional": [
+    "Teto Solar"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-live-go",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Live Go (release 2026-04)",
+   "trims": [
+    "live",
+    "go"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990",
+   "items": [
+    "Ar- condicionado",
+    "Assistente de Partida em Rampa - Hill Assist",
+    "Aviso de portas e porta-malas abertos",
+    "Banco traseiro rebatível",
+    "Chave canivete",
+    "Computador de bordo",
+    "ESS - Emergency Stop Signal",
+    "GSI - Gear Shift (indicador de troca de marcha)",
+    "Indicadores de direção laterais nos retrovisores externos",
+    "iTPMS - Monitoramento de pressão de pneus",
+    "Limpador, lavador e desembaçador traseiro",
+    "Luz no porta-luvas",
+    "Motor Firefly 1.0",
+    "Painel bitom na cor Cinza Steel",
+    "Para-choques dianteiros e traseiros na cor da carroceria",
+    "Para-sol com espelhos internos para motorista e passageiro",
+    "Rodas de 15” e pneus 195/65",
+    "Saída de ar e comandos de ventilação com detalhes cromados",
+    "Travamento automático das portas com veículo em movimento"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-live-plus",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Live Plus (release 2026-04)",
+   "trims": [
+    "live",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-live-go",
+   "items": [
+    "1 Porta USB tipo A",
+    "Banco do motorista com ajuste de altura",
+    "Barras longitudinais no teto"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-feel-plus",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 Feel Plus (release 2026-04)",
+   "trims": [
+    "feel",
+    "plus"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-live-plus",
+   "items": [
+    "1 Porta USB tipo A e Tomada 12v no painel",
+    "2 portas USB tipo C para 2ª fileira",
+    "Alarme",
+    "Bancos dianteiros com apoia cabeça regulável",
+    "Câmera traseira",
+    "DLR com LED",
+    "Duplo Chevron dianteiro cromado",
+    "Maçanetas externas na cor da carroceira",
+    "Painel com tecido e costura azul",
+    "Painel de instrumentos digital 7\"",
+    "Retrovisores laterais com ajuste elétrico",
+    "Rodas em liga diamantadas 15”",
+    "Saída de ar em preto brilhante",
+    "Vidros elétricos dianteiros e traseiros com sistema One Touch e anti-esmagamento"
+   ],
+   "optional": [
+    "bancos em tecido premium"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-xtr",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 XTR (release 2026-04)",
+   "trims": [
+    "xtr"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-feel-plus",
+   "items": [
+    "Adesivo \"XTR\" no capô",
+    "Adesivo Light Green na coluna C",
+    "Ar-condicionado automático e digital",
+    "Bancos com revestimento premium, costura Light Green e encosto rebatível",
+    "Duplo Chevron dianteiro escurecido",
+    "Emblema XTR na traseira, bancos dianteiros e soleira",
+    "Faróis de neblina",
+    "Interior escurecido",
+    "Maçanetas internas cromadas",
+    "Painel com revestimento premium soft touch com costura Light Green",
+    "Painel de instrumentos digital 7\"",
+    "Pedaleira com acabamento cromado",
+    "Pneus 205/60 - Uso misto (Pirelli Scorpion ATR)",
+    "Portas com revestimento premium soft touch com costura Light Green",
+    "Protetor inferior lateral de porta com detalhes na cor Light Green",
+    "Rodas em liga leve 15\" escurecidas",
+    "Soleira de porta",
+    "Volante com revestimento premium com costura Light Green"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-you",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Citroën C3 YOU! (release 2026-04)",
+   "trims": [
+    "you"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-c3-atualiza-gama-e-inclui-modelo-no-programa-carro-sustentavel-com-versao-de-entrada-de-r-76-990#citroen-c3-feel-plus",
+   "items": [
+    "Motor Turbo 200 de até 130 cv",
+    "Câmbio automático CVT com 7 marchas simuladas e Modo Sport",
+    "Adesivo Emerald Blue na coluna C",
+    "Adesivos nas cores preto e Emerald Blue nas portas",
+    "Ar- condicionado automático e digital",
+    "Bancos com revestimento premium com costura azul",
+    "Controlador e limitador de velocidade",
+    "Emblema YOU!",
+    "Faróis de neblina",
+    "Moldura do farol de neblina na cor Emerald Blue",
+    "Painel com revestimento premium soft touch e costura azul",
+    "Painel de instrumentos digital 7\"",
+    "Rodas em liga leve 15\" pintadas em Preto com pneus 195/65",
+    "Soleira de porta cromada",
+    "Tapetes com emblema YOU!",
+    "Volante com revestimento premium com costura azul"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road#jeep-commander-limited-t270",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Commander",
+   "title": "Commander · Jeep Commander Limited T270 (release 2026-03)",
+   "trims": [
+    "limited"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1.3,
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road",
+   "items": [
+    "Motor MHEV",
+    "Central Multimídia de 10,1\" com Adventure Intelligence Plus com Alexa in vehicle",
+    "7 airbags",
+    "Monitoramento de Ponto Cego (BSM)",
+    "Carregador por indução",
+    "Bancos Premium em couro e Suede na cor preta",
+    "Painel frontal em Suede com acabamento cromado",
+    "Sistema de som premium certificado Harman Kardon"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road#jeep-commander-overland-t270",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Commander",
+   "title": "Commander · Jeep Commander Overland T270 (release 2026-03)",
+   "trims": [
+    "overland"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 1.3,
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road",
+   "addsTo": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road#jeep-commander-limited-t270",
+   "items": [
+    "Motor MHEV 48V",
+    "Câmera 360°",
+    "Roda de 19’’",
+    "Bancos em couro e suede marrom",
+    "Banco do passageiro elétrico",
+    "Teto solar panorâmico",
+    "Molduras inferiores pintadas",
+    "Abertura elétrica do porta-malas + hands free",
+    "Banco do motorista com memória",
+    "Pneus com tecnologia Seal Inside"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road#jeep-commander-overland-2-2-turbodiesel",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Commander",
+   "title": "Commander · Jeep Commander Overland 2.2 Turbodiesel (release 2026-03)",
+   "trims": [
+    "overland"
+   ],
+   "years": [
+    2027,
+    2027
+   ],
+   "engineLiters": 2.2,
+   "turbo": true,
+   "diesel": true,
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/com-novas-opcoes-de-motores-jeep-commander-2027-chega-com-muita-tecnologia-performance-e-capacidade-off-road",
+   "items": [
+    "Câmbio rotary shift",
+    "Motor Turbodiesel de 200cv",
+    "Tração 4x4 active drive low",
+    "Jeep off road pages",
+    "Jeep Commander Blackhawk Hurricane Flex (redução de mil)",
+    "Motor Hurricane flex 2.0T de 272cv",
+    "Performance pages",
+    "Pinça de freio vermelhas",
+    "Acabamentos em preto",
+    "Bancos com detalhes exclusivos",
+    "Logos escurecidos"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco#novo-jeep-renegade-longitude",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Renegade",
+   "title": "Renegade · NOVO JEEP RENEGADE LONGITUDE (release 2026-03)",
+   "trims": [
+    "longitude"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco",
+   "items": [
+    "Tecnologia MHEV de 48V da Stellantis",
+    "Central multimidia de 10,1”",
+    "Novo design das rodas de liga leve 18”",
+    "Saídas de ar traseiras",
+    "Novo console central",
+    "Câmbio automático de 6 marchas",
+    "6 Airbags",
+    "Sistema de monitoramento de ponto cego",
+    "Carregador de telefone por indução ventilado",
+    "Bancos revestidos em couro",
+    "Volante revestido em couro",
+    "Sensor de estacionamento traseiro"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco#novo-jeep-renegade-sahara",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Renegade",
+   "title": "Renegade · NOVO JEEP RENEGADE SAHARA (release 2026-03)",
+   "trims": [
+    "sahara"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco",
+   "items": [
+    "Tecnologia MHEV de 48V da Stellantis",
+    "Central multimidia de 10,1”",
+    "Adventure Intelligence com Alexa",
+    "Banco elétrico do motorista",
+    "Saídas de ar traseiras",
+    "Novo console central",
+    "Nova manopla",
+    "Novo design de rodas de liga leve 18”",
+    "Câmbio automático de 6 marchas",
+    "6 Airbags",
+    "Frenagem autônoma de emergência (car to car)",
+    "HSA (Hill Start Assist)",
+    "Iluminação do porta-malas",
+    "Isofix",
+    "Teto bicolor",
+    "Teto solar panorâmico",
+    "Jeep Traction Control+"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco#novo-jeep-renegade-willys",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Renegade",
+   "title": "Renegade · NOVO JEEP RENEGADE WILLYS (release 2026-03)",
+   "trims": [
+    "willys"
+   ],
+   "years": [
+    2026,
+    2027
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/a-evolucao-do-icone-novo-jeep-renegade-chega-com-interior-completamente-novo-novas-tecnologias-motorizacao-hibrida-mhev-e-reducao-de-preco",
+   "items": [
+    "Central multimidia de 10,1”",
+    "Adventure Intelligence com Alexa",
+    "Banco elétrico do motorista",
+    "Saídas de ar traseiras",
+    "Novo design das rodas de liga leve 17”",
+    "Pneus mistos ATR +",
+    "Tração 4 x 4 com seletor de terrenos",
+    "Câmbio automático de 9 marchas",
+    "Controle de Tração",
+    "Selo Trail Rated®",
+    "6 Airbags",
+    "Controle eletrônico anti capotamento",
+    "Remote start (partida remota)",
+    "Repetidor lateral nos retrovisores",
+    "Teto solar panorâmico",
+    "Retrovisor interno eletrocrômico",
+    "Sistema de monitoramento de pressão dos pneus"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c#evolution-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · evolution turbo TCe (release 2025-11)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c",
+   "items": [
+    "rodas de liga leve 18\" design mountain na cor cinza",
+    "faróis full LED e lanternas com luzes de direção dinâmicas",
+    "assinatura luminosa com “welcome/good-bye sequence”",
+    "ar-condicionado automático e digital dual zone com saída de ar traseira",
+    "coluna de direção ajustável em altura e profundidade",
+    "console central elevado com compartimento refrigerado",
+    "quatro portas USB Tipo-C (duas na frente e duas na traseira)",
+    "carregador de smartphone por indução",
+    "câmbio e-shifter e paddle-shift (aletas para troca de marcha)",
+    "freio de estacionamento eletrônico",
+    "bancos e painéis de porta com acabamento premium preto e costura cinza",
+    "painel de instrumentos digital de 7”",
+    "multimídia OpenR de 10” com espelhamento Android Auto® e Apple CarPlay® sem fio",
+    "banco traseiro bi-partido 60:40 com sistema “easy break”",
+    "sistema de som Arkamys® com seis alto-falantes",
+    "chave presencial do tipo cartão e acesso Hands-Free"
+   ],
+   "optional": [
+    "pacote teto bíton (teto bíton",
+    "barras longitudinais)"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c#techno-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · techno turbo TCe (release 2025-11)",
+   "trims": [
+    "techno"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c#evolution-turbo-tce",
+   "items": [
+    "rodas de liga leve 18” design “mountain” na cor preta",
+    "barras de teto longitudinais",
+    "antena shark",
+    "faróis de neblina",
+    "painel de instrumentos digital 10” com replicação de mapa",
+    "integração My Renault app",
+    "manutenção conectada",
+    "Multi-sense com comando rotatório e 5 modos de condução Eco, Sport, Comfort, Perso (personalizável) e novo modo Smart",
+    "ambient lighting com 48 cores",
+    "bancos do motorista e passageiro com ajuste elétrico e ajuste lombar"
+   ],
+   "optional": [
+    "pacote teto bíton e pacote teto solar panorâmico"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c#iconic-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · iconic turbo TCe (release 2025-11)",
+   "trims": [
+    "iconic"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-lanca-o-boreal-o-suv-imponente-e-tecnologico-que-chega-para-competir-no-segmento-c#techno-turbo-tce",
+   "items": [
+    "rodas de liga leve 19” design “river” diamantadas",
+    "teto solar panorâmico elétrico com teto bíton preto",
+    "bancos dianteiros com ajuste elétrico e lombar, com funções massagem e memória para motorista",
+    "sistema de som premium Harman Kardon com 10 alto-falantes",
+    "bancos e painéis de porta com acabamento premium “deep blue”",
+    "porta traseira elétrica com função Hands-Free"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal#evolution-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · evolution turbo TCe (release 2025-10)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal",
+   "items": [
+    "rodas de liga leve 18\" design mountain na cor cinza",
+    "faróis full LED e lanternas com luzes de direção dinâmicas",
+    "assinatura luminosa com “welcome/good-bye sequence”",
+    "ar-condicionado automático e digital dual zone com saída de ar traseira",
+    "coluna de direção ajustável em altura e profundidade",
+    "console central elevado com compartimento refrigerado",
+    "quatro portas USB Tipo-C (duas na frente e duas na traseira)",
+    "carregador de smartphone por indução",
+    "câmbio e-shifter e paddle-shift (aletas para troca de marcha)",
+    "freio de estacionamento eletrônico",
+    "bancos e painéis de porta com acabamento premium preto e costura cinza",
+    "painel de instrumentos digital de 7”",
+    "multimídia OpenR de 10” com espelhamento Android Auto® e Apple CarPlay® sem fio",
+    "Banco traseiro bi-partido 60:40 com sistema “easy break”",
+    "Sistema de som Arkamys® com seis alto-falantes",
+    "Chave presencial do tipo cartão e acesso Hands-Free"
+   ],
+   "optional": [
+    "pacote teto bíton"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal#techno-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · techno turbo TCe (release 2025-10)",
+   "trims": [
+    "techno"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal#evolution-turbo-tce",
+   "items": [
+    "rodas de liga leve 18” design “mountain” na cor preta",
+    "barras de teto longitudinais",
+    "antena shark",
+    "faróis de neblina",
+    "painel de instrumentos digital 10” com replicação de mapa",
+    "My Renault app",
+    "manutenção conectada",
+    "Multi-sense com comando rotatório e 5 modos de condução Eco, Sport, Comfort, Perso (personalizável) e novo modo Smart",
+    "ambient lighting com 48 cores",
+    "bancos do motorista e passageiro com ajuste elétrico e ajuste lombar"
+   ],
+   "optional": [
+    "pacote teto bíton e pacote teto solar panorâmico"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal#iconic-turbo-tce",
+   "brand": "renault",
+   "line": "Boreal",
+   "title": "Boreal · iconic turbo TCe (release 2025-10)",
+   "trims": [
+    "iconic"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-comeca-prevenda-do-boreal#techno-turbo-tce",
+   "items": [
+    "rodas de liga leve 19” design “river” diamantadas",
+    "teto solar panorâmico elétrico com teto bíton preto",
+    "bancos dianteiros com ajuste elétrico e lombar, com funções massagem e memória para motorista",
+    "sistema de som premium Harman Kardon com 10 alto-falantes",
+    "bancos e painéis de porta com acabamento premium “deep blue”",
+    "porta traseira elétrica com função Hands-Free"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/nova-versao-topo-de-gama-citroen-basalt-dark-edition-une-visual-urbano-acabamento-escurecido-e-toques-em-andre-red#citroen-basalt-dark-edition-turbo-200",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "BASALT",
+   "title": "BASALT · Citroën Basalt Dark Edition Turbo 200 (release 2025-09)",
+   "trims": [
+    "dark",
+    "edition"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/nova-versao-topo-de-gama-citroen-basalt-dark-edition-une-visual-urbano-acabamento-escurecido-e-toques-em-andre-red",
+   "items": [
+    "Motor Turbo 200 de até 130 cv",
+    "Câmbio automático CVT com 7 marchas simuladas e Modo Sport",
+    "1 Porta USB tipo A e Tomada 12v no painel",
+    "2 Portas USB tipo C para 2ª fileira",
+    "Alarme",
+    "Apliques inferiores de para-choque dianteiro e traseiro (skid plates) escurecidos",
+    "Ar-condicionado automático e digital",
+    "Assistente de Partida em Rampa - Hill Assist",
+    "Banco do motorista com ajuste de altura",
+    "Banco do motorista com apoia braço",
+    "Bancos com revestimento premium na cor preta",
+    "Bancos dianteiros com apoia cabeça regulável",
+    "Bancos traseiros com apoio de cabeça com abas nas posições laterais",
+    "Bancos traseiros com apoio de cabeça regulável nas 3 posições",
+    "Bancos traseiros rebatíveis com ISOFIX e TOP TETHER (fixação para cadeiras de crianças)",
+    "Câmera traseira",
+    "Capa do retrovisor em preto brilhante",
+    "Controlador e limitador de velocidade",
+    "Detalhes na cor \"Andre Red\" na grade frontal e na coluna C",
+    "Direção com assistência elétrica",
+    "DRL com LED",
+    "Duplo Chevron e Logos escurecidos",
+    "Espelho de cortesia no para sol motorista e passageiro",
+    "Faróis de neblina",
+    "Interior escurecido",
+    "ITPMS - Monitoramento pressão dos pneus",
+    "Logotipo Dark Edition",
+    "Logotipo T200",
+    "Luz no porta-luvas e no porta-malas",
+    "Luzes indicadoras de direção nos retrovisores",
+    "Maçanetas na cor da carroceria",
+    "Painel com revestimento premium soft touch",
+    "Painel de instrumentos digital TFT 7\"",
+    "Pedaleiras esportivas",
+    "Porta-objetos no painel com pintura escurecida",
+    "Protetor de soleiras dianteiras exclusiva \"Dark Edition”",
+    "Retrovisores elétricos",
+    "Rodas de liga leve 16\" pintadas de preto",
+    "Sensores de estacionamento traseiro",
+    "Tapetes de carpete exclusivos",
+    "Travamento automático das portas e do porta-malas com veículo em movimento",
+    "Vidros elétricos dianteiros e traseiros com função One Touch e antiesmagamento",
+    "Volante com revestimento premium e costura aparente vermelha"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/novas-ram-2500-e-3500-chegam-ao-mercado-para-elevar-a-referencia-entre-as-picapes#3500-longhorn",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "3500",
+   "title": "3500 · 3500 Longhorn (release 2025-08)",
+   "trims": [
+    "longhorn"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/novas-ram-2500-e-3500-chegam-ao-mercado-para-elevar-a-referencia-entre-as-picapes",
+   "items": [
+    "2500 Laramie",
+    "Motor Cummins® High-Output 6.7 Turbodiesel de 436 cv de e 1.458 Nm (148,7 kgfm)",
+    "Câmbio automático de 8 marchas com 4x4 e reduzida",
+    "Airbags dianteiros frontais e laterais e de cortina (dianteiro + traseiro)",
+    "Pedais do acelerador e freio com ajuste elétrico",
+    "Quadro de instrumentos digital de 12,3”",
+    "Ar-condicionado digital de duas zonas",
+    "Bancos dianteiros aquecidos e ventilados com ajuste elétrico de 10 vias",
+    "Bancos traseiros aquecidos, bipartidos e rebatíveis",
+    "Luzes ambientes de cabine",
+    "Frenagem autônoma de emergência com detecção de pedestres",
+    "Assistente de manobras evasivas",
+    "Assistente de tráfego traseiro cruzado",
+    "Sensor crepuscular com facho alto automático",
+    "Piloto automático adaptativo (ACC)",
+    "Assistente ativo de manutenção de faixa",
+    "Leitor de placas",
+    "Sistema multimídia com tela vertical de 12” e Android Auto e Apple Carplay sem fio",
+    "Console central com duas tomadas 115V",
+    "Dois carregadores de celular por indução",
+    "Ram Connect com monitoramento remoto do veículo, serviços de emergência e navegação",
+    "Câmeras com visão 360°",
+    "Chave presencial com partida remota",
+    "Sistema de som Alpine com 9 falantes mais subwoofer de 10” com cancelamento ativo de ruído",
+    "Tomadas de força para trailer e predisposição para reboque",
+    "Caçamba com revestimento especial e iluminação por leds",
+    "Controle eletrônico do freio do reboque",
+    "Tampa da caçamba com abertura e fechamento elétrico",
+    "Degrau de acesso à caçamba retrátil",
+    "Rodas de liga-leve de 18”",
+    "Estribos laterais cromados",
+    "Partida remota e keyless enter’n go",
+    "Interior bege e marrom",
+    "3500 Laramie Night Edition",
+    "Sistema multimídia com tela vertical de 14,5” com Android Auto e Apple Carplay sem fio",
+    "Capô esportivo",
+    "Grade dianteira em tom brilhante, logotipos e retrovisor escurecidos",
+    "Forração de bancos, portas e painel escurecidos incluindo colunas e revestimento de teto",
+    "Rodas de 18” pretas de liga-leve",
+    "Estribos laterais elétricos",
+    "Som premium Harman/Kardon® com 16 alto-falantes mais subwoofer de 10” e 750W",
+    "3500 Longhorn",
+    "Para-choques, grade, retrovisores e logotipos cromados",
+    "Rodas de 18” diamantadas",
+    "Espelho retrovisor digital 3.0",
+    "Tela do passageiro customizável e sensível ao toque de 10,25” com filtro de privacidade",
+    "Assistente de reboque",
+    "Bancos de couro com filigranas e forração exclusiva",
+    "Painel, console central e portas com mescla de madeira, couro e cromo",
+    "Interior marrom"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-oferece-maior-sofisticacao-comodidade-e-seguranca-na-linha-2026#argo-trekking-1-3-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "title": "ARGO · Argo Trekking 1.3 AT (release 2025-03)",
+   "trims": [
+    "trekking"
+   ],
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-argo-oferece-maior-sofisticacao-comodidade-e-seguranca-na-linha-2026",
+   "items": [
+    "Fiat Argo 1.0",
+    "LED design nos faróis",
+    "Interior escuro",
+    "ABS + EBD + HH; ESC, TC",
+    "2 airbags",
+    "Ar-condicionado",
+    "Banco traseiro rebatível",
+    "Brake light + ESS",
+    "Chave canivete telecomando",
+    "Computador de bordo",
+    "Desembaçador e limpador traseiros",
+    "Direção elétrica regulação de altura",
+    "DRL",
+    "Maçanetas e retrovisores externo pretos texturizados",
+    "Regulagem de altura Facho do farol",
+    "Repetidores laterais de seta",
+    "Rodas de aço + calotas de 14’’",
+    "Tomada 12 V",
+    "Travas elétricas",
+    "Vidros elétricos dianteiro",
+    "Retrovisor externo preto brilhante",
+    "Espelhamento sem fio",
+    "Banco do motorista regulação de altura",
+    "Bolsa porta-objetos banco do passageiro",
+    "Central Multimídia de 7’’",
+    "Iluminação no porta-malas e porta-luvas",
+    "Luz de leitura dianteira",
+    "Maçanetas e retrovisores externos na cor da carroceria",
+    "Rodas de aço + calotas de 15”",
+    "Volante multifuncional",
+    "+ opcionais",
+    "Ar-condicionado digital",
+    "Chave presencial",
+    "Faróis de neblina",
+    "Retrovisor externo elétrico + Tilt down",
+    "Vidros elétricos traseiros",
+    "Sensor de estacionamento traseiro",
+    "Calotas exclusivas",
+    "Faróis FULL-LED",
+    "Motor 1.3",
+    "Câmbio CVT",
+    "Modo Sport",
+    "Piloto automático",
+    "Faróis de neblina LED",
+    "Rodas de liga-leve",
+    "Frisos preto brilhante",
+    "Bancos e acabamentos internos exclusivos",
+    "Espelhamento Wireless",
+    "Câmbio automático",
+    "Bancos e volante em couro"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/kardian-ganha-nova-versao-com-cambio-manual-de-seis-marchas#evolution-turbo-tce",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · evolution turbo TCe (release 2024-10)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/kardian-ganha-nova-versao-com-cambio-manual-de-seis-marchas",
+   "items": [
+    "6 airbags (frontal, lateral e de cortina)",
+    "Controlador de velocidade e limitador de velocidade (CC + SL)",
+    "Assistente de partida (HSA)",
+    "Sensores de estacionamento traseiro e câmera de ré",
+    "Controles eletrônicos de estabilidade e tração (ESP+ASR)",
+    "Sistema de monitoramento de pressão dos pneus (TPMS)",
+    "Cluster digital 7”",
+    "Multimídia com tela de 8” com Android Auto e Apple CarPlay com espelhamento sem fio",
+    "Ar-condicionado digital com função auto",
+    "Retrovisores externos com ajuste elétrico",
+    "Faróis e assinatura luminosa 100% em LED",
+    "Barras de teto funcionais e modulares em preto",
+    "Roda flexwheel biton 16”",
+    "Aerofólio traseiro",
+    "Start&Stop",
+    "Modo ECO com EcoScoring",
+    "Volante com ajustes de altura e profundidade",
+    "Vidro do motorista com função one-touch e antiesmagamento",
+    "Vidros elétricos para passageiros"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407#evolution-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · evolution turbo TCe câmbio EDC (release 2024-03)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407",
+   "items": [
+    "6 airbags (frontal, lateral e de cortina)",
+    "Controlador de velocidade e limitador de velocidade (CC + SL)",
+    "Assistente de partida (HSA)",
+    "Sensores de estacionamento traseiro e câmera de ré",
+    "Controles eletrônicos de estabilidade e tração (ESP+ASR)",
+    "Sistema de monitoramento de pressão dos pneus (TPMS)",
+    "Cluster digital 7”",
+    "Câmbio e-shifter",
+    "Paddle-Shift",
+    "Multimídia com tela de 8” com Android Auto e Apple CarPlay com espelhamento sem fio",
+    "Ar-condicionado digital com função auto",
+    "Retrovisores externos com ajuste elétrico",
+    "Faróis e assinatura luminosa 100% em LED",
+    "Barras de teto funcionais e modulares em preto",
+    "Roda flexwheel biton 16”",
+    "Aerofólio traseiro",
+    "Start&Stop",
+    "Modo ECO com EcoScoring",
+    "Volante com ajustes de altura e profundidade",
+    "Vidro do motorista com função one-touch e antiesmagamento",
+    "Vidros elétricos para passageiros"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407#techno-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · techno turbo TCe câmbio EDC (release 2024-03)",
+   "trims": [
+    "techno"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407",
+   "addsTo": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407#evolution-turbo-tce-cambio-edc",
+   "items": [
+    "Frenagem automática de emergência (AEBS)",
+    "Alerta de colisão frontal (FCW)",
+    "Freio de estacionamento eletrônico",
+    "Console elevado com apoio de braço",
+    "Painéis e volante com acabamento em revestimento premium",
+    "Roda de liga leve 17” diamantadas bíton",
+    "Chave presencial do tipo cartão e acesso Hands-Free",
+    "Partida remota do motor",
+    "Saídas USB-C para o banco traseiro",
+    "Seis alto-falantes",
+    "Vidros dos passageiros com função one-touch e antiesmagamento"
+   ],
+   "optional": [
+    "Teto bíton em preto Nacré"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407#premiere-edition-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · première edition turbo TCe câmbio EDC (release 2024-03)",
+   "trims": [
+    "premiere",
+    "edition"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407",
+   "addsTo": "https://imprensa.renault.com.br/release/kardian-inaugura-uma-nova-fase-da-renault-no-brasil_1710870270098_1710870851796_1710871141497_1710871682517_1710871952211_1710872140407#techno-turbo-tce-cambio-edc",
+   "items": [
+    "Controle de velocidade adaptativo (ACC)",
+    "Câmera Multiview (MVC)",
+    "Alerta de ponto cego (BSW)",
+    "Alerta de distância segura (DW)",
+    "Sensores de estacionamento frontal",
+    "Faróis de neblina em LED",
+    "Sensor crepuscular",
+    "Multi-Sense com modos de condução Eco, Sport e My Sense (personalizável)",
+    "Ambient lighting (iluminação dinâmica e personalizável no interior)",
+    "Carregador de smartphone por indução",
+    "Roda de liga leve 17” diamantada e escurecidas",
+    "Antena shark",
+    "Teto bíton preto Nacré",
+    "Badge lateral “Premiere Edition”",
+    "Skis na cor prata acetinada",
+    "Grade frontal em preto brilhante"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil#novo-aircross-7-feel-pack-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "AIRCROSS",
+   "title": "AIRCROSS · Novo Aircross 7 Feel Pack Turbo 200 AT (release 2024-02)",
+   "trims": [
+    "feel",
+    "pack"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil",
+   "items": [
+    "Sensor de estacionamento traseiro",
+    "Rodas de liga-leve de 16”",
+    "Airbags laterais",
+    "Apoio de braço no banco do motorista",
+    "Retrovisores elétricos"
+   ],
+   "optional": [
+    "Pack Protection (Protetor de cárter + protetor de soleira)",
+    "Pack Comfort (Faróis de neblina + câmera de ré)",
+    "Pack Design (Embelezador da grade dianteira + protetor lateral de portas)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil#novo-aircross-7-shine-turbo-200-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "AIRCROSS",
+   "title": "AIRCROSS · Novo Aircross 7 Shine Turbo 200 AT (release 2024-02)",
+   "trims": [
+    "shine"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-aircross-e-o-modelo-para-ate-sete-pessoas-mais-acessivel-do-brasil#novo-aircross-7-feel-pack-turbo-200-at",
+   "items": [
+    "2 portas USB de recarga rápida para a terceira fileira",
+    "Rodas de liga-leve de 17” e pneus 215/60",
+    "Faróis de neblina",
+    "Câmera de ré",
+    "Bancos e volante com forração premium",
+    "Controlador de velocidade com limitador integrado",
+    "Skid plate frontal e traseiro",
+    "Grade do radiador na cor preto brilhante",
+    "Acabamento exclusivo traseiro na cor preto brilhante"
+   ],
+   "optional": [
+    "Teto bitom Preto Perla Nera ou Branco Banquise",
+    "Pack Protection (Protetor de cárter + protetor de soleira)",
+    "Pack Design (Embelezador da grade dianteira + protetor lateral de portas)"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593#evolution-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · evolution turbo TCe câmbio EDC (release 2024-02)",
+   "trims": [
+    "evolution"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593",
+   "items": [
+    "6 airbags (frontal, lateral e de cortina)",
+    "Controlador de velocidade e limitador de velocidade (CC + SL)",
+    "Assistente de partida (HSA)",
+    "Sensores de estacionamento traseiro e câmera de ré",
+    "Controles eletrônicos de estabilidade e tração (ESP+ASR)",
+    "Sistema de monitoramento de pressão dos pneus (TPMS)",
+    "Cluster digital 7”",
+    "Câmbio e-shifter",
+    "Paddle-Shift",
+    "Multimídia com tela de 8” com Android Auto e Apple CarPlay com espelhamento sem fio",
+    "Ar-condicionado digital com função auto",
+    "Retrovisores externos com ajuste elétrico",
+    "Faróis e assinatura luminosa 100% em LED",
+    "Barras de teto funcionais e modulares em preto",
+    "Roda flexwheel biton 16” ILHABELA",
+    "Aerofólio traseiro",
+    "Start&Stop",
+    "Modo ECO com EcoScoring",
+    "Volante com ajustes de altura e profundidade",
+    "Vidro do motorista com função one-touch e antiesmagamento",
+    "Vidros elétricos para passageiros"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593#techno-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · techno turbo TCe câmbio EDC (release 2024-02)",
+   "trims": [
+    "techno"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593#evolution-turbo-tce-cambio-edc",
+   "items": [
+    "Frenagem automática de emergência (AEBS)",
+    "Alerta de colisão frontal (FCW)",
+    "Freio de estacionamento eletrônico",
+    "Console elevado com apoio de braço",
+    "Painéis e volante com acabamento em revestimento premium",
+    "Roda de liga leve 17” diamantadas bíton HAYEK",
+    "Chave presencial do tipo cartão e acesso Hands-Free",
+    "Partida remota do motor",
+    "Saídas USB-C para o banco traseiro",
+    "Seis alto-falantes",
+    "Vidros dos passageiros com função one-touch e antiesmagamento"
+   ],
+   "optional": [
+    "Teto bíton em preto Nacré"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593#premiere-edition-turbo-tce-cambio-edc",
+   "brand": "renault",
+   "line": "Kardian",
+   "title": "Kardian · première edition turbo TCe câmbio EDC (release 2024-02)",
+   "trims": [
+    "premiere",
+    "edition"
+   ],
+   "years": [
+    2024,
+    2025
+   ],
+   "turbo": true,
+   "page": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593",
+   "addsTo": "https://imprensa.renault.com.br/release/renault-inicia-prevenda-do-kardian-primeiro-veiculo-do-international-game-plan-2027_1708367051593#techno-turbo-tce-cambio-edc",
+   "items": [
+    "Controle de velocidade adaptativo (ACC)",
+    "Câmera Multiview (MVC)",
+    "Alerta de ponto cego (BSW)",
+    "Alerta de distância segura (DW)",
+    "Sensores de estacionamento frontal",
+    "Faróis de neblina em LED",
+    "Sensor crepuscular",
+    "Multi-sense com modos de condução Eco, Sport e Perso (personalizável)",
+    "Ambient lightning (iluminação dinâmica e personalizável no interior)",
+    "Carregador de smartphone por indução",
+    "Roda de liga leve 17” diamantada e escurecidas HAYEK",
+    "Antena shark",
+    "Teto bíton preto Nacré",
+    "Badge lateral “Premiere Edition”",
+    "Skis na cor prata acetinada",
+    "Grade frontal em preto brilhante"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-like-1-0-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 LIKE 1.0 MT (release 2023-09)",
+   "trims": [
+    "like"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "Motor 1.0 Firefly com 75 cv",
+    "Câmbio manual de 5 velocidades",
+    "i-Cockpit",
+    "4 airbags",
+    "Alavanca do câmbio com aplique em black piano",
+    "Ar-condicionado digital",
+    "Direção com assistência elétrica",
+    "Vidros elétricos nas portas dianteiras",
+    "Volante Sport Drive",
+    "Sistema de som com tela digital de 5”",
+    "Controles de tração e de estabilidade",
+    "DRL (luz diurna) integrada aos faróis",
+    "Rodas de 15 polegadas de aço com calotas"
+   ],
+   "optional": [
+    "Central Multimídia PEUGEOT Connect 10,3” com conexão wireless (Android Auto",
+    "e Apple CarPlay)",
+    "DRL em LED",
+    "Retrovisores externos com comandos elétricos",
+    "Vidros elétricos nas quatro portas",
+    "Comandos de som no volante Sport Drive",
+    "Dois alto-falantes traseiros (que se somam aos dois frontais) e dois tweeters",
+    "Duas entradas USB – com destaque para a adição da entrada tipo C além da A"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-style-1-0-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 STYLE 1.0 MT (release 2023-09)",
+   "trims": [
+    "style"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "LIKE com PACK TECH +",
+    "Rodas de liga-leve de aro 16”",
+    "Grade dianteira em Dark Chrome",
+    "Faróis Full LED e DRL em LED",
+    "Maçanetas das portas na cor da carroceria",
+    "Retrovisores e faixa traseira em preto brilhante",
+    "Teto panorâmico",
+    "Interior escurecido",
+    "Soleira PEUGEOT",
+    "Aerofólio esportivo em Black Piano",
+    "Carregador de smartphone por indução (wireless charger)",
+    "Visiopark 180º (sensor de estacionamento + câmera traseira 180°)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-active-1-6-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 ACTIVE 1.6 AT (release 2023-09)",
+   "trims": [
+    "active"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "LIKE com PACK TECH +",
+    "Motor 1.6 com 120 cv",
+    "Câmbio automático de 6 marchas",
+    "Piloto automático e Limitador de velocidade",
+    "Modo de condução ECO/SPORT",
+    "Sensor de ré e câmera traseira",
+    "Rodas de liga leve de 16 polegadas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-roadtrip-1-6-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 ROADTRIP 1.6 AT (release 2023-09)",
+   "trims": [
+    "roadtrip"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "ACTIVE +",
+    "i-Cockpit 3D",
+    "Teto panorâmico",
+    "Faróis Full LED e DRL em LED",
+    "Visiopark 180°",
+    "Adesivos e badge ROADTRIP",
+    "Aerofólio esportivo em Black Piano",
+    "Rodas Kanobi aro 16” com acabamento Black Diamond",
+    "Interior Escurecido",
+    "Bancos em couro, tecido e alcantara",
+    "Volante Sport Drive revestido em couro",
+    "Tapete com bordado ROADTRIP"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-allure-turbo-cvt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 ALLURE TURBO CVT (release 2023-09)",
+   "trims": [
+    "allure"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "ACTIVE +",
+    "Motor Turbo 200 com 130 cv de potência",
+    "Câmbio automático tipo CVT com sete marchas (simuladas)",
+    "Badge Turbo 200",
+    "Modo Drive SPORT",
+    "Rodas de liga-leve diamantadas de 16\" Kanobi Maçaneta externa na cor do veículo",
+    "Grade cromada",
+    "Capa de retrovisor em preto brilhante",
+    "4 alto-falantes e 2 Tweeters",
+    "Entradas USB-A e USB-C no console central",
+    "PACOTE OPCIONAL EXCELLENCE",
+    "Teto panorâmico",
+    "Bancos em couro",
+    "Volante em couro",
+    "Painel de porta em couro",
+    "Apoio de braço para o motorista em couro",
+    "PEUGEOT Entry n’ Go",
+    "Wireless Charger",
+    "Iluminação interior traseira"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-style-turbo-cvt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 STYLE TURBO CVT (release 2023-09)",
+   "trims": [
+    "style"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "ALLURE com PACOTE EXCELLENCE +",
+    "Rodas de liga-leve diamantadas de 17\" Bronx",
+    "Faróis Full LED",
+    "Visiopark 180º",
+    "Ponteira Cromada",
+    "DRL em LED",
+    "i-Cockpit 3D",
+    "Interior escurecido",
+    "Pedais esportivos em alumínio",
+    "Bancos em tecido, couro e alcantara bordados em azul",
+    "Painel de porta em couro e bordado em azul",
+    "Teto panorâmico",
+    "Wireless Charger",
+    "Volante Sport Drive em couro com comandos de som"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#peugeot-208-griffe-turbo-cvt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "title": "208 · PEUGEOT 208 GRIFFE TURBO CVT (release 2023-09)",
+   "trims": [
+    "griffe"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo",
+   "items": [
+    "ALLURE com PACOTE EXCELLENCE +",
+    "Faróis Full LED",
+    "6 airbags",
+    "i-Cockpit 3D",
+    "Visiopark 180º",
+    "Sensor de chuva e luminosidade",
+    "Ponteira Cromada",
+    "PEUGEOT Driver Assist",
+    "Alerta de colisão",
+    "Frenagem de emergência automática",
+    "Auxílio de Farol Alto",
+    "Reconhecimento automático de sinalização de velocidade",
+    "Detector de Fadiga",
+    "Alerta e correção de permanência em faixa"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008#peugeot-2008-allure-1-6-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · PEUGEOT 2008 ALLURE 1.6 AT (release 2023-08)",
+   "trims": [
+    "allure"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008",
+   "items": [
+    "Motor 1.6 com 117cv e Câmbio automático de 6 velocidades",
+    "Multimidia Peugeot Connect 7”",
+    "4 airbags",
+    "Teto biton",
+    "Câmera de ré",
+    "Ar condicionado",
+    "Piloto automático e Limitador de velocidade",
+    "Volante Multifuncional",
+    "Faróis com DRL em LED",
+    "Faróis de Neblina",
+    "Rodas Titane 16”"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008#peugeot-2008-roadtrip-1-6-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · PEUGEOT 2008 ROADTRIP 1.6 AT (release 2023-08)",
+   "trims": [
+    "roadtrip"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008",
+   "items": [
+    "ALLURE +",
+    "Lanternas traseiras em LED",
+    "Faróis de Máscara Negra",
+    "Adesivos e Badge Roadtrip",
+    "Grade cromada",
+    "Bancos em couro",
+    "Ar condicionado digital bi-zone",
+    "Volante em couro",
+    "Rodas Aquila 16” Black Diamond"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008#peugeot-2008-style-1-6-thp-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · PEUGEOT 2008 STYLE 1.6 THP AT (release 2023-08)",
+   "trims": [
+    "style"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008",
+   "items": [
+    "ROADTRIP +",
+    "Teto panorâmico",
+    "Motor THP de 173cv",
+    "Freio de mão tipo aviação",
+    "Grip Control com 5 modos de condução",
+    "Dark Style e grade em dark chrome",
+    "Bancos em couro e tecido",
+    "Badge Turbo",
+    "Rodas Aquila 16” Dark"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008#peugeot-2008-griffe-1-6-thp-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "2008",
+   "title": "2008 · PEUGEOT 2008 GRIFFE 1.6 THP AT (release 2023-08)",
+   "trims": [
+    "griffe"
+   ],
+   "years": [
+    2024,
+    2024
+   ],
+   "engineLiters": 1.6,
+   "turbo": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/novidades-para-linha-2024-do-peugeot-2008",
+   "items": [
+    "STYLE +",
+    "6 airbags",
+    "Bancos em couro",
+    "Sensor de chuva",
+    "Sensor de luminosidade",
+    "Sensor de estacionamento traseiro",
+    "Chrome Style e grade cromada",
+    "Barras de teto e skid plate premium silver",
+    "Rodas Aquila 16” Black Diamond"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-rebel-turbo-diesel",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "RAMPAGE",
+   "title": "RAMPAGE · Rampage Rebel Turbo Diesel (release 2023-06)",
+   "trims": [
+    "rebel"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "diesel": true,
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil",
+   "items": [
+    "Câmbio automático de 9 marchas",
+    "Tração 4x4 com reduzida",
+    "Central multimídia de 12,3” com Android Auto e Apple CarPlay sem fio",
+    "Quadro de instrumentos full digital de 10,3”",
+    "Revestimento interno de couro preto",
+    "Banco do motorista com ajustes elétricos de 12 vias",
+    "Ram Connect (plataforma de serviços conectados)",
+    "Faróis e lanternas full LED",
+    "RamCharger (carregador de celular por indução com resfriamento)",
+    "Freio de estacionamento eletrônico com Auto Hold",
+    "7 airbags",
+    "Controle de velocidade adaptativo",
+    "Monitoramento de pontos cegos",
+    "Sistema de permanência na faixa de rodagem",
+    "Alerta de colisão frontal com frenagem autônoma e detecção de pedestres e ciclistas",
+    "Pneus All Terrain 235/65 R17"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-rebel-hurricane-4-turbo-gasolina",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "RAMPAGE",
+   "title": "RAMPAGE · Rampage Rebel Hurricane 4 Turbo Gasolina (release 2023-06)",
+   "trims": [
+    "rebel",
+    "hurricane"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil",
+   "items": [
+    "acrescenta",
+    "Motor Hurricane 4 de 272 cv e 400 Nm",
+    "Escapamento duplo",
+    "Modo Sport",
+    "Pneus All Terrain Plus 235/65 R17"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-laramie-turbo-diesel",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "RAMPAGE",
+   "title": "RAMPAGE · Rampage Laramie Turbo Diesel (release 2023-06)",
+   "trims": [
+    "laramie"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "diesel": true,
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil",
+   "addsTo": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-rebel-turbo-diesel",
+   "items": [
+    "Revestimento interno de couro na cor Mountain Brown",
+    "Para-choque traseiro cromado",
+    "Rodas aro 18” diamantadas com pneus 235/60",
+    "Acabamentos externos cromados"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-laramie-hurricane-4-turbo-gasolina",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "RAMPAGE",
+   "title": "RAMPAGE · Rampage Laramie Hurricane 4 Turbo Gasolina (release 2023-06)",
+   "trims": [
+    "laramie",
+    "hurricane"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil",
+   "items": [
+    "acrescenta",
+    "Motor Hurricane 4 de 272 cv e 400 Nm",
+    "Escapamento duplo",
+    "Modo Sport"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil#rampage-r-t-hurricane-4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "RAMPAGE",
+   "title": "RAMPAGE · Rampage R/T Hurricane 4 (release 2023-06)",
+   "trims": [
+    "r",
+    "t",
+    "hurricane"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "diesel": false,
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/rampage-uma-legitima-ram-criada-sob-medida-para-o-brasil",
+   "items": [
+    "acrescenta",
+    "Revestimento interno de couro e suede com costuras Ruby Red",
+    "Modo R/T",
+    "Suspensão esportiva",
+    "Escapamento duplo esportivo",
+    "Rodas aro 19” em preto brilhante",
+    "Teto preto brilhante"
+   ],
+   "optional": [
+    "Pack Elite (ambiente light, som premium Harman Kardon e banco do passageiro com ajustes elétricos"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/jeep/press/o-jeep-commander-lider-absoluto-da-sua-categoria-no-pais-ganha-nova-versao#jeep-commander-overland-turbo-diesel-4x4-at9",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Jeep"
+   ],
+   "line": "Commander",
+   "title": "Commander · Jeep Commander Overland Turbo Diesel 4x4 AT9 (release 2023-06)",
+   "trims": [
+    "overland"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/jeep/press/o-jeep-commander-lider-absoluto-da-sua-categoria-no-pais-ganha-nova-versao",
+   "items": [
+    "Aletas para trocas de marcha no volante (Borboletas)",
+    "Retrovisores externos elétricos",
+    "Câmera de estacionamento traseira",
+    "Sensor de chuva",
+    "Luzes diurnas em LED",
+    "Sistema de áudio com 6 alto falantes , USB e Bluetooth",
+    "Limpador e desembaçador dos vidros traseiros",
+    "HSA (Hill Start Assist)",
+    "Para sol com espelhos cortesia",
+    "Tapetes dianteiros e traseiros em carpete",
+    "Controle de Estabilidade (ESC)",
+    "Piloto Automático",
+    "Alarme",
+    "Central Multimídia de 10,1\"",
+    "Freio de estacionamento eletrônico",
+    "Tomada 12V",
+    "Freios a disco nas 4 rodas",
+    "Sistema de monitoramento da pressão dos pneus",
+    "Controle eletrônico anti capotamento",
+    "ABS",
+    "Cintos de segurança dianteiros com ajuste de altura",
+    "Bolsa porta objetos atrás dos bancos dianteiros",
+    "Ganchos de fixação de carga no porta-malas",
+    "Cinto de segurança para a terceira fileira de assentos",
+    "Rodas de liga leve de 18\" e pneus 235/55",
+    "Lanterna traseira em LED",
+    "Faróis de neblina em LED",
+    "Porta óculos",
+    "Ar condicionado dual zone e ajuste de intensidade para as fileiras traseiras",
+    "Volante com acabamento em couro",
+    "USB Tipo C",
+    "Motor T270 Turbo Flex",
+    "Válvula antirefluxo de combustível",
+    "Vidros elétricos nas 4 portas com one touch",
+    "Chave de presença com telecomando para abertura de portas e vidros - Keyless Enter 'n Go",
+    "Sistema Start&Stop (desligamento/acionamento automático do motor)",
+    "Jeep Traction Control+",
+    "Controle de Tração",
+    "Alertas de limite de velocidade e manutenção programada",
+    "Apple Carplay e Android Auto com espelhamento sem fio",
+    "Ajuste do volante em altura e profundidade",
+    "Teto pintado em preto",
+    "Câmbio automático de 6 marchas",
+    "Friso cromado por toda a extensão das janelas do veículo",
+    "Faróis dianteiros Full LED",
+    "Sistema de navegação GPS",
+    "Painel de instrumentos Full Digital e HD de 10,25\"",
+    "2ª fileira de assentos reclináveis e com deslocamento longitudinal de 14cm",
+    "3ª fileira de assentos reclináveis",
+    "Repetidor lateral nos retrovisores",
+    "Retrovisor interno eletrocrômico",
+    "Bancos Premium em couro e suede na cor preta",
+    "Painel frontal em couro com acabamento cromado",
+    "Isofix",
+    "Indicador de seta dinâmico",
+    "Banco do passageiro rebatível",
+    "Porta objetos sob o assento do banco do passageiro",
+    "Modo sport",
+    "Cinto traseiro central de 3 pontos",
+    "Seis airbags (Frontais, laterais e de cortina)",
+    "Portas USB nas três fileiras de assentos",
+    "Retrovisores externos com rebatimento automático",
+    "Direção elétrica",
+    "Estepe de uso emergencial",
+    "Jeep Healthy Cabin",
+    "Iluminação do porta-malas",
+    "Sistema Auto Hold",
+    "Encosto de cabeça traseiro central",
+    "Sistema de estacionamento semiautônomo (Park Assist)",
+    "Pavimento do porta malas com revestimento duplo",
+    "Sensores de estacionamento dianteiro e traseiro",
+    "Console central com acabamento cromado",
+    "Banco elétrico para o motorista (8 posições)",
+    "Limitador de velocidade",
+    "Acendimento automático dos faróis",
+    "Remote start (partida remota)",
+    "Computador de Bordo (distância, consumo médio, consumo instantâneo, autonomia, velocidade média e tempo de percurso)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-live-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 Live 1.0 (release 2022-08)",
+   "trims": [
+    "live"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "items": [
+    "Airbags duplos",
+    "Controle de estabilidade",
+    "Controle de tração",
+    "Assistente de partida em rampa - Hill holder",
+    "Monitoramento de pressão dos pneus",
+    "Ar-condicionado",
+    "Direção elétrica",
+    "Vidros dianteiros elétricos",
+    "Travas elétricas",
+    "Indicador de trocas de marcha",
+    "Rodas de 15” com calotas",
+    "Luzes de condução diurna"
+   ],
+   "optional": [
+    "Pintura Metálica",
+    "Protection Pack (Frisos laterais e protetor de cárter)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-live-pack-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 Live Pack 1.0 (release 2022-08)",
+   "trims": [
+    "live",
+    "pack"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-live-1-0",
+   "items": [
+    "Citroën Connect 10” com Android Auto e Apple Carplay sem fio",
+    "Conector USB dianteiro",
+    "Volante com comandos do sistema de som e bluetooth",
+    "Chave com telecomando",
+    "Banco dianteiro com ajuste de altura",
+    "Limpador e desembaçador elétrico traseiro"
+   ],
+   "optional": [
+    "Pintura Metálica",
+    "Protection Pack (Frisos laterais e protetor de cárter)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-feel-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 Feel 1.0 (release 2022-08)",
+   "trims": [
+    "feel"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-live-pack-1-0",
+   "items": [
+    "Vidros traseiros elétricos",
+    "Alarme Perimétrico",
+    "Conectores USB traseiros (x2)",
+    "Luzes diurnas de leds",
+    "Rodas de liga-leve de 15”",
+    "Painel interno com faixa azul metálica",
+    "Barras longitudinais no teto",
+    "Volante com ajuste de altura",
+    "Chevron cromado",
+    "Maçanetas na cor da carroceria"
+   ],
+   "optional": [
+    "Pintura Metálica",
+    "Teto bitom"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-feel-pack-1-6-16v-automatico",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 Feel Pack 1.6 16V Automático (release 2022-08)",
+   "trims": [
+    "feel",
+    "pack"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "items": [
+    "Câmbio automático de seis marchas com opção de trocas sequenciais",
+    "Modo Eco",
+    "Rodas de liga-leve de 15” diamantadas",
+    "Câmera de ré",
+    "Volante revestido com couro"
+   ],
+   "optional": [
+    "Pintura Metálica",
+    "Teto bitom",
+    "Protection Pack (Frisos laterais e protetor de cárter)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-1-0-first-edition",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 1.0 First Edition (release 2022-08)",
+   "trims": [
+    "first",
+    "edition"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-feel-1-0",
+   "items": [
+    "Faróis de neblina",
+    "Pintura bitom",
+    "Barras de teto na cor Alu Shadow",
+    "Airbumps laterais",
+    "Moldura embelezadora do farol de neblina",
+    "Tapetes exclusivos",
+    "Badges “First Edition” nas laterais e tampa do porta-malas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-1-6-16v-automatico-first-edition",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "C3",
+   "title": "C3 · Novo Citroën C3 1.6 16V Automático First Edition (release 2022-08)",
+   "trims": [
+    "first",
+    "edition"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 1.6,
+   "turbo": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990",
+   "addsTo": "https://www.media.stellantis.com/br-pt/citroen/press/versatil-e-unico-novo-citroen-c3-chega-ao-brasil-partindo-de-r-68-990#novo-citroen-c3-feel-pack-1-6-16v-automatico",
+   "items": [
+    "Pintura bitom",
+    "Barras de teto na cor Alu Shadow",
+    "Airbumps laterais",
+    "Moldura embelezadora do farol de neblina",
+    "Tapetes exclusivos",
+    "Badges “First Edition” nas laterais e tampa do porta-malas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento#ram-3500-laramie",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "3500",
+   "title": "3500 · Ram 3500 Laramie (release 2022-03)",
+   "trims": [
+    "laramie"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento",
+   "items": [
+    "Sistema multimídia Uconnect com tela de 12 polegadas",
+    "Câmera 360°",
+    "Câmera de caçamba",
+    "Retrovisor eletrocrômico",
+    "Som premium Alpine de 10 alto-falantes e 1 subwoofer",
+    "Cancelamento ativo de ruído",
+    "Estribos laterais de porta a porta (dão acessos extras à caçamba)",
+    "Controle eletrônico de freio do reboque",
+    "Faróis Full LED",
+    "Comutação automática dos faróis",
+    "Controle de velocidade de cruzeiro",
+    "Monitoramento de pontos cegos",
+    "Bancos em couro e alcântara",
+    "Console central modular com 39 litros de volume",
+    "Sobretapetes de borda elevada"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento#ram-3500-laramie-night-edition",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "3500",
+   "title": "3500 · Ram 3500 Laramie Night Edition (release 2022-03)",
+   "trims": [
+    "laramie",
+    "night",
+    "edition"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento",
+   "addsTo": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento#ram-3500-laramie",
+   "items": [
+    "Retrovisor interno digital",
+    "Som premium Harman Kardon de 17 alto-falantes e 1 subwoofer",
+    "Estribos elétricos (se recolhem com as portas fechadas)",
+    "Controle adaptativo de velocidade",
+    "Alerta de colisão frontal com frenagem autônoma",
+    "Sistema de permanência na faixa de rodagem",
+    "Faróis e lanternas com máscara negra",
+    "Para-choques e molduras dianteiras na cor da carroceria",
+    "Grade, rodas e emblemas escuros",
+    "Interior preto",
+    "Cab lights (luzes na capota, logo acima do para-brisa)",
+    "Bancos traseiros laterais aquecidos"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento#ram-3500-limited-longhorn",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "RAM"
+   ],
+   "line": "3500",
+   "title": "3500 · Ram 3500 Limited Longhorn (release 2022-03)",
+   "trims": [
+    "limited",
+    "longhorn"
+   ],
+   "years": [
+    2022,
+    2023
+   ],
+   "page": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento",
+   "addsTo": "https://www.media.stellantis.com/br-pt/ram/press/nova-ram-3500-chega-para-elevar-nivel-da-marca-e-do-segmento#ram-3500-laramie-night-edition",
+   "items": [
+    "Faróis Full LED Matrix (direcionais)",
+    "Grade e rodas com desenho exclusivo",
+    "Ganchos de reboque e molduras das janelas com acabamento cromado",
+    "Revestimento marrom e preto em couro Natura Plus",
+    "Acabamentos internos com madeira legítima",
+    "Tapetes especiais",
+    "Emblema da versão no console central",
+    "Opção de pintura two-tone (Branco Pérola com Marrom Walnut)",
+    "IMAGENS",
+    "Apresentação (live de lançamento)",
+    "Material de estúdio (fotos e vídeos) + clipe da live"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#drive-1-3-flex-manual",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "PULSE",
+   "title": "PULSE · DRIVE 1.3 FLEX MANUAL (release 2021-10)",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "diesel": false,
+   "transmission": "manual",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos",
+   "items": [
+    "Abertura elétrica do bocal de abastecimento",
+    "Airbags (4) - Frontal (2), Tórax e Cabeça (2)",
+    "Alarme antifurto",
+    "Alerta de não utilização do cinto de segurança (5) - motorista, passageiro dianteiro e passageiros traseiros (3)",
+    "Fiat Sound System",
+    "Ar-condicionado automático e digital",
+    "ASR (Controle eletrônico de tração)",
+    "Banco do motorista com regulagem de altura",
+    "Barras longitudinais no teto",
+    "Chave canivete com telecomando",
+    "Comandos de áudio e painel de instrumentos no volante",
+    "Computador de Bordo (distância, consumo médio, consumo instantâneo, autonomia, velocidade média e tempo de percurso)",
+    "Desembaçador do vidro traseiro com temporizador",
+    "Direção elétrica",
+    "ESP (Controle eletrônico de estabilidade)",
+    "ESS (Sinalização de frenagem de emergência)",
+    "Faróis em LED",
+    "Função \"Follow me Home\"",
+    "Gancho universal para fixação de cadeira para crianças (ISOFIX)",
+    "HCSS (Sistema de partida a frio sem tanque auxiliar)",
+    "Hill Holder (Assistente partida em rampa)",
+    "Lanterna traseira em LED",
+    "LED DRL",
+    "Maçanetas na cor preta",
+    "Piloto automático (Cruise control)",
+    "Repetidores de seta laterais em LED",
+    "Retrovisores externos com regulagem elétrica e função Tilt down",
+    "Retrovisores externos na cor preta",
+    "Roda de liga leve de 16 polegadas",
+    "Sensor de estacionamento traseiro",
+    "TC+ (Traction Control Plus)",
+    "Travas elétricas com travamento automático a 20 km/h",
+    "USB traseira (Tipo A)",
+    "Vidros elétricos dianteiros e traseiros com função one touch e antiesmagamento",
+    "Volante com regularem de altura",
+    "iTPMS (Monitoramento de pressão dos pneus)",
+    "Lane Change (Função auxiliar para acionamento das setas indicando trocas de faixa)",
+    "caso deseje a lista completa de equipamentos",
+    "favor acessar o link https://pulse.fiat.com.br/monte.html",
+    "escolher a versão desejada na área VERSÃO",
+    "MOTOR E CÂMBIO e",
+    "em seguida",
+    "clicar no botão ITENS DE SÉRIE"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#drive-1-3-flex-automatica",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "PULSE",
+   "title": "PULSE · DRIVE 1.3 FLEX AUTOMÁTICA (release 2021-10)",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#drive-1-3-flex-manual",
+   "items": [
+    "Câmbio automático CVT (7 velocidades simuladas)",
+    "Maçanetas externas na cor da carroceria",
+    "Retrovisores externos na cor da carroceria",
+    "Console central com apoio de braço, porta-copos, porta-celular e porta-objetos",
+    "Modo Sport com botão de acionamento no volante",
+    "caso deseje a lista completa de equipamentos",
+    "favor acessar o link https://pulse.fiat.com.br/monte.html",
+    "escolher a versão desejada na área VERSÃO",
+    "MOTOR E CÂMBIO e",
+    "em seguida",
+    "clicar no botão ITENS DE SÉRIE"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#audace-turbo-200-flex-automatica",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "PULSE",
+   "title": "PULSE · AUDACE TURBO 200 FLEX AUTOMÁTICA (release 2021-10)",
+   "trims": [
+    "audace"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos",
+   "items": [
+    "Câmera traseira em alta definição com linhas adaptativas",
+    "Carregador wireless para smartphones por indução",
+    "Key Less Entry'n Go",
+    "Partida Remota via chave",
+    "Paddle Shifters (Aletas para mudança de marcha no volante)",
+    "Volante com revestimento em couro",
+    "Banco traseiro rebatível e bi-partido (60/40)",
+    "ADAS: AEB (Frenagem autônoma de emergência), LDW (Alerta de saída de pista) e AHB (Comutação automática de farol alto)",
+    "Retrovisor interno eletrocrômico, sensor de chuva e crepuscular",
+    "Roda de liga leve de 16 polegadas diamantada",
+    "caso deseje a lista completa de equipamentos",
+    "favor acessar o link https://pulse.fiat.com.br/monte.html",
+    "escolher a versão desejada na área VERSÃO",
+    "MOTOR E CÂMBIO e",
+    "em seguida",
+    "clicar no botão ITENS DE SÉRIE"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#impetus-turbo-200-flex-automatica",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "PULSE",
+   "title": "PULSE · IMPETUS TURBO 200 FLEX AUTOMÁTICA (release 2021-10)",
+   "trims": [
+    "impetus"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-pulse-versoes-e-precos#audace-turbo-200-flex-automatica",
+   "items": [
+    "Bancos revestidos em couro",
+    "Cluster 7\" Full Digital",
+    "Faróis de neblina dianteiros com função cornering lamps",
+    "Sistema de navegação GPS embarcado",
+    "Retrovisores externos com rebatimento elétrico e luz de cortesia",
+    "Roda de liga leve de 17 polegadas com acabamento diamantado",
+    "Sensor de estacionamento dianteiro",
+    "Tapetes de carpete",
+    "Teto bicolor",
+    "Volante com regularem de altura e profundidade",
+    "caso deseje a lista completa de equipamentos",
+    "favor acessar o link https://pulse.fiat.com.br/monte.html",
+    "escolher a versão desejada na área VERSÃO",
+    "MOTOR E CÂMBIO e",
+    "em seguida",
+    "clicar no botão ITENS DE SÉRIE"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir#zen",
+   "brand": "renault",
+   "line": "CAPTUR",
+   "title": "CAPTUR · Zen (release 2021-07)",
+   "trims": [
+    "zen"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "page": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir",
+   "items": [
+    "Multimídia Easylink 8” com espelhamento de smartphones Android Auto e Apple Carplay",
+    "Volante com comandos integrados e ajustes de profundidade e altura",
+    "4 airbags (dois dianteiros e dois laterais)",
+    "Câmera e sensores de estacionamento traseiros",
+    "Controle de estabilidade (ESP)",
+    "Controle de tração (ASR)",
+    "Assistente de partida em rampa (HSA)",
+    "Luzes de circulação diurna (DRL) em LED",
+    "Sensor de pressão dos pneus",
+    "Chave-cartão",
+    "Sistema Start&Stop",
+    "Piloto automático (regulador e limitador de velocidade)",
+    "Rodas de 17 polegadas"
+   ],
+   "optional": [
+    "pintura bíton"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir#intense",
+   "brand": "renault",
+   "line": "CAPTUR",
+   "title": "CAPTUR · Intense (release 2021-07)",
+   "trims": [
+    "intense"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "page": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir",
+   "addsTo": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir#zen",
+   "items": [
+    "Ar-condicionado automático",
+    "Luzes de neblina em LED com função “cornering”, auxiliar em curvas",
+    "Sensor crepuscular",
+    "Sensor de chuva",
+    "Duas saídas USB para o banco traseiro",
+    "Função “Follow me home” nos faróis"
+   ],
+   "optional": [
+    "pintura bíton e revestimento interno premium"
+   ]
+  },
+  {
+   "key": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir#iconic",
+   "brand": "renault",
+   "line": "CAPTUR",
+   "title": "CAPTUR · Iconic (release 2021-07)",
+   "trims": [
+    "iconic"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "page": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir",
+   "addsTo": "https://imprensa.renault.com.br/release/captur-2022-redefine-o-conceito-do-prazer-ao-dirigir#intense",
+   "items": [
+    "Faróis com tecnologia full LED",
+    "Sensor de ponto cego",
+    "Sistema de câmeras Multiview, com quatro câmeras",
+    "Sistema de partida remota do motor",
+    "Revestimento interno premium"
+   ],
+   "optional": [
+    "pintura bíton e sistema de áudio BOSE com seis alto-falantes",
+    "subwoofer no porta-malas e equalizador digital exclusivo"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#endurance-1-8-flex-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · ENDURANCE 1.8 FLEX AT6 (release 2021-04)",
+   "trims": [
+    "endurance"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Cluster Full Digital de 7’’",
+    "TC+ (Electronic Locker)",
+    "Leitor de pressão dos pneus (iTPMS)",
+    "Airbags laterais e de cortina",
+    "USB frontal (tipos A e C)",
+    "USB traseiro",
+    "Central multimídia de 7”",
+    "Dois tweeters",
+    "Espelhos externos com tilt down",
+    "Comandos de áudio no volante",
+    "Ar-condicionado",
+    "Direção elétrica",
+    "Vidros elétricos",
+    "Travamento elétrico",
+    "Alarme",
+    "Desembaçador traseiro",
+    "Banco do motorista ajustável",
+    "Isofix",
+    "Piloto automático",
+    "DRL (luz diurna) de LED",
+    "Sensor de estacionamento traseiro",
+    "Porta escada",
+    "Repetidor lateral",
+    "Controles eletrônicos de estabilidade e tração, Hill Holder",
+    "Revestimento de caçamba",
+    "Rodas de aço de 16” (Superspoke)",
+    "Luz de iluminação da caçamba",
+    "Lâmpadas traseiras de LED"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#endurance-turbo-diesel-at9-4x4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · ENDURANCE TURBO DIESEL AT9 4x4 (release 2021-04)",
+   "trims": [
+    "endurance"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Motor turbo diesel de 170 cv",
+    "ESC OFF (4x4 low)",
+    "Transmissão de 9 marchas",
+    "Tração 4x4 com seletor",
+    "Controle eletrônico de descida",
+    "Protetor de cárter"
+   ],
+   "optional": [],
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#endurance-1-8-flex-at6"
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#freedom-turbo-270-flex-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · FREEDOM TURBO 270 FLEX AT6 (release 2021-04)",
+   "trims": [
+    "freedom"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#endurance-1-8-flex-at6",
+   "items": [
+    "Central multimídia de 8,4”",
+    "Paddle shifters",
+    "Câmera de ré",
+    "Volante em couro",
+    "Ar-condicionado digital dual zone",
+    "Para-sol com iluminação",
+    "Apoio de braço frontal",
+    "Tapete",
+    "Faróis full LED",
+    "Roda de liga leve de 17”",
+    "Barras longitudinais no teto",
+    "Farol de neblina",
+    "Capota marítima",
+    "Maçanetas e espelhos na cor do veículo"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#freedom-turbo-diesel-at9-4x4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · FREEDOM TURBO DIESEL AT9 4x4 (release 2021-04)",
+   "trims": [
+    "freedom"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Motor turbo diesel de 170 cv",
+    "ESC OFF (4x4 low)",
+    "Transmissão de 9 marchas",
+    "Tração 4x4 com seletor",
+    "Controle eletrônico de descida",
+    "Protetor de cárter"
+   ],
+   "optional": [],
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#freedom-turbo-270-flex-at6"
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#volcano-turbo-270-flex-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · VOLCANO TURBO 270 FLEX AT6 (release 2021-04)",
+   "trims": [
+    "volcano"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": true,
+   "diesel": false,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#freedom-turbo-270-flex-at6",
+   "items": [
+    "Sensor de estacionamento frontal",
+    "TBM +NAV (conectividade)",
+    "Wireless changer",
+    "Airbag de joelhos",
+    "Roda de liga leve de 18”",
+    "Bancos em couro",
+    "Sensores de chuva e crepuscular",
+    "Retrovisor interno eletrocrômico",
+    "Espelhos externos com tilt down e luz de poça",
+    "Apoia-braço traseiro",
+    "Porta-objeto no banco do passageiro",
+    "Keyless Enter-N’Go",
+    "Assentos com ajuste elétrico",
+    "Maçaneta e moldura da porta cromada"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#volcano-turbo-diesel-at9-4x4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · VOLCANO TURBO DIESEL AT9 4x4 (release 2021-04)",
+   "trims": [
+    "volcano"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Motor turbo diesel de 170 cv",
+    "ESC OFF (4x4 low)",
+    "Transmissão de 9 marchas",
+    "Tração 4x4 com seletor",
+    "Controle eletrônico de descida",
+    "Protetor de cárter"
+   ],
+   "optional": [],
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#volcano-turbo-270-flex-at6"
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#ranch-turbo-diesel-at9-4x4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · RANCH TURBO DIESEL AT9 4x4 (release 2021-04)",
+   "trims": [
+    "ranch"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Central multimídia com tela de 10,1”",
+    "Grade frontal diferenciada",
+    "Espelhos externos cromados",
+    "Moldura lateral da caixa de roda específica",
+    "Barra de proteção para o vidro traseiro",
+    "Barra de proteção cromada",
+    "Santantonio cromado",
+    "Estribo cromado",
+    "Para-barro",
+    "Assentos de couro acabamento específico (marrom)",
+    "Badge externo nas portas da frente",
+    "Badge interno",
+    "Acabamentos interiores escurecidos",
+    "Acabamentos exteriores escurecidos",
+    "Cor e acabamento do painel (marrom)",
+    "Cluster específico (Welcome Movement)",
+    "Tapetes de carpete com bordados"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos#ultra-turbo-diesel-at9-4x4",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Toro",
+   "title": "Toro · ULTRA TURBO DIESEL AT9 4x4 (release 2021-04)",
+   "trims": [
+    "ultra"
+   ],
+   "years": [
+    2021,
+    2022
+   ],
+   "turbo": true,
+   "diesel": true,
+   "transmission": "automatico",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/nova-fiat-toro-versoes-e-precos",
+   "items": [
+    "Central multimídia de 10,1”",
+    "Grade frontal diferenciada",
+    "Dynamic bed cover (capota rígida)",
+    "Cargo bag",
+    "Moldura lateral da caixa de roda específica",
+    "Nova bitola 10 mm maior",
+    "Santantonio integrado",
+    "Estribo preto",
+    "Para-barro",
+    "Rodas de liga leve de 17” + pneus AT plus com escrita branca",
+    "Assentos de couro com acabamento específico (vermelho)",
+    "Badge externo (portas dianteiras)",
+    "Badge interno",
+    "Acabamentos interiores escurecido",
+    "Acabamentos exteriores escurecidos e logotipo Fiat",
+    "Maçaneta da porta na cor externa",
+    "Cor e acabamento do painel (vermelho)",
+    "Bordado nas costas nos bancos dianteiros",
+    "Cluster específico (Welcome movement)",
+    "Tapetes de carpete com bordados"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-lanca-modelos-208-e-2008-hibridos-e-inaugura-tecnologia-no-segmento-hatches-e-suvs-compactos-no-brasil#208-gt-t200-hybrid-at-nova-versao",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Peugeot"
+   ],
+   "line": "208",
+   "trims": [
+    "gt"
+   ],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 1,
+   "turbo": true,
+   "transmission": "automatico",
+   "title": "208 · 208 GT T200 Hybrid AT – Nova versão (release 2025-09)",
+   "page": "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-lanca-modelos-208-e-2008-hibridos-e-inaugura-tecnologia-no-segmento-hatches-e-suvs-compactos-no-brasil",
+   "items": [
+    "Peugeot i-Connect Advanced com conectividade total",
+    "Painel i-Cockpit 3D Hybrid de 10\" com o fluxo de energia, o consumo e a autonomia",
+    "Serviços conectados"
+   ],
+   "optional": [],
+   "hybrid": true
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-promove-condicoes-especiais-de-venda-para-o-suv-c4-cactus#jumpy-cargo-22-23-de-r-165-000-saindo",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Citroën"
+   ],
+   "line": "Jumpy",
+   "trims": [
+    "cargo"
+   ],
+   "years": [
+    2023,
+    2024
+   ],
+   "title": "Jumpy · Jumpy Cargo 22/23 – De R$ 165.000, saindo (release 2023-01)",
+   "page": "https://www.media.stellantis.com/br-pt/citroen/press/citroen-promove-condicoes-especiais-de-venda-para-o-suv-c4-cactus",
+   "items": [
+    "Limitador e regulador de velocidade",
+    "Indicador de fadiga",
+    "Controle de estabilidade",
+    "Controle de tração",
+    "Assistente de partida em rampa"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-cronos-2022-com-destaque-para-a-serie-s-design-reestilizada#cronos-1-3-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [],
+   "years": [
+    2022,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "transmission": "manual",
+   "title": "CRONOS · Cronos 1.3 MT (release 2021-07)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-cronos-2022-com-destaque-para-a-serie-s-design-reestilizada",
+   "items": [
+    "Ar-condicionado",
+    "Direção elétrica",
+    "Chave com telecomando",
+    "Rádio com Bluetooth",
+    "USB dianteiro",
+    "Monitoramento da pressão dos pneus",
+    "Vidros dianteiros elétricos",
+    "Travas elétricas",
+    "Alarme perimétrico",
+    "Comandos de som no volante",
+    "Lanternas em LED",
+    "Retrovisores externos com indicador de seta"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-cronos-2022-com-destaque-para-a-serie-s-design-reestilizada#cronos-drive-1-3-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2022,
+    2022
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "transmission": "manual",
+   "title": "CRONOS · Cronos Drive 1.3 MT (release 2021-07)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-cronos-2022-com-destaque-para-a-serie-s-design-reestilizada",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-cronos-2022-com-destaque-para-a-serie-s-design-reestilizada#cronos-1-3-mt",
+   "items": [
+    "Hill Holder",
+    "Controles de tração e estabilidade",
+    "Central multimídia Uconnect de 7\" com Apple CarPlay e Android Auto",
+    "Comandos de áudio no volante",
+    "Entradas USB dianteira e traseira",
+    "Vidros elétricos traseiros",
+    "Sensor de estacionamento traseiro",
+    "Assinatura em LED nos faróis"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat#cronos-1-3-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "transmission": "manual",
+   "title": "CRONOS · Cronos 1.3 MT (release 2020-11)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat",
+   "items": [
+    "Ar-condicionado",
+    "Direção elétrica",
+    "Chave com telecomando",
+    "Rádio com Bluetooth",
+    "USB dianteiro",
+    "Monitoramento da pressão dos pneus",
+    "Vidros dianteiros elétricos",
+    "Travas elétricas",
+    "Alarme perimétrico",
+    "Comandos de som no volante",
+    "Lanternas em LED"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat#cronos-precision-1-8-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "precision"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "CRONOS · Cronos Precision 1.8 AT6 (release 2020-11)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat",
+   "items": [
+    "Ar-condicionado automático digital",
+    "Keyless Entry n'Go",
+    "Rodas de liga leve de 16\"",
+    "Volante em couro com aletas para troca de marchas",
+    "Controle automático de velocidade",
+    "Retrovisores com ajuste elétrico",
+    "Faróis de neblina",
+    "Friso lateral e maçanetas cromadas",
+    "Apoio de braço para o motorista",
+    "Volante com regulagem de profundidade"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat#cronos-hgt-1-8-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "hgt"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "CRONOS · Cronos HGT 1.8 AT6 (release 2020-11)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/cronos-2021-chega-alinhado-a-nova-era-da-fiat#cronos-precision-1-8-at6",
+   "items": [
+    "Câmera de ré",
+    "Painel de instrumentos digital colorido TFT de 7\"",
+    "Rodas de liga leve de 17\"",
+    "Retrovisores e spoiler em preto brilhante",
+    "Revestimento em tecido especial HGT",
+    "Teto e detalhes internos em preto"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo 1.0 (release 2020-09)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos dianteiros",
+    "Alarme antifurto",
+    "Travas elétricas",
+    "Chave canivete com telecomando",
+    "Isofix",
+    "Volante com regulagem de altura"
+   ],
+   "optional": [
+    "Predisposição para som (antena, alto-falantes e tweeters)",
+    "Limpador e desembaçador do vidro traseiro"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-drive-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo Drive 1.0 (release 2020-09)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades",
+   "items": [
+    "Banco do motorista com regulagem de altura",
+    "Limpador e desembaçador do vidro traseiro",
+    "Maçanetas e retrovisores na cor do veículo",
+    "Central multimídia Uconnect de 7\"",
+    "Volante multifuncional",
+    "Entrada USB traseira"
+   ],
+   "optional": [
+    "Pacote Plus (retrovisores elétricos, vidros traseiros elétricos e sensor de estacionamento traseiro)",
+    "Série S-Design (pacote Plus e sensor de pressão dos pneus)",
+    "Pintura bicolor"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-trekking-1-3",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "trekking"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo Trekking 1.3 (release 2020-09)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades",
+   "items": [
+    "Suspensão elevada (210 mm de vão livre)",
+    "Pneus de uso misto",
+    "Teto bicolor",
+    "Barras de teto, retrovisores e aerofólio em preto",
+    "Faróis com LED",
+    "Bancos em tecido escuro com costura laranja",
+    "Controles de tração e estabilidade",
+    "Hill Holder"
+   ],
+   "optional": [
+    "Kit Plus (rodas de liga leve de 15\" e câmera de ré)",
+    "Kit Full (kit Plus, Keyless Entry n'Go e ar-condicionado digital automático)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-trekking-1-8-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "trekking"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "ARGO · Fiat Argo Trekking 1.8 AT (release 2020-09)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-trekking-1-3",
+   "items": [
+    "Câmbio automático de 6 marchas",
+    "Rodas de liga leve de 15\" escurecidas"
+   ],
+   "optional": [
+    "Pacote Plus (câmera de ré, Keyless Entry n'Go e ar-condicionado digital automático)",
+    "Pacote Full (pacote Plus, rebatimento elétrico dos retrovisores, painel TFT de 7\", bancos em couro, apoio de braço dianteiro, sensores de chuva e crepuscular e retrovisor eletrocrômico)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades#fiat-argo-hgt-1-8-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "hgt"
+   ],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "ARGO · Fiat Argo HGT 1.8 AT (release 2020-09)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/fiat-apresenta-linha-2021-do-argo-com-novidades",
+   "items": [
+    "Painel de instrumentos digital TFT de 7\"",
+    "Volante em couro",
+    "Apoio de braço dianteiro",
+    "Rodas esportivas de 17\" pretas",
+    "Aerofólio traseiro",
+    "Escapamento esportivo",
+    "Suspensão com calibração esportiva",
+    "Faróis de neblina"
+   ],
+   "optional": [
+    "Kit Full (Keyless Entry n'Go, rebatimento elétrico dos retrovisores, ar-condicionado digital, câmera de ré, sensores de chuva e crepuscular, retrovisor eletrocrômico, piloto automático e aletas para troca de marchas)",
+    "Bancos em couro",
+    "Airbags laterais dianteiros",
+    "Pintura bicolor"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-1-3",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "CRONOS · Cronos 1.3 (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "items": [
+    "Alarme",
+    "Ar-condicionado",
+    "Direção elétrica",
+    "Chave com telecomando",
+    "Rádio com Bluetooth e USB"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-drive-1-3-mt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "transmission": "manual",
+   "title": "CRONOS · Cronos Drive 1.3 MT (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-1-3",
+   "items": [
+    "LED Design",
+    "Sensor de estacionamento",
+    "Central multimídia Uconnect com Apple CarPlay e Android Auto",
+    "Segunda entrada USB, para o banco traseiro"
+   ],
+   "optional": [
+    "Kit Convenience (retrovisores elétricos, vidros elétricos traseiros, ar-condicionado digital e câmera de ré)",
+    "Kit Stile (faróis de neblina, rodas de liga de 15\" e banco bipartido)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-drive-1-3-gsr",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "drive",
+    "gsr"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "CRONOS · Cronos Drive 1.3 GSR (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-drive-1-3-mt",
+   "items": [
+    "Câmbio automatizado GSR de 5 marchas",
+    "Controle de estabilidade",
+    "Hill Holder",
+    "Controle de tração",
+    "Ambient Lights",
+    "Aletas para troca de marchas atrás do volante"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-drive-1-8-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "CRONOS · Cronos Drive 1.8 AT (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "items": [
+    "Câmbio automático",
+    "Monitoramento da pressão dos pneus (iTPMS)",
+    "Vidros elétricos dianteiros",
+    "Controles eletrônicos de tração e estabilidade",
+    "Travas elétricas",
+    "Volante com regulagem de altura",
+    "Partida a frio sem tanquinho",
+    "Painel com display TFT de 3,5\""
+   ],
+   "optional": [
+    "Kit Convenience (retrovisores elétricos, vidros elétricos traseiros, ar-condicionado digital e câmera de ré)",
+    "Kit Stile II (faróis de neblina, rodas de liga de 16\", banco bipartido, piloto automático, volante em couro e aletas para troca de marchas)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-precision-1-8-at",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "precision"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "CRONOS · Cronos Precision 1.8 AT (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "items": [
+    "Câmbio automático de 6 marchas",
+    "Neutral Function",
+    "Rodas de liga leve de 16\"",
+    "Aletas para troca de marchas",
+    "Frisos, maçanetas e para-choques com detalhes cromados",
+    "Volante em couro",
+    "Piloto automático",
+    "Apoio de braço para o motorista",
+    "Banco traseiro bipartido",
+    "Sensor de estacionamento",
+    "Central multimídia Uconnect de 7\""
+   ],
+   "optional": [
+    "Câmera de ré",
+    "Airbags laterais",
+    "Kit Tech (Keyless Entry n'Go, rebatimento elétrico dos retrovisores, ar-condicionado digital, painel de 7\", sensores de chuva e crepuscular e retrovisor eletrocrômico)",
+    "Kit Stile (bancos em couro e rodas de liga de 17\")"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at#cronos-hgt-1-8-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "CRONOS",
+   "trims": [
+    "hgt"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "CRONOS · Cronos HGT 1.8 AT6 (release 2019-08)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-cronos-chega-com-nova-versao-hgt-1-8-at",
+   "items": [
+    "Painel de instrumentos de 7\"",
+    "Ar-condicionado digital",
+    "Revestimento em tecido especial HGT",
+    "Teto e detalhes internos em preto",
+    "Rodas de 17\"",
+    "Spoiler e retrovisores em preto",
+    "Grade frontal escurecida",
+    "Maçanetas na cor do veículo"
+   ],
+   "optional": [
+    "Teto bicolor",
+    "Bancos de couro",
+    "Câmera de ré",
+    "Airbags laterais",
+    "Kit Tech 2 (Keyless Entry n'Go, rebatimento elétrico dos retrovisores, sensores de chuva e crepuscular e retrovisor eletrocrômico)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva#fiat-argo-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo 1.0 (release 2019-04)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva",
+   "items": [
+    "Computador de bordo",
+    "Direção elétrica",
+    "Isofix",
+    "Volante com regulagem de altura",
+    "Alarme",
+    "Chave canivete com telecomando"
+   ],
+   "optional": [
+    "Predisposição para rádio",
+    "Kit visibilidade (desembaçador, limpador e lavador do vidro traseiro)"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva#fiat-argo-drive-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo Drive 1.0 (release 2019-04)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva#fiat-argo-1-0",
+   "items": [
+    "Banco do motorista com regulagem de altura",
+    "Desembaçador do vidro traseiro temporizado",
+    "Limpador e lavador do vidro traseiro com intermitência",
+    "Moldura do volante e console central com acabamento prata"
+   ],
+   "optional": [
+    "Kit Multimídia 9\"",
+    "Kit Parking",
+    "Kit Convenience",
+    "Pacote com Start & Stop, controle de estabilidade, Hill Holder e controle de tração",
+    "Pintura bicolor"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva#fiat-argo-trekking-1-3",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "trekking"
+   ],
+   "years": [
+    2020,
+    2020
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "ARGO · Fiat Argo Trekking 1.3 (release 2019-04)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/linha-2020-do-fiat-argo-chega-ainda-mais-competitiva",
+   "items": [
+    "Suspensão elevada (210 mm de vão livre)",
+    "Pneus 205/60 R15 de uso misto",
+    "Teto bicolor",
+    "Barras de teto, retrovisores e aerofólio em preto",
+    "Faróis com LED",
+    "Rodas de aro 15 com calotas escurecidas",
+    "Bancos em tecido escuro com costura laranja",
+    "Central multimídia Uconnect de 7\" com Apple CarPlay e Android Auto",
+    "Vidros elétricos dianteiros e traseiros",
+    "Retrovisores elétricos",
+    "Faróis de neblina"
+   ],
+   "optional": [
+    "Rodas de liga leve de 15\"",
+    "Câmera de ré com linhas dinâmicas"
+   ]
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-drive-1-0",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1,
+   "turbo": false,
+   "title": "ARGO · Argo Drive 1.0 (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "items": [
+    "Alarme antifurto",
+    "Banco do motorista com regulagem de altura",
+    "Chave canivete com telecomando para portas, vidros e porta-malas",
+    "Desembaçador do vidro traseiro temporizado",
+    "Limpador e lavador do vidro traseiro com intermitência"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-drive-1-3",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "drive"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "ARGO · Argo Drive 1.3 (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-drive-1-0",
+   "items": [
+    "Motor FireFly 1.3 Flex de 4 cilindros",
+    "Monitoramento da pressão dos pneus"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-drive-1-3-gsr",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "drive",
+    "gsr"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1.3,
+   "turbo": false,
+   "title": "ARGO · Argo Drive 1.3 GSR (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-drive-1-3",
+   "items": [
+    "Ambient Lights",
+    "Apoio de braço para o motorista",
+    "Câmbio automatizado GSR Comfort com botões",
+    "Aletas para troca de marchas atrás do volante",
+    "Controle de estabilidade (ESC)",
+    "Hill Holder",
+    "Piloto automático",
+    "Retrovisores elétricos com tilt down e setas integradas",
+    "Start&Stop",
+    "Controle de tração",
+    "Vidros elétricos traseiros com one touch e antiesmagamento"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-precision-1-8",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "precision"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "title": "ARGO · Argo Precision 1.8 (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "items": [
+    "Banco traseiro bipartido 60/40",
+    "Central multimídia Uconnect de 7\" com Android Auto, Apple CarPlay, Bluetooth, USB e reconhecimento de voz",
+    "Volante multifuncional",
+    "Faróis de neblina",
+    "Rodas de liga leve de 15\"",
+    "Pneus 185/60 R15"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-1-8-hgt",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "hgt"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "title": "ARGO · Argo 1.8 HGT (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-precision-1-8",
+   "items": [
+    "Aerofólio traseiro e capas dos retrovisores em cinza",
+    "Escapamento esportivo",
+    "Grade inferior dianteira com aplique vermelho",
+    "Para-choque traseiro com moldura inferior exclusiva",
+    "Painel de instrumentos TFT de 7\" personalizável",
+    "Rodas de liga leve de 16\"",
+    "Pneus 195/55 R16",
+    "Suspensão com calibração esportiva"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-1-8-hgt-at6",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "ARGO",
+   "trims": [
+    "hgt"
+   ],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 1.8,
+   "turbo": false,
+   "transmission": "automatico",
+   "title": "ARGO · Argo 1.8 HGT AT6 (release 2018-10)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019",
+   "addsTo": "https://www.media.stellantis.com/br-pt/fiat/press/versao-precision-coloca-toda-linha-argo-em-2019#argo-1-8-hgt",
+   "items": [
+    "Ambient Lights",
+    "Apoio de braço para o motorista",
+    "Câmbio automático de 6 marchas com aletas atrás do volante",
+    "Piloto automático"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.media.stellantis.com/br-pt/fiat/press/com-as-novas-versoes-2-portas-fiat-uno-ja-oferece-10-opcoes-de-compra-ao-consumidor#sporting-1-4-flex-4-portas",
+   "brand": "stellantis",
+   "fipeBrands": [
+    "Fiat"
+   ],
+   "line": "Uno",
+   "trims": [
+    "sporting"
+   ],
+   "years": [
+    2011,
+    2012
+   ],
+   "engineLiters": 1.4,
+   "turbo": false,
+   "diesel": false,
+   "title": "Uno · Sporting 1.4 Flex 4 portas (release 2011-03)",
+   "page": "https://www.media.stellantis.com/br-pt/fiat/press/com-as-novas-versoes-2-portas-fiat-uno-ja-oferece-10-opcoes-de-compra-ao-consumidor",
+   "items": [
+    "Motor Fire 1.4 Evo",
+    "Suspensão esportiva, 20 mm mais baixa",
+    "Faróis com máscara negra",
+    "Spoiler dianteiro e minissaias laterais",
+    "Ponteira de escapamento dupla",
+    "Lanternas traseiras fumê",
+    "Aerofólio preto",
+    "Rodas de liga leve de 15\" com pneus 185/60 R15",
+    "Computador de bordo",
+    "Volante em couro",
+    "Bancos em tecido exclusivo",
+    "Direção hidráulica",
+    "Faróis de neblina",
+    "Travas e vidros dianteiros elétricos"
+   ],
+   "optional": [
+    "HSD (airbag duplo e freios ABS)",
+    "Ar-condicionado",
+    "Rádio CD MP3 com Bluetooth e USB",
+    "Kit Sport (adesivos e emblema)",
+    "Kit Exclusive (volante, bancos e tapetes com detalhes laranja)"
+   ]
+  }
+ ],
+ "rejected": [
+  "https://imprensa.renault.com.br/release/renault-amplia-oferta-do-lider-em-vendas-master-com-a-nova-versao-minibus-vip-by-raytec#master-minibus-vip-by-raytec",
+  "https://www.media.stellantis.com/br-pt/jeep/press/jeep-renegade-apresenta-novidades-e-fica-ainda-mais-competitivo-na-linha-2026#jeep-renegade-sport",
+  "https://www.media.stellantis.com/br-pt/citroen/press/citroen-basalt-chega-ao-brasil-a-partir-de-r-89-990-unindo-espaco-interno-e-estilo-coupe-no-suv-mais-acessivel-do-mercado#novo-suv-coupe-citroen-basalt-first-edition-turbo-200",
+  "https://www.media.stellantis.com/br-pt/citroen/press/novo-citroen-c3-aircross-chega-como-o-suv-turbo-mais-acessivel-do-brasil-com-muito-espaco-estilo-unico-e-diversas-inovacoes#novo-suv-citroen-aircross-shine-turbo-200-at",
+  "https://www.media.stellantis.com/br-pt/peugeot/press/peugeot-208-ganha-potencia-e-desempenho-com-as-novas-versoes-turbo#mopar-pack-launch",
+  "https://www.media.stellantis.com/br-pt/citroen/press/novo-suv-citroen-c4-cactus-2024-chega-repleto-de-novidades-de-conectividade-e-conforto-com-performance-acessivel#novo-suv-citroen-c4-cactus-2024-shine-pack-1-6-thp",
+  "https://www.media.stellantis.com/br-pt/jeep/press/chegou-o-novo-jeep-gladiator-a-picape-com-dna-jeep#sao-paulo",
+  "https://www.media.stellantis.com/br-pt/jeep/press/novo-renegade-2019-mais-inovador-mais-jeep#1-8-flex-at6-exclusivo-para-pcd",
+  "https://www.media.stellantis.com/br-pt/jeep/press/linha-2017-do-jeep-renegade-chega-com-muitas-novidades-destacando-o-motor-1-8-etorq-evo-flex-mais-potente-e-economico#trailhawk-2-0-diesel-at9-4x4",
+  "https://www.media.stellantis.com/br-pt/jeep/press/jeep-renegade-apresenta-linha-2017-no-salao-do-automovel-com-muitas-novidades#trailhawk-2-0-diesel-at9-4x4",
+  "https://www.media.stellantis.com/br-pt/citroen/press/citroen-inicia-pre-venda-do-c4-picasso-no-brasil#novo-citroen-c4-picasso-seduction",
+  "https://www.media.stellantis.com/br-pt/citroen/press/citroen-inicia-pre-venda-do-c4-picasso-no-brasil#novo-citroen-c4-picasso-intensive",
+  "https://www.media.stellantis.com/br-pt/fiat/press/mais-tecnologia-para-novo-palio-palio-adventure-e-strada-adventure#novo-palio-attractive-1-0-4p",
+  "https://imprensa.renault.com.br/release/novo-renault-logan-precos-sugeridos#novo-logan-authentique-1-0-16v-hi-flex-2010-2011",
+  "https://imprensa.renault.com.br/release/novo-renault-logan-precos-sugeridos#novo-logan-expression-1-0-16v-hi-flex-2010-2011",
+  "https://imprensa.renault.com.br/release/novo-renault-logan-precos-sugeridos#novo-logan-expression-1-6-8v-hi-torque-2010-2011",
+  "https://www.media.stellantis.com/br-pt/jeep/press/jeep-oferece-condicoes-especiais-para-renegade-longitude-hibrido-mhev-e-compass-sport-dentro-do-programa-move-brasil#jeep-renegade-longitude-hibrido-mhev-r-158-670-00",
+  "https://www.media.stellantis.com/br-pt/jeep/press/jeep-oferece-condicoes-imperdiveis-para-renegade-compass-e-commander-em-junho#o-jeep-commander-longitude-7-lugares-de-r-240-490-00",
+  "https://www.media.stellantis.com/br-pt/ram/press/ram-2500-fica-mais-competitiva-na-linha-2021#36-meses-ou-72-mil-km",
+  "https://imprensa.renault.com.br/release/renault-inova-mais-uma-vez-com-o-kwid-o-suv-dos-compactos#intense-pack-connect",
+  "https://imprensa.renault.com.br/release/renault-anuncia-novo-lote-da-pre-venda-do-kwid#intense-pack-connect",
+  "https://imprensa.renault.com.br/release/renault-duster-16-sce-ganha-novo-cambio-x-tronic-cvt#duster-2-0-dynamique-4x4",
+  "https://imprensa.renault.com.br/release/renault-anuncia-pre-venda-do-kwid-o-suv-dos-compactos#intense-pack-connect",
+  "https://www.media.stellantis.com/br-pt/fiat/press/com-novidades-chegam-novas-versoes-2011-dos-modelos-fiat-doblo-e-siena#fiat-doblo-cargo-1-4"
+ ]
+}

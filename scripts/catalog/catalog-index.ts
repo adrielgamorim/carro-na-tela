@@ -1,3 +1,4 @@
+import { parseModelName } from "../../src/catalog/modelName.ts";
 import type {
   CatalogIndexFile,
   WireVersion,
@@ -189,8 +190,10 @@ export function buildCatalogIndex(
           n: vehicle.model,
           y: [],
         };
-        if (Object.keys(vehicle.attributes).length > 0) {
-          version.a = vehicle.attributes;
+        // Read again from the name, so the parser's fixes reach snapshots crawled before them.
+        const attributes = parseModelName(vehicle.model, { motorcycle: snapshot.category === "motorcycles" });
+        if (Object.keys(attributes).length > 0) {
+          version.a = attributes;
         }
         versions.set(key, version);
         versionFuel.set(version, vehicle.fuel);
@@ -440,7 +443,8 @@ export function buildCatalogIndex(
             diesel: /diesel/i.test(versionFuel.get(version) ?? ""),
             valves: version.a?.valves,
           });
-        if (!sheet) return -1;
+        // Sheets that fit as well but share no figure say nothing.
+        if (!sheet || !Object.keys(sheet.specs).length) return -1;
         if (!sheetIndex.has(sheet)) {
           sheetIndex.set(sheet, sheetList.length);
           sheetList.push({
@@ -519,6 +523,7 @@ export function buildCatalogIndex(
         turbo: version.a?.aspiration === "turbo",
         electric: /el[eé]tric/i.test(versionFuel.get(version) ?? ""),
         hybrid: /h[ií]brid|hybrid/i.test(`${version.n} ${versionFuel.get(version) ?? ""}`),
+        diesel: /diesel/i.test(versionFuel.get(version) ?? ""),
       };
       const perYear = versionYears(version.y.map(([yearCode]) => yearCode), now).map((modelYear) => {
         const list = equipmentOfVersion(equipment, { ...target, modelYear });

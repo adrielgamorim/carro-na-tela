@@ -35,10 +35,11 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       Hyundai lista os seus em `/proprietarios.model.json` (o robots.txt permite), mas são só os ~10
       dos modelos atuais, que os catálogos já cobrem; o site da Honda responde "Access Denied"
       (Akamai), então fica de fora.
-- [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
-      `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
-      revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
-      vez em quando para os releases novos.
+- [ ] 🟢 Revisar os equipamentos dos releases que faltam (`npm run crawl:releases`, depois
+      `npm run extract:equipamentos`, que deixa em `data/imprensa/equipamentos-candidates.json` o
+      que ainda não está em `data/imprensa/equipamentos.json`): os da Volkswagen (a leitura das
+      ~3.000 notícias leva ~75 min) e os releases novos. Os em prosa (o rascunho junta pedaços de
+      frase, como "Além de maçanetas") precisam ser reescritos à mão. Revisar também `npm run extract:imprensa` de vez em quando.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
       tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos); rodar
       `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
@@ -51,8 +52,7 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       (`?categoria=`), e o daily varre motos e caminhões depois dos carros, com a cota que sobra. Em
       01/11/2026 a listagem de motos parou em 2018 (3.576 versões-ano, sem preços) e a de caminhões não
       começou. Falta: terminar as listagens e os preços, rodar `fetch:wmi` depois que os caminhões
-      entrarem (Scania, DAF…), alíquotas de IPVA de motos e caminhões (hoje só carros mostram IPVA) e a
-      cilindrada das motos em cc (a FIPE escreve "150cc" ou nada; o filtro em litros fica escondido).
+      entrarem (Scania, DAF…) e alíquotas de IPVA de motos e caminhões (hoje só carros mostram IPVA).
 
 ### Sem fonte aberta ou sem ganho por enquanto
 
@@ -98,6 +98,20 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 - APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído
+
+- [x] Cilindrada das motos em cc: do "150cc" do nome ou, sem ele, do número do modelo ("CB 650F",
+      "R 1250 GS"), que é a cilindrada nominal; ficam de fora watts ("3000W"), aniversários ("115th",
+      "50 Anos") e o 946 da Vespa. 790 de 979 motos têm; o filtro de cilindrada aparece nas motos, em
+      classes de 50 a 1.800 cc, e os cartões mostram "650 cc".
+- [x] Equipamentos citados nos releases (`npm run crawl:releases`, `extract:equipamentos`): cada
+      versão com preço ("Citroën C3 Live Plus – R$ …") e seus itens em lista, herdando os da versão
+      de que diz partir ("Todos os itens da versão Live Go mais:"). Revisados 120 de 2021 em diante
+      (104 aceitos, 16 rejeitados: preços, condições de venda, blocos com várias versões); entram só
+      onde não há lista da sala de imprensa e aparecem como "Release da Stellantis". Equipamentos em
+      231 versões (eram 225), agora também de Citroën, Fiat, Jeep, Peugeot e RAM. De quebra: o
+      "T270"/"TD380" da Stellantis conta como turbo, o "208"/"2008"/"3500" como nome da linha, e uma
+      ficha sem nenhum número em comum não aparece; 727 fichas casadas com 1.452 anos-modelo (eram
+      700 e 1.415).
 
 - [x] Escolha Carros / Motos / Caminhões no catálogo (`?categoria=`; `tipo=` é da Consulta FIPE): a
       lista, os filtros, as contagens e o cabeçalho são da categoria; os filtros que só valem para

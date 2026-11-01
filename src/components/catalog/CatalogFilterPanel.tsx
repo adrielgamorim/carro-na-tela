@@ -16,6 +16,7 @@ import {
   steeringLabels,
   transmissionLabels,
 } from "../../catalog/labels";
+import { motorcycleClasses } from "../../catalog/filters";
 import { CheckList, ChipGroup } from "./facetControls";
 import { asIs, fromRecord, parseNumber, toggleValue } from "./facetValues";
 import type { Labeler } from "./facetValues";
@@ -57,6 +58,10 @@ export function CatalogFilterPanel({
 }: CatalogFilterPanelProps) {
   // The body, engine size, doors, size, consumption and comfort filters read cars' names and the INMETRO tables.
   const cars = filters.category === "cars";
+  // Motorcycles have cc (from the name), in common classes rather than every size listed.
+  const motorcycles = filters.category === "motorcycles";
+  const engines = motorcycles ? motorcycleClasses(bounds.engines) : bounds.engines;
+  const engineText = (size: number) => (motorcycles ? `${size} cc` : size.toFixed(1));
   const years: number[] = [];
   if (bounds.yearMin !== null && bounds.yearMax !== null) {
     for (let year = bounds.yearMax; year >= bounds.yearMin; year -= 1) {
@@ -270,9 +275,9 @@ export function CatalogFilterPanel({
               options={[...facets.lists.gears].sort((a, b) => Number(a.value) - Number(b.value))}
             />
           </div>
-          {cars && (
+          {(cars || motorcycles) && engines.length > 0 && (
             <div className="facet-field">
-              <span className="facet-label">Cilindrada (litros)</span>
+              <span className="facet-label">Cilindrada ({motorcycles ? "cc" : "litros"})</span>
               <div className="facet-range">
                 <select
                   aria-label="Cilindrada mínima"
@@ -282,9 +287,9 @@ export function CatalogFilterPanel({
                   }
                 >
                   <option value="">De</option>
-                  {bounds.engines.map((liters) => (
-                    <option key={liters} value={liters}>
-                      {liters.toFixed(1)}
+                  {engines.map((size) => (
+                    <option key={size} value={size}>
+                      {engineText(size)}
                     </option>
                   ))}
                 </select>
@@ -297,9 +302,9 @@ export function CatalogFilterPanel({
                   }
                 >
                   <option value="">Até</option>
-                  {bounds.engines.map((liters) => (
-                    <option key={liters} value={liters}>
-                      {liters.toFixed(1)}
+                  {engines.map((size) => (
+                    <option key={size} value={size}>
+                      {engineText(size)}
                     </option>
                   ))}
                 </select>

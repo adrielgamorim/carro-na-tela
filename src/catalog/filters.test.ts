@@ -6,6 +6,7 @@ import {
   emptyCatalogFilters,
   filterCatalog,
   groupCatalog,
+  motorcycleClasses,
   readCatalogParams,
   writeCatalogParams,
 } from "./filters";
@@ -168,6 +169,18 @@ describe("engine and doors filters", () => {
     expect(params.toString()).toBe("portas=4&portas=5&motor=1.3-2");
     expect(readCatalogParams(params)).toEqual(selected);
     expect(countActiveFilters(selected)).toBe(3);
+  });
+
+  it("filters motorcycles by cc, in common classes", () => {
+    const motorcycle = (id: string, displacementCc?: number) =>
+      version({ id, codeFipe: id, category: "motorcycles", attributes: { displacementCc } });
+    const bikes = [motorcycle("biz", 110), motorcycle("cb", 650), motorcycle("gs", 1250), motorcycle("eletrica")];
+
+    expect(ids(filterCatalog(bikes, filters({ category: "motorcycles", engineMin: 500 })))).toEqual(["cb", "gs"]);
+    expect(ids(filterCatalog(bikes, filters({ category: "motorcycles", engineMax: 650 })))).toEqual(["biz", "cb"]);
+    expect(catalogBounds(bikes).engines).toEqual([110, 650, 1250]);
+    expect(motorcycleClasses([110, 650, 1250])).toEqual([125, 150, 160, 200, 250, 300, 400, 500, 650, 750, 900, 1000, 1200]);
+    expect(motorcycleClasses([])).toEqual([]);
   });
 
   it("keeps the category in the URL, cars by default, and not as a filter", () => {

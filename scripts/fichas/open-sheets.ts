@@ -195,7 +195,11 @@ export function valvesIn(text: string): number | undefined {
 // Words of a line or a version name that are not part of the line or a trim.
 const notALineWord = /^(novo|nova|new|ficha|tecnica|volkswagen|vw|renault|\d.*)$/;
 /** The words that name a line: "Novo Jetta GLI" → jetta gli, "Kwid E-TECH" → kwid e tech. */
-export const lineWords = (line: string) => words(line).filter((word) => !notALineWord.test(word));
+// A number first is the name, not a year or an engine: Peugeot's "208", RAM's "3500".
+export const lineWords = (line: string) =>
+  words(line).filter(
+    (word, at, all) => !notALineWord.test(word) || (/^\d+$/.test(word) && all.slice(0, at).every((other) => /^(novo|nova|new)$/.test(other))),
+  );
 
 export interface VwLink {
   model: string;

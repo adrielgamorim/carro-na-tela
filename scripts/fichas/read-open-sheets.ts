@@ -27,6 +27,8 @@ import { fordPages, fordSpecPage } from "./ford.ts";
 import { nissanComparePage, nissanModels } from "./nissan.ts";
 import type { ManualsFile } from "./fetch-manuais.ts";
 import { renaultManualSheets, withPowerInCv } from "./renault-manual.ts";
+import { releaseEquipment } from "../imprensa/release-lists.ts";
+import type { ReleaseEquipmentFile } from "../imprensa/release-lists.ts";
 
 const sheets: OpenSheet[] = [];
 const equipment: EquipmentList[] = [];
@@ -240,6 +242,12 @@ const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
 sheets.push(...toyotaByHand.sheets);
 equipment.push(...toyotaByHand.equipment);
 
+// The versions the press releases list, reviewed by hand (npm run extract:equipamentos): only where no list fits.
+const fromReleases = await readFile("data/imprensa/equipamentos.json", "utf8")
+  .then((text) => releaseEquipment(JSON.parse(text) as ReleaseEquipmentFile))
+  .catch(() => []);
+equipment.push(...fromReleases);
+
 // Two files of the same sheets (Renault lists the Z.E. sheet twice): once. Not
 // the same figures for other years (Nissan's Kicks of 2026 and of 2027).
 const seen = new Set<string>();
@@ -258,7 +266,7 @@ await writeFileRetrying("data/fichas/fichas-abertas.json", `${JSON.stringify(out
 console.log(`${unique.length} fichas em data/fichas/fichas-abertas.json`);
 
 const equipmentOut: EquipmentFile = {
-  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json.",
+  _doc: "Equipamentos de série por versão da Renault, da Toyota, da Hyundai, da Honda, da Kia, da GWM, da Ford e da Nissan (npm run fichas:abertas), das listas, folhetos e páginas em data/fichas/renault, toyota, hyundai, honda e sites e de data/fichas/toyota.json; e os itens que os releases da Stellantis, da Renault e da Volkswagen citam (data/imprensa/equipamentos.json).",
   lists: equipment,
 };
 await writeFileRetrying("data/fichas/equipamentos.json", `${JSON.stringify(equipmentOut, null, 1)}\n`);

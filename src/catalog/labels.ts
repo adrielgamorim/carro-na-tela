@@ -88,7 +88,7 @@ export function transmissionLabel(entry: CatalogEntry): string | null {
 export function engineLabel(entry: CatalogEntry): string | null {
   const { attributes } = entry;
   const label = [
-    attributes.engineLiters?.toFixed(1),
+    attributes.displacementCc ? `${attributes.displacementCc} cc` : attributes.engineLiters?.toFixed(1),
     attributes.aspiration === "turbo" ? "turbo" : undefined,
     attributes.aspiration === "compressor" ? "compressor" : undefined,
   ]

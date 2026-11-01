@@ -34,6 +34,9 @@ dist-ssr
 # Press release cache (npm run crawl:imprensa)
 data/imprensa/stellantis-releases.jsonl
 data/imprensa/stellantis-candidates.json
+data/imprensa/renault-releases.jsonl
+data/imprensa/vw-releases.jsonl
+data/imprensa/equipamentos-candidates.json
 
 # Fichas técnicas baixadas (à mão ou por fichas:vw e fichas:renault) e a lista gerada
 data/fichas/pdf/

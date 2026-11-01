@@ -28,6 +28,8 @@ export type CabType = "simples" | "dupla" | "estendida";
 
 export interface ModelNameAttributes {
   engineLiters?: number;
+  /** Motorcycles: "SR 150cc", or the nominal size of the model number ("CB 650F"). */
+  displacementCc?: number;
   valves?: number;
   cylinders?: number;
   aspiration?: "turbo" | "compressor";
@@ -99,8 +101,9 @@ const twoWheelPattern = token("4x2|2WD");
 // Bare "TB" only: "T.B." in vans means "teto baixo" (low roof).
 // "T." and "Turb." abbreviate turbo ("1.0 200 T. Flex"); "T.A."/"T.B." (van
 // roof heights) and VW's "T.Flex" (Total Flex) do not match as whole tokens.
+// Stellantis names its turbos by torque: "1.3 T270", "TD380" (not Bull's "BM-T180" motorcycle).
 const turboPattern = token(
-  "TB|Bi-TB|Turbo|Bi-?Turbo|TSI|TFSI|TDI|T-?GDI|THP|EcoBoost|T\\.|Turb\\.?",
+  "TB|Bi-TB|Turbo|Bi-?Turbo|TSI|TFSI|TDI|T-?GDI|THP|EcoBoost|T\\.|Turb\\.?|T(?:200|270)|TD\\d{3}",
 );
 const compressorPattern = token("Kompressor|Compressor");
 const electricPattern = token("El[eé]tric[oa]");
@@ -120,6 +123,30 @@ function parseEngineLiters(name: string): number | undefined {
   if (!match) return undefined;
   const liters = Number(match[1]);
   return liters >= 0.6 && liters <= 8.5 ? liters : undefined;
+}
+
+// "150cc", "XTZ 250 LANDER 249cc/LANDER" (the cc figure beats the model number).
+const ccPattern = /(?<![\p{L}\d.,])(\d{2,4}) ?cc(?![\p{L}])/iu;
+// A motorcycle's model number is its nominal size: "CB 650F", "YBR 125i", "50-Q RAY",
+// "R 1250 GS", "CBR 1000RR". Not glued to letters before it ("V200", "MT-07") nor watts ("TC 3000W").
+const modelNumberPattern = /(?<![\p{L}\d.,-])(\d{2,4})([a-vx-z]{0,2})(?![\p{L}\d.,])/giu;
+// Numbers that are not sizes: "115th ANNIVERSARY", "120 Year Edition", "CG 160 TITAN 50 Anos",
+// and the Vespa 946 (a model name: "VESPA 946 EMPORIO ARMANI 150").
+const notASize = /^(?:st|nd|rd|th)$/i;
+const anniversary = /^\s+(?:anos|years?)\b/i;
+
+// Motorcycles only: cars have liters, and "206 CC" is Peugeot's coupé-cabriolet.
+function parseDisplacementCc(name: string): number | undefined {
+  const written = ccPattern.exec(name);
+  if (written) return Number(written[1]);
+  if (electricPattern.test(name)) return undefined;
+  for (const match of name.matchAll(modelNumberPattern)) {
+    const cc = Number(match[1]);
+    const after = name.slice(match.index + match[0].length);
+    if (notASize.test(match[2] ?? "") || anniversary.test(after) || cc === 946) continue;
+    if (cc >= 50 && cc <= 2500) return cc;
+  }
+  return undefined;
 }
 
 function parseFourWheelDrive(name: string): boolean | undefined {
@@ -151,7 +178,8 @@ function parseFuel(name: string): ModelNameAttributes["fuel"] {
   return undefined;
 }
 
-export function parseModelName(name: string): ModelNameAttributes {
+/** `motorcycle`: also read the displacement in cc ("150cc", or the model number). */
+export function parseModelName(name: string, { motorcycle = false } = {}): ModelNameAttributes {
   const attributes: ModelNameAttributes = {};
   const set = <K extends keyof ModelNameAttributes>(
     key: K,
@@ -161,6 +189,7 @@ export function parseModelName(name: string): ModelNameAttributes {
   };
 
   set("engineLiters", parseEngineLiters(name));
+  if (motorcycle) set("displacementCc", parseDisplacementCc(name));
 
   const valves = token("(6|8|12|16|20|24|32|40|48)V").exec(name);
   set("valves", valves ? Number(valves[1]) : undefined);

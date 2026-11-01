@@ -33,7 +33,7 @@ export interface CatalogFilters {
   yearMax: number | null;
   priceMin: number | null;
   priceMax: number | null;
-  /** Engine displacement in liters. */
+  /** Engine displacement: cc for motorcycles, liters for the rest (see engineSize). */
   engineMin: number | null;
   engineMax: number | null;
   /** Minimum city km/l (INMETRO). */
@@ -43,6 +43,21 @@ export interface CatalogFilters {
   turbo: boolean;
   fourWheelDrive: boolean;
   sort: CatalogSort;
+}
+
+/** The displacement the engine filter compares: cc for motorcycles, liters for the rest. */
+export function engineSize(entry: CatalogEntry): number | undefined {
+  return entry.category === "motorcycles" ? entry.attributes.displacementCc : entry.attributes.engineLiters;
+}
+
+const motorcycleSizes = [50, 100, 125, 150, 160, 200, 250, 300, 400, 500, 650, 750, 900, 1000, 1200, 1500, 1800];
+
+/** The common motorcycle sizes (cc) between the smallest and largest listed, for the engine range. */
+export function motorcycleClasses(sizes: number[]): number[] {
+  if (!sizes.length) return [];
+  const smallest = Math.min(...sizes);
+  const largest = Math.max(...sizes);
+  return motorcycleSizes.filter((size) => size >= smallest && size <= largest);
 }
 
 export const emptyCatalogFilters: CatalogFilters = {
@@ -180,10 +195,10 @@ function matches(
   if (filters.yearMin !== null && year < filters.yearMin) return false;
   if (filters.yearMax !== null && year > filters.yearMax) return false;
   if (filters.engineMin !== null || filters.engineMax !== null) {
-    const liters = entry.attributes.engineLiters;
-    if (liters === undefined) return false;
-    if (filters.engineMin !== null && liters < filters.engineMin) return false;
-    if (filters.engineMax !== null && liters > filters.engineMax) return false;
+    const size = engineSize(entry);
+    if (size === undefined) return false;
+    if (filters.engineMin !== null && size < filters.engineMin) return false;
+    if (filters.engineMax !== null && size > filters.engineMax) return false;
   }
 
   if (
@@ -261,7 +276,7 @@ export interface CatalogBounds {
   yearMax: number | null;
   priceMin: number;
   priceMax: number;
-  /** Distinct engine sizes in liters, ascending. */
+  /** Distinct engine sizes (see engineSize), ascending. */
   engines: number[];
 }
 
@@ -281,8 +296,8 @@ export function catalogBounds(entries: CatalogEntry[]): CatalogBounds {
     engines: [
       ...new Set(
         entries
-          .map((entry) => entry.attributes.engineLiters)
-          .filter((liters): liters is number => liters !== undefined),
+          .map(engineSize)
+          .filter((size): size is number => size !== undefined),
       ),
     ].sort((a, b) => a - b),
   };

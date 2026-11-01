@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { bestOfVersion, litersOf, openSheetOfVersion, renaultSheets, specsOfFields, vwSheet } from "./open-sheets.ts";
+import { bestOfVersion, lineWords, litersOf, openSheetOfVersion, renaultSheets, specsOfFields, vwSheet } from "./open-sheets.ts";
 import type { OpenSheet } from "./open-sheets.ts";
 
 // Lines of VW's "Ficha Técnica Novo Polo 200 TSI.pdf", as readPdfLines gives them.
@@ -178,5 +178,14 @@ describe("open press room sheets", () => {
     // The press room's names a trim this version does not have, and still fits better than the manual's.
     expect(titles("Clio Expression 1.0 16V")).toEqual(["press room"]);
     expect(titles("Clio Expression 1.0 16V", [sheets[1]!])).toEqual(["manual"]);
+  });
+});
+
+describe("lineWords", () => {
+  it("keeps a number that is the name, not a year or an engine", () => {
+    expect(lineWords("208")).toEqual(["208"]);
+    expect(lineWords("Novo 2008")).toEqual(["2008"]);
+    expect(lineWords("Novo Polo 2023")).toEqual(["polo"]);
+    expect(lineWords("Kwid E-TECH")).toEqual(["kwid", "e", "tech"]);
   });
 });
