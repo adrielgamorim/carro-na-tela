@@ -168,4 +168,15 @@ describe("open press room sheets", () => {
     expect(titles("Wey Dark 1.5 Turbo AWD")).toEqual(["Dark"]);
     expect(bestOfVersion([{ ...lists[0]!, base: undefined }], { ...wey, name: "Wey 1.5" }, { trimNamed: true })).toEqual([]);
   });
+  it("takes an owner's manual's sheet only where no other fits", () => {
+    const clio = { ...target, brand: "Renault", family: "Clio" };
+    const sheets = [
+      sheet({ line: "Clio", title: "press room", trims: ["authentique"] }),
+      sheet({ line: "Clio", title: "manual", trims: [], fallback: true }),
+    ];
+    const titles = (name: string, from = sheets) => bestOfVersion(from, { ...clio, name }).map((item) => item.title);
+    // The press room's names a trim this version does not have, and still fits better than the manual's.
+    expect(titles("Clio Expression 1.0 16V")).toEqual(["press room"]);
+    expect(titles("Clio Expression 1.0 16V", [sheets[1]!])).toEqual(["manual"]);
+  });
 });

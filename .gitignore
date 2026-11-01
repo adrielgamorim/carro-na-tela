@@ -44,6 +44,7 @@ data/fichas/hyundai/
 data/fichas/honda/
 data/fichas/chevrolet/
 data/fichas/sites/
+data/fichas/manuais/
 data/fichas/lista.html
 
 # Fotos de imprensa originais (as autorizações têm contatos); só as reduzidas em public/catalog/imprensa entram

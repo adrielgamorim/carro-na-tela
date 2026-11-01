@@ -35,6 +35,8 @@ export interface OpenSheet {
   onlyNamed?: boolean;
   /** Of the line's plain version, which names no trim (Kia's Stonic): equipment for any version, after those naming one. */
   base?: boolean;
+  /** A lesser source (Renault's owner's manuals): only for versions no other sheet fits. */
+  fallback?: boolean;
   transmission?: Transmission;
   /** Pickups: "cd" (double cab), "cs" (single) or "ce" (extended). */
   cab?: "cd" | "cs" | "ce";
@@ -444,7 +446,7 @@ export function openSheetOfVersion(sheets: OpenSheet[], target: OpenSheetTarget)
 /** What a sheet or an equipment list says it is for. */
 export type SheetKey = Pick<
   OpenSheet,
-  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "diesel" | "fipeBrands" | "onlyNamed" | "base" | "transmission" | "cab"
+  "brand" | "line" | "trims" | "years" | "engineLiters" | "valves" | "turbo" | "electric" | "hybrid" | "diesel" | "fipeBrands" | "onlyNamed" | "base" | "fallback" | "transmission" | "cab"
 >;
 
 /**
@@ -496,6 +498,8 @@ export function bestOfVersion<T extends SheetKey>(sheets: T[], target: OpenSheet
     const extra = sheet.trims.length - named;
     fitting.push({ sheet, score: named * 10 - extra * 3 + precise - distance });
   }
-  const best = Math.max(...fitting.map((item) => item.score));
-  return fitting.filter((item) => item.score === best).map((item) => item.sheet);
+  // An owner's manual only where no other sheet fits: the press rooms' say more.
+  const preferred = fitting.some((item) => !item.sheet.fallback) ? fitting.filter((item) => !item.sheet.fallback) : fitting;
+  const best = Math.max(...preferred.map((item) => item.score));
+  return preferred.filter((item) => item.score === best).map((item) => item.sheet);
 }

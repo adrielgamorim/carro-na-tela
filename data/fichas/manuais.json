@@ -1,0 +1,1281 @@
+{
+ "_doc": "Manuais do proprietário da Renault (npm run fichas:manuais), baixados em data/fichas/manuais; lidos por npm run fichas:abertas.",
+ "manuals": [
+  {
+   "brand": "renault",
+   "line": "Kardian",
+   "years": [
+    2025,
+    2026
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/agosto/Proprietario-XJF-LATAM-NU1461-3-PTB5.pdf",
+   "page": "https://www.renault.com.br/manuais/kardian.html",
+   "file": "renault/2025_manual_agosto_Proprietario-XJF-LATAM-NU1461-3-PTB5.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/dezembro/Manual-do-proprietario-completo-dez21.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_2021_dezembro_Manual-do-proprietario-completo-dez21.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Manual-Captur_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais-propietario21_Manual-Captur_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2019,
+    2019
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2019/media-evolution-manual-completo.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_manuais-sandero_2019_media-evolution-manual-completo.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2019,
+    2019
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2019/media-evolution-manual-compacto.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_manuais-sandero_2019_media-evolution-manual-compacto.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-captur/2018/NU1264-3-XHA-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_manuais-captur_2018_NU1264-3-XHA-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-captur/2017/NU1264-2-XHA-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_manuais-captur_2017_NU1264-2-XHA-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-captur/2016/NU1264-1-XHA-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "file": "renault/manuais_manuais-captur_2016_NU1264-1-XHA-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2018/NU1142-5-L38-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2018_NU1142-5-L38-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2017/NU1142-4-L38-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2017_NU1142-4-L38-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2016/NU1142-3-L38-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2016_NU1142-3-L38-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2015/NU1142-1-L38-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2015_NU1142-1-L38-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2014/NU1142-1-L38-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2014_NU1142-1-L38-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-6-2013fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-6-2013fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2012,
+    2012
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-5-2012-13fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-5-2012-13fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2012,
+    2012
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-4-2012-12fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-4-2012-12fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2011,
+    2011
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-3-2011-12-fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-3-2011-12-fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2011,
+    2011
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2011/nu983-2-2011-fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2011_nu983-2-2011-fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "years": [
+    2010,
+    2010
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2010/nu983-1-2010-fluenceptb.pdf",
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "file": "renault/manuais_manuais-fluence_2010_nu983-1-2010-fluenceptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2025,
+    2026
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/maio/NU1329-4-X62-PH2-LATAM-PTB-Preview-master.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/2025_manual_maio_NU1329-4-X62-PH2-LATAM-PTB-Preview-master.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-master-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-master-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2022,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2022/manuais/janeiro/master/manual-master-X62-PH2-NU1329-1-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/2022_manuais_janeiro_master_manual-master-X62-PH2-NU1329-1-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2021,
+    2021
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/manual-proprietario-master-2021.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais-propietario21_manual-proprietario-master-2021.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Master-Manual-do-Proprietario_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais-propietario21_Master-Manual-do-Proprietario_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2019,
+    2019
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2019/master-manual-do-proprietario2019.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2019_master-manual-do-proprietario2019.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2018/nu1051-10-x62-ptb18-18.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2018_nu1051-10-x62-ptb18-18.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2018/NU1051-11-X62-PTB19.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2018_NU1051-11-X62-PTB19.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2017/nu1051-8-x62-ptb-17-17.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2017_nu1051-8-x62-ptb-17-17.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2017/nu1051-9-x62-ptb17-18.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2017_nu1051-9-x62-ptb17-18.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2016/nu1051-6-x62-ptb-16-16.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2016_nu1051-6-x62-ptb-16-16.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2016/nu1051-7-x62-ptb16-17.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2016_nu1051-7-x62-ptb16-17.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2015/nu1051-4-x62-ptb15-15.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2015_nu1051-4-x62-ptb15-15.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2015/nu1051-5-X62-ptb15-16.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2015_nu1051-5-X62-ptb15-16.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2014/nu1051-3-x62-ptb14-14-14-15.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2014_nu1051-3-x62-ptb14-14-14-15.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2013/13.13-nu1051-1-x62-ptb.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2013_13.13-nu1051-1-x62-ptb.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2013/nu1051-2-x62-ptb13-14.pdf",
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "file": "renault/manuais_manuais-master_2013_nu1051-2-x62-ptb13-14.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2016/NU1055-7-X65-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2016_NU1055-7-X65-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2016/NU1055-6-X65-PTB-15-16.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2016_NU1055-6-X65-PTB-15-16.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2015/NU1055-5-X65-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2015_NU1055-5-X65-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2014/NU1055-4-X64-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2014_NU1055-4-X64-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2014/NU1055-3-X64-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2014_NU1055-3-X64-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Clio",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-clio/2013/NU1055-1-X65-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/clio.html",
+   "file": "renault/manuais_manuais-clio_2013_NU1055-1-X65-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Stepway",
+   "years": [
+    2024,
+    2025
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/manual/stepway/outubro/Manual-X52-atualizado.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/2024_manual_stepway_outubro_Manual-X52-atualizado.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Stepway",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-logan-sandero-stepway-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-logan-sandero-stepway-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Stepway",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/NOVO-MANUAL-X52-PH2-NU-1298-5-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_2021_NOVO-MANUAL-X52-PH2-NU-1298-5-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Stepway",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Stepway-Manual-do-Proprietario_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais-propietario21_Stepway-Manual-do-Proprietario_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2018/NU1192-8-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2018_NU1192-8-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-7-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-7-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-6-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-6-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2016/NU1192-4-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2016_NU1192-4-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2016/NU1192-3-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2016_NU1192-3-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2015/NU1192-4-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2015_NU1192-4-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2015/NU1192-3-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2015_NU1192-3-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2014/NU1192-1-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2014_NU1192-1-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2014/NU1192-2-B52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2014_NU1192-2-B52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2013/sandero-manual-13.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2013_sandero-manual-13.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2012,
+    2012
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2012/sandero-manual-12.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2012_sandero-manual-12.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2011,
+    2011
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2011/sandero-manual-11.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2011_sandero-manual-11.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2010,
+    2010
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2010/sandero-manual-10.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2010_sandero-manual-10.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2009,
+    2009
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2009/sandero-manual-09.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2009_sandero-manual-09.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2008,
+    2008
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2008/sandero-manual-08.pdf",
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "file": "renault/manuais_manuais-sandero_2008_sandero-manual-08.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Boreal",
+   "years": [
+    2025,
+    2026
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/novembro/R1312-Boreal-manual-NU-1649-1-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/boreal.html",
+   "file": "renault/2025_manual_novembro_R1312-Boreal-manual-NU-1649-1-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "years": [
+    2025,
+    2026
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/maio/NU1479-4-U79PH2-oroch.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/2025_manual_maio_NU1479-4-U79PH2-oroch.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-oroch-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-oroch-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Oroch",
+   "years": [
+    2020,
+    2021
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-do-proprietario-2020-2021.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_manual-do-proprietario-2020-2021.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster Oroch",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/Manual-duster-oroch-H79-PTB-2018.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_2021_Manual-duster-oroch-H79-PTB-2018.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster/2018/NU1154-8-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_manuais-duster_2018_NU1154-8-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster Oroch",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster-oroch/2018/NU1154-6-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_manuais-duster-oroch_2018_NU1154-6-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster Oroch",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster-oroch/2016/NU1154-3-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_manuais-duster-oroch_2016_NU1154-3-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster/2015/NU1154-1-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/oroch.html",
+   "file": "renault/manuais_manuais-duster_2015_NU1154-1-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2025,
+    2025
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/mar/Manual-Duster-2025.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2025_manual_mar_Manual-Duster-2025.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2024,
+    2024
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/manual/duster/junho/Manual-Duster-2024-.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2024_manual_duster_junho_Manual-Duster-2024-.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-duster-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-duster-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2023,
+    2024
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/duster/renault-duster-manual2.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2023_manuais_agosto_duster_renault-duster-manual2.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2022,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2022/manuais/abril/duster/manual-do-proprietario-XJD.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2022_manuais_abril_duster_manual-do-proprietario-XJD.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2023,
+    2024
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/duster/renault-duster-manual1.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/2023_manuais_agosto_duster_renault-duster-manual1.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/manual-do-proprietario-novo-dustervf.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/manuais_2021_manual-do-proprietario-novo-dustervf.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Nova-Duster_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/manuais-propietario21_Nova-Duster_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster/2017/NU1154-8-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/manuais_manuais-duster_2017_NU1154-8-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Duster",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-duster/2016/NU1154-3-X79-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/duster.html",
+   "file": "renault/manuais_manuais-duster_2016_NU1154-3-X79-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2025,
+    2026
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/mar/manual-XBB-PH2-NU1401-6-PTB-Preview.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/2025_manual_mar_manual-XBB-PH2-NU1401-6-PTB-Preview.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2024,
+    2025
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/manual/kwid/novembro/Manual-kwid-Nov24.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/2024_manual_kwid_novembro_Manual-kwid-Nov24.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-kwid-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-kwid-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2023,
+    2024
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/janeiro/manual-proprietario-renault-kwid22.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/2023_manuais_janeiro_manual-proprietario-renault-kwid22.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/manual-do-proprietario-kwid-jul21.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/manuais_2021_manual-do-proprietario-kwid-jul21.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2020,
+    2020
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/kwid_2020_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/manuais-propietario21_kwid_2020_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2019,
+    2019
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2022/manuais/outubro/antigo/Manual-XBB-2019-999103507S.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/2022_manuais_outubro_antigo_Manual-XBB-2019-999103507S.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kwid/2018/NU1219-3-XBB-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/manuais_manuais-kwid_2018_NU1219-3-XBB-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kwid/2017/NU1219-2-XBB-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "file": "renault/manuais_manuais-kwid_2017_NU1219-2-XBB-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-logan-sandero-stepway-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/sandero.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-logan-sandero-stepway-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Sandero-Manual-do-Proprietario_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/sandero.html",
+   "file": "renault/manuais-propietario21_Sandero-Manual-do-Proprietario_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "years": [
+    2019,
+    2019
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2019/sandero-manual-propietario-19-19.pdf",
+   "page": "https://www.renault.com.br/manuais/sandero.html",
+   "file": "renault/manuais_manuais-sandero_2019_sandero-manual-propietario-19-19.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2023,
+    2023
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-logan-sandero-stepway-2023.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-logan-sandero-stepway-2023.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/2021/NOVO-MANUAL-X52-PH2-NU-1298-5-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_2021_NOVO-MANUAL-X52-PH2-NU-1298-5-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2021,
+    2022
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Logan-Manual-do-Proprietario_compressed.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais-propietario21_Logan-Manual-do-Proprietario_compressed.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2018/NU1077-10-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2018_NU1077-10-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2018/NU1077-9-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2018_NU1077-9-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2017/NU1077-8-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2017_NU1077-8-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2017/NU1077-7-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2017_NU1077-7-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2016/NU1077-5-L52-PTB-basse.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2016_NU1077-5-L52-PTB-basse.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2015/NU1077-4-L52-PTB-basse.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2015_NU1077-4-L52-PTB-basse.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2015/NU1077-3-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2015_NU1077-3-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2014/NU1077-2-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2014_NU1077-2-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2013,
+    2013
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2013/NU1077-1-L52-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2013_NU1077-1-L52-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2012,
+    2012
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2012/logan-manual-12.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2012_logan-manual-12.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2011,
+    2011
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2011/logan-manual-11.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2011_logan-manual-11.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2010,
+    2010
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2010/logan-manual-10.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2010_logan-manual-10.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2009,
+    2009
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2009/logan-manual-09.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2009_logan-manual-09.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "years": [
+    2008,
+    2008
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2008/logan-manual-08.pdf",
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "file": "renault/manuais_manual-logan_2008_logan-manual-08.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2024,
+    2025
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2024/manual/kangoo/julho/X67-LATAM-NU1272-8-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/2024_manual_kangoo_julho_X67-LATAM-NU1272-8-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2018,
+    2018
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2018/NU1075-6-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2018_NU1075-6-X76-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2017/NU1075-5-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2017_NU1075-5-X76-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2017,
+    2017
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2017/NU1075-4-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2017_NU1075-4-X76-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2016,
+    2016
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2016/NU1075-3-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2016_NU1075-3-X76-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2015,
+    2015
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2015/NU1075-2-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2015_NU1075-2-X76-PTB.pdf"
+  },
+  {
+   "brand": "renault",
+   "line": "Kangoo",
+   "years": [
+    2014,
+    2014
+   ],
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kangoo/2014/NU1075-1-X76-PTB.pdf",
+   "page": "https://www.renault.com.br/manuais/kangoo.html",
+   "file": "renault/manuais_manuais-kangoo_2014_NU1075-1-X76-PTB.pdf"
+  }
+ ]
+}

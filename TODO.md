@@ -31,14 +31,17 @@ disponibilidade dela.
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Manuais do proprietário (PDF nos sites das marcas): o capítulo de dados técnicos tem
-      medidas, pesos, capacidades e motor por versão, e cobre anos antigos.
+- [ ] 🟡 Manuais do proprietário de outras marcas, como os da Renault (`npm run fichas:manuais`): a
+      Hyundai põe os PDFs em `/content/dam/hmb/download-manuais/` (o robots.txt permite); o site da
+      Honda responde "Access Denied" (Akamai), então fica de fora. Na Renault faltam os manuais da
+      Master (diesel) e do Fluence até 2012 e de 2014 em diante, de outro formato, e os Logan de 2008
+      a 2012 só dão medidas (a tabela de motores tem outro desenho).
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
       vez em quando para os releases novos.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
-      tempo no meio (em 31/10/2026 faltam 166 de 968 modelos; 676 têm 3.542 fotos); rodar
+      tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos); rodar
       `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
       só deixa de buscar, não descarta o que está no cache), ou pedir uma chave
       da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
@@ -91,6 +94,12 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Manuais do proprietário da Renault (`npm run fichas:manuais`, depois `fichas:abertas`): 116 PDFs
+      de 2008 a 2025 nas páginas `/manuais/<modelo>.html`; o capítulo "Características técnicas" dá
+      potência, torque, cilindrada, peso e, quando o desenho é de uma versão só, comprimento e
+      entre-eixos. 135 fichas dão números a 113 versões a mais (324 anos-modelo), só onde não há
+      ficha da sala de imprensa. A potência em kW vira cv, e uma em kW rotulada como cv (Logan 2013)
+      é corrigida pelo mesmo motor de um ano vizinho.
 - [x] Fichas e equipamentos dos sites da Ford e da Nissan (`npm run fichas:sites`): a Ford tem
       uma página por versão (`compare-as-versoes/<versão>.html`), ligada à versão FIPE à mão em
       `scripts/fichas/ford.ts`; a Nissan põe todas as versões num JSON do `compare.html`, com o ano

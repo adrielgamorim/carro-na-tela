@@ -1,5 +1,5 @@
 // Reads the spec sheets downloaded from the open press rooms (npm run
-// fichas:vw, fichas:renault, fichas:wayback and fichas:sites) and writes their figures to
+// fichas:vw, fichas:renault, fichas:wayback, fichas:sites and fichas:manuais) and writes their figures to
 // data/fichas/fichas-abertas.json, and Renault's equipment lists to
 // data/fichas/equipamentos.json, which build:catalog matches to the FIPE
 // versions.
@@ -25,6 +25,8 @@ import { kiaNames, kiaSpecPage } from "./kia.ts";
 import { gwmPages, gwmSpecPage } from "./gwm.ts";
 import { fordPages, fordSpecPage } from "./ford.ts";
 import { nissanComparePage, nissanModels } from "./nissan.ts";
+import type { ManualsFile } from "./fetch-manuais.ts";
+import { renaultManualSheets, withPowerInCv } from "./renault-manual.ts";
 
 const sheets: OpenSheet[] = [];
 const equipment: EquipmentList[] = [];
@@ -214,6 +216,22 @@ for (const site of sitePages) {
   else skipped.push(`GWM ${site.slug}`);
   if (found?.list) equipment.push(found.list);
 }
+
+// Renault's owner's manuals (npm run fichas:manuais): engines and weights back to 2008.
+const manuals = await readFile("data/fichas/manuais.json", "utf8")
+  .then((text) => (JSON.parse(text) as ManualsFile).manuals)
+  .catch(() => [] as ManualsFile["manuals"]);
+const manualLines = new Map<string, Awaited<ReturnType<typeof readPdfLines>> | undefined>();
+const fromManuals: OpenSheet[] = [];
+for (const manual of manuals) {
+  if (!manualLines.has(manual.file)) manualLines.set(manual.file, await readPdfLines(join("data/fichas/manuais", manual.file)).catch(() => undefined));
+  const lines = manualLines.get(manual.file);
+  if (!lines) continue;
+  const found = renaultManualSheets(lines, manual);
+  fromManuals.push(...found);
+  if (!found.length) skipped.push(`Renault manual ${manual.file}`);
+}
+sheets.push(...withPowerInCv(fromManuals));
 
 // What the reader cannot get from Toyota's files, transcribed by hand (the Camry 2018 list has no marks).
 const toyotaByHand = await readFile("data/fichas/toyota.json", "utf8")
