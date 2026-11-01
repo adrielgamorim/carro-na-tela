@@ -169,6 +169,16 @@ describe("engine and doors filters", () => {
     expect(readCatalogParams(params)).toEqual(selected);
     expect(countActiveFilters(selected)).toBe(3);
   });
+
+  it("keeps the category in the URL, cars by default, and not as a filter", () => {
+    const motorcycles = filters({ category: "motorcycles" });
+    const params = new URLSearchParams();
+    writeCatalogParams(motorcycles, params);
+    expect(params.toString()).toBe("categoria=motorcycles");
+    expect(readCatalogParams(params)).toEqual(motorcycles);
+    expect(countActiveFilters(motorcycles)).toBe(0);
+    expect(readCatalogParams(new URLSearchParams("categoria=barcos")).category).toBe("cars");
+  });
 });
 
 describe("INMETRO filters", () => {

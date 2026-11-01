@@ -55,6 +55,8 @@ export function CatalogFilterPanel({
   onReset,
   onClose,
 }: CatalogFilterPanelProps) {
+  // The body, engine size, doors, size, consumption and comfort filters read cars' names and the INMETRO tables.
+  const cars = filters.category === "cars";
   const years: number[] = [];
   if (bounds.yearMin !== null && bounds.yearMax !== null) {
     for (let year = bounds.yearMax; year >= bounds.yearMin; year -= 1) {
@@ -168,10 +170,12 @@ export function CatalogFilterPanel({
             </span>
             <ChipGroup {...listFacet("origins", fromRecord(originLabels))} />
           </div>
-          <div className="facet-field">
-            <span className="facet-label">Configuração</span>
-            <ChipGroup {...listFacet("bodies", fromRecord(bodyLabels))} />
-          </div>
+          {cars && (
+            <div className="facet-field">
+              <span className="facet-label">Configuração</span>
+              <ChipGroup {...listFacet("bodies", fromRecord(bodyLabels))} />
+            </div>
+          )}
           <div className="facet-field">
             <span className="facet-label">Ano-modelo</span>
             <div className="facet-range">
@@ -266,91 +270,100 @@ export function CatalogFilterPanel({
               options={[...facets.lists.gears].sort((a, b) => Number(a.value) - Number(b.value))}
             />
           </div>
-          <div className="facet-field">
-            <span className="facet-label">Cilindrada (litros)</span>
-            <div className="facet-range">
+          {cars && (
+            <div className="facet-field">
+              <span className="facet-label">Cilindrada (litros)</span>
+              <div className="facet-range">
+                <select
+                  aria-label="Cilindrada mínima"
+                  value={filters.engineMin ?? ""}
+                  onChange={(event) =>
+                    onChange({ engineMin: parseNumber(event.target.value) })
+                  }
+                >
+                  <option value="">De</option>
+                  {bounds.engines.map((liters) => (
+                    <option key={liters} value={liters}>
+                      {liters.toFixed(1)}
+                    </option>
+                  ))}
+                </select>
+                <span>até</span>
+                <select
+                  aria-label="Cilindrada máxima"
+                  value={filters.engineMax ?? ""}
+                  onChange={(event) =>
+                    onChange({ engineMax: parseNumber(event.target.value) })
+                  }
+                >
+                  <option value="">Até</option>
+                  {bounds.engines.map((liters) => (
+                    <option key={liters} value={liters}>
+                      {liters.toFixed(1)}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+          )}
+          {cars && (
+            <div className="facet-field">
+              {toggle("turbo", "Motor turbo")}
+              {toggle("fourWheelDrive", "Tração 4x4 / integral")}
+            </div>
+          )}
+        </details>
+
+        {cars && (
+          <details className="facet-group">
+            <summary>Carroceria e porte</summary>
+            <div className="facet-field">
+              <span className="facet-label">Porte</span>
+              <ChipGroup
+                {...listFacet("sizes", fromRecord(sizeLabels))}
+                options={sizeOrder
+                  .map((size) => facets.lists.sizes.find((option) => option.value === size))
+                  .filter((option): option is FacetOption => option !== undefined)}
+              />
+            </div>
+            <div className="facet-field">
+              <span className="facet-label">Portas</span>
+              <ChipGroup {...listFacet("doors", (value) => `${value} portas`)} />
+            </div>
+          </details>
+
+        )}
+
+        {cars && (
+          <details className="facet-group">
+            <summary>Consumo e conforto</summary>
+            <div className="facet-field">
+              <span className="facet-label">Consumo na cidade (INMETRO)</span>
               <select
-                aria-label="Cilindrada mínima"
-                value={filters.engineMin ?? ""}
+                className="facet-select"
+                aria-label="Consumo mínimo na cidade"
+                value={filters.consumptionMin ?? ""}
                 onChange={(event) =>
-                  onChange({ engineMin: parseNumber(event.target.value) })
+                  onChange({ consumptionMin: parseNumber(event.target.value) })
                 }
               >
-                <option value="">De</option>
-                {bounds.engines.map((liters) => (
-                  <option key={liters} value={liters}>
-                    {liters.toFixed(1)}
-                  </option>
-                ))}
-              </select>
-              <span>até</span>
-              <select
-                aria-label="Cilindrada máxima"
-                value={filters.engineMax ?? ""}
-                onChange={(event) =>
-                  onChange({ engineMax: parseNumber(event.target.value) })
-                }
-              >
-                <option value="">Até</option>
-                {bounds.engines.map((liters) => (
-                  <option key={liters} value={liters}>
-                    {liters.toFixed(1)}
+                <option value="">Qualquer consumo</option>
+                {consumptionSteps.map((value) => (
+                  <option key={value} value={value}>
+                    Pelo menos {value} km/l
                   </option>
                 ))}
               </select>
             </div>
-          </div>
-          <div className="facet-field">
-            {toggle("turbo", "Motor turbo")}
-            {toggle("fourWheelDrive", "Tração 4x4 / integral")}
-          </div>
-        </details>
-
-        <details className="facet-group">
-          <summary>Carroceria e porte</summary>
-          <div className="facet-field">
-            <span className="facet-label">Porte</span>
-            <ChipGroup
-              {...listFacet("sizes", fromRecord(sizeLabels))}
-              options={sizeOrder
-                .map((size) => facets.lists.sizes.find((option) => option.value === size))
-                .filter((option): option is FacetOption => option !== undefined)}
-            />
-          </div>
-          <div className="facet-field">
-            <span className="facet-label">Portas</span>
-            <ChipGroup {...listFacet("doors", (value) => `${value} portas`)} />
-          </div>
-        </details>
-
-        <details className="facet-group">
-          <summary>Consumo e conforto</summary>
-          <div className="facet-field">
-            <span className="facet-label">Consumo na cidade (INMETRO)</span>
-            <select
-              className="facet-select"
-              aria-label="Consumo mínimo na cidade"
-              value={filters.consumptionMin ?? ""}
-              onChange={(event) =>
-                onChange({ consumptionMin: parseNumber(event.target.value) })
-              }
-            >
-              <option value="">Qualquer consumo</option>
-              {consumptionSteps.map((value) => (
-                <option key={value} value={value}>
-                  Pelo menos {value} km/l
-                </option>
-              ))}
-            </select>
-          </div>
-          <div className="facet-field">
-            <span className="facet-label">Direção</span>
-            <ChipGroup {...listFacet("steerings", fromRecord(steeringLabels))} />
-          </div>
-          <div className="facet-field">
-            {toggle("airConditioning", "Ar-condicionado")}
-          </div>
-        </details>
+            <div className="facet-field">
+              <span className="facet-label">Direção</span>
+              <ChipGroup {...listFacet("steerings", fromRecord(steeringLabels))} />
+            </div>
+            <div className="facet-field">
+              {toggle("airConditioning", "Ar-condicionado")}
+            </div>
+          </details>
+        )}
 
         <p className="facet-note">
           Motor e parte do câmbio vêm do nome FIPE; porte, marchas, consumo,

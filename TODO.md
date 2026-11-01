@@ -48,8 +48,12 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ### Produto
 
-- [ ] 🟢 Motos e caminhões no catálogo (o crawler já aceita `--category`; filtros e WMI precisam
-      de ajuste).
+- [ ] 🟡 Motos e caminhões no catálogo: o app já tem a escolha Carros / Motos / Caminhões
+      (`?categoria=`), e o daily varre motos e caminhões depois dos carros, com a cota que sobra. Em
+      01/11/2026 a listagem de motos parou em 2018 (3.576 versões-ano, sem preços) e a de caminhões não
+      começou. Falta: terminar as listagens e os preços, rodar `fetch:wmi` depois que os caminhões
+      entrarem (Scania, DAF…), alíquotas de IPVA de motos e caminhões (hoje só carros mostram IPVA) e a
+      cilindrada das motos em cc (a FIPE escreve "150cc" ou nada; o filtro em litros fica escondido).
 
 ### Sem fonte aberta ou sem ganho por enquanto
 
@@ -96,6 +100,11 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Escolha Carros / Motos / Caminhões no catálogo (`?categoria=`; `tipo=` é da Consulta FIPE): a
+      lista, os filtros, as contagens e o cabeçalho são da categoria; os filtros que só valem para
+      carros (carroceria, cilindrada em litros, porte, portas, consumo, conforto) somem nas outras. A
+      busca pelo chassi abre a categoria do fabricante (WMI "Honda Motorcycles" → motos), e o
+      `fetch:wmi` casa também as marcas de motos e caminhões.
 - [x] Manuais do proprietário da Renault (`npm run fichas:manuais`, depois `fichas:abertas`): 116 PDFs
       de 2008 a 2025 nas páginas `/manuais/<modelo>.html`; o capítulo "Características técnicas" dá
       potência, torque, cilindrada, peso e, quando o desenho é de uma versão só, comprimento e

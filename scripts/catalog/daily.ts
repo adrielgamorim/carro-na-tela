@@ -1,4 +1,5 @@
-// Daily catalog update: crawl:fipe (with every key in .env), fetch:frota
+// Daily catalog update: crawl:fipe of cars, then motorcycles and trucks (with
+// every key in .env, cars first), fetch:frota
 // (Senatran fleet), fetch:wikidata and fetch:wmi (only when a month old),
 // build:catalog, then fetch:anp (fuel prices). Output goes to the console and
 // to logs/daily-<date>.log.
@@ -65,7 +66,11 @@ await writeFile(lockFile, String(process.pid));
 let exitCode: number;
 try {
   write(`\n=== ${new Date().toISOString()} Atualização diária ===\n`);
-  const crawl = await run("scripts/catalog/crawl-fipe.ts");
+  const cars = await run("scripts/catalog/crawl-fipe.ts");
+  // Motorcycles and trucks with what the keys have left: cars come first.
+  const motorcycles = await run("scripts/catalog/crawl-fipe.ts", ["--category=motorcycles"]);
+  const trucks = await run("scripts/catalog/crawl-fipe.ts", ["--category=trucks"]);
+  const crawl = cars || motorcycles || trucks;
   // Monthly Senatran fleet; downloads only when a new month is out, and a
   // failure keeps the last month's totals.
   const frota = await run("scripts/frota/fetch-frota.ts");

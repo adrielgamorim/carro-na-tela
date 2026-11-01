@@ -91,9 +91,8 @@ const fallbackNames: Record<string, string[]> = {
   "GM - Chevrolet": ["General Motors"],
 };
 
-const heavyVehicles =
-  /\b(trucks?|bus(es)?|motorcycles?|motos|motorrad|scooters?|motorscooters|two wheelers|tractors?|trailers?|chassis|caminh[õo]es|ônibus)\b/i;
-const lightVehicles = /\b(cars?|SUVs?|pickups?|vans?|MPV)\b/i;
+// Kinds FIPE does not list: a "Walk-behind tractors" maker is not the Walk brand.
+const notInFipe = /\b(tractors?|trailers?|semi-trailers?|snowmobiles?)\b/i;
 
 /**
  * Finds the FIPE brands a maker description names. The first brand in the
@@ -129,11 +128,25 @@ export function createBrandMatcher(fipeBrands: string[]) {
   }
 
   return (maker: string): string[] => {
-    // The catalog has cars only: Honda motorcycles or Volvo trucks are not a
-    // Honda or Volvo car.
-    if (heavyVehicles.test(maker) && !lightVehicles.test(maker)) return [];
+    // Motorcycle and truck makers match too ("Honda Motorcycles"): makerCategories says which category.
+    if (notInFipe.test(maker)) return [];
     const text = words(maker);
     const found = find(primary, text);
     return found.length ? found : find(fallback, text);
   };
+}
+
+/**
+ * The vehicle categories a maker's description names: "Honda Motorcycles"
+ * and "Yamaha Motor" motorcycles, "Volvo Trucks" and "Marcopolo bus" trucks
+ * (FIPE's trucks include buses), "Mercedes-Benz car & SUV & commercial truck"
+ * both cars and trucks. None when it names no kind: any.
+ */
+export function makerCategories(maker: string): ("cars" | "motorcycles" | "trucks")[] {
+  const text = maker.toLowerCase();
+  const categories: ("cars" | "motorcycles" | "trucks")[] = [];
+  if (/\b(car|cars|suv|passenger)\b/.test(text)) categories.push("cars");
+  if (/motorcycle|motor ?bike|scooter|\batv\b|yamaha motor|\(motorcycles\)/.test(text)) categories.push("motorcycles");
+  if (/\btrucks?\b|\bbus(es)?\b|lorry|caminh|ônibus|onibus/.test(text)) categories.push("trucks");
+  return categories;
 }

@@ -1,5 +1,6 @@
 // Downloads the WMI list (chassis manufacturer codes) from the English
-// Wikipedia, matches the makers to FIPE car brands and writes
+// Wikipedia, matches the makers to FIPE brands (cars, motorcycles, trucks),
+// notes the categories a maker's name says, and writes
 // public/catalog/wmi.json, used by the chassis search in the catalog.
 //
 //   npm run fetch:wmi -- [--out=public/catalog]
@@ -12,7 +13,7 @@ import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
 import type { WmiFile, WmiMaker } from "../../src/catalog/vin.ts";
-import { createBrandMatcher, parseCountryRanges, parseWmiRows } from "./wmi.ts";
+import { createBrandMatcher, makerCategories, parseCountryRanges, parseWmiRows } from "./wmi.ts";
 
 const { values } = parseArgs({
   options: { out: { type: "string", default: "public/catalog" } },
@@ -34,10 +35,12 @@ const brands = new Set<string>();
 const index = await readJson<{ brands: { name: string }[] }>("public/catalog/index.json");
 for (const brand of index?.brands ?? []) brands.add(brand.name);
 for (const reference of await readdir(".cache/fipe").catch(() => [])) {
-  const cached = await readJson<{ body: { name: string }[] }>(
-    join(".cache/fipe", reference, "cars", "brands.json"),
-  );
-  for (const brand of cached?.body ?? []) brands.add(brand.name);
+  for (const category of ["cars", "motorcycles", "trucks"]) {
+    const cached = await readJson<{ body: { name: string }[] }>(
+      join(".cache/fipe", reference, category, "brands.json"),
+    );
+    for (const brand of cached?.body ?? []) brands.add(brand.name);
+  }
 }
 if (!brands.size) throw new Error("Nenhuma marca FIPE encontrada: rode npm run build:catalog antes");
 
@@ -50,6 +53,8 @@ let matched = 0;
 for (const row of parseWmiRows(wikitext)) {
   const maker: WmiMaker = { m: row.maker };
   if (row.country) maker.c = translate(row.country);
+  const categories = makerCategories(row.maker);
+  if (categories.length) maker.t = categories;
   const found = matchBrands(row.maker);
   if (found.length) {
     maker.b = found;

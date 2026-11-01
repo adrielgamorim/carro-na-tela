@@ -14,6 +14,7 @@ const done: VinSearchState = {
       country: "Brasil",
       makers: [{ m: "General Motors do Brasil Chevrolet", c: "Brasil", b: ["GM - Chevrolet"] }],
       brands: ["GM - Chevrolet"],
+      categories: [],
       modelYear: 2020,
       checkDigitValid: false,
     },

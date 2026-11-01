@@ -3,6 +3,7 @@ import type { BodyHint, Transmission } from "./modelName";
 import { listParams, toggleParams } from "./catalogParams";
 import type { Origin } from "./fleet";
 import type { CatalogEntry, Propulsion } from "./types";
+import type { VehicleCategory } from "../types/vehicle";
 
 export type CatalogSort =
   | "price-asc"
@@ -13,6 +14,8 @@ export type CatalogSort =
   | "name";
 
 export interface CatalogFilters {
+  /** One category at a time: cars, motorcycles or trucks. */
+  category: VehicleCategory;
   query: string;
   brands: string[];
   families: string[];
@@ -43,6 +46,7 @@ export interface CatalogFilters {
 }
 
 export const emptyCatalogFilters: CatalogFilters = {
+  category: "cars",
   query: "",
   brands: [],
   families: [],
@@ -415,6 +419,8 @@ export function writeCatalogParams(
     else params.delete(key);
   };
 
+  // Not "tipo", which is the Consulta FIPE's and opens it.
+  set("categoria", filters.category === "cars" ? null : filters.category);
   set("q", filters.query.trim() || null);
   for (const facet of listFacets) {
     // Repeated keys keep values with commas intact.
@@ -429,6 +435,10 @@ export function writeCatalogParams(
   set("ordem", filters.sort === emptyCatalogFilters.sort ? null : filters.sort);
 }
 
+const categories: VehicleCategory[] = ["cars", "motorcycles", "trucks"];
+const categoryParam = (value: string | null): VehicleCategory =>
+  categories.includes(value as VehicleCategory) ? (value as VehicleCategory) : "cars";
+
 export function readCatalogParams(params: URLSearchParams): CatalogFilters {
   const [yearMin, yearMax] = parseRange(params.get("ano"));
   const [priceMin, priceMax] = parseRange(params.get("preco"));
@@ -436,6 +446,7 @@ export function readCatalogParams(params: URLSearchParams): CatalogFilters {
   const sort = params.get("ordem") as CatalogSort | null;
   const filters: CatalogFilters = {
     ...emptyCatalogFilters,
+    category: categoryParam(params.get("categoria")),
     query: params.get("q") ?? "",
     yearMin,
     yearMax,

@@ -79,11 +79,22 @@ describe("createBrandMatcher", () => {
     expect(match("General Motors South Africa")).toEqual(["GM - Chevrolet"]);
   });
 
-  it("skips heavy vehicles, motorcycles and ambiguous brand names", () => {
-    expect(match("Honda Motorcycles")).toEqual([]);
-    expect(match("Volvo Trucks")).toEqual([]);
+  it("matches motorcycle and truck makers, and skips kinds FIPE does not list and ambiguous names", () => {
+    expect(match("Honda Motorcycles")).toEqual(["Honda"]);
+    expect(match("Volvo Trucks")).toEqual(["Volvo"]);
     expect(match("Mercedes-Benz car & SUV & commercial truck")).toEqual(["Mercedes-Benz"]);
     expect(match("Walk-behind tractors")).toEqual([]);
     expect(match("Arab American Vehicles")).toEqual([]);
+  });
+});
+
+describe("makerCategories", () => {
+  it("reads the kinds of vehicle a maker's name says", async () => {
+    const { makerCategories } = await import("./wmi.ts");
+    expect(makerCategories("Honda Motorcycles")).toEqual(["motorcycles"]);
+    expect(makerCategories("Yamaha Motor")).toEqual(["motorcycles"]);
+    expect(makerCategories("Volvo Trucks")).toEqual(["trucks"]);
+    expect(makerCategories("Mercedes-Benz car & SUV & commercial truck")).toEqual(["cars", "trucks"]);
+    expect(makerCategories("Volkswagen do Brasil")).toEqual([]);
   });
 });

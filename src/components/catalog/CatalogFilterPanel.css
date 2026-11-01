@@ -146,3 +146,8 @@
       font-weight: 700;
     }
 }
+
+/* A filter the category has no data for yet (no gearbox in the trucks' names). */
+.facet-field:has(> .facet-empty) {
+  display: none;
+}

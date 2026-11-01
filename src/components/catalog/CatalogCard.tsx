@@ -39,10 +39,10 @@ export interface PageLink {
 
 const maxYearPills = 6;
 
-/** Yearly IPVA estimate under the price, in the state chosen in the cost settings. */
-function IpvaLine({ priceValue }: { priceValue: number | null }) {
+/** Yearly IPVA estimate under the price, in the state chosen in the cost settings; cars' rates only. */
+function IpvaLine({ priceValue, category }: { priceValue: number | null; category: CatalogEntry["category"] }) {
   const { uf } = useCostSettings();
-  if (!priceValue) return null;
+  if (!priceValue || category !== "cars") return null;
   return (
     <small className="catalog-card-ipva" title={ipvaNote}>
       IPVA ≈ {formatIpva(estimateIpva(priceValue, uf))} ({uf})
@@ -66,7 +66,7 @@ export function PriceBlock({
       <div className="catalog-card-price">
         <span>{label}</span>
         <strong>{entry.price}</strong>
-        <IpvaLine priceValue={entry.priceValue} />
+        <IpvaLine priceValue={entry.priceValue} category={entry.category} />
       </div>
     );
   }
@@ -77,7 +77,7 @@ export function PriceBlock({
           {label} · CONSULTADO AGORA
         </span>
         <strong>{live.vehicle.price}</strong>
-        <IpvaLine priceValue={live.vehicle.priceValue} />
+        <IpvaLine priceValue={live.vehicle.priceValue} category={entry.category} />
       </div>
     );
   }

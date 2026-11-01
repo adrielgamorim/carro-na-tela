@@ -3,6 +3,8 @@
 // character) and the North American check digit. The WMI table comes from
 // public/catalog/wmi.json (npm run fetch:wmi).
 
+import type { VehicleCategory } from "../types/vehicle.ts";
+
 /** One manufacturer a WMI is assigned to. */
 export interface WmiMaker {
   /** Description from the source list, e.g. "Volkswagen do Brasil". */
@@ -11,6 +13,8 @@ export interface WmiMaker {
   c?: string;
   /** FIPE brands the maker's name matches (usually one). */
   b?: string[];
+  /** The categories its name says ("Honda Motorcycles"); none: any. */
+  t?: VehicleCategory[];
 }
 
 /** public/catalog/wmi.json */
@@ -31,6 +35,8 @@ export interface VinInfo {
   makers: WmiMaker[];
   /** FIPE brands of every maker, without repeats. */
   brands: string[];
+  /** The categories the makers name, without repeats; empty when any. */
+  categories: VehicleCategory[];
   /** Model year from the 10th character (the most recent one that fits). */
   modelYear: number | null;
   /** Mandatory only in North America; Brazilian chassis rarely satisfy it. */
@@ -112,6 +118,8 @@ export function decodeVin(file: WmiFile, vin: string, now = new Date()): VinInfo
     country,
     makers,
     brands: [...new Set(makers.flatMap((maker) => maker.b ?? []))],
+    // A maker that names no kind may make any.
+    categories: makers.some((maker) => !maker.t) ? [] : [...new Set(makers.flatMap((maker) => maker.t ?? []))],
     modelYear: vinModelYear(vin, now),
     checkDigitValid: vinCheckDigitValid(vin),
   };

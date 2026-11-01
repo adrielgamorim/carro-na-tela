@@ -60,6 +60,8 @@ describe("decodeVin", () => {
       country: "Brasil",
       makers: [{ m: "Chery", c: "Brasil", b: ["Caoa Chery", "Caoa Chery/Chery"] }],
       brands: ["Caoa Chery", "Caoa Chery/Chery"],
+      // A maker that names no kind of vehicle: any category.
+      categories: [],
       modelYear: 2023,
       checkDigitValid: false,
     });

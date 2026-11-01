@@ -33,6 +33,7 @@ import type { FipeVehicle } from "../../types/vehicle";
 import { CatalogCard } from "./CatalogCard";
 import type { PageLink } from "./CatalogCard";
 import { CatalogHeading } from "./CatalogHeading";
+import { CategoryTabs } from "./CategoryTabs";
 import { CatalogFilterPanel } from "./CatalogFilterPanel";
 import { CompareTray } from "./CompareTray";
 import { VinSearch } from "./VinSearch";
@@ -111,15 +112,21 @@ function CatalogBrowser({
   const { enrichmentByVehicle, loadEnrichment, retryEnrichment } = useVehicleEnrichment();
   const closeCompare = useCallback(() => setCompareOpen(false), []);
   const deferredFilters = useDeferredValue(filters);
-  const { entries } = index;
+  const allEntries = index.entries;
+  // One category at a time: the list, its filters and their counts are of it.
+  const entries = useMemo(
+    () => allEntries.filter((entry) => entry.category === deferredFilters.category),
+    [allEntries, deferredFilters.category],
+  );
   const { livePrices, fetchPrice } = useLivePrices();
   const [vinApplied, setVinApplied] = useState<VinFilterResult | null>(null);
   const vinSearch = useVinSearch((result) => {
     const vehicle = result.vpic === "error" ? null : result.vpic;
     const applied = vinCatalogFilters(
-      entries,
-      { brands: result.info.brands, modelYear: result.modelYear, model: vehicle?.model },
+      allEntries,
+      { brands: result.info.brands, modelYear: result.modelYear, model: vehicle?.model, categories: result.info.categories },
       filters.sort,
+      filters.category,
     );
     setVinApplied(applied);
     if (applied.filters) setFilters(applied.filters);
@@ -168,16 +175,16 @@ function CatalogBrowser({
   // Compared vehicles → their catalog entries, for the attribute table.
   const pricedEntries = useMemo(() => {
     const byVehicle = new Map<string, CatalogEntry>();
-    for (const entry of entries) {
+    for (const entry of allEntries) {
       const vehicle = catalogEntryToVehicle(entry);
       if (vehicle) byVehicle.set(vehicle.id, entry);
     }
     return byVehicle;
-  }, [entries]);
+  }, [allEntries]);
   const entryByVehicleId = new Map(pricedEntries);
   for (const [entryId, live] of Object.entries(livePrices)) {
     if (live.status !== "ready") continue;
-    const entry = entries.find((item) => item.id === entryId);
+    const entry = allEntries.find((item) => item.id === entryId);
     if (entry) entryByVehicleId.set(live.vehicle.id, entry);
   }
   function update(changes: Partial<CatalogFilters>) {
@@ -193,7 +200,7 @@ function CatalogBrowser({
     );
   }
 
-  const openEntry = openId ? entries.find((entry) => entry.id === openId) : undefined;
+  const openEntry = openId ? allEntries.find((entry) => entry.id === openId) : undefined;
   const openVehicle = openEntry ? vehicleFor(openEntry) : null;
   const openVehicleId = openVehicle?.id;
   useEffect(() => {
@@ -238,7 +245,7 @@ function CatalogBrowser({
   if (openId) {
     const years = openEntry
       ? (groupCatalog(
-          entries.filter(
+          allEntries.filter(
             (entry) =>
               entry.category === openEntry.category &&
               entry.brandCode === openEntry.brandCode &&
@@ -285,7 +292,7 @@ function CatalogBrowser({
         <div hidden={openId !== null}>
           <FavoritesList
             favorites={favorites}
-            entries={entries}
+            entries={allEntries}
             livePrice={(entry) => livePrices[entry.id]}
             isCompared={isCompared}
             canCompare={(entry) => vehicleFor(entry) !== null}
@@ -313,7 +320,12 @@ function CatalogBrowser({
       )}
       {/* Kept mounted behind a version's page (and the favorites): filters, picked years and "mostrar mais" survive. */}
       <div hidden={openId !== null || mode === "favoritos"}>
-        <CatalogHeading index={index} />
+        <CatalogHeading index={index} category={filters.category} />
+        <CategoryTabs
+          entries={allEntries}
+          category={filters.category}
+          onChange={(category) => setFilters({ ...emptyCatalogFilters, category, sort: filters.sort })}
+        />
 
         <div className="catalog-layout">
           <CatalogFilterPanel
@@ -325,7 +337,7 @@ function CatalogBrowser({
             resultCount={groups.length}
             open={filtersOpen}
             onChange={update}
-            onReset={() => setFilters({ ...emptyCatalogFilters, sort: filters.sort })}
+            onReset={() => setFilters({ ...emptyCatalogFilters, category: filters.category, sort: filters.sort })}
             onClose={() => setFiltersOpen(false)}
           />
 

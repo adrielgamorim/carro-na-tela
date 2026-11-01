@@ -1,15 +1,16 @@
 import { CircleAlert, Database } from "lucide-react";
 import type { CatalogIndex } from "../../catalog/types";
+import type { VehicleCategory } from "../../types/vehicle";
 import "./CatalogHeading.css";
 
 function capitalize(text: string): string {
   return text.charAt(0).toLocaleUpperCase("pt-BR") + text.slice(1);
 }
 
-/** Title, the catalog's reference stamp and the notice while it is still partial. */
-export function CatalogHeading({ index }: { index: CatalogIndex }) {
-  const entries = index.entries;
-  const snapshot = index.snapshots.find((item) => item.category === "cars");
+/** Title, the catalog's reference stamp and the notice while it is still partial: of the category shown. */
+export function CatalogHeading({ index, category = "cars" }: { index: CatalogIndex; category?: VehicleCategory }) {
+  const entries = index.entries.filter((entry) => entry.category === category);
+  const snapshot = index.snapshots.find((item) => item.category === category);
   // FIPE lists brands that stopped selling long before the crawl's first
   // year (Gurgel, Lada…), so fewer brands than FIPE has is not a gap: only an
   // unfinished listing is.

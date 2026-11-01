@@ -3,7 +3,7 @@ import type { CatalogEntry } from "./types";
 import { vinCatalogFilters } from "./vinFilters";
 
 const entry = (id: string, brand: string, model: string, modelYear: number) =>
-  ({ id, brand, model, modelYear, codeFipe: "", fuel: "Flex", attributes: {} }) as unknown as CatalogEntry;
+  ({ id, category: "cars", brand, model, modelYear, codeFipe: "", fuel: "Flex", attributes: {} }) as unknown as CatalogEntry;
 
 const entries = [
   entry("onix", "GM - Chevrolet", "ONIX LT 1.0", 2020),
@@ -45,5 +45,22 @@ describe("vinCatalogFilters", () => {
       year: null,
       model: null,
     });
+  });
+});
+
+describe("vinCatalogFilters across categories", () => {
+  const all = [
+    ...entries,
+    { ...entries[1]!, id: "cg", category: "motorcycles", model: "CG 160 Titan" } as CatalogEntry,
+    { ...entries[0]!, id: "fh", category: "trucks", brand: "Volvo", model: "FH 540" } as CatalogEntry,
+  ];
+
+  it("opens the category the manufacturer names, else the one shown, else the first with the brand", () => {
+    const honda = (categories: ("cars" | "motorcycles" | "trucks")[], shown?: "cars" | "motorcycles") =>
+      vinCatalogFilters(all, { brands: ["Honda"], modelYear: null, categories }, "name", shown).filters?.category;
+    expect(honda(["motorcycles"])).toBe("motorcycles");
+    expect(honda([])).toBe("cars");
+    expect(honda([], "motorcycles")).toBe("motorcycles");
+    expect(vinCatalogFilters(all, { brands: ["Volvo"], modelYear: null }, "name").filters?.category).toBe("trucks");
   });
 });
