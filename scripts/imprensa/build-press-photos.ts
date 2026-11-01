@@ -18,6 +18,7 @@ import { mkdir, readdir, readFile, rm, stat } from "node:fs/promises";
 import { join, relative } from "node:path";
 import { parseArgs } from "node:util";
 import sharp from "sharp";
+import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import { writeFileRetrying } from "../write-file.ts";
 import type { GalleryPhoto } from "../wikidata/gallery.ts";
 import { namesBrand, notACarOnSale, pressAngle, pressFileName, pressModel, pressYears } from "./press-photos.ts";
@@ -40,7 +41,7 @@ export interface PressPhoto extends Omit<GalleryPhoto, "file"> {
 interface Index {
   brands: { name: string }[];
   models: PressModel[];
-  versions: { b: number; w?: number }[];
+  versions: { b: number; w?: number; n: string }[];
 }
 const index = JSON.parse(await readFile("public/catalog/index.json", "utf8")) as Index;
 
@@ -71,6 +72,7 @@ const photos: PressPhoto[] = [];
 const notes: string[] = [];
 const seen = new Set<string>();
 const written = new Set<string>();
+const broken: string[] = [];
 let resized = 0;
 const folders = (await readdir(sourceDir, { withFileTypes: true }).catch(() => [])).filter(
   (entry) => entry.isDirectory() && !entry.name.startsWith("_"),
@@ -86,10 +88,13 @@ for (const { name: folder } of folders) {
     notes.push(`${folder}: nenhuma marca da FIPE com esse nome`);
     continue;
   }
-  const modelIds = new Set(
-    index.versions.filter((version) => version.b === brand && version.w !== undefined).map((version) => version.w!),
-  );
-  const models = [...modelIds].map((id) => index.models[id]!);
+  // Each model with the lines FIPE names its versions by ("2500" for "Ram pickup").
+  const families = new Map<number, Set<string>>();
+  for (const version of index.versions) {
+    if (version.b !== brand || version.w === undefined) continue;
+    families.set(version.w, (families.get(version.w) ?? new Set()).add(getModelFamily(version.n)));
+  }
+  const models = [...families].map(([id, names]) => ({ ...index.models[id]!, families: [...names] }));
   const brandName = index.brands[brand]!.name.split(" - ").at(-1)!;
   const brandSlug = pressFileName(folder).replace(/\.webp$/, "");
 
@@ -134,12 +139,22 @@ for (const { name: folder } of folders) {
     written.add(target);
     const done = await stat(target).catch(() => undefined);
     if (!done || done.mtimeMs < (await stat(path)).mtimeMs) {
+      // Upright by its EXIF, 1280 px wide at most. A download cut short ("premature end of data") stays out.
+      const webp = await sharp(bytes)
+        .rotate()
+        .resize({ width: 1280, withoutEnlargement: true })
+        .webp({ quality: 80 })
+        .toBuffer()
+        .catch(() => undefined);
+      if (!webp) {
+        written.delete(target);
+        counts.taken--;
+        if (named) counts.withYear--;
+        broken.push(`${folder}/${source}`);
+        continue;
+      }
       await mkdir(join(outDir, brandSlug), { recursive: true });
-      // Upright by its EXIF, 1280 px wide at most.
-      await writeFileRetrying(
-        target,
-        await sharp(bytes).rotate().resize({ width: 1280, withoutEnlargement: true }).webp({ quality: 80 }).toBuffer(),
-      );
+      await writeFileRetrying(target, webp);
       resized++;
     }
     photos.push({
@@ -156,12 +171,13 @@ for (const { name: folder } of folders) {
   }
   const top = [...unknown].sort((a, b) => b[1] - a[1]).slice(0, 12);
   notes.push(
-    `${folder}${allowed ? "" : " (sem autorizacao.json: não entra)"}: ${counts.taken} fotos (${counts.withYear} com ano no nome); ` +
+    `${folder}${allowed ? "" : ` (${authorization ? "sem credito e link no" : "sem"} autorizacao.json: não entra)`}: ${counts.taken} fotos (${counts.withYear} com ano no nome); ` +
       `fora: ${counts.noModel} sem modelo reconhecido, ${counts.notACar} de corrida/evento/logo, ${counts.small} pequenas, ${counts.copies} repetidas` +
       (top.length ? `\n    sem modelo: ${top.map(([name, count]) => `${name} (${count})`).join(", ")}` : ""),
   );
 }
 console.log(notes.join("\n"));
+if (broken.length) console.log(`Corrompidas (baixe de novo): ${broken.join(", ")}`);
 if (values.previa) process.exit(0);
 
 // Photos taken out of the folders leave the site too.

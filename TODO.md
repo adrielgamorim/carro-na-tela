@@ -17,9 +17,10 @@ disponibilidade dela.
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de JAC iEV e E-J* (a linha junta carros, picapes e furgões), Jetour S06, GAC GS9 e Seres 3/5 (a
       reserva é por linha, e a FIPE chama as duas só de "SERES"); no Commons não há foto que sirva.
-- [ ] 🟢 Fotos de imprensa: preencher o `credito` (e a data e o contato) no `autorizacao.json` das
-      marcas que autorizaram, rodar `npm run fotos:imprensa` e `build:catalog` e revisar as páginas
-      (fotos sem nada no nome ficam com o modelo da linha em que vieram).
+- [ ] 🟢 Fotos de imprensa por conferir nas galerias: o "Bronco" da Ford (vai para o Bronco Sport,
+      como a FIPE agrupa), o GR Yaris (vai para o Yaris) e as fotos históricas dos aniversários (147,
+      Elba, Panorama), que vão para a última geração do modelo. Baixar de novo
+      `Toyota/00007-Toyota-corolla-cross-5-2-924f2b23720d.jpg`, que veio cortado.
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
       vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
@@ -101,6 +102,13 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Fotos de imprensa no site: 943 fotos de 69 modelos de 10 marcas (Chevrolet, Citroën, Fiat,
+      Ford, Jeep, Peugeot, Ram, Renault, Toyota, Volkswagen), com o crédito de cada marca, na frente
+      das do Commons. Um arquivo corrompido fica de fora (e é listado) em vez de parar a leitura.
+- [x] Revisão do modelo e do ano das fotos de imprensa: "turbo", "prévia" e "prêmio" não bastam
+      para um modelo (a Pulse Turbo 200 ia para o Uno Turbo, um Corolla para o Previa), "500.000
+      Toro" é a Toro, "2048x1365" não é ano, as de premiação ficam de fora, e a linha da FIPE acha o
+      modelo que o rótulo não diz (as 32 da Ram 2500 vão para "Ram pickup", as da F-150 para a F-Series).
 - [x] Fichas da Stellantis sem ano na página: o ano vem do título ("– 27/27", "AT8 202 4") ou, sem
       nenhum, da data em que o PDF entrou no site (o nome do arquivo termina no `uniqid` do PHP), ela e
       a seguinte (Nova Dakota, Rampage flex, Ram 2500/3500, Leapmotor, Jumpy e Expert 2.2). O ano da

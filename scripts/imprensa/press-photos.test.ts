@@ -26,7 +26,36 @@ describe("press photos", () => {
     expect(pressModel("00001-Ram-Dakota-x-ab12cd34ef56.jpg", [{ id: "R", label: "Ram 1500 (DT)" }])).toBeUndefined();
   });
 
+  it("finds a model by FIPE's line when its label does not say it", () => {
+    const ram = [
+      { id: "P", label: "Ram pickup", families: ["2500"] },
+      { id: "D", label: "Ram 1500 (DT)", families: ["1500"] },
+    ];
+    expect(pressModel("00044-Ram-Ram-2500-Laramie-Night-Edition-1-5d7a39c7b0f7.jpg", ram)?.id).toBe("P");
+    // The label still comes first.
+    expect(pressModel("00001-Ram-Ram-1500-Rebel-ab12cd34ef56.jpg", ram)?.id).toBe("D");
+  });
+
+  it("does not take ordinary words or a thousand for a model", () => {
+    const fiat = [
+      { id: "U", label: "Fiat Uno Turbo" },
+      { id: "P", label: "Fiat Pulse" },
+      { id: "5", label: "Fiat 500" },
+      { id: "T", label: "Fiat Toro" },
+    ];
+    expect(pressModel("00119-Fiat-Pulse-Impetus-Turbo-200-Flex-Automatico-229ecb4a4d38.jpg", fiat)?.id).toBe("P");
+    expect(pressModel("00504-Fiat-Titano-500.000-Toro-em-Goiana-87bd0a838573.jpg", fiat)?.id).toBe("T");
+    const toyota = [
+      { id: "C", label: "Toyota Corolla" },
+      { id: "V", label: "Toyota Previa" },
+    ];
+    expect(pressModel("00058-Toyota-Corolla-pfz_ampliacao_previa-04c966b4a353.jpg", toyota)?.id).toBe("C");
+  });
+
   it("reads the years, the angle and what is not a car on sale", () => {
+    // An image's size is not a year.
+    expect(pressYears("00014-Toyota-RAV4-2048x1365-44731ac7d692.jpg")).toBeUndefined();
+    expect(notACarOnSale("00478-Fiat-Titano-Premio-Lotus-2025-f6ca12a625b8.jpg")).toBe(true);
     expect(pressYears("Kwid 2023-2025/frente.jpg")).toEqual([2023, 2025]);
     expect(pressYears("00764-Fiat-A-cronos-drive-my26-01-290be82ac122.jpg")).toEqual([2026, 2026]);
     expect(pressYears("00007-Chevrolet-Captiva-1770049809434-44aff3e4bd08.jpg")).toBeUndefined();

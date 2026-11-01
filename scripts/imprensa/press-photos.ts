@@ -33,20 +33,21 @@ const plain = (text: string) =>
 
 /**
  * The model years a name gives: "Duster 2025" → 2025–2025; "Kwid 2023-2025" → 2023–2025;
- * "cronos-drive-my26" → 2026. Four-digit years only, not inside longer numbers (timestamps).
+ * "cronos-drive-my26" → 2026. Four-digit years only, not inside longer numbers (timestamps)
+ * nor an image's size ("2048x1152").
  */
 export function pressYears(name: string): [number, number] | undefined {
   const years = [
-    ...[...name.matchAll(/(?<!\d)(199\d|20[0-4]\d)(?!\d)/g)].map((match) => Number(match[1])),
+    ...[...name.matchAll(/(?<![\dx])(199\d|20[0-4]\d)(?![\dx])/gi)].map((match) => Number(match[1])),
     ...[...name.matchAll(/\bmy[ _-]?(\d\d)(?!\d)/gi)].map((match) => 2000 + Number(match[1])),
   ];
   if (!years.length) return undefined;
   return [Math.min(...years), Math.max(...years)];
 }
 
-/** Photos that are not of a car on sale: racing, concepts on show, logos, events. */
+/** Photos that are not of a car on sale: racing, concepts on show, logos, events, awards ("Titano Premio Lotus 2025"). */
 export function notACarOnSale(name: string): boolean {
-  return /\b(formula ?1|f1|9x8|hypercar|le mans|rally|racing|corrida|stock car|logo|logotipo|millionth|evento|event|fabrica|factory|planta|concept|conceito)\b/.test(
+  return /\b(formula ?1|f1|9x8|hypercar|le mans|rally|racing|corrida|stock car|logo|logotipo|millionth|evento|event|fabrica|factory|planta|concept|conceito|premio|premios|premiacao|award|trofeu)\b/.test(
     plain(name),
   );
 }
@@ -64,41 +65,65 @@ export function pressAngle(name: string): Angle {
 export interface PressModel {
   id: string;
   label: string;
+  /** The lines FIPE names its versions by ("2500" for "Ram pickup"). */
+  families?: string[];
 }
 
 /** A model label's words after the first (the brand's), without "(2021)" or "(DT)". */
 const tailOf = (label: string) => plain(label.replace(/\s*\([^)]*\)/g, "")).split(" ").slice(1);
 
-function modelIn(name: string, models: PressModel[]): PressModel | undefined {
-  const words = new Set(plain(name).split(" "));
+// Words that name a model only with others: "Pulse Impetus Turbo 200" is not the Uno Turbo,
+// "Corolla … ampliacao previa" not the Toyota Previa.
+const ordinary = /^(turbo|sport|cross|cargo|plus|max|top|city|work|van|life|previa|premio|classic|special)$/;
+
+// "500.000 Toro em Goiana": a thousand is one number, not the Fiat 500.
+const wordsOf = (name: string) => new Set(plain(name.replace(/(\d)\.(\d{3})(?!\d)/g, "$1$2")).split(" "));
+
+/** The model whose label's words (after the brand's) all appear, the longest such ("Duster Oroch" over "Duster"). */
+function byLabel(words: Set<string>, models: PressModel[]): PressModel | undefined {
   let best: { model: PressModel; size: number } | undefined;
   for (const model of models) {
     const tail = tailOf(model.label);
-    if (!tail.length || !tail.every((word) => words.has(word))) continue;
+    if (!tail.length || (tail.length === 1 && ordinary.test(tail[0]!))) continue;
+    if (!tail.every((word) => words.has(word))) continue;
     if (!best || tail.length > best.size) best = { model, size: tail.length };
   }
-  if (best) return best.model;
-  // "Aircross", "SW4": the label's last word alone, when only one model has it.
-  const byLast = models.filter((model) => {
+  return best?.model;
+}
+
+/** "Ram 2500 Laramie": FIPE's line, for a model whose label does not say it ("Ram pickup"). */
+function byFamily(words: Set<string>, models: PressModel[]): PressModel | undefined {
+  const named = models.filter((model) => model.families?.some((family) => plain(family).split(" ").every((word) => words.has(word))));
+  return named.length === 1 ? named[0] : undefined;
+}
+
+/** "Aircross", "SW4": the label's last word alone, when only one model has it. */
+function byLast(words: Set<string>, models: PressModel[]): PressModel | undefined {
+  const found = models.filter((model) => {
     const last = tailOf(model.label).at(-1) ?? "";
-    return last.length >= 3 && !/^\d+$/.test(last) && words.has(last);
+    return last.length >= 3 && !/^\d+$/.test(last) && !ordinary.test(last) && words.has(last);
   });
-  return byLast.length === 1 ? byLast[0] : undefined;
+  return found.length === 1 ? found[0] : undefined;
 }
 
 /**
- * The model a folder or file names, of the brand's: the one whose words after
- * the first (the brand's, or Dacia's for some Renault lines) all appear in the
- * name, the longest such ("Duster Oroch" over "Duster"). In a downloaded file
+ * The model a folder or file names, of the brand's: by its label's words, by FIPE's
+ * line, then by the label's last word alone. In a downloaded file
  * ("00150-Jeep-Commander-Renegade_700mil-0539ebec7253.jpg": number, brand, the
- * line it was filed under, the original name, a hash) the original name's
- * model comes first: the line it was filed under is sometimes another.
+ * line it was filed under, the original name, a hash) the original name comes
+ * first at each step: the line it was filed under is sometimes another.
  */
 export function pressModel(name: string, models: PressModel[]): PressModel | undefined {
   const parts = name.split("/").pop()!.split("-");
   const downloaded = parts.length > 4 && /^\d{4,}$/.test(parts[0]!);
-  const original = downloaded ? parts.slice(3, -1).join(" ") : "";
-  return (original && modelIn(original, models)) || modelIn(name, models);
+  const names = [...(downloaded ? [parts.slice(3, -1).join(" ")] : []), name].map(wordsOf);
+  for (const find of [byLabel, byFamily, byLast]) {
+    for (const words of names) {
+      const model = find(words, models);
+      if (model) return model;
+    }
+  }
+  return undefined;
 }
 
 /** "Renault" names "Renault"; "Volkswagen" names "VW - VolksWagen"; "Chevrolet" names "GM - Chevrolet". */
