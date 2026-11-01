@@ -5756,6 +5756,110 @@
   {
    "brand": "renault",
    "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex CVT M4R (manual 2014)",
+   "trims": [],
+   "years": [
+    2014,
+    2014
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2014/NU1142-1-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2014_NU1142-1-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4631,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex Manual M4R (manual 2014)",
+   "trims": [],
+   "years": [
+    2014,
+    2014
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2014/NU1142-1-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2014_NU1142-1-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1335,
+    "lengthMm": 4631,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex CVT M4R (manual 2015)",
+   "trims": [],
+   "years": [
+    2015,
+    2015
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2015/NU1142-1-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2015_NU1142-1-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4631,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex Manual M4R (manual 2015)",
+   "trims": [],
+   "years": [
+    2015,
+    2015
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2015/NU1142-1-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2015_NU1142-1-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1335,
+    "lengthMm": 4631,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
    "title": "Novo Fluence 2015 · Dynamique / Dynamique CVT / Dynamique CVT Plus / Privilêge",
    "trims": [
     "dynamique",
@@ -5825,6 +5929,162 @@
     "tankLiters": 60,
     "topSpeedKmh": 195,
     "zeroTo100s": 9.9
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex CVT M4R (manual 2016)",
+   "trims": [],
+   "years": [
+    2016,
+    2016
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2016/NU1142-3-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2016_NU1142-3-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex Manual M4R (manual 2016)",
+   "trims": [],
+   "years": [
+    2016,
+    2016
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2016/NU1142-3-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2016_NU1142-3-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1344,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex CVT M4R (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2017/NU1142-4-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2017_NU1142-4-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex Manual M4R (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2017/NU1142-4-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2017_NU1142-4-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1344,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex CVT M4R (manual 2018)",
+   "trims": [],
+   "years": [
+    2018,
+    2018
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2018/NU1142-5-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2018_NU1142-5-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1372,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16V Flex Manual M4R (manual 2018)",
+   "trims": [],
+   "years": [
+    2018,
+    2018
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "manual",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2018/NU1142-5-L38-PTB.pdf",
+   "file": "renault/manuais_manuais-fluence_2018_NU1142-5-L38-PTB.pdf",
+   "specs": {
+    "powerCv": 143,
+    "torqueKgfm": 20.3,
+    "weightKg": 1344,
+    "lengthMm": 4641,
+    "wheelbaseMm": 2703
    }
   },
   {
@@ -7167,6 +7427,216 @@
   {
    "brand": "renault",
    "line": "Master",
+   "title": "Master 2.3 (manual 2013)",
+   "trims": [],
+   "years": [
+    2013,
+    2013
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2013/nu1051-2-x62-ptb13-14.pdf",
+   "file": "renault/manuais_manuais-master_2013_nu1051-2-x62-ptb13-14.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master M9T (manual 2014)",
+   "trims": [],
+   "years": [
+    2014,
+    2014
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2014/nu1051-3-x62-ptb14-14-14-15.pdf",
+   "file": "renault/manuais_manuais-master_2014_nu1051-3-x62-ptb14-14-14-15.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master M9T (manual 2015)",
+   "trims": [],
+   "years": [
+    2015,
+    2015
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2015/nu1051-4-x62-ptb15-15.pdf",
+   "file": "renault/manuais_manuais-master_2015_nu1051-4-x62-ptb15-15.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master M9T (manual 2016)",
+   "trims": [],
+   "years": [
+    2016,
+    2016
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2016/nu1051-6-x62-ptb-16-16.pdf",
+   "file": "renault/manuais_manuais-master_2016_nu1051-6-x62-ptb-16-16.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master CHASSIS-CABINE M9T (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2017/nu1051-9-x62-ptb17-18.pdf",
+   "file": "renault/manuais_manuais-master_2017_nu1051-9-x62-ptb17-18.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master M9T (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2017/nu1051-8-x62-ptb-17-17.pdf",
+   "file": "renault/manuais_manuais-master_2017_nu1051-8-x62-ptb-17-17.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master CHASSIS-CABINE M9T (manual 2018)",
+   "trims": [],
+   "years": [
+    2018,
+    2018
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2018/nu1051-10-x62-ptb18-18.pdf",
+   "file": "renault/manuais_manuais-master_2018_nu1051-10-x62-ptb18-18.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master CHASSIS-CABINE M9T (manual 2019)",
+   "trims": [],
+   "years": [
+    2019,
+    2019
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2019/master-manual-do-proprietario2019.pdf",
+   "file": "renault/manuais_manuais-master_2019_master-manual-do-proprietario2019.pdf",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master CHASSIS-CABINE M9T (manual 2021)",
+   "trims": [],
+   "years": [
+    2021,
+    2021
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/manual-proprietario-master-2021.pdf",
+   "file": "renault/manuais-propietario21_manual-proprietario-master-2021.pdf",
+   "specs": {
+    "powerCv": 130,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master CHASSIS-CABINE M9T (manual 2021)",
+   "trims": [],
+   "years": [
+    2021,
+    2022
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais-propietario21/Master-Manual-do-Proprietario_compressed.pdf",
+   "file": "renault/manuais-propietario21_Master-Manual-do-Proprietario_compressed.pdf",
+   "specs": {
+    "powerCv": 125,
+    "torqueKgfm": 31.6
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
    "title": "Master · Chassi Cabine · manual",
    "trims": [
     "chassi",
@@ -7266,6 +7736,69 @@
     "tankLiters": 80,
     "topSpeedKmh": 144,
     "zeroTo100s": 19.8
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master 2.3 dCi Gen4 (manual 2022)",
+   "trims": [],
+   "years": [
+    2022,
+    2023
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2022/manuais/janeiro/master/manual-master-X62-PH2-NU1329-1-PTB.pdf",
+   "file": "renault/2022_manuais_janeiro_master_manual-master-X62-PH2-NU1329-1-PTB.pdf",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master 2.3 dCi Gen4 (manual 2023)",
+   "trims": [],
+   "years": [
+    2023,
+    2023
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2023/manuais/agosto/manual-proprietario-master-2023.pdf",
+   "file": "renault/2023_manuais_agosto_manual-proprietario-master-2023.pdf",
+   "specs": {
+    "powerCv": 136,
+    "torqueKgfm": 36.7
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Master",
+   "title": "Master 2.3 dCi Gen6 (manual 2025)",
+   "trims": [],
+   "years": [
+    2025,
+    2026
+   ],
+   "engineLiters": 2.3,
+   "diesel": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/master.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/2025/manual/maio/NU1329-4-X62-PH2-LATAM-PTB-Preview-master.pdf",
+   "file": "renault/2025_manual_maio_NU1329-4-X62-PH2-LATAM-PTB-Preview-master.pdf",
+   "specs": {
+    "powerCv": 150,
+    "torqueKgfm": 39.2
    }
   },
   {

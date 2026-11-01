@@ -90,7 +90,7 @@ function table(page: PdfTextLine[], key: RegExp) {
   const columns: Column[] = numbers(valueLine)
     .sort((a, b) => a.center - b.center)
     .map((cell) => ({ center: cell.center, title: "" }));
-  const heading = lines.findIndex((line) => /caracter[ií]sticas dos motores|massas|pesos/i.test(textOf(line)));
+  const heading = lines.findIndex((line) => /caracter[ií]sticas dos? motor(es)?|massas|pesos/i.test(textOf(line)));
   const left = Math.min(...columns.map((column) => column.center)) - 45;
   for (const line of lines.slice(heading + 1, keyIndex)) {
     // Not the engine codes, nor a row of values above the key's ("Total | 1025 | 1040").
@@ -151,8 +151,13 @@ const withoutRpm = (text: string) =>
 
 /** "77 / 80 @ 6.000", "76/77 (5850 RPM)", "110 - 115 / 5.750", "118 a 5.500 (gasolina)": the largest power, in cv ("(kW @ rpm)": 88,25 kW is 120 cv). */
 function powerOf(text: string, label: string): number {
-  // "cv (kw)" over "180 (132,5)": the cv, the kW in brackets.
-  const kw = /\bkw\b/.test(plain(label)) && !/\bcv\b/.test(plain(label));
+  // "cv (kw)" over "180 (132,5)": the cv, the kW in brackets; "kW (cv)" over "92 (125)": the bracketed cv.
+  const unit = plain(label);
+  if (/kw\s*\(\s*cv/.test(unit)) {
+    const bracketed = [...text.matchAll(/\(\s*(\d+(?:[.,]\d+)?)\s*(?:cv)?\s*\)/gi)].map((match) => number(match[1]!));
+    if (bracketed.length) return Math.max(...bracketed);
+  }
+  const kw = /\bkw\b/.test(unit) && !/\bcv\b/.test(unit);
   const most = Math.max(0, ...numbersIn(withoutRpm(text.replace(/\(\s*\d[\d.,]*\s*\)/g, " "))).filter((value) => value >= (kw ? 30 : 40) && value <= 700));
   return kw ? Math.round(most * 1.35962) : most;
 }
@@ -194,7 +199,7 @@ export function renaultManualSheets(lines: PdfTextLine[], source: ManualSource):
   const pages = new Map<number, PdfTextLine[]>();
   for (const line of lines) pages.set(line.page, [...(pages.get(line.page) ?? []), line]);
   const pagesWith = (pattern: RegExp) => [...pages.values()].filter((page) => page.some((line) => isHeading(line, pattern)));
-  const engines = pagesWith(/caracter[ií]sticas dos motores/i)
+  const engines = pagesWith(/caracter[ií]sticas dos? motor(es)?/i)
     .map((page) => table(page, /^\s*cilindrada/))
     .find(Boolean);
   if (!engines) return [];
@@ -218,12 +223,14 @@ export function renaultManualSheets(lines: PdfTextLine[], source: ManualSource):
   const powerLabel = labelOf(powerName);
   const torqueLabel = labelOf(torqueName);
   const engineType = field(engines.rows, /tipo de motor/);
+  const fuel = field(engines.rows, /tipo de combustivel|injecao/);
   const tare = weights && field(weights.rows, tareRow);
 
   const sheets: OpenSheet[] = [];
   engines.columns.forEach((column, index) => {
     // A merged column's gearbox is one of its versions' ("Automático" over the 2.0 4x2).
-    const cc = numbersIn(displacement.get(index) ?? "")[0];
+    // "2 299": the Master writes thousands with a space.
+    const cc = numbersIn((displacement.get(index) ?? "").replace(/(\d) (?=\d{3}\b)/g, "$1"))[0];
     // Each word once: two title rows can repeat the engine ("1.6 16V" over "1.6 16V 4x2").
     const titleWords = column.title
       .replace(column.merged ? /\b(manual|autom[áa]tic[oa]|automatizad[oa]|cvt)\b\.?/gi : /$^/, "")
@@ -238,6 +245,7 @@ export function renaultManualSheets(lines: PdfTextLine[], source: ManualSource):
     const both = /manual/i.test(title) && /autom|cvt/i.test(title);
     const transmission = column.merged || both ? undefined : transmissionIn(title);
     const valves = valvesIn(title);
+    const diesel = /diesel/i.test(fuel.get(index) ?? "");
     // "(Stepway)": the Sandero's manual covers the Stepway, a line of its own.
     const line = /stepway/i.test(title) && !/stepway/i.test(source.line) ? `${source.line} Stepway` : source.line;
     // The weight of the version of this engine and gearbox with no other words ("1.6 8V Manual", not "1.6 8V Cross Manual").
@@ -269,7 +277,8 @@ export function renaultManualSheets(lines: PdfTextLine[], source: ManualSource):
       years: source.years,
       engineLiters,
       ...(valves && { valves }),
-      turbo: turboIn(`${title} ${engineType.get(index) ?? ""}`),
+      // A diesel's turbo left open, as FIPE does not always write it ("MASTER … 2.3 dCi").
+      ...(diesel ? { diesel: true } : { turbo: turboIn(`${title} ${engineType.get(index) ?? ""}`) }),
       electric: false,
       ...(transmission && { transmission }),
       fallback: true,

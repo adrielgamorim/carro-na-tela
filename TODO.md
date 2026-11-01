@@ -31,11 +31,11 @@ disponibilidade dela.
 
 Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
 
-- [ ] 🟡 Manuais do proprietário de outras marcas, como os da Renault (`npm run fichas:manuais`): a
-      Hyundai põe os PDFs em `/content/dam/hmb/download-manuais/` (o robots.txt permite); o site da
-      Honda responde "Access Denied" (Akamai), então fica de fora. Na Renault faltam os manuais da
-      Master (diesel) e do Fluence até 2012 e de 2014 em diante, de outro formato, e os Logan de 2008
-      a 2012 só dão medidas (a tabela de motores tem outro desenho).
+- [ ] 🟢 Manuais do proprietário de outras marcas, como os da Renault (`npm run fichas:manuais`): a
+      Hyundai lista os seus em `/proprietarios.model.json` (o robots.txt permite), mas são só os ~10
+      dos modelos atuais, que os catálogos já cobrem; o site da Honda responde "Access Denied"
+      (Akamai), então fica de fora. Na Renault faltam o Fluence de 2010 a 2012 (o capítulo é imagem)
+      e a potência dos Logan de 2008 a 2012 (a tabela de motores tem outro desenho).
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
@@ -57,7 +57,9 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 - Recalls por modelo: o conjunto "Campanhas de Recall" da Senatran (dados.transportes.gov.br,
   `recall`) só tem o total do ano; a consulta oficial é por placa ou chassi, com login gov.br. Ver
-  de novo se a Senacon publicar a lista de campanhas.
+  de novo se a Senacon publicar a lista de campanhas. Pista: a Hyundai publica as suas em
+  `/proprietarios.model.json` (veículo, ano-modelo, faixa de chassi, número do aviso); ver se as
+  outras marcas têm listas assim antes de fazer só para uma.
 - Roubos e furtos por modelo pela SSP-SP: o AUTOSEG já dá os roubos por mil carros segurados; a
   transparência da SSP-SP só tem boletins um a um, num formulário ASP.NET.
 - Revisões com preço fixo: os sites das marcas consultam por modelo e CEP dentro dos seus apps; as
@@ -97,8 +99,8 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 - [x] Manuais do proprietário da Renault (`npm run fichas:manuais`, depois `fichas:abertas`): 116 PDFs
       de 2008 a 2025 nas páginas `/manuais/<modelo>.html`; o capítulo "Características técnicas" dá
       potência, torque, cilindrada, peso e, quando o desenho é de uma versão só, comprimento e
-      entre-eixos. 135 fichas dão números a 113 versões a mais (324 anos-modelo), só onde não há
-      ficha da sala de imprensa. A potência em kW vira cv, e uma em kW rotulada como cv (Logan 2013)
+      entre-eixos. 158 fichas (Master e Fluence incluídos) dão números a 119 versões a mais (433
+      anos-modelo), só onde não há ficha da sala de imprensa. A potência em kW vira cv, e uma em kW rotulada como cv (Logan 2013)
       é corrigida pelo mesmo motor de um ano vizinho.
 - [x] Fichas e equipamentos dos sites da Ford e da Nissan (`npm run fichas:sites`): a Ford tem
       uma página por versão (`compare-as-versoes/<versão>.html`), ligada à versão FIPE à mão em

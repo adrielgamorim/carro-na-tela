@@ -69,6 +69,20 @@ describe("Renault's owner's manuals", () => {
     expect(sheet).toMatchObject({ engineLiters: 1.3, turbo: true, specs: { powerCv: 170, torqueKgfm: 27.5 } });
   });
 
+  it("reads the Master's diesel: thousands with a space, the cv in brackets after the kW", () => {
+    const master = page(144, [
+      [399, [["CARACTERÍSTICAS DO MOTOR", 120]]],
+      [317, [["Cilindrada", 52], ["(cm", 84], [")", 96], ["2 299", 350]]],
+      [295, [["Injeção", 45], ["Diesel", 350]]],
+      [227, [["Potência (1)", 57], ["kW (cv) / rpm", 112], ["92 (125) / 3500", 350]]],
+      [206, [["Torque (1)", 53], ["Nm / rpm", 96], ["310 / 1500", 350]]],
+    ]);
+    const [sheet] = renaultManualSheets(master, { ...source, line: "Master" });
+    expect(sheet).toMatchObject({ engineLiters: 2.3, diesel: true, specs: { powerCv: 125, torqueKgfm: 31.6 } });
+    // A diesel's turbo is left open.
+    expect(sheet?.turbo).toBeUndefined();
+  });
+
   it("gives an engine over several versions only the words they share, and no gearbox", () => {
     const duster = page(167, [
       [399, [["CARACTERÍSTICAS DOS MOTORES", 132]]],
