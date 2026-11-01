@@ -34,8 +34,7 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 - [ ] 🟢 Manuais do proprietário de outras marcas, como os da Renault (`npm run fichas:manuais`): a
       Hyundai lista os seus em `/proprietarios.model.json` (o robots.txt permite), mas são só os ~10
       dos modelos atuais, que os catálogos já cobrem; o site da Honda responde "Access Denied"
-      (Akamai), então fica de fora. Na Renault faltam o Fluence de 2010 a 2012 (o capítulo é imagem)
-      e a potência dos Logan de 2008 a 2012 (a tabela de motores tem outro desenho).
+      (Akamai), então fica de fora.
 - [ ] 🟢 Releases com equipamentos em texto (VW: `news/json/news/{id}` da API aberta; Renault:
       `releases` de cada veículo na API; Stellantis já em cache): extrair itens por versão exige
       revisão à mão, como os dados de porta-malas e torque. Revisar `npm run extract:imprensa` de
@@ -105,6 +104,11 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
       carros (carroceria, cilindrada em litros, porte, portas, consumo, conforto) somem nas outras. A
       busca pelo chassi abre a categoria do fabricante (WMI "Honda Motorcycles" → motos), e o
       `fetch:wmi` casa também as marcas de motos e caminhões.
+- [x] Manuais antigos da Renault: o Fluence de 2010 a 2013 tem texto, mas em versaletes partidos
+      ("c | ilindrada", "1 | 998"), que agora se juntam; nos Logan de 2008 a 2012 o expoente de
+      "(cm³)" virava uma coluna e o "998" ficava 4 pontos abaixo da linha. Com isso entram também o
+      Captur 2016, o Sandero e o Logan 2017, o Kwid 2018 e a Master 2013: 180 fichas de manual (eram
+      158), 700 fichas casadas com 1.415 anos-modelo (eram 689 e 1.385).
 - [x] Manuais do proprietário da Renault (`npm run fichas:manuais`, depois `fichas:abertas`): 116 PDFs
       de 2008 a 2025 nas páginas `/manuais/<modelo>.html`; o capítulo "Características técnicas" dá
       potência, torque, cilindrada, peso e, quando o desenho é de uma versão só, comprimento e

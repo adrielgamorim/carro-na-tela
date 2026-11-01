@@ -4576,6 +4576,56 @@
   {
    "brand": "renault",
    "line": "Captur",
+   "title": "Captur 1.6 16V Flex (manual 2016)",
+   "trims": [],
+   "years": [
+    2016,
+    2016
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-captur/2016/NU1264-1-XHA-PTB.pdf",
+   "file": "renault/manuais_manuais-captur_2016_NU1264-1-XHA-PTB.pdf",
+   "specs": {
+    "powerCv": 120,
+    "torqueKgfm": 16.2,
+    "weightKg": 1269,
+    "lengthMm": 4333,
+    "wheelbaseMm": 2674
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
+   "title": "Captur 2.0 16V Flex (manual 2016)",
+   "trims": [],
+   "years": [
+    2016,
+    2016
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/captur.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-captur/2016/NU1264-1-XHA-PTB.pdf",
+   "file": "renault/manuais_manuais-captur_2016_NU1264-1-XHA-PTB.pdf",
+   "specs": {
+    "powerCv": 148,
+    "torqueKgfm": 20.9,
+    "weightKg": 1349,
+    "lengthMm": 4333,
+    "wheelbaseMm": 2674
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Captur",
    "title": "Captur 1.6 16V Flex (manual 2017)",
    "trims": [],
    "years": [
@@ -5662,6 +5712,270 @@
   {
    "brand": "renault",
    "line": "Fluence",
+   "title": "Fluence 2.0 16v Hi-flex M4R (manual 2010)",
+   "trims": [],
+   "years": [
+    2010,
+    2010
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2010/nu983-1-2010-fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2010_nu983-1-2010-fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "lengthMm": 4613,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 1.6 16v flex K4M (manual 2011)",
+   "trims": [],
+   "years": [
+    2011,
+    2011
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-3-2011-12-fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-3-2011-12-fluenceptb.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 15.5,
+    "weightKg": 1238,
+    "lengthMm": 4618,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v flex M4R (manual 2011)",
+   "trims": [],
+   "years": [
+    2011,
+    2011
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-3-2011-12-fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-3-2011-12-fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "lengthMm": 4618,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v Hi-flex M4R (manual 2011)",
+   "trims": [],
+   "years": [
+    2011,
+    2011
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2011/nu983-2-2011-fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2011_nu983-2-2011-fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "lengthMm": 4613,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 1.6 16v flex K4M (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-5-2012-13fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-5-2012-13fluenceptb.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 15.5,
+    "weightKg": 1238,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 1.6 16v flex K4M (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-4-2012-12fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-4-2012-12fluenceptb.pdf",
+   "specs": {
+    "powerCv": 110,
+    "torqueKgfm": 15.5,
+    "weightKg": 1293,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v flex Automático M4R (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-5-2012-13fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-5-2012-13fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "weightKg": 1372,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v flex Automático M4R (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "transmission": "automatico",
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-4-2012-12fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-4-2012-12fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "weightKg": 1389,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v flex M4R (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-5-2012-13fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-5-2012-13fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.5,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v flex M4R (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2012/nu983-4-2012-12fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2012_nu983-4-2012-12fluenceptb.pdf",
+   "specs": {
+    "powerCv": 140,
+    "torqueKgfm": 19.9,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
+   "title": "Fluence 2.0 16v Gasolina F4R Turbo (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 2,
+   "valves": 16,
+   "turbo": true,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/fluence.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-fluence/2013/nu983-5-2012-13fluenceptb.pdf",
+   "file": "renault/manuais_manuais-fluence_2013_nu983-5-2012-13fluenceptb.pdf",
+   "specs": {
+    "powerCv": 180,
+    "torqueKgfm": 30.6,
+    "wheelbaseMm": 2703
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Fluence",
    "title": "Fluence 1.6 16V Flex K4M (manual 2013)",
    "trims": [],
    "years": [
@@ -6392,6 +6706,30 @@
   {
    "brand": "renault",
    "line": "Kwid",
+   "title": "Kwid 1.0 12V Flex (manual 2018)",
+   "trims": [],
+   "years": [
+    2018,
+    2018
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/kwid.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-kwid/2018/NU1219-3-XBB-PTB.pdf",
+   "file": "renault/manuais_manuais-kwid_2018_NU1219-3-XBB-PTB.pdf",
+   "specs": {
+    "powerCv": 70,
+    "torqueKgfm": 9.79,
+    "lengthMm": 3679,
+    "wheelbaseMm": 2423
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Kwid",
    "title": "Kwid 1.0 12V Flex (manual 2019)",
    "trims": [],
    "years": [
@@ -6738,6 +7076,9 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2008/logan-manual-08.pdf",
    "file": "renault/manuais_manual-logan_2008_logan-manual-08.pdf",
    "specs": {
+    "powerCv": 77,
+    "torqueKgfm": 10.1,
+    "weightKg": 1025,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6760,7 +7101,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2008/logan-manual-08.pdf",
    "file": "renault/manuais_manual-logan_2008_logan-manual-08.pdf",
    "specs": {
-    "weightKg": 1082,
+    "powerCv": 112,
+    "torqueKgfm": 15.5,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6783,6 +7125,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2008/logan-manual-08.pdf",
    "file": "renault/manuais_manual-logan_2008_logan-manual-08.pdf",
    "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 14.1,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6805,6 +7149,9 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2009/logan-manual-09.pdf",
    "file": "renault/manuais_manual-logan_2009_logan-manual-09.pdf",
    "specs": {
+    "powerCv": 77,
+    "torqueKgfm": 10.1,
+    "weightKg": 1025,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6827,6 +7174,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2009/logan-manual-09.pdf",
    "file": "renault/manuais_manual-logan_2009_logan-manual-09.pdf",
    "specs": {
+    "powerCv": 112,
+    "torqueKgfm": 15.5,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6849,8 +7198,35 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2009/logan-manual-09.pdf",
    "file": "renault/manuais_manual-logan_2009_logan-manual-09.pdf",
    "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 14.1,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "title": "Logan 1.0 16V Flex D4D (manual 2010)",
+   "trims": [],
+   "years": [
+    2010,
+    2010
+   ],
+   "engineLiters": 1,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2010/logan-manual-10.pdf",
+   "file": "renault/manuais_manual-logan_2010_logan-manual-10.pdf",
+   "specs": {
+    "powerCv": 77,
+    "torqueKgfm": 10.1,
+    "weightKg": 1025,
+    "lengthMm": 4288,
+    "wheelbaseMm": 2634
    }
   },
   {
@@ -6871,6 +7247,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2010/logan-manual-10.pdf",
    "file": "renault/manuais_manual-logan_2010_logan-manual-10.pdf",
    "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 14.1,
     "weightKg": 1040,
     "lengthMm": 4288,
     "wheelbaseMm": 2634
@@ -6894,6 +7272,9 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2011/logan-manual-11.pdf",
    "file": "renault/manuais_manual-logan_2011_logan-manual-11.pdf",
    "specs": {
+    "powerCv": 77,
+    "torqueKgfm": 10.1,
+    "weightKg": 1025,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6916,7 +7297,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2011/logan-manual-11.pdf",
    "file": "renault/manuais_manual-logan_2011_logan-manual-11.pdf",
    "specs": {
-    "weightKg": 1082,
+    "powerCv": 112,
+    "torqueKgfm": 15.5,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
    }
@@ -6939,8 +7321,35 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2011/logan-manual-11.pdf",
    "file": "renault/manuais_manual-logan_2011_logan-manual-11.pdf",
    "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 14.1,
     "lengthMm": 4247,
     "wheelbaseMm": 2630
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "title": "Logan 1.0 16V Flex D4D (manual 2012)",
+   "trims": [],
+   "years": [
+    2012,
+    2012
+   ],
+   "engineLiters": 1,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2012/logan-manual-12.pdf",
+   "file": "renault/manuais_manual-logan_2012_logan-manual-12.pdf",
+   "specs": {
+    "powerCv": 77,
+    "torqueKgfm": 10.1,
+    "weightKg": 1025,
+    "lengthMm": 4288,
+    "wheelbaseMm": 2634
    }
   },
   {
@@ -6961,6 +7370,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2012/logan-manual-12.pdf",
    "file": "renault/manuais_manual-logan_2012_logan-manual-12.pdf",
    "specs": {
+    "powerCv": 112,
+    "torqueKgfm": 15.5,
     "lengthMm": 4288,
     "wheelbaseMm": 2634
    }
@@ -6983,6 +7394,8 @@
    "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2012/logan-manual-12.pdf",
    "file": "renault/manuais_manual-logan_2012_logan-manual-12.pdf",
    "specs": {
+    "powerCv": 95,
+    "torqueKgfm": 13.8,
     "weightKg": 1040,
     "lengthMm": 4288,
     "wheelbaseMm": 2634
@@ -7261,6 +7674,30 @@
   {
    "brand": "renault",
    "line": "Logan",
+   "title": "Logan 1.0 16V Flex (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2017/NU1077-7-L52-PTB.pdf",
+   "file": "renault/manuais_manual-logan_2017_NU1077-7-L52-PTB.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.5,
+    "lengthMm": 4346,
+    "wheelbaseMm": 2634
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
    "title": "Logan 1.6 16V Flex Manual/Automatiz (manual 2017)",
    "trims": [],
    "years": [
@@ -7278,6 +7715,30 @@
    "specs": {
     "powerCv": 118,
     "torqueKgfm": 16,
+    "lengthMm": 4346,
+    "wheelbaseMm": 2634
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Logan",
+   "title": "Logan 1.6 8V Flex Manual/Automatiz (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 8,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/logan.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manual-logan/2017/NU1077-7-L52-PTB.pdf",
+   "file": "renault/manuais_manual-logan_2017_NU1077-7-L52-PTB.pdf",
+   "specs": {
+    "powerCv": 106,
+    "torqueKgfm": 15.5,
     "lengthMm": 4346,
     "wheelbaseMm": 2634
    }
@@ -7438,8 +7899,8 @@
    "electric": false,
    "fallback": true,
    "page": "https://www.renault.com.br/manuais/master.html",
-   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2013/nu1051-2-x62-ptb13-14.pdf",
-   "file": "renault/manuais_manuais-master_2013_nu1051-2-x62-ptb13-14.pdf",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-master/2013/13.13-nu1051-1-x62-ptb.pdf",
+   "file": "renault/manuais_manuais-master_2013_13.13-nu1051-1-x62-ptb.pdf",
    "specs": {
     "powerCv": 130,
     "torqueKgfm": 31.6
@@ -8706,6 +9167,56 @@
   {
    "brand": "renault",
    "line": "Sandero",
+   "title": "Sandero 1.0 12V Flex (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1,
+   "valves": 12,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-6-B52-PTB.pdf",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-6-B52-PTB.pdf",
+   "specs": {
+    "powerCv": 82,
+    "torqueKgfm": 10.5,
+    "weightKg": 1023,
+    "lengthMm": 4057,
+    "wheelbaseMm": 2589
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "title": "Sandero 1.0 16V Flex (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-6-B52-PTB.pdf",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-6-B52-PTB.pdf",
+   "specs": {
+    "powerCv": 80,
+    "torqueKgfm": 10.5,
+    "weightKg": 1013,
+    "lengthMm": 4057,
+    "wheelbaseMm": 2589
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
    "title": "Sandero 1.6 16V Flex Cross Manual/Automatiz. (manual 2017)",
    "trims": [],
    "years": [
@@ -8747,6 +9258,54 @@
    "specs": {
     "powerCv": 118,
     "torqueKgfm": 16,
+    "lengthMm": 4057,
+    "wheelbaseMm": 2589
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "title": "Sandero 1.6 16V Flex Manual/Automatiz. (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 16,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-6-B52-PTB.pdf",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-6-B52-PTB.pdf",
+   "specs": {
+    "powerCv": 118,
+    "torqueKgfm": 16,
+    "lengthMm": 4057,
+    "wheelbaseMm": 2589
+   }
+  },
+  {
+   "brand": "renault",
+   "line": "Sandero",
+   "title": "Sandero 1.6 8V Flex Manual/Automatiz. (manual 2017)",
+   "trims": [],
+   "years": [
+    2017,
+    2017
+   ],
+   "engineLiters": 1.6,
+   "valves": 8,
+   "turbo": false,
+   "electric": false,
+   "fallback": true,
+   "page": "https://www.renault.com.br/manuais/stepway.html",
+   "url": "https://cdn.group.renault.com/ren/br/renault-new-cars/editorial/manuais/manuais-sandero/2017/NU1192-6-B52-PTB.pdf",
+   "file": "renault/manuais_manuais-sandero_2017_NU1192-6-B52-PTB.pdf",
+   "specs": {
+    "powerCv": 106,
+    "torqueKgfm": 15.5,
     "lengthMm": 4057,
     "wheelbaseMm": 2589
    }

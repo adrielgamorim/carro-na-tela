@@ -41,6 +41,35 @@ const isHeading = (line: PdfTextLine, pattern: RegExp) => pattern.test(textOf(li
 const right = (cell: PdfTextCell) => cell.center + (cell.width ?? 0) / 2;
 const isNumber = (cell: PdfTextCell) => /^\s*[\d<≤]/.test(cell.text);
 
+/**
+ * The cells of a line, with the pieces of a word as one: the Fluence 2010–12
+ * set small capitals apart, touching ("c | ilindrada", "2.0 16 | v"), and a
+ * thousand's digit a point off ("1 | 998", "6 | 000").
+ */
+export function joinedCells(line: PdfTextLine): PdfTextLine {
+  const cells: PdfTextCell[] = [];
+  // Those made of small capitals, whose next word a little apart is the same phrase ("2.0 16v | Hi-flex").
+  const smallCaps = new Set<PdfTextCell>();
+  for (const cell of [...line.cells].sort((a, b) => a.center - b.center)) {
+    const last = cells.at(-1);
+    const gap = last ? cell.center - (cell.width ?? 0) / 2 - right(last) : Infinity;
+    const touching = gap < 0.5;
+    const thousand = gap < 2 && /^\d$/.test(last?.text ?? "") && /^\d{3}\b/.test(cell.text);
+    if (!last || !(touching || thousand || (gap < 3 && smallCaps.has(last)))) {
+      cells.push(cell);
+      continue;
+    }
+    const left = last.center - (last.width ?? 0) / 2;
+    const width = right(cell) - left;
+    // A word's first letter, written small but shown as a capital ("t | orque do motor" is "Torque do motor").
+    const first = touching && /^\p{Ll}$/u.test(last.text) ? last.text.toUpperCase() : last.text;
+    const joined = { center: left + width / 2, width, text: `${first}${touching || thousand ? "" : " "}${cell.text}` };
+    if (touching || smallCaps.has(last)) smallCaps.add(joined);
+    cells[cells.length - 1] = joined;
+  }
+  return cells.length === line.cells.length ? line : { ...line, cells };
+}
+
 /** A page's lines from the top, those a point or two apart as one ("998" a little below its row). */
 function mergedLines(page: PdfTextLine[]): PdfTextLine[] {
   const out: PdfTextLine[] = [];
@@ -81,13 +110,17 @@ function table(page: PdfTextLine[], key: RegExp) {
   if (keyIndex < 0) return undefined;
   const keyLine = lines[keyIndex]!;
   const labelEnd = Math.max(...keyLine.cells.filter((cell) => !isNumber(cell)).map(right));
-  const numbers = (line: PdfTextLine) => line.cells.filter((cell) => isNumber(cell) && cell.center > labelEnd);
+  // Not the unit's exponent, a cell of its own in the older manuals ("Cilindrada (cm ) | 3 | 998").
+  const numbers = (line: PdfTextLine) => line.cells.filter((cell) => isNumber(cell) && cell.center > labelEnd && !/^\s*[23]\s*$/.test(cell.text));
   // Its own line, else the nearest with numbers: "Total | 1025" over "Massa do veículo vazio (tara)".
   const valueLine = [keyLine, ...lines.filter((line) => line !== keyLine && Math.abs(line.y - keyLine.y) <= 15).sort((a, b) => Math.abs(a.y - keyLine.y) - Math.abs(b.y - keyLine.y))].find(
     (line) => numbers(line).length,
   );
   if (!valueLine) return undefined;
-  const columns: Column[] = numbers(valueLine)
+  // With the numbers a few points off it ("Cilindrada | 1598" over a "998" 4 points lower).
+  const columns: Column[] = lines
+    .filter((line) => Math.abs(line.y - valueLine.y) <= 5)
+    .flatMap(numbers)
     .sort((a, b) => a.center - b.center)
     .map((cell) => ({ center: cell.center, title: "" }));
   const heading = lines.findIndex((line) => /caracter[ií]sticas dos? motor(es)?|massas|pesos/i.test(textOf(line)));
@@ -197,7 +230,7 @@ function dimensionsOf(pages: PdfTextLine[][]): Partial<Pick<SheetSpecs, "lengthM
 /** The sheets of a manual, one per engine column (and gearbox, when the table splits them). */
 export function renaultManualSheets(lines: PdfTextLine[], source: ManualSource): OpenSheet[] {
   const pages = new Map<number, PdfTextLine[]>();
-  for (const line of lines) pages.set(line.page, [...(pages.get(line.page) ?? []), line]);
+  for (const line of lines.map(joinedCells)) pages.set(line.page, [...(pages.get(line.page) ?? []), line]);
   const pagesWith = (pattern: RegExp) => [...pages.values()].filter((page) => page.some((line) => isHeading(line, pattern)));
   const engines = pagesWith(/caracter[ií]sticas dos? motor(es)?/i)
     .map((page) => table(page, /^\s*cilindrada/))

@@ -100,6 +100,44 @@ describe("Renault's owner's manuals", () => {
     ]);
   });
 
+  it("reads the older manuals: the unit's exponent apart, a value a few points below its row", () => {
+    // The Logan 2010's: "3" of "(cm³)" a cell of its own, the 1.0's "998" 4 points lower.
+    const logan = page(121, [
+      [383, [["CARACTERÍSTICAS DOS MOTORES", 122]]],
+      [365, [["Versões", 47], ["1.0 16V Flex", 277], ["1.6 8V Flex", 423]]],
+      [326, [["Cilindrada (cm )", 63], ["3", 93], ["1598", 423]]],
+      [322, [["998", 277]]],
+      [280, [["Potência máxima", 65], ["cv", 100], ["Gasolina/álcool (RPM)", 145], ["76 / 77 (5850 RPM)", 275], ["92 /95 (5250 RPM)", 422]]],
+      [262, [["Torque máximo", 62], ["Nm", 96], ["( mkg ) / RPM", 125], ["97,3 (9,92) a 4350 RPM", 275], ["134,0 (13.7) a 2850 RPM", 422]]],
+      [249, [["Gasolina/álcool", 62], ["99,0 (10,1) a 4350 RPM", 275], ["138,0 (14.1) a 2850 RPM", 422]]],
+    ]);
+    const sheets = renaultManualSheets(logan, { ...source, line: "Logan", years: [2010, 2010] });
+    expect(sheets.map((sheet) => [sheet.title, sheet.engineLiters, sheet.specs])).toEqual([
+      ["Logan 1.0 16V Flex (manual 2010)", 1, { powerCv: 77, torqueKgfm: 10.1 }],
+      ["Logan 1.6 8V Flex (manual 2010)", 1.6, { powerCv: 95, torqueKgfm: 14.1 }],
+    ]);
+  });
+
+  it("joins the small capitals and the thousands set apart (the Fluence 2010's)", () => {
+    // [text, left, width]: "c" touching "ilindrada", "1" a point off "998".
+    const line = (y: number, cells: [string, number, number][]): PdfTextLine => ({
+      page: 183,
+      y,
+      cells: cells.map(([text, left, width]) => ({ text, center: left + width / 2, width })),
+    });
+    const fluence = [
+      line(399, [["c", 30, 6], ["aracterísticas dos motores", 36, 180]]),
+      line(372, [["v", 30, 6], ["ersões", 36, 40], ["2.0 16", 330, 20], ["v", 350, 5], ["Hi-", 357.5, 10], ["f", 367.5, 3], ["lex", 370.5, 10]]),
+      line(309, [["c", 30, 6], ["ilindrada", 36, 40], ["(cm )", 78, 20], ["1", 348, 5], ["998", 354, 15]]),
+      line(280, [["Potência* cv (kw)", 30, 80], ["140 (103)", 345, 30]]),
+      line(232, [["t", 30, 4], ["orque do motor* mkg", 34, 90], ["19,9", 352, 16]]),
+    ];
+    const sheets = renaultManualSheets(fluence, { ...source, line: "Fluence", years: [2010, 2010] });
+    expect(sheets.map((sheet) => [sheet.title, sheet.engineLiters, sheet.valves, sheet.specs])).toEqual([
+      ["Fluence 2.0 16v Hi-flex (manual 2010)", 2, 16, { powerCv: 140, torqueKgfm: 19.9 }],
+    ]);
+  });
+
   it("takes the years and the line from the manual's path", () => {
     expect(manualYears("manuais/manuais-sandero/2015/NU1192-3-B52-PTB.pdf")).toEqual([2015, 2015]);
     expect(manualYears("editorial/2023/manuais/agosto/manual-proprietario-oroch-2023.pdf")).toEqual([2023, 2023]);
