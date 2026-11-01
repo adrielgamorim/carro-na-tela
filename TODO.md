@@ -23,9 +23,11 @@ disponibilidade dela.
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
       vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
-      linhas fora do catálogo, a Expert 2.2 (a página não diz o ano), as Jumpy 1.5 e Boxer de outros
-      anos, sem ficha, e o comprimento das vans (a FIPE não diz L1H1 ou L3H2: as que empatam dão só os
-      números em comum). O documento 322 está indisponível no site.
+      linhas fora do catálogo, os motores sem ficha (Jumpy e Expert 1.6, Jumper 2.0, Boxer de outros
+      anos, Ducato Chassi e Executivo 2019–20) e o comprimento das vans (a FIPE não diz L1H1 ou L3H2:
+      as que empatam dão só os números em comum). A FIPE chama de "2.0 TB Diesel" as Rampage diesel
+      2023–24 (são 2.2), que ficam sem ficha; a 1500 Laramie 2026 leva a da Big Horn (não há a dela).
+      O documento 322 está indisponível no site.
 
 ### Fontes de dados a explorar
 
@@ -99,6 +101,13 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Fichas da Stellantis sem ano na página: o ano vem do título ("– 27/27", "AT8 202 4") ou, sem
+      nenhum, da data em que o PDF entrou no site (o nome do arquivo termina no `uniqid` do PHP), ela e
+      a seguinte (Nova Dakota, Rampage flex, Ram 2500/3500, Leapmotor, Jumpy e Expert 2.2). O ano da
+      ficha vale mais que o da página ("MY25" numa página "2020 a 2024"); "Ram 1500" é linha, não
+      ano; o PDF partido ("P eugeot A llure T urbo", "L IMITED T2 0 0") é emendado; o Hurricane é
+      turbo; a Ram leva turbo e câmbio em aberto (a FIPE não diz); o "Aircross Feel 7" é o AIRCROSS7.
+      Anos-modelo de 2019 em diante sem ficha: de 765 para 648 (de 1.195).
 - [x] Cilindrada das motos em cc: do "150cc" do nome ou, sem ele, do número do modelo ("CB 650F",
       "R 1250 GS"), que é a cilindrada nominal; ficam de fora watts ("3000W"), aniversários ("115th",
       "50 Anos") e o 946 da Vespa. 790 de 979 motos têm; o filtro de cilindrada aparece nas motos, em
