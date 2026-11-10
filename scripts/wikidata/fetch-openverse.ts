@@ -56,7 +56,15 @@ class Stop extends Error {}
 async function search(label: string, id: string, cachedOnly = false): Promise<OpenverseImage[] | undefined> {
   const cached = join(cacheDir, `${id}.json`);
   const known = await readFile(cached, "utf8").catch(() => undefined);
-  if (known) return JSON.parse(known) as OpenverseImage[];
+  // A run killed while writing leaves a file of null bytes: search it again.
+  const parsed = known && (() => {
+    try {
+      return JSON.parse(known) as OpenverseImage[];
+    } catch {
+      return undefined;
+    }
+  })();
+  if (parsed) return parsed;
   if (cachedOnly) return undefined;
   const params = new URLSearchParams({ q: label, license: openverseLicenses, source: "flickr", page_size: "20", mature: "false" });
   for (let attempt = 1; attempt <= 4; attempt++) {

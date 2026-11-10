@@ -6556,6 +6556,62 @@
    "license": "Public domain"
   }
  ],
+ "Q22089413": [
+  {
+   "file": "2017 Ram 1500 Express Crew Cab, front left, 09-02-2022.jpg",
+   "from": 1981,
+   "to": null,
+   "names": "dodge ram ram pickup",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg/500px-2017_Ram_1500_Express_Crew_Cab%2C_front_left%2C_09-02-2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "MercurySable99",
+   "license": "CC BY-SA 4.0"
+  },
+  {
+   "file": "89DodgeRam F34.jpg",
+   "from": 1980,
+   "to": 1993,
+   "names": "first generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/89DodgeRam_F34.jpg/500px-89DodgeRam_F34.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Scheinwerfermann",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "Truck09 (cropped).jpg",
+   "from": 1993,
+   "to": 2002,
+   "names": "second generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Truck09_%28cropped%29.jpg/500px-Truck09_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Brian Cantoni",
+   "license": "CC BY 2.0"
+  },
+  {
+   "file": "2002-2005 Dodge Ram regular cab -- 12-14-2011.jpg",
+   "from": 2001,
+   "to": 2009,
+   "names": "third generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/2002-2005_Dodge_Ram_regular_cab_--_12-14-2011.jpg/500px-2002-2005_Dodge_Ram_regular_cab_--_12-14-2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "IFCAR",
+   "license": "Public domain"
+  },
+  {
+   "file": "2016 Ram 1500 SLT Crew Cab in white, front right.jpg",
+   "from": 2008,
+   "to": 2024,
+   "names": "fourth generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/2016_Ram_1500_SLT_Crew_Cab_in_white%2C_front_right.jpg/500px-2016_Ram_1500_SLT_Crew_Cab_in_white%2C_front_right.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Mr.choppers",
+   "license": "CC BY-SA 3.0"
+  },
+  {
+   "file": "2019 Dodge Ram 1500 Laramie, front 2.28.20.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "fifth generation",
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/2019_Ram_1500_Laramie%2C_front_2.28.20.jpg/500px-2019_Ram_1500_Laramie%2C_front_2.28.20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "artist": "Kevauto",
+   "license": "CC BY-SA 4.0"
+  }
+ ],
  "Q222764": [
   {
    "file": "2017 Renault Megane Dynamique S NAV DC 1.5 Front.jpg",

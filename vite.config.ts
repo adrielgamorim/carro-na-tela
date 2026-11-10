@@ -10,6 +10,9 @@ export default defineConfig(({ mode }) => {
   const tokens = proxyTokensFromEnv(env)
 
   return {
+    // The e2e server (playwright.config.ts) runs beside `npm run dev`; a shared
+    // dependency cache makes each re-optimize the other's and stall.
+    ...(process.env.E2E_CACHE_DIR && { cacheDir: process.env.E2E_CACHE_DIR }),
     plugins: [react(), fipeProxyPlugin({ tokens })],
   }
 })

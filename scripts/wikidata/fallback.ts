@@ -186,13 +186,20 @@ async function fromCommons(getJson: GetJson, brand: string, family: string): Pro
   const file = hit.title.replace(/^File:/, "");
   const image = await commonsImage(getJson, file);
   if (!image) return null;
-  return { id: `commons:${file}`, label: `${searchBrand(brand)} ${family}`, image };
+  return { id: `commons:${file}`, label: lineLabel(brand, family), image };
+}
+
+/** "JAC iEV 40"; "SERES 3", not "SERES SERES 3", when the line already starts with the brand. */
+export function lineLabel(brand: string, family: string): string {
+  const name = searchBrand(brand);
+  return words(family)[0] === words(name).join("") ? family : `${name} ${family}`;
 }
 
 /**
  * A source chosen by hand (data/wikidata/fallback-titles.json) for a line the
- * search gets wrong: "pt:Opel Zafira" (a Wikipedia article) or
- * "commons:Neta X 002.jpg" (a file).
+ * search gets wrong: "pt:Opel Zafira" (a Wikipedia article),
+ * "commons:Neta X 002.jpg" (a file) or "none" (what the search finds is
+ * another model, and nothing fits).
  */
 export interface FallbackTitle {
   brand: string;
@@ -202,6 +209,7 @@ export interface FallbackTitle {
 }
 
 async function fromSource(getJson: GetJson, source: string, label: string): Promise<CatalogModelInfo | null> {
+  if (source === "none") return null;
   const [kind, ...rest] = source.split(":");
   const name = rest.join(":");
   if (kind === "pt" || kind === "en") return fromArticle(getJson, kind, name);
@@ -218,7 +226,7 @@ export async function findFallback(
   titles: FallbackTitle[] = [],
 ): Promise<CatalogModelInfo | null> {
   const chosen = titles.find((item) => item.brand === brand && item.family === family);
-  if (chosen) return fromSource(getJson, chosen.source, `${searchBrand(brand)} ${family}`);
+  if (chosen) return fromSource(getJson, chosen.source, lineLabel(brand, family));
   if (wordBrands.has(words(brand).join(""))) return null;
   // "SERES / SERES": the family is just the brand again.
   if (words(family).join("") === words(brand).join("")) return null;

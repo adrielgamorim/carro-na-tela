@@ -170,3 +170,45 @@ describe("trucks named by weight and power first", () => {
     expect(match({ brand: "VOLKSWAGEN", model: "12-140 H 2p (diesel)", years: [1990] })).toBeNull();
   });
 });
+
+describe("motorcycles", () => {
+  const match = createWikidataMatcher([
+    model("t110", ["Triumph Tiger T110", "Triumph Tiger"], { brands: ["Triumph"] }),
+    model("him", ["Royal Enfield Himalayan 452", "Royal Enfield Himalayan"], { brands: ["Royal Enfield"] }),
+    model("cbtw", ["Honda CB Twister", "Honda CB110"], { brands: ["Honda"] }),
+    model("africa", ["Honda CRF1000L Africa Twin"], { brands: ["Honda"] }),
+    model("duke", ["KTM 690 Duke"], { brands: ["KTM"] }),
+    model("fazer", ["Yamaha Fazer"], { brands: ["Yamaha"] }),
+    model("biz", ["Honda Biz", "Honda Biz 125"], { brands: ["Honda"] }),
+  ]);
+  const id = (brand: string, name: string) => match({ brand, model: name, years: [2024], motorcycle: true })?.id ?? null;
+
+  it("rejects a model whose number is another one's", () => {
+    expect(id("TRIUMPH", "TIGER 1200 XCX")).toBeNull();
+    expect(id("HONDA", "CB 300F Twister S")).toBeNull();
+    // A label without a number keeps its line, whatever its aliases say.
+    expect(id("HONDA", "BIZ 110i")).toBe("biz");
+    // Within 2%: the Himalayan 452 is sold as the 450.
+    expect(id("Royal Enfield", "Himalayan 450 Base")).toBe("him");
+    // Cars keep matching by name alone.
+    expect(match({ brand: "TRIUMPH", model: "TIGER 1200 XCX", years: [2024] })?.id).toBe("t110");
+  });
+
+  it("reads long names, KTM's order and the line after a code", () => {
+    expect(id("HONDA", "CRF 1000L AFRICA TWIN ADVENTURE SPORTS")).toBe("africa");
+    expect(id("KTM", "DUKE 690")).toBe("duke");
+    expect(id("YAMAHA", "FZ25 250 FAZER FLEX")).toBe("fazer");
+  });
+});
+
+describe("motorcycles sold under another brand", () => {
+  it("reads Dafra as SYM and Kasinski as Hyosung", () => {
+    const match = createWikidataMatcher([
+      model("maxsym", ["SYM Maxsym"], { brands: ["SYM"] }),
+      model("gt650", ["Hyosung GT650"], { brands: ["Hyosung"] }),
+    ]);
+    const id = (brand: string, name: string) => match({ brand, model: name, years: [2015], motorcycle: true })?.id ?? null;
+    expect(id("DAFRA", "MAXSYM 400i")).toBe("maxsym");
+    expect(id("KASINSKI", "COMET GT 650")).toBe("gt650");
+  });
+});

@@ -161,3 +161,12 @@ describe("fallbackFitsMotorcycle", () => {
     expect(fallbackFitsMotorcycle("BMW R 1250 GS", "G 310 GS", "BMW", 250)).toBe(false);
   });
 });
+
+describe("lineLabel", () => {
+  it("does not repeat a brand the line starts with", async () => {
+    const { lineLabel } = await import("./fallback.ts");
+    expect(lineLabel("SERES", "SERES 3")).toBe("SERES 3");
+    expect(lineLabel("JAC", "iEV 40")).toBe("JAC iEV 40");
+    expect(lineLabel("VW - VolksWagen", "Fusca")).toBe("Volkswagen Fusca");
+  });
+});

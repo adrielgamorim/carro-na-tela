@@ -16,17 +16,18 @@ disponibilidade dela.
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fotos que ainda faltam: 79 versões recentes (de 2019 em diante), quase todas utilitários e marcas de nicho sem artigo
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
-      de JAC iEV e E-J* (a linha junta carros, picapes e furgões), Jetour S06, GAC GS9 e Seres 3/5 (a
-      reserva é por linha, e a FIPE chama as duas só de "SERES"); no Commons não há foto que sirva.
-- [ ] 🟢 Fotos de imprensa: baixar de novo `Toyota/00007-Toyota-corolla-cross-5-2-924f2b23720d.jpg`,
-      que veio cortado, e rodar `npm run fotos:imprensa`.
+      de JAC iEV 330P/350T/750V/1200T e E-J* (sem foto no Commons; o "JAC iEV 002" é um iEV5, por isso
+      o iEV 20 está como `none` em `fallback-titles.json`), Jetour S06 e GAC GS9 (não achei a que
+      modelo chinês correspondem). Seres 3 e 5 e iEV 40 já têm foto: "SERES" e "iEV" formam linha com
+      a palavra seguinte (`getModelFamily`), e as fotos foram escolhidas à mão.
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
       vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
       linhas fora do catálogo, os motores sem ficha (Jumpy e Expert 1.6, Jumper 2.0, Boxer de outros
       anos, Ducato Chassi e Executivo 2019–20) e o comprimento das vans (a FIPE não diz L1H1 ou L3H2:
-      as que empatam dão só os números em comum). A FIPE chama de "2.0 TB Diesel" as Rampage diesel
-      2023–24 (são 2.2), que ficam sem ficha; a 1500 Laramie 2026 leva a da Big Horn (não há a dela).
+      as que empatam dão só os números em comum). A 1500 Laramie 2026 leva a da Big Horn (não há a
+      dela). As Rampage diesel 2023–24, que a FIPE chama de "2.0 TB Diesel", buscam a ficha da 2.2
+      (`sheetEngineLiters`).
       O documento 322 está indisponível no site.
 
 ### Fontes de dados a explorar
@@ -43,9 +44,11 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       rascunho junta pedaços de frase, como "Além de maçanetas") precisam ser reescritos à mão; os
       da Volkswagen são todos em prosa (o extrator não os acha) e foram lidos à mão; faltam as
       versões cujo release não separa os itens por versão (Polo 2023, Amarok 2018 e 2020) e as que
-      a FIPE ainda não tem (Saveiro Robust Etanol, Amarok Barretos, T-Cross Seleção). Revisar também `npm run extract:imprensa` de vez em quando.
+      a FIPE ainda não tem (Saveiro Robust Etanol, Amarok Barretos, T-Cross Seleção). Em 10/11/2026 não
+      havia releases novos (0 candidatos; 373 notícias da VW seguem sem resposta). Revisar também `npm run extract:imprensa` de vez em quando.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
-      tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos); rodar
+      tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos; com as motos e os
+      caminhões são 1.610 modelos, e em 10/11/2026 faltaram 393 e 872 têm 4.123 fotos); rodar
       `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
       só deixa de buscar, não descarta o que está no cache), ou pedir uma chave
       da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
@@ -54,12 +57,14 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 - [ ] 🟡 Motos e caminhões no catálogo: desde novembro/2026 as listagens estão completas (2.049
       versões de motos, 2.003 de caminhões), com IPVA pela alíquota de cada categoria e modelos do
-      Wikidata em 1.304 motos e 1.710 caminhões. Faltam ~750 motos (Shineray, Dafra, Kasinski,
-      Traxx…: marcas sem artigo; Honda CB/CG, Yamaha Fazer e KTM EXC, que o Wikidata nomeia de
-      outro jeito) e ~300 caminhões (Mercedes-Benz "1214", Agrale "13000": nomes só numéricos).
-      Algumas motos pegam a moto vizinha da família (Ducati Super Sport 937 → 800SS, Triumph Tiger
-      1200 → Tiger T110); a galeria do Commons dos modelos novos (`fetch:galeria`) e a Openverse
-      ainda não rodaram até o fim.
+      Wikidata em 1.327 motos e 1.710 caminhões; a galeria do Commons já cobre os modelos novos
+      (`fetch:galeria` em 10/11/2026: 1.075 modelos, 21.966 fotos; a Openverse, 872 modelos e 4.123 fotos). Uma moto só leva um modelo cujo número bate com o
+      dela (o Tiger 1200 não leva o Tiger T110; a Himalayan 450 leva a 452, a 2%). Faltam ~750
+      motos (Shineray, Dafra, Kasinski, Traxx…: marcas sem artigo; Honda CG 150/160, CB 500 e Yamaha
+      Crosser/Factor, que o Wikidata não tem nessas cilindradas) e ~300 caminhões de nome só
+      numérico (Mercedes-Benz "1214", VW "12-140", Agrale "13000", Chevrolet "11000"): o Wikidata
+      não tem essas séries; da Mercedes só as séries L, LP, NG e SK, sem dizer qual cabine é cada
+      número, então ficariam só com um `overrides.json` feito à mão por quem conhece os modelos.
 
 ### Sem fonte aberta ou sem ganho por enquanto
 
@@ -101,11 +106,24 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
   Worker; os do navegador sobem no primeiro login. Depois, aviso quando um favorito mudar X% na FIPE.
 - Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
   funciona em domínio próprio).
-- Teste de ponta a ponta (Playwright) dos fluxos principais: consulta → comparar, filtros do
-  catálogo na URL, recarregar, busca pelo chassi (o `CatalogPage` já tem teste de componente).
+- Teste de ponta a ponta da Consulta (consulta → comparar), com as respostas da FIPE simuladas
+  (`page.route("**/api/fipe/**")`); o do catálogo já existe (`npm run test:e2e`). Também pôr o
+  e2e na CI, que precisaria de `npx playwright install chromium` e `PLAYWRIGHT_CHANNEL=chromium`.
 - APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído
+
+- [x] Foto cortada da Toyota (`Toyota/00007-Toyota-corolla-cross-5-2-…jpg`): o original no site
+      (toyotacomunica.com.br, uploads/2021/03/corolla-cross-5-2.jpg) já vem cortado do mesmo jeito, e
+      a foto fica fora de `fotos.json`; não há outra cópia para baixar.
+- [x] Teste de ponta a ponta do catálogo (`npm run test:e2e`, Playwright no Chrome instalado,
+      `e2e/catalog.e2e.ts`): busca nas motos → página da versão → voltar com a busca mantida;
+      link direto da versão; comparar duas e tirar uma; favorito que fica depois de recarregar;
+      chip da busca; chassi decodificado pela tabela local. Roda sem rede: outros hosts são
+      bloqueados e a API da FIPE responde 503. O servidor do teste tem cache próprio do Vite
+      (`E2E_CACHE_DIR`), porque dividir o do `npm run dev` fazia um reotimizar o do outro e travar.
+- [x] Motos de outras marcas no Wikidata (10/11/2026): Dafra pela SYM (Joyride, Maxsym) e TVS,
+      Kasinski pela Hyosung (Comet GT 650 = GT650, RX 125); 1.327 motos com modelo.
 
 - [x] Equipamentos dos releases da Volkswagen: a leitura guarda o texto inteiro (os `templates` da
       API, não só o resumo), e as 42 notícias com preço e itens de série de Tera, T-Cross, Nivus,

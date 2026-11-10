@@ -14943,5 +14943,58 @@
    2.517,
    2.517
   ]
- }
+ },
+ "pt:Suzuki_GSX-R_1100W": {},
+ "pt:Yamaha_TT-R_125_E,_125_EL_e_TT-R_230": {},
+ "pt:Yamaha_XVS_650_DragStar": {},
+ "pt:Yamaha_XVS_950_Midnight_Star": {},
+ "pt:Suzuki_Hayabusa": {},
+ "en:Suzuki Hayabusa": {},
+ "en:KTM 690 Duke": {},
+ "en:Scania G-series": {
+  "power": [
+   177,
+   177
+  ]
+ },
+ "pt:Suzuki_DL1000_V-Strom": {},
+ "en:Suzuki V-Strom 1000": {},
+ "en:KTM 390 series": {},
+ "en:Hyosung RX125": {},
+ "en:Honda Wave series": {},
+ "pt:Volkswagen_Constellation": {},
+ "en:Volkswagen Constellation": {},
+ "en:Honda CRF1000L": {},
+ "en:RAM Rebel truck": {},
+ "pt:Volkswagen_Worker": {},
+ "en:Volkswagen Worker": {},
+ "en:Scania T-series": {
+  "power": [
+   177,
+   177
+  ]
+ },
+ "en:Cagiva Raptor": {},
+ "en:Scania R-series": {
+  "power": [
+   177,
+   177
+  ]
+ },
+ "pt:Yamaha_XVS_1100_DragStar": {},
+ "en:Yamaha DragStar 1100": {},
+ "pt:Yamaha_Virago": {},
+ "en:Yamaha Virago": {},
+ "en:Scania L-series": {
+  "power": [
+   177,
+   177
+  ]
+ },
+ "en:Hyosung GT650": {},
+ "en:Yamaha Blaster": {},
+ "en:Triumph Bonneville": {},
+ "en:Triumph Tiger": {},
+ "en:Suzuki GSX-R series": {},
+ "en:Yamaha XT 500": {}
 }

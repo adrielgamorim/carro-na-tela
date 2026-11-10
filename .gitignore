@@ -54,3 +54,7 @@ data/fichas/lista.html
 data/imprensa/fotos/*
 !data/imprensa/fotos/LEIA-ME.md
 !data/imprensa/fotos/_exemplo/
+
+# Playwright
+test-results/
+playwright-report/

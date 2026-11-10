@@ -75,6 +75,7 @@ npm install
 cp .env.example .env   # e defina FIPE_TOKEN (chave gratuita do fipe.api.br)
 npm run dev            # servidor de desenvolvimento, com o proxy da FIPE embutido
 npm test               # testes (Vitest)
+npm run test:e2e       # ponta a ponta (Playwright, no Chrome instalado; E2E_BASE_URL=http://localhost:5173 usa o dev já aberto)
 npm run lint           # ESLint
 npm run build          # typecheck + build de produção em dist/
 ```

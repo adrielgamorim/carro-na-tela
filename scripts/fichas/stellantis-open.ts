@@ -119,5 +119,14 @@ export function stellantisAsOpen(sheet: ReadSheet): OpenSheet | undefined {
   };
 }
 
+/**
+ * A version's engine size for finding its sheet, where FIPE's name is wrong: it calls the Rampage
+ * diesel of 2023–24 "2.0 TB Diesel", and that engine is the 2.2 Multijet of the later years.
+ */
+export function sheetEngineLiters(brand: string, name: string, liters: number | undefined, diesel: boolean): number | undefined {
+  if (brand === "RAM" && /^rampage\b/i.test(name) && diesel && liters === 2) return 2.2;
+  return liters;
+}
+
 /** For the logs: a sheet's line as the open matching reads it. */
 export const stellantisLine = (sheet: ReadSheet) => plain(stellantisAsOpen(sheet)?.line ?? "");

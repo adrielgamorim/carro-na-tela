@@ -91,3 +91,13 @@ describe("Stellantis sheets matched the open way", () => {
     });
   });
 });
+
+describe("sheetEngineLiters", () => {
+  it("reads the Rampage diesel FIPE calls 2.0 as the 2.2 it is", async () => {
+    const { sheetEngineLiters } = await import("./stellantis-open.ts");
+    expect(sheetEngineLiters("RAM", "RAMPAGE REBEL 2.0 TB CD 4X4 Diesel Aut.", 2, true)).toBe(2.2);
+    // The 2.0 Hurricane is a 2.0, and other lines keep their size.
+    expect(sheetEngineLiters("RAM", "RAMPAGE R/T HURRIC. 4 2.0 TB CD 4X4 Aut.", 2, false)).toBe(2);
+    expect(sheetEngineLiters("Fiat", "TORO VOLCANO 2.0 TB Diesel", 2, true)).toBe(2);
+  });
+});

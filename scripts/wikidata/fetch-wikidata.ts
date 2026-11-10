@@ -242,11 +242,11 @@ const overrides = await readFile(join(values.out, "overrides.json"), "utf8")
   .catch(() => [] as WikidataOverride[]);
 const match = createWikidataMatcher(models, overrides);
 const used = new Map<string, WikidataModel>();
-const versions = new Map<string, { brand: string; model: string; years: number[] }>();
+const versions = new Map<string, { brand: string; model: string; years: number[]; motorcycle: boolean }>();
 for (const snapshot of selectLatestSnapshots(snapshots)) {
   for (const vehicle of snapshot.vehicles) {
     const key = `${vehicle.brand}|${vehicle.model}`;
-    const version = versions.get(key) ?? { brand: vehicle.brand, model: vehicle.model, years: [] };
+    const version = versions.get(key) ?? { brand: vehicle.brand, model: vehicle.model, years: [], motorcycle: snapshot.category === "motorcycles" };
     version.years.push(...versionYears([vehicle.yearCode]));
     versions.set(key, version);
   }
@@ -347,7 +347,9 @@ const sourceId = (source: string) =>
   source.startsWith("commons:") ? source : `wikipedia:${source}`;
 for (const { brand, family, source } of titles) {
   const key = fallbackKey(brand, family);
-  if (key in fallback && fallback[key]?.id !== sourceId(source)) delete fallback[key];
+  const cached = fallback[key];
+  // "none" is cached as null; any other source by its id.
+  if (key in fallback && (source === "none" ? cached !== null : cached?.id !== sourceId(source))) delete fallback[key];
 }
 const toSearch = [...unmatchedLines].filter(([key]) => !(key in fallback));
 console.log(

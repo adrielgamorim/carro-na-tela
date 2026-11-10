@@ -113,6 +113,9 @@ describe("FIPE model families", () => {
     ]);
     expect(filterModelsByFamily(models, "Grand Siena")).toEqual([models[0]]);
     expect(getModelFamily("Grand")).toBe("Grand");
+    // Lines a brand names with a number: two cars, or a car, a pickup and a truck.
+    expect(getModelFamily("SERES 3 BEV (Elétrico)")).toBe("SERES 3");
+    expect(getModelFamily("iEV 1200T PLUS (Elétrico)")).toBe("iEV 1200T");
   });
 });
 

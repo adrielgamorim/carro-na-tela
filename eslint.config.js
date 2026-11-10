@@ -20,7 +20,7 @@ export default defineConfig([
     },
   },
   {
-    files: ['scripts/**/*.ts', 'server/**/*.ts', 'worker/**/*.ts', 'vite.config.ts'],
+    files: ['scripts/**/*.ts', 'server/**/*.ts', 'worker/**/*.ts', 'e2e/**/*.ts', 'vite.config.ts', 'playwright.config.ts'],
     languageOptions: {
       globals: globals.node,
     },

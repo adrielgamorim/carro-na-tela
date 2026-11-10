@@ -1859,28 +1859,6 @@
   }
  },
  "Jetour\nS08": null,
- "BYD\neT3": {
-  "id": "wikipedia:en:BYD M3",
-  "label": "BYD M3",
-  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
-  "image": {
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
-   "artist": "Navigator84",
-   "license": "CC BY-SA 3.0"
-  }
- },
- "MG\n550": {
-  "id": "wikipedia:en:Roewe 550",
-  "label": "Roewe 550",
-  "wikipedia": "https://en.wikipedia.org/wiki/Roewe_550",
-  "image": {
-   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-   "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
-   "artist": "Navigator84",
-   "license": "CC BY-SA 4.0"
-  }
- },
  "AVELLOZ\nAZ": null,
  "BAJAJ\nDOMINAR": {
   "id": "commons:Moscow, Bajaj Dominar 400 green, Aug 2026 06.jpg",
@@ -6657,5 +6635,127 @@
  },
  "MERCEDES-BENZ\nLS-1929": null,
  "MERCEDES-BENZ\nL-2215": null,
- "SCANIA\nT-112": null
+ "SCANIA\nT-112": null,
+ "DUCATI\nHYPERMOTARD": {
+  "id": "commons:Ducati Hypermotard 698 Mono RVE at EICMA 2023 - right view - 1.jpg",
+  "label": "DUCATI HYPERMOTARD",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ee/Ducati_Hypermotard_698_Mono_RVE_at_EICMA_2023_-_right_view_-_1.jpg/500px-Ducati_Hypermotard_698_Mono_RVE_at_EICMA_2023_-_right_view_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Ducati_Hypermotard_698_Mono_RVE_at_EICMA_2023_-_right_view_-_1.jpg",
+   "artist": "Earthshaker13",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "TRIUMPH\nBONNEVILLE": {
+  "id": "wikipedia:en:Triumph Bonneville",
+  "label": "Triumph Bonneville",
+  "wikipedia": "https://en.wikipedia.org/wiki/Triumph_Bonneville",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/ZweiRadMuseumNSU_Triumph_Bonneville.JPG/500px-ZweiRadMuseumNSU_Triumph_Bonneville.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:ZweiRadMuseumNSU_Triumph_Bonneville.JPG",
+   "artist": "Joachim Köhler",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "TRIUMPH\nTIGER": {
+  "id": "wikipedia:en:Triumph Tiger",
+  "label": "Triumph Tiger",
+  "wikipedia": "https://en.wikipedia.org/wiki/Triumph_Tiger",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Triumph_900_Tiger.JPG/500px-Triumph_900_Tiger.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Triumph_900_Tiger.JPG",
+   "artist": "Dédélembrouille",
+   "license": "CC BY-SA 2.5"
+  }
+ },
+ "DUCATI\nSUPER": {
+  "id": "wikipedia:en:Ducati Supersport",
+  "label": "Ducati Supersport",
+  "wikipedia": "https://en.wikipedia.org/wiki/Ducati_Supersport",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Ducati_900_Superlight.jpg/500px-Ducati_900_Superlight.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Ducati_900_Superlight.jpg",
+   "artist": "Christopher Page from Indianapolis, USA",
+   "license": "CC BY 2.0"
+  }
+ },
+ "SUZUKI\nGSX-R": {
+  "id": "wikipedia:en:Suzuki GSX-R series",
+  "label": "Suzuki GSX-R series",
+  "wikipedia": "https://en.wikipedia.org/wiki/Suzuki_GSX-R_series",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/GSX-R_750_1985_%26_GSX-R_750_R_1989.jpg/500px-GSX-R_750_1985_%26_GSX-R_750_R_1989.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:GSX-R_750_1985_%26_GSX-R_750_R_1989.jpg",
+   "artist": "Loren11",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "YAMAHA\nXT": {
+  "id": "wikipedia:en:Yamaha XT 500",
+  "label": "Yamaha XT 500",
+  "wikipedia": "https://en.wikipedia.org/wiki/Yamaha_XT_500",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Xt500.JPG/500px-Xt500.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Xt500.JPG",
+   "artist": "Reinhard Wolf, Talstraße 13, 63128 Dietzenbach.",
+   "license": "CC BY-SA 2.0 de"
+  }
+ },
+ "JAC\niEV 330P": null,
+ "JAC\niEV 350T": null,
+ "JAC\niEV 750V": null,
+ "JAC\niEV 1200T": null,
+ "BYD\neT3": {
+  "id": "wikipedia:en:BYD M3",
+  "label": "BYD M3",
+  "wikipedia": "https://en.wikipedia.org/wiki/BYD_M3",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg/500px-BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:BYD_M3_DM_01_--_Auto_China_--_2014-04-23.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 3.0"
+  }
+ },
+ "SERES\nSERES 3": {
+  "id": "commons:Seres 3 IAA 2023 1X7A0354.jpg",
+  "label": "SERES 3",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Seres_3_IAA_2023_1X7A0354.jpg/500px-Seres_3_IAA_2023_1X7A0354.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Seres_3_IAA_2023_1X7A0354.jpg",
+   "artist": "Alexander-93",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "SERES\nSERES 5": {
+  "id": "commons:Seres 5 IAA 2023 1X7A0327.jpg",
+  "label": "SERES 5",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Seres_5_IAA_2023_1X7A0327.jpg/500px-Seres_5_IAA_2023_1X7A0327.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Seres_5_IAA_2023_1X7A0327.jpg",
+   "artist": "Alexander-93",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "JAC\niEV 20": null,
+ "JAC\niEV 40": {
+  "id": "commons:JAC Refine S2 001.jpg",
+  "label": "JAC iEV 40",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/JAC_Refine_S2_001.jpg/500px-JAC_Refine_S2_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:JAC_Refine_S2_001.jpg",
+   "artist": "Jengtingchen",
+   "license": "CC BY-SA 4.0"
+  }
+ },
+ "MG\n550": {
+  "id": "wikipedia:en:Roewe 550",
+  "label": "Roewe 550",
+  "wikipedia": "https://en.wikipedia.org/wiki/Roewe_550",
+  "image": {
+   "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Roewe_550_facelift_01_China_2014-05-01.jpg/500px-Roewe_550_facelift_01_China_2014-05-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+   "page": "https://commons.wikimedia.org/wiki/File:Roewe_550_facelift_01_China_2014-05-01.jpg",
+   "artist": "Navigator84",
+   "license": "CC BY-SA 4.0"
+  }
+ }
 }

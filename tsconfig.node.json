@@ -20,5 +20,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["vite.config.ts", "scripts", "server", "worker"]
+  "include": ["vite.config.ts", "playwright.config.ts", "e2e", "scripts", "server", "worker"]
 }

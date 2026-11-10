@@ -216,6 +216,30 @@
       "family": "DAKOTA",
       "source": "commons:Ram Dakota South America front left 1 - Autosdeprimera.jpg",
       "reason": "A Dakota de 2025 é a picape média sul-americana; o artigo 'Ram Dakota' é o da antiga Dodge Dakota."
+    },
+    {
+      "brand": "SERES",
+      "family": "SERES 3",
+      "source": "commons:Seres 3 IAA 2023 1X7A0354.jpg",
+      "reason": "A FIPE chama a linha só de SERES; o Seres 3 e o Seres 5 são carros diferentes e não têm artigo com foto."
+    },
+    {
+      "brand": "SERES",
+      "family": "SERES 5",
+      "source": "commons:Seres 5 IAA 2023 1X7A0327.jpg",
+      "reason": "A FIPE chama a linha só de SERES; o Seres 3 e o Seres 5 são carros diferentes e não têm artigo com foto."
+    },
+    {
+      "brand": "JAC",
+      "family": "iEV 40",
+      "source": "commons:JAC Refine S2 001.jpg",
+      "reason": "O iEV40 é o T40 elétrico, e o T40 é o Refine S2 chinês (a carroceria é a mesma)."
+    },
+    {
+      "brand": "JAC",
+      "family": "iEV 20",
+      "source": "none",
+      "reason": "A busca acha o \"JAC iEV 002\", que é um iEV5; não há foto do iEV20."
     }
   ]
 }

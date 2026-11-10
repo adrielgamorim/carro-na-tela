@@ -31,17 +31,21 @@ export function parseFipePrice(price: string): number {
 }
 
 // First words that only name a line together with the next word
-// (e.g. "Grand Siena", "Range Rover", "Classe C", "Série 3").
+// (e.g. "Grand Siena", "Range Rover", "Classe C", "Série 3"). "SERES 3" and
+// "SERES 5" are two cars, and JAC's "iEV 40", "iEV 330P" and "iEV 1200T" a
+// car, a pickup and a truck.
 const twoWordFamilyPrefixes = new Set([
   "classe",
   "gran",
   "grand",
+  "iev",
   "land",
   "new",
   "range",
   "santa",
   "serie",
   "série",
+  "seres",
   "space",
   "town",
 ]);

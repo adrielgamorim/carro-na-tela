@@ -20,7 +20,7 @@ import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
 import type { ReadSheet } from "../fichas/sheets.ts";
 import { openSheetOfVersion } from "../fichas/open-sheets.ts";
 import type { OpenSheet } from "../fichas/open-sheets.ts";
-import { stellantisAsOpen } from "../fichas/stellantis-open.ts";
+import { sheetEngineLiters, stellantisAsOpen } from "../fichas/stellantis-open.ts";
 import { equipmentOfVersion } from "../fichas/equipment.ts";
 import type { EquipmentList } from "../fichas/equipment.ts";
 import { crashTestOfVersion } from "../seguranca/latinncap.ts";
@@ -316,6 +316,7 @@ export function buildCatalogIndex(
         brand: brandName(version),
         model: version.n,
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
+        motorcycle: infos[version.s]?.category === "motorcycles",
       });
       const lineKey = fallbackKey(brandName(version), getModelFamily(version.n));
       const lineFallback = wikidata.fallback?.[lineKey] ?? undefined;
@@ -416,7 +417,7 @@ export function buildCatalogIndex(
         brand: brandName(version),
         family: getModelFamily(version.n),
         name: version.n,
-        engineLiters: engineLitersOf(version),
+        engineLiters: sheetEngineLiters(brandName(version), version.n, engineLitersOf(version), /diesel/i.test(fuel)),
         valves: version.a?.valves,
         turbo: version.a?.aspiration === "turbo",
         diesel: /diesel/i.test(fuel),
@@ -445,11 +446,12 @@ export function buildCatalogIndex(
     const lineTrims = new Map([...lineNames].map(([line, names]) => [line, trimsOf(names, line.split("|")[1] ?? "")]));
     for (const version of sorted) {
       const lineKey = `${brandName(version)}|${getModelFamily(version.n)}`;
+      const diesel = /diesel/i.test(versionFuel.get(version) ?? "");
       const target = {
         brand: brandName(version),
         family: getModelFamily(version.n),
         name: version.n,
-        engineLiters: engineLitersOf(version),
+        engineLiters: sheetEngineLiters(brandName(version), version.n, engineLitersOf(version), diesel),
         turbo: version.a?.aspiration === "turbo",
       };
       const electric = /el[eé]tric/i.test(versionFuel.get(version) ?? "");
@@ -463,7 +465,7 @@ export function buildCatalogIndex(
             modelYear,
             electric,
             hybrid,
-            diesel: /diesel/i.test(versionFuel.get(version) ?? ""),
+            diesel,
             valves: version.a?.valves,
           });
         // Sheets that fit as well but share no figure say nothing.
@@ -541,7 +543,7 @@ export function buildCatalogIndex(
         brand: brandName(version),
         family: getModelFamily(version.n),
         name: version.n,
-        engineLiters: engineLitersOf(version),
+        engineLiters: sheetEngineLiters(brandName(version), version.n, engineLitersOf(version), /diesel/i.test(versionFuel.get(version) ?? "")),
         valves: version.a?.valves,
         turbo: version.a?.aspiration === "turbo",
         electric: /el[eé]tric/i.test(versionFuel.get(version) ?? ""),

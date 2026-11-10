@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:e2e": "playwright test",
     "crawl:fipe": "node --env-file-if-exists=.env scripts/catalog/crawl-fipe.ts",
     "build:catalog": "node scripts/catalog/build-index.ts",
     "daily": "node scripts/catalog/daily.ts",
@@ -47,6 +48,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "1.64.1",
     "@testing-library/react": "^16.3.3",
     "@types/node": "^24.13.3",
     "@types/react": "^19.2.18",

@@ -14923,5 +14923,75 @@
  "en:Yamaha TDR 250": [],
  "en:460 Scania": [],
  "en:Iveco CityClass": [],
- "pt:Volkswagen 13.130": []
+ "pt:Volkswagen 13.130": [],
+ "pt:Suzuki_GSX-R_1100W": [],
+ "pt:Yamaha_TT-R_125_E,_125_EL_e_TT-R_230": [],
+ "pt:Yamaha_XVS_650_DragStar": [],
+ "pt:Yamaha_XVS_950_Midnight_Star": [],
+ "pt:Suzuki_Hayabusa": [],
+ "en:Suzuki Hayabusa": [],
+ "en:KTM 690 Duke": [],
+ "en:Scania G-series": [],
+ "pt:Suzuki_DL1000_V-Strom": [],
+ "en:Suzuki V-Strom 1000": [],
+ "en:KTM 390 series": [],
+ "en:Hyosung RX125": [],
+ "en:Honda Wave series": [],
+ "pt:Volkswagen_Constellation": [],
+ "en:Volkswagen Constellation": [],
+ "en:Honda CRF1000L": [],
+ "en:RAM Rebel truck": [
+  {
+   "file": "2017 Ram 1500 Express Crew Cab, front left, 09-02-2022.jpg",
+   "from": 1981,
+   "to": null,
+   "names": "dodge ram ram pickup"
+  },
+  {
+   "file": "89DodgeRam F34.jpg",
+   "from": 1980,
+   "to": 1993,
+   "names": "first generation"
+  },
+  {
+   "file": "Truck09 (cropped).jpg",
+   "from": 1993,
+   "to": 2002,
+   "names": "second generation"
+  },
+  {
+   "file": "2002-2005 Dodge Ram regular cab -- 12-14-2011.jpg",
+   "from": 2001,
+   "to": 2009,
+   "names": "third generation"
+  },
+  {
+   "file": "2016 Ram 1500 SLT Crew Cab in white, front right.jpg",
+   "from": 2008,
+   "to": 2024,
+   "names": "fourth generation"
+  },
+  {
+   "file": "2019 Dodge Ram 1500 Laramie, front 2.28.20.jpg",
+   "from": 2018,
+   "to": null,
+   "names": "fifth generation"
+  }
+ ],
+ "pt:Volkswagen_Worker": [],
+ "en:Volkswagen Worker": [],
+ "en:Scania T-series": [],
+ "en:Cagiva Raptor": [],
+ "en:Scania R-series": [],
+ "pt:Yamaha_XVS_1100_DragStar": [],
+ "en:Yamaha DragStar 1100": [],
+ "pt:Yamaha_Virago": [],
+ "en:Yamaha Virago": [],
+ "en:Scania L-series": [],
+ "en:Hyosung GT650": [],
+ "en:Yamaha Blaster": [],
+ "en:Triumph Bonneville": [],
+ "en:Triumph Tiger": [],
+ "en:Suzuki GSX-R series": [],
+ "en:Yamaha XT 500": []
 }

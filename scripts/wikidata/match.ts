@@ -45,6 +45,8 @@ export interface FipeVersionForWikidata {
   model: string;
   /** Model years of the version (0 km counts as the current year). */
   years: number[];
+  /** Motorcycles are told apart by their number ("Tiger 1200", "Tiger T110"). */
+  motorcycle?: boolean;
 }
 
 // FIPE brand name → how Wikidata names it (first one is the main name).
@@ -60,6 +62,10 @@ export const brandNames: Record<string, string[]> = {
   GWM: ["GWM", "Great Wall", "Haval"],
   "Land Rover": ["Land Rover", "Range Rover"],
   "SAAB-SCANIA": ["Scania", "Saab-Scania"],
+  // Motorcycles sold in Brazil under another brand: Dafra's Citycom, Maxsym and
+  // Joyride are SYM's, its Apache a TVS; Kasinski's Comet and RX are Hyosung's.
+  DAFRA: ["Dafra", "SYM", "TVS"],
+  KASINSKI: ["Kasinski", "Hyosung"],
 };
 
 function words(text: string): string[] {
@@ -189,6 +195,12 @@ export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] 
   if (/SCANIA/i.test(brand) && /^[GLPRST]$/.test(fipeWords[0] ?? "") && /^\d{3}$/.test(fipeWords[1] ?? "")) {
     aliases.push([fipeWords[0]!, "SERIES"]);
   }
+  // Kasinski's "COMET GT 650" is the "Hyosung GT650".
+  if (brand === "KASINSKI" && fipeWords[0] === "COMET" && fipeWords.length > 1) aliases.push(fipeWords.slice(1));
+  // KTM puts the displacement first ("KTM 690 Duke"), FIPE after ("DUKE 690").
+  if (brand === "KTM" && /^[A-Z]+$/.test(fipeWords[0] ?? "") && /^\d{2,4}$/.test(fipeWords[1] ?? "")) {
+    aliases.push([fipeWords[1]!, fipeWords[0]!, ...fipeWords.slice(2)]);
+  }
   if (brand === "Land Rover") {
     const expanded = fipeWords.flatMap((word, index) => {
       if (word === "R" && fipeWords[index - 1] === "RANGE") return ["ROVER"];
@@ -200,6 +212,21 @@ export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] 
     if (expanded.join(" ") !== fipeWords.join(" ")) aliases.push(expanded);
   }
   return aliases;
+}
+
+/**
+ * Whether a motorcycle model's number fits the FIPE name: "Triumph Tiger T110"
+ * is not a "TIGER 1200", nor "Kawasaki GPZ900R" a "NINJA 650R". Within 2%, as
+ * "Himalayan 452" is sold as the "Himalayan 450". A label without a number fits.
+ */
+export function motorcycleNumberFits(names: string[], fipeName: string): boolean {
+  const numbers = (text: string) => (text.match(/\d{2,4}/g) ?? []).map(Number);
+  // Any of the model's names: "Honda CB Twister" is also the "Honda CB110".
+  const wanted = names.flatMap((name) => numbers(name.replace(/\([^)]*\)/g, "")));
+  if (!wanted.length) return true;
+  const named = numbers(fipeName);
+  if (!named.length) return true;
+  return wanted.some((number) => named.some((other) => Math.abs(number - other) <= other * 0.02));
 }
 
 const lower = (text: string) => text.replace(/\s+/g, " ").trim().toLocaleLowerCase("pt-BR");
@@ -267,27 +294,46 @@ export function createWikidataMatcher(
     if (override) return override.id ? (byId.get(override.id) ?? null) : null;
 
     const keys = keysFor(version.brand);
+    // By the label's number; with `byAliases` (a line found in a later word, a
+    // looser guess), by its aliases' numbers too: the "Honda CB Twister" is
+    // also the "CB110", no "CB 300F Twister". A label match keeps the "Honda
+    // Biz" for a "BIZ 110i" though an alias says "Biz 125".
+    const best = (candidates: Candidate[] | undefined, byAliases = false) => {
+      const fitting = version.motorcycle
+        ? candidates?.filter((candidate) =>
+            motorcycleNumberFits(byAliases ? candidate.model.names : [candidate.model.label], version.model),
+          )
+        : candidates;
+      return fitting?.length ? rank(fitting, version.years) : undefined;
+    };
     let fipeWords = words(version.model);
     if (fipeWords[0] === "CLASSE" && fipeWords.length > 1) fipeWords = fipeWords.slice(1);
 
     // Longest model name first: "Onix Plus" over "Onix"; the name as FIPE
     // writes it before its aliases.
     for (const attempt of [fipeWords, ...fipeNameAliases(version.brand, fipeWords)]) {
-      for (let count = Math.min(3, attempt.length); count >= 1; count -= 1) {
-        const candidates = keys.get(compact(attempt.slice(0, count)));
-        if (candidates) return rank(candidates, version.years);
+      // Motorcycles up to five words: "CRF 1000L AFRICA TWIN" is the "Honda
+      // CRF1000L Africa Twin". Cars three: "ARGO 1.0 6V Flex" is a stray item.
+      for (let count = Math.min(version.motorcycle ? 5 : 3, attempt.length); count >= 1; count -= 1) {
+        const model = best(keys.get(compact(attempt.slice(0, count))));
+        if (model) return model;
       }
     }
     // A letter glued to the model: "HB20S", "HB20X" → "HB20".
     const glued = /^(.*\d)([A-Z]{1,2})$/.exec(fipeWords[0] ?? "");
-    const candidates =
-      glued && !engineSuffixes.has(glued[2] ?? "") ? keys.get(glued[1] ?? "") : undefined;
-    if (candidates) return rank(candidates, version.years);
-    // Trucks named by weight and power first: "11-180 Delivery", "17-280 Constellation".
-    if (/^\d+$/.test(fipeWords[0] ?? "")) {
-      for (const word of fipeWords.slice(1)) {
-        const line = /^[A-Z]{5,}$/.test(word) ? keys.get(word) : undefined;
-        if (line) return rank(line, version.years);
+    const gluedModel =
+      glued && !engineSuffixes.has(glued[2] ?? "") ? best(keys.get(glued[1] ?? "")) : undefined;
+    if (gluedModel) return gluedModel;
+    // Trucks named by weight and power first: "11-180 Delivery", "17-280 Constellation";
+    // motorcycles by a code first: "FZ25 250 FAZER" is a "Yamaha Fazer".
+    if (/^\d+$/.test(fipeWords[0] ?? "") || version.motorcycle) {
+      for (const [index, word] of fipeWords.entries()) {
+        if (index === 0 || !/^[A-Z]{5,}$/.test(word)) continue;
+        const next = fipeWords[index + 1];
+        const line =
+          (next && /^[A-Z]{3,}$/.test(next) ? best(keys.get(word + next), true) : undefined) ??
+          best(keys.get(word), true);
+        if (line) return line;
       }
     }
     return null;
