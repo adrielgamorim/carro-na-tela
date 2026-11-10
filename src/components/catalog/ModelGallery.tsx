@@ -91,7 +91,8 @@ export function ModelGallery({ entry }: { entry: CatalogEntry }) {
       {slides.length > 1 && (
         <ul className="model-gallery-thumbs" aria-label={`Fotos de ${label}`}>
           {slides.map((item, position) => (
-            <li key={item.page}>
+            // A brand's press photos all link to its press room: the image tells them apart.
+            <li key={item.thumb}>
               <button
                 type="button"
                 className={position === index ? "model-gallery-thumb-active" : undefined}

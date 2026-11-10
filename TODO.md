@@ -40,9 +40,11 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
       (Akamai), então fica de fora.
 - [ ] 🟢 Revisar os equipamentos dos releases que faltam (`npm run crawl:releases`, depois
       `npm run extract:equipamentos`, que deixa em `data/imprensa/equipamentos-candidates.json` o
-      que ainda não está em `data/imprensa/equipamentos.json`): os da Volkswagen (a leitura das
-      ~3.000 notícias leva ~75 min) e os releases novos. Os em prosa (o rascunho junta pedaços de
-      frase, como "Além de maçanetas") precisam ser reescritos à mão. Revisar também `npm run extract:imprensa` de vez em quando.
+      que ainda não está em `data/imprensa/equipamentos.json`): os releases novos. Os em prosa (o
+      rascunho junta pedaços de frase, como "Além de maçanetas") precisam ser reescritos à mão; os
+      da Volkswagen são todos em prosa (o extrator não os acha) e foram lidos à mão; faltam as
+      versões cujo release não separa os itens por versão (Polo 2023, Amarok 2018 e 2020) e as que
+      a FIPE ainda não tem (Saveiro Robust Etanol, Amarok Barretos, T-Cross Seleção). Revisar também `npm run extract:imprensa` de vez em quando.
 - [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
       tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos); rodar
       `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
@@ -102,6 +104,12 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Concluído
 
+- [x] Equipamentos dos releases da Volkswagen: a leitura guarda o texto inteiro (os `templates` da
+      API, não só o resumo), e as 42 notícias com preço e itens de série de Tera, T-Cross, Nivus,
+      Polo e Virtus foram lidas à mão: 33 listas (lançamentos de 2017 a 2025), as de oferta, marco e
+      prêmio de fora; depois as de Taos, Jetta (e GLI), Amarok, Saveiro, Polo GTS e Track, Novo
+      Virtus e T-Cross 2022: mais 35. Equipamentos em 295 versões (eram 249). As miniaturas da galeria deixam de
+      repetir a chave (as fotos de imprensa de uma marca têm o mesmo link).
 - [x] Fotos de imprensa no site: 943 fotos de 69 modelos de 10 marcas (Chevrolet, Citroën, Fiat,
       Ford, Jeep, Peugeot, Ram, Renault, Toyota, Volkswagen), com o crédito de cada marca, na frente
       das do Commons. Um arquivo corrompido fica de fora (e é listado) em vez de parar a leitura.

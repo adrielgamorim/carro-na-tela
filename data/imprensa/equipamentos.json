@@ -4951,6 +4951,2111 @@
     "Kit Sport (adesivos e emblema)",
     "Kit Exclusive (volante, bancos e tapetes com detalhes laranja)"
    ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2428#tera-mpi",
+   "brand": "vw",
+   "line": "Tera",
+   "title": "Tera · MPI (release 2025-05)",
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "trims": [],
+   "base": true,
+   "turbo": false,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/news/2428",
+   "items": [
+    "Seis airbags",
+    "Frenagem autônoma de emergência (AEB) com detecção de pedestres",
+    "Controles de estabilidade (ESC) e tração (ASR)",
+    "Bloqueio eletrônico do diferencial (EDS)",
+    "Detector de fadiga do motorista",
+    "Alerta de perda de pressão dos pneus",
+    "Faróis full LED e lanternas em LED",
+    "Direção elétrica com volante ajustável em altura e profundidade",
+    "Ar-condicionado",
+    "Piloto automático",
+    "Banco do motorista com ajuste de altura",
+    "Computador de bordo",
+    "Painel de instrumentos digital",
+    "Sensores de estacionamento traseiros",
+    "Duas entradas USB dianteiras",
+    "Assistente de partida em rampa (Hill Hold)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2428#tera-tsi",
+   "brand": "vw",
+   "line": "Tera",
+   "title": "Tera · TSI (release 2025-05)",
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "trims": [],
+   "base": true,
+   "turbo": true,
+   "transmission": "manual",
+   "addsTo": "https://www.vwnews.com.br/news/2428#tera-mpi",
+   "page": "https://www.vwnews.com.br/news/2428",
+   "items": [
+    "Motor 1.0 170 TSI de 116 cv"
+   ],
+   "optional": [
+    "Central VW Play Connect de 10,1\" com Android Auto e Apple CarPlay sem fio",
+    "Assistente Otto (IA by Volks)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2428#tera-comfort",
+   "brand": "vw",
+   "line": "Tera",
+   "title": "Tera · Comfort TSI (release 2025-05)",
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "trims": [
+    "comfort"
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/2428#tera-tsi",
+   "page": "https://www.vwnews.com.br/news/2428",
+   "items": [
+    "Câmbio automático de 6 marchas",
+    "Central VW Play Connect de 10,1\" com Android Auto e Apple CarPlay sem fio",
+    "Assistente Otto (IA by Volks)",
+    "Controle de cruzeiro adaptativo (ACC)",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Volante multifuncional com revestimento premium"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2428#tera-high",
+   "brand": "vw",
+   "line": "Tera",
+   "title": "Tera · High TSI (release 2025-05)",
+   "years": [
+    2026,
+    2026
+   ],
+   "engineLiters": 1,
+   "trims": [
+    "high"
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/2428#tera-comfort",
+   "page": "https://www.vwnews.com.br/news/2428",
+   "items": [
+    "Painel de instrumentos digital de 10,25\"",
+    "Ar-condicionado Climatronic Touch",
+    "Carregador de celular por indução"
+   ],
+   "optional": [
+    "Pacote ADAS (assistente de mudança de faixa, câmera multifuncional, detector de ponto cego com assistente de saída de vaga)",
+    "Pacote Outfit The Town Edition (rodas de 17\" escurecidas, bancos com revestimento premium, teto e retrovisores pretos)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/118#t-cross-200-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · 200 TSI (release 2019-02)",
+   "years": [
+    2020,
+    2020
+   ],
+   "turbo": true,
+   "trims": [],
+   "base": true,
+   "engineLiters": 1,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/news/118",
+   "items": [
+    "Seis airbags",
+    "Controle de estabilidade (ESC)",
+    "Bloqueio eletrônico do diferencial (XDS+)",
+    "Freios a disco nas quatro rodas",
+    "Direção elétrica com volante ajustável em altura e distância",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Sensores de estacionamento traseiros",
+    "ISOFIX",
+    "Faróis com função Coming & Leaving Home",
+    "Faróis de neblina com função Cornering",
+    "Luzes de condução diurna e lanternas traseiras em LED",
+    "Banco do passageiro com encosto rebatível",
+    "Suporte para smartphone com entrada USB",
+    "Travas e vidros elétricos",
+    "Volante multifuncional"
+   ],
+   "optional": [
+    "Pacote Interactive I (Composition Touch com App-Connect, dois alto-falantes adicionais, câmera de ré, sensores de estacionamento dianteiros)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/118#t-cross-200-tsi-automatico",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · 200 TSI Automático (release 2019-02)",
+   "years": [
+    2020,
+    2020
+   ],
+   "turbo": true,
+   "trims": [],
+   "base": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/118#t-cross-200-tsi",
+   "page": "https://www.vwnews.com.br/news/118",
+   "items": [
+    "Câmbio automático de 6 marchas",
+    "Piloto automático",
+    "Apoio de braço central com porta-objetos",
+    "Volante multifuncional em couro com aletas para troca de marchas",
+    "Duas entradas USB para o banco traseiro",
+    "Saída de ar-condicionado traseira",
+    "Composition Touch de 6,5\" com App-Connect"
+   ],
+   "optional": [
+    "Pacote Interactive II (câmera de ré, sensores de estacionamento dianteiros, retrovisores com rebatimento elétrico)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/118#t-cross-comfortline-200-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Comfortline 200 TSI Automático (release 2019-02)",
+   "years": [
+    2020,
+    2020
+   ],
+   "turbo": true,
+   "trims": [
+    "comfortline"
+   ],
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/118#t-cross-200-tsi-automatico",
+   "page": "https://www.vwnews.com.br/news/118",
+   "items": [
+    "Ar-condicionado digital Climatronic",
+    "Banco do motorista com ajuste lombar",
+    "Câmera de ré",
+    "Indicador de pressão dos pneus (RKA)",
+    "Manopla do câmbio em couro",
+    "Porta-luvas refrigerado",
+    "Porta-malas com divisão variável (s.a.v.e.)",
+    "Rodas de liga leve de 17\"",
+    "Sensores de estacionamento dianteiros",
+    "Frenagem automática pós-colisão"
+   ],
+   "optional": [
+    "Pacote Exclusive & Interactive (Discover Media de 8\", iluminação ambiente em LED, seletor de modo de condução, Kessy, retrovisores com rebatimento elétrico)",
+    "Pacote Sky View II (teto solar panorâmico, retrovisor eletrocrômico, sensores de chuva e crepuscular)",
+    "Pacote Design View (bancos de couro Marrakesh Brown)",
+    "Pacote Premium (Park Assist 3.0, faróis full LED, som Beats)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/118#t-cross-highline-250-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Highline 250 TSI Automático (release 2019-02)",
+   "years": [
+    2020,
+    2020
+   ],
+   "turbo": true,
+   "trims": [
+    "highline"
+   ],
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/118#t-cross-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/118",
+   "items": [
+    "Motor 250 TSI de 150 cv",
+    "Bancos revestidos de couro",
+    "Retrovisor interno eletrocrômico",
+    "Retrovisores externos com rebatimento automático",
+    "Iluminação ambiente em LED",
+    "Detector de fadiga",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Sistema start&stop",
+    "Sensores de chuva e crepuscular",
+    "Rack de teto prata anodizado",
+    "Pedais com cobertura de alumínio"
+   ],
+   "optional": [
+    "Pacote Innovation (Active Info Display, Discover Media de 8\", seletor de modo de condução)",
+    "Teto solar panorâmico Sky View",
+    "Pacote Tech&Beats (Park Assist 3.0, faróis full LED, som Beats)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/294#t-cross-sense",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Sense (release 2019-11)",
+   "years": [
+    2020,
+    2020
+   ],
+   "trims": [
+    "sense"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/294",
+   "items": [
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Seis airbags",
+    "Controles de estabilidade (ESC) e tração (ASR)",
+    "Bloqueio eletrônico do diferencial (EDS)",
+    "Assistente de partida em rampa (HHC)",
+    "Banco do passageiro rebatível",
+    "Faróis de neblina",
+    "Luzes de condução diurna em LED",
+    "Composition Touch de 6,5\" com App-Connect",
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas com um-toque",
+    "Travas elétricas",
+    "Chave canivete com controle remoto"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/649#t-cross-200-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · 200 TSI (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": true,
+   "trims": [],
+   "base": true,
+   "engineLiters": 1,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/news/649",
+   "items": [
+    "Seis airbags",
+    "Controles de tração (ASR) e estabilidade (ESC)",
+    "Bloqueio eletrônico do diferencial (XDS+)",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Ar-condicionado",
+    "Retrovisores elétricos com tilt down",
+    "Direção elétrica",
+    "Lanternas em LED",
+    "Faróis de neblina com função Cornering Light",
+    "Luzes de condução diurna em LED",
+    "Rodas de liga leve de 16\"",
+    "Sensor de estacionamento traseiro",
+    "Volante multifuncional",
+    "Vidros elétricos nas quatro portas",
+    "ISOFIX e top tether",
+    "Central VW Play de 10,1\"",
+    "Entrada USB no console central",
+    "Indicador de pressão dos pneus (RKA)",
+    "Regulagem de altura dos faróis",
+    "Frenagem automática pós-colisão"
+   ],
+   "optional": [
+    "Pacote Interactive III (câmera de ré, sensores de estacionamento dianteiros, dois alto-falantes extras)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/649#t-cross-200-tsi-automatico",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · 200 TSI Automático (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": true,
+   "trims": [],
+   "base": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-200-tsi",
+   "page": "https://www.vwnews.com.br/news/649",
+   "items": [
+    "Câmbio automático de 6 marchas",
+    "Piloto automático",
+    "Saída de ar-condicionado traseira",
+    "Duas entradas USB traseiras",
+    "Volante multifuncional em couro com aletas para troca de marchas",
+    "Apoio de braço central com porta-objetos",
+    "Dois alto-falantes dianteiros adicionais"
+   ],
+   "optional": [
+    "Pacote Interactive IV (câmera de ré, sensores de estacionamento dianteiros, retrovisores com rebatimento elétrico, rodas de 17\" Manila)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/649#t-cross-comfortline-200-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Comfortline 200 TSI (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": true,
+   "trims": [
+    "comfortline"
+   ],
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-200-tsi-automatico",
+   "page": "https://www.vwnews.com.br/news/649",
+   "items": [
+    "Ar-condicionado digital Climatronic",
+    "Câmera de ré",
+    "Porta-malas com divisão variável (s.a.v.e.)",
+    "Sensores de estacionamento dianteiros",
+    "Retrovisores externos com rebatimento automático",
+    "Iluminação ambiente em LED",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Rodas de liga leve de 17\" Manila diamantadas",
+    "Detector de fadiga",
+    "Painel digital Active Info Display de 10,25\"",
+    "Seletor de perfil de condução"
+   ],
+   "optional": [
+    "Teto solar panorâmico Sky View",
+    "Retrovisor interno eletrocrômico",
+    "Bancos parcialmente revestidos em couro"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/649#t-cross-highline-250-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Highline 250 TSI (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": true,
+   "trims": [
+    "highline"
+   ],
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/649",
+   "items": [
+    "Motor 250 TSI",
+    "Moldura cromada nos faróis de neblina",
+    "Frisos cromados nos vidros laterais",
+    "Rack de teto Silver anodized",
+    "Bancos parcialmente revestidos em couro",
+    "Retrovisor interno eletrocrômico",
+    "Pedaleira esportiva de alumínio",
+    "Sensores de chuva e crepuscular",
+    "Sistema start-stop"
+   ],
+   "optional": [
+    "Som Beats com subwoofer",
+    "Faróis full LED",
+    "Park Assist 3.0",
+    "Teto solar panorâmico Sky View"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/679#t-cross-sense",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Sense (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "turbo": true,
+   "trims": [
+    "sense"
+   ],
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/679",
+   "items": [
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Seis airbags",
+    "Ar-condicionado com filtro de poeira e pólen",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Controles de tração (ASR) e estabilidade (ESC)",
+    "Bloqueio eletrônico do diferencial (XDS+)",
+    "Direção elétrica",
+    "Faróis com função Coming & Leaving Home",
+    "Faróis de neblina com função Cornering Light",
+    "Luzes de condução diurna em LED",
+    "Lanternas traseiras em LED",
+    "Rack de teto",
+    "Alarme antifurto",
+    "Volante multifuncional",
+    "ISOFIX e top tether",
+    "Banco do passageiro com encosto rebatível",
+    "Freios a disco nas rodas traseiras",
+    "Regulagem de altura dos faróis"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2385#t-cross-extreme",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Extreme (release 2025-04)",
+   "years": [
+    2026,
+    2026
+   ],
+   "trims": [
+    "extreme"
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/2385",
+   "items": [
+    "Maçanetas e retrovisores em preto",
+    "Detalhes em laranja no para-choque e no emblema",
+    "Rodas de 17\" escurecidas",
+    "Emblema exclusivo na coluna C",
+    "Faixa de LED na grade ligando os faróis",
+    "Teto preto"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2385#nivus-sense",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Sense (release 2025-04)",
+   "years": [
+    2026,
+    2026
+   ],
+   "trims": [
+    "sense"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/2385",
+   "items": [
+    "Motor 200 TSI de 128 cv e câmbio automático de 6 marchas",
+    "Painel digital de 8\"",
+    "Central VW Play de 10\"",
+    "Frenagem autônoma de emergência (AEB)",
+    "Seis airbags"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/590#nivus-comfortline-200-tsi",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Comfortline 200 TSI (release 2020-06)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2021,
+    2021
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/590",
+   "items": [
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Direção elétrica",
+    "Seis airbags",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Controles de estabilidade (ESC) e tração (ASR)",
+    "Faróis de LED com Coming & Leaving Home e DRL",
+    "Lanternas traseiras de LED",
+    "Câmera de ré",
+    "Volante multifuncional",
+    "ISOFIX e top tether",
+    "Sensor de estacionamento traseiro",
+    "Freios a disco nas quatro rodas",
+    "Retrovisores elétricos com tilt down",
+    "Saídas de ar-condicionado e USB para o banco traseiro",
+    "Composition Touch de 6,5\""
+   ],
+   "optional": [
+    "Pacote VW Play & Tech (VW Play de 10,1\", ACC, AEB, monitoramento frontal, volante em couro com aletas)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/590#nivus-highline-200-tsi",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Highline 200 TSI (release 2020-06)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2021,
+    2021
+   ],
+   "trims": [
+    "highline"
+   ],
+   "page": "https://www.vwnews.com.br/news/590",
+   "items": [
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Direção elétrica",
+    "Seis airbags",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Controles de estabilidade (ESC) e tração (ASR)",
+    "Faróis de LED com Coming & Leaving Home e DRL",
+    "Lanternas traseiras de LED",
+    "Câmera de ré",
+    "Volante multifuncional",
+    "ISOFIX e top tether",
+    "Sensor de estacionamento traseiro",
+    "Freios a disco nas quatro rodas",
+    "Retrovisores elétricos com tilt down",
+    "Saídas de ar-condicionado e USB para o banco traseiro",
+    "Controle de cruzeiro adaptativo (ACC)",
+    "Frenagem autônoma de emergência (AEB) e Front Assist",
+    "Frenagem automática pós-colisão",
+    "Ar-condicionado Climatronic",
+    "Faróis de neblina em LED com Cornering Light",
+    "Bancos com revestimento sintético Native",
+    "Rodas de liga leve de 17\"",
+    "Sensores de chuva e crepuscular",
+    "Sensores de estacionamento dianteiros e traseiros",
+    "Detector de fadiga",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Entrada USB no console central",
+    "Volante multifuncional em couro com aletas para troca de marchas",
+    "Painel digital Active Info Display de 10,25\"",
+    "Central VW Play de 10,1\""
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/590#nivus-launching-edition",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Launching edition (release 2020-06)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2021,
+    2022
+   ],
+   "trims": [
+    "launching"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/590#nivus-highline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/590",
+   "items": [
+    "Teto e retrovisores em Preto Ninja",
+    "Logotipos externos em preto brilhante",
+    "Rodas de 17\" Cassino Dark diamantadas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1199#nivus-comfortline",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Comfortline 2022 (release 2021-08)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/590#nivus-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/1199",
+   "items": [
+    "Painel de instrumentos digital de 8\""
+   ],
+   "optional": [
+    "Pacote VW Play & Tech (VW Play, AEB, ACC, volante em couro com aletas, carregador de celular por indução)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1199#nivus-highline",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Highline 2022 (release 2021-08)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "trims": [
+    "highline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/590#nivus-highline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/1199",
+   "items": [
+    "Carregador de celular por indução"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2285#novo-nivus-comfortline",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Novo Nivus Comfortline (release 2024-11)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2025,
+    2025
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/2285",
+   "items": [
+    "Motor 200 TSI",
+    "Central VW Play Connect com app Meu VW 2.0",
+    "Controle de cruzeiro adaptativo (ACC)",
+    "Frenagem autônoma de emergência (AEB)",
+    "Assistente de saída de vaga traseira"
+   ],
+   "optional": [
+    "Pacote ADAS (assistente de mudança de faixa, detector de ponto cego, Travel Assist, Park Assist)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2285#novo-nivus-highline",
+   "brand": "vw",
+   "line": "Nivus",
+   "title": "Nivus · Novo Nivus Highline (release 2024-11)",
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "years": [
+    2025,
+    2025
+   ],
+   "trims": [
+    "highline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/2285#novo-nivus-comfortline",
+   "page": "https://www.vwnews.com.br/news/2285",
+   "items": [
+    "Faróis e lanternas ligados por faixa de LED",
+    "Rodas de 17\" diamantadas e preto piano"
+   ],
+   "optional": [
+    "Pacote Outfit (mais de 12 elementos exclusivos)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/91#virtus-msi",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · MSI (release 2018-01)",
+   "years": [
+    2018,
+    2019
+   ],
+   "trims": [
+    "msi"
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/news/91",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas (dianteiros com um-toque)",
+    "Travas elétricas",
+    "Faróis de dupla parábola",
+    "Chave canivete com controle remoto",
+    "Computador de bordo",
+    "Para-sóis iluminados",
+    "Tomada de 12 V no console",
+    "Suporte para celular no painel com entrada USB",
+    "Banco do motorista com ajuste de altura",
+    "Quatro airbags",
+    "ISOFIX e top tether",
+    "Freios ABS com EBD",
+    "Motor 1.6 MSI de 117 cv e câmbio manual de 5 marchas",
+    "Sistema de som Media Plus (USB, SD, Bluetooth)"
+   ],
+   "optional": [
+    "Pacote Connect (Composition Touch, volante multifuncional, sensores de estacionamento traseiros, ESC, rodas de 15\")",
+    "Pacote Safety (ESC, ASR, EDS, Hill Hold)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/91#virtus-comfortline-200-tsi",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Comfortline 200 TSI (release 2018-01)",
+   "years": [
+    2018,
+    2019
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/91",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas (dianteiros com um-toque)",
+    "Travas elétricas",
+    "Faróis de dupla parábola",
+    "Chave canivete com controle remoto",
+    "Computador de bordo",
+    "Para-sóis iluminados",
+    "Tomada de 12 V no console",
+    "Suporte para celular no painel com entrada USB",
+    "Banco do motorista com ajuste de altura",
+    "Quatro airbags",
+    "ISOFIX e top tether",
+    "Freios ABS com EBD",
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Freios a disco nas quatro rodas",
+    "Controle de estabilidade (ESC)",
+    "Banco traseiro bipartido",
+    "Volante ajustável em altura e distância",
+    "Faróis de neblina com Cornering Light",
+    "Composition Touch de 6,5\"",
+    "Rodas de liga leve de 15\"",
+    "Sensores de estacionamento traseiros",
+    "Retrovisores elétricos",
+    "Apoio de braço dianteiro com porta-objetos",
+    "Lanternas traseiras escurecidas",
+    "Volante multifuncional"
+   ],
+   "optional": [
+    "Pacote Tech I (Kessy, piloto automático, sensores dianteiros, retrovisor eletrocrômico, aletas no volante, sensores de chuva e crepuscular, rodas de 16\")",
+    "Pacote Tech II (Tech I, indicador de pressão dos pneus, Climatronic, s.a.v.e., porta-luvas refrigerado, câmera de ré, detector de fadiga, frenagem pós-colisão, volante em couro)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/91#virtus-highline-200-tsi",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Highline 200 TSI (release 2018-01)",
+   "years": [
+    2018,
+    2019
+   ],
+   "trims": [
+    "highline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/91#virtus-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/91",
+   "items": [
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Piloto automático",
+    "Ar-condicionado Climatronic",
+    "Banco do passageiro rebatível para a frente",
+    "Porta-luvas refrigerado",
+    "Luzes de condução diurna em LED",
+    "Rodas de liga leve de 16\"",
+    "Sobretapetes",
+    "Volante multifuncional em couro com aletas para troca de marchas"
+   ],
+   "optional": [
+    "Bancos em couro sintético Native",
+    "Pacote Tech High (sensores dianteiros, indicador de pressão dos pneus, s.a.v.e., câmera de ré, detector de fadiga, retrovisor eletrocrômico, frenagem pós-colisão, sensores de chuva e crepuscular, Discover Media de 8\")",
+    "Pacote Technology (Tech High, Active Info Display, rodas de 17\" Razor)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/388#virtus-gts",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · GTS (release 2020-02)",
+   "years": [
+    2020,
+    2020
+   ],
+   "trims": [
+    "gts"
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "page": "https://www.vwnews.com.br/news/388",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas",
+    "Faróis full LED",
+    "Grade colmeia com logo GTS e filete vermelho",
+    "Painel digital Active Info Display",
+    "Seletor de modo de condução com atuador sonoro",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Sensores de estacionamento dianteiros e traseiros e câmera de ré",
+    "Sistema start/stop",
+    "Discover Media de 8\" com navegação",
+    "Detector de fadiga",
+    "Retrovisor interno eletrocrômico",
+    "Sensores de chuva e crepuscular",
+    "Piloto automático",
+    "Controle de estabilidade (ESC) com XDS+"
+   ],
+   "optional": [
+    "Pacote Beats (som com subwoofer e amplificador, s.a.v.e.)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/90#polo-1-0",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Polo 1.0 MPI (release 2017-09)",
+   "years": [
+    2018,
+    2018
+   ],
+   "trims": [],
+   "base": true,
+   "turbo": false,
+   "engineLiters": 1,
+   "page": "https://www.vwnews.com.br/news/90",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas (dianteiros com um-toque)",
+    "Travas elétricas",
+    "Faróis de dupla parábola",
+    "Chave canivete com controle remoto",
+    "Quatro airbags",
+    "ISOFIX e top tether",
+    "Suporte para celular no painel com entrada USB",
+    "Motor 1.0 MPI de 84 cv"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/90#polo-msi",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · MSI (release 2017-09)",
+   "years": [
+    2018,
+    2018
+   ],
+   "trims": [
+    "msi"
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "page": "https://www.vwnews.com.br/news/90",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas (dianteiros com um-toque)",
+    "Travas elétricas",
+    "Faróis de dupla parábola",
+    "Chave canivete com controle remoto",
+    "Quatro airbags",
+    "ISOFIX e top tether",
+    "Suporte para celular no painel com entrada USB",
+    "Motor 1.6 MSI de 117 cv e câmbio manual de 5 marchas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/90#polo-comfortline-200-tsi",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Comfortline 200 TSI (release 2017-09)",
+   "years": [
+    2018,
+    2018
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/90",
+   "items": [
+    "Direção elétrica",
+    "Ar-condicionado",
+    "Vidros elétricos nas quatro portas (dianteiros com um-toque)",
+    "Travas elétricas",
+    "Faróis de dupla parábola",
+    "Chave canivete com controle remoto",
+    "Quatro airbags",
+    "ISOFIX e top tether",
+    "Suporte para celular no painel com entrada USB",
+    "Motor 200 TSI e câmbio automático de 6 marchas",
+    "Controle de estabilidade (ESC)",
+    "Freios a disco nas quatro rodas",
+    "Banco traseiro bipartido",
+    "Volante ajustável em altura e distância",
+    "Faróis de neblina com Cornering Light",
+    "Composition Touch de 6,5\"",
+    "Rodas de liga leve de 15\" Viper",
+    "Sensores de estacionamento traseiros",
+    "Retrovisores elétricos",
+    "Apoio de braço dianteiro com porta-objetos",
+    "Lanternas traseiras escurecidas",
+    "Volante multifuncional"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/90#polo-highline-200-tsi",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Highline 200 TSI (release 2017-09)",
+   "years": [
+    2018,
+    2018
+   ],
+   "trims": [
+    "highline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/90#polo-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/90",
+   "items": [
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Piloto automático",
+    "Ar-condicionado Climatronic",
+    "Banco do passageiro rebatível",
+    "Duas entradas USB no apoio de braço",
+    "Porta-luvas refrigerado",
+    "Luzes de condução diurna em LED",
+    "Rodas de liga leve de 16\" Avalanche",
+    "Sobretapetes",
+    "Volante multifuncional em couro com aletas para troca de marchas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/663#polo-1-0-mpi",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Polo 1.0 MPI 2021 (release 2020-08)",
+   "years": [
+    2021,
+    2021
+   ],
+   "trims": [],
+   "base": true,
+   "turbo": false,
+   "engineLiters": 1,
+   "page": "https://www.vwnews.com.br/news/663",
+   "items": [
+    "Controles de tração (ASR) e estabilidade (ESC)",
+    "Bloqueio eletrônico do diferencial (EDS)",
+    "Assistente de partida em rampa",
+    "Cintos de três pontos para todos os ocupantes",
+    "Direção elétrica",
+    "Ar-condicionado com filtro de poeira e pólen",
+    "Composition Touch de 6,5\" com Android Auto e Apple CarPlay",
+    "Volante multifuncional"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1675#polo-track",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Polo Track (release 2022-11)",
+   "years": [
+    2023,
+    2023
+   ],
+   "trims": [
+    "track"
+   ],
+   "turbo": false,
+   "engineLiters": 1,
+   "page": "https://www.vwnews.com.br/news/1675",
+   "items": [
+    "Motor 1.0 MPI de 84 cv e câmbio manual de 5 marchas",
+    "Quatro airbags",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Controle de estabilidade (ESC)",
+    "Bloqueio eletrônico do diferencial (XDS+)",
+    "ISOFIX e top tether",
+    "Alerta de cinto para todos os ocupantes",
+    "Ar-condicionado com filtro de poeira e pólen",
+    "Direção elétrica",
+    "Vidros elétricos dianteiros",
+    "Travamento elétrico e remoto das portas",
+    "Retrovisores e maçanetas em preto fosco",
+    "Rodas de 15\" com calotas em preto fosco"
+   ],
+   "optional": [
+    "Pacote de lançamento (som com Bluetooth, volante multifuncional, computador de bordo, entradas USB, antena de teto)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1082#taos-comfortline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Comfortline (release 2021-05)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/1082",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas",
+    "Faróis full LED",
+    "Central VW Play de 10,1\"",
+    "Rodas de liga leve de 18\"",
+    "Ar-condicionado Climatronic de duas zonas com saídas traseiras",
+    "Câmera de ré",
+    "Carregador de celular por indução",
+    "Direção elétrica",
+    "Piloto automático",
+    "Sensores de chuva e crepuscular",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Volante multifuncional com aletas para troca de marchas",
+    "Painel de instrumentos digital de 8\""
+   ],
+   "optional": [
+    "Pacote Conforto (bancos de couro, bancos dianteiros aquecidos, banco do motorista com ajustes elétricos e lombar)",
+    "Pacote Segurança (frenagem autônoma de emergência com detecção de pedestres, ACC)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1082#taos-highline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Highline (release 2021-05)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "trims": [
+    "highline"
+   ],
+   "page": "https://www.vwnews.com.br/news/1082",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas",
+    "Faróis full LED",
+    "Central VW Play de 10,1\"",
+    "Rodas de liga leve de 18\"",
+    "Ar-condicionado Climatronic de duas zonas com saídas traseiras",
+    "Câmera de ré",
+    "Carregador de celular por indução",
+    "Direção elétrica",
+    "Piloto automático",
+    "Sensores de chuva e crepuscular",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Volante multifuncional com aletas para troca de marchas",
+    "Controle de cruzeiro adaptativo (ACC) com Stop&Go",
+    "Frenagem autônoma de emergência (AEB) com detecção de pedestres",
+    "Bancos dianteiros em couro sintético com aquecimento",
+    "Banco do motorista com ajustes elétricos e lombar",
+    "Faróis IQ.Light e faixa de LED na grade",
+    "Iluminação ambiente (Ambient Light)",
+    "Painel digital Active Info Display de 10,25\"",
+    "Detector de ponto cego",
+    "Alerta de tráfego traseiro cruzado",
+    "Seletor de perfil de condução"
+   ],
+   "optional": [
+    "Teto solar panorâmico"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1082#taos-launching-edition",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Edição de Lançamento (release 2021-05)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "trims": [
+    "launching"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/1082#taos-highline",
+   "page": "https://www.vwnews.com.br/news/1082",
+   "items": [
+    "Teto, coluna A e retrovisores pintados de preto",
+    "Rodas de 18\" escurecidas",
+    "Interior exclusivo",
+    "Som premium Beats",
+    "Teto solar panorâmico"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1741#taos-comfortline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Comfortline 2023 (release 2022-12)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2023,
+    2023
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/1082#taos-comfortline",
+   "page": "https://www.vwnews.com.br/news/1741",
+   "items": [
+    "Ar-condicionado Climatronic Touch",
+    "Entrada USB-C extra para o banco traseiro"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1741#taos-highline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Highline 2023 (release 2022-12)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2023,
+    2023
+   ],
+   "trims": [
+    "highline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/1082#taos-highline",
+   "page": "https://www.vwnews.com.br/news/1741",
+   "items": [
+    "Volante em couro com teclas touch e aletas",
+    "Assistente de permanência em faixa",
+    "Assistente de estacionamento",
+    "Ar-condicionado Climatronic Touch",
+    "Entrada USB-C extra para o banco traseiro"
+   ],
+   "optional": [
+    "Pacote Bi-Tone (teto solar panorâmico, teto e retrovisores em preto brilhante)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2705#novo-taos-comfortline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Novo Taos Comfortline (release 2026-01)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2026,
+    2026
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/2705",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 8 marchas",
+    "Seis airbags",
+    "Frenagem autônoma de emergência (AEB) com Multicollision Brake",
+    "Alerta de frenagem de emergência (ESS)",
+    "Controles de tração e estabilidade",
+    "Faróis IQ.Light",
+    "Logo iluminado e faixa de LED nas lanternas traseiras",
+    "Painel digital Active Info Display de 10,25\"",
+    "Travel Assist, Lane Assist e detector de ponto cego",
+    "Controle de cruzeiro adaptativo (ACC) com Stop & Go",
+    "Central VW Play Connect de 10,1\" flutuante com app Meu VW",
+    "Ar-condicionado digital de duas zonas",
+    "Carregador de celular por indução",
+    "Iluminação ambiente com 10 cores",
+    "Freios a disco nas quatro rodas",
+    "Rodas de 18\""
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2705#novo-taos-highline",
+   "brand": "vw",
+   "line": "TAOS",
+   "title": "TAOS · Novo Taos Highline (release 2026-01)",
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "years": [
+    2026,
+    2026
+   ],
+   "trims": [
+    "highline"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/2705#novo-taos-comfortline",
+   "page": "https://www.vwnews.com.br/news/2705",
+   "items": [
+    "Faixa de LED contornando a grade",
+    "Rodas de 19\""
+   ],
+   "optional": [
+    "Teto em preto"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/94#jetta-comfortline-250-tsi",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · Comfortline 250 TSI (release 2018-09)",
+   "years": [
+    2019,
+    2019
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/94",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas",
+    "Faróis e lanternas de LED",
+    "Ar-condicionado Climatronic de duas zonas",
+    "Luzes de condução diurna em LED",
+    "Sensores de estacionamento dianteiros e traseiros",
+    "Sensor de chuva",
+    "Seis airbags",
+    "Bloqueio eletrônico do diferencial (EDS)",
+    "Sistema start/stop",
+    "Função de frenagem de manobra (RBF)",
+    "Freio de estacionamento eletromecânico",
+    "Assistente de partida em subidas",
+    "Vidros, travas e retrovisores elétricos",
+    "Volante multifuncional",
+    "Bancos revestidos de couro",
+    "Discover Media de 8\" com navegação",
+    "Rodas de 17\" Polanko",
+    "Câmera de ré",
+    "Acesso sem chave e partida por botão (Kessy)",
+    "Retrovisor interno eletrocrômico",
+    "Seletor de perfil de condução",
+    "Iluminação ambiente com 10 cores"
+   ],
+   "optional": [
+    "Teto solar panorâmico"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/94#jetta-r-line-250-tsi",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · R-Line 250 TSI (release 2018-09)",
+   "years": [
+    2019,
+    2019
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "trims": [
+    "line"
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/94#jetta-comfortline-250-tsi",
+   "page": "https://www.vwnews.com.br/news/94",
+   "items": [
+    "Visual R-Line",
+    "Painel digital Active Info Display",
+    "Controle de cruzeiro adaptativo (ACC)",
+    "Front Assist com City Emergency Brake",
+    "Detector de fadiga",
+    "Frenagem automática pós-colisão",
+    "Regulagem automática do farol alto"
+   ],
+   "optional": [
+    "Teto solar panorâmico"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/102#jetta-250-tsi",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · 250 TSI (release 2018-11)",
+   "years": [
+    2019,
+    2019
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "trims": [],
+   "base": true,
+   "page": "https://www.vwnews.com.br/news/102",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas",
+    "Seis airbags",
+    "Controle de estabilidade",
+    "Bloqueio eletrônico do diferencial",
+    "Sistema start/stop",
+    "Faróis e lanternas de LED",
+    "Ar-condicionado Climatronic",
+    "Composition Media de 8\" com App-Connect"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1455#jetta-gli",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · GLI (release 2022-04)",
+   "trims": [
+    "gli"
+   ],
+   "turbo": true,
+   "engineLiters": 2,
+   "transmission": "automatico",
+   "years": [
+    2022,
+    2022
+   ],
+   "page": "https://www.vwnews.com.br/news/1455",
+   "items": [
+    "Motor 350 TSI e câmbio DSG",
+    "Central VW Play de 10,1\" com Apple CarPlay e Android Auto sem fio",
+    "Volante em couro com teclas touch e aletas",
+    "Rodas de 18\" diamantadas",
+    "Seis airbags",
+    "Controle de cruzeiro adaptativo (ACC) com Stop&Go",
+    "Frenagem autônoma de emergência (AEB)",
+    "Frenagem automática pós-colisão",
+    "Detector de fadiga",
+    "ISOFIX e top tether",
+    "Iluminação ambiente com 10 cores",
+    "Faróis full LED",
+    "Teto solar panorâmico"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1737#jetta-gli",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · GLI 2023 (release 2022-12)",
+   "trims": [
+    "gli"
+   ],
+   "turbo": true,
+   "engineLiters": 2,
+   "transmission": "automatico",
+   "years": [
+    2023,
+    2024
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/1455#jetta-gli",
+   "page": "https://www.vwnews.com.br/news/1737",
+   "items": [
+    "Travel Assist",
+    "Detector de ponto cego",
+    "Banco do motorista com ajuste elétrico e memória",
+    "Seletor de modos de condução"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2640#novo-jetta-gli",
+   "brand": "vw",
+   "line": "JETTA",
+   "title": "JETTA · Novo Jetta GLI (release 2025-11)",
+   "trims": [
+    "gli"
+   ],
+   "turbo": true,
+   "engineLiters": 2,
+   "transmission": "automatico",
+   "years": [
+    2026,
+    2026
+   ],
+   "addsTo": "https://www.vwnews.com.br/news/1737#jetta-gli",
+   "page": "https://www.vwnews.com.br/news/2640",
+   "items": [
+    "Motor 350 TSI de 231 cv, câmbio DSG de 7 marchas e Launch Control",
+    "Diferencial eLSD",
+    "Central VW Play Connect com app Meu VW"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/103#amarok-v6-extreme",
+   "brand": "vw",
+   "line": "AMAROK",
+   "title": "AMAROK · V6 Extreme (release 2018-07)",
+   "turbo": true,
+   "diesel": true,
+   "engineLiters": 3,
+   "transmission": "automatico",
+   "years": [
+    2019,
+    2020
+   ],
+   "trims": [
+    "extreme"
+   ],
+   "page": "https://www.vwnews.com.br/news/103",
+   "items": [
+    "Motor 3.0 V6 TDI de 225 cv e câmbio automático de 8 marchas",
+    "Rodas de 20\" Talca",
+    "Estribos laterais de alumínio",
+    "Santoantônio esportivo Extreme",
+    "Bancos em couro Nappa",
+    "Pedais de aço inoxidável e tapetes Extreme",
+    "Faróis bixenônio com luzes diurnas em LED",
+    "Faróis de neblina com luz de conversão",
+    "Câmera de ré",
+    "Frenagem automática pós-colisão",
+    "Discover Media de 6,33\"",
+    "Freios ABS off-road e a disco nas quatro rodas",
+    "Controles de estabilidade e tração, HDC, HSA e EDS",
+    "Indicador de perda de pressão dos pneus",
+    "Quatro airbags",
+    "ISOFIX",
+    "Volante multifuncional com aletas",
+    "Ar-condicionado Climatronic de duas zonas",
+    "Sensores de chuva e crepuscular"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/787#amarok-v6-extreme",
+   "brand": "vw",
+   "line": "AMAROK",
+   "title": "AMAROK · V6 Extreme 258 cv (release 2020-10)",
+   "turbo": true,
+   "diesel": true,
+   "engineLiters": 3,
+   "transmission": "automatico",
+   "years": [
+    2021,
+    2024
+   ],
+   "trims": [
+    "extreme"
+   ],
+   "page": "https://www.vwnews.com.br/news/787",
+   "items": [
+    "Motor 3.0 V6 TDI de 258 cv e câmbio automático",
+    "Tração integral 4MOTION",
+    "Controles de estabilidade e tração, HDC, HSA, BAS e EDS",
+    "Freios ABS off-road e discos ventilados atrás",
+    "Airbags frontais e laterais",
+    "Frenagem automática pós-colisão",
+    "Ar-condicionado Climatronic de duas zonas",
+    "Bancos dianteiros com ajustes elétricos",
+    "Câmera de ré",
+    "Piloto automático",
+    "Faróis bixenônio com luzes diurnas em LED",
+    "Faróis de neblina com luz de conversão",
+    "Indicador de pressão dos pneus",
+    "Retrovisor interno eletrocrômico",
+    "Retrovisores elétricos, aquecíveis e rebatíveis",
+    "Sensores de chuva e crepuscular",
+    "Sensores de estacionamento dianteiros e traseiros",
+    "Alarme com chave presencial",
+    "Volante com ajuste de altura e profundidade",
+    "Bancos e volante parcialmente em couro",
+    "Discover Media com App-Connect e navegação"
+   ],
+   "optional": [
+    "Pacote Black Style"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2196#nova-amarok-v6-comfortline",
+   "brand": "vw",
+   "line": "AMAROK",
+   "title": "AMAROK · Nova Amarok V6 Comfortline (release 2024-08)",
+   "turbo": true,
+   "diesel": true,
+   "engineLiters": 3,
+   "transmission": "automatico",
+   "years": [
+    2025,
+    2026
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "page": "https://www.vwnews.com.br/news/2196",
+   "items": [
+    "Motor 3.0 V6 de 258 cv (272 cv com overboost)",
+    "Tração 4Motion permanente",
+    "Assistente de partida em subida (HSA)",
+    "Controle automático de descida (HDC)",
+    "Freios ABS off-road",
+    "Central multimídia de 9\"",
+    "Airbag de cabeça",
+    "Aviso de saída de faixa e de colisão frontal"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2196#nova-amarok-v6-highline",
+   "brand": "vw",
+   "line": "AMAROK",
+   "title": "AMAROK · Nova Amarok V6 Highline (release 2024-08)",
+   "turbo": true,
+   "diesel": true,
+   "engineLiters": 3,
+   "transmission": "automatico",
+   "years": [
+    2025,
+    2026
+   ],
+   "trims": [
+    "highline"
+   ],
+   "page": "https://www.vwnews.com.br/news/2196",
+   "items": [
+    "Motor 3.0 V6 de 258 cv (272 cv com overboost)",
+    "Tração 4Motion permanente",
+    "Assistente de partida em subida (HSA)",
+    "Controle automático de descida (HDC)",
+    "Freios ABS off-road",
+    "Central multimídia de 9\"",
+    "Airbag de cabeça",
+    "Aviso de saída de faixa e de colisão frontal"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2196#nova-amarok-v6-extreme",
+   "brand": "vw",
+   "line": "AMAROK",
+   "title": "AMAROK · Nova Amarok V6 Extreme (release 2024-08)",
+   "turbo": true,
+   "diesel": true,
+   "engineLiters": 3,
+   "transmission": "automatico",
+   "years": [
+    2025,
+    2026
+   ],
+   "trims": [
+    "extreme"
+   ],
+   "page": "https://www.vwnews.com.br/news/2196",
+   "items": [
+    "Motor 3.0 V6 de 258 cv (272 cv com overboost)",
+    "Tração 4Motion permanente",
+    "Assistente de partida em subida (HSA)",
+    "Controle automático de descida (HDC)",
+    "Freios ABS off-road",
+    "Central multimídia de 9\"",
+    "Airbag de cabeça",
+    "Aviso de saída de faixa e de colisão frontal",
+    "Rodas de liga leve de 20\"",
+    "Pedaleiras esportivas",
+    "Capas dos retrovisores em preto",
+    "Estribos laterais",
+    "Santoantônio Extreme"
+   ],
+   "optional": [
+    "Pacote Hero (santoantônio, maçanetas e logos em preto brilhante, rodas de 20\" escurecidas)",
+    "Pacote Dark (para-choques, emblemas e maçanetas em preto, rodas de 20\" escurecidas)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/104#saveiro-pepper",
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro · Pepper (release 2017-07)",
+   "years": [
+    2018,
+    2019
+   ],
+   "trims": [
+    "pepper"
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "page": "https://www.vwnews.com.br/news/104",
+   "items": [
+    "Motor 1.6 de 104 cv e câmbio manual de 5 marchas",
+    "Retrovisores em cor diferente da carroceria",
+    "Grade preta com filete vermelho",
+    "Rodas de liga leve de 15\" diamantadas em preto",
+    "Ar-condicionado",
+    "Faróis e lanterna de neblina",
+    "Chave canivete com controle remoto",
+    "Coluna de direção ajustável em altura e distância",
+    "Retrovisores elétricos",
+    "Alarme keyless",
+    "Vidros e travas elétricos",
+    "Sensor de estacionamento",
+    "Capota marítima e protetor de caçamba"
+   ],
+   "optional": [
+    "Teto em Preto Ninja",
+    "Composition Touch ou Discover Media com câmera de ré"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1914#saveiro-robust",
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro · Robust (release 2023-08)",
+   "years": [
+    2024,
+    2026
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "trims": [
+    "robust"
+   ],
+   "page": "https://www.vwnews.com.br/news/1914",
+   "items": [
+    "Motor 1.6 de 116 cv e câmbio manual de 5 marchas",
+    "Sensor de estacionamento traseiro",
+    "Controle de estabilidade (ESC)",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Freios a disco nas quatro rodas",
+    "Rodas de aço de 15\" com calotas escurecidas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1914#saveiro-trendline",
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro · Trendline (release 2023-08)",
+   "years": [
+    2024,
+    2026
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "trims": [
+    "trendline"
+   ],
+   "page": "https://www.vwnews.com.br/news/1914",
+   "items": [
+    "Motor 1.6 de 116 cv e câmbio manual de 5 marchas",
+    "Sensor de estacionamento traseiro",
+    "Controle de estabilidade (ESC)",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Freios a disco nas quatro rodas",
+    "Nome Saveiro escurecido na tampa"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1914#saveiro-extreme",
+   "brand": "vw",
+   "line": "Saveiro",
+   "title": "Saveiro · Extreme (release 2023-08)",
+   "years": [
+    2024,
+    2026
+   ],
+   "turbo": false,
+   "engineLiters": 1.6,
+   "trims": [
+    "extreme"
+   ],
+   "page": "https://www.vwnews.com.br/news/1914",
+   "items": [
+    "Motor 1.6 de 116 cv e câmbio manual de 5 marchas",
+    "Sensor de estacionamento traseiro",
+    "Controle de estabilidade (ESC)",
+    "Assistente de partida em rampa (Hill Hold)",
+    "Freios a disco nas quatro rodas",
+    "Emblema Extreme na coluna B e adesivos",
+    "Rodas de 15\" em preto piano diamantadas",
+    "Rack de teto ligado ao santoantônio",
+    "Capota marítima",
+    "Bancos em couro com detalhes Cinza Oliver",
+    "Composition Touch com Apple CarPlay e Android Auto",
+    "Câmera de ré",
+    "Coluna de direção com ajuste de altura e profundidade",
+    "Faróis de neblina",
+    "Indicador de pressão dos pneus",
+    "Volante multifuncional em couro"
+   ],
+   "optional": [
+    "Pacote Tech (botão off-road com HDC, retrovisor fotocrômico, piloto automático, sensores de chuva e crepuscular)"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1761#polo-track-1st-edition",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Polo Track 1st Edition (release 2023-02)",
+   "years": [
+    2023,
+    2023
+   ],
+   "trims": [
+    "track",
+    "first"
+   ],
+   "turbo": false,
+   "engineLiters": 1,
+   "addsTo": "https://www.vwnews.com.br/news/1675#polo-track",
+   "page": "https://www.vwnews.com.br/news/1761",
+   "items": [
+    "Teto, retrovisores e maçanetas em Preto Ninja",
+    "Calotas pretas",
+    "Emblema comemorativo na coluna C e adesivos 1st Edition",
+    "Soleiras de alumínio",
+    "Bancos com pesponto vermelho"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2148#polo-track-rock-in-rio",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Polo Track Rock in Rio (release 2024-05)",
+   "years": [
+    2025,
+    2025
+   ],
+   "trims": [
+    "track",
+    "rock",
+    "rio"
+   ],
+   "turbo": false,
+   "engineLiters": 1,
+   "addsTo": "https://www.vwnews.com.br/news/1675#polo-track",
+   "page": "https://www.vwnews.com.br/news/2148",
+   "items": [
+    "Teto, maçanetas, retrovisores e calotas em Preto Ninja",
+    "Adesivos do Rock in Rio",
+    "Central VW Play de 10\" com Apple CarPlay e Android Auto sem fio",
+    "Som com seis alto-falantes",
+    "Bancos com revestimento exclusivo"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1752#polo-gts",
+   "brand": "vw",
+   "line": "Polo",
+   "title": "Polo · Novo Polo GTS (release 2023-01)",
+   "years": [
+    2023,
+    2024
+   ],
+   "trims": [
+    "gts"
+   ],
+   "turbo": true,
+   "engineLiters": 1.4,
+   "page": "https://www.vwnews.com.br/news/1752",
+   "items": [
+    "Motor 250 TSI de 150 cv e câmbio automático de 6 marchas com aletas",
+    "Faróis IQ.Light com LED Matrix",
+    "Lanternas em LED exclusivas",
+    "Aerofólio esportivo e saída dupla de escapamento",
+    "Retrovisores em preto piano",
+    "Rodas de 18\" pretas diamantadas",
+    "Central VW Play de 10,1\" com modos de condução",
+    "Painel digital Active Info Display de 10,25\"",
+    "Freios a disco nas quatro rodas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1759#novo-virtus-170-tsi",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Novo Virtus 170 TSI (release 2023-02)",
+   "years": [
+    2023,
+    2024
+   ],
+   "trims": [],
+   "base": true,
+   "turbo": true,
+   "engineLiters": 1,
+   "page": "https://www.vwnews.com.br/news/1759",
+   "items": [
+    "Faróis, faróis de neblina e lanternas em LED",
+    "Carregador de celular por indução",
+    "Duas entradas USB-C",
+    "Seis airbags",
+    "Detector de fadiga",
+    "Frenagem automática pós-colisão",
+    "Bloqueio eletrônico do diferencial (XDS+)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1759#novo-virtus-comfortline",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Novo Virtus Comfortline (release 2023-02)",
+   "years": [
+    2023,
+    2024
+   ],
+   "trims": [
+    "comfortline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/1759",
+   "items": [
+    "Faróis, faróis de neblina e lanternas em LED",
+    "Carregador de celular por indução",
+    "Duas entradas USB-C",
+    "Seis airbags",
+    "Detector de fadiga",
+    "Frenagem automática pós-colisão",
+    "Bloqueio eletrônico do diferencial (XDS+)",
+    "Controle de cruzeiro adaptativo (ACC)",
+    "Frenagem autônoma de emergência (AEB)",
+    "Função de frenagem de manobra",
+    "Bancos em couro"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1759#novo-virtus-highline",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Novo Virtus Highline (release 2023-02)",
+   "years": [
+    2023,
+    2024
+   ],
+   "trims": [
+    "highline"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/1759#novo-virtus-comfortline",
+   "page": "https://www.vwnews.com.br/news/1759",
+   "items": [
+    "Bancos com detalhes Marrom Mocca",
+    "Friso cromado na traseira",
+    "Rodas de 17\" diamantadas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1759#novo-virtus-exclusive",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Novo Virtus Exclusive (release 2023-02)",
+   "years": [
+    2023,
+    2024
+   ],
+   "trims": [
+    "exclusive"
+   ],
+   "engineLiters": 1.4,
+   "transmission": "automatico",
+   "addsTo": "https://www.vwnews.com.br/news/1759#novo-virtus-comfortline",
+   "page": "https://www.vwnews.com.br/news/1759",
+   "items": [
+    "Motor 250 TSI",
+    "Modos de condução Eco, Normal, Sport e Individual",
+    "Para-choques com frisos em cinza e emblemas Exclusive",
+    "Rodas de 18\" escurecidas",
+    "Bancos em couro com costuras exclusivas"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2274#virtus-sense",
+   "brand": "vw",
+   "line": "VIRTUS",
+   "title": "VIRTUS · Virtus Sense (release 2024-11)",
+   "years": [
+    2025,
+    2026
+   ],
+   "trims": [
+    "sense"
+   ],
+   "engineLiters": 1,
+   "transmission": "manual",
+   "page": "https://www.vwnews.com.br/news/2274",
+   "items": [
+    "Motor 170 TSI de 116 cv e câmbio manual de 5 marchas",
+    "Central Media Plus II",
+    "Volante multifuncional",
+    "Painel de instrumentos digital de 8\"",
+    "Seis airbags",
+    "Assistente de partida em subidas (Hill Hold)",
+    "Alerta de frenagem de emergência (ESS)",
+    "Frenagem automática pós-colisão",
+    "Bloqueio eletrônico do diferencial (EDS)"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/2274#t-cross-sense",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Novo T-Cross Sense (release 2024-11)",
+   "years": [
+    2025,
+    2025
+   ],
+   "trims": [
+    "sense"
+   ],
+   "turbo": true,
+   "engineLiters": 1,
+   "transmission": "automatico",
+   "page": "https://www.vwnews.com.br/news/2274",
+   "items": [
+    "Motor 200 TSI de 128 cv e câmbio automático de 6 marchas",
+    "Faróis e lanternas em LED",
+    "Central VW Play de 10,1\" semiflutuante",
+    "Painel de instrumentos digital de 8\"",
+    "Seis airbags",
+    "Detector de fadiga",
+    "Assistente de partida em subida (Hill Hold)",
+    "Frenagem autônoma de emergência (AEB) com detecção de pedestres",
+    "Sensor de estacionamento traseiro",
+    "Volante com ajuste de altura e profundidade"
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1220#t-cross-sense",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Sense 2022 (release 2021-09)",
+   "years": [
+    2022,
+    2022
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "trims": [
+    "sense"
+   ],
+   "engineLiters": 1,
+   "addsTo": "https://www.vwnews.com.br/news/679#t-cross-sense",
+   "page": "https://www.vwnews.com.br/news/1220",
+   "items": [],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1220#t-cross-200-tsi",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · 200 TSI 2022 (release 2021-09)",
+   "years": [
+    2022,
+    2022
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "trims": [],
+   "base": true,
+   "engineLiters": 1,
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-200-tsi-automatico",
+   "page": "https://www.vwnews.com.br/news/1220",
+   "items": [
+    "Painel de instrumentos digital de 8\""
+   ],
+   "optional": []
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1220#t-cross-comfortline",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Comfortline 2022 (release 2021-09)",
+   "years": [
+    2022,
+    2022
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "trims": [
+    "comfortline"
+   ],
+   "engineLiters": 1,
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-comfortline-200-tsi",
+   "page": "https://www.vwnews.com.br/news/1220",
+   "items": [
+    "Carregador de celular por indução"
+   ],
+   "optional": [
+    "Bancos parcialmente em couro Deep Blue"
+   ]
+  },
+  {
+   "key": "https://www.vwnews.com.br/news/1220#t-cross-highline",
+   "brand": "vw",
+   "line": "T-Cross",
+   "title": "T-Cross · Highline 2022 (release 2021-09)",
+   "years": [
+    2022,
+    2022
+   ],
+   "turbo": true,
+   "transmission": "automatico",
+   "trims": [
+    "highline"
+   ],
+   "engineLiters": 1.4,
+   "addsTo": "https://www.vwnews.com.br/news/649#t-cross-highline-250-tsi",
+   "page": "https://www.vwnews.com.br/news/1220",
+   "items": [
+    "Carregador de celular por indução",
+    "Bancos parcialmente em couro Deep Blue",
+    "Porta-celular nos encostos dianteiros"
+   ],
+   "optional": []
   }
  ],
  "rejected": [
@@ -4977,6 +7082,9 @@
   "https://imprensa.renault.com.br/release/renault-anuncia-novo-lote-da-pre-venda-do-kwid#intense-pack-connect",
   "https://imprensa.renault.com.br/release/renault-duster-16-sce-ganha-novo-cambio-x-tronic-cvt#duster-2-0-dynamique-4x4",
   "https://imprensa.renault.com.br/release/renault-anuncia-pre-venda-do-kwid-o-suv-dos-compactos#intense-pack-connect",
-  "https://www.media.stellantis.com/br-pt/fiat/press/com-novidades-chegam-novas-versoes-2011-dos-modelos-fiat-doblo-e-siena#fiat-doblo-cargo-1-4"
+  "https://www.media.stellantis.com/br-pt/fiat/press/com-novidades-chegam-novas-versoes-2011-dos-modelos-fiat-doblo-e-siena#fiat-doblo-cargo-1-4",
+  "https://www.vwnews.com.br/news/2482#novo-nivus-highline-de-r-163-290",
+  "https://www.vwnews.com.br/news/161#up-xtreme",
+  "https://www.vwnews.com.br/news/118#highline-250-tsi-automatico"
  ]
 }
