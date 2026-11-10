@@ -10,7 +10,8 @@ fonte aberta, para rever se algo mudar), as ideias para o [futuro](#futuro) e o 
 O que roda sozinho e o que precisa de uma rodada de vez em quando.
 
 - **Daily (sozinha):** o GitHub Actions (`.github/workflows/daily.yml`) busca os preços da FIPE,
-  a frota e os combustíveis e commita os dados no `main`, às 04:00 e às 18:00 UTC. A cota de
+  a frota e os combustíveis, commita os dados no `main` e republica o site na Cloudflare, às 04:00
+  e às 18:00 UTC. O site usa só a `FIPE_PROXY_TOKEN` (segredo do Worker); as numeradas são da daily. A cota de
   cada chave da FIPE vale 24 h desde o primeiro uso (`x-ratelimit-reset: 86400`), e o GitHub
   atrasa o cron das 04:00 para 11–12 UTC; a segunda execução pega a cota quando a primeira acha
   as chaves esgotadas. Um mês novo leva alguns dias para ter todos os preços (em 10/11/2026,
@@ -85,9 +86,8 @@ O que se sabe de cada um, para rever se algo mudar. Não são tarefas.
 
 ## Futuro
 
-- Publicar o site: `npm run build` e `npx wrangler deploy` (Worker com o build e o proxy em
-  `/api/fipe`, `wrangler.toml`), com as chaves como segredos do Worker; precisa de uma conta na
-  Cloudflare. O cache das respostas da FIPE só vale num domínio próprio.
+- Domínio próprio para o site (hoje em carro-na-tela.agimenescomercial.workers.dev): o cache
+  das respostas da FIPE no Worker só vale num domínio próprio.
 - Conta para sincronizar os favoritos entre aparelhos: login pelo Cloudflare Access (código por
   e-mail, grátis até 50 usuários) e os favoritos numa tabela do D1, por rotas `/api/favoritos` no
   Worker; os do navegador sobem no primeiro login. Depois, aviso quando um favorito mudar X% na FIPE.

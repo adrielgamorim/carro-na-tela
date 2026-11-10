@@ -291,7 +291,8 @@ com uma trava contra execuções simultâneas e log em `logs/daily-<data>.log`.
 - **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda às 04:00 e às 18:00 UTC (o GitHub atrasa a primeira para 11–12 UTC; a segunda pega a
   cota da FIPE quando a primeira a acha esgotada) com as
   chaves dos segredos `FIPE_TOKEN*`, guarda `.cache/` no cache do Actions para a varredura
-  continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Se uma fonte falhar,
+  continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Quando os dados mudam, publica o site na Cloudflare
+  (`wrangler deploy`, com os segredos `CLOUDFLARE_API_TOKEN` e `CLOUDFLARE_ACCOUNT_ID`). Se uma fonte falhar,
   as outras são publicadas e a execução fica marcada como falha. Uma vez,
   `scripts/setup-github-daily.sh` grava os segredos, publica a semente do cache (release
   `cache-semente`), cria a deploy key com que a Action publica e o ruleset do `main` que a aceita.
