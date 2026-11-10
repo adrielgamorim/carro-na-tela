@@ -5,6 +5,8 @@ import {
   estimateIpva,
   formatIpva,
   formatPerKm,
+  ipvaNoteOf,
+  ipvaRateOf,
   ipvaRates,
   isUf,
   ufs,
@@ -62,6 +64,22 @@ describe("IPVA", () => {
     expect(estimateIpva(100_000, "PR")).toEqual({ min: 1900, max: 1900 });
     expect(formatIpva(estimateIpva(90_100, "SP"))).toBe("R$ 3.604/ano");
     expect(formatIpva(estimateIpva(100_000, "RJ"))).toBe("R$ 3.000 a R$ 4.000/ano");
+  });
+
+  it("uses motorcycles' and trucks' own rates, lower than cars'", () => {
+    for (const uf of ufs) {
+      for (const category of ["motorcycles", "trucks"] as const) {
+        const { min, max } = ipvaRateOf(uf, category);
+        expect(min).toBeGreaterThanOrEqual(1);
+        expect(min).toBeLessThanOrEqual(max);
+        expect(max).toBeLessThanOrEqual(3.5);
+      }
+    }
+    expect(estimateIpva(20_000, "SP", "motorcycles")).toEqual({ min: 400, max: 400 });
+    expect(estimateIpva(500_000, "SP", "trucks")).toEqual({ min: 7500, max: 7500 });
+    // Engine-size bands: a range.
+    expect(formatIpva(estimateIpva(20_000, "PR", "motorcycles"))).toBe("R$ 200 a R$ 380/ano");
+    expect(ipvaNoteOf("trucks")).toContain("caminhões");
   });
 });
 

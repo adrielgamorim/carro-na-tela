@@ -146,3 +146,27 @@ describe("name variants and FIPE aliases", () => {
     expect(id("BMW", "X3 XDRIVE 30e M Sport")).toBe("f25");
   });
 });
+
+describe("Scania trucks by cab series", () => {
+  it("reads 'G-360 B' as the G-series, also under Saab-Scania", () => {
+    const match = createWikidataMatcher([
+      model("g", ["Scania G-series"], { brands: ["Scania"] }),
+      model("t", ["Scania T Series"], { brands: ["Scania"] }),
+    ]);
+    expect(match({ brand: "SCANIA", model: "G-360 B 4x2 2p (diesel)", years: [2020] })?.id).toBe("g");
+    expect(match({ brand: "SAAB-SCANIA", model: "T-112 HW 4x2", years: [1990] })?.id).toBe("t");
+  });
+});
+
+describe("trucks named by weight and power first", () => {
+  it("finds the line in a later word", () => {
+    const match = createWikidataMatcher([
+      model("d", ["Volkswagen Delivery"], { brands: ["Volkswagen"] }),
+      model("c", ["Volkswagen Constellation"], { brands: ["Volkswagen"] }),
+    ]);
+    expect(match({ brand: "VOLKSWAGEN", model: "11-180 Delivery 4x2 2p (diesel)(E6)", years: [2024] })?.id).toBe("d");
+    expect(match({ brand: "VOLKSWAGEN", model: "25.480 Constellation 6x2 2p (diesel)", years: [2024] })?.id).toBe("c");
+    // Short words are not a line.
+    expect(match({ brand: "VOLKSWAGEN", model: "12-140 H 2p (diesel)", years: [1990] })).toBeNull();
+  });
+});

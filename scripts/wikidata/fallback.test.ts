@@ -148,3 +148,16 @@ describe("fallbackFitsModel", () => {
     expect(fallbackFitsModel("Opel Zafira", "Chevrolet Zafira", "GM - Chevrolet")).toBe(true);
   });
 });
+
+describe("fallbackFitsMotorcycle", () => {
+  it("takes a line's picture when its title is in the name or says the displacement", async () => {
+    const { fallbackFitsMotorcycle } = await import("./fallback.ts");
+    expect(fallbackFitsMotorcycle("Honda CB500X", "CB 500X", "HONDA", 500)).toBe(true);
+    expect(fallbackFitsMotorcycle("Royal Enfield Bullet", "Bullet 500", "Royal Enfield", 500)).toBe(true);
+    expect(fallbackFitsMotorcycle("Honda CBX 750F", "CB 500X", "HONDA", 500)).toBe(false);
+    expect(fallbackFitsMotorcycle("Honda Super Cub", "SUPER HAWK 1000", "HONDA", 1000)).toBe(false);
+    // The displacement, not inside a longer number: 1250 is not 250.
+    expect(fallbackFitsMotorcycle("Yamaha Fazer 250", "FZ25 250 FAZER FLEX", "YAMAHA", 250)).toBe(true);
+    expect(fallbackFitsMotorcycle("BMW R 1250 GS", "G 310 GS", "BMW", 250)).toBe(false);
+  });
+});

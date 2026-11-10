@@ -44,9 +44,7 @@ const yesNo = (value: boolean | null | undefined) =>
 /** Rows that depend on the viewer's cost assumptions. */
 function costRows({ uf, prices }: CostSettings): Row[] {
   const ipva = (vehicle: FipeVehicle) =>
-    vehicle.category === "cars" && vehicle.priceValue > 0
-      ? estimateIpva(vehicle.priceValue, uf)
-      : null;
+    vehicle.priceValue > 0 ? estimateIpva(vehicle.priceValue, uf, vehicle.category) : null;
   const cost = (entry: CatalogEntry | undefined) => costPerKm(entry?.inmetro, prices);
   return [
     {

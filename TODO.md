@@ -8,19 +8,18 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Completar a varredura dos anos antigos: a listagem até 1985 terminou (30.551 versões-ano,
-      `listingComplete`); faltam os preços (23.205 com preço, 76%, em 31/10/2026), que o daily busca conforme a cota da FIPE. Quando
-      terminarem, rodar `fetch:wikidata`, `fetch:galeria` e `build:catalog` para os modelos novos.
+- [ ] 🔴 Completar os preços de novembro/2026 (a daily do GitHub busca conforme a cota da FIPE): em
+      09/11/2026 as listagens estão completas, com preço em 69% dos carros (21.213 de 30.605
+      versões-ano), 100% das motos (9.079) e 70% dos caminhões (7.937 de 11.285). O catálogo só
+      troca de mês quando o novo é tão bom quanto o anterior (`selectLatestSnapshots`).
 - [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
       (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
 - [ ] 🟢 Fotos que ainda faltam: 79 versões recentes (de 2019 em diante), quase todas utilitários e marcas de nicho sem artigo
       com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
       de JAC iEV e E-J* (a linha junta carros, picapes e furgões), Jetour S06, GAC GS9 e Seres 3/5 (a
       reserva é por linha, e a FIPE chama as duas só de "SERES"); no Commons não há foto que sirva.
-- [ ] 🟢 Fotos de imprensa por conferir nas galerias: o "Bronco" da Ford (vai para o Bronco Sport,
-      como a FIPE agrupa), o GR Yaris (vai para o Yaris) e as fotos históricas dos aniversários (147,
-      Elba, Panorama), que vão para a última geração do modelo. Baixar de novo
-      `Toyota/00007-Toyota-corolla-cross-5-2-924f2b23720d.jpg`, que veio cortado.
+- [ ] 🟢 Fotos de imprensa: baixar de novo `Toyota/00007-Toyota-corolla-cross-5-2-924f2b23720d.jpg`,
+      que veio cortado, e rodar `npm run fotos:imprensa`.
 - [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
       aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
       vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
@@ -53,11 +52,14 @@ Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de u
 
 ### Produto
 
-- [ ] 🟡 Motos e caminhões no catálogo: o app já tem a escolha Carros / Motos / Caminhões
-      (`?categoria=`), e o daily varre motos e caminhões depois dos carros, com a cota que sobra. Em
-      01/11/2026 a listagem de motos parou em 2018 (3.576 versões-ano, sem preços) e a de caminhões não
-      começou. Falta: terminar as listagens e os preços, rodar `fetch:wmi` depois que os caminhões
-      entrarem (Scania, DAF…) e alíquotas de IPVA de motos e caminhões (hoje só carros mostram IPVA).
+- [ ] 🟡 Motos e caminhões no catálogo: desde novembro/2026 as listagens estão completas (2.049
+      versões de motos, 2.003 de caminhões), com IPVA pela alíquota de cada categoria e modelos do
+      Wikidata em 1.304 motos e 1.710 caminhões. Faltam ~750 motos (Shineray, Dafra, Kasinski,
+      Traxx…: marcas sem artigo; Honda CB/CG, Yamaha Fazer e KTM EXC, que o Wikidata nomeia de
+      outro jeito) e ~300 caminhões (Mercedes-Benz "1214", Agrale "13000": nomes só numéricos).
+      Algumas motos pegam a moto vizinha da família (Ducati Super Sport 937 → 800SS, Triumph Tiger
+      1200 → Tiger T110); a galeria do Commons dos modelos novos (`fetch:galeria`) e a Openverse
+      ainda não rodaram até o fim.
 
 ### Sem fonte aberta ou sem ganho por enquanto
 
@@ -86,9 +88,10 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 - Wayback, o que não deu: o Yaris 2020 (11 colunas de versões e o cabeçalho com só 7 nomes), o
   Civic G10 (é um catálogo de acessórios, com códigos de peça), os folhetos da Honda só em imagem
   (CR-V, ZR-V, Accord, Civic 2023 e Type R) e os PDFs da Hyundai que o arquivo guardou danificados.
-- Web Worker para expandir e filtrar o índice: medido em out/2026, não compensa (expandir 30 ms;
-  filtrar + contar facetas + agrupar 18–60 ms com 17.754 versões-ano). Medir de novo quando
-  entrarem motos e caminhões.
+- Web Worker para expandir e filtrar o índice: medido de novo em 09/11/2026 com 50.969
+  versões-ano, não compensa. Expandir leva ~230 ms uma vez, ao carregar; filtrar + contar facetas +
+  agrupar os 30.605 carros caiu de 130–150 ms para 51–59 ms (facetas contadas numa passada só, um
+  `Intl.Collator` no lugar de `localeCompare`). Medir de novo se passar de ~100 ms.
 - Chunk principal (292 KB, 92 KB com gzip): quase todo React DOM; só mexer se aparecer algo pesado.
 
 ## Futuro

@@ -244,32 +244,39 @@ export function computeFacets(
   entries: CatalogEntry[],
   filters: CatalogFilters,
 ): CatalogFacets {
+  // With 30 000 cars this runs on every keystroke: one pass for all the
+  // filters, and another only for a facet whose own filter is set (the
+  // others count over the same matches).
+  const all = entries.map((entry) => matches(entry, filters));
+  const without = (facet: ListFacet | ToggleFacet) => {
+    const own = filters[facet];
+    const set = Array.isArray(own) ? own.length > 0 : Boolean(own);
+    return set ? entries.map((entry) => matches(entry, filters, facet)) : all;
+  };
+
   const lists = {} as CatalogFacets["lists"];
   for (const facet of listFacets) {
+    const fits = without(facet);
     const counts = new Map<string, number>();
-    for (const entry of entries) {
+    entries.forEach((entry, index) => {
       const value = listFacetValue[facet](entry);
-      if (value !== undefined && !counts.has(value)) counts.set(value, 0);
-    }
-    for (const entry of entries) {
-      if (!matches(entry, filters, facet)) continue;
-      const value = listFacetValue[facet](entry);
-      if (value !== undefined) counts.set(value, (counts.get(value) ?? 0) + 1);
-    }
+      if (value !== undefined) counts.set(value, (counts.get(value) ?? 0) + (fits[index] ? 1 : 0));
+    });
     lists[facet] = [...counts]
       .map(([value, count]) => ({ value, count }))
-      .sort((left, right) => left.value.localeCompare(right.value, "pt-BR"));
+      .sort((left, right) => collator.compare(left.value, right.value));
   }
 
   const toggles = {} as CatalogFacets["toggles"];
   for (const facet of toggleFacets) {
-    toggles[facet] = entries.filter(
-      (entry) => matches(entry, filters, facet) && toggleFacetTest[facet](entry),
-    ).length;
+    const fits = without(facet);
+    toggles[facet] = entries.filter((entry, index) => fits[index] && toggleFacetTest[facet](entry)).length;
   }
 
   return { lists, toggles };
 }
+
+const collator = new Intl.Collator("pt-BR");
 
 export interface CatalogBounds {
   yearMin: number | null;
@@ -337,8 +344,10 @@ export function groupCatalog(
     if (a === null || b === null) return (a === null ? 1 : 0) - (b === null ? 1 : 0);
     return direction * (a - b);
   };
-  const name = (group: CatalogGroup) =>
-    `${group.entries[0].brand} ${group.entries[0].model}`;
+  // Names compared with one collator, each built once: thousands of groups.
+  const names = new Map(result.map((group) => [group, `${group.entries[0].brand} ${group.entries[0].model}`]));
+  const name = (group: CatalogGroup) => names.get(group)!;
+  const byNameOf = (left: CatalogGroup, right: CatalogGroup) => collator.compare(name(left), name(right));
   const consumption = (group: CatalogGroup) => group.entries[0].cityKmL;
   const fleet = (group: CatalogGroup) => group.entries[0].fleet?.line.total ?? null;
   // By fleet, a line's many versions would fill the first pages (all Gols):
@@ -356,15 +365,14 @@ export function groupCatalog(
       groups
         .sort(
           (left, right) =>
-            entryYear(right.entries[0]) - entryYear(left.entries[0]) ||
-            name(left).localeCompare(name(right), "pt-BR"),
+            entryYear(right.entries[0]) - entryYear(left.entries[0]) || byNameOf(left, right),
         )
         .forEach((group, index) => turn.set(group, index));
     }
   }
 
   return result.sort((left, right) => {
-    const byName = name(left).localeCompare(name(right), "pt-BR");
+    const byName = byNameOf(left, right);
     if (sort === "price-asc") return byPrice(left, right, 1) || byName;
     if (sort === "price-desc") return byPrice(left, right, -1) || byName;
     if (sort === "consumption") {

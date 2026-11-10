@@ -80,7 +80,7 @@ const ordinary = /^(turbo|sport|cross|cargo|plus|max|top|city|work|van|life|prev
 const wordsOf = (name: string) => new Set(plain(name.replace(/(\d)\.(\d{3})(?!\d)/g, "$1$2")).split(" "));
 
 /** The model whose label's words (after the brand's) all appear, the longest such ("Duster Oroch" over "Duster"). */
-function byLabel(words: Set<string>, models: PressModel[]): PressModel | undefined {
+function longestLabel(words: Set<string>, models: PressModel[]): { model: PressModel; size: number } | undefined {
   let best: { model: PressModel; size: number } | undefined;
   for (const model of models) {
     const tail = tailOf(model.label);
@@ -88,8 +88,10 @@ function byLabel(words: Set<string>, models: PressModel[]): PressModel | undefin
     if (!tail.every((word) => words.has(word))) continue;
     if (!best || tail.length > best.size) best = { model, size: tail.length };
   }
-  return best?.model;
+  return best;
 }
+
+const byLabel = (words: Set<string>, models: PressModel[]) => longestLabel(words, models)?.model;
 
 /** "Ram 2500 Laramie": FIPE's line, for a model whose label does not say it ("Ram pickup"). */
 function byFamily(words: Set<string>, models: PressModel[]): PressModel | undefined {
@@ -117,6 +119,10 @@ export function pressModel(name: string, models: PressModel[]): PressModel | und
   const parts = name.split("/").pop()!.split("-");
   const downloaded = parts.length > 4 && /^\d{4,}$/.test(parts[0]!);
   const names = [...(downloaded ? [parts.slice(3, -1).join(" ")] : []), name].map(wordsOf);
+  // The whole name wins when it names a longer label: "00030-Toyota-GR-Yaris-…" filed
+  // under "GR" is the GR Yaris, not the Yaris its original name ("Yaris RDUR0410") says.
+  const [original, whole] = names.map((words) => longestLabel(words, models));
+  if (whole && (!original || whole.size > original.size)) return whole.model;
   for (const find of [byLabel, byFamily, byLast]) {
     for (const words of names) {
       const model = find(words, models);

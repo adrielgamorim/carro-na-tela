@@ -22,7 +22,7 @@ const { values } = parseArgs({
 const article = "https://en.wikipedia.org/wiki/Vehicle_identification_number";
 const response = await fetch(
   "https://en.wikipedia.org/w/index.php?title=Vehicle_identification_number&action=raw",
-  { headers: { "User-Agent": "carro-na-tela/1.0 (catalogo FIPE local)" } },
+  { headers: { "User-Agent": "carro-na-tela/1.0 (https://github.com/adrielgamorim/carro-na-tela)" } },
 );
 if (!response.ok) throw new Error(`Wikipedia respondeu ${response.status}`);
 const wikitext = await response.text();

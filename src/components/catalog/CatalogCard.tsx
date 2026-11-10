@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { MouseEvent } from "react";
 import { Check, Plus, RefreshCw, Users } from "lucide-react";
 import type { CatalogGroup } from "../../catalog/filters";
-import { estimateIpva, formatIpva, ipvaNote } from "../../catalog/costs";
+import { estimateIpva, formatIpva, ipvaNoteOf } from "../../catalog/costs";
 import { entryTags, yearLabel } from "../../catalog/labels";
 import { fleetOfYear, formatFleetCount } from "../../catalog/fleet";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
@@ -39,13 +39,13 @@ export interface PageLink {
 
 const maxYearPills = 6;
 
-/** Yearly IPVA estimate under the price, in the state chosen in the cost settings; cars' rates only. */
+/** Yearly IPVA estimate under the price, in the state chosen in the cost settings, at the category's rate. */
 function IpvaLine({ priceValue, category }: { priceValue: number | null; category: CatalogEntry["category"] }) {
   const { uf } = useCostSettings();
-  if (!priceValue || category !== "cars") return null;
+  if (!priceValue) return null;
   return (
-    <small className="catalog-card-ipva" title={ipvaNote}>
-      IPVA ≈ {formatIpva(estimateIpva(priceValue, uf))} ({uf})
+    <small className="catalog-card-ipva" title={ipvaNoteOf(category)}>
+      IPVA ≈ {formatIpva(estimateIpva(priceValue, uf, category))} ({uf})
     </small>
   );
 }

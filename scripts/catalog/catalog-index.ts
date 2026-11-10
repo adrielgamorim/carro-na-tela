@@ -29,7 +29,7 @@ import type { AutosegFile } from "../seguro/autoseg.ts";
 import { catalogBrand } from "../../src/catalog/brands.ts";
 import type { ModelGeneration } from "../wikidata/generations.ts";
 import type { WikidataDetails } from "../wikidata/details.ts";
-import { fallbackFitsModel, fallbackKey } from "../wikidata/fallback.ts";
+import { fallbackFitsModel, fallbackFitsMotorcycle, fallbackKey } from "../wikidata/fallback.ts";
 import type { FallbackFile } from "../wikidata/fallback.ts";
 import { createWikidataMatcher, findWikidataOverride } from "../wikidata/match.ts";
 import type { WikidataModel, WikidataOverride } from "../wikidata/match.ts";
@@ -318,7 +318,13 @@ export function buildCatalogIndex(
         years: versionYears(version.y.map(([yearCode]) => yearCode), now),
       });
       const lineKey = fallbackKey(brandName(version), getModelFamily(version.n));
-      const fallback = wikidata.fallback?.[lineKey] ?? undefined;
+      const lineFallback = wikidata.fallback?.[lineKey] ?? undefined;
+      const fallback =
+        lineFallback &&
+        infos[version.s]?.category === "motorcycles" &&
+        !fallbackFitsMotorcycle(lineFallback.label, version.n, brandName(version), version.a?.displacementCc)
+          ? undefined
+          : lineFallback;
       const fromWikidata = model ? toCatalogModel(model, wikidata.details?.[model.id], wikidata.specs?.[model.id]) : undefined;
       // A Wikidata model without an image keeps its text and borrows the
       // line's fallback picture.

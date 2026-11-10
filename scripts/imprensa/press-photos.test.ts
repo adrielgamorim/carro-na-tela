@@ -26,6 +26,15 @@ describe("press photos", () => {
     expect(pressModel("00001-Ram-Dakota-x-ab12cd34ef56.jpg", [{ id: "R", label: "Ram 1500 (DT)" }])).toBeUndefined();
   });
 
+  it("takes the longer label the whole name gives over the original name's", () => {
+    const toyota = [
+      { id: "Y", label: "Toyota Yaris (XP150)" },
+      { id: "G", label: "Toyota GR Yaris" },
+    ];
+    expect(pressModel("00030-Toyota-GR-Yaris-RDUR0410-2048x1365-38bae3ffae93.jpg", toyota)?.id).toBe("G");
+    expect(pressModel("00023-Toyota-Yaris-DSC01428-2048x1365-c284edc81d82.jpg", toyota)?.id).toBe("Y");
+  });
+
   it("finds a model by FIPE's line when its label does not say it", () => {
     const ram = [
       { id: "P", label: "Ram pickup", families: ["2500"] },

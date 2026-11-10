@@ -43,10 +43,56 @@ export const ipvaRates: Record<Uf, { name: string; min: number; max: number }> =
   TO: { name: "Tocantins", min: 2.5, max: 3.5 },
 };
 
-export const ipvaNote =
-  "Estimativa com alíquotas de 2026 para automóveis (out/2026) sobre o valor FIPE atual. " +
-  "Os estados usam a própria tabela de valor venal e têm isenções (elétricos, idade, PcD) " +
-  "não consideradas; o valor oficial é o do carnê.";
+type Rates = Record<Uf, { min: number; max: number }>;
+
+/**
+ * 2026 IPVA rates (%) for motorcycles. A range where the rate depends on the
+ * engine size. Read in Nov/2026 from CNN Brasil, checked against ValorFinal
+ * where it read a single rate in the state's own source (they agree).
+ */
+export const motorcycleIpvaRates: Rates = {
+  AC: { min: 1, max: 1 }, AL: { min: 2, max: 3.25 }, AM: { min: 2, max: 2 }, AP: { min: 1.5, max: 1.5 },
+  BA: { min: 1, max: 1 }, CE: { min: 2, max: 3.5 }, DF: { min: 2, max: 2 }, ES: { min: 1, max: 1 },
+  GO: { min: 3, max: 3 }, MA: { min: 1, max: 2.5 }, MG: { min: 2, max: 2 }, MS: { min: 2, max: 2 },
+  MT: { min: 1, max: 3.5 }, PA: { min: 1, max: 1 }, PB: { min: 2.5, max: 2.5 }, PE: { min: 1, max: 2 },
+  PI: { min: 2, max: 2 }, PR: { min: 1, max: 1.9 }, RJ: { min: 2, max: 2 }, RN: { min: 2, max: 2 },
+  RO: { min: 2, max: 2 }, RR: { min: 2, max: 2 }, RS: { min: 2, max: 2 }, SC: { min: 1, max: 1 },
+  SE: { min: 2, max: 2 }, SP: { min: 2, max: 2 }, TO: { min: 2.5, max: 3.5 },
+};
+
+/**
+ * 2026 IPVA rates (%) for trucks (and buses). Same sources; where they
+ * disagree (MS, RR, TO), the range covers both.
+ */
+export const truckIpvaRates: Rates = {
+  AC: { min: 1, max: 1 }, AL: { min: 1, max: 1 }, AM: { min: 1, max: 1 }, AP: { min: 1.5, max: 1.5 },
+  BA: { min: 1, max: 1 }, CE: { min: 1, max: 1 }, DF: { min: 1, max: 1 }, ES: { min: 1, max: 1 },
+  GO: { min: 1.25, max: 1.25 }, MA: { min: 1, max: 1 }, MG: { min: 1, max: 1 }, MS: { min: 1.5, max: 3 },
+  MT: { min: 1, max: 1 }, PA: { min: 1, max: 1 }, PB: { min: 1, max: 1 }, PE: { min: 1, max: 1 },
+  PI: { min: 1, max: 1 }, PR: { min: 1, max: 1 }, RJ: { min: 1, max: 1 }, RN: { min: 1, max: 1 },
+  RO: { min: 1, max: 1 }, RR: { min: 1, max: 2 }, RS: { min: 1, max: 1 }, SC: { min: 1, max: 1 },
+  SE: { min: 1, max: 1 }, SP: { min: 1.5, max: 1.5 }, TO: { min: 1, max: 1.25 },
+};
+
+export type IpvaCategory = "cars" | "motorcycles" | "trucks";
+
+const ratesOf: Record<IpvaCategory, Rates> = { cars: ipvaRates, motorcycles: motorcycleIpvaRates, trucks: truckIpvaRates };
+const categoryNames: Record<IpvaCategory, string> = { cars: "automóveis", motorcycles: "motocicletas", trucks: "caminhões" };
+
+/** The rates (%) of a state for a vehicle category. */
+export function ipvaRateOf(uf: Uf, category: IpvaCategory = "cars"): { min: number; max: number } {
+  return ratesOf[category][uf];
+}
+
+export function ipvaNoteOf(category: IpvaCategory = "cars"): string {
+  return (
+    `Estimativa com alíquotas de 2026 para ${categoryNames[category]} sobre o valor FIPE atual. ` +
+    "Os estados usam a própria tabela de valor venal e têm isenções (elétricos, idade, PcD) " +
+    "não consideradas; o valor oficial é o do carnê."
+  );
+}
+
+export const ipvaNote = ipvaNoteOf("cars");
 
 export const ufs = Object.keys(ipvaRates) as Uf[];
 
@@ -55,8 +101,8 @@ export function isUf(value: unknown): value is Uf {
 }
 
 /** Yearly IPVA in R$ for a FIPE value; min equals max for single-rate states. */
-export function estimateIpva(priceValue: number, uf: Uf): { min: number; max: number } {
-  const { min, max } = ipvaRates[uf];
+export function estimateIpva(priceValue: number, uf: Uf, category: IpvaCategory = "cars"): { min: number; max: number } {
+  const { min, max } = ipvaRateOf(uf, category);
   return { min: (priceValue * min) / 100, max: (priceValue * max) / 100 };
 }
 

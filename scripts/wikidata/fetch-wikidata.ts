@@ -54,6 +54,8 @@ const classes = [
   { id: "Q29048322", subclasses: false },
   { id: "Q29048319", subclasses: false },
   { id: "Q21546143", subclasses: false },
+  // Motorcycle models (Honda CB 500X, Yamaha MT-07), for the motorcycles FIPE lists.
+  { id: "Q23866334", subclasses: true },
 ];
 // One class per query: VALUES over the class makes the planner time out.
 const idsQuery = ({ id, subclasses }: (typeof classes)[number]) =>

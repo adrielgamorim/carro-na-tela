@@ -59,6 +59,7 @@ export const brandNames: Record<string, string[]> = {
   "Mercedes-Benz": ["Mercedes-Benz", "Mercedes"],
   GWM: ["GWM", "Great Wall", "Haval"],
   "Land Rover": ["Land Rover", "Range Rover"],
+  "SAAB-SCANIA": ["Scania", "Saab-Scania"],
 };
 
 function words(text: string): string[] {
@@ -184,6 +185,10 @@ export function fipeNameAliases(brand: string, fipeWords: string[]): string[][] 
     const series = /^(\d)\d\d[A-Z]*$/.exec(fipeWords[0] ?? "");
     if (series?.[1]) aliases.push(["SERIE", series[1], ...fipeWords.slice(1)]);
   }
+  // Scania trucks by their cab series: "G-360 B" is the "Scania G-series", "T-113 H" the "T Series".
+  if (/SCANIA/i.test(brand) && /^[GLPRST]$/.test(fipeWords[0] ?? "") && /^\d{3}$/.test(fipeWords[1] ?? "")) {
+    aliases.push([fipeWords[0]!, "SERIES"]);
+  }
   if (brand === "Land Rover") {
     const expanded = fipeWords.flatMap((word, index) => {
       if (word === "R" && fipeWords[index - 1] === "RANGE") return ["ROVER"];
@@ -277,7 +282,15 @@ export function createWikidataMatcher(
     const glued = /^(.*\d)([A-Z]{1,2})$/.exec(fipeWords[0] ?? "");
     const candidates =
       glued && !engineSuffixes.has(glued[2] ?? "") ? keys.get(glued[1] ?? "") : undefined;
-    return candidates ? rank(candidates, version.years) : null;
+    if (candidates) return rank(candidates, version.years);
+    // Trucks named by weight and power first: "11-180 Delivery", "17-280 Constellation".
+    if (/^\d+$/.test(fipeWords[0] ?? "")) {
+      for (const word of fipeWords.slice(1)) {
+        const line = /^[A-Z]{5,}$/.test(word) ? keys.get(word) : undefined;
+        if (line) return rank(line, version.years);
+      }
+    }
+    return null;
   };
 }
 

@@ -299,12 +299,14 @@ function specRows(
       highwayKmL: consumption?.fuelHighway,
     }),
   );
-  // IPVA rates are for passenger cars; motorcycles and trucks pay other rates.
-  if (vehicle.category === "cars" && vehicle.priceValue > 0) {
+  // Each category pays its own IPVA rate; the insurance figures are for cars only.
+  if (vehicle.priceValue > 0) {
     rows.push([
       `IPVA estimado (${settings.uf})`,
-      formatIpva(estimateIpva(vehicle.priceValue, settings.uf)),
+      formatIpva(estimateIpva(vehicle.priceValue, settings.uf, vehicle.category)),
     ]);
+  }
+  if (vehicle.category === "cars" && vehicle.priceValue > 0) {
     const insurance = enrichment?.data.safety?.data.insurance;
     if (insurance) {
       rows.push([`Seguro estimado (${settings.uf})`, formatInsurance(vehicle.priceValue, insurance, settings.uf)]);

@@ -235,6 +235,32 @@ export async function findFallback(
  * "Toyota Hilux SW4"). FIPE families can be broad ("Volvo XC" covers the XC40,
  * XC60 and XC90), so the line alone is not enough.
  */
+/**
+ * A motorcycle's line is its model number ("CB 500X"), which FIPE's family
+ * ("CB") loses: the line's fallback fits only when its title, without the
+ * brand, is in the version's name ("Royal Enfield Bullet" for "Bullet 500",
+ * "Honda CB500X" for "CB 500X") or says its displacement; not "Honda CBX 750F"
+ * for a "CB 500X" nor "Honda Super Cub" for a "SUPER HAWK 1000".
+ */
+export function fallbackFitsMotorcycle(
+  fallbackLabel: string,
+  versionName: string,
+  brand: string,
+  displacementCc: number | undefined,
+): boolean {
+  const plain = (text: string) =>
+    text
+      .normalize("NFD")
+      .replace(/\p{M}/gu, "")
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "");
+  let line = plain(fallbackLabel);
+  const brandKey = [brand, ...(brandNames[brand] ?? [])].map(plain).find((key) => key && line.startsWith(key));
+  if (brandKey) line = line.slice(brandKey.length);
+  if (line && plain(versionName).includes(line)) return true;
+  return displacementCc !== undefined && new RegExp(`(?<!\\d)${displacementCc}(?!\\d)`).test(fallbackLabel);
+}
+
 export function fallbackFitsModel(fallbackLabel: string, modelLabel: string, brand: string): boolean {
   // The brand is in both titles ("Volvo XC90", "Volvo EX40") and tells nothing.
   const brandWords = new Set([brand, ...(brandNames[brand] ?? [])].flatMap(words));
