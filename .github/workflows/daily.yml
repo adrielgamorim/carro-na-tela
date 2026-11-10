@@ -8,7 +8,12 @@ name: Atualização diária
 
 on:
   schedule:
-    - cron: "0 4 * * *" # 01:00 em Brasília (o GitHub pode atrasar alguns minutos)
+    - cron: "0 4 * * *" # 01:00 em Brasília (o GitHub tem atrasado para 11–12 UTC)
+    # A second run: each FIPE key's quota lasts 24 h from its first use, so a
+    # run the delay starts before yesterday's finds the keys spent; this one
+    # gets them once they are back. With the keys spent it stops in minutes,
+    # and `concurrency` queues it behind a run still going.
+    - cron: "0 18 * * *" # 15:00 em Brasília
   workflow_dispatch:
 
 # Pushes go through the deploy key; the token only reads.

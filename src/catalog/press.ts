@@ -45,6 +45,11 @@ export interface PressSheet {
   source?: string;
   /** The sheet's own file, for the press rooms that link it openly. */
   url?: string;
+  /**
+   * The sheet is of another trim than the version's, the nearest there is
+   * (a "1500 Laramie" with the "1500 Big Horn" sheet): its figures may differ.
+   */
+  otherTrim?: boolean;
 }
 
 /** The release figures of a version-year, and its spec sheet. */

@@ -60,6 +60,7 @@ function PressSources({ press }: { press: PressSpecs }) {
         </a>
         {/* The open press rooms' sheets are of the engine and gearbox, over a couple of model years. */}
         {press.sheet.source ? ` (${press.sheet.title})` : " desta versão e ano"}
+        {press.sheet.otherTrim && " · ficha da versão mais próxima, os números podem diferir"}
       </>
     );
   }

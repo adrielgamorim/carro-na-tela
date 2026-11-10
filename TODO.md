@@ -8,7 +8,10 @@ disponibilidade dela.
 
 ### Publicação e infraestrutura
 
-- [ ] 🔴 Completar os preços de novembro/2026 (a daily do GitHub busca conforme a cota da FIPE): em
+- [ ] 🔴 Completar os preços de novembro/2026 (a daily do GitHub busca conforme a cota da FIPE). A
+      cota de cada chave é de 24 h desde o primeiro uso (`x-ratelimit-reset: 86400`), e o GitHub
+      atrasa o cron das 04:00 UTC para 11–12 UTC: em 10/11 a daily começou 23 min antes da de 09/11
+      e achou as 6 chaves esgotadas (só ~570 preços); por isso há uma segunda execução às 18:00 UTC. Em
       09/11/2026 as listagens estão completas, com preço em 69% dos carros (21.213 de 30.605
       versões-ano), 100% das motos (9.079) e 70% dos caminhões (7.937 de 11.285). O catálogo só
       troca de mês quando o novo é tão bom quanto o anterior (`selectLatestSnapshots`).
@@ -26,7 +29,7 @@ disponibilidade dela.
       linhas fora do catálogo, os motores sem ficha (Jumpy e Expert 1.6, Jumper 2.0, Boxer de outros
       anos, Ducato Chassi e Executivo 2019–20) e o comprimento das vans (a FIPE não diz L1H1 ou L3H2:
       as que empatam dão só os números em comum). A 1500 Laramie 2026 leva a da Big Horn (não há a
-      dela). As Rampage diesel 2023–24, que a FIPE chama de "2.0 TB Diesel", buscam a ficha da 2.2
+      dela), com o aviso "ficha da versão mais próxima" (`otherTrim`, 26 fichas assim). As Rampage diesel 2023–24, que a FIPE chama de "2.0 TB Diesel", buscam a ficha da 2.2
       (`sheetEngineLiters`).
       O documento 322 está indisponível no site.
 
@@ -107,8 +110,8 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 - Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
   funciona em domínio próprio).
 - Teste de ponta a ponta da Consulta (consulta → comparar), com as respostas da FIPE simuladas
-  (`page.route("**/api/fipe/**")`); o do catálogo já existe (`npm run test:e2e`). Também pôr o
-  e2e na CI, que precisaria de `npx playwright install chromium` e `PLAYWRIGHT_CHANNEL=chromium`.
+  (`page.route("**/api/fipe/**")`); o do catálogo já existe (`npm run test:e2e`, só local: na CI
+  não, por decisão de 10/11/2026).
 - APIs pagas de consulta por placa (exige backend e atenção à LGPD).
 
 ## Concluído

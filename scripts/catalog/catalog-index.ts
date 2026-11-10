@@ -18,7 +18,7 @@ import { pressSpecsOf } from "../imprensa/facts.ts";
 import type { PressFact } from "../imprensa/facts.ts";
 import { sheetOfVersion, trimsOf } from "../fichas/sheets.ts";
 import type { ReadSheet } from "../fichas/sheets.ts";
-import { openSheetOfVersion } from "../fichas/open-sheets.ts";
+import { openSheetOfVersion, words as sheetWords } from "../fichas/open-sheets.ts";
 import type { OpenSheet } from "../fichas/open-sheets.ts";
 import { sheetEngineLiters, stellantisAsOpen } from "../fichas/stellantis-open.ts";
 import { equipmentOfVersion } from "../fichas/equipment.ts";
@@ -435,7 +435,8 @@ export function buildCatalogIndex(
   if (sheets?.length || openSheets?.length) {
     // Stellantis' sheets the exact match leaves out are tried the open press rooms' way.
     const fallback = [...(openSheets ?? []), ...(sheets ?? []).flatMap((sheet) => stellantisAsOpen(sheet) ?? [])];
-    const sheetIndex = new Map<ReadSheet | OpenSheet, number>();
+    // A sheet's index in the list, once as the version's own and once as another trim's.
+    const sheetIndex = new Map<ReadSheet | OpenSheet, { own?: number; other?: number }>();
     const sources = { vw: "Volkswagen", renault: "Renault", toyota: "Toyota", stellantis: "Stellantis", hyundai: "Hyundai", honda: "Honda", kia: "Kia", gwm: "GWM", ford: "Ford", nissan: "Nissan" } as const;
     // Each line's trim words, to read them in the sheets' titles.
     const lineNames = new Map<string, string[]>();
@@ -447,6 +448,7 @@ export function buildCatalogIndex(
     for (const version of sorted) {
       const lineKey = `${brandName(version)}|${getModelFamily(version.n)}`;
       const diesel = /diesel/i.test(versionFuel.get(version) ?? "");
+      const nameWords = sheetWords(version.n);
       const target = {
         brand: brandName(version),
         family: getModelFamily(version.n),
@@ -470,17 +472,27 @@ export function buildCatalogIndex(
           });
         // Sheets that fit as well but share no figure say nothing.
         if (!sheet || !Object.keys(sheet.specs).length) return -1;
-        if (!sheetIndex.has(sheet)) {
-          sheetIndex.set(sheet, sheetList.length);
-          sheetList.push({
-            title: sheet.title,
-            page: sheet.page,
-            specs: sheet.specs,
-            // A PDF opens in the browser; Renault's spreadsheet would download, so its page.
-            ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand !== "renault" && sheet.brand !== "stellantis" && { url: sheet.url }) }),
-          });
-        }
-        return sheetIndex.get(sheet)!;
+        // An open sheet naming a trim the version does not ("Big Horn" for a "LARAMIE"): the
+        // nearest there is, said so. FIPE abbreviates trims ("LAR."), so a word it starts counts.
+        const otherTrim =
+          "trims" in sheet &&
+          sheet.trims.length > 0 &&
+          !sheet.trims.some((trim) => nameWords.some((own) => own === trim || (own.length >= 3 && trim.startsWith(own))));
+        const known = sheetIndex.get(sheet);
+        const at = otherTrim ? known?.other : known?.own;
+        if (at !== undefined) return at;
+        const entry = { ...known };
+        entry[otherTrim ? "other" : "own"] = sheetList.length;
+        sheetIndex.set(sheet, entry);
+        sheetList.push({
+          title: sheet.title,
+          page: sheet.page,
+          specs: sheet.specs,
+          // A PDF opens in the browser; Renault's spreadsheet would download, so its page.
+          ...("line" in sheet && { source: sources[sheet.brand], ...(sheet.brand !== "renault" && sheet.brand !== "stellantis" && { url: sheet.url }) }),
+          ...(otherTrim && { otherTrim: true }),
+        });
+        return sheetList.length - 1;
       });
       if (perYear.some((sheet) => sheet >= 0)) version.t = perYear;
     }
