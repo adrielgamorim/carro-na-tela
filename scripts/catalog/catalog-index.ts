@@ -46,19 +46,36 @@ export interface CrawlSnapshot {
   vehicles: CrawledVehicle[];
 }
 
-/** Keeps only the newest reference month crawled for each category. */
+/**
+ * One reference month per category: a new month's crawl starts with a partial
+ * listing and no prices, so it takes over only once it is as good as the one
+ * before (complete listing first, then more prices, then more versions; the
+ * newest on a tie). Otherwise the site would lose most of its catalog on the
+ * first day of a month the quota cannot finish.
+ */
 export function selectLatestSnapshots(
   snapshots: CrawlSnapshot[],
 ): CrawlSnapshot[] {
-  const latest = new Map<FipeCategory, CrawlSnapshot>();
+  const rank = (snapshot: CrawlSnapshot) => [
+    snapshot.listingComplete ? 1 : 0,
+    snapshot.vehicles.filter((vehicle) => vehicle.detail?.priceValue).length,
+    snapshot.vehicles.length,
+    Number(snapshot.reference),
+  ];
+  const better = (a: CrawlSnapshot, b: CrawlSnapshot) => {
+    const [ra, rb] = [rank(a), rank(b)];
+    const at = ra.findIndex((value, index) => value !== rb[index]);
+    return at >= 0 && ra[at]! > rb[at]!;
+  };
+  const chosen = new Map<FipeCategory, CrawlSnapshot>();
 
   for (const snapshot of snapshots) {
-    const current = latest.get(snapshot.category);
-    if (!current || Number(snapshot.reference) > Number(current.reference)) {
-      latest.set(snapshot.category, snapshot);
+    const current = chosen.get(snapshot.category);
+    if (!current || better(snapshot, current)) {
+      chosen.set(snapshot.category, snapshot);
     }
   }
-  return [...latest.values()];
+  return [...chosen.values()];
 }
 
 function yearRank(yearCode: string): number {

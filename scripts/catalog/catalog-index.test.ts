@@ -47,6 +47,20 @@ describe("selectLatestSnapshots", () => {
 
     expect(selectLatestSnapshots([newer, older, trucks])).toEqual([newer, trucks]);
   });
+
+  it("keeps the last month until the new one's crawl is as good", () => {
+    const priced = [vehicle({}), vehicle({ id: "x", modelCode: "11" })];
+    const unpriced = priced.map((item) => ({ ...item, detail: null }));
+    const october = { ...snapshot("338", priced), listingComplete: true };
+    // The first day of November: a partial listing, no prices.
+    expect(selectLatestSnapshots([october, snapshot("339", unpriced.slice(0, 1))])).toEqual([october]);
+    // Listed in full but not priced yet: still October.
+    const listed = { ...snapshot("339", unpriced), listingComplete: true };
+    expect(selectLatestSnapshots([october, listed])).toEqual([october]);
+    // Listed and priced as far as October: November.
+    const done = { ...snapshot("339", priced), listingComplete: true };
+    expect(selectLatestSnapshots([october, done])).toEqual([done]);
+  });
 });
 
 describe("buildCatalogIndex", () => {
