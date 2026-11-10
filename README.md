@@ -3,7 +3,7 @@
 [![CI](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/ci.yml/badge.svg)](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/codeql.yml/badge.svg)](https://github.com/adrielgamorim/carro-na-tela/actions/workflows/codeql.yml)
 
-Consulta de valores da tabela FIPE, catálogo de carros com busca por facetas e comparação de
+Consulta de valores da tabela FIPE, catálogo de carros, motos e caminhões com busca por facetas e comparação de
 veículos, com dados abertos do INMETRO, ANP, Senatran e Wikidata somados ao preço.
 
 Feito com React 19, TypeScript 6 e Vite 8, sem backend próprio: o catálogo é um índice estático
@@ -20,11 +20,10 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 
 **Catálogo** (página inicial)
 
-- Índice estático das versões-ano de carros da FIPE: 5.021 versões e 17.754 versões-ano de 2009 em
-  diante (80 marcas), 13.381 com preço; versões sem preço têm "Consultar preço", que busca ao vivo. A
-  varredura agora desce até 1985, o ano mais antigo da tabela (mais 1.195 pares marca-ano, ~11 mil
-  versões-ano, e as 28 marcas que só têm modelos antigos); os anos antigos entram à medida que a
-  listagem e os preços avançam, só com preço e o que vem do nome FIPE (o INMETRO começa em 2009).
+- Índice estático de toda a tabela FIPE, de 1985 em diante, em abas Carros / Motos / Caminhões
+  (`?categoria=`): em novembro/2026, 7.404 versões de carros (30.605 versões-ano), 2.049 de motos
+  (9.079) e 2.003 de caminhões (11.285). Os preços do mês chegam aos poucos, pela cota da FIPE;
+  versões ainda sem preço têm "Consultar preço", que busca ao vivo. Os dados do INMETRO começam em 2009.
 - Filtros por marca, linha, procedência (nacional/importado), configuração, ano, preço, propulsão, combustível, câmbio e marchas,
   cilindrada, portas, porte, consumo, direção, ar, turbo, 4x4 e 0 km, todos refletidos na URL.
 - Marcas que a FIPE lista com mais de um nome viram uma só (`src/catalog/brands.ts`): "Caoa Chery" e
@@ -111,7 +110,7 @@ npm run unschedule:daily # remove a tarefa agendada
 
 | Fonte | O que traz | Script | Frequência | Cobertura hoje |
 |---|---|---|---|---|
-| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | De 2009 em diante: listagem completa, 75% com preço; de 1985 a 2008 em andamento |
+| FIPE (API Parallelum) | Versões, anos, preços, histórico | `crawl:fipe` | Diária (limite de requisições) | Listagem completa de 1985 em diante; os preços do mês chegam em alguns dias |
 | INMETRO PBEV 2010–2026 | Consumo, porte, câmbio, marchas, direção, ar, autonomia | `parse:pbev` | Anual (PDF novo) | ~3.000 versões |
 | Wikidata / Commons / Wikipedia | Foto, descrição, dimensões, peso e potência da linha do modelo | `fetch:wikidata` | De vez em quando | 4.917 versões com foto |
 | Wikimedia Commons (categorias) | Galeria por geração: frente, traseira, lateral, interior | `fetch:galeria` | De vez em quando | 8.243 fotos de 539 modelos |
@@ -279,8 +278,8 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
 
 - `npm run fetch:wmi` baixa a lista de WMI (3 primeiros caracteres do chassi) do artigo "Vehicle
   identification number" da Wikipedia em inglês e casa cada fabricante com as marcas FIPE. Os
-  países são traduzidos por `scripts/vin/countries-pt.json`. Motos, caminhões e ônibus ficam sem
-  marca, porque o catálogo só tem carros. A vPIC não conhece a maioria dos WMIs nacionais.
+  países são traduzidos por `scripts/vin/countries-pt.json`; os de caminhões (MAN, Scania, DAF,
+  Volvo…) e motos também casam com as marcas FIPE. A vPIC não conhece a maioria dos WMIs nacionais.
 - O ano-modelo vem do 10º caractere (o código se repete a cada 30 anos; vale o mais recente até o
   ano que vem). O chassi não é guardado; só a NHTSA o recebe.
 
@@ -289,7 +288,8 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
 `npm run daily` roda varredura, frota, índice e ANP (e Wikidata e WMI quando têm mais de 30 dias),
 com uma trava contra execuções simultâneas e log em `logs/daily-<data>.log`.
 
-- **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda à 01:00 (Brasília) com as
+- **No GitHub (padrão):** o workflow `.github/workflows/daily.yml` roda às 04:00 e às 18:00 UTC (o GitHub atrasa a primeira para 11–12 UTC; a segunda pega a
+  cota da FIPE quando a primeira a acha esgotada) com as
   chaves dos segredos `FIPE_TOKEN*`, guarda `.cache/` no cache do Actions para a varredura
   continuar de onde parou e commita `data/` e `public/catalog/` no `main`. Se uma fonte falhar,
   as outras são publicadas e a execução fica marcada como falha. Uma vez,
@@ -358,9 +358,6 @@ Vitest 5 com jsdom e Testing Library, ESLint 10. Os scripts rodam com o TypeScri
 
 ## O que falta
 
-As pendências estão em [TODO.md](TODO.md), por área e prioridade. As principais:
-
-- Publicar: deploy do site e do Worker, daily fora do Windows.
-- Dados: completar os preços da varredura (semanas) e pôr o Catálogo como aba inicial.
-- Qualidade: testes de ponta a ponta e CSS separado por componente.
-- Produto: motos e caminhões no catálogo.
+Nada de desenvolvimento: o [TODO.md](TODO.md) guarda a rotina de manutenção (a daily, as alíquotas
+de IPVA de cada ano, novas rodadas da Openverse e dos releases), os limites conhecidos (o que não
+tem fonte aberta) e as ideias para o futuro, como publicar o site num domínio próprio.

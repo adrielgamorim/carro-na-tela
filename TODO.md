@@ -1,78 +1,59 @@
 # TODO — Carro na tela
 
-Pendências por área, com prioridade (🔴 alta, 🟡 média, 🟢 baixa). O que já foi feito está em
-[Concluído](#concluído), no fim. Antes de integrar uma fonte nova, confira os termos de uso e a
-disponibilidade dela.
+O projeto está completo: não há trabalho de desenvolvimento em aberto. Este arquivo guarda a
+rotina de [manutenção](#manutenção), os [limites conhecidos](#limites-conhecidos) (o que não tem
+fonte aberta, para rever se algo mudar), as ideias para o [futuro](#futuro) e o que já foi
+[concluído](#concluído). Antes de integrar uma fonte nova, confira os termos de uso dela.
 
-## A fazer
+## Manutenção
 
-### Publicação e infraestrutura
+O que roda sozinho e o que precisa de uma rodada de vez em quando.
 
-- [ ] 🔴 Completar os preços de novembro/2026 (a daily do GitHub busca conforme a cota da FIPE). A
-      cota de cada chave é de 24 h desde o primeiro uso (`x-ratelimit-reset: 86400`), e o GitHub
-      atrasa o cron das 04:00 UTC para 11–12 UTC: em 10/11 a daily começou 23 min antes da de 09/11
-      e achou as 6 chaves esgotadas (só ~570 preços); por isso há uma segunda execução às 18:00 UTC. Em
-      09/11/2026 as listagens estão completas, com preço em 69% dos carros (21.213 de 30.605
-      versões-ano), 100% das motos (9.079) e 70% dos caminhões (7.937 de 11.285). O catálogo só
-      troca de mês quando o novo é tão bom quanto o anterior (`selectLatestSnapshots`).
-- [ ] 🟡 Atualizar todo ano as alíquotas de IPVA e os preços padrão de combustível
-      (`src/catalog/costs.ts`, hoje out/2026) e ler o PBEV 2027 quando sair.
-- [ ] 🟢 Fotos que ainda faltam: 79 versões recentes (de 2019 em diante), quase todas utilitários e marcas de nicho sem artigo
-      com foto (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), além
-      de JAC iEV 330P/350T/750V/1200T e E-J* (sem foto no Commons; o "JAC iEV 002" é um iEV5, por isso
-      o iEV 20 está como `none` em `fallback-titles.json`), Jetour S06 e GAC GS9 (não achei a que
-      modelo chinês correspondem). Seres 3 e 5 e iEV 40 já têm foto: "SERES" e "iEV" formam linha com
-      a palavra seguinte (`getModelFamily`), e as fotos foram escolhidas à mão.
-- [ ] 🟢 Fichas técnicas da Stellantis: as que o casamento exato deixa de fora já vão pelo casamento
-      aberto (`scripts/fichas/stellantis-open.ts`: linha, anos, motor, combustível, câmbio, cabine;
-      vans só pelo nome da carroceria, que os PDFs quebram: "C argo L 3 H 2", "MAXI CARGO"). Faltam as
-      linhas fora do catálogo, os motores sem ficha (Jumpy e Expert 1.6, Jumper 2.0, Boxer de outros
-      anos, Ducato Chassi e Executivo 2019–20) e o comprimento das vans (a FIPE não diz L1H1 ou L3H2:
-      as que empatam dão só os números em comum). A 1500 Laramie 2026 leva a da Big Horn (não há a
-      dela), com o aviso "ficha da versão mais próxima" (`otherTrim`, 26 fichas assim). As Rampage diesel 2023–24, que a FIPE chama de "2.0 TB Diesel", buscam a ficha da 2.2
-      (`sheetEngineLiters`).
-      O documento 322 está indisponível no site.
+- **Daily (sozinha):** o GitHub Actions (`.github/workflows/daily.yml`) busca os preços da FIPE,
+  a frota e os combustíveis e commita os dados no `main`, às 04:00 e às 18:00 UTC. A cota de
+  cada chave da FIPE vale 24 h desde o primeiro uso (`x-ratelimit-reset: 86400`), e o GitHub
+  atrasa o cron das 04:00 para 11–12 UTC; a segunda execução pega a cota quando a primeira acha
+  as chaves esgotadas. Um mês novo leva alguns dias para ter todos os preços (em 10/11/2026,
+  novembro estava com 71% dos carros, 100% das motos e 70% dos caminhões), e o catálogo só troca
+  de mês quando o novo é tão bom quanto o anterior (`selectLatestSnapshots`).
+- **Todo ano:** as alíquotas de IPVA por categoria e os preços padrão de combustível
+  (`src/catalog/costs.ts`, hoje out/2026), e o PBEV do INMETRO quando sair o de 2027
+  (`npm run parse:pbev`).
+- **De vez em quando:**
+  - `npm run fetch:openverse`: mais fotos do Flickr. Em 10/11/2026, 878 de 1.636 modelos têm
+    4.158 fotos e 406 ficaram sem resposta; o serviço esgota o tempo no meio, e o cache guarda o
+    que já veio. A chave (`OPENVERSE_CLIENT_ID`/`SECRET` no `.env`) já está em uso.
+  - `npm run crawl:releases` e `npm run extract:equipamentos`: equipamentos dos releases novos
+    (em `data/imprensa/equipamentos-candidates.json`, para revisar). Os em prosa são reescritos à
+    mão, e os da Volkswagen são todos lidos à mão. Em 10/11/2026 não havia nenhum novo, e 373
+    notícias da VW seguem sem resposta. Também `npm run extract:imprensa`.
+  - `npm run fetch:wikidata` e `npm run fetch:galeria` quando entrarem modelos novos na FIPE.
+  - `npm run test:e2e` (Playwright, só local) depois de mudanças no catálogo.
 
-### Fontes de dados a explorar
+## Limites conhecidos
 
-Fontes públicas encontradas em out/2026 e ainda não usadas. Ver os termos de uso de cada uma antes.
+O que se sabe de cada um, para rever se algo mudar. Não são tarefas.
 
-- [ ] 🟢 Manuais do proprietário de outras marcas, como os da Renault (`npm run fichas:manuais`): a
-      Hyundai lista os seus em `/proprietarios.model.json` (o robots.txt permite), mas são só os ~10
-      dos modelos atuais, que os catálogos já cobrem; o site da Honda responde "Access Denied"
-      (Akamai), então fica de fora.
-- [ ] 🟢 Revisar os equipamentos dos releases que faltam (`npm run crawl:releases`, depois
-      `npm run extract:equipamentos`, que deixa em `data/imprensa/equipamentos-candidates.json` o
-      que ainda não está em `data/imprensa/equipamentos.json`): os releases novos. Os em prosa (o
-      rascunho junta pedaços de frase, como "Além de maçanetas") precisam ser reescritos à mão; os
-      da Volkswagen são todos em prosa (o extrator não os acha) e foram lidos à mão; faltam as
-      versões cujo release não separa os itens por versão (Polo 2023, Amarok 2018 e 2020) e as que
-      a FIPE ainda não tem (Saveiro Robust Etanol, Amarok Barretos, T-Cross Seleção). Em 10/11/2026 não
-      havia releases novos (0 candidatos; 373 notícias da VW seguem sem resposta). Revisar também `npm run extract:imprensa` de vez em quando.
-- [ ] 🟢 Flickr pela Openverse (a API do Flickr não dá chave a contas grátis): a busca anônima esgota o
-      tempo no meio (em 31/10/2026 faltam 164 de 968 modelos; 678 têm 3.558 fotos; com as motos e os
-      caminhões são 1.610 modelos, e em 10/11/2026 faltaram 393 e 872 têm 4.123 fotos); rodar
-      `npm run fetch:openverse` de novo até o fim (o cache guarda o que já veio; uma parada agora
-      só deixa de buscar, não descarta o que está no cache), ou pedir uma chave
-      da Openverse (`OPENVERSE_CLIENT_ID`/`SECRET`), que tem limite maior.
-
-### Produto
-
-- [ ] 🟡 Motos e caminhões no catálogo: desde novembro/2026 as listagens estão completas (2.049
-      versões de motos, 2.003 de caminhões), com IPVA pela alíquota de cada categoria e modelos do
-      Wikidata em 1.327 motos e 1.710 caminhões; a galeria do Commons já cobre os modelos novos
-      (`fetch:galeria` em 10/11/2026: 1.075 modelos, 21.966 fotos; a Openverse, 872 modelos e 4.123 fotos). Uma moto só leva um modelo cujo número bate com o
-      dela (o Tiger 1200 não leva o Tiger T110; a Himalayan 450 leva a 452, a 2%). Faltam ~750
-      motos (Shineray, Dafra, Kasinski, Traxx…: marcas sem artigo; Honda CG 150/160, CB 500 e Yamaha
-      Crosser/Factor, que o Wikidata não tem nessas cilindradas) e ~300 caminhões de nome só
-      numérico (Mercedes-Benz "1214", VW "12-140", Agrale "13000", Chevrolet "11000"): o Wikidata
-      não tem essas séries; da Mercedes só as séries L, LP, NG e SK, sem dizer qual cabine é cada
-      número, então ficariam só com um `overrides.json` feito à mão por quem conhece os modelos.
-
-### Sem fonte aberta ou sem ganho por enquanto
-
-Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
-
+- **Fotos que faltam:** ~79 versões recentes, quase todas utilitários e marcas de nicho sem foto
+  livre (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), os JAC
+  iEV 20/330P/350T/750V/1200T e E-J* (o "JAC iEV 002" do Commons é um iEV5, por isso o iEV 20 está
+  como `none` em `fallback-titles.json`), o Jetour S06 e o GAC GS9 (falta saber a que modelo
+  chinês correspondem). A saída seria a foto de imprensa autorizada da marca.
+- **Motos e caminhões sem modelo:** ~750 motos (Shineray, Dafra, Kasinski, Traxx…: marcas sem
+  artigo; Honda CG 150/160, CB 500 e Yamaha Crosser/Factor, que o Wikidata não tem nessas
+  cilindradas) e ~300 caminhões de nome só numérico (Mercedes-Benz "1214", VW "12-140", Agrale
+  "13000", Chevrolet "11000"). Da Mercedes o Wikidata só tem as séries L, LP, NG e SK, sem dizer
+  qual cabine é cada número: só um `overrides.json` feito à mão por quem conhece os modelos.
+- **Fichas da Stellantis:** faltam as linhas fora do catálogo, os motores sem ficha (Jumpy e
+  Expert 1.6, Jumper 2.0, Boxer de outros anos, Ducato Chassi e Executivo 2019–20) e o
+  comprimento das vans (a FIPE não diz L1H1 ou L3H2: as que empatam dão só os números em comum).
+  A ficha da versão mais próxima leva o aviso (`otherTrim`, 26 fichas, como a 1500 Laramie 2026
+  com a da Big Horn). O documento 322 está indisponível no site.
+- **Manuais do proprietário de outras marcas:** a Hyundai lista os seus em
+  `/proprietarios.model.json`, mas são só os ~10 dos modelos atuais, que os catálogos já cobrem; o
+  site da Honda responde "Access Denied" (Akamai).
+- **Equipamentos sem release por versão:** Polo 2023, Amarok 2018 e 2020; e as versões que a FIPE
+  ainda não tem (Saveiro Robust Etanol, Amarok Barretos, T-Cross Seleção).
 - Recalls por modelo: o conjunto "Campanhas de Recall" da Senatran (dados.transportes.gov.br,
   `recall`) só tem o total do ano; a consulta oficial é por placa ou chassi, com login gov.br. Ver
   de novo se a Senacon publicar a lista de campanhas. Pista: a Hyundai publica as suas em
@@ -104,11 +85,12 @@ Não são tarefas: o que se sabe de cada um, para rever se algo mudar.
 
 ## Futuro
 
+- Publicar o site: `npm run build` e `npx wrangler deploy` (Worker com o build e o proxy em
+  `/api/fipe`, `wrangler.toml`), com as chaves como segredos do Worker; precisa de uma conta na
+  Cloudflare. O cache das respostas da FIPE só vale num domínio próprio.
 - Conta para sincronizar os favoritos entre aparelhos: login pelo Cloudflare Access (código por
   e-mail, grátis até 50 usuários) e os favoritos numa tabela do D1, por rotas `/api/favoritos` no
   Worker; os do navegador sobem no primeiro login. Depois, aviso quando um favorito mudar X% na FIPE.
-- Domínio próprio, para o cache das respostas da FIPE valer (o `caches.default` do Worker só
-  funciona em domínio próprio).
 - Teste de ponta a ponta da Consulta (consulta → comparar), com as respostas da FIPE simuladas
   (`page.route("**/api/fipe/**")`); o do catálogo já existe (`npm run test:e2e`, só local: na CI
   não, por decisão de 10/11/2026).
