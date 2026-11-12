@@ -125,6 +125,7 @@ export function splitCatalogIndex(file: CatalogIndexFile): Map<string, CatalogIn
           reference: file.fleet.reference,
           source: file.fleet.source,
           lineCount: file.fleet.lineCount ?? file.fleet.lines.length,
+          ...(file.fleet.previousReference && { previousReference: file.fleet.previousReference }),
           lines,
         },
       }),

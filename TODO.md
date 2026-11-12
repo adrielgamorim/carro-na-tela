@@ -11,7 +11,7 @@ fonte aberta, para rever se algo mudar), as ideias para o [futuro](#futuro) e o 
 
 - [x] Mostrar de alguma forma quando pro usuário no catálogo quando o carro que ele está olhando foi favoritado, mesmo não sendo o mesmo ano (mostrar uma meia estrela? ou mostrar uma estrela na pill do ano?)
 
-- [ ] Adquirir informações sobre quantidade de veículos emplacados no brasil e casar com modelos para criar um novo filtro/sort de "Mais vendidos" no ano e no mês com essas informações.
+- [x] Adquirir informações sobre quantidade de veículos emplacados no brasil e casar com modelos para criar um novo filtro/sort de "Mais vendidos" no ano e no mês com essas informações.
   - FENABRAVE (Federação Nacional da Distribuição de Veículos Automotores): É a entidade privada que representa as concessionárias. Ela divulga mensalmente os relatórios mais detalhados e utilizados pelo mercado sobre o ranking de emplacamentos de carros novos por marca, modelo e região. Você pode acompanhar as atualizações diretamente no Portal Fenabrave.
   - Ministério dos Transportes / Senatran: O governo disponibiliza o painel estatístico e o inventário da frota brasileira com dados abertos e detalhados por estado (UF) e município através do Portal de Dados Abertos dos Transportes.
 

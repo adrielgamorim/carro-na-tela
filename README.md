@@ -32,7 +32,8 @@ gerado por scripts Node, e a consulta ao vivo passa por um proxy fino da API FIP
 - A linha é escrita igual em todas as versões da marca ("UNO" e "Uno" viram uma linha só) e, com uma
   linha marcada, aparece "Versão da linha": a palavra depois do modelo no nome FIPE (Uno Way, Uno
   Mille, Onix Hatch), com as abreviações juntadas à palavra inteira ("ATTRACTI.", "SD.", "P-Up").
-- Ordenação por preço, ano, consumo, nome e "Mais comuns na frota".
+- Ordenação por preço, ano, consumo, nome, "Mais comuns na frota" e "Mais vendidos" no ano e no mês
+  (estimativa pela frota da Senatran, por categoria).
 - Cards com o logo colorido da marca (76 marcas, de `npm run fetch:brand-logos`; as demais ficam
   com o ícone monocromático do Simple Icons ou o do tipo de veículo), foto do modelo (Wikimedia
   Commons, da geração do ano escolhido quando o artigo da Wikipedia separa gerações), frota em
@@ -231,6 +232,11 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   M.BENZ, MMC…) e os importados (I/, IMP/). O número é da linha toda: indica popularidade, não
   vendas. Cada linha guarda também o total e a posição por estado; os detalhes mostram os do estado
   escolhido nas premissas.
+- Vendas estimadas (`scripts/frota/sales.ts`): no ano, os veículos da linha fabricados no ano da
+  referência; no mês, quanto cresceu a frota fabricada nesse ano e no anterior desde o mês de
+  antes, que o `fetch:frota` guarda em `previous` (só esses dois anos; o zip do mês anterior é
+  lido uma vez e apagado). A posição é contada dentro da categoria (carros, motos, caminhões). A
+  FENABRAVE publica os emplacamentos oficiais, mas em PDF e sem licença aberta, então ficou de fora.
 
 ### Releases de imprensa (porta-malas e torque)
 

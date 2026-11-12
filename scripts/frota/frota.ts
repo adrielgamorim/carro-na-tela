@@ -13,6 +13,24 @@ export interface FleetFile {
   models: Record<string, Record<string, number>>;
   /** Renavam name → state → vehicles (rows without a state count only nationwide). */
   states?: Record<string, Record<string, number>>;
+  /**
+   * The month before, only the years of manufacture from the reference year
+   * minus one: new registrations in the month are the difference.
+   */
+  previous?: { reference: string; source: string; models: Record<string, Record<string, number>> };
+}
+
+/** Only the years of manufacture from `fromYear` on (names left without any are dropped). */
+export function recentYears(
+  models: Record<string, Record<string, number>>,
+  fromYear: number,
+): Record<string, Record<string, number>> {
+  const result: Record<string, Record<string, number>> = {};
+  for (const [name, years] of Object.entries(models)) {
+    const recent = Object.entries(years).filter(([year]) => Number(year) >= fromYear);
+    if (recent.length > 0) result[name] = Object.fromEntries(recent);
+  }
+  return result;
 }
 
 // State names as the file writes them → abbreviation.

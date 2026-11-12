@@ -9,7 +9,7 @@ import {
 import { costPerKm, estimateIpva, formatIpva, formatPerKm } from "../catalog/costs";
 import { formatSpec, isWikidataItem, specLabels, wikidataUrl } from "../catalog/wikidata";
 import type { CatalogFleetInfo } from "../catalog/fleet";
-import { fleetOfYear, fleetOrigin } from "../catalog/fleet";
+import { fleetOfYear, fleetOrigin, fleetReferenceMonth, fleetReferenceYear, salesTitle } from "../catalog/fleet";
 import { formatDepreciation } from "../catalog/depreciation";
 import { formatCrashTest, formatInsurance, formatTheft } from "../catalog/safety";
 import { derivedSpecs } from "../catalog/derived";
@@ -170,6 +170,7 @@ function FleetDetail({
   // FIPE writes 0 km as model year 32000.
   const ofYear = fleetOfYear(fleet, modelYear < 3000 ? modelYear : null);
   const inState = fleet.line.states?.[uf];
+  const sales = fleet.line.sales;
   return (
     <div
       className="vehicle-detail-wide"
@@ -189,6 +190,18 @@ function FleetDetail({
           <>
             <br />
             Em {uf}: {inState[0].toLocaleString("pt-BR")} veículos · {inState[1]}º mais comum
+          </>
+        )}
+        {sales && (
+          <>
+            <br />
+            <span title={salesTitle(fleet)}>
+              Vendas estimadas: {sales.year.toLocaleString("pt-BR")} em {fleetReferenceYear(fleet.reference)}
+              {sales.yearRank && ` (${sales.yearRank}º)`}
+              {sales.month !== undefined &&
+                ` · ${sales.month.toLocaleString("pt-BR")} em ${fleetReferenceMonth(fleet.reference)}` +
+                  (sales.monthRank ? ` (${sales.monthRank}º)` : "")}
+            </span>
           </>
         )}
       </dd>

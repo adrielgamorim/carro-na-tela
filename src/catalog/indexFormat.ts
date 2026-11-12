@@ -107,6 +107,8 @@ export interface CatalogIndexFile {
     source: string;
     /** Lines ranked in the whole catalog, when `lines` is a subset (brand slices). */
     lineCount?: number;
+    /** Month the `sales.month` figures are counted from ("agosto de 2026"). */
+    previousReference?: string;
     lines: CatalogFleetLine[];
   };
 }
@@ -170,6 +172,7 @@ export function expandCatalogIndex(file: CatalogIndexFile): CatalogIndex {
         ? {
             reference: file.fleet.reference,
             lineCount: file.fleet.lineCount ?? file.fleet.lines.length,
+            ...(file.fleet.previousReference && { previousReference: file.fleet.previousReference }),
             line: fleetLine,
           }
         : null;

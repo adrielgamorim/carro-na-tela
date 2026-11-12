@@ -71,6 +71,8 @@ const sortLabels: Record<CatalogSort, string> = {
   newest: "Mais novos",
   consumption: "Mais econômicos",
   popular: "Mais comuns na frota",
+  "sales-year": "Mais vendidos no ano",
+  "sales-month": "Mais vendidos no mês",
   name: "Modelo (A–Z)",
 };
 
@@ -425,6 +427,7 @@ function CatalogBrowser({
                   <CatalogCard
                     key={group.key}
                     group={group}
+                    sort={deferredFilters.sort}
                     livePrice={(entry) => livePrices[entry.id]}
                     isCompared={isCompared}
                     canCompare={(entry) => vehicleFor(entry) !== null}

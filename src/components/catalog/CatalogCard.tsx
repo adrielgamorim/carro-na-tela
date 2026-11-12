@@ -1,10 +1,11 @@
 import { useState } from "react";
 import type { MouseEvent } from "react";
-import { Check, Plus, RefreshCw, Users } from "lucide-react";
+import { Check, Plus, RefreshCw, TrendingUp, Users } from "lucide-react";
 import type { CatalogGroup } from "../../catalog/filters";
 import { estimateIpva, formatIpva, ipvaNoteOf } from "../../catalog/costs";
 import { entryTags, yearLabel } from "../../catalog/labels";
-import { fleetOfYear, formatFleetCount } from "../../catalog/fleet";
+import { fleetOfYear, fleetReferenceMonth, fleetReferenceYear, formatFleetCount, salesTitle } from "../../catalog/fleet";
+import type { CatalogSort } from "../../catalog/filters";
 import type { CatalogFleetInfo } from "../../catalog/fleet";
 import type { CatalogEntry } from "../../catalog/types";
 import { useCostSettings } from "../../services/costSettings";
@@ -31,6 +32,8 @@ interface CatalogCardProps {
   pageLink: (entry: CatalogEntry) => PageLink;
   /** Year selected at first (the favorited one); else the newest. */
   initialEntryId?: string;
+  /** Under a sales sort, the fleet line shows the line's sales instead of its fleet. */
+  sort?: CatalogSort;
 }
 
 export interface PageLink {
@@ -117,6 +120,7 @@ export function CatalogCard({
   onToggleCompare,
   pageLink,
   initialEntryId,
+  sort,
 }: CatalogCardProps) {
   const [selectedId, setSelectedId] = useState(initialEntryId ?? group.entries[0].id);
   const [showAllYears, setShowAllYears] = useState(false);
@@ -168,7 +172,7 @@ export function CatalogCard({
               {selected.model}
             </a>
           </h3>
-          {selected.fleet && <FleetLine entry={selected} fleet={selected.fleet} />}
+          {selected.fleet && <FleetLine entry={selected} fleet={selected.fleet} sort={sort} />}
         </div>
         <FavoriteButton entry={selected} price={price} versionYears={group.entries} />
       </div>
@@ -245,7 +249,32 @@ export function CatalogCard({
   );
 }
 
-export function FleetLine({ entry, fleet }: { entry: CatalogEntry; fleet: CatalogFleetInfo }) {
+export function FleetLine({
+  entry,
+  fleet,
+  sort,
+}: {
+  entry: CatalogEntry;
+  fleet: CatalogFleetInfo;
+  sort?: CatalogSort;
+}) {
+  const sales = fleet.line.sales;
+  if (sort === "sales-year" || sort === "sales-month") {
+    const inMonth = sort === "sales-month";
+    const count = inMonth ? sales?.month : sales?.year;
+    const rank = inMonth ? sales?.monthRank : sales?.yearRank;
+    if (sales && count && rank) {
+      const period = inMonth
+        ? `em ${fleetReferenceMonth(fleet.reference)}`
+        : `em ${fleetReferenceYear(fleet.reference)} (até ${fleetReferenceMonth(fleet.reference)})`;
+      return (
+        <p className="catalog-card-fleet" title={salesTitle(fleet)}>
+          <TrendingUp size={12} aria-hidden="true" />
+          {formatFleetCount(count)} emplacados {period} · {rank}º mais vendido
+        </p>
+      );
+    }
+  }
   const ofYear = fleetOfYear(fleet, entry.modelYear);
   const title =
     `Veículos da linha ${fleet.line.family} em circulação no Brasil (Senatran, ${fleet.reference}), ` +

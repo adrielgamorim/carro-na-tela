@@ -11,6 +11,8 @@ import type { ModelSpecs } from "../../src/catalog/wikidata.ts";
 import { getModelFamily } from "../../src/services/fipeParsing.ts";
 import type { FleetFile } from "../frota/frota.ts";
 import { matchFleet } from "../frota/match.ts";
+import { addFleetSales } from "../frota/sales.ts";
+import { fleetReferenceYear } from "../../src/catalog/fleet.ts";
 import { createInmetroMatcher } from "../inmetro/match.ts";
 import { commonsFile, toCatalogModel, versionYears } from "../wikidata/details.ts";
 import { generationOf } from "../wikidata/generations.ts";
@@ -396,6 +398,26 @@ export function buildCatalogIndex(
       const line = match.lineOf.get(lineOfVersion(version));
       if (line !== undefined) version.p = line;
     }
+    // Sales: the same lines a month before, matched the same way.
+    const referenceYear = fleetReferenceYear(fleet.reference);
+    if (referenceYear !== null) {
+      let previous: (Record<string, number> | undefined)[] | null = null;
+      if (fleet.previous) {
+        const before = matchFleet(fleet.previous.models, [...catalogLines.values()]);
+        previous = [];
+        for (const [catalogKey, index] of match.lineOf) {
+          const old = before.lineOf.get(catalogKey);
+          if (old !== undefined) previous[index] = before.lines[old]?.years;
+        }
+      }
+      // Ranked within a category: a CG is not "ahead" of a Strada.
+      const categoryOf: string[] = [];
+      for (const version of sorted) {
+        const category = infos[version.s]?.category;
+        if (version.p !== undefined && category) categoryOf[version.p] ??= category;
+      }
+      addFleetSales(fleetLines, previous, referenceYear, (index) => categoryOf[index] ?? "");
+    }
   }
 
   // Trunk and torque from press releases, per model year: the figure of the
@@ -600,7 +622,12 @@ export function buildCatalogIndex(
     }),
     ...(fleet &&
       fleetLines && {
-        fleet: { reference: fleet.reference, source: fleet.source, lines: fleetLines },
+        fleet: {
+          reference: fleet.reference,
+          source: fleet.source,
+          ...(fleet.previous && { previousReference: fleet.previous.reference }),
+          lines: fleetLines,
+        },
       }),
   };
 }

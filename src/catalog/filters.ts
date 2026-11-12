@@ -11,6 +11,8 @@ export type CatalogSort =
   | "newest"
   | "consumption"
   | "popular"
+  | "sales-year"
+  | "sales-month"
   | "name";
 
 export interface CatalogFilters {
@@ -86,7 +88,7 @@ export const emptyCatalogFilters: CatalogFilters = {
   airConditioning: false,
   turbo: false,
   fourWheelDrive: false,
-  sort: "price-asc",
+  sort: "sales-year",
 };
 
 export type ListFacet =
@@ -349,11 +351,20 @@ export function groupCatalog(
   const name = (group: CatalogGroup) => names.get(group)!;
   const byNameOf = (left: CatalogGroup, right: CatalogGroup) => collator.compare(name(left), name(right));
   const consumption = (group: CatalogGroup) => group.entries[0].cityKmL;
-  const fleet = (group: CatalogGroup) => group.entries[0].fleet?.line.total ?? null;
+  // Fleet sorts rank model lines: total in circulation, or sales estimated
+  // from it (made this year, registered new this month).
+  const lineSorts = ["popular", "sales-year", "sales-month"];
+  const fleet = (group: CatalogGroup) => {
+    const line = group.entries[0].fleet?.line;
+    if (!line) return null;
+    if (sort === "sales-year") return line.sales?.yearRank ? line.sales.year : null;
+    if (sort === "sales-month") return line.sales?.monthRank ? (line.sales.month ?? null) : null;
+    return line.total;
+  };
   // By fleet, a line's many versions would fill the first pages (all Gols):
   // take each line's newest version first, then each line's second, and so on.
   const turn = new Map<CatalogGroup, number>();
-  if (sort === "popular") {
+  if (lineSorts.includes(sort)) {
     const byLine = new Map<string, CatalogGroup[]>();
     for (const group of result) {
       const { brand, family } = group.entries[0];
@@ -382,14 +393,14 @@ export function groupCatalog(
       }
       return b - a || byName;
     }
-    if (sort === "popular") {
+    if (lineSorts.includes(sort)) {
+      const [a, b] = [fleet(left), fleet(right)];
+      // Lines without the figure (no fleet, nothing sold) go after all others.
+      const unknown = (a === null ? 1 : 0) - (b === null ? 1 : 0);
+      if (unknown) return unknown;
       const byTurn = turn.get(left)! - turn.get(right)!;
       if (byTurn) return byTurn;
-      const [a, b] = [fleet(left), fleet(right)];
-      if (a === null || b === null) {
-        return (a === null ? 1 : 0) - (b === null ? 1 : 0) || byName;
-      }
-      return b - a || byName;
+      return a === null || b === null ? byName : b - a || byName;
     }
     if (sort === "newest") {
       return entryYear(right.entries[0]) - entryYear(left.entries[0]) || byName;
@@ -412,7 +423,7 @@ export function countActiveFilters(filters: CatalogFilters): number {
 
 // URL parameters, in Portuguese so shared links read naturally:
 // ?marca=BYD&propulsao=eletrico&preco=100000-200000&ano=2020-&ordem=newest
-const sorts: CatalogSort[] = ["price-asc", "price-desc", "newest", "consumption", "popular", "name"];
+const sorts: CatalogSort[] = ["price-asc", "price-desc", "newest", "consumption", "popular", "sales-year", "sales-month", "name"];
 
 function formatRange(min: number | null, max: number | null): string | null {
   if (min === null && max === null) return null;

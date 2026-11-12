@@ -356,6 +356,23 @@ describe("groupCatalog", () => {
       "gol-2010",
     ]);
   });
+
+  it("sorts by estimated sales in the year or the month, lines that sold none last", () => {
+    const fleet = (sales: { year: number; yearRank?: number; month?: number; monthRank?: number }) => ({
+      reference: "setembro de 2026",
+      lineCount: 3,
+      line: { family: "x", total: 100_000, rank: 1, years: {}, sales },
+    });
+    const lines = [
+      version({ id: "old", codeFipe: "old", family: "Old", fleet: { ...fleet({ year: 0 }), line: { family: "x", total: 9e6, rank: 1, years: {} } } }),
+      version({ id: "steady", codeFipe: "steady", family: "Steady", fleet: fleet({ year: 90_000, yearRank: 1, month: 100, monthRank: 2 }) }),
+      version({ id: "new", codeFipe: "new", family: "New", fleet: fleet({ year: 5_000, yearRank: 2, month: 4_000, monthRank: 1 }) }),
+    ];
+    const order = (sort: "sales-year" | "sales-month") =>
+      groupCatalog(lines, sort).map((group) => group.entries[0].id);
+    expect(order("sales-year")).toEqual(["steady", "new", "old"]);
+    expect(order("sales-month")).toEqual(["new", "steady", "old"]);
+  });
 });
 
 describe("catalogBounds", () => {
