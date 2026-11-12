@@ -5,6 +5,16 @@ rotina de [manutenção](#manutenção), os [limites conhecidos](#limites-conhec
 fonte aberta, para rever se algo mudar), as ideias para o [futuro](#futuro) e o que já foi
 [concluído](#concluído). Antes de integrar uma fonte nova, confira os termos de uso dela.
 
+## A fazer
+
+- [x] Acrescentar um botão em cada card do catálogo ou nos detalhes para pesquisar aquele modelo no WebMotors, iCarros, OLX e Mercado Livre, com o link de busca já preenchido.
+
+- [x] Mostrar de alguma forma quando pro usuário no catálogo quando o carro que ele está olhando foi favoritado, mesmo não sendo o mesmo ano (mostrar uma meia estrela? ou mostrar uma estrela na pill do ano?)
+
+- [ ] Adquirir informações sobre quantidade de veículos emplacados no brasil e casar com modelos para criar um novo filtro/sort de "Mais vendidos" no ano e no mês com essas informações.
+  - FENABRAVE (Federação Nacional da Distribuição de Veículos Automotores): É a entidade privada que representa as concessionárias. Ela divulga mensalmente os relatórios mais detalhados e utilizados pelo mercado sobre o ranking de emplacamentos de carros novos por marca, modelo e região. Você pode acompanhar as atualizações diretamente no Portal Fenabrave.
+  - Ministério dos Transportes / Senatran: O governo disponibiliza o painel estatístico e o inventário da frota brasileira com dados abertos e detalhados por estado (UF) e município através do Portal de Dados Abertos dos Transportes.
+
 ## Manutenção
 
 O que roda sozinho e o que precisa de uma rodada de vez em quando.
@@ -37,7 +47,7 @@ O que se sabe de cada um, para rever se algo mudar. Não são tarefas.
 
 - **Fotos que faltam:** ~79 versões recentes, quase todas utilitários e marcas de nicho sem foto
   livre (Hitech Electric Delivery/e.co, Effa, Foton Minitruck, Shineray, Wake, buggies), os JAC
-  iEV 20/330P/350T/750V/1200T e E-J* (o "JAC iEV 002" do Commons é um iEV5, por isso o iEV 20 está
+  iEV 20/330P/350T/750V/1200T e E-J\* (o "JAC iEV 002" do Commons é um iEV5, por isso o iEV 20 está
   como `none` em `fallback-titles.json`), o Jetour S06 e o GAC GS9 (falta saber a que modelo
   chinês correspondem). A saída seria a foto de imprensa autorizada da marca.
 - **Motos e caminhões sem modelo:** ~750 motos (Shineray, Dafra, Kasinski, Traxx…: marcas sem
@@ -225,7 +235,7 @@ O que se sabe de cada um, para rever se algo mudar. Não são tarefas.
       ano-modelo a foto da sua geração (Gol G5/G6, HB20 1ª/2ª/atual, Sandero I/II/III); 850 fotos
       diferentes nos cards (eram 647). Fontes à mão para JAC T5/T50/T60/T80, BMW 220i/225i/435iA/M,
       Volvo XC 40, Ferrari 12Cilindri, MG 550, BYD eT3 e Mahindra SUV (157 → 137 versões sem foto).
-Histórico resumido, em ordem aproximada.
+      Histórico resumido, em ordem aproximada.
 
 **Base e arquitetura**
 

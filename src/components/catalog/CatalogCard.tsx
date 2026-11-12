@@ -10,7 +10,8 @@ import type { CatalogEntry } from "../../catalog/types";
 import { useCostSettings } from "../../services/costSettings";
 import type { FipeVehicle } from "../../types/vehicle";
 import { BrandIcon } from "../BrandIcon";
-import { FavoriteButton, FavoriteNote } from "./Favorite";
+import { FavoriteButton, FavoriteMark, FavoriteNote } from "./Favorite";
+import { useFavoriteIds } from "../../services/favorites";
 import "./CatalogCard.css";
 
 export type LivePrice =
@@ -128,6 +129,8 @@ export function CatalogCard({
     ? group.entries
     : group.entries.slice(0, maxYearPills);
   const hiddenYears = group.entries.length - years.length;
+  const favoriteIds = useFavoriteIds();
+  const hiddenFavorite = group.entries.slice(years.length).some((entry) => favoriteIds.has(entry.id));
   const compareTitle = !comparable
     ? "Consulte o preço para comparar"
     : comparisonFull && !compared
@@ -167,7 +170,7 @@ export function CatalogCard({
           </h3>
           {selected.fleet && <FleetLine entry={selected} fleet={selected.fleet} />}
         </div>
-        <FavoriteButton entry={selected} price={price} />
+        <FavoriteButton entry={selected} price={price} versionYears={group.entries} />
       </div>
 
       <div
@@ -181,9 +184,11 @@ export function CatalogCard({
             type="button"
             className={`year-pill${entry.id === selected.id ? " year-pill-active" : ""}`}
             aria-pressed={entry.id === selected.id}
+            aria-label={favoriteIds.has(entry.id) ? `${yearLabel(entry)}, nos favoritos` : undefined}
             onClick={() => setSelectedId(entry.id)}
           >
             {yearLabel(entry)}
+            {favoriteIds.has(entry.id) && <FavoriteMark />}
           </button>
         ))}
         {hiddenYears > 0 && (
@@ -193,6 +198,7 @@ export function CatalogCard({
             onClick={() => setShowAllYears(true)}
           >
             +{hiddenYears}
+            {hiddenFavorite && <FavoriteMark />}
           </button>
         )}
       </div>

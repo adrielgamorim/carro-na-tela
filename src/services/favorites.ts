@@ -86,6 +86,11 @@ export function useFavorites(): Favorite[] {
   return useSyncExternalStore(subscribe, getFavorites, getFavorites);
 }
 
+/** The ids of the favorite version-years. */
+export function useFavoriteIds(): Set<string> {
+  return new Set(useFavorites().map((favorite) => favorite.id));
+}
+
 /** How much the FIPE price moved since the version was marked; null without both prices. */
 export function priceChange(favorite: Favorite, priceNow: number | null | undefined) {
   if (!favorite.price || !priceNow) return null;

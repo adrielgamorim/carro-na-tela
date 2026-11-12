@@ -66,6 +66,30 @@
   gap: 10px;
 }
 
+/* Search links on the classifieds sites, already filled in. */
+.vehicle-page-listings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 10px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.vehicle-page-listings a {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--forest);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.vehicle-page-listings a:hover {
+  text-decoration: underline;
+}
+
 .vehicle-page-reference {
   color: var(--muted);
   font-size: 12px;

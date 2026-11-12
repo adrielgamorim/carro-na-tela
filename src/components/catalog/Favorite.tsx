@@ -1,28 +1,54 @@
-import { Star, TrendingDown, TrendingUp } from "lucide-react";
+import { Star, StarHalf, TrendingDown, TrendingUp } from "lucide-react";
 import { formatFipePrice } from "../../catalog/indexFormat";
 import { yearLabel } from "../../catalog/labels";
 import type { CatalogEntry } from "../../catalog/types";
-import { priceChange, toggleFavorite, useFavorites } from "../../services/favorites";
+import { priceChange, toggleFavorite, useFavoriteIds, useFavorites } from "../../services/favorites";
 import "./Favorite.css";
 
-/** Star that marks a version-year as favorite, remembering its price then. */
-export function FavoriteButton({ entry, price }: { entry: CatalogEntry; price: number | null }) {
-  const active = useFavorites().some((favorite) => favorite.id === entry.id);
+/**
+ * Star that marks a version-year as favorite, remembering its price then.
+ * Half filled when another of the version's years (`versionYears`) is one.
+ */
+export function FavoriteButton({
+  entry,
+  price,
+  versionYears = [],
+}: {
+  entry: CatalogEntry;
+  price: number | null;
+  versionYears?: CatalogEntry[];
+}) {
+  const ids = useFavoriteIds();
+  const active = ids.has(entry.id);
+  const others = active ? [] : versionYears.filter((year) => year.id !== entry.id && ids.has(year.id));
   const label = `${entry.model} ${yearLabel(entry)}`;
+  const elsewhere = others.length > 0 ? ` (${others.map(yearLabel).join(", ")} já está nos favoritos)` : "";
   return (
     <button
       type="button"
-      className={`favorite-button${active ? " favorite-button-active" : ""}`}
+      className={`favorite-button${active ? " favorite-button-active" : others.length ? " favorite-button-other" : ""}`}
       aria-pressed={active}
-      aria-label={active ? `Tirar ${label} dos favoritos` : `Favoritar ${label}`}
-      title={active ? "Tirar dos favoritos" : "Favoritar: acompanhe o preço na aba Favoritos"}
+      aria-label={active ? `Tirar ${label} dos favoritos` : `Favoritar ${label}${elsewhere}`}
+      title={
+        active
+          ? "Tirar dos favoritos"
+          : `Favoritar: acompanhe o preço na aba Favoritos${others.length ? `. Já nos favoritos: ${others.map(yearLabel).join(", ")}` : ""}`
+      }
       onClick={() =>
         toggleFavorite({ id: entry.id, label, price, reference: price ? entry.referenceMonth : null })
       }
     >
-      <Star size={17} fill={active ? "currentColor" : "none"} aria-hidden="true" />
+      <span className="favorite-star" aria-hidden="true">
+        <Star size={17} fill={active ? "currentColor" : "none"} />
+        {others.length > 0 && <StarHalf size={17} fill="currentColor" className="favorite-star-half" />}
+      </span>
     </button>
   );
+}
+
+/** The small star on a year pill that is a favorite. */
+export function FavoriteMark() {
+  return <Star size={10} fill="currentColor" className="favorite-mark" aria-hidden="true" />;
 }
 
 const percent = new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 1, signDisplay: "always" });

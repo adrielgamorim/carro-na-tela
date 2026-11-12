@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { ArrowLeft, Check, Plus } from "lucide-react";
+import { ArrowLeft, Check, ExternalLink, Plus, Search } from "lucide-react";
 import { categoryLabel } from "../../constants/categories";
 import { entryTags, yearLabel } from "../../catalog/labels";
 import type { CatalogEntry } from "../../catalog/types";
@@ -11,7 +11,10 @@ import { VehicleDetails } from "../VehicleDetails";
 import { FleetLine, PriceBlock } from "./CatalogCard";
 import { ModelGallery } from "./ModelGallery";
 import { EquipmentList } from "./EquipmentList";
-import { FavoriteButton, FavoriteNote } from "./Favorite";
+import { FavoriteButton, FavoriteMark, FavoriteNote } from "./Favorite";
+import { useFavoriteIds } from "../../services/favorites";
+import { zeroKmModelYear } from "../../services/fipeParsing";
+import { listingLinks, searchBrand } from "../../catalog/listings";
 import type { LivePrice, PageLink } from "./CatalogCard";
 import "./CatalogCard.css";
 import "./VehiclePage.css";
@@ -48,6 +51,7 @@ export function VehiclePage({
   onToggleCompare,
   onRetryEnrichment,
 }: VehiclePageProps) {
+  const favoriteIds = useFavoriteIds();
   useEffect(() => {
     const previous = document.title;
     document.title = `${entry.model} ${yearLabel(entry)} | Carro na tela`;
@@ -78,7 +82,7 @@ export function VehiclePage({
               <h1 id="vehicle-page-title">{entry.model}</h1>
               {entry.fleet && <FleetLine entry={entry} fleet={entry.fleet} />}
             </div>
-            <FavoriteButton entry={entry} price={vehicle?.priceValue ?? entry.priceValue} />
+            <FavoriteButton entry={entry} price={vehicle?.priceValue ?? entry.priceValue} versionYears={years} />
           </div>
 
           <nav className="catalog-years" aria-label={`Anos-modelo de ${entry.model}`}>
@@ -87,9 +91,11 @@ export function VehiclePage({
                 key={item.id}
                 className={`year-pill${item.id === entry.id ? " year-pill-active" : ""}`}
                 aria-current={item.id === entry.id ? "page" : undefined}
+                aria-label={favoriteIds.has(item.id) ? `${yearLabel(item)}, nos favoritos` : undefined}
                 {...yearLink(item)}
               >
                 {yearLabel(item)}
+                {favoriteIds.has(item.id) && <FavoriteMark />}
               </a>
             ))}
           </nav>
@@ -123,6 +129,16 @@ export function VehiclePage({
             </button>
             <ShareLinkButton label="Copiar link desta versão" />
           </div>
+          <p className="vehicle-page-listings">
+            <Search size={13} aria-hidden="true" /> Anúncios {searchBrand(entry.brand)} {entry.family}
+            {entry.modelYear !== null && entry.modelYear !== zeroKmModelYear ? ` ${entry.modelYear}` : ""}:
+            {listingLinks(entry).map((link) => (
+              <a key={link.site} href={link.url} target="_blank" rel="noreferrer">
+                {link.site}
+                <ExternalLink size={11} aria-hidden="true" />
+              </a>
+            ))}
+          </p>
           <small className="vehicle-page-reference">
             {entry.codeFipe ? `FIPE ${entry.codeFipe} · ` : ""}
             {entry.referenceMonth}

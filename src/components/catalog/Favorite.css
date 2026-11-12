@@ -57,3 +57,25 @@
 .favorite-down {
   color: var(--danger);
 }
+
+/* Another year of the version is a favorite: the star half filled. */
+.favorite-button-other {
+  color: #e0a526;
+}
+
+.favorite-star {
+  position: relative;
+  display: grid;
+}
+
+.favorite-star-half {
+  position: absolute;
+  inset: 0;
+}
+
+/* On a year pill that is a favorite. */
+.favorite-mark {
+  margin-left: 3px;
+  color: #e0a526;
+  vertical-align: -1px;
+}
