@@ -9,7 +9,8 @@ import {
   transmissionLabels,
 } from "./labels";
 
-// The removable chips above the catalog results, one per active filter value.
+// The removable chips of the active filters, one per value: at the top of the
+// filter panel (and above the results on phones, where the panel is closed).
 
 export interface ActiveChip {
   key: string;
@@ -49,7 +50,18 @@ export function activeChips(filters: CatalogFilters): ActiveChip[] {
     chips.push({ key: "query", label: `“${filters.query.trim()}”`, remove: { query: "" } });
   }
   list("brands", (value) => value);
-  list("families", (value) => value);
+  // A line's sub-lines go with it, as in the panel.
+  for (const value of filters.families) {
+    const families = filters.families.filter((item) => item !== value);
+    chips.push({
+      key: `families:${value}`,
+      label: value,
+      remove: {
+        families,
+        sublines: filters.sublines.filter((subline) => families.some((family) => subline.startsWith(`${family} `))),
+      },
+    });
+  }
   list("sublines", (value) => value);
   list("propulsions", (value) => propulsionLabels[value as keyof typeof propulsionLabels]);
   list("fuels", (value) => value);
@@ -73,7 +85,9 @@ export function activeChips(filters: CatalogFilters): ActiveChip[] {
   if (filters.engineMin !== null || filters.engineMax !== null) {
     chips.push({
       key: "engine",
-      label: `Motor ${rangeLabel(filters.engineMin, filters.engineMax, (liters) => liters.toFixed(1))}`,
+      label: `Motor ${rangeLabel(filters.engineMin, filters.engineMax, (size) =>
+        filters.category === "motorcycles" ? `${size} cc` : size.toFixed(1),
+      )}`,
       remove: { engineMin: null, engineMax: null },
     });
   }

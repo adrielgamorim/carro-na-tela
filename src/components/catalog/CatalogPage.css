@@ -59,6 +59,14 @@
   margin-bottom: 14px;
 }
 
+/* Beside the results the filter panel lists them at its top; only phones,
+   where the panel is closed, show them here. */
+@media (min-width: 821px) {
+  .active-chips {
+    display: none;
+  }
+}
+
 .active-chip {
   display: inline-flex;
   align-items: center;

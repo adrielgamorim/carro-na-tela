@@ -29,6 +29,19 @@ describe("activeChips", () => {
     expect(chips.find((chip) => chip.key === "year")?.remove).toEqual({ yearMin: null, yearMax: null });
   });
 
+  it("drops a line's sub-lines with it", () => {
+    const filters = { ...emptyCatalogFilters, families: ["Uno", "Gol"], sublines: ["Uno Way", "Gol G5"] };
+    const uno = activeChips(filters).find((chip) => chip.key === "families:Uno");
+    expect(uno?.remove).toEqual({ families: ["Gol"], sublines: ["Gol G5"] });
+  });
+
+  it("writes motorcycle engines in cc and car engines in liters", () => {
+    const label = (category: "cars" | "motorcycles", engineMin: number, engineMax: number) =>
+      activeChips({ ...emptyCatalogFilters, category, engineMin, engineMax })[0]?.label;
+    expect(label("motorcycles", 150, 300)).toBe("Motor 150 cc a 300 cc");
+    expect(label("cars", 1, 2)).toBe("Motor 1.0 a 2.0");
+  });
+
   it("is empty without filters", () => {
     expect(activeChips(emptyCatalogFilters)).toEqual([]);
   });

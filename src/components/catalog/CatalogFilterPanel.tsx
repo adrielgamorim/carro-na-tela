@@ -18,6 +18,7 @@ import {
 } from "../../catalog/labels";
 import { motorcycleClasses } from "../../catalog/filters";
 import { CheckList, ChipGroup } from "./facetControls";
+import { activeChips } from "../../catalog/activeChips";
 import { asIs, fromRecord, parseNumber, toggleValue } from "./facetValues";
 import type { Labeler } from "./facetValues";
 import "./CatalogFilterPanel.css";
@@ -124,6 +125,23 @@ export function CatalogFilterPanel({
           <X size={18} />
         </button>
       </div>
+      {activeCount > 0 && (
+        <ul className="active-filters" aria-label="Filtros ativos no painel">
+          {activeChips(filters).map((chip) => (
+            <li key={chip.key}>
+              <span>{chip.label}</span>
+              <button
+                type="button"
+                aria-label={`Remover filtro ${chip.label}`}
+                title="Remover este filtro"
+                onClick={() => onChange(chip.remove)}
+              >
+                <X size={12} aria-hidden="true" />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
 
       <div className="catalog-filters-body">
         <label className="catalog-search">
