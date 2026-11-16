@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { ArrowDownUp, GitCompareArrows, Star } from "lucide-react";
 import "./App.css";
+import { BackToTop } from "./components/BackToTop";
 import { ConsultaPage } from "./components/ConsultaPage";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { ThemeToggle } from "./components/ThemeToggle";
@@ -228,6 +229,7 @@ function App() {
           <span>Os valores FIPE não substituem avaliação do veículo.</span>
         </footer>
       </main>
+      <BackToTop />
     </div>
   );
 }
