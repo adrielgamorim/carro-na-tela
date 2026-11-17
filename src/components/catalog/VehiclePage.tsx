@@ -129,16 +129,23 @@ export function VehiclePage({
             </button>
             <ShareLinkButton label="Copiar link desta versão" />
           </div>
-          <p className="vehicle-page-listings">
-            <Search size={13} aria-hidden="true" /> Anúncios {searchBrand(entry.brand)} {entry.family}
-            {entry.modelYear !== null && entry.modelYear !== zeroKmModelYear ? ` ${entry.modelYear}` : ""}:
-            {listingLinks(entry).map((link) => (
-              <a key={link.site} href={link.url} target="_blank" rel="noreferrer">
-                {link.site}
-                <ExternalLink size={11} aria-hidden="true" />
-              </a>
-            ))}
-          </p>
+          <section className="vehicle-page-listings" aria-labelledby="vehicle-page-listings-title">
+            <h2 id="vehicle-page-listings-title">
+              <Search size={14} aria-hidden="true" /> Procurar anúncios de {searchBrand(entry.brand)} {entry.family}
+              {entry.modelYear !== null && entry.modelYear !== zeroKmModelYear ? ` ${entry.modelYear}` : ""}
+            </h2>
+            <ul>
+              {listingLinks(entry).map((link) => (
+                <li key={link.site}>
+                  <a href={link.url} target="_blank" rel="noreferrer" title={`Abrir a busca no ${link.site}`}>
+                    <img src={`${import.meta.env.BASE_URL}${link.icon}`} alt="" width={16} height={16} />
+                    {link.site}
+                    <ExternalLink size={12} aria-hidden="true" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
           <small className="vehicle-page-reference">
             {entry.codeFipe ? `FIPE ${entry.codeFipe} · ` : ""}
             {entry.referenceMonth}

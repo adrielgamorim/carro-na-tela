@@ -67,27 +67,67 @@
 }
 
 /* Search links on the classifieds sites, already filled in. */
+/* Classifieds searches: one button per site, with its icon. */
 .vehicle-page-listings {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  background: var(--surface-alt);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.vehicle-page-listings h2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.vehicle-page-listings ul {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 4px 10px;
+  gap: 6px;
   margin: 0;
-  color: var(--muted);
-  font-size: 13px;
+  padding: 0;
+  list-style: none;
 }
 
 .vehicle-page-listings a {
   display: inline-flex;
+  min-height: 34px;
   align-items: center;
-  gap: 3px;
-  color: var(--forest);
+  gap: 7px;
+  padding: 0 12px;
+  color: var(--ink);
+  background: var(--paper-white);
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  font-size: 13px;
   font-weight: 600;
   text-decoration: none;
 }
 
 .vehicle-page-listings a:hover {
-  text-decoration: underline;
+  border-color: var(--forest);
+}
+
+.vehicle-page-listings a:focus-visible {
+  outline: 2px solid var(--forest);
+  outline-offset: 2px;
+}
+
+.vehicle-page-listings img {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+}
+
+.vehicle-page-listings a svg {
+  color: var(--muted);
 }
 
 .vehicle-page-reference {

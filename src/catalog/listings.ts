@@ -1,6 +1,8 @@
 // Links to search a catalog line on the classifieds sites, already filled
 // in: "Chevrolet Onix" (and the model year, where the site filters by it).
-// iCarros is left out: its classifieds search is off since nov/2026.
+// iCarros is left out: its classifieds search is off since nov/2026. Each
+// site's favicon is in public/listings (Facebook takes the visitor to their
+// own city's Marketplace).
 
 import type { CatalogEntry } from "./types";
 import { zeroKmModelYear } from "../services/fipeParsing";
@@ -8,6 +10,8 @@ import { zeroKmModelYear } from "../services/fipeParsing";
 export interface ListingLink {
   site: string;
   url: string;
+  /** The site's favicon, under public/. */
+  icon: string;
 }
 
 /** "GM - Chevrolet" → "Chevrolet", "VW - VolksWagen" → "Volkswagen". */
@@ -38,16 +42,29 @@ export function listingLinks(entry: Pick<CatalogEntry, "brand" | "family" | "cat
     const section = webmotorsCategories[entry.category];
     links.push({
       site: "Webmotors",
+      icon: "listings/webmotors.png",
       url: `https://www.webmotors.com.br/${section}/estoque/${slug(brand)}/${slug(entry.family)}${year ? `/de.${year}/ate.${year}` : ""}`,
     });
   }
   links.push({
     site: "OLX",
+    icon: "listings/olx.ico",
     url: `https://www.olx.com.br/autos-e-pecas/${olxCategories[entry.category]}?q=${encodeURIComponent(query)}`,
   });
   links.push({
     site: "Mercado Livre",
+    icon: "listings/mercadolivre.ico",
     url: `https://lista.mercadolivre.com.br/veiculos/${slug(`${query}${year ? ` ${year}` : ""}`)}`,
+  });
+  const marketplace = new URLSearchParams({ query });
+  if (year) {
+    marketplace.set("minYear", String(year));
+    marketplace.set("maxYear", String(year));
+  }
+  links.push({
+    site: "Facebook Marketplace",
+    icon: "listings/facebook.ico",
+    url: `https://www.facebook.com/marketplace/category/vehicles?${marketplace}`,
   });
   return links;
 }
