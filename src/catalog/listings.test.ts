@@ -10,7 +10,7 @@ describe("listingLinks", () => {
       { site: "Mercado Livre", url: "https://lista.mercadolivre.com.br/veiculos/chevrolet-onix-2022" },
       {
         site: "Facebook Marketplace",
-        url: "https://www.facebook.com/marketplace/category/vehicles?query=Chevrolet+Onix&minYear=2022&maxYear=2022",
+        url: "https://www.facebook.com/marketplace/search/?query=Chevrolet+Onix&minYear=2022&maxYear=2022",
       },
     ]);
     expect(links.every((link) => link.icon.startsWith("listings/"))).toBe(true);
@@ -21,7 +21,7 @@ describe("listingLinks", () => {
     expect(zeroKm[0]!.url).toBe("https://www.webmotors.com.br/carros/estoque/citroen/c4-cactus");
     const truck = listingLinks({ brand: "VW - VolksWagen", family: "Constellation", category: "trucks", modelYear: 2020 });
     expect(truck.map((link) => link.site)).toEqual(["OLX", "Mercado Livre", "Facebook Marketplace"]);
-    expect(zeroKm[3]!.url).toBe("https://www.facebook.com/marketplace/category/vehicles?query=Citro%C3%ABn+C4+Cactus");
+    expect(zeroKm[3]!.url).toBe("https://www.facebook.com/marketplace/search/?query=Citro%C3%ABn+C4+Cactus");
     expect(truck[0]!.url).toBe("https://www.olx.com.br/autos-e-pecas/caminhoes?q=Volkswagen%20Constellation");
   });
 

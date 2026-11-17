@@ -56,6 +56,7 @@ export function listingLinks(entry: Pick<CatalogEntry, "brand" | "family" | "cat
     icon: "listings/mercadolivre.ico",
     url: `https://lista.mercadolivre.com.br/veiculos/${slug(`${query}${year ? ` ${year}` : ""}`)}`,
   });
+  // The general search: the Vehicles category page ignores the query.
   const marketplace = new URLSearchParams({ query });
   if (year) {
     marketplace.set("minYear", String(year));
@@ -64,7 +65,7 @@ export function listingLinks(entry: Pick<CatalogEntry, "brand" | "family" | "cat
   links.push({
     site: "Facebook Marketplace",
     icon: "listings/facebook.ico",
-    url: `https://www.facebook.com/marketplace/category/vehicles?${marketplace}`,
+    url: `https://www.facebook.com/marketplace/search/?${marketplace}`,
   });
   return links;
 }
