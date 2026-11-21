@@ -1,0 +1,38 @@
+/* Styles of FipeTrendNote.tsx. Tokens (colors) come from src/index.css. */
+
+.fipe-trend {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.fipe-trend p {
+  margin: 0;
+}
+
+.fipe-trend-signal {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.fipe-trend-signal svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.fipe-trend-queda .fipe-trend-signal {
+  color: var(--danger);
+  background: var(--danger-bg);
+  border: 1px solid var(--danger-line);
+}
+
+.fipe-trend-alta .fipe-trend-signal {
+  color: var(--warn-ink);
+  background: var(--warn-bg);
+  border: 1px solid var(--warn-line);
+}

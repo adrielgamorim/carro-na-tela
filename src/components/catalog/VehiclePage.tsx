@@ -12,6 +12,7 @@ import { FleetLine, PriceBlock } from "./CatalogCard";
 import { ModelGallery } from "./ModelGallery";
 import { EquipmentList } from "./EquipmentList";
 import { FavoriteButton, FavoriteMark, FavoriteNote } from "./Favorite";
+import { FipeTrendNote } from "./FipeTrendNote";
 import { useFavoriteIds } from "../../services/favorites";
 import { zeroKmModelYear } from "../../services/fipeParsing";
 import { listingLinks, searchBrand } from "../../catalog/listings";
@@ -101,6 +102,7 @@ export function VehiclePage({
           </nav>
 
           <PriceBlock entry={entry} live={live} onFetchPrice={onFetchPrice} />
+          <FipeTrendNote history={enrichment?.data.history?.data ?? []} />
           <FavoriteNote entry={entry} price={vehicle?.priceValue ?? entry.priceValue} />
 
           <ul className="catalog-tags" aria-label="Características">
