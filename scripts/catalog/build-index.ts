@@ -14,6 +14,8 @@
 // (npm run fichas:abertas).
 
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
+import { emptyPriceHistory, mergeSnapshots, sliceByBrand } from "./price-history.ts";
+import type { PriceHistoryFile } from "../../src/catalog/priceHistory.ts";
 import { writeFileRetrying } from "../write-file.ts";
 import { join } from "node:path";
 import { parseArgs } from "node:util";
@@ -191,6 +193,32 @@ const json = JSON.stringify(index);
 await mkdir(values.out, { recursive: true });
 const outFile = join(values.out, "index.json");
 await writeFileRetrying(outFile, json);
+
+// FIPE prices month by month (the API gives only 3): kept in data/fipe/historico,
+// which outlives the snapshots, and served per category and brand.
+const historyDir = join(values.data, "historico");
+const servedHistoryDir = join(values.out, "historico");
+await mkdir(historyDir, { recursive: true });
+await rm(servedHistoryDir, { recursive: true, force: true });
+await mkdir(servedHistoryDir, { recursive: true });
+const historyMonthsKept: string[] = [];
+for (const category of ["cars", "motorcycles", "trucks"] as const) {
+  const historyFile = join(historyDir, `${category}.json`);
+  const before = await readFile(historyFile, "utf8")
+    .then((text) => JSON.parse(text) as PriceHistoryFile)
+    .catch(() => emptyPriceHistory());
+  const history = mergeSnapshots(
+    before,
+    snapshots.filter((snapshot) => snapshot.category === category),
+  );
+  await writeFileRetrying(historyFile, `${JSON.stringify(history)}
+`);
+  for (const [path, slice] of sliceByBrand(category, history)) {
+    await writeFileRetrying(join(values.out, path), JSON.stringify(slice));
+  }
+  historyMonthsKept.push(`${category} ${Object.keys(history.months).length}`);
+}
+console.log(`Histórico de preços FIPE (meses): ${historyMonthsKept.join(", ")}`);
 
 // One slice per category and brand, for the Consulta FIPE (src/catalog/indexShards.ts).
 const shardDir = join(values.out, "marcas");

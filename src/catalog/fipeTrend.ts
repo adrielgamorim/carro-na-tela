@@ -1,5 +1,5 @@
 // How the FIPE price of a version has moved lately, from its monthly history
-// (the FIPE API gives the last 3 months). FIPE is an average of prices
+// (the FIPE API's 3 months joined with the ones build:catalog keeps, up to 13). FIPE is an average of prices
 // researched over a month and published after it, so it lags the market:
 // when it falls or rises fast, listings tend to be already below (or above)
 // the table.
@@ -15,7 +15,7 @@ export interface FipeTrend {
   months: number;
   /** Month the history starts at ("setembro de 2026"). */
   since: string;
-  /** A fast move, when the market likely leads the table. */
+  /** A fast move in the last (up to) 3 months, when the market likely leads the table. */
   signal: "queda" | "alta" | null;
 }
 
@@ -36,7 +36,10 @@ export function fipeTrend(history: FipePriceHistory[]): FipeTrend | null {
   const previous = points.find((point) => point.reference === last.reference - 1);
   const months = last.reference - first.reference;
   const total = change(first.value);
-  const perMonth = total / months;
+  // The signal looks at the recent months only: a fast fall now is not
+  // diluted by a calm year before it.
+  const recent = points.find((point) => point.reference >= last.reference - 3) ?? first;
+  const perMonth = recent === last ? 0 : change(recent.value) / (last.reference - recent.reference);
   return {
     month: previous ? change(previous.value) : null,
     total,

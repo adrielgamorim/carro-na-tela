@@ -150,6 +150,12 @@ Tudo o que é casado pelo nome tem ajuste manual em `data/<fonte>/overrides.json
   filtra no navegador. Também grava uma fatia por categoria e marca em `public/catalog/marcas/`
   (mesmo formato, até ~250 KB, ~25 KB com gzip): a Consulta FIPE carrega só a fatia da marca do
   veículo para os detalhes e o comparador, em vez do índice inteiro.
+- Histórico de preços: a API da FIPE só devolve os últimos 3 meses, então o `build:catalog` guarda
+  o preço de cada versão-ano mês a mês em `data/fipe/historico/<categoria>.json` (até 13 meses,
+  que sobrevivem aos snapshots) e publica uma fatia por categoria e marca em
+  `public/catalog/historico/`. A página da versão junta esses meses com os da API para a
+  "Tendência FIPE" (variação no último mês e no período, com alerta quando os últimos 3 meses
+  caem mais de 1,5% ou sobem mais de 0,7% ao mês). Começou em outubro de 2026.
 
 ### INMETRO (PBEV)
 

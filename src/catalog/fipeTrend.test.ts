@@ -29,3 +29,17 @@ describe("fipeTrend", () => {
     expect(fipeTrend([month(339, 100_000), month(337, 101_000)])!.month).toBeNull();
   });
 });
+
+describe("fipeTrend over a longer history", () => {
+  it("signals by the last 3 months, not the whole year", () => {
+    const history = [
+      ...Array.from({ length: 10 }, (_, index) => month(327 + index, 100_000)),
+      month(338, 97_000),
+      month(339, 94_000),
+    ];
+    const trend = fipeTrend(history)!;
+    expect(trend.months).toBe(12);
+    expect(trend.total).toBeCloseTo(-6, 5);
+    expect(trend.signal).toBe("queda");
+  });
+});

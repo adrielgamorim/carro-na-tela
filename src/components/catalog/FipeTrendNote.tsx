@@ -15,14 +15,16 @@ const explanation =
 export function FipeTrendNote({ history }: { history: FipePriceHistory[] }) {
   const trend = fipeTrend(history);
   if (!trend) return null;
-  const since = trend.since.replace(/ de \d{4}$/, "");
   const periods: string[] = [
     ...(trend.month !== null ? [`${format(trend.month)} no último mês`] : []),
-    ...(trend.months > 1 ? [`${format(trend.total)} desde ${since}`] : []),
+    ...(trend.months > 1 ? [`${format(trend.total)} em ${trend.months} meses`] : []),
   ];
   const Icon = trend.signal === "alta" ? TrendingUp : TrendingDown;
   return (
-    <div className={`fipe-trend${trend.signal ? ` fipe-trend-${trend.signal}` : ""}`} title={explanation}>
+    <div
+      className={`fipe-trend${trend.signal ? ` fipe-trend-${trend.signal}` : ""}`}
+      title={`Desde ${trend.since}. ${explanation}`}
+    >
       <p>
         Tendência FIPE: {periods.join(" · ")}
       </p>

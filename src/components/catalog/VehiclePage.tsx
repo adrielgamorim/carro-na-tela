@@ -13,6 +13,8 @@ import { ModelGallery } from "./ModelGallery";
 import { EquipmentList } from "./EquipmentList";
 import { FavoriteButton, FavoriteMark, FavoriteNote } from "./Favorite";
 import { FipeTrendNote } from "./FipeTrendNote";
+import { mergePriceHistory } from "../../catalog/priceHistory";
+import { usePriceHistory } from "../../hooks/usePriceHistory";
 import { useFavoriteIds } from "../../services/favorites";
 import { zeroKmModelYear } from "../../services/fipeParsing";
 import { listingLinks, searchBrand } from "../../catalog/listings";
@@ -53,6 +55,7 @@ export function VehiclePage({
   onRetryEnrichment,
 }: VehiclePageProps) {
   const favoriteIds = useFavoriteIds();
+  const keptHistory = usePriceHistory(entry.category, entry.id);
   useEffect(() => {
     const previous = document.title;
     document.title = `${entry.model} ${yearLabel(entry)} | Carro na tela`;
@@ -102,7 +105,7 @@ export function VehiclePage({
           </nav>
 
           <PriceBlock entry={entry} live={live} onFetchPrice={onFetchPrice} />
-          <FipeTrendNote history={enrichment?.data.history?.data ?? []} />
+          <FipeTrendNote history={mergePriceHistory(keptHistory, entry.id, enrichment?.data.history?.data ?? [])} />
           <FavoriteNote entry={entry} price={vehicle?.priceValue ?? entry.priceValue} />
 
           <ul className="catalog-tags" aria-label="Características">
