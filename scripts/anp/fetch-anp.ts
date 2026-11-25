@@ -26,11 +26,26 @@ const headers = {
   Accept: "text/csv,*/*",
 };
 
+// gov.br often drops or times out connections from GitHub's runners (outside
+// Brazil): a few tries, 45 s apart, before giving up on this run.
+const attempts = 3;
+async function download(url: string): Promise<string> {
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const response = await fetch(url, { headers, signal: AbortSignal.timeout(60_000) });
+      if (!response.ok) throw new Error(`ANP respondeu ${response.status}`);
+      return await response.text();
+    } catch (error) {
+      if (attempt >= attempts) throw error;
+      console.log(`Tentativa ${attempt} falhou (${(error as Error).cause ?? (error as Error).message}); de novo em 45 s…`);
+      await new Promise((resolve) => setTimeout(resolve, 45_000));
+    }
+  }
+}
+
 const samples = [];
 for (const file of files) {
-  const response = await fetch(`${baseUrl}/${file}`, { headers });
-  if (!response.ok) throw new Error(`ANP respondeu ${response.status} para ${file}`);
-  const parsed = parseAnpCsv(await response.text());
+  const parsed = parseAnpCsv(await download(`${baseUrl}/${file}`));
   console.log(`${file}: ${parsed.length} preços`);
   samples.push(...parsed);
 }

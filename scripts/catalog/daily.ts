@@ -41,6 +41,14 @@ async function isStale(file: string) {
   return !info || Date.now() - info.mtimeMs > monthMs;
 }
 
+/** True when the fuel prices' survey week ended more than three weeks ago (or there is none). */
+async function fuelPricesStale(): Promise<boolean> {
+  const week = await readFile("public/catalog/fuel-prices.json", "utf8")
+    .then((text) => (JSON.parse(text) as { week?: { to?: string } }).week?.to)
+    .catch(() => undefined);
+  return !week || Date.now() - Date.parse(week) > 21 * 24 * 60 * 60 * 1000;
+}
+
 function run(script: string, args: string[] = []) {
   write(`\n> ${script} ${args.join(" ")}\n`);
   return new Promise<number>((resolve) => {
@@ -82,8 +90,12 @@ try {
   const wmi = (await isStale("public/catalog/wmi.json")) ? await run("scripts/vin/fetch-wmi.ts") : 0;
   // A crawl stopped by the daily limit still writes a snapshot worth indexing.
   const build = await run("scripts/catalog/build-index.ts");
-  // Weekly fuel prices; a failure keeps last week's file.
-  const anp = await run("scripts/anp/fetch-anp.ts");
+  // Weekly fuel prices; a failure keeps last week's file. gov.br often refuses
+  // GitHub's runners, so a failure only counts once the prices are old.
+  const anpRun = await run("scripts/anp/fetch-anp.ts");
+  const anpStale = await fuelPricesStale();
+  if (anpRun && !anpStale) write("ANP fora do ar nesta rodada; os preços de combustível ainda estão em dia.\n");
+  const anp = anpRun && anpStale ? anpRun : 0;
   exitCode = crawl || build || anp || frota || wikidata || wmi;
   write(
     `=== ${new Date().toISOString()} Fim (crawl ${crawl}, frota ${frota}, wikidata ${wikidata}, ` +
